@@ -1,0 +1,60 @@
+sc_node_not_relation->concept_pseudograph;;
+
+concept_pseudograph => nrel_main_idtf:
+	[псевдограф](* <-lang_ru;; *);
+	[pseudograph](* <-lang_en;; *);;
+
+concept_pseudograph => nrel_idtf:
+	[мультиграф](* <-lang_ru;; *);
+	[multigraph](* <-lang_en;; *);;
+
+concept_pseudograph <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: псевдограф] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: pseudograph] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Псевдограф — это пара (V, E), где V — непустое множество (вершин), а E — некоторое семейство неупорядоченных пар вершин (ребер), не обязательно различных.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Pseudograph is a pair (V,E) where V is a non-empty set of vertices and E is some family of unordered pairs of vertices (edges) that are not necessarily various](*<- lang_en;;*);;
+		*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+*);;
+
+concept_pseudograph <= nrel_using_constants:
+						{
+						concept_node;
+						concept_edge
+						};;
+
+concept_pseudograph <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: о псевдографе] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: pseudograph] (* <- lang_en;; *);;
+		-> rrel_key_sc_element: concept_edge; rrel_loop;;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Если у графа есть кратные ребра и петли, то он называется псевдографом.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[If both loops and multiple lines are permitted, we have a pseudograph.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: F_Harary_Graph_Theory;;
+		*);;
+
+concept_pseudograph <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/pseudograph.png";;
+			*);;
+	*);;

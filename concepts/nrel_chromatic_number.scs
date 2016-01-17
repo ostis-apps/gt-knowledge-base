@@ -1,0 +1,70 @@
+sc_node_not_relation->nrel_chromatic_number;;
+
+nrel_chromatic_number => nrel_main_idtf:
+	[хроматическое число](* <-lang_ru;; *);
+	[chromatic number](* <-lang_en;; *);;
+
+nrel_chromatic_number <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: хроматическое число] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: chromatic number] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Хроматическое число - минимальное количество цветов, требуемое для раскраски вершин графа, при которой любые вершины, соединенные ребром, раскрашены в разные цвета.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Chromatic number - the minimum number of colors required to color nodes of the graph in which all vertices connected by an edge, painted in different colors.](*<- lang_en;;*);;
+		*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+*);;
+
+nrel_chromatic_number<= nrel_using_constants:
+						{
+							concept_edge;
+							concept_vertex
+						};;
+
+nrel_chromatic_number <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: применение хроматического числа вне теории графов] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: usage of chromatic number out the graph theory] (* <- lang_en;; *);;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Хроматическое число можно рассматривать для других объектов, например, для метрических пространств. Так, хроматическим числом плоскости называется минимальное число цветов χ, для которого существует такая раскраска всех точек плоскости в один из цветов, что никакие две точки одного цвета не находятся на расстоянии ровно 1 друг от друга.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Chromatic number may be considered for other objects, such as metric spaces. Thus, the chromatic number of the plane is the minimum number of colors χ, for which there exists a coloring of all points in the plane of one of the colors that no two dots of the same color are spaced evenly apart from one another.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+		*);;
+
+nrel_chromatic_number <- binary_relation;;
+nrel_chromatic_number => nrel_arity_of_relations: 2(* <- number ;;*);;
+nrel_chromatic_number => nrel_first_domain: concept_graph;;
+nrel_chromatic_number => nrel_second_domain: number;;
+nrel_chromatic_number<= nrel_definitional_domain: 
+	...
+	(*
+	<= nrel_combination: 
+		{
+		concept_graph; 
+		number
+		};;
+	*);;
+		
+			
+nrel_chromatic_number <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/nrel_chromatic_number.jpg";;
+			*);;
+	*);;

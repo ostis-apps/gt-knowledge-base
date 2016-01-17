@@ -1,0 +1,54 @@
+sc_node_not_relation->concept_oredge;;
+
+concept_oredge => nrel_main_idtf:
+	[дуга](* <-lang_ru;; *);
+	[oredge](* <-lang_en;; *);;
+
+concept_oredge <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: дуга] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: oredge] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Дуга - это ориентированное ребро.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[An oredge is a directed edge.](*<- lang_en;;*);;
+		*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+*);;
+
+concept_oredge<= nrel_using_constants:
+						{
+						concept_edge
+						};;
+
+concept_oredge <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: об изображении дуг на рисунке] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: oredge represention] (* <- lang_en;; *);;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[На рисунке дуги отмечаются стрелками, указывающими направление от начала к концу.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Oredges in the picture are represented by arrows that indicate direction from beginning to end.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+		*);;
+		
+concept_oredge <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/oredge.png";;
+			*);;
+	*);;

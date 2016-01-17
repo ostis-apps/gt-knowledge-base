@@ -1,0 +1,59 @@
+doc_graph_theory
+=> nrel_main_idtf:
+	[Раздел. Документация ИСС по теории графов](*<- lang_ru;;*);
+=> nrel_main_idtf:
+	[Documentation of graph theory](*<- lang_en;;*);
+<= nrel_section_decomposition:
+    {
+		gt_brief_proj_characteristics
+			(*
+			<= nrel_section_decomposition:
+					{
+						gt_development_goals;
+						gt_project_tasks;
+						gt_target_audience;
+						gt_relevance_of_the_developed_system;
+						gt_estimated_project_success_criteria;
+						gt_background_project;
+						gt_baseline_data_of_the_project;
+						gt_planned_date_for_completion_of_the_project
+					};;
+			*);
+		gt_description_of_the_final_product_of_this_system
+			(*
+			<= nrel_section_decomposition:
+					{
+						gt_type_of_developed_intellectual_system;
+						gt_composition_and_volume_of_the_knowledge_base_system;
+						gt_different_areas_of_structuring_and_systematization_of_knowledge;
+						gt_structure_and_composition_of_the_machine_knowledge_processing_system;
+						gt_characteristics_of_technical_implementation_developed_intellectual_system;
+						gt_current_stage_of_development_of_the_project_and_description_the_current_state_of_the_prototype_system_being_developed;
+						gt_main_directions_of_further_work_on_the_the_prototype_system_being_developed_in_the_framework_of_this_project;
+						gt_strategy_of_further_development_of_the_developed_of_follow_up_projects;
+						gt_used_bibliography;
+						gt_information_on_the_project_team
+					};;
+			*)
+	};;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

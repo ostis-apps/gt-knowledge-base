@@ -1,0 +1,55 @@
+sc_node_not_relation->nrel_eulerian_cycle;;
+
+nrel_eulerian_cycle => nrel_main_idtf:
+	[эйлеров цикл](* <-lang_ru;; *);
+	[eulerian cycle](* <-lang_en;; *);;
+
+nrel_eulerian_cycle <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: эйлеров цикл] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: eulerian cycle] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Цикл называется эйлеровым если он содержит все ребра графа.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[The cycle is called the eulerian cycle if it contains all the edges of the graph.](*<- lang_en;;*);;
+		*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+*);;
+nrel_eulerian_cycle<= nrel_using_constants:
+						{
+							concept_edge
+						};;
+
+nrel_eulerian_cycle <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение:условие сущесвтования эйлерового цикла ] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: a  way of describing the simple cycle] (* <- lang_en;; *);;
+		-> rrel_key_sc_element:nrel_edge;;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[эйлеров цикл существует тогда и только тогда, когда граф связный и в нём отсутствуют вершины нечётной степени.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[An undirected graph has an Eulerian cycle if and only if every vertex has even degree, and all of its vertices with nonzero degree belong to a single connected component.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+		*);;
+		
+			
+nrel_eulerian_cycle <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/nrel_eulerian_cycle.png";;
+			*);;
+	*);;

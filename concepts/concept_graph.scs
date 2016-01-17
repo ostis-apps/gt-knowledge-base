@@ -1,0 +1,84 @@
+sc_node_not_relation->concept_graph;;
+
+concept_graph => nrel_main_idtf:
+	[граф](* <-lang_ru;; *);
+	[graph](* <-lang_en;; *);;
+
+concept_graph <= nrel_subdividing: 
+	{ 
+	concept_directed_graph;
+	concept_undirected_graph
+	};;
+
+concept_graph <= nrel_subdividing: 
+	{  
+	concept_weighted_graph;
+	concept_unweighted_graph
+	};;
+
+concept_graph <= nrel_subdividing: 
+	{  
+	concept_connected_graph;
+	concept_disconnected_graph
+	};;
+concept_graph <= nrel_subdividing: 
+	{  
+	concept_planar_graph;
+	concept_unplanar_graph
+	};;
+
+concept_graph <= nrel_subdividing: 
+	{  
+	concept_empty_graph;
+	concept_not_empty_graph
+	};;
+
+concept_graph <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: граф] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: graph] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Пусть V - непустое множество. Графом называется пара (V,E), где E - произвольное подмножество декартова произведения множества V.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[A graph is an ordered pair G = (V, E), where E - an arbitrary subset of the Cartesian product of the set V.](*<- lang_en;;*);;
+		*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+*);;
+concept_graph<= nrel_using_constants:
+						{
+						nrel_cartesian_product;
+						set
+						};;
+
+concept_graph <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: изображение графов] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: graphs representation] (* <- lang_en;; *);;
+		-> rrel_key_sc_element: concept_node; concept_edge;;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Графы удобно изображать в виде рисунков, состоящих из точек и линий, соединяющих некоторые из этих точек. При этом точки соответствуют вершинам графа, а соединяющие пары точек линии - ребрам.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Graphs are usualy represented in the form of drawings consisting of dots and lines, connecting some of these points. In this case points are equal to the vertices of the graph and lines are equal to the edges.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+		*);;
+			
+concept_graph <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_graph.GIF";;
+			*);;
+	*);;

@@ -1,0 +1,32 @@
+sc_node_not_relation->concept_k_partite_graph;;
+
+concept_k_partite_graph	=> nrel_main_idtf: 
+		[к-дольный граф] (* <-lang_ru;; *);
+		[k-partite graph] (* <-lang_en;; *);;
+
+concept_k_partite_graph <- rrel_key_sc_element:
+		...  
+		(*
+		<-sc_definition;;
+		=> nrel_main_idtf: [Определение: k-дольный граф] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: k-partite graph](* <- lang_en;; *);;	
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				[Граф называется k-дольным, если существует такое разбиение множества его вершин на k частей (долей), что концы каждого ребра принадлежат разным частям.] (*<-lang_ru;;*);;
+			-> rrel_example: 
+				[Graph is called k-partite graph if it's vertices can be devided into k parts, where endings of each edge belong to different parts.] (*<-lang_en;;*);;
+			*);;
+		*);;
+
+concept_k_partite_graph<= nrel_using_constants:
+						{
+						concept_node;
+						concept_edge;
+						set
+						};;
+
+
+concept_graph => nrel_inclusion: concept_k_partite_graph;;

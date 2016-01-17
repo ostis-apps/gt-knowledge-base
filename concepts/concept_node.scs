@@ -1,0 +1,27 @@
+sc_node_not_relation_relation ->concept_node;;
+concept_node => nrel_main_idtf:
+	[ вершина ] (* <-lang_ru;; *);
+	[ vertex ] (* <-lang_en;; *);;
+	
+concept_node<-rrel_key_sc_element:
+		...
+		(* 
+		<-sc_definition;;
+		=> nrel_main_idtf: [Определение: вершина] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: vertex] (* <- lang_en;; *);;
+		=> nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example:
+				[Вершинами называются элементы множества V графа G(V,E).] (* <-lang_ru;; *);;
+			-> rrel_example: 
+				[Vertices is called elements of the set V in graph G(V,E).](*<- lang_en;;*);;
+			*);;
+		*);;
+		
+concept_node<= nrel_using_constants:
+						{
+						concept_graph;
+						set
+						};;
