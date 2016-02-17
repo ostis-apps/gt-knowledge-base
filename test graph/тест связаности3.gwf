@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GWF version="2.0">
+    <staticSector>
+        <node type="node/const/general_node" idtf="p4" shapeColor="0" id="48469664" parent="54594176" left="0" top="0" right="26.3281" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="398.279" y="623.791" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/general_node" idtf="p6" shapeColor="0" id="54054672" parent="54594176" left="0" top="0" right="26.3281" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="407.279" y="512.791" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/general_node" idtf="p7" shapeColor="0" id="55168176" parent="54594176" left="0" top="0" right="26.3281" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="570.279" y="345.791" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/general_node" idtf="p2" shapeColor="0" id="47155936" parent="54594176" left="0" top="0" right="26.3281" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="305.279" y="394.791" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/general_node" idtf="p5" shapeColor="0" id="52230784" parent="54594176" left="0" top="0" right="26.3281" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="508.279" y="507.791" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/general_node" idtf="p3" shapeColor="0" id="54604160" parent="54594176" left="0" top="0" right="26.3281" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="263.279" y="514.791" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/general_node" idtf="p1" shapeColor="0" id="53818544" parent="54594176" left="0" top="0" right="26.3281" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="393.279" y="314.791" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <contour type="" idtf="graph_communication3" shapeColor="0" id="54594176" parent="0" left="0" top="0" right="178.484" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10">
+            <points>
+                <point x="210.279" y="387.791"/>
+                <point x="232.279" y="429.791"/>
+                <point x="232.279" y="557.791"/>
+                <point x="408.279" y="664.791"/>
+                <point x="738.279" y="500.791"/>
+                <point x="735.279" y="300.791"/>
+                <point x="337.279" y="260.791"/>
+                <point x="303.279" y="282.791"/>
+                <point x="237.279" y="346.791"/>
+            </points>
+        </contour>
+    </staticSector>
+</GWF>

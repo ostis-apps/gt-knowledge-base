@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GWF version="2.0">
+    <staticSector>
+        <node type="node/const/general_node" idtf="" shapeColor="0" id="47516192" parent="49614160" x="325" y="432" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <contour type="" idtf="one_test_graph" shapeColor="0" id="49614160" parent="0" left="0" top="0" right="119.953" bottom="25" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10">
+            <points>
+                <point x="258" y="374"/>
+                <point x="176" y="520"/>
+                <point x="523" y="558"/>
+                <point x="539" y="381"/>
+            </points>
+        </contour>
+    </staticSector>
+</GWF>
