@@ -26,7 +26,7 @@ concept_directed_graph<= nrel_using_constants:
 						concept_oredge
 						};;
 
-concept_directed_graph <- rrel_main_key_sc_element:
+concept_direted_graph <- rrel_main_key_sc_element:
 		...
 		(*
 		=> nrel_main_idtf: [Утверждение: о сильном ориентированном графе] (* <- lang_ru;; *);;

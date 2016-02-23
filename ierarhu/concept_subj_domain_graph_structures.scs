@@ -1,0 +1,14 @@
+concept_subj_domain_graph_structures -> rrel_maximum_studied_object_class: concept_graph_structure;;
+concept_subj_domain_graph_structures -> concept_edge;;
+concept_subj_domain_graph_structures -> concept_node;;
+concept_subj_domain_graph_structures -> rrel_studied_relation: rrel_vertex;;
+concept_subj_domain_graph_structures -> rrel_studied_relation: rrel_edge;;
+concept_subj_domain_graph_structures -> rrel_studied_relation: concept_isolated_vertex;;
+concept_subj_domain_graph_structures -> rrel_studied_relation: rrel_terminal_vertex;;
+concept_subj_domain_graph_structures -> rrel_studied_relation: rrel_inner_vertex;;
+concept_subj_domain_graph_structures -> rrel_studied_relation: concept_critical_vertex;;
+concept_subj_domain_graph_structures -> rrel_studied_relation: rrel_peripherals_vertex;;
+concept_subj_domain_graph_structures -> rrel_studied_relation: nrel_finish_vertex;;
+concept_subj_domain_graph_structures -> rrel_studied_relation: rrel_binary_vertex;;
+concept_subj_domain_graph_structures -> rrel_studied_relation: rrel_deadlock;;
+concept_subj_domain_graph_structures -> rrel_studied_relation: rrel_separating_vertex;;

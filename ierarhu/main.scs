@@ -1,0 +1,120 @@
+sc_node_not_relation->concept_subj_domain_graph_structures;;
+subject_domain ->concept_subj_domain_graph_structures;;
+
+concept_subj_domain_graph_structures => nrel_main_idtf:
+	[Предметная область графовых структур](* <-lang_ru;; *);
+	[subject domain of graph structures](* <-lang_en;; *);;
+
+
+
+
+
+
+
+
+
+sc_node_not_relation->concept_subj_domain_hypergraphs;;
+subject_domain ->concept_subj_domain_hypergraphs;;
+
+concept_subj_domain_hypergraphs => nrel_main_idtf:
+	[Предметная область гиперграфов](* <-lang_ru;; *);
+	[subject domain of hypergraphs](* <-lang_en;; *);;
+
+
+sc_node_not_relation->concept_subj_domain_pseudographs;;
+subject_domain ->concept_subj_domain_pseudographs;;
+
+concept_subj_domain_pseudographs => nrel_main_idtf:
+	[Предметная область псевдографов](* <-lang_ru;; *);
+	[subject domain of pseudographs](* <-lang_en;; *);;
+
+
+sc_node_not_relation->concept_subj_domain_multigraphs;;
+subject_domain ->concept_subj_domain_multigraphs;;
+
+concept_subj_domain_multigraphs => nrel_main_idtf:
+	[Предметная область мультиграфов](* <-lang_ru;; *);
+	[subject domain of multigraphs](* <-lang_en;; *);;
+
+
+sc_node_not_relation->concept_subj_domain_graphs;;
+subject_domain ->concept_subj_domain_graphs;;
+
+concept_subj_domain_graphs => nrel_main_idtf:
+	[Предметная область графов](* <-lang_ru;; *);
+	[subject domain of graphs](* <-lang_en;; *);;
+
+
+sc_node_not_relation -> concept_subj_domain_graph_structures_oriented_cords;;
+subject_domain -> concept_subj_domain_graph_structures_oriented_cords;;
+concept_subj_domain_graph_structures_oriented_cords -> rrel_maximum_studied_object_class: concept_directed_graph;;
+
+concept_subj_domain_graph_structures_oriented_cords => nrel_main_idtf:
+	[Предметная область графовых структур с ориентированными связками](* <-lang_ru;; *);
+	[subject domain of graph structures with oriented cords](* <-lang_en;; *);;
+
+
+sc_node_not_relation -> concept_subj_domain_graph_structures_not_oriented_cords;;
+subject_domain -> concept_subj_domain_graph_structures_not_oriented_cords;;
+concept_subj_domain_graph_structures_not_oriented_cords -> rrel_maximum_studied_object_class: undirected_graph;;
+
+concept_subj_domain_graph_structures_not_oriented_cords => nrel_main_idtf:
+	[Предметная область графовых структур с неориентированными связками](* <-lang_ru;; *);
+	[subject domain of graph structures with not oriented cords](* <-lang_en;; *);;
+
+
+sc_node_not_relation -> concept_subj_domain_graph_structures_saturation;;
+subject_domain -> concept_subj_domain_graph_structures_saturation;;
+concept_subj_domain_graph_structures_saturation -> rrel_maximum_studied_object_class: concept_weighted_graph;;
+
+concept_subj_domain_graph_structures_saturation => nrel_main_idtf:
+	[Предметная область взвешанных графовых структур](* <-lang_ru;; *);
+	[subject domain of the saturation graph structures](* <-lang_en;; *);;
+
+
+sc_node_not_relation -> concept_subj_domain_graph_structures_not_saturation;;
+subject_domain -> concept_subj_domain_graph_structures_not_saturation;;
+concept_subj_domain_graph_structures_not_saturation -> rrel_maximum_studied_object_class: concept_unweighted_graph;;
+
+concept_subj_domain_graph_structures_not_saturation => nrel_main_idtf:
+	[Предметная область невзвешанных графовых структур](* <-lang_ru;; *);
+	[subject domain of the unsaturation graph structures](* <-lang_en;; *);;
+
+
+sc_node_not_relation -> concept_subj_domain_graph_structures_connected;;
+subject_domain -> concept_subj_domain_graph_structures_connected;;
+concept_subj_domain_graph_structures_connected -> rrel_maximum_studied_object_class: concept_connected_graph;;
+
+concept_subj_domain_graph_structures_connected => nrel_main_idtf:
+	[Предметная область связных графовых структур](* <-lang_ru;; *);
+	[subject domain of the connected graph structures](* <-lang_en;; *);;
+
+
+sc_node_not_relation -> concept_subj_domain_graph_structures_disconnected;;
+subject_domain -> concept_subj_domain_graph_structures_disconnected;;
+concept_subj_domain_graph_structures_disconnected -> rrel_maximum_studied_object_class: concept_disconnected_graph;;
+
+concept_subj_domain_graph_structures_disconnected => nrel_main_idtf:
+	[Предметная область несвязных графовых структур](* <-lang_ru;; *);
+	[subject_domain of the disconnected graph structures](* <-lang_en;; *);;
+
+
+concept_subj_domain_graph_structures => nrel_inclusion: concept_subj_domain_hypergraphs;;
+concept_subj_domain_hypergraphs => nrel_inclusion: concept_subj_domain_pseudographs;;
+concept_subj_domain_pseudographs => nrel_inclusion: concept_subj_domain_multigraphs;;
+concept_subj_domain_multigraphs => nrel_inclusion: concept_subj_domain_graphs;;
+concept_subj_domain_graph_structures <= nrel_subdividing: 
+	{  
+	concept_subj_domain_graph_structures_connected;
+	concept_subj_domain_graph_structures_disconnected
+	};;
+concept_subj_domain_graph_structures <= nrel_subdividing: 
+	{  
+	concept_subj_domain_graph_structures_saturation;
+	concept_subj_domain_graph_structures_not_saturation
+	};;
+concept_subj_domain_graph_structures <= nrel_subdividing: 
+	{  
+	concept_subj_domain_graph_structures_oriented_cords;
+	concept_subj_domain_graph_structures_not_oriented_cords
+	};;

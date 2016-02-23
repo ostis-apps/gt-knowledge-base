@@ -21,7 +21,7 @@ nrel_set_bridge <- rrel_key_sc_element:
 
 nrel_set_bridge<= nrel_using_constants:
 						{
-						concept_bridge;
+						rrel_bridge;
 						set;
 						concept_graph
 						};;

@@ -1,0 +1,5 @@
+sc_node_not_relation -> concept_graph_structure;;
+
+concept_graph_structure => nrel_main_idtf:
+	[графовая структура](* <-lang_ru;; *);
+	[graph structure](* <-lang_en;; *);;
