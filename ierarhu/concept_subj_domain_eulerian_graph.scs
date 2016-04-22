@@ -2,7 +2,7 @@ sc_node_not_relation-> concept_subj_domain_eulerian_graph;;
 subject_domain -> concept_subj_domain_eulerian_graph;;
 
 concept_subj_domain_eulerian_graph => nrel_main_idtf:
-	[Предметная область эйлеровых графов](* <-lang_ru;; *);
+	[Раздел. Предметная область эйлеровых графов](* <-lang_ru;; *);
 	[Subject domain eulerian graph](* <-lang_en;; *);;
 
 

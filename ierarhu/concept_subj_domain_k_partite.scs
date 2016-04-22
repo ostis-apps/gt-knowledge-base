@@ -2,7 +2,7 @@ sc_node_not_relation-> concept_subj_domain_k_partite;;
 subject_domain -> concept_subj_domain_k_partite;;
 
 concept_subj_domain_k_partite => nrel_main_idtf:
-	[Предметная область k-дольных графов](* <-lang_ru;; *);
+	[Раздел. Предметная область k-дольных графов](* <-lang_ru;; *);
 	[Subject domain of k-partite graph](* <-lang_en;; *);;
 
 

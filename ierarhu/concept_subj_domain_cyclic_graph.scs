@@ -2,7 +2,7 @@ sc_node_not_relation-> concept_subj_domain_cyclic_graph;;
 subject_domain -> concept_subj_domain_cyclic_graph;;
 
 concept_subj_domain_cyclic_graph => nrel_main_idtf:
-	[Предметная область циклических графов](* <-lang_ru;; *);
+	[Раздел. Предметная область циклических графов](* <-lang_ru;; *);
 	[Subject domain cyclic graph](* <-lang_en;; *);;
 
 
@@ -10,7 +10,7 @@ sc_node_not_relation-> concept_subj_domain_acyclic_graph;;
 subject_domain -> concept_subj_domain_acyclic_graph;;
 
 concept_subj_domain_acyclic_graph => nrel_main_idtf:
-	[Предметная область aциклических графов](* <-lang_ru;; *);
+	[Раздел. Предметная область aциклических графов](* <-lang_ru;; *);
 	[Subject domain acyclic graph](* <-lang_en;; *);;
 
 
