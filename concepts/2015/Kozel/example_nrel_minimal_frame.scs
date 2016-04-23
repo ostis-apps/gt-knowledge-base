@@ -1,0 +1,30 @@
+concept_graph ->..graph;;
+..graph -> rrel_vertex : v1; v2 ; v3 ; v4 ;;
+..graph ->rrel_edge : 	(v1 <=> v2) ; (v3 <=> v2)  ; (v4 <=> v2)  ; (v4 <=> v3 );;
+
+nrel_weight -> ... (*
+						-> rrel_1 : ..graph;;
+						->rrel_2 : (v1 <=> v2 ) ;;
+						->rrel_3 : [4] (* <-number ;; *);;
+						*);;
+nrel_weight -> ... (*
+						-> rrel_1 : ..graph;;
+						->rrel_2 : (v3 <=> v2 ) ;;
+						->rrel_3 : [3] (* <-number ;; *);;
+						*);;
+nrel_weight -> ... (*
+						-> rrel_1 : ..graph;;
+						->rrel_2 : (v4 <=> v2 ) ;;
+						->rrel_3 : [2] (* <-number ;; *);;
+						*);;
+nrel_weight -> ... (*
+						-> rrel_1 : ..graph;;
+						->rrel_2 : (v4 <=> v3 ) ;;
+						->rrel_3 : [2] (* <-number ;; *);;
+						*);;
+
+
+
+nrel_minimal_frame-> rrel_example : ( ..graph => ..min_frame);;
+..min_frame ->   rrel_vertex : v1; v2 ; v3 ; v4 ;;
+..min_frame -> rrel_edge : 	(v1 <=> v2) ; (v3 <=> v2)  ; (v4 <=> v2) ;;

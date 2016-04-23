@@ -1,0 +1,8 @@
+concept_graph ->..graph;;
+..graph -> rrel_vertex : v1; v2 ; v3 ; v4   ;;
+..graph ->rrel_edge : 	(v1 <=> v2) ; (v3 <=> v2)  ; (v4 <=> v2)   ;;
+
+nrel_complement_graph  -> rrel_example : ( ..graph => ..graph2);;
+..graph2 -> rrel_vertex : v1; v2 ; v3 ; v4  ;;
+..graph2 ->rrel_edge : 	(v1 <=> v3) ; (v1 <=> v4) ;  (v3 <=> v4) ;;
+	

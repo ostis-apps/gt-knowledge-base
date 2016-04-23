@@ -1,0 +1,35 @@
+sc_node_not_relation->concept_transportation_network;;
+
+concept_transportation_network	=> nrel_main_idtf: 
+		[транспортная сеть] (* <-lang_ru;; *);
+		[transportation network] (* <-lang_en;; *);;
+
+concept_transportation_network	<- rrel_key_sc_element:
+		...  
+		(*<-sc_definition;;
+		=> nrel_main_idtf: [Опр.(транспортная сеть)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example: 
+				[Транспортная сеть - орграф, в котором выделены две вершины - вход и выход сети и для каждой дуги определена пропускная способность.] (*<-lang_ru;;*);;
+<= nrel_using_constants:
+							{
+								concept_directed_graph;
+								rrel_vertex
+							};;	
+			*);;
+		*);;
+
+concept_transportation_network <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/trnetwork.png";;
+			*);;
+	*);;
+concept_directed_graph => nrel_inclusion: concept_transportation_network;;

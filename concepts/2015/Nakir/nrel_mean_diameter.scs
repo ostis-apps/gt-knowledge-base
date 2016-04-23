@@ -1,0 +1,40 @@
+sc_node_norole_relation ->nrel_mean_diameter;;
+binary_relation -> nrel_mean_diameter;;
+oriented_relation ->nrel_mean_diameter;;
+
+nrel_mean_diameter
+	=> nrel_main_idtf: 
+		[ средний диаметр* ] (* <-lang_ru;; *);
+		[ mean diameter* ] (* <-lang_en;; *);
+
+	<-rrel_key_sc_element:
+		...  
+		(*<-sc_definition;;
+		=> nrel_main_idtf: [Опр.(средний диаметр)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:
+		...
+			(*
+				-> rrel_example: 
+				[Средний диаметр - сумма кратчайших расстояний между всеми парами вершин графа, деленная на число пар вершин.] (*<-lang_ru;;*);;	
+			*);;
+		*);
+	
+<= nrel_using_constants:
+							{
+								rrel_vertex;
+								concept_graph
+							};			
+
+
+=> nrel_definitional_domain:
+...
+(*
+				<= nrel_combination:
+					...
+						(*
+								->concept_graph;;
+								->number;;
+							*);;
+*);
+ => nrel_first_domain: concept_graph;
+ => nrel_second_domain: number;;

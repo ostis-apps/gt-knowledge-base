@@ -1,0 +1,21 @@
+sc_node_norole_relation -> nrel_number_of_edges;;
+
+nrel_number_of_edges => nrel_main_idtf:
+	[количество ребер графа*](*<-lang_ru;;*);
+	[number of edges*](*<-lang_en;;*);;
+
+nrel_number_of_edges => nrel_arity_of_relations: 2 (* <- number;; *);;
+
+nrel_number_of_edges <- binary_relation;;
+nrel_number_of_edges => nrel_definitional_domain: concept_graph;;
+nrel_number_of_edges => nrel_first_domain: number;; 
+nrel_number_of_edges<= nrel_using_constants: {
+				rrel_edge;
+				concept_graph
+		};;
+nrel_number_of_edges <- rrel_key_sc_element: ... (*
+	<- sc_definition;;
+	<= nrel_sc_text_translation: ... (*
+		-> rrel_example: [Количество ребер графа.] (* <- lang_ru;; *);;
+	*);;
+*);;

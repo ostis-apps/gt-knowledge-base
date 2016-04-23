@@ -1,0 +1,23 @@
+
+sc_node_not_relation -> concept_contrabasis;;
+
+concept_contrabasis	=> nrel_main_idtf: 
+		[антибаза] (* <-lang_ru;; *);
+		[сontrabasis] (* <-lang_en;; *);;
+
+
+concept_contrabasis <- rrel_key_sc_element:
+		...  
+		(*<-sc_definition;;
+		<=nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example: 
+				[Антибаза(Contrabasis)
+- такое минимально возможное множество вершин орграфа, что из любой вершины этого графа достижима некоторая вершина в множестве.] (*<-lang_ru;;*);;
+			<= nrel_using_constants:
+				{
+					
+				};;
+			*);;
+		*);;

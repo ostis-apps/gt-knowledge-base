@@ -1,0 +1,35 @@
+sc_node_not_relation->concept_label;;
+
+concept_label	=> nrel_main_idtf: 
+		[метка] (* <-lang_ru;; *);
+		[label] (* <-lang_en;; *);;
+
+concept_label	<- rrel_key_sc_element:
+		...  
+		(*
+		<-sc_definition;;
+		=> nrel_main_idtf: [Опр.(метка)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example: 
+				[Метка - множество всевозможных меток, соответствующих вершинам в помеченном графе. ] (*<-lang_ru;;*);;	
+			*);;
+		*);;
+
+concept_label<= nrel_using_constants : 
+							{
+								concept_labeled_graph;
+								nrel_label
+							};;
+//concept_label <- rrel_key_sc_element: 
+//	...
+//	(*
+//		<- sc_illustration;;
+//		<= nrel_sc_text_translation:
+//		...
+//			(*
+//			-> rrel_example:
+//				"file://contents/concept_binary_tree.gif";;
+//			*);;
+//	*);;

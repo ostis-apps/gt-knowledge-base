@@ -1,0 +1,28 @@
+sc_node_not_relation -> concept_equal_graph;;
+
+concept_equal_graph => nrel_main_idtf:
+	[тождественный граф]
+	(* <- lang_ru;;	*);
+	[equal graph]
+	(* <- lang_en;;	*);;
+
+concept_equal_graph <- rrel_key_sc_element:
+	...  
+	(*
+	=> nrel_main_idtf: [Опр.(тождественный граф)] (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Тождественный граф (асимметричный граф) — граф, группа автоморфизмов которого состоит из одного единственного тождественного автоморфизма. Образно говоря, роль каждой вершины в тождественном графе уникальна.]
+			(* <- lang_ru;; *);;
+			<= nrel_using_constants:
+			{	
+			concept_graph;
+			rrel_vertex
+			};;
+		*);;
+	*);;
+
+concept_graph => nrel_inclusion: concept_equal_graph;;

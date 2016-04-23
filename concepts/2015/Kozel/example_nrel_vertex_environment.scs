@@ -1,0 +1,11 @@
+concept_graph ->..graph_example_vertex_environment;;
+..graph_example_vertex_environment -> rrel_vertex : v1; v2 ; v3 ; v4 ; v5 ; v6 ;;
+..graph_example_vertex_environment ->rrel_edge : 	(v1 <=> v2)  ; (v3 <=> v2)  ; (v4 <=> v2)  ; (v4 <=> v5)  ; (v3 <=> v5)  ; (v3 <=> v6)  ; (v5 <=> v6)  ;;
+nrel_vertex_environment  -> rrel_example : ... 
+		(*
+			->rrel_1 : ..graph_example_vertex_environment ;;
+			->rrel_2 : v5;;
+			->rrel_3 : ... (*
+									->v4 ; v6 ; v3;;
+							*);;
+		*);;

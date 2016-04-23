@@ -1,0 +1,50 @@
+sc_node_norole_relation ->nrel_weight;;
+sc_relation -> nrel_weight;;
+ternary_relation -> nrel_weight;;
+oriented_relation ->nrel_weight;;
+nrel_weight
+=> nrel_arity_of_relations: 3 (* <- number ;;*);
+	
+ => nrel_main_idtf: 
+		[вес*] (* <-lang_ru;; *);
+		[weight*] (* <-lang_en;; *);
+=> nrel_idtf : [вес ребра*]  (* <-lang_ru;; *);
+<-rrel_key_sc_element:
+		...  
+		(*<-sc_definition;;
+		=> nrel_main_idtf: [Опр.(вес ребра)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:
+			...
+			(*
+				-> rrel_example: 
+				[ Вес ребра- значение, поставленное в соответствие данному ребру взвешенного графа.] (*<-lang_ru;;*);;
+			*);;
+		*);
+	
+			
+<-rrel_key_sc_element: ...
+	(*
+		=>nrel_main_idtf:[Утв.(вес )](*<-lang_ru;;*);;
+		<- sc_statement;;	
+		<=nrel_sc_text_translation:
+			...
+			(*
+				-> rrel_example: [ Обычно, вес — вещественное число, в таком случае его можно интерпретировать как «длину» ребра.] (*<-lang_ru;;*);;
+			*);;
+	
+		
+	*);
+=> nrel_definitional_domain:
+	...
+	(*
+	<= nrel_combination: 
+		{
+		concept_graph;
+		rrel_edge;
+		number
+		};;
+	*);
+
+=>nrel_first_domain : concept_graph;
+ => nrel_second_domain: rrel_edge;
+=>nrel_third_domain :number;;

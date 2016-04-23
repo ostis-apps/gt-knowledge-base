@@ -1,0 +1,38 @@
+sc_node_norole_relation ->nrel_inradius;;
+binary_relation -> nrel_inradius;;
+oriented_relation ->nrel_inradius;;
+
+nrel_inradius
+	=> nrel_main_idtf: 
+		[ внутренний радиус* ] (* <-lang_ru;; *);
+		[ inradius* ] (* <-lang_en;; *);
+
+	<-rrel_key_sc_element:
+		...  
+		(*<-sc_definition;;
+		=> nrel_main_idtf: [Опр.(внутренний радиус)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:
+		...
+			(*
+				-> rrel_example: 
+				[Внутренний радиус - число внутреннего разделения вершины, являющейся внутренним центром.] (*<-lang_ru;;*);;		
+			*);;
+		*);
+<= nrel_using_constants:
+							{
+								nrel_incentre;
+								nrel_inseparation_number
+							};
+
+=> nrel_definitional_domain:
+...
+(*
+				<= nrel_combination:
+					...
+						(*
+								->concept_vertex;;
+								->number;;
+							*);;
+*);
+ => nrel_first_domain: concept_vertex;
+ => nrel_second_domain: concept_number;;

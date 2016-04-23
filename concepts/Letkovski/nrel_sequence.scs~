@@ -1,0 +1,94 @@
+sc_node_norole_relation 
+->nrel_integration;
+->nrel_definitional_domain;
+->nrel_third_domain;
+->nrel_sequence;;
+
+
+nrel_sequence
+=> nrel_main_idtf:
+[ маршрут* ] (* <-lang_ru;; *);
+[ sequence* ] (* <-lang_en;; *);
+
+=> nrel_arity_of_relations: 3 (* <- number ;;*);
+
+
+<-rrel_key_sc_element:
+...
+(*<-sc_definition;;
+=> nrel_main_idtf: [Опр.(маршрут)] (* <- lang_ru;; *);;
+<=nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Маршрут в графе — это чередующаяся последовательность вершин и рёбер v_0, e_1, v_1, e_2, v_2, ... , e_k, v_k, вкоторой любые два соседних элемента инцидентны.] (*<-lang_ru;;*);;
+<= nrel_using_constants:
+	{
+		nrel_incidence;
+		rrel_vertex;
+		rrel_edge
+	};;	
+*);;
+*);
+<-rrel_key_sc_element: ...
+(*
+=>nrel_main_idtf:[Утв.(маршрут) ](*<-lang_ru;;*);;
+<- sc_statement;;
+<=nrel_sc_text_translation:
+...
+(*
+-> rrel_example: [Маршрут конечен, если число входящих в него рёбер конечно и бесконечен в противном случае.] (*<-lang_ru;;*);;
+<= nrel_using_constants:
+	{
+		rrel_edge
+	};;
+*);;
+*);
+... (*
+=>nrel_main_idtf:[Утв.(маршрут) ](*<-lang_ru;;*);;
+<- sc_statement;;
+<=nrel_sc_text_translation:
+...
+(*
+-> rrel_example: [Маршрут без повторяющихся рёбер называется цепью.] (*<-lang_ru;;*);;
+<= nrel_using_constants:
+	{
+		rrel_edge
+	};;	
+*);;
+*);
+... (*
+=>nrel_main_idtf:[Утв.(маршрут) ](*<-lang_ru;;*);;
+<- sc_statement;;
+<=nrel_sc_text_translation:
+...
+(*
+-> rrel_example: [Маршрут без повторяющихся вершин называется простой цепью.] (*<-lang_ru;;*);;
+<= nrel_using_constants:
+	{
+		rrel_vertex
+	};;	
+*);;
+*);
+=> nrel_definitional_domain:
+...
+(*
+<= nrel_integration:
+...
+(*
+->concept_graph;;
+->set_of_correspondences;;
+*);;
+*);
+=> nrel_first_domain:
+concept_graph;
+=> nrel_second_domain:
+concept_graph;
+=> nrel_third_domain:
+set_of_correspondences;;
+
+
+nrel_definitional_domain => nrel_main_idtf:[область определения*](* <-lang_ru;;*);;
+nrel_integration => nrel_main_idtf: [объединение*](*<-lang_ru;;*);;
+set_of_correspondences => nrel_main_idtf: [множество соответствий элементов графов](*<-lang_ru;;*);;
+nrel_third_domain => nrel_main_idtf: [третий домен*](*<-lang_ru;;*);;

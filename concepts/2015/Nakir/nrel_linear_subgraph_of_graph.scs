@@ -1,0 +1,33 @@
+sc_node_norole_relation ->nrel_linear_subgraph_of_graph;;
+binary_relation -> nrel_linear_subgraph_of_graph;;
+oriented_relation ->nrel_linear_subgraph_of_graph;;
+
+nrel_linear_subgraph_of_graph
+	=> nrel_main_idtf: 
+		[ линейный подграф графа* ] (* <-lang_ru;; *);
+		[ linear subgraph of a graph* ] (* <-lang_en;; *);
+
+	<-rrel_key_sc_element:
+		...  
+		(*<-sc_definition;;
+		=> nrel_main_idtf: [Опр.(линейный подграф графа)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:
+		...
+			(*
+				-> rrel_example: 
+				[Линейный подграф графа - линейный подграф орграфа, получаемого из исходного графа заменой каждого ребра парой противоположно ориентированных дуг.] (*<-lang_ru;;*);;	
+			*);;
+		*);
+	
+<= nrel_using_constants:
+							{
+								nrel_linear_subgraph_of_digraph;
+								concept_graph;
+								rrel_arc;
+								rrel_edge
+							};			
+
+
+=> nrel_definitional_domain:concept_graph;
+ => nrel_first_domain: concept_graph;
+ => nrel_second_domain:	concept_graph;;

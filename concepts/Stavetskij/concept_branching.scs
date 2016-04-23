@@ -1,0 +1,24 @@
+sc_node_not_relation -> concept_branching;;
+concept_branching
+=> nrel_main_idtf: 
+	[лес] (* <-lang_ru;; *);
+	[branching] (* <-lang_en;; *);
+
+<-rrel_key_sc_element:
+		...  
+		(*<-sc_definition;;
+		=> nrel_main_idtf: [Опр.(Лес)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				[Лес – неориентированный граф без циклов.] (*<-lang_ru;;*);;
+			*);;
+		*);
+<= nrel_using_constants: {
+			nrel_cycle;
+			concept_undirected_graph
+			};;
+
+concept_graph => nrel_inclusion:concept_branching;;
+		

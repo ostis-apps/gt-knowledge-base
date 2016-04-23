@@ -1,0 +1,22 @@
+sc_node_not_relation -> concept_factor_graph;;
+concept_factor_graph => nrel_main_idtf:
+	[Фактор-граф] (* <- lang_ru;;*);
+	[Factor-graph] (* <- lang_en;;*);;
+concept_factor_graph <- rrel_key_sc_element: ...  
+	(*
+	=> nrel_main_idtf: [Опр.(Управляющий граф)] (* <- lang_ru;; *);;
+	<- sc_definition;; 
+	<= nrel_sc_text_translation: ... (*
+		-> rrel_example: 
+			[Фактор-граф(Factor-graph)
+- пусть в графе выделены максимальные непересекающиеся подграфы заданного вида; тогда Ф.-г. есть граф, получаемый из исходного стягиванием указанных подграфов в отдельные вершины.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+	<= nrel_using_constants: {	
+				concept_graph;
+				rrel_edge;
+				concept_orgraph
+			};;
+concept_factor_graph -> rrel_example: example_factor_graph;; 
+concept_graph => nrel_inclusion: concept_factor_graph;;

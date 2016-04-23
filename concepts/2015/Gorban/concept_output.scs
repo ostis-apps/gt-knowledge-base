@@ -1,0 +1,16 @@
+concept_output
+	<- sc_node_not_relation;
+
+	=> nrel_main_idtf: [выход] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [output] (* <- lang_en;; *);
+
+	<- rrel_key_sc_element: ... (*
+		<- sc_definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: [вершина в орграфе, полустепень исхода которой равна 0, а полустепень захода больше нуля.] (* <- lang_ru;; *);;
+			<= nrel_using_constants: {
+				concept_vertex;
+				concept_directed_graph
+			};;
+		*);;
+	*);;

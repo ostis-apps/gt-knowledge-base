@@ -1,0 +1,18 @@
+concept_binary_tree
+	<- sc_node_not_relation;
+
+	=> nrel_main_idtf: [бинарное дерево] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [binary tree] (* <- lang_en;; *);
+
+	<= nrel_inclusion: concept_directed_tree;
+
+	<- rrel_key_sc_element: ... (*
+		<- sc_definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: [ордерево, растущее из корня, причем из каждой вершины исходит не более двух дуг, помеченных как правая или левая дуга.] (* <- lang_ru;; *);;
+			<= nrel_using_constants: {
+				concept_directed_tree;
+				rrel_vertex
+			};;
+		*);;
+	*);;

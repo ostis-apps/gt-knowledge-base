@@ -1,0 +1,7 @@
+concept_rooted_tree ->rrel_example : ..graph;;
+..graph -> rrel_vertex :v1; v2 ; v3 ; v4 ; v5 ; v6  ;;
+..graph -> rrel_tree_root : v1;;
+..graph ->rrel_edge : 	(v1 <=> v2) ; (v3 <=> v2)  ; (v4 <=> v2)  ; (v4 <=> v5)  ; (v4 <=> v6)  ; (v5 <=> v6)  ;;
+
+
+

@@ -1,0 +1,63 @@
+sc_node_norole_relation -> nrel_diametr_gt;;
+ 
+nrel_diametr_gt => nrel_main_idtf:
+	[диаметр графа*](* <- lang_ru;; *);
+	[daimetr of the graph*]	(* <- lang_en;; *);;
+
+nrel_diametr_gt => nrel_arity_of_relations: 2 (* <- number ;;*);;
+nrel_diametr_gt => nrel_idtf: [быть диаметром графа*] (* <- lang_ru;; *);;
+nrel_diametr_gt <- oriented_relation;;	
+
+nrel_diametr_gt <= nrel_definitional_domain: 
+	...
+	(*
+	<= nrel_combination: 
+		{
+		number; 
+		concept_graph
+		};;
+	*);;
+
+nrel_diametr_gt => nrel_first_domain:concept_graph;;
+nrel_diametr_gt => nrel_second_domain: number;;
+
+nrel_diametr_gt <- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(диаметр графа*)] (* <- lang_ru;; *);;
+	<- sc_definition;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Диаметром связного графа называется максимально возможное расстояние между двумя его вершинами.](* <- lang_ru;; *);;
+		*);;
+	*);; 
+
+
+nrel_diametr_gt <= nrel_using_constants:
+			{
+				rrel_vertex;
+				concept_eccentricity;
+				concept_graph
+			};;
+
+nrel_diametr <- rrel_key_sc_element:...
+			(*
+			=>nrel_main_idtf:[Утв.(О диаметре графа) ](*<-lang_ru;;*);;
+			<- sc_statement;;	
+			<=nrel_sc_text_translation:
+			...
+			(*
+				-> rrel_example: 
+				 [Диаметр графа, не имеющего ребер, равен нулю.] (*<-lang_ru;;*);;	
+			*);;
+		*);;
+
+nrel_diametr->rrel_example:(G0 => 5);;
+
+G0
+<-concept_graph;;
+
+5
+<-number;;

@@ -1,0 +1,10 @@
+concept_graph -> ..graph ;;
+..graph -> rrel_vertex : v1 ; v2 ; v3 ; v4 ;;
+..graph -> rrel_edge : ( v1 -> v2 ) ; ( v1 <- v3 ) ; ( v1 -> v4 ) ;;
+
+nrel_vertex_outcome_degree -> rrel_example : ... 
+	(*
+		->rrel_1 : ..graph;;
+		->rrel_2 : v1;;
+		->rrel_3 : [2] (* <-number ;; *);; 
+	*);;

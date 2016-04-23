@@ -1,0 +1,32 @@
+sc_node_not_relation->concept_variable_vertex;;
+
+concept_variable_vertex	=> nrel_main_idtf: 
+		[переменная вершина] (* <-lang_ru;; *);
+		[variable vertex] (* <-lang_en;; *);;
+
+concept_variable_vertex	<- rrel_key_sc_element:
+		...  
+		(*<-sc_definition;;
+		=> nrel_main_idtf: [Опр.(переменная вершина)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example: 
+				[Переменная вершина - вершина, помеченная некоторой переменной.] (*<-lang_ru;;*);;
+<= nrel_using_constants: rrel_vertex;;	
+
+			*);;
+		*);;
+
+concept_variable_vertex <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/var.png";;
+			*);;
+	*);;
+rrel_vertex => nrel_inclusion: concept_variable_vertex;;

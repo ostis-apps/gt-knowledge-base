@@ -1,0 +1,36 @@
+sc_node_not_relation->concept_maximal_planar_graph;;
+
+concept_maximal_planar_graph	=> nrel_main_idtf: 
+		[ максимальный планарный граф] (* <-lang_ru;; *);
+		[ maximal planar graph] (* <-lang_en;; *);;
+
+concept_maximal_planar_graph	<- rrel_key_sc_element:
+		...  
+		(*<-sc_definition;;
+		=> nrel_main_idtf: [Опр.(максимальный планарный граф)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example: 
+				[Максимальный планарный граф - граф , который при добавлении любого ребра , станет не планарным.] (*<-lang_ru;;*);;
+<= nrel_using_constants:
+							{
+								concept_graph;
+								rrel_edge;
+								concept_planar_graph
+							};;	
+			*);;
+		*);;
+
+concept_maximal_planar_graph <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/planar_graph.gif";;
+			*);;
+	*);;
+concept_planar_graph =>nrel_inclusion : concept_maximal_planar_graph;;

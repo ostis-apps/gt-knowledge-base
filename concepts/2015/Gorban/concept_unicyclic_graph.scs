@@ -1,0 +1,16 @@
+concept_unicyclic_graph
+	<- sc_node_not_relation;
+
+	=> nrel_main_idtf: [Унициклический граф] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [unicyclic graph] (* <- lang_en;; *);
+
+	<- rrel_key_sc_element: ... (*
+		<- sc_definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: [граф, имеющий в точности один цикл.] (* <- lang_ru;; *);;
+			<= nrel_using_constants: {
+				concept_graph;
+				concept_cycle
+				};;
+			*);;
+	*);;

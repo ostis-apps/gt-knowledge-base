@@ -1,0 +1,58 @@
+sc_node_norole_relation -> nrel_vertex_degree;;
+ 
+nrel_vertex_degree => nrel_main_idtf:
+	[степень вершины*]
+	(* <- lang_ru;; *);
+	[degree of the vertex*]
+	(* <- lang_en;; *);;
+
+nrel_vertex_degree => nrel_arity_of_relations: 2 
+	(* <- number ;;*);;
+
+nrel_vertex_degree <- oriented_relation;;
+	
+
+nrel_vertex_degree <= nrel_definitional_domain: 
+	...
+	(*
+	<= nrel_combination: 
+		{
+		number; 
+		rrel_vertex
+		};;
+	*);;
+
+nrel_vertex_degree => nrel_first_domain:
+	rrel_vertex;;
+
+
+nrel_vertex_degree => nrel_second_domain: 
+	number;;
+
+nrel_vertex_degree <- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(степень вершины*)] (* <- lang_ru;; *);;
+	<- sc_definition;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Степень вершины - количество ребер, инцидентных этой вершине.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);; 
+
+nrel_vertex_degree <= nrel_using_constants:
+			{
+				rrel_vertex;
+				rrel_edge
+			};;
+
+nrel_vertex_degree->rrel_example:(V1 => 5);;
+
+V1
+<-rrel_vertex;;
+
+5
+<-number;;

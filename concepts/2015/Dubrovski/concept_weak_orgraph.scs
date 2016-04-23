@@ -1,0 +1,20 @@
+sc_node_not_relation -> concept_weak_orgraph;;
+concept_weak_orgraph => nrel_main_idtf:
+	[Слабый орграф] (* <- lang_ru;;*);
+	[Weak orgraph] (* <- lang_en;;*);;
+concept_weak_orgraph <- rrel_key_sc_element: ...  
+	(*
+	=> nrel_main_idtf: [Опр.(Слабый орграф)] (* <- lang_ru;; *);;
+	<- sc_definition;; 
+	<= nrel_sc_text_translation: ... (*
+		-> rrel_example: 
+			[Слабый орграф - то же, что и Слабо связный граф.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+	<= nrel_using_constants: {	
+				concept_graph;
+				rrel_edge
+			};;
+concept_weak_orgraph -> rrel_example: example_weak_orgraph;; 
+concept_graph => nrel_inclusion: concept_weak_orgraph;;

@@ -1,0 +1,42 @@
+sc_node_norole_relation ->nrel_digraph_complement;;
+
+sc_relation -> nrel_digraph_complement;;
+
+binary_relation -> nrel_digraph_complement;;
+
+non_oriented_relation -> nrel_digraph_complement;;
+
+nrel_digraph_complement
+	=> nrel_main_idtf: 
+		[ обратный орграф* ] (* <-lang_ru;; *);
+		[ complement of digraph* ] (* <-lang_en;; *);
+	=> nrel_idtf : [дополнение орграфа] (* <-lang_ru;; *);
+
+	<-rrel_key_sc_element:
+		...  
+		(*<-sc_definition;;
+	=> nrel_main_idtf: [Опр.(обратный орграф)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:
+		...
+			(*
+				-> rrel_example: 
+				[Орграф D' , называется обратным к орграфу D, 
+				если он имеет те же вершины , что и в D , а дуга  
+				uw принадлежит D' тогда и только тогда , когда дуга wu принадлежит D.] (*<-lang_ru;;*);;
+<= nrel_using_constants:
+							{
+								concept_directed_graph;
+								concept_vertex
+							};;	
+			*);;
+		*);
+	
+		
+=> nrel_definitional_domain: concept_directed_graph;
+
+ => nrel_first_domain: 
+	concept_directed_graph;
+
+ => nrel_second_domain: 
+	concept_directed_graph;;
+

@@ -1,0 +1,52 @@
+sc_node_norole_relation -> nrel_eccentricity;;
+ 
+nrel_eccentricity => nrel_main_idtf:
+	[экцентриситет*]
+	(* <- lang_ru;; *);
+	[eccentricity*]
+	(* <- lang_en;; *);;
+
+nrel_eccentricity => nrel_arity_of_relations: 2 
+	(* <- number ;;*);;
+
+nrel_eccentricity => nrel_idtf: [быть экцентриситетом*] (* <- lang_ru;; *);;
+
+nrel_eccentricity => nrel_idtf: [быть экцентриситетом*] (* <- lang_ru;; *);;
+	
+
+nrel_eccentricity <= nrel_definitional_domain: 
+	...
+	(*
+	<= nrel_combination: 
+		{
+		number; 
+		rrel_vertex
+		};;
+	*);;
+
+nrel_eccentricity => nrel_first_domain:
+	concept_node;;
+
+
+nrel_eccentricity => nrel_second_domain: 
+	number;;
+
+nrel_eccentricity <- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(эксцентриситет*)] (* <- lang_ru;; *);;
+	<- sc_definition;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Эксцентриситет вершины — максимальное расстояние из всех минимальных расстояний от других вершин до данной вершины.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+	
+	<= nrel_using_constants:
+			{
+				rrel_vertex;
+				concept_graph
+			};; 

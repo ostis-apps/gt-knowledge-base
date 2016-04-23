@@ -1,0 +1,21 @@
+sc_node_not_relation -> concept_perfect_graph;;
+concept_perfect_graph => nrel_main_idtf:
+	[Совершенный граф] (* <- lang_ru;;*);
+	[Perfect graph] (* <- lang_en;;*);;
+concept_perfect_graph <- rrel_key_sc_element: ...  
+	(*
+	=> nrel_main_idtf: [Опр.(Совершенный граф)] (* <- lang_ru;; *);;
+	<- sc_definition;; 
+	<= nrel_sc_text_translation: ... (*
+		-> rrel_example: 
+			[Совершенный граф(Perfect graph)
+- граф, обладающий тем свойством, что хроматическое число и плотность равны не только у самого графа, но и у каждого его подграфа (порожденного подграфа). См. также Гипотеза Бержа.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+	<= nrel_using_constants: {	
+				concept_graph;
+				concept_subgraph
+			};;
+concept_perfect_graph -> rrel_example: example_perfect_graph; 
+concept_graph => nrel_inclusion: concept_perfect_graph;;

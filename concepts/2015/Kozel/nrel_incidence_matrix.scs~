@@ -1,0 +1,59 @@
+sc_node_norole_relation ->nrel_incidence_matrix;;
+sc_relation -> nrel_incidence_matrix;;
+ternary_relation -> nrel_incidence_matrix;;
+oriented_relation -> nrel_incidence_matrix;;
+
+nrel_incidence_matrix
+	=> nrel_main_idtf: 
+		[ матрица инцидентности* ] (* <-lang_ru;; *);
+		[ incidence matrix* ] (* <-lang_en;; *);
+
+=> nrel_arity_of_relations: 3 (* <- number ;;*);
+<-rrel_key_sc_element:
+		...  
+		(*<-sc_definition;;
+		=> nrel_main_idtf: [Опр.(матрица инцидентности)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:
+		...
+			(*
+				-> rrel_example: 
+				[Матрица инцидентности графа — это матрица, значения элементов которой характеризуется инцидентностью соответствующих вершин графа (по вертикали) и его рёбер (по горизонтали).] (*<-lang_ru;;*);;	
+			*);;
+		*);
+<= nrel_using_constants:
+							{
+								concept_graph;
+								nrel_path_gt
+							};	
+=> nrel_definitional_domain:
+...
+(*
+				<= nrel_integration:
+					...
+						(*
+								->concept_graph;;
+								->concept_matrix;;
+								->set_of_correspondences;;
+							*);;
+*);
+ => nrel_first_domain: 
+	concept_graph;
+
+ => nrel_second_domain: 
+	concept_matrix;
+
+
+=> nrel_third_domain: 
+	set_of_correspondences;
+
+<- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+			"file://contents/nrel_incidence_matrix.png";;
+			*);;
+	*);;

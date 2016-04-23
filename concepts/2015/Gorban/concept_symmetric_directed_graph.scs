@@ -1,0 +1,15 @@
+concept_symmetric_directed_graph
+	<- sc_node_not_relation;
+
+	=> nrel_main_idtf: [симметричный орграф] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [symmetric directed graph] (* <- lang_en;; *);
+
+	<- rrel_key_sc_element: ... (*
+		<- sc_definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: [орграф, у которого две смежные вершины всегда соединены двумя противоположно ориентированными дугами.] (* <- lang_ru;; *);;
+			<= nrel_using_constants: {
+				concept_directed_graph
+				};;
+			*);;
+	*);;

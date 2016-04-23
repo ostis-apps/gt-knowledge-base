@@ -1,0 +1,7 @@
+concept_graph ->..graph_example_spanning_tree;;
+..graph_example_spanning_tree -> rrel_vertex : v1; v2 ; v3 ; v4 ; v5 ; v6 ;;
+..graph_example_spanning_tree ->rrel_edge : 	(v1 <=> v2) ; (v3 <=> v2)  ; (v4 <=> v2)  ; (v4 <=> v5)  ; (v3 <=> v5)  ; (v3 <=> v6)  ; (v5 <=> v6)  ;;
+
+nrel_spanning_tree -> rrel_example : ( ..graph_example_spanning_tree => ..ostov);;
+..ostov -> rrel_vertex : v1; v2 ; v3 ; v4 ; v5 ; v6 ;;
+..ostov -> rrel_ednge : (v1 <=> v2) ; (v3 <=> v2)  ; (v4 <=> v2)  ; (v4 <=> v5)   ; (v5 <=> v6)  ;;

@@ -1,0 +1,35 @@
+sc_node_norole_relation->nrel_length_route;;
+
+nrel_length_route=>nrel_main_idtf:
+	[длина маршрута*]
+		(*<-lang_ru;;*);
+	[length of route*]
+		(*<-lang_en;;*);;
+
+nrel_length_route => nrel_arity_of_relations: 2
+	(* <- number ;;*);;
+
+nrel_length_route <- binary_relation;;
+nrel_length_route <- antireflexive_relation;;
+nrel_length_route <- antisymmetric_relation;;
+
+nrel_length_route => nrel_first_domain: concept_graph;;
+nrel_length_route => nrel_second_domain: number;; 
+
+nrel_length_route <- rrel_key_sc_element: 
+     ... 
+	(*
+	<- sc_definition;;
+	=> nrel_main_idtf: [Опр.(Длина маршрута)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: 
+			[Длина маршрута — количество рёбер в маршруте (с повторениями).]
+				(* <- lang_ru;; *);;
+		<= nrel_using_constants:
+				{
+					rrel_edge;
+					nrel_sequence
+				};;
+		*);;
+	*);;

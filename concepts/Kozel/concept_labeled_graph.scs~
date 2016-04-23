@@ -1,0 +1,39 @@
+sc_node_not_relation->concept_labeled_graph;;
+
+concept_labeled_graph
+	
+	=> nrel_main_idtf: 
+		[помеченный граф] (* <-lang_ru;; *);
+		[labeled graph] (* <-lang_en;; *);
+
+	<-rrel_key_sc_element:
+		...  
+		(*<-sc_definition;;
+		=> nrel_main_idtf: [Опр.(помеченный граф)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example: 
+				[Помеченный граф -граф, вершинам которого присвоены какие-либо метки, например, натуральные числа или символы какого-нибудь алфавита.] (*<-lang_ru;;*);;
+<= nrel_using_constants:
+							{
+								concept_graph;		
+								rrel_node	
+							};;	
+			*);;
+		*);
+
+<- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/labeled_graph.png";;
+			*);;
+	*);;
+
+concept_graph => nrel_inclusion: concept_labeled_graph;;
+

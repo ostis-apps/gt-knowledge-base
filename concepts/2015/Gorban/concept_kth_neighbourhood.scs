@@ -1,0 +1,15 @@
+concept_kth_neighbourhood
+	<- sc_node_not_relation;
+
+	=> nrel_main_idtf: [окрестность порядка k] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [k-th neighbourhood] (* <- lang_en;; *);
+
+	<- rrel_key_sc_element: ... (*
+		<- sc_definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: [Множество вершин, отстоящих от v на расстоянии не больше k.] (* <- lang_ru;; *);;
+			<= nrel_using_constants: {
+				concept_vertex
+				};;
+			*);;
+	*);;

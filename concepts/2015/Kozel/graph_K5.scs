@@ -1,0 +1,53 @@
+concept_complete_graph -> rrel_examlpe: K5;;
+concept_unplanar_graph -> K5;;
+K5 ->rrel_node : v1 ; v2 ; v3 ; v4 ; v5;;
+
+K5 ->rrel_edge : (v1 <=>v2);;
+K5 ->rrel_edge : (v1 <=>v3);;
+K5 ->rrel_edge : (v1 <=>v4);;
+K5 ->rrel_edge : (v1 <=>v5);;
+
+K5 ->rrel_edge : (v2 <=>v3);;
+K5 ->rrel_edge : (v2 <=>v4);;
+K5 ->rrel_edge : (v2 <=>v5);;
+
+
+K5 ->rrel_edge : (v3 <=>v4);;
+K5 ->rrel_edge : (v3 <=>v5);;
+
+K5 ->rrel_edge : (v5 <=>v4);;
+
+K5=> nrel_main_idtf: 
+		[K5] (* <-lang_ru;; *);
+		[K5] (* <-lang_en;; *);;
+K5=> nrel__idtf: 
+		[граф K5] (* <-lang_ru;; *);
+		[graph K5] (* <-lang_en;; *);;
+
+K5 <- rrel_key_sc_element: ...
+			(*
+			=>nrel_main_idtf:[Утв. (граф К5)](*<-lang_ru;;*);;
+		<- sc_statement;;	
+		<=nrel_sc_text_translation:
+		...
+			(*
+				-> rrel_example: 
+				 [Граф К5 - полный граф с пятью вершинами . ] (*<-lang_ru;;*);;
+			*);;
+	*);;
+
+K5 <- rrel_key_sc_element: ...
+			(*
+			=>nrel_main_idtf:[Утв. (граф К5,планарность)](*<-lang_ru;;*);;
+		<- sc_statement;;	
+		<=nrel_sc_text_translation:
+		...
+			(*
+				-> rrel_example: 
+				 [Граф К5 - непланарный граф. ] (*<-lang_ru;;*);;
+<= nrel_using_constants:
+							{
+								concept_unplanar_graph
+							};;	
+			*);;
+*);;

@@ -1,0 +1,19 @@
+concept_radially_critical_graph
+	<- sc_node_not_relation;
+
+	=> nrel_main_idtf: [радиально-критический граф] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [radially critical graph] (* <- lang_en;; *);
+
+	<= nrel_inclusion: concept_connected_graph;
+
+	<- rrel_key_sc_element: ... (*
+		<- sc_definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: [связный граф, у которого добавление любого ребра приводит к уменьшению радиуса графа.] (* <- lang_ru;; *);;
+			<= nrel_using_constants: {
+				concept_connected_graph;
+				rrel_edge;
+				nrel_radius
+			};;
+		*);;
+	*);;

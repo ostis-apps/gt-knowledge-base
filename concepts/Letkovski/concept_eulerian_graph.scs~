@@ -1,0 +1,73 @@
+sc_node_not_relation->concept_eulerian_graph;;
+
+
+concept_eulerian_graph
+=> nrel_main_idtf:
+[ эйлеров граф ] (* <-lang_ru;; *);
+[ eulerian_graph ] (* <-lang_en;; *);
+
+
+<-rrel_key_sc_element:
+...
+(*
+<-sc_definition;;
+=> nrel_main_idtf: [Опр.(эйлеров граф)] (* <- lang_ru;; *);;
+<=nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Эйлеров граф-граф, содержащий цикл, проходящий через все его рёбра.] (*<-lang_ru;;*);;	
+*);;
+*);
+<= nrel_using_constants:
+	{
+		concept_graph;
+		nrel_cycle;
+		rrel_edge
+	};
+<-rrel_key_sc_element: ...
+	(*
+	=>nrel_main_idtf:[Утв.(эйлеров граф) ](*<-lang_ru;;*);;
+	<- sc_statement;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Связный граф является эйлеровым тогда и только тогда, когда он не содержит вершин нечётной степени.] (*<-lang_ru;;*);;
+	*);;
+*);
+
+
+<-rrel_key_sc_element: ...
+	(*
+	=>nrel_main_idtf:[Утв.(эйлеров граф) ](*<-lang_ru;;*);;
+	<- sc_statement;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Для связного эйлерова графа множество ребер можно разбить на простые циклы.] (*<-lang_ru;;*);;
+		*);;
+	*);
+<-rrel_key_sc_element: ...
+	=>nrel_main_idtf:[Утв.(эйлеров граф) ](*<-lang_ru;;*);;
+	<- sc_statement;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Связный неориентированный граф будет полуэйлеровым тогда только тогда, когда число вершин нечетной степени 0 или 2.] (*<-lang_ru;;*);;	
+	*);;
+*);
+
+
+<- rrel_key_sc_element:
+...
+(*
+<- sc_illustration;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+"file://contents/eulerian_graph.png";;
+*);;
+*);;
+
+

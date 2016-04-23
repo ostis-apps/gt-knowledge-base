@@ -1,0 +1,6 @@
+concept_graph ->..graph;;
+..graph -> rrel_vertex : v1; v2 ; v3 ; v4 ; v5 ; v6 ;;
+..graph ->rrel_edge : 	(v1 <=> v2) ; (v3 <=> v2)  ; (v4 <=> v2)  ; (v4 <=> v3 );;
+
+nrel_maxi_code -> rrel_example : ( ..graph => ..set);;
+..set ->  [46676] (* <-number ;; *)  ;;

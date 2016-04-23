@@ -1,0 +1,35 @@
+sc_node_not_relation -> graph_polyhedron;;
+
+graph_polyhedron
+=> nrel_main_idtf:
+	[Граф многогранник] (* <-lang_ru;; *);
+	[graph polyhedron] (* <-lang_en;; *);
+
+<-rrel_key_sc_element:
+				...
+				(*
+				<-sc_definition;;  => nrel_main_idtf: [Опр.(граф многогранник)] (* <- lang_ru;; *);;
+				<=nrel_sc_text_translation:
+							...
+							(*
+							->[Граф многогранника — это множество вершин и рёбер многогранника.] (* <-lang_ru;text;; *);;
+				
+									
+
+			*);;
+				*);
+
+<- rrel_key_sc_element:
+			...
+			(*
+		<- sc_statement;;	
+		<=nrel_sc_text_translation:
+		...
+			(*
+				-> rrel_example: 
+				 [в графе многограннике грани больших размерностей игрорируются] (*<-lang_ru;;*);;
+		
+			*);;
+		*);;
+
+concept_connected_graph => nrel_inclusion:graph_polyhedron;;

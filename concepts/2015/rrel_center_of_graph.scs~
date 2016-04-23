@@ -1,0 +1,48 @@
+sc_node_not_relation -> rrel_center_of_graph;;
+
+rrel_center_of_graph => nrel_main_idtf:
+	[центр графа']
+	(* <- lang_ru;;	*);
+	[center of graph']
+	(* <- lang_en;;	*);;
+
+rrel_center_of_graph <- rrel_key_sc_element:
+	...  
+	(*
+	=> nrel_main_idtf: [Опр.(центр графа)] (* <- lang_ru;; *);;
+	<- sc_definition;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Центр графа — вершина,для которой её экцентриситет равен радиусу графа]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+	
+	<= nrel_using_constants:
+			{	
+			concept_graph;
+			nrel_radius;
+			rrel_vertex;
+			nrel_eccentricity
+			};;
+
+	=> nrel_arity_of_relations: 2 (* <- number ;;*);
+	
+	=> nrel_definitional_domain:
+		...
+		(*
+		<= nrel_integration:
+			...
+			(*
+				->concept_graph;;
+				->concept_node;;
+			*);;
+		*);
+	=> nrel_first_domain: concept_graph;
+	=> nrel_second_domain: concept_node;
+
+
+			
+rrel_vertex => nrel_inclution: rrel_center_of_graph;;

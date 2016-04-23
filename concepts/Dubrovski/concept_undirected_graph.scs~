@@ -1,0 +1,76 @@
+sc_node_not_relation -> concept_undirected_graph;;
+
+concept_undirected_graph => nrel_main_idtf:
+	[неориентированный граф]
+	(* <- lang_ru;;	*);
+	[undirected graph]
+	(* <- lang_en;;	*);;
+
+concept_undirected_graph <- rrel_key_sc_element:
+	...  
+	(*
+	=> nrel_main_idtf: [Опр.(неориентированный граф)] (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[неориентированный граф - это граф не имеющий дуг.]
+			(* <- lang_ru;; *);;
+			<= nrel_using_constants:
+			{	
+			concept_graph;
+			concept_arc
+			};;
+		*);;
+	*);;
+
+concept_undirected_graph <- rrel_key_sc_element:
+	... 
+	(*
+	=> nrel_main_idtf: [Утв.(граф; дуга)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Если граф не содержит дуг, то он неориентированный.]
+			(* <- lang_ru;; *);;
+			<= nrel_using_constants:
+			{	
+			concept_graph;
+			rrel_arc
+			};;
+		*);;
+	*);;
+
+concept_undirected_graph <- rrel_key_sc_element:
+	... 
+	(*
+		=> nrel_main_idtf: [Утв.(граф; ребро; вершина)] (* <- lang_ru;; *);;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: 
+		...
+		(*
+			-> rrel_example: 
+				[Если граф состоит только из вершин и ребер то он неориентированный.]
+				(* <- lang_ru;; *);;
+				<= nrel_using_constants:
+				{	
+				concept_graph;
+				rrel_node;
+				rrel_edge
+				};;
+		*);;
+	*);;
+concept_undirected_graph <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_undirected_graph.png";;
+			*);;
+	*);;

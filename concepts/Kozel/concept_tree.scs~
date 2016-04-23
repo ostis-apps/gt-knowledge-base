@@ -1,0 +1,46 @@
+sc_node_not_relation->concept_tree;;
+
+concept_tree=> nrel_main_idtf: 
+		[дерево] (* <-lang_ru;; *);
+		[tree] (* <-lang_en;; *);;
+
+concept_tree<- rrel_key_sc_element:
+		...  
+		(*<-sc_definition;;
+		=> nrel_main_idtf: [Опр.(дерево)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				[Дерево — это связный ациклический граф.] (*<-lang_ru;;*);;
+			*);;
+		*);;
+concept_tree<= nrel_using_constants:
+							{
+								concept_connected_graph;
+								concept_acyclic_graph
+							};;	
+concept_tree <- rrel_key_sc_element:...
+			(*
+			=>nrel_main_idtf:[Утв.(Дерево , использование термина) ](*<-lang_ru;;*);;
+			<- sc_statement;;	
+			<=nrel_sc_text_translation:
+				...
+				(*
+				-> rrel_example: 
+				 [Чаще всего этот термин используется как краткая форма термина корневое дерево.] (*<-lang_ru;;*);;
+			*);;
+		*);;
+
+concept_tree <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/tree.png";;
+			*);;
+	*);;
+concept_acyclic_graph <= nrel_inclusion: concept_tree;;

@@ -1,0 +1,52 @@
+sc_node_not_relation->concept_binary_tree;;
+
+concept_binary_tree	=> nrel_main_idtf: 
+		[бинарное дерево] (* <-lang_ru;; *);
+		[binary tree] (* <-lang_en;; *);;
+
+concept_binary_tree => nrel_idtf : 
+		[двоичное дерево](* <-lang_ru;; *);;
+
+concept_binary_tree<- rrel_key_sc_element:
+		...  
+		(*
+		<-sc_definition;;
+		=> nrel_main_idtf: [Опр.(бинарное дерево)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				[Бинарное дерево — дерево в котором каждая
+				вершина имеет не более двух потомков (детей).] (*<-lang_ru;;*);;	
+			*);;
+		*);;
+concept_binary_tree<= nrel_using_constants : 
+							{
+								concept_tree;
+								concept_vertex	
+							};;
+concept_binary_tree <- rrel_key_sc_element:...
+			(*
+			=>nrel_main_idtf:[Утв.(Бинарное дерево ,обозначения ) ](*<-lang_ru;;*);;
+			<- sc_statement;;	
+			<=nrel_sc_text_translation:
+				...
+				(*
+				-> rrel_example: 
+				 [Как правило, одна из вершин называется предком(родителем),
+				 а дети называются левым и правым потомками(наследниками).] (*<-lang_ru;;*);;	
+			*);;
+		*);;
+
+concept_binary_tree <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_binary_tree.gif";;
+			*);;
+	*);;
+concept_tree => nrel_inclusion: concept_binary_tree;;

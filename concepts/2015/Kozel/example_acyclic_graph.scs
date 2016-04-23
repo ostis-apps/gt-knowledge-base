@@ -1,0 +1,3 @@
+concept_acyclic_graph -> rrel_example : ..graph ;;
+..graph -> rrel_vertex : v1 ; v2 ; v3 ; v4 ; v5 ; v6 ; v7 ; v8 ; v9 ;;
+..graph -> rrel_dedge : ( v1 -> v2 ) ; ( v1 -> v3 ) ; (v2 -> v5 ) ; (v3 -> v4 ) ; (v3 ->v6 ) ; (v5 -> v8 ) ; (v4 ->v7 ) ; ( v6 -> v7 ) ; (v7->v8) ; (v8 -> v9 ) ;;

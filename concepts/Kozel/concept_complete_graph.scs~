@@ -1,0 +1,52 @@
+sc_node_not_relation->concept_complete_graph;;
+
+concept_complete_graph	=> nrel_main_idtf: 
+		[полный граф] (* <-lang_ru;; *);
+		[complete graph] (* <-lang_en;; *);;
+
+concept_complete_graph	<- rrel_key_sc_element:
+		...  
+		(*<-sc_definition;;
+		=> nrel_main_idtf: [Опр.(полный граф)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example: 
+				[Полный граф - граф в котором каждая пара вершин смежна.] (*<-lang_ru;;*);;
+<= nrel_using_constants:
+							{
+								concept_graph;
+								nrel_vertex_adjacency
+							};;	
+			*);;
+		*);;
+
+concept_complete_graph <- rrel_key_sc_element:...
+			(*
+			=>nrel_main_idtf:[Утв.(полный граф,обозначение) ](*<-lang_ru;;*);;
+		<- sc_statement;;	
+		<=nrel_sc_text_translation:
+		...
+			(*
+				-> rrel_example: 
+				 [Полный граф с n вершинами имеет n(n-1)/2 ребер , и обозначается Kn.] (*<-lang_ru;;*);;
+<= nrel_using_constants:
+							{
+								concept_graph;
+								rrel_edge
+							};;	
+			*);;
+		*);;
+
+concept_complete_graph <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/223px-5-simplex_graph.svg.png";;
+			*);;
+	*);;
+concept_graph => nrel_inclusion: concept_complete_graph;;

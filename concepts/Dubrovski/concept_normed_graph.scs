@@ -1,0 +1,24 @@
+sc_node_not_relation -> concept_normed_graph;;
+
+concept_normed_graph => nrel_main_idtf:
+	[нормированный граф](* <- lang_ru;;*);
+	[normed graph](* <- lang_en;;*);;
+
+concept_normed_graph <- rrel_key_sc_element:
+	...  
+	(*
+	=> nrel_main_idtf: [Опр.(нормированный граф)] (* <- lang_ru;; *);;
+	<-sc_definition;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Нормированный граф — ориентированный граф без циклов.](* <- lang_ru;; *);;
+		*);;
+	*);;
+concept_normed_graph<= nrel_using_constants:
+			{	
+			concept_directed_graph;
+			nrel_cycle
+			};;
+concept_directed_graph => nrel_inclusion: concept_normed_graph;;

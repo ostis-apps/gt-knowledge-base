@@ -1,0 +1,38 @@
+sc_node_norole_relation->nrel_linear_section;;
+
+nrel_linear_section=>nrel_main_idtf:
+	[линейный участок*]
+		(*<-lang_ru;;*);
+	[linear section*]
+		(*<-lang_en;;*);;
+
+nrel_linear_section => nrel_arity_of_relations: 2
+	(* <- number ;;*);;
+
+nrel_linear_section <- reflexive_relation;;
+nrel_linear_section <- binary_relation;;
+nrel_linear_section <- transitive_relation;;
+
+nrel_linear_section => nrel_definitional_domain: concept_graph;;
+nrel_linear_section => nrel_first_domain: concept_graph;;
+nrel_linear_section => nrel_second_domain: concept_graph;; 
+
+nrel_linear_section <- rrel_key_sc_element: 
+     ... 
+	(*
+	=> nrel_main_idtf: [Опр.(Линейный участок)] (* <- lang_ru;; *);;
+	<- sc_definition;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: 
+			[Линейный участок - простой путь, состоящий из более чем одной вершины, в управляющем графе такой, что полустепени исхода всех вершин, кроме конечной, и полустепени захода всех вершин, кроме начальной, равны 1.]
+				(* <- lang_ru;; *);;
+		<= nrel_using_constants:
+				{
+					rrel_vertex;
+					concept_control_graph;
+					nrel_vertex_approach_degree;
+					nrel_vertex_outcome_degree
+				};;
+		*);;
+	*);;

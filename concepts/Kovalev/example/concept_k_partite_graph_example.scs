@@ -1,0 +1,19 @@
+concept_k_partite_graph -> rrel_example: concept_k_partite_graph_example
+(*	
+	-> rrel_vertex: V1;;
+	-> rrel_vertex: V2;;
+	-> rrel_vertex: V3;;
+	-> rrel_vertex: V4;;
+	-> rrel_vertex: V5;;
+		
+	->rrel_arc: ( V1 <=> V2 );;
+	->rrel_arc: ( V1 <=> V3 );;
+	->rrel_arc: ( V2 <=> V3 );;
+*);;  
+
+concept_k_partite_graph_example	=> nrel_main_idtf: 
+		[пример 3-дольного граф] (* <-lang_ru;; *);
+		[3-partite graph's example] (* <-lang_en;; *);;
+
+
+

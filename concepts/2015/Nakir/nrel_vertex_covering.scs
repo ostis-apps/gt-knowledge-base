@@ -1,0 +1,41 @@
+sc_node_norole_relation ->nrel_vertex_covering;;
+binary_relation -> nrel_vertex_covering;;
+oriented_relation ->nrel_vertex_covering;;
+
+nrel_vertex_covering
+	=> nrel_main_idtf: 
+		[ вершинное покрытие* ] (* <-lang_ru;; *);
+		[ vertex covering* ] (* <-lang_en;; *);
+
+	<-rrel_key_sc_element:
+		...  
+		(*<-sc_definition;;
+		=> nrel_main_idtf: [Опр.(вершинное покрытие)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:
+		...
+			(*
+				-> rrel_example: 
+				[Вершинное покрытие - множество вершин, покрывающее все ребра графа.] (*<-lang_ru;;*);;	
+			*);;
+		*);
+	
+<= nrel_using_constants:
+							{
+								concept_graph;
+								rrel_edge;
+								rrel_vertex
+							};
+
+
+=> nrel_definitional_domain:
+...
+(*
+				<= nrel_combination:
+					...
+						(*
+								->rrel_vertex;;
+								->concept_graph;;
+						*);;
+*);
+ => nrel_first_domain: 	concept_graph;
+ => nrel_second_domain: rrel_vertex;;

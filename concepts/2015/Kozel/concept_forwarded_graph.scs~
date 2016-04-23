@@ -1,0 +1,36 @@
+sc_node_not_relation->concept_forwarded_graph;;
+
+concept_forwarded_graph	=> nrel_main_idtf: 
+		[направленный  граф] (* <-lang_ru;; *);
+		[forwarded graph] (* <-lang_en;; *);;
+
+concept_forwarded_graph <- rrel_key_sc_element:
+		...  
+		(*<-sc_definition;;
+		<=nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example: 
+				[Направленный граф - ориентированный граф , в котором две вершины соединены не более чем одной дугой.] (*<-lang_ru;;*);;
+			*);;
+		*);;
+<= nrel_using_constants:
+				{
+					concept_directed_graph;
+					rrel_edge;
+					rrel_vertex
+				};;
+
+concept_forwarded_graph <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/directed_graph.png";;
+			*);;
+	*);;
+
+concept_forwarded_graph  <= nrel_inclusion: concept_directed_graph;;

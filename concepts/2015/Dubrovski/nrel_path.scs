@@ -1,0 +1,42 @@
+sc_node_norole_relation->nrel_path;;
+
+nrel_path => nrel_main_idtf:
+	[путь*]
+		(*<-lang_ru;;*);
+	[path*]
+		(*<-lang_en;;*);;
+
+nrel_path => nrel_arity_of_relations: 2 
+	(* <- number ;;*);;
+
+nrel_path <- binary_relation;;
+
+nrel_path <- reflexive_relation;;
+
+nrel_path <- transitive_relation;;
+
+nrel_path => nrel_definitional_domain: concept_directed_graph;;
+nrel_path => nrel_first_domain: concept_graph;;
+nrel_path => nrel_second_domain: concept_graph;; 
+
+
+nrel_path <- rrel_key_sc_element: 
+     ... 
+	(*
+	<- sc_definition;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: 
+			[Путь — последовательность рёбер (в неориентированном графе) и/или дуг (в ориентированном графе), такая, что конец одной дуги (ребра) является началом другой дуги (ребра). Или последовательность вершин и дуг (рёбер) в которой каждый элемент инцидентен предыдущему и последующему. Может рассматриваться как частный случай маршрута.]
+				(* <- lang_ru;; *);;
+		<= nrel_using_constants:
+				{
+				concept_undirected_graph;
+				rrel_arc;
+				nrel_sequence;
+				rrel_node;
+				rrel_edge;
+				concept_graph
+				};;
+		*);;
+	*);;

@@ -1,0 +1,44 @@
+sc_node_norole_relation -> nrel_vertex_outcome_degree;;
+ 
+nrel_vertex_outcome_degree => nrel_main_idtf:
+	[степень исхода вершины*](* <- lang_ru;; *);
+	[vertex outcome degree*](* <- lang_en;; *);;
+
+sc_relation ->nrel_vertex_outcome_degree;;
+ternary_relation -> nrel_vertex_outcome_degree;;
+oriented_relation ->nrel_vertex_outcome_degree;;
+
+nrel_vertex_outcome_degree <= nrel_definitional_domain: 
+	...
+	(*
+	<= nrel_combination: 
+		{
+		concept_directed_graph;
+		number; 
+		concept_vertex
+		};;
+	*);;
+
+nrel_vertex_outcome_degree => nrel_first_domain:concept_directed_graph;;
+
+
+nrel_vertex_outcome_degree => nrel_second_domain: number;;
+
+nrel_vertex_outcome_degree => nrel_third_domain : concept_vertex;;
+
+nrel_vertex_outcome_degree <- rrel_key_sc_element: 
+	...
+	(*
+	=> nrel_main_idtf: [Опр.(степень исхода вершины*)] (* <- lang_ru;; *);;
+	<- sc_definition;;   
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Степень исхода вершины - количество дуг , выходящих в вершину.](* <- lang_ru;; *);;
+		*);;
+	*);; 
+nrel_vertex_outcome_degree<= nrel_using_constants:
+			{
+				rrel_vertex
+			};;

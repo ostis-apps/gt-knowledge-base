@@ -1,0 +1,24 @@
+sc_node_not_relation -> concept_split_graph;;
+concept_split_graph
+
+	=> nrel_main_idtf: 
+		[расщепляемый граф] (* <-lang_ru;; *);
+		[split graph] (* <-lang_en;; *);
+
+	<-rrel_key_sc_element:
+		...  
+		(*<-sc_definition;;
+		=> nrel_main_idtf: [Опр.(расщепляемый граф)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example: 
+				[расщепляемый граф — граф, для которого существует разбиение множества его вершин на клику и независимое множество.] (*<-lang_ru;;*);;
+			*);;
+		*);
+	<= nrel_using_constants: {
+			rrel_vertex;
+			concept_graph
+	};;
+
+concept_graph => nrel_inclusion:concept_split_graph;;

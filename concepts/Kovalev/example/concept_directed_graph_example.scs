@@ -1,0 +1,21 @@
+concept_directed_graph -> rrel_example: concept_directed_graph_example
+(*	
+	-> rrel_vertex: V1;;
+	-> rrel_vertex: V2;;
+	-> rrel_vertex: V3;;
+	-> rrel_vertex: V4;;
+	-> rrel_vertex: V5;;
+		
+	->rrel_arc: ( V1 => V2 );;
+	->rrel_arc: ( V2 => V3 );;
+	->rrel_arc: ( V3 => V4 );;
+	->rrel_arc: ( V4 => V5 );;
+	->rrel_arc: ( V5 => V1 );;
+*);;
+
+concept_directed_graph_example
+	=> nrel_main_idtf: 
+		[пример ориетированного графа] 
+			(* <-lang_ru;; *);
+		[directed graph's example] 
+			(* <-lang_en;; *);;

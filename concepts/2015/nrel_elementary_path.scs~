@@ -1,0 +1,48 @@
+sc_node_norole_relation  -> nrel_elementary_path;;
+
+
+nrel_elementary_path
+	=> nrel_main_idtf:
+		[ элементарный путь*] (* <-lang_ru;; *);
+		[ elementary path*] (* <-lang_en;; *);
+
+
+	<-rrel_key_sc_element:
+	...
+		(*<-sc_definition;;
+		=> nrel_main_idtf: [Опр.(элементарный путь)] (* <- lang_ru;; *);;
+			<=nrel_sc_text_translation:
+			...
+			(*
+				-> rrel_example:
+				[элементарный путь —  путь, вершины которого, за исключением, первой и последней, различны.] (*<-lang_ru;;*);;	
+			*);;
+		*);
+
+	<= nrel_using_constants:
+	{
+		rrel_vertex;
+		nrel_path_in_graph
+	};
+	
+	=> nrel_arity_of_relations: 3 (* <- number ;;*);
+	
+	=> nrel_first_domain:
+		concept_graph;
+	=> nrel_second_domain:
+		concept_graph;
+	=> nrel_third_domain:
+		set_of_correspondences;
+		
+	<-rrel_key_sc_element: ...
+	(*
+		=>nrel_main_idtf:[Утв.(элементарный путь) ](*<-lang_ru;;*);;
+		<- sc_statement;;
+		<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [элементарный путь не проходит дважды через одну вершину ] (*<-lang_ru;;*);;
+		*);;
+	*);;
+
+nrel_path_in_graph => nrel_inclution: nrel_elementary_path;;

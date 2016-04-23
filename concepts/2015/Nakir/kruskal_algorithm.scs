@@ -1,0 +1,23 @@
+sc_node_not_relation->kruskal_algorithm;;
+
+kruskal_algorithm	=> nrel_main_idtf: 
+		[алгоритм Краскала] (* <-lang_ru;; *);
+		[Kruskal algorithm] (* <-lang_en;; *);;
+
+kruskal_algorithm	<- rrel_key_sc_element:
+		...  
+		(*<-sc_definition;;
+		=> nrel_main_idtf: [Опр.(алгоритм Краскала)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example: 
+				[Алгоритм Краскала - алгоритм построения каркаса графа путем последовательного удаления в соответствии с некоторой упорядоченностью ребер графа без нарушения связности получаемой части графа.] (*<-lang_ru;;*);;	
+			*);;
+		*);;
+kruskal_algorithm<= nrel_using_constants:
+							{
+								nrel_spanning_tree;
+								rrel_edge;
+								concept_graph
+							};;

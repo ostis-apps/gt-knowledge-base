@@ -1,0 +1,51 @@
+sc_node_norole_relation ->nrel_connectivity;;
+
+binary_relation -> nrel_connectivity;;
+
+oriented_relation ->nrel_connectivity;;
+
+nrel_connectivity
+	=> nrel_main_idtf: 
+		[ связность* ] (* <-lang_ru;; *);
+		[ connectivity* ] (* <-lang_en;; *);
+
+	=> nrel_idtf: 
+		[ вершинная связность* ] (* <-lang_ru;; *);
+
+	<-rrel_key_sc_element:
+		...  
+		(*<-sc_definition;;
+	=> nrel_main_idtf: [Опр.(связность)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:
+		...
+			(*
+				-> rrel_example: 
+				[Связность - наименьшее число вершин, удаление которых приводит к несвязному или тривиальному графу.] (*<-lang_ru;;*);;
+<= nrel_using_constants:
+							{
+								rrel_vertex;
+								concept_disconnected_graph;
+								concept_trivial_graph
+							};;	
+			*);;
+		*);
+	
+			
+
+
+=> nrel_definitional_domain:
+...
+(*
+				<= nrel_integration:
+					...
+						(*
+								->concept_graph;;
+								->rrel_vertex;;
+							*);;
+*);
+ => nrel_first_domain: 
+	concept_graph;
+
+
+ => nrel_second_domain: 
+	rrel_vertex;;

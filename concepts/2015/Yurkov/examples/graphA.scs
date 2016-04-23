@@ -1,0 +1,12 @@
+concept_connected_graph->A(*
+	->rrel_vertex: a1;;
+	->rrel_vertex: a2;;
+	->rrel_vertex: a3;;
+	-> rrel_vertex: a4;;
+	-> rrel_vertex: a5;;
+	->rrel_edge: ( a1 => a2 );;
+	->rrel_edge: ( a2 => a3 );;
+	->rrel_edge: ( a3 => a4 );;
+	->rrel_edge: ( a4 => a5 );;
+	->rrel_edge: ( a3 => a1 );;
+*);;

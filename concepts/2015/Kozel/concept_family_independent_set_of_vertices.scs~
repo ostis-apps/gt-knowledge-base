@@ -1,0 +1,27 @@
+sc_node_not_relation ->concept_family_independent_set_of_vertices;;
+
+concept_family_independent_set_of_vertices
+=> nrel_main_idtf: 
+		[ семейство всех независимых множеств вершин] (* <-lang_ru;; *);
+		[ the family of all independent sets of vertices] (* <-lang_en;; *);
+=>nrel_idtf:
+		[ множество всех независимых множеств вершин] (* <-lang_ru;; *);
+		[ set of all independent sets of vertices ] (* <-lang_en;; *);
+
+<-rrel_key_sc_element:
+		...  
+		(*
+		<-sc_definition;;
+		=> nrel_main_idtf: [Опр.(семейство всех независимых множеств вершин)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:
+			...
+			(*
+				-> rrel_example: 
+				[Семейство всех независимых множеств вершин - множство всех независимых множеств вершин.] (*<-lang_ru;;*);;	
+			*);;
+		*);;
+<= nrel_using_constants:
+			{
+			nrel_independent_set_of_vertices;
+			set
+			};;

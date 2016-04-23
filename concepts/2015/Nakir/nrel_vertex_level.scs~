@@ -1,0 +1,48 @@
+sc_node_norole_relation ->nrel_vertex_level;;
+
+binary_relation -> nrel_vertex_level;;
+
+oriented_relation ->nrel_vertex_level;;
+
+nrel_vertex_level
+	=> nrel_main_idtf: 
+		[ уровень вершины* ] (* <-lang_ru;; *);
+		[ vertex level* ] (* <-lang_en;; *);
+
+	<-rrel_key_sc_element:
+		...  
+		(*<-sc_definition;;
+	=> nrel_main_idtf: [Опр.(уровень вершины)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:
+		...
+			(*
+				-> rrel_example: 
+				[Уровень вершины - в ордереве (корневом дереве) расстояние от корня дерева до рассматриваемой вершины.] (*<-lang_ru;;*);;
+<= nrel_using_constants:
+							{
+								concept_directed_tree;
+								concept_tree_root;
+								rrel_vertex
+							};;	
+			*);;
+		*);
+	
+			
+
+
+=> nrel_definitional_domain:
+...
+(*
+				<= nrel_integration:
+					...
+						(*
+								->rrel_vertex;;
+								->number;;
+						*);;
+*);
+ => nrel_first_domain: 
+	rrel_vertex;
+
+
+ => nrel_second_domain: 
+	number;;

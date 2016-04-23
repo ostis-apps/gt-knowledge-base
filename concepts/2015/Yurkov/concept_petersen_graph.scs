@@ -1,0 +1,55 @@
+sc_node_not_relation -> concept_petersen_graph;;
+
+concept_petersen_graph => nrel_main_idtf:
+	[граф Петерсена]
+	(* <- lang_ru;;	*);
+	[Petersen graph]
+	(* <- lang_en;;	*);;
+
+concept_petersen_graph <- rrel_key_sc_element:
+	...  
+	(*
+	=> nrel_main_idtf: [Опр.(граф Петерсена)] (* <- lang_ru;; *);;
+	<- sc_definition;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Граф Петерсена является неориентированным кубическим графом. Его можно построить, взяв дополнение рёберного графа от полного 5-графа.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+	
+	<= nrel_using_constants:
+			{	
+			concept_graph
+			};
+	
+	
+	<- rrel_key_sc_element: 
+        ... 
+		(*
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Не является гамильтоновым, в то же время, результат удаления вершины — гамильтонов граф] (* <- lang_ru;; *);;
+			*);;
+		*);
+		
+		
+	<- rrel_key_sc_element: 
+        ... 
+		(*
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Между любыми двумя вершинами существует единственный путь длины не более двух] (* <- lang_ru;; *);;
+			*);;
+		*);;
+
+concept_graph => nrel_inclusion: concept_petersen_graph;;
+concept_cubic_graph => nrel_inclusion: concept_petersen_graph;;
+concept_regular_graph => nrel_inclusion: concept_petersen_graph;;
+concept_cage_graph => nrel_inclusion: concept_petersen_graph;;

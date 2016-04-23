@@ -1,0 +1,58 @@
+sc_node_norole_relation ->nrel_max_matching;;
+sc_relation -> nrel_max_matching;;
+ternary_relation -> nrel_max_matching;;
+oriented_relation -> nrel_max_matching;;
+
+nrel_max_matching
+	=> nrel_main_idtf: 
+		[ максимальное паросочетание * ] (* <-lang_ru;; *);
+		[ maximal matching* ] (* <-lang_en;; *);
+
+=> nrel_arity_of_relations: 3 (* <- number ;;*);
+
+	<-rrel_key_sc_element:
+		...  
+		(*<-sc_definition;;
+		=> nrel_main_idtf: [Опр.(максимальное паросочетание )] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:
+		...
+			(*
+				-> rrel_example: 
+				[Паросочетание называется максимальным, если любое другое паросочетание содержит меньшее число ребер.] (*<-lang_ru;;*);;	
+			*);;
+		*);
+<= nrel_using_constants:
+							{
+								concept_graph;
+								nrel_matching
+							};	
+			
+
+=> nrel_definitional_domain:
+...
+(*
+				<= nrel_combination:
+					...
+						(*
+								->concept_graph;;
+								->set;;
+							*);;
+*);
+ => nrel_first_domain: 
+	concept_graph;
+
+ => nrel_second_domain: 
+	set;
+
+<- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+			"file://contents/nrel_maximal_matching.gif";;
+			*);;
+	*);;
+nrel_matching => nrel_inclusion: nrel_max_matching;;

@@ -1,0 +1,52 @@
+sc_node_not_relation->concept_rooted_tree;;
+
+concept_rooted_tree	=> nrel_main_idtf: 
+		[корневое дерево] (* <-lang_ru;; *);
+		[rooted tree] (* <-lang_en;; *);;
+
+concept_rooted_tree	<- rrel_key_sc_element:
+		...  
+		(*<-sc_definition;;
+		=> nrel_main_idtf: [Опр.(корневое дерево)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example: 
+	[Корневое дерево - это дерево , в котором :
+во-первых, существует единственная вершина, в которую не входит ни одна дуга (эта вершина называется корнем), 
+во-вторых, в каждую из оставшихся вершин входит ровно одна дуга, 
+в-третьих, существует единственный путь из корня в любую другую вершину.
+](*<-lang_ru;;*);;
+			*);;
+		*);;
+concept_rooted_tree<= nrel_using_constants:
+							{
+								concept_tree;
+								rrel_node;
+								rrel_edge;
+								nrel_path_gt
+							};;	
+concept_rooted_tree <- rrel_key_sc_element:...
+			(*
+			=>nrel_main_idtf:[Утв.(Корневое дерево , корень) ](*<-lang_ru;;*);;
+			<- sc_statement;;	
+			<=nrel_sc_text_translation:
+				...
+				(*
+				-> rrel_example: 
+				 [Если удалить из корневого дерева корень , то каждая из оставшихся связных компонент будет является корневым деревом.] (*<-lang_ru;;*);;	
+				*);;
+			*);;
+
+concept_rooted_tree <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/tree.png";;
+			*);;
+	*);;
+concept_tree => nrel_inclusion: concept_rooted_tree;;

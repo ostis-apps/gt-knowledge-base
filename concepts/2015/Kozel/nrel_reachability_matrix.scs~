@@ -1,0 +1,64 @@
+sc_node_norole_relation ->nrel_reachability_matrix;;
+
+sc_relation -> nrel_reachability_matrix;;
+
+ternary_relation -> nrel_reachability_matrix;;
+
+oriented_relation -> nrel_reachability_matrix;;
+
+nrel_reachability_matrix
+	=> nrel_main_idtf: 
+		[ матрица достижимости* ] (* <-lang_ru;; *);
+		[ reahability matrix* ] (* <-lang_en;; *);
+
+//=> nrel_arity_of_relations: 3 (* <- number ;;*);
+
+	<-rrel_key_sc_element:
+		...  
+		(*<-sc_definition;;
+	=> nrel_main_idtf: [Опр.(матрица достижимости)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:
+		...
+			(*
+				-> rrel_example: 
+				[
+Матрица достижимости графа — это матрица, содержащая информацию о существовании путей между вершинами в орграфе.] (*<-lang_ru;;*);;
+<= nrel_using_constants:
+							{
+								concept_graph;
+								nrel_path
+							};;	
+			*);;
+		*);
+	
+=> nrel_definitional_domain:
+...
+(*
+				<= nrel_integration:
+					...
+						(*
+								->concept_graph;;
+								->concept_matrix;;
+								->set_of_correspondences;;
+							*);;
+*);
+ => nrel_first_domain: 
+	concept_graph;
+
+ => nrel_second_domain: 
+	concept_matrix;
+
+=> nrel_third_domain: 
+	set_of_correspondences;
+
+<- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+			"file://contents/nrel_reachability_matrix.jpeg";;
+			*);;
+	*);;
