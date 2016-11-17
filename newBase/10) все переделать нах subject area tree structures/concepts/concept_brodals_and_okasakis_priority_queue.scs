@@ -1,0 +1,38 @@
+sc_node_not_relation -> concept_brodals_and_okasakis_priority_queue;;
+
+concept_brodals_and_okasakis_priority_queue => nrel_main_idtf:
+	[куча Бродала-Окасаки](* <-lang_ru;; *);
+	[Brodal's and Okasaki's Priority Queue](* <-lang_en;; *);;
+
+concept_brodals_and_okasakis_priority_queue <- rrel_key_sc_element: 
+		... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: куча Бродала-Окасаки] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: Brodal's and Okasaki's Priority Queue] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Куча Бродала-Окасаки - основана на использовании биномиальной кучи без каскадных ссылок и добавлении минимального элемента.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Heap-Brodal Okasaki - is based on a binomial heap without cascading links and adding the minimum element.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: R_Distel_Graph_Theory;;
+		*);;
+
+concept_brodals_and_okasakis_priority_queue <= nrel_using_constants: 
+					{
+					concept_binomial_heap
+					};;
+
+concept_brodals_and_okasakis_priority_queue <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_brodals_and_okasakis_priority_queue.png";;
+			*);;
+	*);;

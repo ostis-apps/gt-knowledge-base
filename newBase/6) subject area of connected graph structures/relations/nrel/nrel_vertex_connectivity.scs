@@ -1,0 +1,76 @@
+sc_node_not_relation->nrel_vertex_connectivity;;
+
+nrel_vertex_connectivity => nrel_main_idtf:
+	[вершинная связность](* <-lang_ru;; *);
+	[vertex connectivity](* <-lang_en;; *);;
+
+nrel_vertex_connectivity <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: вершинная связность] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: vertex connectivity] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Вершинная связность - наименьшее число вершин, которое нужно удалить, чтобы граф перестал быть связным.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Vertex connectivity - the minimum number of vertecex that should be deleted to transform this graph into disconnected graph.](*<- lang_en;;*);;
+		*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+*);;
+
+nrel_vertex_connectivity<= nrel_using_constants:
+						{
+							concept_node;
+							concept_connected_graph
+						};;
+
+nrel_vertex_connectivity <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: вершинная связность несвязного графа] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: vertex connectivity of disconnected graph] (* <- lang_en;; *);;
+		-> rrel_key_sc_element:concept_disconnected_graph;;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Для несвязного графа вершинная связность равна нулю.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Vertex connectivity of disconnected graph is equals to 0.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+		*);;
+
+nrel_vertex_connectivity <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: вершинная связность связного графа с с единственной точкой сочленения] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: vertex connectivity of connected graph with one articulation point] (* <- lang_en;; *);;
+		-> rrel_key_sc_element:concept_connected_graph; rrel_point_articulation;;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Для связного графа с с единственной точкой сочленения вершинная связность равна единице.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Vertex connectivity of connected graph with one articulation point is equals to 1.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+		*);;
+
+
+nrel_vertex_connectivity <- binary_relation;;
+nrel_vertex_connectivity => nrel_arity_of_relations: 2(* <- number ;;*);;
+nrel_vertex_connectivity => nrel_first_domain: concept_graph;;
+nrel_vertex_connectivity => nrel_second_domain: number;;
+nrel_vertex_connectivity<= nrel_definitional_domain: 
+	...
+	(*
+	<= nrel_combination: 
+		{
+		concept_graph; 
+		number
+		};;
+	*);;

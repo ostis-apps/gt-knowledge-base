@@ -1,0 +1,78 @@
+sc_node_norole_relation->nrel_cut;;
+
+nrel_cut => nrel_main_idtf:
+	[разрез*](* <-lang_ru;; *);
+	[cut*](* <-lang_en;; *);;
+
+nrel_cut <- binary_relation;;
+nrel_cut => nrel_arity_of_relations: 2(* <- number ;;*);;
+
+nrel_cut <- antireflexive_relation;;
+nrel_cut <- antisymmetric_relation;;
+nrel_cut <- antitransitive_relation;;
+
+nrel_cut => nrel_first_domain: concept_directed_graph;;
+nrel_cut => nrel_second_domain: concept_oredge;;
+nrel_cut <= nrel_definitional_domain: 
+	...
+	(*
+	<= nrel_combination: 
+		{
+		concept_directed_graph; 
+		concept_oredge
+		};;
+	*);;
+
+nrel_cut <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: разрез] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: cut] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Разрез графа — множество рёбер, удаление которых делит граф на два изолированных подграфа.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Cut is a partition of the vertices of a graph into two disjoint subsets.](*<- lang_en;;*);;
+		*);;
+		<= nrel_bibliographical_source: F_Harary_Graph_Theory;;
+*);;
+
+nrel_cut<= nrel_using_constants:
+						{
+						concept_directed_graph;
+						concept_number;
+						nrel_flow;
+						nrel_source;
+						nrel_sink
+						};;
+
+nrel_cut <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: пересечение множеств А и В в разрезе.] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: value of flow] (* <- lang_en;; *);;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Пересечение A и B равно пустому множеству.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[The intersection of A and B is an empty set.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: F_Harary_Graph_Theory;;
+		*);;
+		
+nrel_cut <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/cut.png";;
+			*);;
+	*);;
+

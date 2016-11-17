@@ -1,0 +1,63 @@
+sc_node_not_relation-> concept_kograph;;
+
+concept_kograph => nrel_main_idtf:
+	[кограф](* <-lang_ru;; *);
+	[kograph](* <-lang_en;; *);;
+
+concept_kograph <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: кограф] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition:  kograph] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Кограф— это граф, который можно получить из графа с единственной вершиной K1 путём операций дополнения и объединения графов.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Kograph is a graph that can be obtained from the graph with a single vertex K1 by additions and merges graphs.](*<- lang_en;;*);;
+		*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+*);;
+concept_kograph <= nrel_using_constants:
+						{
+						concept_graph;
+						concept_vertex
+
+						};;
+
+
+	
+			
+concept_kograph <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_kograph.png";;
+			*);;
+	*);;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

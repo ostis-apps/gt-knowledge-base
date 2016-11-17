@@ -1,0 +1,66 @@
+sc_node_norole_relation->nrel_simple_path_in_the_digraph;;
+
+nrel_simple_path_in_the_digraph=>nrel_main_idtf:
+	[простой путь в орграфе*]	(*<-lang_ru;;*);
+	[simple path in the graph*]	(*<-lang_en;;*);;
+
+nrel_simple_path_in_the_digraph => nrel_arity_of_relations: 2	(* <- number ;;*);;
+nrel_simple_path_in_the_digraph <- binary_relation;;
+
+nrel_simple_path_in_the_digraph <- reflexive_relation;;
+nrel_simple_path_in_the_digraph <- antisymmetric_relation;;
+nrel_simple_path_in_the_digraph <- transitive_relation;;
+
+nrel_simple_path_in_the_digraph => nrel_definitional_domain: concept_directed_graph;;
+nrel_simple_path_in_the_digraph => nrel_first_domain: concept_directed_graph;;
+nrel_simple_path_in_the_digraph => nrel_second_domain: concept_directed_graph;; 
+
+nrel_simple_path_in_the_digraph <- rrel_key_sc_element: 
+        ... 
+            (*
+	<- sc_definition;;
+	=> nrel_main_idtf: [Определение: простой путь в орграфе] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Definition: simple path in the digraph] (* <- lang_en;; *);;	
+	<= nrel_sc_text_translation: ... 
+	(*
+		-> rrel_example: [Простой путь есть путь в оргафе без повторяющихся вершин.] (* <- lang_ru;; *);;
+		-> rrel_example: [The simple path is a path in the digraph without repeating nodes.] (* <- lang_en;; *);;
+		*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+*);;
+
+nrel_simple_path_in_the_digraph<= nrel_using_constants: {
+			concept_directed_graph;
+			concept_path_in_the_digraph;
+			concept_node;
+			concept_oredge
+			};;		
+			
+				
+nrel_simple_path_in_the_digraph<- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: достижимость вершин] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: the accessibility of nodes] (* <- lang_en;; *);;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Если существует путь из одной вершины в другую, то вторая вершина достижима из первой.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[If there is a path from one node to another, the second node is accessible from the first.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: R_Distel_Graph_Theory;;
+		*);;				
+	
+nrel_simple_path_in_the_digraph <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/simple_path_in_the_digraph.png";;
+			*);;
+	*);;

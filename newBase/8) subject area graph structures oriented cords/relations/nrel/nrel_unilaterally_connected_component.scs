@@ -1,0 +1,59 @@
+sc_node_norole_relation->nrel_unilaterally_connected_component;;
+
+nrel_unilaterally_connected_component=>nrel_main_idtf:
+	[компонента односторонней связности*]	(*<-lang_ru;;*);
+	[unilaterally connected component*]	(*<-lang_en;;*);;
+
+nrel_unilaterally_connected_component => nrel_arity_of_relations: 2	(* <- number ;;*);;
+nrel_unilaterally_connected_component <- binary_relation;;
+
+nrel_unilaterally_connected_component <- reflexive_relation;;
+nrel_unilaterally_connected_component <- antisymmetric_relation;; 
+nrel_unilaterally_connected_component <- antitransitive_relation;;
+
+nrel_unilaterally_connected_component => nrel_definitional_domain: concept_directed_graph;;
+nrel_unilaterally_connected_component => nrel_first_domain: concept_directed_graph;;
+nrel_unilaterally_connected_component => nrel_second_domain: concept_directed_graph;; 
+
+nrel_unilaterally_connected_component <- rrel_key_sc_element: 
+     ... 
+	(*
+	=> nrel_main_idtf: [Определение: компонента односторонней связности] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Definition: unilaterally connected component] (* <- lang_en;; *);;
+	<- sc_definition;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: 
+			[Компонентами односторонней связности ориентированного графа G называются его максимальные по включению односторонне связные подграфы.]	(* <- lang_ru;; *);;
+		-> rrel_example: 
+			[The unilaterally connected components of an arbitrary directed graph G form a partition into subgraphs that are themselves unilaterally connected.](*<- lang_en;;*);;
+		*);;
+	<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+	*);;
+
+nrel_unilaterally_connected_component<= nrel_using_constants:
+				{
+					concept_directed_graph;
+					concept_unilaterally_connected_digraph;
+					concept_node;
+					concept_oredge;
+					nrel_strongly_connected_component;
+					nrel_subgraph
+				};;
+				
+nrel_unilaterally_connected_component<- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: содержание односторонней компоненты] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: unilateral component content] (* <- lang_en;; *);;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Односторонние компоненты содержатся, как правило, в некоторой слабой компоненте графа.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Unilateral components are contained in a weakly connected component of a digraph.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: R_Distel_Graph_Theory;;
+		*);;				
+	

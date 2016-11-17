@@ -1,0 +1,70 @@
+problem_traveling_salesman
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[задача коммивояжёра]
+	(* <- lang_ru;; *);
+	[traveling salesman problem]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[задача о бродячем торговце]
+	(* <- lang_ru;; *);
+<- rrel_key_sc_element:
+	...  
+	(*
+		<- definition;;
+		=> nrel_main_idtf: 
+			[Опр.(задача коммивояжёра)]
+			(* <- lang_ru;; *);
+			[Def.(traveling salesman problem)]
+			(* <- lang_en;; *);;		
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content_html/definition_for_problem_traveling_salesman_ru.html"
+				(* <- lang_ru;;	*);			
+                "file://content_html/definition_for_problem_traveling_salesman_en.html"
+				(* <- lang_en;;	*);;
+			*);;		
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+	*);
+<- rrel_key_sc_element:
+	...  
+	(*
+		<- statement;;
+		=> nrel_main_idtf: 
+			[Утв.(Математическая постановка задачи коммивояжёра)]
+			(* <- lang_ru;; *);
+			[Stat.(Math setting of traveling salesman problem)]
+			(* <- lang_en;; *);;		
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content_html/statement_for_problem_traveling_salesman_ru.html"
+				(* <- lang_ru;;	*);			
+                "file://content_html/statement_for_problem_traveling_salesman_en.html"
+				(* <- lang_en;;	*);;
+			*);;		
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+	*);
+<- rrel_key_sc_element:
+	...  
+	(*
+		<- statement;;
+		=> nrel_main_idtf: 
+			[Утв.(Эталонная задача)]
+			(* <- lang_ru;; *);
+			[Stat.(A model problem)]
+			(* <- lang_en;; *);;		
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content_html/statement_for_problem_traveling_salesman_model_problem_ru.html"
+				(* <- lang_ru;;	*);			
+                "file://content_html/statement_for_problem_traveling_salesman_model_problem_en.html"
+				(* <- lang_en;;	*);;
+			*);;		
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+	*);;

@@ -1,0 +1,27 @@
+sc_node_not_relation->concept_k_edge_connected_graph;;
+
+concept_k_edge_connected_graph => nrel_main_idtf: 
+		[реберно к-связный граф] 
+			(* <-lang_ru;; *);
+		[k-edge-connected graph] 
+			(* <-lang_en;; *);;
+
+
+concept_k_edge_connected_graph <- rrel_key_sc_element:
+				...  
+				(*
+					<-sc_definition;;
+					=> nrel_main_idtf: [Опр.(Реберно к-связный граф)] (* <- lang_ru;; *);;
+					<=nrel_sc_text_translation:
+					...
+					(*
+					-> rrel_example: 
+						[Реберно к-связный граф - граф,который остаётся связным после удаления не более чем k рёбер.] (*<-lang_ru;;*);;
+					*);;
+					<= nrel_using_constants:
+					{
+						rrel_edge;
+						concept_connected_graph
+					};;		
+		
+				*);;

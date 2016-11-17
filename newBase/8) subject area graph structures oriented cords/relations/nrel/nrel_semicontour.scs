@@ -1,0 +1,54 @@
+sc_node_norole_relation->nrel_semicontour;;
+
+nrel_semicontour=>nrel_main_idtf:
+	[полуконтур*]	(*<-lang_ru;;*);
+	[semicontour*]	(*<-lang_en;;*);;
+
+nrel_semicontour => nrel_arity_of_relations: 2	(* <- number ;;*);;
+nrel_semicontour <- binary_relation;;
+
+nrel_semicontour <- reflexive_relation;;
+nrel_semicontour <- antisymmetric_relation;;
+nrel_semicontour <- antitransitive_relation;;
+
+nrel_semicontour => nrel_definitional_domain: concept_directed_graph;;
+nrel_semicontour => nrel_first_domain: concept_directed_graph;;
+nrel_semicontour => nrel_second_domain: concept_directed_graph;; 
+
+nrel_semicontour <- rrel_key_sc_element: 
+        ... 
+            (*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: полуконтур] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: semicontour] (* <- lang_en;; *);;
+
+		<= nrel_sc_text_translation: ... 
+		(*
+		-> rrel_example: [Контур есть замкнутый путь, направления дуг в котором не учитываются.] (* <- lang_ru;; *);;
+		-> rrel_example: [Semicontour is a closed path, arc's directions in which are ignored.] (* <- lang_en;; *);;
+		*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+*);;
+
+nrel_semicontour<= nrel_using_constants: {
+			concept_directed_graph;
+			nrel_path_in_the_digraph;
+			concept_node;
+			concept_oredge
+			};;		
+			
+nrel_semicontour<- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: условие для того, чтобы путь являлся полуконтуром] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: the condition for the path being a semicontour] (* <- lang_en;; *);;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Если начальная и конечная вершина пути совпадают, то путь является контуром.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[If the initial and final nodes a the same, the path is a semicontour.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: R_Distel_Graph_Theory;;
+		*);;				

@@ -1,0 +1,40 @@
+sc_node_not_relation -> concept_radially_critical_graph;;
+concept_radially_critical_graph => nrel_main_idtf:
+	[радиально-критический граф] (* <- lang_ru;; *);
+	[radially critical graph] (* <- lang_en;; *);;
+	
+concept_radially_critical_graph <- rrel_key_sc_element: 
+	...  
+	(*
+	=> nrel_main_idtf: [Определение: радиально-критический граф] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Definition: radially critical graph](* <- lang_en;; *);;	
+	<- sc_definition;; 
+	<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+	<= nrel_sc_text_translation: 
+		... 
+		(*
+		-> rrel_example: 
+		[Радиально-критический граф - связный граф, у которого добавление любого ребра приводит к уменьшению радиуса графа.](* <- lang_ru;; *);;
+		-> rrel_example: 
+                [Radially critical graph is connected graph, in which the addition of any edge reduces the radius of the graph. .] (* <-lang_en;; *);;
+		*);;
+	*);;
+concept_radially_critical_graph<= nrel_using_constants:
+					{
+					nrel_radius;
+					concept_edge;
+					concept_connected_graph
+					};;
+	
+concept_radially_critical_graph <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_radially_critical_graph.jpg";;
+			*);;
+	*);;
+

@@ -1,0 +1,39 @@
+sc_node_not_relation -> concept_edge_quadtree;;
+
+concept_edge_quadtree => nrel_main_idtf:
+	[дерево квадрантов, хранящее информацию о линиях](* <-lang_ru;; *);
+	[edge quadtree](* <-lang_en;; *);;
+
+concept_edge_quadtree <- rrel_key_sc_element: 
+		... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: дерево квадрантов, хранящее информацию о линиях] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: edge quadtree] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Деревья квадрантов, хранящие информацию о линиях, используются для описания прямых и кривых. Кривые описываются точными приближениями путём разбиения ячеек на очень мелкие. Это может привести к разбалансировке дерева, что будет означать проблемы с индексацией.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Quadtree storing information on the lines are used to describe straight lines and curves. Curves are described accurate approximations by splitting into very small cells. This can lead to unbalance of the tree, which would mean problems with indexing.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: R_Distel_Graph_Theory;;
+		*);;
+
+concept_edge_quadtree <= nrel_using_constants: 
+					{
+					concept_tree;
+					concept_quadtree
+					};;
+
+concept_edge_quadtree <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_edge_quadtree.png";;
+			*);;
+	*);;

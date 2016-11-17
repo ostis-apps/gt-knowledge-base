@@ -1,0 +1,65 @@
+concept_weighted_tree
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[взвешенное дерево]
+	(* <- lang_ru;; *);
+	[weighted tree]
+	(* <- lang_en;; *);
+<= nrel_inclusion: concept_tree;
+<- rrel_key_sc_element:
+	...  
+	(*
+		<- definition;;
+		=> nrel_main_idtf: 
+			[Опр.(взвешенное дерево)]
+			(* <- lang_ru;; *);
+			[Def.(weighted tree)]
+			(* <- lang_en;; *);;		
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content_html/definition_for_concept_weighted_tree_ru.html"
+				(* <- lang_ru;;	*);			 
+                "file://content_html/definition_for_concept_weighted_tree_en.html"
+				(* <- lang_en;;	*);;
+			*);;		
+		<= nrel_bibliographical_source: F_Harary_Graph_Theory;;
+	*);
+<= nrel_using_constants: 
+{
+	rrel_edge;
+	rrel_vertex;
+	nrel_weight
+};
+<- rrel_key_sc_element:
+	...  
+	(*
+		<- statement;;
+		=> nrel_main_idtf: 
+			[Утв.(степень вершины*; взвешенное дерево)]
+			(* <- lang_ru;; *);
+			[Stat.(vertex degree*; weighted tree)]
+			(* <- lang_en;; *);;		
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content_html/statement_for_concept_weighted_tree_ru.html"
+				(* <- lang_ru;;	*);			 
+                "file://content_html/statement_for_concept_weighted_tree_en.html"
+				(* <- lang_en;;	*);;
+			*);;		
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+	*);
+<- rrel_key_sc_element: 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation: 
+			...
+			(*
+			-> rrel_example:
+				"file://content_img/concept_weighted_tree.png";;
+			*);;
+	*);;

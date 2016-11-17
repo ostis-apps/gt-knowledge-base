@@ -1,0 +1,32 @@
+sc_node_not_relation -> concept_line_digraph;;
+
+concept_line_digraph => nrel_main_idtf:
+	[реберный орграф] (* <- lang_ru;; *);
+	[line digraph] (* <- lang_en;; *);;
+
+concept_line_digraph <- rrel_key_sc_element: 
+        ... 
+            (*
+	<- sc_definition;;
+	=> nrel_main_idtf: [Определение: реберный орграф] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Definition: line digraph] (* <- lang_en;; *);;	
+	<= nrel_sc_text_translation: ... 
+	(*
+		-> rrel_example: [Реберный орграф - граф L(D), множество вершин которого есть множество дуг орграфа D, и две его вершины x и y смежны тогда и только тогда, когда дуги x и y порождают маршрут в орграфе D. ] (* <- lang_ru;; *);;
+		-> rrel_example: [Line graph of a directed graph G is another graph L(G) that represents the adjacencies between edges of G. ] (* <- lang_en;; *);;
+		*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+*);;
+
+concept_line_digraph<= nrel_using_constants: {
+			concept_directed_graph;
+			concept_node;
+			concept_oredge	
+			};;		
+		
+concept_line_digraph <- rrel_key_sc_element: ... (*
+	<- sc_illustration;;
+	<= nrel_sc_text_translation: ... (*
+		-> rrel_example: "file://contents/line_digraph.png";;
+	*);;
+*);;

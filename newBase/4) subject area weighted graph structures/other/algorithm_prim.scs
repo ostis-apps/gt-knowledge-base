@@ -1,0 +1,27 @@
+algorithm_prim
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[алгоритм Прима]
+	(* <- lang_ru;; *);
+	[Prim's algorithm]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...  
+	(*
+		<- definition;;
+		=> nrel_main_idtf: 
+			[Опр.(алгоритм Прима)]
+			(* <- lang_ru;; *);
+			[Def.(Prim's algorithm)]
+			(* <- lang_en;; *);;		
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content_html/definition_for_prims_algorithm_ru.html"
+				(* <- lang_ru;;	*);			
+                "file://content_html/definition_for_prims_algorithm_en.html"
+				(* <- lang_en;;	*);;
+			*);;		
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+	*);;

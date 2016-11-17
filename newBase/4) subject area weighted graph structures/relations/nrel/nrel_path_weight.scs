@@ -1,0 +1,60 @@
+nrel_path_weight
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+	[вес пути*]
+	(* <- lang_ru;; *);
+	[path weight*]
+	(* <- lang_en;; *);
+=> nrel_idtf:
+	[длина пути*]
+	(* <- lang_ru;; *);
+<- rrel_key_sc_element:
+	...  
+	(*
+		<- definition;;
+		=> nrel_main_idtf: 
+			[Опр.(вес пути*)]
+			(* <- lang_ru;; *);
+			[Def.(path weight*)]
+			(* <- lang_en;; *);;		
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content_html/definition_for_nrel_path_weight_ru.html"
+				(* <- lang_ru;;	*);
+                "file://content_html/definition_for_nrel_path_weight_en.html"
+				(* <- lang_en;;	*);;
+			*);;		
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+	*);
+<= nrel_using_constants: 
+{
+	rrel_oredge;
+	rrel_vertex;
+	nrel_edge_weight;
+	nrel_vertex_weight;
+	nrel_path
+};
+=> nrel_first_domain: nrel_path;
+=> nrel_second_domain: number;
+<= nrel_definitional_domain:
+...
+(*
+	<= nrel_combination:
+	{
+		nrel_path;
+		number
+	};;
+*);
+<- rrel_key_sc_element: 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation: 
+			...
+			(*
+			-> rrel_example:
+				"file://content_img/nrel_path_weight.png";;
+			*);;
+	*);;

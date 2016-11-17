@@ -1,0 +1,63 @@
+sc_node_not_relation -> concept_radix_tree;;
+
+concept_radix_tree => nrel_main_idtf:
+	[дерево остатков](* <-lang_ru;; *);
+	[radix tree](* <-lang_en;; *);;
+
+concept_radix_tree <- rrel_key_sc_element: 
+		... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: дерево остатков] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: radix tree] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Дерево остатков — это структура данных, формируемая по принципу хранение значений в листовом узле. Промежуточные узлы представляют собой элемент конечного значения. Это может быть бит для чисел, символ для строк или цифра для номера. ](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[radix tree - a data structure formed by a principle of storing values in the leaf node. Intermediate nodes are the final element values. It can be a bit for numbers, strings, or the symbol for the figure for the number.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: R_Distel_Graph_Theory;;
+		*);;
+
+concept_radix_tree <= nrel_using_constants: 
+					{
+					concept_tree
+					};;
+
+concept_radix_tree <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: использование дерева остатков] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: the use of radix tree] (* <- lang_en;; *);;
+		-> rrel_key_sc_element: concept_tree;;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Деревья остатков используют для:
+а) построения ассоциативных массивов с ключами в виде строк;
+б) IP — маршрутизации (иерархической организации IP-адреса);
+в) инвертированных индексов текстовых документов в информационном поиске;
+г) в ядре Linux’a, где указатель содержащийся в узлах дерева связан с целочисленным ключом (в данном случае long int);](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Trees residues used for:
+a) constructing associative array with the keys in rows;
+b) IP - routing (hierarchical organization of IP-addresses);
+c) inverted indexes text documents in information retrieval;
+g) Linux'a nucleus where the pointer contained in the tree nodes associated with the key integer (in this case, long int);](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: R_Distel_Graph_Theory;;
+		*);;
+
+concept_radix_tree <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_radix_tree.gif";;
+			*);;
+	*);;

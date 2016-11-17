@@ -1,0 +1,25 @@
+sc_node_not_relation -> concept_transitive_tournament;;
+
+concept_transitive_tournament => nrel_main_idtf:
+	[транзитивный турнир] (* <- lang_ru;;	*);
+	[transitive tournament] (* <- lang_en;;	*);;
+
+concept_transitive_tournament <- rrel_key_sc_element: ...  
+	(*
+	=> nrel_main_idtf: [Опр.(транзитивный турнир)] (* <- lang_ru;; *);;
+	<- sc_definition;; 
+	<= nrel_sc_text_translation: ... (*
+		-> rrel_example: 
+			[турнир, у которого из существования дуг (u,v) и (v,w) вытекает существование дуги (u,w)]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+	
+	<= nrel_using_constants: {	
+				concept_directed_graph;
+				rrel_edge;
+				rrel_vertex;
+				concept_tournament
+			};;
+
+concept_tournament => nrel_inclusion: concept_transitive_tournament;;

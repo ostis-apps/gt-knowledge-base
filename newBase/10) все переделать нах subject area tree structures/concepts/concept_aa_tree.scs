@@ -1,0 +1,57 @@
+sc_node_not_relation -> concept_aa_tree;;
+
+concept_aa_tree => nrel_main_idtf:
+	[AA-дерево](* <-lang_ru;; *);
+	[AA-tree](* <-lang_en;; *);;
+
+concept_aa_tree <- rrel_key_sc_element: 
+		... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: AA-дерево] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: AA-tree] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[AA-дерево - это упрощёная версия RB-дерева, у которого не бывает левых красных узлов. Поскольку RB-дерево имитирует работу B-дерева четвёртой степени, то AA-дерево не имея один из красных узлов в тройках, имитирует работу 2-3 дерева (как частный случай B-дерева).](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[AA-tree - a simplified version of the RB-tree, which is never left red knots. Since RB-tree simulates a B-tree of the fourth degree, the AA-tree is not having one of red knots in threes, 2-3 simulates the tree (as a special case of a B-tree).](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: R_Distel_Graph_Theory;;
+		*);;
+
+concept_aa_tree <= nrel_using_constants: 
+					{
+					concept_red_black_tree;
+					concept_b_tree;
+					concept_2_3_tree
+					};;
+
+concept_aa_tree <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: присоединение вершины AA-дерева] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: connect the node AA-tree] (* <- lang_en;; *);;
+		-> rrel_key_sc_element: concept_tree; concept_node;;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[К одной вершине AA-дерева можно присоединить другую вершину того же уровня но только одну и только справа.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[On a node AA-tree you can connect another node of the same level but one, and only the right.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: R_Distel_Graph_Theory;;
+		*);;
+
+concept_aa_tree <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_aa_tree.jpg";;
+			*);;
+	*);;

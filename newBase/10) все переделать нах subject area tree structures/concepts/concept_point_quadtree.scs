@@ -1,0 +1,57 @@
+sc_node_not_relation -> concept_point_quadtree;;
+
+concept_point_quadtree => nrel_main_idtf:
+	[деревья квадрантов, хранящие информацию о точках](* <-lang_ru;; *);
+	[point quadtree](* <-lang_en;; *);;
+
+concept_point_quadtree <- rrel_key_sc_element: 
+		... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: деревья квадрантов, хранящие информацию о точках] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: point quadtree] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Деревья квадрантов, хранящие информацию о точках — разновидность бинарных деревьев, используемых для хранения информации о точках на плоскости. Форма дерева зависит от порядка задания данных. Использование таких деревьев очень эффективно в сравнении упорядоченных точек плоскости, причём время обработки равно O(log n).](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Quadtree, storing information about points - a kind of binary trees used to store information about the points on the plane. Form depends on the data tree assignment order. Using these trees are very efficient compared ordered points in the plane, with processing time is O (log n).](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: F_Harary_Graph_Theory;;
+		*);;
+
+concept_point_quadtree <= nrel_using_constants: 
+					{
+					concept_binary_tree;
+					concept_quadtree
+					};;
+
+concept_point_quadtree <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: структура узла] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: node structure] (* <- lang_en;; *);;
+		-> rrel_key_sc_element: concept_binary_tree;;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Узел дерева квадрантов, хранящего информацию о точках плоскости, аналогичен узлу бинарного дерева лишь с той оговоркой, что узел первого имеет четыре потомка (по одному на каждый квадрант) вместо двух («правого» и «левого»). Ключ узла состоит из двух компонент (для координат x и y). Таким образом, узел дерева содержит следующую информацию: 4 указателя; точка, описываемая следующим образом: ключ key, обычно выражает координаты x и y;
+значение value, например, имя.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Quadtree node that stores information on points in a plane similar to a node of a binary tree with the only proviso that the first node has four children (one for each quadrant) instead of two ("right" and "left"). The key node consists of two components (coordinates x and y). Thus, the tree node contains the following information: 4 pointer; point, described as follows: key key usually expresses the x and y;
+value value, such as a name.](*<- lang_en;;*);;
+			*);;
+		*);;
+
+concept_point_quadtree <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_point_quadtree.jpg";;
+			*);;
+	*);;

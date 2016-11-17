@@ -1,0 +1,27 @@
+problem_finding_min_weight_path
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[задача нахождения пути минимального веса]
+	(* <- lang_ru;; *);
+	[finding minimum weight path problem]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...  
+	(*
+		<- definition;;
+		=> nrel_main_idtf: 
+			[Опр.(задача нахождения пути минимального веса)]
+			(* <- lang_ru;; *);
+			[Def.(finding minimum weight path problem)]
+			(* <- lang_en;; *);;		
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content_html/definition_for_problem_finding_min_weight_path_ru.html"
+				(* <- lang_ru;;	*);			
+                "file://content_html/definition_for_problem_finding_min_weight_path_en.html"
+				(* <- lang_en;;	*);;
+			*);;		
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+	*);;

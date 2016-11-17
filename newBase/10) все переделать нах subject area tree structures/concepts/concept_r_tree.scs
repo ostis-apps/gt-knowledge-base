@@ -1,0 +1,73 @@
+sc_node_not_relation -> concept_r_tree;;
+
+concept_r_tree => nrel_main_idtf:
+	[R-дерево](* <-lang_ru;; *);
+	[R-tree](* <-lang_en;; *);;
+
+concept_r_tree <- rrel_key_sc_element: 
+		... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: R-дерево] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: R-tree] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[R-дерево — древовидная структура данных (дерево), подобна B-дереву, но используется для организации доступа к пространственным данным, то есть для индексации многомерной информации, такой, например, как географические данные с двумерными координатами (широтой и долготой). Типичным запросом с использованием R-деревьев мог бы быть такой: «Найти все музеи в пределах 2 километров от моего текущего местоположения».](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[R-tree - a tree-like data structure (tree), similar to B-trees, but is used to provide access to spatial data, ie, for indexing multi-dimensional information, such as for example geographic data with two-dimensional coordinates (latitude and longitude). A typical query using the R-tree might be: "Find all museums within 2 kilometers from my current position".](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: F_Harary_Graph_Theory;;
+		*);;
+
+concept_r_tree <= nrel_using_constants: 
+					{
+					concept_tree;
+					concept_b_tree
+					};;
+
+concept_r_tree <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: структура R-дерева] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: R-tree structure] (* <- lang_en;; *);;
+		-> rrel_key_sc_element: concept_tree;;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Каждая вершина R-дерева имеет переменное количество элементов (не более некоторого заранее заданного максимума). Каждый элемент нелистовой вершины хранит два поля данных: способ идентификации дочерней вершины и ограничивающий прямоугольник (кубоид), охватывающий все элементы этой дочерней вершины. Все хранимые кортежи хранятся на одном уровне глубины, таким образом, дерево идеально сбалансировано. ](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Each vertex R-tree has a variable number of elements (no more than a predetermined maximum). Each element of the non-leaf vertices stores two data fields: a method for identifying a subsidiary peaks and the bounding rectangle (cuboid), covering all elements of the subsidiary peaks. All tuples stored kept at the same level of depth thus perfectly balanced tree.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: F_Harary_Graph_Theory;;
+		*);;
+
+concept_r_tree <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: построение R-дерева] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: R-tree construction] (* <- lang_en;; *);;
+		-> rrel_key_sc_element: concept_tree;;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Построение R-дерева происходит, как правило, с помощью многократного вызова операции вставки элемента в дерево. Идея вставки похожа на вставку в B-дерево: если добавление элемента в очередную вершину приводит к переполнению, то вершина разделяется.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Construction of B-tree occurs typically via multiple inserts call item in a tree. The idea is similar to the insertion of the insert in the B-tree: when adding an item to the top of the next leads to overflow, then the vertex is shared.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: F_Harary_Graph_Theory;;
+		*);;
+
+concept_r_tree <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_r_tree.png";;
+			*);;
+	*);;

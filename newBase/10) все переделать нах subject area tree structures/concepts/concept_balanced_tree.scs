@@ -1,0 +1,38 @@
+sc_node_not_relation -> concept_balanced_tree;;
+
+concept_balanced_tree => nrel_main_idtf:
+	[сбалансированное дерево](* <-lang_ru;; *);
+	[balanced_tree](* <-lang_en;; *);;
+
+concept_balanced_tree <- rrel_key_sc_element: 
+		... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: сбалансированное дерево] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: balanced_tree] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Двоичное дерево называется сбалансированным деревом в том и только в том случае, когда высоты двух поддеревьев каждой из вершин дерева отличаются не более, чем на единицу.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[A binary tree is called balanced tree if and only if the height of each of the two subtrees of nodes of the tree does not differ by more than one unit.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: F_Harary_Graph_Theory;;
+		*);;
+
+concept_balanced_tree <= nrel_using_constants: 
+					{
+					concept_tree
+					};;
+
+concept_balanced_tree <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_balanced_tree.png";;
+			*);;
+	*);;

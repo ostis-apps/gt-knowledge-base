@@ -1,0 +1,77 @@
+sc_node_not_relation -> concept_range_maximum_tree;;
+
+concept_range_maximum_tree => nrel_main_idtf:
+	[дерево максимумов](* <-lang_ru;; *);
+	[range maximum query](* <-lang_en;; *);;
+
+concept_range_maximum_tree => nrel_idtf:
+	[дерево минимумов](* <-lang_ru;; *);
+	[range minimum query](* <-lang_en;; *);
+	[RMQ](* <-lang_en;; *);;
+
+concept_range_maximum_tree <- rrel_key_sc_element: 
+		... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: дерево максимумов] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: range maximum query] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Структура, которая может выполнять операции: прибавить число ко всем элементам из интервала (число может быть и отрицательным) и выдавать максимальное значение из интервала.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[The structure, which may perform operations: to add the number of all elements in the interval (the number may be negative) and a maximum value of the grant period.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+		*);;
+
+concept_range_maximum_tree <= nrel_using_constants: 
+					{
+					concept_tree
+					};;
+
+concept_range_maximum_tree <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: скорость выполнения] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: execution speed] (* <- lang_en;; *);;
+		-> rrel_key_sc_element: concept_tree;;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Структура выполняет операции изменения и поиск максимума за О(log N).](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[The structure changes and performs the search for the maximum O (log N).](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+		*);;
+
+concept_range_maximum_tree <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: дополнительные силовые поля] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: additional numeric fields] (* <- lang_en;; *);;
+		-> rrel_key_sc_element: concept_tree;;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Каждый узел, кроме ссылок на двух своих потомков будет хранить ещё несколько дополнительных числовых полей: 1 и r - левая и правая граница интервала, информация о котором содержится в этом узле; max - максимальное значение, которое встречается на этом интервале(будет выбираться из сыновей), а также поле add, которое будет хранить модификацию для всего этого интервала.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Each node, except for references to two of his descendants will keep a few more additional numeric fields: 1 and r - the left and right border of the interval, the information which is contained in this node; max - the maximum value that occurs in this interval (to be chosen from the sons), and add a field that will store the modification of the whole of this interval.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+		*);;
+
+concept_range_maximum_tree <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_range_maximum_tree.png";;
+			*);;
+	*);;

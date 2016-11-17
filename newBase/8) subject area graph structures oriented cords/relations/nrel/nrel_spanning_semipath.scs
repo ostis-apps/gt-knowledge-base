@@ -1,0 +1,57 @@
+sc_node_norole_relation->nrel_spanning_semipath;;
+
+nrel_spanning_semipath=> nrel_main_idtf:
+	[остовный полупуть*](* <-lang_ru;; *);
+	[spanning_semipath*] (* <- lang_en;; *);;
+
+nrel_spanning_semipath <- binary_relation;;
+nrel_spanning_semipath => nrel_arity_of_relations: 2(* <- number ;;*);;
+
+nrel_spanning_semipath <- reflexive_relation;;
+nrel_spanning_semipath <- antisymmetric_relation;;
+nrel_spanning_semipath <- antitransitive_relation;;
+
+nrel_spanning_semipath => nrel_first_domain: concept_directed_graph;;
+nrel_spanning_semipath => nrel_second_domain: concept_directed_graph;;
+nrel_spanning_semipath <= nrel_definitional_domain: concept_directed_graph;;
+
+nrel_spanning_semipath<- rrel_key_sc_element: 
+        ... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: остовный полупуть] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: spanning semipath] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Остовный полупуть - маршрут в орграфе, содержащий все вершины, все ребра которого различны.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Spanning semipath is a path in the directed graph that contains all the vertices of the graph and all edges in the path are different.](*<- lang_en;;*);;
+		*);;
+		<= nrel_bibliographical_source: F_Harary_Graph_Theory;;
+*);;
+
+nrel_simple_cycle<= nrel_using_constants:
+						{
+						concept_directed_graph;
+						concept_node;
+						concept_oredge
+						};;
+
+nrel_spanning_semipath<- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: цепь в орграфе] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: chain in the directed graph] (* <- lang_en;; *);;
+		-> rrel_key_sc_element: concept_path_in_the_digraph;;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Остовный полупуть -  это цепь, содержащая все вершины, в орграфе.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Spanning semipath is a chain in directed graph that contains all of the verteces.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: F_Harary_Graph_Theory;;
+		*);;
+

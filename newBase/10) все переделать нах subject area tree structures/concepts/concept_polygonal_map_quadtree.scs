@@ -1,0 +1,38 @@
+sc_node_not_relation -> concept_polygonal_map_quadtree;;
+
+concept_polygonal_map_quadtree => nrel_main_idtf:
+	[дерево квадрантов, хранящее информацию о многоугольниках](* <-lang_ru;; *);
+	[polygonal map quadtree](* <-lang_en;; *);;
+
+concept_polygonal_map_quadtree <- rrel_key_sc_element: 
+		... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: дерево квадрантов, хранящее информацию о многоугольниках] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: polygonal map quadtree] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Деревья квадрантов, хранящие информацию о многоугольниках, могут содержать информацию о полигонах, в том числе и о вырожденных (имеющих изолированные вершины или грани)](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Quadtree that store information on polygons, can contain information about landfills, including a degenerate (with isolated vertices or faces)](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: F_Harary_Graph_Theory;;
+		*);;
+
+concept_polygonal_map_quadtree <= nrel_using_constants: 
+					{
+					concept_quadtree
+					};;
+
+concept_polygonal_map_quadtree <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_polygonal_map_quadtree.png";;
+			*);;
+	*);;

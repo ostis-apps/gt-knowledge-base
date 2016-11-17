@@ -1,0 +1,109 @@
+section_subjdomain_weighted_graph_structures
+=> nrel_main_idtf:
+	[Раздел. Предметная область взвешенных графовых структур]
+	(* <- lang_ru;; *);
+	[Section. Subject domain of weighted graph structures]
+	(* <- lang_en;; *);
+<- atomic_section;;
+
+rrel_key_sc_element -> (section_subjdomain_weighted_graph_structures -> subject_domain_weighted_graph_structures)
+(*
+	=> nrel_key_sc_element_order: (section_subjdomain_weighted_graph_structures -> concept_weighted_graph)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_order: (section_subjdomain_weighted_graph_structures -> concept_vertex_weighted_graph)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_order: (section_subjdomain_weighted_graph_structures -> concept_edge_weighted_graph)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_order: (section_subjdomain_weighted_graph_structures -> concept_weighted_tree)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_order: (section_subjdomain_weighted_graph_structures -> concept_min_weight_tree)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_order: (section_subjdomain_weighted_graph_structures -> concept_shortest_steiner_tree)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_order: (section_subjdomain_weighted_graph_structures -> concept_weighted_dycks_word)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_order: (section_subjdomain_weighted_graph_structures -> nrel_weight)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_order: (section_subjdomain_weighted_graph_structures -> nrel_vertex_weight)
+(*	
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_order: (section_subjdomain_weighted_graph_structures -> nrel_edge_weight)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_order: (section_subjdomain_weighted_graph_structures -> nrel_chain_weight)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_order: (section_subjdomain_weighted_graph_structures -> nrel_subgraph_weight)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_order: (section_subjdomain_weighted_graph_structures -> nrel_cycle_weight)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_order: (section_subjdomain_weighted_graph_structures -> nrel_path_weight)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_order: (section_subjdomain_weighted_graph_structures -> nrel_tree_weight)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_order: (section_subjdomain_weighted_graph_structures -> nrel_min_perfect_matching)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_order: (section_subjdomain_weighted_graph_structures -> nrel_min_spanning_tree)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_order: (section_subjdomain_weighted_graph_structures -> nrel_min_weight_cycle)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_order: (section_subjdomain_weighted_graph_structures -> nrel_min_weight_eulerian_cycle)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_order: (section_subjdomain_weighted_graph_structures -> nrel_min_weight_hamiltonian_cycle)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_order: (section_subjdomain_weighted_graph_structures -> nrel_min_weight_path)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_order: (section_subjdomain_weighted_graph_structures -> nrel_weight_matrix)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_order: (section_subjdomain_weighted_graph_structures -> problem_allocation)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_order: (section_subjdomain_weighted_graph_structures -> problem_chinese_postman)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_order: (section_subjdomain_weighted_graph_structures -> problem_finding_min_weight_path)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_order: (section_subjdomain_weighted_graph_structures -> problem_steiner)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_order: (section_subjdomain_weighted_graph_structures -> problem_traveling_salesman)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_order: (section_subjdomain_weighted_graph_structures -> algorithm_hungarian)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_order: (section_subjdomain_weighted_graph_structures -> algorithm_little)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_order: (section_subjdomain_weighted_graph_structures -> algorithm_dijkstra)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_order: (section_subjdomain_weighted_graph_structures -> algorithm_kruskal)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_order: (section_subjdomain_weighted_graph_structures -> algorithm_prim)
+(*
+	<- rrel_key_sc_element;;
+	=> nrel_key_sc_element_order: (section_subjdomain_weighted_graph_structures -> algorithm_boruvka)
+	(* <- rrel_key_sc_element;; *);;
+*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;*);;

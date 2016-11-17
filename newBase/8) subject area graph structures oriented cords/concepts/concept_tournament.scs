@@ -1,0 +1,49 @@
+sc_node_not_relation -> concept_tournament;;
+
+concept_tournament => nrel_main_idtf:
+	[турнир] (* <- lang_ru;; *);
+	[toutnament] (* <- lang_en;; *);;
+
+concept_tournament <- rrel_key_sc_element: 
+        ... 
+            (*
+	<- sc_definition;;
+	=> nrel_main_idtf: [Определение: турнир] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Definition: tournament] (* <- lang_en;; *);;	
+	<= nrel_sc_text_translation: ... 
+	(*
+		-> rrel_example: [Турнир – это орграф, в котором каждая пара вершин соединена одной направленной дугой.] (* <- lang_ru;; *);;
+		-> rrel_example: [Tournament is an orientation of a complete graph, or equivalently a directed graph in which every pair of distinct vertices is connected by a single directed edge.] (* <- lang_en;; *);;
+		*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+*);;
+
+concept_tournament<= nrel_using_constants: {
+			concept_directed_graph;
+			concept_node;
+			concept_oredge		
+			};;		
+			
+concept_tournament <- rrel_key_sc_element: 
+        	... 
+		(*
+		<- sc_statement;;
+		-> rrel_key_sc_element: concept_node; concept_oredge; concept_undirected_graph;;		
+		=> nrel_main_idtf: [Утверждение: турнир] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: tournament](* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Турнир – это ориентированный граф, полученный из неориентированного полного графа путём назначения направления каждому ребру.] (* <- lang_ru;; *);;
+                        -> rrel_example: 
+				[A tournament is a directed graph (digraph) obtained by assigning a direction for each edge in an undirected complete graph.] (* <- lang_en;; *);;
+			*);;
+        <= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+		*);;
+		
+concept_tournament <- rrel_key_sc_element: ... (*
+	<- sc_illustration;;
+	<= nrel_sc_text_translation: ... (*
+		-> rrel_example: "file://contents/tournament.png";;
+	*);;
+*);;

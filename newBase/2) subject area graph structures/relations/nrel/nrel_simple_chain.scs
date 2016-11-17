@@ -1,0 +1,56 @@
+sc_node_not_relation->nrel_simple_chain;;
+
+nrel_simple_chain => nrel_main_idtf:
+	[элементарная цепь](* <-lang_ru;; *);
+	[simple chain](* <-lang_en;; *);;
+
+nrel_simple_chain <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: элементарная цепь] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: simple chain] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Маршрут в котором все его вершины,кроме,возможно,крайних, различны.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[The route in which all the vertices except possibly the extreme, are different.](*<- lang_en;;*);;
+		*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+*);;
+nrel_simple_chain<= nrel_using_constants:
+						{
+							concept_vertex;
+							nrel_sequence
+						};;
+
+nrel_simple_chain <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: способ описания цикла] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: a  way of describing the simple cycle] (* <- lang_en;; *);;
+		-> rrel_key_sc_element: concept_edge;;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Простые циклы можно описать набором рёбер](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[The simple cycles can be described as a set of edges.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+		*);;
+		
+			
+nrel_simple_chain <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/nrel_simple_chain.png";;
+			*);;
+	*);;

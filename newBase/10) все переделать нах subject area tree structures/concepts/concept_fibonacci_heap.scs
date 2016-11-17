@@ -1,0 +1,73 @@
+sc_node_not_relation -> concept_fibonacci_heap;;
+
+concept_fibonacci_heap => nrel_main_idtf:
+	[фибоначчиева куча](* <-lang_ru;; *);
+	[fibonacci heap](* <-lang_en;; *);;
+
+concept_fibonacci_heap <- rrel_key_sc_element: 
+		... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: фибоначчиева куча] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: fibonacci heap] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Фибоначчиева куча — набор фибоначчиевых деревьев, корни которых объединены в неупорядоченный циклический двусвязный список. В отличие от биномиальной кучи, степени корней не обязаны быть попарно различными.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Fibonacci heap - Fibonacci set of trees whose roots are combined in an ordered cyclical doubly linked list. Unlike the binomial heap degree roots need not be distinct.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: F_Harary_Graph_Theory;;
+		*);;
+
+concept_fibonacci_heap <= nrel_using_constants: 
+					{
+					concept_binomial_tree;
+					concept_binomial_heap
+					};;
+
+concept_fibonacci_heap <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: операции фибоначчиевых куч] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: operation Fibonacci heap] (* <- lang_en;; *);;
+		-> rrel_key_sc_element: concept_binomial_heap;;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Фибоначчиевы кучи поддерживают тот же набор операций, что и биномиальные кучи, но имеют то преимущество, что операции, в которых не требуется удаление, имеют амортизированное время работы, равное O(1).](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Fibonacci heaps support the same set of operations as the binomial heap, but have the advantage that the operation, which does not require removal, are amortized running time equal to O (1).](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: F_Harary_Graph_Theory;;
+		*);;
+
+concept_fibonacci_heap <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: преимущества фиббоначчиевых куч] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: advantage of the Fibonacci heap] (* <- lang_en;; *);;
+		-> rrel_key_sc_element: concept_binary_heap;;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Фибоначчиевы кучи особенно полезны в случае, когда количество операций extractMin и delete относительно мало по сравнению с количеством других операций. Однако с практической точки зрения программная сложность и высокие значения постоянных множителей в формулах времени работы существенно снижают эффективность применения фибоначчиевых куч, делая их в большинстве случаев менее привлекательными, чем обычные бинарные кучи.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Fibonacci heap are particularly useful in the case where the amount of extract Min and delete operations is relatively small compared with the number of other operations. However, from a practical point of view the complexity of the software and the high values of the constants in equations factors significantly reduce the time of the effectiveness of the Fibonacci heaps, making them generally less attractive than conventional binary heap.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: F_Harary_Graph_Theory;;
+		*);;
+
+concept_fibonacci_heap <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_fibonacci_heap.gif";;
+			*);;
+	*);;

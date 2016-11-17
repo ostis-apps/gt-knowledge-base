@@ -1,0 +1,55 @@
+sc_node_not_relation -> concept_binomial_heap;;
+
+concept_binomial_heap => nrel_main_idtf:
+	[биномиальная куча](* <-lang_ru;; *);
+	[binomial heap](* <-lang_en;; *);;
+
+concept_binomial_heap <- rrel_key_sc_element: 
+		... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: биномиальная куча] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: binomial heap] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Биномиальная куча представляет собой множество биномиальных деревьев, которые удовлетворяют следующим свойствам: каждое биномиальное дерево в куче подчиняется свойству неубывающей кучи: ключ узла не меньше ключа его родительского узла, для любого неотрицательного целого k найдется не более одного биномиального дерева, чей корень имеет степень k.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Binomial heap is a set of binomial trees that satisfy the following properties: Each binomial tree in the heap obeys the property of non-decreasing pile: node key is not less than the key of its parent node, for any non-negative integer k there is at most one binomial tree whose root has degree k.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+		*);;
+
+concept_binomial_heap <= nrel_using_constants: 
+					{
+					concept_binomial_tree
+					};;
+
+concept_binomial_heap <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: список корней кучи] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: List roots heap] (* <- lang_en;; *);;
+		-> rrel_key_sc_element: concept_tree;;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Корни деревьев, из которых состоит куча, содержатся в так называемом списке корней, при проходе по которому степени соответствующих корней находятся в возрастающем порядке. Доступ к куче осуществляется ссылкой на первый корень в списке корней.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[The roots of trees that make up the heap are contained in so-called root list, during passage through which the respective degree of roots are in ascending order. Access to the pile made referring to the first root in the root list.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+		*);;
+
+concept_binomial_heap <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_binomial_heap.jpg";;
+			*);;
+	*);;

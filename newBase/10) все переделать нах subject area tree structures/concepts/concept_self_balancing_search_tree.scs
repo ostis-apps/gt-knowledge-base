@@ -1,0 +1,42 @@
+sc_node_not_relation -> concept_self_balancing_search_tree;;
+
+concept_self_balancing_search_tree => nrel_main_idtf:
+	[самоболансирующееся дерево поиска](* <-lang_ru;; *);
+	[self-balancing search tree](* <-lang_en;; *);;
+
+concept_self_balancing_search_tree => nrel_idtf:
+	[height-balanced search tree](* <-lang_en;; *);;
+
+concept_self_balancing_search_tree <- rrel_key_sc_element: 
+		... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: самоболансирующееся дерево поиска] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: self-balancing search tree] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Самоболансирующимся бинарным деревом поиска является любое дерево на основе бинарного дерева поиска, которое автоматически сохраняет свою минимальную высоту вопреки произвольным вставкам и удалению элементов. Такая структура обеспечивает эффективную реализацию для изменяемых упорядоченных списков, и могут быть использованы для других абстрактных структур данных, таких как ассоциативные массивы, очереди  приоритетов и очереди наборов.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[A self-balancing binary search tree is any node-based binary search tree that automatically keeps its height small in the face of arbitrary item insertions and deletions. These structures provide efficient implementations for mutable ordered lists, and can be used for other abstract data structures such as associative arrays, priority queues and sets.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: F_Harary_Graph_Theory;;
+		*);;
+
+concept_self_balancing_search_tree <= nrel_using_constants: 
+									{
+									concept_tree; 
+									concept_binary_tree
+									};;
+
+concept_self_balancing_search_tree <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_self_balancing_search_tree.jpg";;
+			*);;
+	*);;

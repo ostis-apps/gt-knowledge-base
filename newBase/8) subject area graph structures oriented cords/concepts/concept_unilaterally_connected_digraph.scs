@@ -1,0 +1,50 @@
+sc_node_not_relation -> concept_unilaterally_connected_digraph;;
+
+concept_unilaterally_connected_digraph => nrel_main_idtf:
+	[односторонне связный орграф] (* <- lang_ru;; *);
+	[unilaterally connected digraph] (* <- lang_en;; *);;
+
+concept_unilaterally_connected_digraph <- rrel_key_sc_element: 
+        ... 
+            (*
+	<- sc_definition;;
+	=> nrel_main_idtf: [Определение: односторонне связный орграф] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Definition: unilaterally connected digraph] (* <- lang_en;; *);;	
+	<= nrel_sc_text_translation: ... 
+	(*
+		-> rrel_example: [Ориентированный граф называется односторонне-связным, если для любых двух вершин, по крайней мере, одна достижима из другой.] (* <- lang_ru;; *);;
+		-> rrel_example: [A directed graph in which it is possible for every two nodes to reach at least one of them from another is called unilaterally connected] (* <- lang_en;; *);;
+		*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+*);;
+
+concept_unilaterally_connected_digraph<= nrel_using_constants: {
+			concept_directed_graph;
+			concept_node;
+			concept_edge;
+			nrel_path_in_the_digraph			
+			};;		
+			
+concept_unilaterally_connected_digraph <- rrel_key_sc_element: 
+        	... 
+		(*
+		<- sc_statement;;
+		-> rrel_key_sc_element: concept_node; nrel_path_in_the_digraph;;		
+		=> nrel_main_idtf: [Утверждение: односторонне связный орграф] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: uniterally connected вшgraph](* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Если для любых двух различных его вершин хi и xj существует, по крайней мере, один путь из хi в xj или из xj в хi или оба пути существуют одновременно, то орграф называется односторонним.] (* <- lang_ru;; *);;
+                        -> rrel_example: 
+				[If for any two distinct nodes xi and xj there is at least one path from xi to xj or xj to xi or both ways exist simultaneously, the digraph is called an uniterally connected.] (* <- lang_en;; *);;
+			*);;
+        <= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+		*);;
+		
+concept_unilaterally_connected_digraph <- rrel_key_sc_element: ... (*
+	<- sc_illustration;;
+	<= nrel_sc_text_translation: ... (*
+		-> rrel_example: "file://contents/unilaterally_connected_digraph.png";;
+	*);;
+*);;

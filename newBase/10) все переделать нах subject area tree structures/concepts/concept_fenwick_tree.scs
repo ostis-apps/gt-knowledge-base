@@ -1,0 +1,75 @@
+sc_node_not_relation -> concept_fenwick_tree;;
+
+concept_fenwick_tree => nrel_main_idtf:
+	[дерево Фенвика](* <-lang_ru;; *);
+	[Fenwick tree](* <-lang_en;; *);;
+
+concept_fenwick_tree => nrel_idtf:
+	[binary indexed tree](* <-lang_en;; *);;
+
+concept_fenwick_tree <- rrel_key_sc_element: 
+		... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: дерево Фенвика] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: Fenwick tree] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Дерево Фенвика — структура данных, требующая O(n) памяти и позволяющая эффективно (за O(log n)) выполнять следующие операции: 1. изменять значение любого элемента в массиве, 2. выполнять некоторую ассоциативную, коммутативную, обратимую операцию на отрезке (i, j).](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Fenwick tree - a data structure that requires On) memory and allows efficient (for O (log n)) to perform the following operations: 1. change the value of each element in the array. 2. to perform some associative, commutative, reversible operation on the interval (i, j).](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: R_Distel_Graph_Theory;;
+		*);;
+
+concept_fenwick_tree <= nrel_using_constants: 
+					{
+					concept_tree
+					};;
+
+concept_fenwick_tree <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: пересчет дерева Фенвика] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: counting tree Fenwick] (* <- lang_en;; *);;
+		-> rrel_key_sc_element: concept_tree;;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Для пересчёта дерева Фенвика при изменении величины a(k) необходимо изменить элементы дерева T(i), для индексов i которых верно неравенство F(i) <= k <= i .](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[For the conversion of wood Fenwick to the extent that a (k) of wood elements must change T (i), for the indices i where the inequality F (i) <= k <= i.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: R_Distel_Graph_Theory;;
+		*);;
+
+concept_fenwick_tree <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: сравнение дерева Фенвика и дерева отрезков] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: compare Fenwick tree and segments tree] (* <- lang_en;; *);;
+		-> rrel_key_sc_element: concept_segment_tree; concept_trie;;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Дерево Фенвика занимает в константное значение раз меньше памяти, чем дерево отрезков. Это следует из того, что дерево Фенвика хранит только значение операции для каких-то элементов, а дерево отрезков хранит сами элементы и частичные результаты операции на подотрезках, поэтому оно занимает как минимум в два раза больше памяти. Дерево Фенвика проще в реализации. Операция на отрезке, для которой строится дерево Фенвика, должна быть обратимой, а это значит, что минимум (как и максимум) на отрезке это дерево считать не может, в отличие от дерева отрезков. Но если нам требуется найти минимум на префиксе, то дерево Фенвика справится с этой задачей. Такое дерево Фенвика поддерживает операцию уменьшения элементов массива. Пересчёт минимума в дереве происходит быстрее, чем обновление массива минимумов на префиксе.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Fenwick tree takes a constant value in times less memory than the segment tree. This follows from the fact that tree Fenwick stores only the value of the operation for some items, and stores a segment tree and the elements themselves partial operation results to subsegments, so it takes at least twice as much memory. Fenwick tree easier to implement. Operation on a segment for which the tree is constructed Fenwick, should be reversible, which means that the minimum (and maximum) in the segment tree is not considered, unlike wood segments. But if we want to find the minimum of the prefix, the Fenwick tree to do the task. Such a tree Fenwick supports operation reduce the array elements. Conversion of the minimum in the tree faster than updating the array lows ](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: R_Distel_Graph_Theory;;
+		*);;
+
+concept_fenwick_tree <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_fenwick_tree.png";;
+			*);;
+	*);;

@@ -1,0 +1,32 @@
+sc_node_not_relation -> concept_directed_multigraph;;
+
+concept_directed_multigraph => nrel_main_idtf:
+	[ориентированный мультиграф] (* <- lang_ru;; *);
+	[directed multigraph] (* <- lang_en;; *);;
+
+concept_directed_multigraph <- rrel_key_sc_element: 
+        ... 
+            (*
+	<- sc_definition;;
+	=> nrel_main_idtf: [Определение: ориентированный мультиграф] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Definition: directed multigraph] (* <- lang_en;; *);;	
+	<= nrel_sc_text_translation: ... 
+	(*
+		-> rrel_example: [Ориентированный мультиграф - орграф, в котором допускаются кратные дуги.] (* <- lang_ru;; *);;
+		-> rrel_example: [Directed multigtaph - directed graph in which multiple arc allowed.] (* <- lang_en;; *);;
+		*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+*);;
+
+concept_directed_multigraph<= nrel_using_constants: {
+			concept_directed_graph;
+			concept_node;
+			concept_oredge
+			};;		
+		
+concept_directed_multigraph <- rrel_key_sc_element: ... (*
+	<- sc_illustration;;
+	<= nrel_sc_text_translation: ... (*
+		-> rrel_example: "file://contents/directed_multigraph.png";;
+	*);;
+*);;

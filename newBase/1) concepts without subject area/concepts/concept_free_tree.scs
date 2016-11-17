@@ -1,0 +1,16 @@
+concept_free_tree
+	<- sc_node_not_relation;
+
+	=> nrel_main_idtf: [свободное дерево] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [free tree] (* <- lang_en;; *);
+
+	<- rrel_key_sc_element: ... (*
+		<- sc_definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: [дерево, в котором не выделен корень. ] (* <- lang_ru;; *);;
+			<= nrel_using_constants: {
+				concept_tree;
+				concept_tree_root
+				};;
+			*);;
+	*);;

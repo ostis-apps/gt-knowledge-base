@@ -1,0 +1,61 @@
+sc_node_norole_relation ->nrel_minimal_frame;;
+sc_relation -> nrel_minimal_frame;;
+binary_relation -> nrel_minimal_frame;;
+oriented_relation -> nrel_minimal_frame;;
+
+nrel_minimal_frame
+	=> nrel_main_idtf: 
+		[ минимальный каркас* ] (* <-lang_ru;; *);
+		[ minimal frame* ] (* <-lang_en;; *);
+	=>nrel_idtf : 
+			[ каркас минимального веса* ] (* <-lang_ru;; *);
+			[ минимальное остовное дерево* ] (* <-lang_ru;; *);
+=> nrel_arity_of_relations: 3 (* <- number ;;*);
+
+	<-rrel_key_sc_element:
+		...  
+		(*<-sc_definition;;
+	=> nrel_main_idtf: [Опр.(минимальный каркас)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:
+		...
+			(*
+				-> rrel_example: 
+				[Минимальный каркас -ациклическое (не имеющее циклов) множество рёбер в связном, взвешенном и неориентированном графе, 
+			соединяющих между собой все вершины данного графа, при этом сумма весов всех рёбер в нём минимальна.] (*<-lang_ru;;*);;	
+			*);;
+		*);
+<= nrel_using_constants:
+							{
+								concept_graph;
+								concept_weighted_graph;
+								concept_undirected_graph;
+								rrel_edge;
+								rrel_vertex
+							};
+	
+=> nrel_definitional_domain:
+...
+(*
+				<= nrel_combination:
+					...
+						(*
+								->concept_weighted_graph;;
+								->set_of_correspondences;;
+							*);;
+*);
+
+ => nrel_first_domain: concept_weighted_graph;
+ => nrel_second_domain: concept_weighted_graph;	
+=>nrel_third_domain:set_of_correspondences;
+
+<- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+			"file://contents/nrel_minimal_frame.png";;
+			*);;
+	*);;

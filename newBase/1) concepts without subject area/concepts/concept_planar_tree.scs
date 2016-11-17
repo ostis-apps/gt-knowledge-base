@@ -1,0 +1,17 @@
+concept_planar_tree
+	<- sc_node_not_relation;
+
+	=> nrel_main_idtf: [плоское дерево] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [planar tree] (* <- lang_en;; *);
+
+	<= nrel_inclusion: concept_tree;
+
+	<- rrel_key_sc_element: ... (*
+		<- sc_definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: [дерево, вложенное в евклидову плоскость.] (* <- lang_ru;; *);;
+			<= nrel_using_constants: {
+				concept_tree
+			};;
+		*);;
+	*);;

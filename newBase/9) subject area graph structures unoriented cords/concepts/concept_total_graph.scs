@@ -1,0 +1,64 @@
+sc_node_not_relation -> concept_total_graph;;
+concept_total_graph => nrel_main_idtf:
+	[тотальный граф] (* <- lang_ru;; *);
+	[total graph] (* <- lang_en;; *);;
+	
+concept_total_graph <- rrel_key_sc_element: 
+	...  
+	(*
+	=> nrel_main_idtf: [Определение: тотальный граф] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Definition: total graph](* <- lang_en;; *);;	
+	<- sc_definition;; 
+	<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+	<= nrel_sc_text_translation: 
+		... 
+		(*
+		-> rrel_example: 
+		[Тотальный граф - для данного графа G граф T(G), у которого множеством вершин является V(G) E(G) и две вершины в T(G) смежны, если они соседние (т.е. смежные или инцидентные) в графе G.](* <- lang_ru;; *);;
+		-> rrel_example: 
+                [Count total - for the given graph G is the graph T (G), which is a set of vertices V (G) E (G) and two vertices in T (G) are adjacent if they are adjacent (ie adjacent or incident) in a graph G.] (* <-lang_en;; *);;
+		*);;
+	*);;
+concept_total_graph<= nrel_using_constants:
+					{
+					concept_edge;
+					concept_vertex
+					};;
+	
+concept_total_graph <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_total_graph.png";;
+			*);;
+	*);;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

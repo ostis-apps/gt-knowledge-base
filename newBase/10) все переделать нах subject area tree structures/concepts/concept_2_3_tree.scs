@@ -1,0 +1,61 @@
+sc_node_not_relation -> concept_2_3_tree;;
+
+concept_2_3_tree => nrel_main_idtf:
+	[2-3 дерево](* <-lang_ru;; *);
+	[2-3 tree](* <-lang_en;; *);;
+
+concept_2_3_tree <- rrel_key_sc_element: 
+		... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: 2-3 дерево] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: 2-3 tree] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[2-3 дерево — структура данных, являющаяся B-деревом Степени 1, страницы которого могут содержать только 2-вершины (вершины с одним полем и 2 детьми) и 3-вершины (вершины с 2 полями и 3 детьми). Листовые вершины являются исключением — у них нет детей (но может быть одно или два поля). 2-3 деревья сбалансированы, то есть, каждое левое, правое, и центральное поддерево имеет одну и ту же высоту, и, таким образом, содержат равные (или почти равные) объемы данных.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[2-3 tree - a data structure, which is a B-tree of degree 1, which pages contain only 2 vertices (vertices with one field and 2 children) or 3 peaks (peaks with 2 fields and 3 children). Leafy tops are an exception - they do not have children (but may be one or two fields). Trees 2-3 are balanced, that is, each left, right, and central subtree has the same height, and thus contain equal (or nearly equal) volume of data.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: R_Distel_Graph_Theory;;
+		*);;
+
+concept_2_3_tree <= nrel_using_constants:
+					{
+					concept_node;
+					concept_tree;
+					concept_b_tree
+					};;
+
+concept_2_3_tree <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: свойства] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: properties] (* <- lang_en;; *);;
+		-> rrel_key_sc_element: concept_binary_search_tree;;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Все нелистовые вершины содержат одно поле и 2 поддерева или 2 поля и 3 поддерева.
+Все листовые вершины находятся на одном уровне (на нижнем уровне) и содержат 1 или 2 поля.
+Все данные отсортированы (по принципу двоичного дерева поиска).](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[All non-leaf vertices contain one field and 2 subtree or 2 field and 3 subtree.
+All leaf vertices are at the same level (lower level) and contain one or two fields.
+All the data is sorted (on the basis of a binary search tree).](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: R_Distel_Graph_Theory;;
+		*);;
+
+concept_2_3_tree <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_2_3_tree.png";;
+			*);;
+	*);;

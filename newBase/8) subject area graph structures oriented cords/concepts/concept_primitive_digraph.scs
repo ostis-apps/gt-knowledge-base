@@ -1,0 +1,52 @@
+sc_node_not_relation -> concept_primitive_digraph;;
+
+concept_primitive_digraph => nrel_main_idtf:
+	[примитивный орграф] (* <- lang_ru;; *);
+	[primitive digraph] (* <- lang_en;; *);;
+
+concept_primitive_digraph <- rrel_key_sc_element: 
+        ... 
+            (*
+	<- sc_definition;;
+	=> nrel_main_idtf: [Определение: примитивный орграф] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Definition: primitive digraph] (* <- lang_en;; *);;	
+	<= nrel_sc_text_translation: ... 
+	(*
+		-> rrel_example: [Примитивный орграф -  орграф, у которого какая-нибудь степень его матрицы смежности целиком состоит из положительных чисел.] (* <- lang_ru;; *);;
+		-> rrel_example: [A primitive graph is a directed graph in which any degree of each node in adjacency matrix consists entirely of positive numbers] (* <- lang_en;; *);;
+		*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+*);;
+
+concept_primitive_digraph<= nrel_using_constants: {
+			concept_directed_graph;
+			concept_node;
+			concept_oredge;
+			concept_number;
+			nrel_indegree;
+			nrel_outdegree		
+			};;		
+			
+concept_primitive_digraph <- rrel_key_sc_element: 
+        	... 
+		(*
+		<- sc_statement;;
+		-> rrel_key_sc_element: concept_node; nrel_oredge; nrel_contour;;		
+		=> nrel_main_idtf: [Утверждение: примитивный орграф] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: primitive digraph](* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ..
+			(*
+			-> rrel_example: 
+				[Орграф примитивен тогда и только тогда, когда длины его простых контуров имеют наибольший общий делитель, равный 1.] (* <- lang_ru;; *);;
+                        -> rrel_example: 
+				[A primitive graph is a directed graph in which the length of its simple contours have the greatest common divisor is equal to 1.] (* <- lang_en;; *);;
+			*);;
+        <= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+		*);;
+		
+concept_primitive_digraph <- rrel_key_sc_element: ... (*
+	<- sc_illustration;;
+	<= nrel_sc_text_translation: ... (*
+		-> rrel_example: "file://contents/primitive_digraph.png";;
+	*);;
+*);;

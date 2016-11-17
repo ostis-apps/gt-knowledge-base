@@ -1,0 +1,54 @@
+concept_min_weight_tree
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[дерево минимального веса]
+	(* <- lang_ru;; *);
+	[minimum weight tree]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...  
+	(*
+		<- definition;;
+		=> nrel_main_idtf: 
+			[Опр.(дерево минимального веса)]
+			(* <- lang_ru;; *);
+			[Def.(minimum weight tree)]
+			(* <- lang_en;; *);;		
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content_html/definition_for_concept_min_weight_tree_ru.html"
+				(* <- lang_ru;;	*);
+                "file://content_html/definition_for_concept_min_weight_tree_en.html"
+				(* <- lang_en;;	*);;
+			*);;		
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+	*);
+<= nrel_using_constants: 
+{
+	concept_tree;
+	nrel_tree_weight
+};
+=> nrel_first_domain: concept_weighted_graph;
+=> nrel_second_domain: concept_cyclic_graph;
+<= nrel_definitional_domain:
+...
+(*
+	<= nrel_combination:
+	{
+		concept_weighted_graph;
+		concept_cyclic_graph
+	};;
+*);
+<- rrel_key_sc_element: 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation: 
+			...
+			(*
+			-> rrel_example:
+				"file://content_img/concept_min_weight_tree.png";;
+			*);;
+	*);;

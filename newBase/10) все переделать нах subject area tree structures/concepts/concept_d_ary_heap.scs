@@ -1,0 +1,38 @@
+sc_node_not_relation -> concept_d_ary_heap;;
+
+concept_d_ary_heap => nrel_main_idtf:
+	[d-арная куча](* <-lang_ru;; *);
+	[d-ary heap](* <-lang_en;; *);;
+
+concept_d_ary_heap <- rrel_key_sc_element: 
+		... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: d-арная куча] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: d-ary heap] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[D-арная куча (англ. d-ary heap) — двоичная куча, в которой у каждого элемента d детей вместо 2.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[D-ary heap - binary heap in which each element d children instead of 2.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: F_Harary_Graph_Theory;;
+		*);;
+
+concept_d_ary_heap <= nrel_using_constants: 
+					{
+					concept_binary_heap
+					};;
+
+concept_d_ary_heap <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_d_ary_heap.gif";;
+			*);;
+	*);;

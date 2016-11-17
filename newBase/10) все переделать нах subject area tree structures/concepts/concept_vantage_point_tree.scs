@@ -1,0 +1,75 @@
+sc_node_not_relation -> concept_vantage_point_tree;;
+
+concept_vantage_point_tree => nrel_main_idtf:
+	[VP-дерево](* <-lang_ru;; *);
+	[VP-tree](* <-lang_en;; *);;
+
+concept_vantage_point_tree => nrel_idtf:
+	[vantage-point tree](* <-lang_en;; *);;
+
+concept_vantage_point_tree <- rrel_key_sc_element: 
+		... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: VP-дерево] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: VP-tree] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[VP-дерево — разновидность BSP-дерева. VP-дерево можно построить для объектов из метрического пространства, то есть для любого множества, в котором определено расстояние между любыми двумя элементами этого множества.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[VP-tree - a kind of BSP-tree. VP-tree can be constructed for the objects of a metric space, that is, for any set, which determined the distance between any two elements in this set.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+		*);;
+
+concept_vantage_point_tree <= nrel_using_constants: 
+					{
+					concept_tree
+					};;
+
+concept_vantage_point_tree <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: принцип построения дерева] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: tree constructions principle] (* <- lang_en;; *);;
+		-> rrel_key_sc_element: concept_tree;;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Из первоначального множества берется одна из точек и выбирается «радиус» R для этой точки. Остальные точки делятся на два подмножества — с расстоянием меньше R до опорной точки, и расстоянием больше R. В каждом из получившихся подмножеств выбирается следующая опорная точка и новый радиус, и т. д., пока количество элементов в каждом из оставшихся подмножеств не станет меньше определенного порогового значения. Опорные точки и «радиусы» сфер разбиения выбираются так, чтобы дерево получилось максимально сбалансированным.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[From the original set is taken one of the points and select the "radius" of the R this point. The remaining points are divided into two subsets - the distance is less than R to the reference point, and a distance greater than R. next reference point and the new range is selected in each of the resulting subset, and so on, until the number of elements in each of the remaining subsets is less than.. certain threshold. Pivots and "radius" of the partition areas are chosen to get the most balanced tree.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+		*);;
+
+concept_vantage_point_tree <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: преимущества VP-дерева] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: advantages of VP-tree] (* <- lang_en;; *);;
+		-> rrel_key_sc_element: concept_k_d_tree;;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[В отличие от KD-дерева, которое применимо только для точек из R^k, VP-дерево может быть использовано для поиска ближайших объектов из любого метрического пространства. Например, в качестве метрики можно использовать расстояние Хэмминга — тогда VP-дерево можно использовать для поиска похожих слов из словаря, или поиска похожих изображений.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Unlike KD-tree, which is applicable only for points from R ^ k, VP-tree can be used to search for the nearest objects of a metric space. For example, as a metric can be used Hamming distance - then the VP-tree can be used to search for similar words from the dictionary or search for similar images.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+		*);;
+
+concept_vantage_point_tree <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_vantage_point_tree.png";;
+			*);;
+	*);;

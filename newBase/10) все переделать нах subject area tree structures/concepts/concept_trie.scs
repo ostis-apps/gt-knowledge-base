@@ -1,0 +1,60 @@
+sc_node_not_relation -> concept_trie;;
+
+concept_trie => nrel_main_idtf:
+	[префиксное дерево](* <-lang_ru;; *);
+	[trie](* <-lang_en;; *);;
+
+concept_trie => nrel_dtf:
+	[бор](* <-lang_ru;; *);
+	[луч](* <-lang_ru;; *);
+	[нагруженное дерево](* <-lang_ru;; *);;
+
+concept_trie <- rrel_key_sc_element: 
+		... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: префиксное дерево] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: trie] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Префиксное дерево — абстрактный тип данных (АТД), структура данных, позволяющая хранить ассоциативный массив, ключами которого являются строки. В отличие от бинарных деревьев, ключ, идентифицирующий конкретный узел дерева, не хранится в данном узле, а определяется положением данного узла в дереве. Значение ключа можно получить просмотром всех родительских узлов, каждый из которых хранит один или несколько символов алфавита. Корень дерева связан с пустой строкой. Таким образом, потомки узла имеют общий префикс, откуда и произошло название данного АТД. Значения, связанные с ключом, обычно не связаны с каждым узлом, а только с листьями и, возможно, некоторыми внутренними узлами.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Trie - abstract data type (ADT), a data structure that allows you to store an associative array where the keys are strings. Unlike the binary tree, the key identifying a particular node in the tree is not stored in the node and determined by the position of the node in the tree. The key value you can get to view all the parent nodes, each of which stores one or more alphabetic characters. The root of the tree is associated with the empty string. Thus, the descendants of the node have a common prefix, hence the name of the ADT. Values ​​associated with a key, not normally associated with each node, but only the leaves and possibly some internal nodes.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: R_Distel_Graph_Theory;;
+		*);;
+
+concept_trie <= nrel_using_constants: 
+					{
+					concept_tree
+					};;
+
+concept_trie <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: узлы в префиксном дереве] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: nodes in the trie] (* <- lang_en;; *);;
+		-> rrel_key_sc_element: concept_tree; concept_n_ary_tree;;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Нагруженное дерево отличается от обычных n-арных деревьев тем, что в его узлах не хранятся ключи. Вместо них в узлах хранятся односимвольные метки, а ключем, который соответствует некоему узлу является путь от корня дерева до этого узла, а точнее строка составленная из меток узлов, повстречавшихся на этом пути. В таком случае корень дерева, очевидно, соответствует пустому ключу.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Trie differs from the conventional n-ary trees in that its nodes are not stored keys. Instead, they are stored in the nodes of single-character labels, and the key that corresponds to a certain node is a path from the root to the node, or rather line up of labels nodes met along the way. In this case, the root of the tree is obviously corresponds to an empty key.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: R_Distel_Graph_Theory;;
+		*);;
+
+concept_trie <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_trie.png";;
+			*);;
+	*);;

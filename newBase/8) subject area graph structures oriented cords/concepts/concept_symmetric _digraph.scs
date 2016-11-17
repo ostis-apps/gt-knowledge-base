@@ -1,0 +1,32 @@
+sc_node_not_relation -> concept_symmetric_digraph;;
+
+concept_symmetric_digraph => nrel_main_idtf:
+	[симметричный орграф] (* <- lang_ru;; *);
+	[symmetric digraph] (* <- lang_en;; *);;
+
+concept_symmetric_digraph <- rrel_key_sc_element: 
+        ... 
+            (*
+	<- sc_definition;;
+	=> nrel_main_idtf: [Определение: симметричный орграф] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Definition: symmetric digraph] (* <- lang_en;; *);;	
+	<= nrel_sc_text_translation: ... 
+	(*
+		-> rrel_example: [Симметричный орграф - орграф, у которого две смежные вершины всегда соединены двумя противоположно ориентированными дугами.] (* <- lang_ru;; *);;
+		-> rrel_example: [symmetric digraph - directed graph, in which two adjacent vertices are always connected by two oppositely directed arcs.] (* <- lang_en;; *);;
+		*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+*);;
+
+concept_symmetric_digraph<= nrel_using_constants: {
+			concept_directed_graph;
+			concept_node;
+			concept_oredge	
+			};;		
+		
+concept_symmetric_digraph <- rrel_key_sc_element: ... (*
+	<- sc_illustration;;
+	<= nrel_sc_text_translation: ... (*
+		-> rrel_example: "file://contents/symmetric_digraph.png";;
+	*);;
+*);;

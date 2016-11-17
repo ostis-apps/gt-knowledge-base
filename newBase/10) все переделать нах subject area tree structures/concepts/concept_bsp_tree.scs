@@ -1,0 +1,74 @@
+sc_node_not_relation -> concept_bsp_tree;;
+
+concept_bsp_tree => nrel_main_idtf:
+	[BSP-дерево](* <-lang_ru;; *);
+	[BSP-tree](* <-lang_en;; *);;
+
+concept_bsp_tree <- rrel_key_sc_element: 
+		... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: BSP-дерево] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: BSP-tree] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[BSP-дерево — дерево, отвечающее заданному двоичному разбиению пространства (методу рекурсивного разбиения евклидова пространства в выпуклые множества и гиперплоскости).](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[BSP-tree - a tree that meets the specified binary space partitioning (recursive partitioning of Euclidean space into convex sets and hyperplanes).](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: R_Distel_Graph_Theory;;
+		*);;
+
+concept_bsp_tree <= nrel_using_constants: 
+					{
+					concept_tree
+					};;
+
+concept_bsp_tree <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: приенение BSP-дерева] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: use of BSP-tree] (* <- lang_en;; *);;
+		-> rrel_key_sc_element: concept_tree;;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[BSP-дерево используется для эффективного выполнения следующих операций в трёхмерной компьютерной графике: - Сортировка визуальных объектов в порядке удаления от наблюдателя;
+ - Обнаружение столкновений.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[BSP-tree is used to effectively perform the following operations in the three-dimensional computer graphics: - Sort of visual objects in order of distance from the observer;
+  - Collision detection.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: R_Distel_Graph_Theory;;
+		*);;
+
+concept_bsp_tree <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: узлы в BSP-дереве] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: nodes in the BSP-tree] (* <- lang_en;; *);;
+		-> rrel_key_sc_element: concept_tree;;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[В BSP-дереве каждый узел связан с разбивающей прямой или плоскостью в 2-мерном или 3-мерном пространстве соответственно. При этом все объекты, лежащие с фронтальной стороны плоскости относятся к фронтальному поддереву, а все объекты, лежащие с оборотной стороны плоскости относятся к оборотному поддереву. Для определения принадлежности объекта к фронтальной или оборотной стороне разбивающей прямой или плоскости необходимо исследовать положение каждой его точки.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[The BSP-tree, each node is connected to a dividing line and a plane in 2-dimensional or 3-dimensional space, respectively. In this case all the objects located at the front side of the plane are to the front sub-tree, and all the objects located on the back side of the plane are negotiable subtree. To determine the affiliation of the object to the front or back side of the dividing plane of the line or it is necessary to examine the position of each point.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: R_Distel_Graph_Theory;;
+		*);;
+
+concept_bsp_tree <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_bsp_tree.png";;
+			*);;
+	*);;

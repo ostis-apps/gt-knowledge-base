@@ -1,0 +1,55 @@
+sc_node_not_relation -> concept_suffix_tree;;
+
+concept_suffix_tree => nrel_main_idtf:
+	[суффиксное дерево](* <-lang_ru;; *);
+	[suffix tree](* <-lang_en;; *);;
+
+concept_suffix_tree <- rrel_key_sc_element: 
+		... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: суффиксное дерево] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: suffix tree] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Суффиксное дерево — бор, содержащий все суффиксы некоторой строки (и только их). Позволяет выяснять, входит ли строка w в исходную строку t, за время O(|w|), где |w| — длина строки w.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Suffix Tree - trie containing all the suffixes of a string (and only them). It allows you to find out whether the string comes w t in the original string, for the time O (| w |), where | w | - W string length.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: R_Distel_Graph_Theory;;
+		*);;
+
+concept_suffix_tree <= nrel_using_constants: 
+					{
+					concept_trie
+					};;
+
+concept_suffix_tree <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: nребования суффиксного дерева к памяти] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: requirements suffix tree to the memory] (* <- lang_en;; *);;
+		-> rrel_key_sc_element: concept_tree;;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Компактное суффиксное дерево может быть представлено в виде, требующем O(n) памяти.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Compact suffix tree may be represented in a form which requires O (n) memory.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: R_Distel_Graph_Theory;;
+		*);;
+
+concept_suffix_tree <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_suffix_tree.png";;
+			*);;
+	*);;

@@ -1,0 +1,38 @@
+sc_node_not_relation -> concept_region_quadtree;;
+
+concept_region_quadtree => nrel_main_idtf:
+	[дерево квадрантов, разбивающее пространство](* <-lang_ru;; *);
+	[region quadtree](* <-lang_en;; *);;
+
+concept_region_quadtree <- rrel_key_sc_element: 
+		... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: дерево квадрантов, разбивающее пространство] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: region quadtree] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Деревья квадрантов, разбивающие пространство, представляют какую-либо часть двумерного пространства разбивая его на 4 квадранта, субквадранты и так далее, причём каждый лист дерева соответствует определённой области. У каждого узла дерева либо 4 потомка, либо их нет вовсе (у листьев). Деревья квадрантов, разбивающие пространство, не являются деревьями в полной мере, поскольку положение субквадрантов не зависит от данных.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Quadtree, dividing the space represent any part of the two-dimensional space dividing it into 4 quadtrees, subkvadranty and so on, and each leaf of the tree corresponds to a certain area. Each node of the tree or 4 offspring, or none at all (the leaves). Trees quadtrees, dividing the space, the trees are not in full, as subkvadrantov position does not depend on the data.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+		*);;
+
+concept_region_quadtree <= nrel_using_constants: 
+					{
+					concept_quadtree
+					};;
+
+concept_region_quadtree <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_region_quadtree.jpg";;
+			*);;
+	*);;

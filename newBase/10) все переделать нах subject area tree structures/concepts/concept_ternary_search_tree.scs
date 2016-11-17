@@ -1,0 +1,55 @@
+sc_node_not_relation -> concept_ternary_search_tree;;
+
+concept_ternary_search_tree => nrel_main_idtf:
+	[тернарное дерево поиска](* <-lang_ru;; *);
+	[ternary search tree](* <-lang_en;; *);;
+
+concept_ternary_search_tree <- rrel_key_sc_element: 
+		... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: тернарное дерево поиска] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: ternary search tree] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Тернарное дерево поиска - структура для поиска строки в наборе строк. Каждый промежуточный узел P тернарного дерева имеет трех потомков, обозначим их так: Left(P) - левый узел, Middle(P) - средний узел, Right(P) - правый узел, - и хранит в себе символ SplitChar (P). Родительский узел для узла P обозначим Parent(P). Каждый лист дерева хранит информацию о соответствующей строке. Каждый узел дерева либо промежуточный, либо лист, поэтому при реализации можно использовать для узла дерева одну структуру, в которой указатели на дочерние узлы и информация о строке находятся на одном месте в памяти. Поиск строки в дереве начинается в корне и далее строка просматривается символ за символом. Если текущий символ строки меньше SplitChar у текущего узла дерева, то мы переходим к узлу Left, если больше - то к узлу Right (если требуемых узлов нет, значит, строки нет в дереве), если равен SplitChar - то к узлу Middle, и только в последнем случае переходим к следующему символу строки.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Ternary search tree - structure for the search string in a set of rows. Each intermediate node P ternary tree has three descendants denote them as: Left (P) - the left node, Middle (P) - the middle node, Right (P) - the right unit - and keeps the character SplitChar (P). The parent node for node P denote Parent (P). Each leaf of the tree stores information on the appropriate line. Each intermediate node or tree or leaf, so the implementation can be used for a single node of the tree structure in which the pointers to child nodes and information line are at the same location in memory. string search begins at the root of the tree and then the line can be seen character by character. If the current character string is less than SplitChar the current node of the tree, then we go to the site of Left, if more - then to the Middle node and only - that to if is SplitChar node Right (if the required components not, then the line is not in the tree) in the latter case, we move on to the next character of the string.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: R_Distel_Graph_Theory;;
+		*);;
+
+concept_ternary_search_tree <= nrel_using_constants: 
+							{
+							concept_tree
+							};;
+
+concept_ternary_search_tree <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: создание дерева] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: creating a tree] (* <- lang_en;; *);;
+		-> rrel_key_sc_element: concept_tree;;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Дерево на основе одной строки s длины I создается в виде цепочки узлов длины I + 1, i-й промежуточный узел хранит в себе i-й символ строки, последний узел - лист, который хранит информацию о строке, каждый узел является узлом Middle для предыдущего узла цепочки.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Tree based on a string s of length I is created in the form of a length of nodes chain I + 1, i-th intermediate node keeps the i-th character of the string, the last node - list, which stores information about the line, each node is a Middle hub for the previous chain assembly.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: R_Distel_Graph_Theory;;
+		*);;
+
+concept_ternary_search_tree <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_ternary_search_tree.png";;
+			*);;
+	*);;

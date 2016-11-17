@@ -1,0 +1,59 @@
+sc_node_not_relation-> concept_permutation_graph;;
+
+concept_permutation_graph => nrel_main_idtf:
+	[граф перестановки](* <-lang_ru;; *);
+	[permutation graph](* <-lang_en;; *);;
+
+concept_permutation_graph <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: граф перестановки] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition:  permutation graph] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Граф перестановки — это граф, вершины которого соответствуют элементам перестановки, а рёбра представляют пары элементов, следование которых стало обратным после перестановки. ](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[A permutation graph is a graph whose vertices represent the elements of a permutation, and whose edges represent pairs of elements that are reversed by the permutation.](*<- lang_en;;*);;
+		*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+*);;
+concept_permutation_graph <= nrel_using_constants:
+						{
+						concept_undirected_graph;
+						concept_graph;
+						concept_vertex;
+						concept_edge
+						};;
+
+
+	concept_permutation_graph <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: дополнение графа перестановок] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: digraph complement] (* <- lang_en;; *);;
+		-> rrel_key_sc_element: nrel_digraph_complement;;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Если граф G является графом перестановок, то таковым будет и дополнение. Перестановку, соответствующую дополнению графа G, можно получить как обратную перестановку той, которая соответствует графу G.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[If a graph G is a permutation graph, so is its complement. A permutation that represents the complement of G may be obtained by reversing the permutation representing G.](*<- lang_en;;*);;
+			*);;
+			<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+*);;
+			
+concept_permutation_graph <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_permutation_graph.png";;
+			*);;
+	*);;
+

@@ -1,0 +1,50 @@
+sc_node_not_relation -> concept_directed_tree;;
+
+concept_directed_tree => nrel_main_idtf:
+	[ориентированное дерево] (* <- lang_ru;; *);
+	[directed tree] (* <- lang_en;; *);;
+
+concept_directed_tree <- rrel_key_sc_element: 
+        ... 
+            (*
+	<- sc_definition;;
+	=> nrel_main_idtf: [Определение: ориентированное дерево] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Definition: directed tree] (* <- lang_en;; *);;	
+	<= nrel_sc_text_translation: ... 
+	(*
+		-> rrel_example: [Ориентированным деревом называют бесконтурный ориентированный граф, у которого полустепень захода любой вершины не больше 1 и существует ровно одна вершина, называемая корнем ориентированного дерева, полустепень захода которой равна 0.] (* <- lang_ru;; *);;
+		-> rrel_example: [A directed tree is a directed graph which would be a tree if the directions on the edges were ignored.] (* <- lang_en;; *);;
+		*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+*);;
+
+concept_directed_tree<= nrel_using_constants: {
+			concept_directed_graph;
+			concept_node;
+			concept_oredge;
+			nrel_contour
+			};;		
+			
+concept_directed_tree <- rrel_key_sc_element: 
+        	... 
+		(*
+		<- sc_statement;;
+		-> rrel_key_sc_element: concept_node; nrel_path_in_the_digraph;;		
+		=> nrel_main_idtf: [Утверждение: достижимость вершин из корня] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: reachability of nodes from the root](* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[В ориентированном дереве любая вершина достижима из корня.] (* <- lang_ru;; *);;
+                        -> rrel_example: 
+				[In a directed tree, every vertex is reachable from the root.] (* <- lang_en;; *);;
+			*);;
+        <= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+		*);;
+		
+concept_directed_tree <- rrel_key_sc_element: ... (*
+	<- sc_illustration;;
+	<= nrel_sc_text_translation: ... (*
+		-> rrel_example: "file://contents/directed_tree.gif";;
+	*);;
+*);;

@@ -1,0 +1,60 @@
+sc_node_not_relation -> concept_cover_tree;;
+
+concept_cover_tree => nrel_main_idtf:
+	[дерево покрытий](* <-lang_ru;; *);
+	[cover tree](* <-lang_en;; *);;
+
+concept_cover_tree <- rrel_key_sc_element: 
+		... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: дерево покрытий] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: cover tree] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Дерево покрытий — древовидная структура данных (дерево), специально разработанная для ускорения поиска ближайшего соседа. Дерево можно рассматривать как иерархию, верхний уровень которой содержит корневую точку, а нижний - все точки в метрическом пространстве. Каждому уровню C соответствует целое число i, которое уменьшается на единицу в каждом нижнем уровне.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Cover tree - tree data structure (tree), specifically designed to accelerate the search for the closest neighbor. The tree can be viewed as a hierarchy, the top level of which contains the root point and the bottom - all the points in a metric space. Each level corresponds to an integer number of C i, which is decremented at each lower level.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: F_Harary_Graph_Theory;;
+		*);;
+
+concept_cover_tree <= nrel_using_constants: 
+					{
+					concept_tree
+					};;
+
+concept_cover_tree <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: свойства] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: properties] (* <- lang_en;; *);;
+		-> rrel_key_sc_element: concept_tree;;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Каждый узел дерева связан с одной точкой данных.
+Если узел, связан с точками данных, то один из его дочерних элементов также должен быть связан с отношением вложенности.
+Каждый узел на уровне 1 находится в пределах расстояния D (I) к его детям на уровне + 1 .](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Each node of the tree is associated with one the data points s.
+If a node is associated with data poit s, the one of its children must also be associated with s(nesting).
+All nodes at level i are at separated by at least D9i) (separation).
+Each node at level i is within distance D(i) to its children in level i+1 (covering)](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: F_Harary_Graph_Theory;;
+		*);;
+
+concept_cover_tree <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_cover_tree.gif";;
+			*);;
+	*);;

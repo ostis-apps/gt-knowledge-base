@@ -1,0 +1,64 @@
+sc_node_not_relation -> concept_circular_arc_graph;;
+concept_circular_arc_graph => nrel_main_idtf:
+	[граф дуг окружности] (* <- lang_ru;; *);
+	[circular arc graph] (* <- lang_en;; *);;
+	
+concept_circular_arc_graph <- rrel_key_sc_element: 
+	...  
+	(*
+	=> nrel_main_idtf: [Определение: граф дуг окружности] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Definition: circular arc graph](* <- lang_en;; *);;	
+	<- sc_definition;; 
+	<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+	<= nrel_sc_text_translation: 
+		... 
+		(*
+		-> rrel_example: 
+		[ Граф дуг окружности - граф, который имеет одну вершину для каждой дуги окружности и ребро между двумя вершинами, если соответствующие дуги пересекаются.](* <- lang_ru;; *);;
+		-> rrel_example: 
+                [ А circular-arc graph is the intersection graph of a set of arcs on the circle. It has one vertex for each arc in the set, and an edge between every pair of vertices corresponding to arcs that intersect.] (* <-lang_en;; *);;
+		*);;
+<= nrel_bibliographical_source: R_Distel_Graph_Theory;;
+	*);;
+concept_circular_arc_graph<= nrel_using_constants:
+					{
+					concept_graph;
+					concept_veretex;
+					concept_oredge
+					};;
+
+
+
+concept_circular_arc_graph <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_circular_arc_graph.png";;
+			*);;
+	*);;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

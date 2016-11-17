@@ -1,0 +1,55 @@
+sc_node_not_relation -> concept_binary_search_tree;;
+
+concept_binary_search_tree => nrel_main_idtf:
+	[двоичное дерево поиска](* <-lang_ru;; *);
+	[binary search tree](* <-lang_en;; *);;
+
+concept_binary_search_tree <- rrel_key_sc_element: 
+		... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: двоичное дерево поиска] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: binary search tree] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Двоичное дерево поиска - это двоичное дерево, для которого выполняются следующие дополнительные условия: оба поддерева - левое и правое - являются двоичными деревьями поиска, у всех узлов левого поддерева произвольного узла X значения ключей данных меньше, нежели значение ключа данных самого узла X, в то время, как значения ключей данных у всех узлов правого поддерева (того же узла X) больше, нежели значение ключа данных узла X.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Binary tree search - is a binary tree, for which the following additional conditions: both the subtree - left and right - are binary search trees, all the nodes of the left subtree of any node X values of key data is less than the value of the node data key X, then while the value of the data key in the right subtree of all nodes (same node X) is greater than the value of the node key data X.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+		*);;
+
+concept_binary_search_tree <= nrel_using_constants: 
+					{
+					concept_binary_tree
+					};;
+
+concept_binary_search_tree <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: преимущество] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: advantage] (* <- lang_en;; *);;
+		-> rrel_key_sc_element: concept_tree;;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Основным преимуществом двоичного дерева поиска перед другими структурами данных является возможная высокая эффективность реализации основанных на нём алгоритмов поиска и сортировки.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[The main advantage of a binary search tree in front of other data structures is a possible implementation of high efficiency based on it search and sort algorithms.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+		*);;
+
+concept_binary_search_tree <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_binary_search_tree.png";;
+			*);;
+	*);;

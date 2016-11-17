@@ -1,0 +1,62 @@
+sc_node_not_relation -> concept_n_ary_tree;;
+
+concept_n_ary_tree => nrel_main_idtf:
+	[N-арное дерево](* <-lang_ru;; *);
+	[N-ary tree](* <-lang_en;; *);;
+
+concept_n_ary_tree <= nrel_subdividing: 
+	{ 
+	concept_directed_n_ary_tree;
+	concept_undirected_n_ary_tree
+	};;
+
+concept_n_ary_tree <- rrel_key_sc_element: 
+		... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: N-арное дерево] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: N-ary tree] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[N-арное дерево состоит из узлового элемента и (возможно) набора потомков, которые в свою очередь также являются N-арными деревьями. N-арное дерево никогда не может быть пустым. Набор потомков часто называют лесом. В Прологе N-арное дерево записывают термином t(X,F), где X - узловой элемент, а F - лес потомков (список в Прологе).](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[N-ary tree consisting of the node, and (possibly) set offspring, which in turn are also N-ary trees. N-ary tree can never be empty. Set descendants often called forest. In Prolog, N-ary tree recorded the term t (X, F), where X - the node, and F - the descendants of the forest (the list in the Prologue).](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: F_Harary_Graph_Theory;;
+		*);;
+
+concept_n_ary_tree <= nrel_using_constants: 
+					{
+					concept_tree; 
+					concept_forest
+					};;
+
+concept_n_ary_tree <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: разбиение N-арных деревьев] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: partition N-ary trees] (* <- lang_en;; *);;
+		-> rrel_key_sc_element: concept_tree; concept_binary_tree;;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[N-арные деревья определяются по аналогии с двоичным деревом. Для них также есть ориентированные и неориентированные случаи, а также соответствующие абстрактные структуры данных.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[N-ary tree defined by analogy with binary tree. They also have oriented and non-oriented cases, as well as the corresponding abstract data structures.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: F_Harary_Graph_Theory;;
+		*);;
+
+concept_n_ary_tree <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_n_ary_tree.gif";;
+			*);;
+	*);;

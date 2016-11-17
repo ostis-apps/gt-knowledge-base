@@ -1,0 +1,65 @@
+sc_node_norole_relation->nrel_outdegree;;
+
+nrel_outdegree=>nrel_main_idtf:
+	[полустепень исхода*]	(*<-lang_ru;;*);
+	[outdegree*]	(*<-lang_en;;*);;
+
+nrel_outdegree <- binary_relation;;
+nrel_outdegree => nrel_arity_of_relations: 2	(* <- number ;;*);;
+
+nrel_outdegree <- antireflexive_relation;;
+nrel_outdegree <- antitransitive_relation;;
+nrel_outdegree <- antisymmetric_relation;;
+
+nrel_outdegree => nrel_first_domain: concept_node;;
+nrel_outdegree => nrel_second_domain: concept_number;; 
+nrel_outdegree <= nrel_definitional_domain: 
+	...
+	(*
+	<= nrel_combination: 
+		{
+		concept_node; 
+		concept_number
+		};;
+	*);;
+
+nrel_outdegree <- rrel_key_sc_element: 
+     ... 
+	(*
+	=> nrel_main_idtf: [Определение: полустепень исхода] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Definition: outdegree] (* <- lang_en;; *);;
+	<- sc_definition;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: 
+			[Полустепенью исхода вершины v орграфа D называется число дуг орграфа D, исходящих из вершины v.]	(* <- lang_ru;; *);;
+		-> rrel_example: 
+			[The number of tail ends adjacent to a vertex is its outdegree](*<- lang_en;;*);;
+		*);;
+	<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+	*);;
+
+nrel_outdegree<= nrel_using_constants:{
+				concept_directed_graph;
+				concept_number;
+				concept_node;
+				concept_oredge
+				};;
+				
+nrel_outdegree<- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: сумма полустепеней исхода и захода] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: the sum of outdegrees and outdegrees of nodes] (* <- lang_en;; *);;
+		-> rrel_key_sc_element: concept_oredge; concept_directed_graph;;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Cумма полустепеней исхода и захода всех вершин равна количеству дуг в орграфе](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[The sum of outdegrees and indegrees of all nodes is equal to the number of arks in the digraph ](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: R_Distel_Graph_Theory;;
+		*);;				
+	

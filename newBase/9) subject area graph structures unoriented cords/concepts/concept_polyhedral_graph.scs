@@ -1,0 +1,70 @@
+sc_node_not_relation->concept_polyhedral_graph;;
+
+concept_polyhedral_graph => nrel_main_idtf:
+	[полиэдральный граф](* <-lang_ru;; *);
+	[polyhedral graph](* <-lang_en;; *);;
+
+concept_polyhedral_graph <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: полиэдральный граф] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: polyhedral graph] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Полиэдральный граф — неориентированный граф, образованный из вершин и рёбер выпуклого многогранника.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Polyhedral graph is undirected graph formed of vertices and edges of a convex polyhedron.](*<- lang_en;;*);;
+		*);;
+<= nrel_bibliographical_source: R_Distel_Graph_Theory;;
+	*);;
+		
+concept_polyhedral_graph<= nrel_using_constants:
+						{
+						concept_undirected_graph;
+						concept_vertex;
+						concept_edge
+						};;
+
+
+			
+concept_polyhedral_graph <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_polyhedral_graph.png";;
+			*);;
+	*);;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

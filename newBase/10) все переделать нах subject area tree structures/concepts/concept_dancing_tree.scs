@@ -1,0 +1,55 @@
+sc_node_not_relation -> concept_dancing_tree;;
+
+concept_dancing_tree => nrel_main_idtf:
+	[танцующее дерево](* <-lang_ru;; *);
+	[dancing tree](* <-lang_en;; *);;
+
+concept_dancing_tree <- rrel_key_sc_element: 
+		... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: танцующее дерево] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: dancing tree] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Танцующее дерево — древовидная структура хранения данных, которая похожа на B+trees. По сравнению со сбалансированными бинарными деревьями, которые пытаются сохранить свои узлы сбалансированными постоянно, танцующие деревья сохраняют только баланс между узлами при записи данных на диск (либо из-за ограничений памяти, или потому, что транзакция завершена).](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Dancing tree - the tree data storage structure, which is similar to B + trees. Compared with balanced binary trees, which are trying to keep their sites constantly balanced, dancing trees retain only the balance between nodes when data is written to disk (either due to memory limitations or because the transaction is complete).](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: F_Harary_Graph_Theory;;
+		*);;
+
+concept_dancing_tree <= nrel_using_constants: 
+					{
+					concept_b_plus_tree
+					};;
+
+concept_dancing_tree <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: востановление данных из незавершенных операций] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: data recovery of pending transactions] (* <- lang_en;; *);;
+		-> rrel_key_sc_element: concept_tree;;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Танцующие деревья создают большие трудности для восстановления данных из незавершённых операций, чем нормальные деревья, хотя эту проблему можно решить путем добавления дополнительных журналов транзакций или разработке алгоритма для поиска ранее не существовавших данных на диске с последующим выполнением оптимизаций и возобновлением операций.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Dancing trees create great difficulties for the recovery of unfinished operations than normal trees, although this problem can be solved by adding additional transaction logs or the development of an algorithm to search for previously existing data on the disk, followed by the implementation of optimization and renewal operations.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: F_Harary_Graph_Theory;;
+		*);;
+
+concept_dancing_tree <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_dancing_tree.jpg";;
+			*);;
+	*);;

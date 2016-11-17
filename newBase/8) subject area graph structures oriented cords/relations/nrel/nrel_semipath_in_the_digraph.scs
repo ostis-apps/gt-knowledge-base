@@ -1,0 +1,56 @@
+sc_node_norole_relation->nrel_semipath_in_the_digraph;;
+
+nrel_semipath_in_the_digraph=>nrel_main_idtf:
+	[полупуть в орграфе*]	(*<-lang_ru;;*);
+	[semipath in the digraph*]	(*<-lang_en;;*);;
+
+nrel_semipath_in_the_digraph => nrel_arity_of_relations: 2	(* <- number ;;*);;
+
+nrel_semipath_in_the_digraph <- reflexive_relation;;
+nrel_semipath_in_the_digraph <- antisymmetric_relation;;
+nrel_semipath_in_the_digraph <- transitive_relation;;
+
+nrel_semipath_in_the_digraph => nrel_definitional_domain: concept_directed_graph;;
+nrel_semipath_in_the_digraph => nrel_first_domain: concept_directed_graph;;
+nrel_semipath_in_the_digraph => nrel_second_domain: concept_directed_graph;; 
+
+nrel_semipath_in_the_digraph <- rrel_key_sc_element: 
+     ... 
+	(*
+	=> nrel_main_idtf: [Определение:  полупуть в орграфе] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Definition: semipath in the digraph] (* <- lang_en;; *);;
+	<- sc_definition;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: 
+			[Полупуть есть маршрут в орграфе без повторяющихся дуг, направления дуг игнорируются.]	(* <- lang_ru;; *);;
+		-> rrel_example: 
+			[Semipath is a rout in the digraph without repeating arcs, arc's directions are ignored.](*<- lang_en;;*);;
+		*);;
+	<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+	*);;
+
+nrel_semipath_in_the_digraph<= nrel_using_constants:{
+				concept_directed_graph;
+				nrel_path_in_the_digraph;
+				nrel_route_in_the_digraph;
+				concept_node;
+				concept_oredge
+				};;
+				
+nrel_semipath_in_the_digraph<- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: цепь] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: сhain] (* <- lang_en;; *);;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Полупуть — то же, что и цепь в орграфе.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[A semipath is a chain in a digraph.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: R_Distel_Graph_Theory;;
+		*);;				
+

@@ -1,0 +1,78 @@
+sc_node_norole_relation->nrel_maximum_cut;;
+
+nrel_maximum_cut => nrel_main_idtf:
+	[максимальный разрез*](* <-lang_ru;; *);
+	[maximum cut*](* <-lang_en;; *);;
+
+nrel_maximum_cut <- binary_relation;;
+nrel_maximum_cut => nrel_arity_of_relations: 2(* <- number ;;*);;
+
+nrel_maximum_cut <- antireflexive_relation;;
+nrel_maximum_cut <- antisymmetric_relation;;
+nrel_maximum_cut <- antitransitive_relation;;
+
+nrel_maximum_cut => nrel_first_domain: concept_directed_graph;;
+nrel_maximum_cut => nrel_second_domain: concept_oredge;;
+nrel_maximum_cut <= nrel_definitional_domain: 
+	...
+	(*
+	<= nrel_combination: 
+		{
+		concept_directed_graph;
+		concept_oredge
+		};;
+	*);;
+
+nrel_maximum_cut <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: максимальный разрез] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: maximum cut] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Максимальный разрез — разрез, величина которого не меньше величин всех остальных разрезов.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[A cut is maximum if the size of the cut is not smaller than the size of any other cut.](*<- lang_en;;*);;
+		*);;
+		<= nrel_bibliographical_source: F_Harary_Graph_Theory;;
+*);;
+
+nrel_maximum_cut<= nrel_using_constants:
+						{
+						concept_directed_graph;
+						concept_number;
+						nrel_flow;
+						nrel_source;
+						nrel_sink
+						};;
+
+nrel_maximum_cut <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: 21 NP-полная задача Карпа] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: Karp's 21 NP-complete problems] (* <- lang_en;; *);;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Нахождения максимального разреза входит в список, состоящий из формулировки и доказательства NP-полноты 21 задачи, опубликованный Ричардом Карпом в 1972 году](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[In general, finding a maximum cut is computationally hard. The max-cut problem is one of Karp's 21 NP-complete problems.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: F_Harary_Graph_Theory;;
+		*);;
+		
+nrel_maximum_cut <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/maximum_cut.png";;
+			*);;
+	*);;
+

@@ -1,0 +1,67 @@
+sc_node_norole_relation->nrel_route_in_the_digraph;;
+
+nrel_route_in_the_digraph=>nrel_main_idtf:
+	[маршрут в орграфе*]	(*<-lang_ru;;*);
+	[route in the digraph*]	(*<-lang_en;;*);;
+
+nrel_route_in_the_digraph => nrel_arity_of_relations: 2	(* <- number ;;*);;
+nrel_route_in_the_digraph <- binary_relation;;
+
+nrel_route_in_the_digraph <- reflexive_relation;;
+nrel_route_in_the_digraph <- antisymmetric_relation;;
+nrel_route_in_the_digraph <- transitive_relation;;
+
+nrel_route_in_the_digraph => nrel_definitional_domain: concept_directed_graph;;
+nrel_route_in_the_digraph => nrel_first_domain: concept_directed_graph;;
+nrel_route_in_the_digraph => nrel_second_domain: concept_directed_graph;; 
+
+nrel_route_in_the_digraph <- rrel_key_sc_element: 
+     ... 
+	(*
+	=> nrel_main_idtf: [Определение:  маршрут в орграфе] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Definition: route in the digraph] (* <- lang_en;; *);;
+	<- sc_definition;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: 
+			[Маршрутом в орграфе называют чередующуюся последовательность вершин и дуг, вида v_0 {v_0, v_1} v_1 {v_1, v_2} v_2 ... v_n (вершины могут повторяться).]	(* <- lang_ru;; *);;
+		-> rrel_example: 
+			[Rout in the digraph is a sequence of nodes and arcs
+v_0 {v_0, v_1} v_1 {v_1, v_2} v_2 ... v_n](*<- lang_en;;*);;
+		*);;
+	<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+	*);;
+
+nrel_route_in_the_digraph<= nrel_using_constants:{
+				concept_directed_graph;
+				concept_node;
+				concept_oredge
+				};;
+				
+nrel_route_in_the_digraph<- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: длина маршрута] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: route length] (* <- lang_en;; *);;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Длина маршрута — количество дуг в нём.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[The rout length is the number of arcs in it](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: R_Distel_Graph_Theory;;
+		*);;				
+nrel_route_in_the_digraph <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/route_in_the_digraph.png";;
+			*);;
+	*);;
+

@@ -1,0 +1,78 @@
+sc_node_norole_relation->nrel_local_source;;
+
+nrel_local_source=>nrel_main_idtf:
+	[локальный исток*]	(*<-lang_ru;;*);
+	[local source*]	(*<-lang_en;;*);;
+
+nrel_local_source <- binary_relation;;
+nrel_local_source => nrel_arity_of_relations: 2	(* <- number ;;*);;
+
+nrel_local_source <- antireflexive_relation;;
+nrel_local_source <- antitransitive_relation;;
+nrel_local_source <- antisymmetric_relation;;
+
+nrel_local_source => nrel_first_domain: concept_directed_graph;;
+nrel_local_source => nrel_second_domain: concept_node;; 
+nrel_local_source <= nrel_definitional_domain: 
+	...
+	(*
+	<= nrel_combination: 
+		{
+		concept_directed_graph;
+		concept_node
+		};;
+	*);;
+
+nrel_local_source <- rrel_key_sc_element: 
+     ... 
+	(*
+	=> nrel_main_idtf: [Определение: локальный исток] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Definition: local source] (* <- lang_en;; *);;
+	<- sc_definition;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: 
+			[Локальный исток - это узел в орграфе в который не входят дуги.]	(* <- lang_ru;; *);;
+		-> rrel_example: 
+			[A local source is a node of a directed graph with no entering edges](*<- lang_en;;*);;
+		*);;
+	<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+	*);;
+
+nrel_local_source<= nrel_using_constants:{
+				concept_directed_graph;
+				nrel_path_in_the_digraph;
+				concept_number;
+				concept_node;
+				concept_oredge
+				};;
+				
+nrel_local_source<- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: количество истоков] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: a number of sources] (* <- lang_en;; *);;
+		-> rrel_key_sc_element: concept_oredge; concept_node; concept_directed_graph; nrel_path_in_the_digraph;;
+
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[В орграфе может быть несколько истоков](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[It can be a lot of sources in a digraph.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: R_Distel_Graph_Theory;;
+		*);;				
+	
+nrel_local_source <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/local_source.gif";;
+			*);;
+	*);;

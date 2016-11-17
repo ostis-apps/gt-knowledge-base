@@ -1,0 +1,29 @@
+sc_node_not_relation -> concept_self_negational_signed_graph;;
+concept_self_negational_signed_graph => nrel_main_idtf:
+	[самонегативный граф] (* <- lang_ru;;*);
+	[Self-negational signed graph] (* <- lang_en;;*);;
+concept_self_negational_signed_graph <- rrel_key_sc_element: 
+	...  
+	(*
+	=> nrel_main_idtf: [Определение: самонегативный граф] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Definition: Self-negational signed graph](* <- lang_en;; *);;	
+	<- sc_definition;; 
+	<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+	<= nrel_sc_text_translation: 
+		... 
+		(*
+		-> rrel_example: 
+		[Самонегативный граф - граф, ребрам которого сопоставлены плюсы и минусы и который изоморфен графу, получаемому из него заменой плюсов на минусы и, наоборот, минусов на плюсы.](* <- lang_ru;; *);;
+		-> rrel_example: 
+                [Self negational signed graph is a graph which compares the edges of the pros and cons and that is isomorphic to the graph obtained from it by replacing plus to minus and vice versa, from minus to plus.] (* <-lang_en;; *);;
+		*);;
+	*);;
+concept_self_negational_signed_graph<= nrel_using_constants:
+					{
+					concept_graph;
+				        concept_edge
+					};;
+	
+
+
+

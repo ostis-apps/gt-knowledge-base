@@ -1,0 +1,72 @@
+sc_node_not_relation -> concept_fibonacci_tree;;
+
+concept_fibonacci_tree => nrel_main_idtf:
+	[фибоначчиево дерево](* <-lang_ru;; *);
+	[fibonacci tree](* <-lang_en;; *);;
+
+concept_fibonacci_tree <- rrel_key_sc_element: 
+		... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: фибоначчиево дерево] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: fibonacci tree] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Фибоначчиево дерево — биномиальное дерево, где у каждой вершины удалено не более одного ребенка.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Fibonacci tree - binomial tree, where each node is removed no more than one child](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: F_Harary_Graph_Theory;;
+		*);;
+
+concept_fibonacci_tree <= nrel_using_constants: 
+					{
+					concept_binomial_tree
+					};;
+
+concept_fibonacci_tree <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: порядок фибоначчиева дерева] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: fibonacci tree rank] (* <- lang_en;; *);;
+		-> rrel_key_sc_element: concept_binomial_tree;;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Порядок фибоначчиева дерева — порядок соответствующего биномиального дерева, из которого оно получено.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Rank of Fibonacci tree - the order of the corresponding binomial tree from which it was obtained.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: F_Harary_Graph_Theory;;
+		*);;
+
+concept_fibonacci_tree <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: количество дочерних узлов фибоначчиева дерева] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: the number of child nodes of fibonacci tree] (* <- lang_en;; *);;
+		-> rrel_key_sc_element: concept_tree;;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Степень вершины фибоначчиева дерева — количество дочерних узлов данной вершины.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[The degree of the top of Fibonacci tree - the number of child nodes of this node.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: F_Harary_Graph_Theory;;
+		*);;
+
+concept_fibonacci_tree <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_fibonacci_tree.png";;
+			*);;
+	*);;

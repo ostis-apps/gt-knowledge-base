@@ -1,0 +1,77 @@
+sc_node_not_relation -> concept_segment_tree;;
+
+concept_segment_tree => nrel_main_idtf:
+	[сегментное дерево](* <-lang_ru;; *);
+	[segment tree](* <-lang_en;; *);;
+
+	concept_segment_tree => nrel_idtf:
+	[дерево отрезков](* <-lang_ru;; *);
+	[дерево интервалов](* <-lang_ru;; *);
+	[interval tree](* <-lang_en;; *);;
+
+concept_segment_tree <- rrel_key_sc_element: 
+		... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: сегментное дерево] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: segment tree] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Дерево отрезков это двоичное дерево, в каждой вершине которого написано значение заданной функции на некотором отрезке.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Tree sections is a binary tree in which each vertex is written, the value of the specified function on an interval.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: R_Distel_Graph_Theory;;
+		*);;
+
+concept_segment_tree <= nrel_using_constants: 
+					{
+					concept_binary_tree
+					};;
+
+concept_segment_tree <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: особенность деревьев отрезков] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: feature segments trees] (* <- lang_en;; *);;
+		-> rrel_key_sc_element: concept_tree;;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Особенностью деревьев отрезков является то, что они потребляют линейный объём памяти: стандартному дереву отрезков требуется порядка 4n элементов памяти для работы над массивом размера n.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[The peculiarity of the tree segments is that they consume a linear memory capacity: standard wood sections require about 4n memory elements to work on an array of size n.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: R_Distel_Graph_Theory;;
+		*);;
+
+concept_segment_tree <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: высота деревьев отрезков] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: height segments trees] (* <- lang_en;; *);;
+		-> rrel_key_sc_element: concept_tree;;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Высота дерева отрезков есть величина O (log n) — например, потому что длина отрезка в корне дерева равна n, а при переходе на один уровень вниз длина отрезков уменьшается примерно вдвое.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[The height of the segments of the tree is the value of O (log n) - for example, because the length of a segment at the root of the tree is equal to n, and when you go to one level below the segments length is reduced by about half.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: R_Distel_Graph_Theory;;
+		*);;
+
+concept_segment_tree <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_segment_tree.png";;
+			*);;
+	*);;

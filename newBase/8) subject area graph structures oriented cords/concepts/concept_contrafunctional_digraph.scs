@@ -1,0 +1,44 @@
+sc_node_not_relation -> concept_contrafunctional_digraph;;
+
+concept_contrafunctional_digraph => nrel_main_idtf:
+	[контрафункциональный орграф] (* <- lang_ru;; *);
+	[contrafunctional digraph] (* <- lang_en;; *);;
+
+concept_contrafunctional_digraph <- rrel_key_sc_element: 
+        ... 
+            (*
+	<- sc_definition;;
+	=> nrel_main_idtf: [Определение: контрафункциональный орграф] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Definition: contrafunctional digraph] (* <- lang_en;; *);;	
+	<= nrel_sc_text_translation: ... 
+	(*
+		-> rrel_example: [Контрафункциональный орграф - орграф, двойственный к функциональному.] (* <- lang_ru;; *);;
+		-> rrel_example: [A contrafunctional graph is a directed graph which is 	
+ambivalent to the functional digraph.] (* <- lang_en;; *);;
+		*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+*);;
+
+concept_contrafunctional_digraph<= nrel_using_constants: {
+			concept_directed_graph;
+			concept_node;
+			concept_oredge		
+			};;		
+			
+concept_contrafunctional_digraph <- rrel_key_sc_element: 
+        	... 
+		(*
+		<- sc_statement;;
+		-> rrel_key_sc_element: concept_node; nrel_oredge; nrel_outdegree;;		
+		=> nrel_main_idtf: [Утверждение: контрафункциональный орграф] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: contrafunctional digraph](* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[В контрафункциональном графе из каждой вершины может выходить только одно ребро.] (* <- lang_ru;; *);;
+                        -> rrel_example: 
+				[There is only one edge can go out from each node in a contrafunctional digraph.] (* <- lang_en;; *);;
+			*);;
+        <= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+		*);;
+		

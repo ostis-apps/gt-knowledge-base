@@ -1,0 +1,95 @@
+sc_node_not_relation -> concept_spanning_tree;;
+
+concept_spanning_tree => nrel_main_idtf:
+	[остовное дерево](* <-lang_ru;; *);
+	[spanning tree](* <-lang_en;; *);;
+
+concept_spanning_tree => nrel_idtf:
+	[покрывающее дерево](* <-lang_ru;; *);;
+
+concept_spanning_tree <- rrel_key_sc_element: 
+		... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: остовное дерево] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: spanning tree] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...	
+			(*
+			-> rrel_example: 
+				[Остовное дерево — ациклический связный подграф данного связного неориентированного взвешенного графа, в который входят все его вершины. Остовное дерево состоит из некоторого подмножества рёбер графа, таких, что из любой вершины графа можно попасть в любую другую вершину, двигаясь по этим рёбрам, и в нём нет циклов, то есть из любой вершины нельзя попасть в саму себя, не пройдя какое-то ребро дважды.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Spanning tree - an acyclic connected subgraph of a connected undirected weighted graph, which includes all the vertices. Spanning tree consists of a subset of edges of the graph, such that from each vertex of the graph, you can get to any other vertex, moving to these edges and there are no cycles, ie from any node can not get into itself, without going through some edge twice.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: R_Distel_Graph_Theory;;
+		*);;
+
+concept_spanning_tree <= nrel_using_constants: 
+						{
+						concept_acyclic_graph; 
+						concept_connected_graph; 
+						concept_undirected_graph; 
+						concept_weighted_graph
+						};;
+		
+concept_spanning_tree <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: построение остовного дерева] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: construction of spanning tree] (* <- lang_en;; *);;
+		-> rrel_key_sc_element: concept_tree;;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Остовное дерево может быть построено практически любым алгоритмом обхода графа, например поиском в глубину или поиском в ширину. Оно состоит из всех пар рёбер (u, v), таких, что алгоритм, просматривая вершину u, обнаруживает в её списке смежности новую, не обнаруженную ранее вершину v.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Spanning tree can be constructed in almost any graph traversal algorithm such as searching in the depth or breadth-first search. It consists of all pairs of edges (u, v), such that the algorithm by viewing the top u, finds in its adjacency list of new, not previously detected vertex v.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: R_Distel_Graph_Theory;;
+		*);;
+
+concept_spanning_tree <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: кратчайший путь остовных деревьев] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: the shortest path spanning trees] (* <- lang_en;; *);;
+		-> rrel_key_sc_element: concept_tree;;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Остовные деревья, построенные при обходе графа алгоритмом Дейкстры, начиная из вершины s, обладают тем свойством, что кратчайший путь в графе из s до любой другой вершины — это (единственный) путь из s до этой вершины в построенном остовном дереве.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Spanning Tree built in traversing the graph algorithm Dijkstra, starting from the top s, have the property that the shortest path in the graph from s to every other vertex - a (unique) path from s to this node in the constructed spanning tree.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: R_Distel_Graph_Theory;;
+		*);;
+
+concept_spanning_tree <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: нахождение оптимального остовного дерева] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: нахождение оптимального остовного дерева] (* <- lang_en;; *);;
+		-> rrel_key_sc_element: concept_tree;;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Если каждому ребру графа присвоен вес (длина, стоимость и т. п.), то нахождением оптимального остовного дерева, которое минимизирует сумму весов входящих в него рёбер, занимаются многочисленные алгоритмы нахождения минимального остовного дерева.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[If each edge is assigned weight (length, cost and so on. P.), Then finding the optimum spanning tree that minimizes the sum of the weights of edges contained in it, engaged in numerous algorithms for finding the minimum spanning tree.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: R_Distel_Graph_Theory;;
+		*);;
+
+concept_spanning_tree <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_spanning_tree.gif";;
+			*);;
+	*);;

@@ -1,0 +1,80 @@
+sc_node_not_relation -> concept_binary_heap;;
+
+concept_binary_heap => nrel_main_idtf:
+	[двоичная куча](* <-lang_ru;; *);
+	[binary heap](* <-lang_en;; *);;
+
+concept_binary_heap => nrel_idtf:
+	[пирамида](* <-lang_ru;; *);
+	[pyramid](* <-lang_en;; *);;
+
+concept_binary_heap => nrel_idtf:
+	[сортирующее дерево](* <-lang_ru;; *);
+	[sorting tree](* <-lang_en;; *);;
+
+concept_binary_heap <- rrel_key_sc_element: 
+		... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: двоичная куча] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: binary heap] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Двоичная куча (пирамида или сортирующее дерево) — такое двоичное дерево, для которого выполнены три условия: значение в любой вершине не меньше, чем значения её потомков, глубина листьев (расстояние до корня) отличается не более чем на 1 слой, последний слой заполняется слева направо.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Binary heap (pyramid or a sorting tree) - a binary tree that satisfies two conditions: the value of any top no less than the value of its descendants, the depth of the leaves (the distance to the root) does not differ by more than one layer, the last layer is filled on the left right.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: F_Harary_Graph_Theory;;
+		*);;
+
+concept_binary_heap <= nrel_using_constants: 
+					{
+					concept_binary_tree
+					};;
+
+concept_binary_heap <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: структура для двоичной кучи] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: structure for binary heap] (* <- lang_en;; *);;
+		-> rrel_key_sc_element: concept_heap;;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Удобная структура данных для двоичной кучи — массив A, у которого первый элемент, A(1) — элемент в корне, а потомками элемента A(i) являются A(2i) и A(2i+1) (при нумерации элементов с первого). При нумерации элементов с нулевого, корневой элемент — A(0), а потомки элемента A(i) — A(2i+1) и A(2i+2). При таком способе хранения условия 2 и 3 выполнены автоматически.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Convenient data structure for a binary heap - an array of A, in which the first element, A (1) - the element at the root, and the descendants of the element A (i) is A (2i) and A (2i + 1) (in the numbering of the elements from the first) . When numbering with zero elements, the root element - A (0), and the descendants of the element A (i) - A (2i + 1) and A (2i + 2). With this method of storage conditions 2 and 3 are made automatically.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: F_Harary_Graph_Theory;;
+		*);;
+
+concept_binary_heap <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: высота кучи] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: heap height] (* <- lang_en;; *);;
+		-> rrel_key_sc_element: concept_heap; concept_binary_tree;;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Высота кучи определяется как высота двоичного дерева. То есть она равна количеству рёбер в самом длинном простом пути, соединяющем корень кучи с одним из её листьев. Высота кучи есть O(logN), где N — количество узлов дерева.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[The height of the heap is determined by the height of the binary tree. That is, it is equal to the number of edges in the longest simple path connecting the root of heap with one of its leaves. The height of the heap has O (logN), where N - number of nodes in the tree.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: F_Harary_Graph_Theory;;
+		*);;
+
+concept_binary_heap <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_binary_heap.png";;
+			*);;
+	*);;

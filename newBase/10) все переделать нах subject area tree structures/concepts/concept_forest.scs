@@ -1,0 +1,39 @@
+sc_node_not_relation -> concept_forest;;
+
+concept_forest => nrel_main_idtf:
+	[лес](* <-lang_ru;; *);
+	[forest](* <-lang_en;; *);;
+
+concept_forest <- rrel_key_sc_element: 
+		... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: лес] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: forest] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Лес - неориентированный граф без циклов. Компонентами связности леса являются деревья.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Forest - undirected graph without cycles. The components of the forest connectivity are trees.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: R_Distel_Graph_Theory;;
+		*);;
+
+concept_forest <= nrel_using_constants: 
+					{
+					concept_tree;
+					nrel_connected_component
+					};;
+
+concept_forest <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_forest.png";;
+			*);;
+	*);;

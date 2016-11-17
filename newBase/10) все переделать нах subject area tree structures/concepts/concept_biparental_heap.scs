@@ -1,0 +1,38 @@
+sc_node_not_relation -> concept_biparental_heap;;
+
+concept_biparental_heap => nrel_main_idtf:
+	[двуродительская куча](* <-lang_ru;; *);
+	[biparental heap](* <-lang_en;; *);;
+
+concept_biparental_heap <- rrel_key_sc_element: 
+		... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: двуродительская куча] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: biparental heap ] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Двуродительская куча - такая куча, где у каждого элемента обычно есть два ребенка (если это не последний уровень) и два родителя (если это не первый уровень). Структура позволяет производить сублиненый поиск.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Biparental heap - this heap, where each member usually has two children (if this is not the last level) and two parents (if this is not the first level). The structure allows sublineny search.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: F_Harary_Graph_Theory;;
+		*);;
+
+concept_biparental_heap <= nrel_using_constants: 
+					{
+					concept_heap
+					};;
+
+concept_biparental_heap <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_biparental_heap.png";;
+			*);;
+	*);;

@@ -1,0 +1,73 @@
+sc_node_not_relation -> concept_matrix_tree;;
+
+concept_matrix_tree => nrel_main_idtf:
+	[матричное дерево](* <-lang_ru;; *);
+	[matrix tree](* <-lang_en;; *);;
+
+concept_matrix_tree <- rrel_key_sc_element: 
+		... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: матричное дерево] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: matrix tree] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Матричное дерево – это одно из самобалансирующихся двоичных деревьев поиска, обеспечивающих логарифмический рост высоты дерева от числа узлов.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Matrix tree - is one of the self-balancing binary search trees, providing a logarithmic growth of tree height on the number of nodes.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: R_Distel_Graph_Theory;;
+		*);;
+
+concept_matrix_tree <= nrel_using_constants: 					
+					{
+					concept_tree;
+					concept_binary_search_tree
+					};;
+					
+concept_matrix_tree <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: иерархия поддеревьев] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: subtree hierarchy] (* <- lang_en;; *);;
+		-> rrel_key_sc_element: concept_binary_tree;;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Матричное дерево состоит из корневого указателя, четного и нечетного поддеревьев, каждое из которых в свою очередь состоит из левого и правого двоичных поддеревьев.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[The matrix consists of a tree root pointer, even and odd subtrees, each of which in turn consists of the left and right subtrees of the binary.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: R_Distel_Graph_Theory;;
+		*);;
+
+concept_matrix_tree <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: сбалансированность матричного дерева] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: the balance of the matrix tree] (* <- lang_en;; *);;
+		-> rrel_key_sc_element: concept_binary_tree;;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Сбалансированность матричного дерева достигается за счет разделения значения ключа на два сомножителя, определяющих уровень и позицию узла в составе дерева аналогично индексам элемента матрицы. Уровни номеруются от листьев к корню, позиции узлов на одном уровне – слева направо.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[The balance of the matrix tree is achieved by dividing the value of the key to the two factors that determine the level and the node position as a part of a tree similar to the indices of the matrix element. Levels are numbered from the leaves to the root, node positions at the same level - from left to right.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: R_Distel_Graph_Theory;;
+		*);;
+
+concept_matrix_tree <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_matrix_tree.png";;
+			*);;
+	*);;

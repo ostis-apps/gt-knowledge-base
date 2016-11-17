@@ -1,0 +1,73 @@
+sc_node_not_relation -> concept_b_tree;;
+
+concept_b_tree => nrel_main_idtf:
+	[B-дерево](* <-lang_ru;; *);
+	[B-tree](* <-lang_en;; *);;
+
+concept_b_tree <- rrel_key_sc_element: 
+		... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: B-tree] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: B-дерево] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[B-дерево — структура данных, дерево поиска. С точки зрения внешнего логического представления, сбалансированное, сильно ветвистое дерево во внешней памяти.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[B-tree - a data structure, the search tree. In terms of external representation of the logical, balanced, highly branched tree in external memory.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: F_Harary_Graph_Theory;;
+		*);;
+
+concept_b_tree <= nrel_using_constants: 
+					{
+					concept_binary_search_tree;
+					concept_balanced_tree
+					};;
+
+concept_b_tree <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: сбалансированность] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: balans] (* <- lang_en;; *);;
+		-> rrel_key_sc_element: concept_tree;;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Сбалансированность означает, что длина любых двух путей от корня до листов различается не более, чем на единицу.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Balance means that for any two paths from the root to the sheets varies no more than one unit.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+		*);;
+
+concept_b_tree <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: ветвистость дерева] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: green tree] (* <- lang_en;; *);;
+		-> rrel_key_sc_element: concept_tree;;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Ветвистость дерева — это свойство каждого узла дерева ссылаться на большое число узлов-потомков.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Green tree - a tree each node property to refer to a large number of child nodes.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: F_Harary_Graph_Theory;;
+		*);;
+
+concept_b_tree <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_b_tree.png";;
+			*);;
+	*);;

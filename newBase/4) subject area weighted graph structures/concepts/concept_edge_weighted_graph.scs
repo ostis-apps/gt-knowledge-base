@@ -1,0 +1,44 @@
+concept_edge_weighted_graph
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[граф со взвешенными рёбрами]
+	(* <- lang_ru;; *);
+	[edge-weighted graph]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...  
+	(*
+		<- definition;;
+		=> nrel_main_idtf: 
+			[Опр.(граф со взвешенными рёбрами)]
+			(* <- lang_ru;; *);
+			[Def.(edge-weighted graph)]
+			(* <- lang_en;; *);;		
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content_html/definition_for_concept_edge_weighted_graph_ru.html"
+				(* <- lang_ru;;	*);			
+                "file://content_html/definition_for_concept_edge_weighted_graph_en.html"
+				(* <- lang_en;;	*);;
+			*);;		
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+	*);
+<= nrel_using_constants: 
+{
+	rrel_edge;
+	rrel_oredge;
+	nrel_edge_weight
+};
+<- rrel_key_sc_element: 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation: 
+			...
+			(*
+			-> rrel_example:
+				"file://content_img/concept_edge_weighted_graph.gif";;
+			*);;
+	*);;

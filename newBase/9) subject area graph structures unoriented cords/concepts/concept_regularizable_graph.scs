@@ -1,0 +1,40 @@
+sc_node_not_relation -> concept_regularizable_graph;;
+concept_regularizable_graph => nrel_main_idtf:
+	[регуляризуемый граф] (* <- lang_ru;; *);
+	[regularizable graph] (* <- lang_en;; *);;
+	
+concept_regularizable_graph <- rrel_key_sc_element: 
+	...  
+	(*
+	=> nrel_main_idtf: [Определение: регуляризуемый граф] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Definition: regularizable graph](* <- lang_en;; *);;	
+	<- sc_definition;; 
+	<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+	<= nrel_sc_text_translation: 
+		... 
+		(*
+		-> rrel_example: 
+		[Регуляризуемый граф - уграф G, для которого существует такая последовательность уграфов,что G - тривиальный уграф, а каждый G i, i > 0, является фактор уграфом уграфа G i-1 относительно некоторого множество попарно непересекающихся интервалов.Справедлива теорема Касьянова--Хехта--Ульмана: Уграф регуляризуем тогда и только тогда, когда справедливо любое из следующих свойств: G - сводим, G - аранжируем, G - разборный, G - одновходовый, G не содержит запрещенного подграфа.](* <- lang_ru;; *);;
+		-> rrel_example: 
+                [Regularizing a graph - graph the G, for which there exists a sequence of graphs that the G - trivial cf-graph, and each G i, i> 0, is a factor cf-graph cf-graph G i-1 with respect to a set of disjoint intervalov.Spravedliva theorem Kasyanov - Hehta- -Ulmana: cf-graph regularize if and only if holds any of the following properties: G - reduce, G - arrange, G - collapsible, G - single-input, G does not contain forbidden subgraph.] (* <-lang_en;; *);;
+		*);;
+	*);;
+concept_regularizable_graph<= nrel_using_constants:
+					{
+					concept_trivial_graph
+					};;
+	
+concept_regularizable_graph <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_regularizable_graph.jpg";;
+			*);;
+	*);;
+
+
+

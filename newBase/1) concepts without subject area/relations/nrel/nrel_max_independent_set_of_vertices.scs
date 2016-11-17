@@ -1,0 +1,54 @@
+sc_node_norole_relation ->nrel_max_independent_set_of_vertices;;
+sc_relation -> nrel_max_independent_set_of_vertices;;
+binary_relation -> nrel_max_independent_set_of_vertices;;
+oriented_relation -> nrel_max_independent_set_of_vertices;;
+
+nrel_max_independent_set_of_vertices
+	=> nrel_main_idtf: 
+		[ максимальное независимое множество вершин* ] (* <-lang_ru;; *);
+		[ maximal independent set of vertices* ] (* <-lang_en;; *);
+=> nrel_arity_of_relations: 3 (* <- number ;;*);
+
+	<-rrel_key_sc_element:
+		...  
+		(*<-sc_definition;;
+		=> nrel_main_idtf: [Опр.(максимальное независимое множество вершин)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:
+		...
+			(*
+				-> rrel_example: 
+				[Независимое множество называется максимальным, когда нет другого независимого множества, в которое оно бы входило.] (*<-lang_ru;;*);;	
+			*);;
+		*);
+<= nrel_using_constants:
+							{
+							rrel_vertex;
+							nrel_independent_set_of_vertices;
+							concept_set_vertex
+							};	
+			
+=> nrel_definitional_domain:
+...
+(*
+				<= nrel_combination:
+					...
+						(*
+								->concept_graph;;
+								->concept_set_vertex;;
+							*);;
+*);
+ => nrel_first_domain: 	concept_graph;
+=> nrel_second_domain:concept_set_vertex;
+
+<- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+			"file://contents/max_set_of_independence.jpg";;
+			*);;
+	*);;
+nrel_independent_set_of_vertices => nrel_inclusion : nrel_max_independent_set_of_vertices;;

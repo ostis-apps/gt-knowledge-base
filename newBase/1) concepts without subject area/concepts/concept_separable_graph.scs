@@ -1,0 +1,18 @@
+concept_separable_graph
+	<- sc_node_not_relation;
+
+	=> nrel_main_idtf: [разделимый граф] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [separable graph] (* <- lang_en;; *);
+
+	<= nrel_inclusion: concept_graph;
+
+	<- rrel_key_sc_element: ... (*
+		<- sc_definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: [граф, имеющий точку сочленения.] (* <- lang_ru;; *);;
+			<= nrel_using_constants: {
+				concept_graph;
+				rrel_point_of_articulation
+			};;
+		*);;
+	*);;

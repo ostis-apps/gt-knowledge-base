@@ -1,0 +1,38 @@
+sc_node_not_relation -> concept_binomial_tree;;
+
+concept_binomial_tree => nrel_main_idtf:
+	[биномиальное дерево](* <-lang_ru;; *);
+	[binomial tree](* <-lang_en;; *);;
+
+concept_binomial_tree <- rrel_key_sc_element: 
+		... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: биномиальное дерево] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: binomial tree] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Биномиальное дерево B(k) — дерево, определяемое для каждого k = 0, 1, 2, . . . следующим образом: B(0) — дерево, состоящее из одного узла; B_k состоит из двух биномиальных деревьев B(k-1), связанных вместе таким образом, что корень одного из них является дочерним узлом корня второго дерева.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Binomial tree B(k) - tree defined for each k = 0, 1, 2,. . . as follows: B(0) - a tree consisting of a single node; B_k consists of two binomial trees B(k-1), connected together so that the root of one of them is a child node of the root of the second tree.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: R_Distel_Graph_Theory;;
+		*);;
+
+concept_binomial_tree <= nrel_using_constants: 
+					{
+					concept_tree
+					};;
+
+concept_binomial_tree <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_binomial_tree.png";;
+			*);;
+	*);;

@@ -1,0 +1,76 @@
+sc_node_norole_relation->nrel_value_of_flow;;
+
+nrel_value_of_flow => nrel_main_idtf:
+	[величина потока*](* <-lang_ru;; *);
+	[value of flow*](* <-lang_en;; *);;
+
+nrel_value_of_flow <- binary_relation;;
+nrel_value_of_flow => nrel_arity_of_relations: 2(* <- number ;;*);;
+
+nrel_value_of_flow <- antireflexive_relation;;
+nrel_value_of_flow <- antisymmetric_relation;;
+nrel_value_of_flow <- antitransitive_relation;;
+
+nrel_value_of_flow => nrel_first_domain: nrel_flow;;
+nrel_value_of_flow => nrel_second_domain: concept_number;;
+nrel_value_of_flow <= nrel_definitional_domain: 
+	...
+	(*
+	<= nrel_combination: 
+		{
+		nrel_flow;
+		concept_number
+		};;
+	*);;
+
+nrel_value_of_flow <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: величина потока] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: value of flow] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Величина потока — сумма потоков из источника.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Value of flow is a summ of flows from source.](*<- lang_en;;*);;
+		*);;
+		<= nrel_bibliographical_source: F_Harary_Graph_Theory;;
+*);;
+
+nrel_value_of_flow<= nrel_using_constants:
+						{
+						concept_directed_graph;
+						nrel_flow;
+						nrel_source
+						};;
+
+nrel_value_of_flow <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: величина потока] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: value of flow] (* <- lang_en;; *);;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Величина потока равна сумме потоков в сток.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Value of flow is a summ of flows to sink.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: F_Harary_Graph_Theory;;
+		*);;
+
+nrel_value_of_flow <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/value_of_flow.png";;
+			*);;
+	*);;
+

@@ -1,0 +1,27 @@
+sc_node_not_relation->concept_geometrical_graph;;
+
+concept_geometrical_graph=> nrel_main_idtf: 
+		[геометрический граф] (* <-lang_ru;; *);
+		[geometrical graph] (* <-lang_en;; *);;
+
+concept_geometrical_graph <- rrel_key_sc_element:
+		...  
+		(*
+		<-sc_definition;;
+		=> nrel_main_idtf: [Опр.(геометрический граф)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				[Геометрический граф — плоская фигура из вершин — точек плоскости и рёбер. Может представлять многими способами всякий граф.] (*<-lang_ru;;*);;
+			*);;
+		*);;
+
+concept_geometrical_graph<= nrel_using_constants:
+				{
+					concept_graph;
+					rrel_edge;
+					rrel_vertex
+				};;
+
+concept_graph => nrel_inclusion: concept_geometrical_graph;;

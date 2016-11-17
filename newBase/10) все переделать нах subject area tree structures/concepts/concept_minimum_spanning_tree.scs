@@ -1,0 +1,80 @@
+sc_node_not_relation -> concept_minimum_spanning_tree;;
+
+concept_minimum_spanning_tree => nrel_main_idtf:
+	[минимальное остовное дерево](* <-lang_ru;; *);
+	[minimum spanning tree](* <-lang_en;; *);;
+
+concept_minimum_spanning_tree <- rrel_key_sc_element: 
+		... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: минимальное остовное дерево] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: minimum spanning tree] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Минимальное остовное дерево в связанном взвешенном неориентированном графе — это остовное дерево этого графа, имеющее минимальный возможный вес, где под весом дерева понимается сумма весов входящих в него рёбер.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Minimum spanning tree in a connected weighted undirected graph - it is a spanning tree of the graph having the minimum possible weight, where the weight of the tree refers to the sum of the weights of its constituent edges.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: R_Distel_Graph_Theory;;
+		*);;
+
+concept_minimum_spanning_tree <= nrel_using_constants: 
+								{
+								concept_spanning_tree;
+								concept_weighted_graph; 
+								concept_undirected_graph; 
+								nrel_edge_weight
+								};;
+
+concept_minimum_spanning_tree <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: пример] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: example] (* <- lang_en;; *);;
+		-> rrel_key_sc_element: concept_edge_weight; concept_node;;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Задача о нахождении минимального остовного дерева часто встречается в подобной постановке: допустим, есть n городов, которые необходимо соединить дорогами, так, чтобы можно было добраться из любого города в любой другой (напрямую или через другие города). Разрешается строить дороги между заданными парами городов и известна стоимость строительства каждой такой дороги. Требуется решить, какие именно дороги нужно строить, чтобы минимизировать общую стоимость строительства.
+
+Эта задача может быть сформулирована в терминах теории графов как задача о нахождении минимального остовного дерева в графе, вершины которого представляют города, рёбра — это пары городов, между которыми можно проложить прямую дорогу, а вес ребра равен стоимости строительства соответствующей дороги.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[The problem of finding the minimum spanning tree is often found in this statement: for example, there are n cities to be connected by roads, so that you can get from any city to any other (either directly or through other cities). Permission to build a road between the given pairs of cities and known cost of construction of each of these roads. Required to decide which roads should be built to minimize the total cost of construction.
+
+This problem can be formulated in terms of graph theory as the problem of finding the minimum spanning tree in a graph, whose vertices represent the city, the edges - this pair of cities, among which you can pave a straight road, and weight of the edge is equal to the cost of construction of road.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: R_Distel_Graph_Theory;;
+		*);;
+
+concept_minimum_spanning_tree <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: алгоритмы] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: algorithms] (* <- lang_en;; *);;
+		-> rrel_key_sc_element: concept_tree;;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Существует несколько алгоритмов для нахождения минимального остовного дерева. Некоторые наиболее известные из них: Алгоритм Прима, Алгоритм Краскала (или алгоритм Крускала), Алгоритм Борувки.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[There are several algorithms for finding the minimum spanning tree. Some of the most famous of them: Prim algorithm, Kruskal's algorithm (algorithm or Kruskal) algorithm Borůvka.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: R_Distel_Graph_Theory;;
+		*);;
+		
+concept_minimum_spanning_tree <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_minimum_spanning_tree.png";;
+			*);;
+	*);;
+	

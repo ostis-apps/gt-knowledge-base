@@ -1,0 +1,55 @@
+sc_node_not_relation -> concept_octree;;
+
+concept_octree => nrel_main_idtf:
+	[октодерево](* <-lang_ru;; *);
+	[octree](* <-lang_en;; *);;
+
+concept_octree <- rrel_key_sc_element: 
+		... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: октодерево] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: octree] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Октодерево — тип древовидной структуры данных, в которой у каждого внутреннего узла ровно восемь потомков. ](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Octree - the type of tree data structure in which each internal node exactly eight descendants.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: F_Harary_Graph_Theory;;
+		*);;
+
+concept_octree <= nrel_using_constants: 
+					{
+					concept_binary_tree
+					};;
+
+concept_octree <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: представление пространства октодеревом] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: octree representation of space] (* <- lang_en;; *);;
+		-> rrel_key_sc_element: concept_tree;;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Каждый узел в дереве октантов делит пространство на восемь новых октантов. В региональной точке октодерева узел сохраняет явную трёхмерную точку, которая является «центром» разделения пространства для этого узла. Данная точка определяет один из углов каждого из восьми дочерних пространств.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Each node in the tree divides the space into octants new eight octants. The regional point octree node maintains a clear three-dimensional point, which is the "hub" of the separation space for this site. This point defines one corner of each of the eight child spaces.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: F_Harary_Graph_Theory;;
+		*);;
+
+concept_octree <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_octree.png";;
+			*);;
+	*);;

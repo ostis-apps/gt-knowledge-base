@@ -1,0 +1,78 @@
+sc_node_norole_relation->nrel_global_source;;
+
+nrel_global_source=>nrel_main_idtf:
+	[глобальный исток*]	(*<-lang_ru;;*);
+	[global source*]	(*<-lang_en;;*);;
+
+nrel_global_source <- binary_relation;;
+nrel_global_source => nrel_arity_of_relations: 2	(* <- number ;;*);;
+
+nrel_global_source <- antireflexive_relation;;
+nrel_global_source <- antitransitive_relation;;
+nrel_global_source <- antisymmetric_relation;;
+
+nrel_global_source => nrel_first_domain: concept_directed_graph;;
+nrel_global_source => nrel_second_domain: concept_node;; 
+nrel_global_source <= nrel_definitional_domain: 
+	...
+	(*
+	<= nrel_combination: 
+		{
+		concept_directed_graph; 
+		concept_node
+		};;
+	*);;
+
+nrel_global_source <- rrel_key_sc_element: 
+     ... 
+	(*
+	=> nrel_main_idtf: [Определение: глобальный исток] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Definition: global source] (* <- lang_en;; *);;
+	<- sc_definition;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: 
+			[Глобальный исток - это узел в орграфе из которого достижимы все остальные узлы.]	(* <- lang_ru;; *);;
+		-> rrel_example: 
+			[A global source is a node in a directed graph which reaches all other nodes.](*<- lang_en;;*);;
+		*);;
+	<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+	*);;
+
+nrel_global_source<= nrel_using_constants:{
+				concept_directed_graph;
+				nrel_path_in_the_digraph;
+				concept_number;
+				concept_node;
+				concept_oredge
+				};;
+				
+nrel_global_source<- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: количество глобальных истоков] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: a number of global sources] (* <- lang_en;; *);;
+		-> rrel_key_sc_element: concept_oredge; concept_node; concept_directed_graph; nrel_path_in_the_digraph;;
+
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[В орграфе может быть только один глобальный исток.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[There is only one global source in a digraph.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: R_Distel_Graph_Theory;;
+		*);;				
+	
+nrel_global_source <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/global_source.gif";;
+			*);;
+	*);;

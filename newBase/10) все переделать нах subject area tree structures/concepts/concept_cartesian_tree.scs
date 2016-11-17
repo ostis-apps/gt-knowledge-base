@@ -1,0 +1,76 @@
+sc_node_not_relation -> concept_cartesian_tree;;
+
+concept_cartesian_tree => nrel_main_idtf:
+	[декартово дерево](* <-lang_ru;; *);
+	[cartesian tree](* <-lang_en;; *);;
+
+concept_cartesian_tree => nrel_idtf:
+	[treap](* <-lang_en;; *);;
+
+concept_cartesian_tree <- rrel_key_sc_element: 
+		... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: декартово дерево] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: cartesian tree] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Декартово дерево — это двоичное дерево, в узлах которого хранятся: ссылки на правое и левое поддерево; ссылка на родительский узел; ключи x и y, которые являются двоичным деревом поиска по ключу x и двоичной кучей по ключу y, а именно, для любого узла дерева n: ключи x узлов правого (левого) поддерева больше (меньше) либо равны ключа x узла n; ключи y узлов правого и левого детей больше либо равны ключу y узла n.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Cartesian tree - a binary tree whose nodes are stored: a reference to the right and the left subtree; a reference to the parent node; keys x and y, which are the binary tree search key x and the binary heap on the key y, namely, for each tree node n: node keys x right (left) subtree more (or less) or node x equal to n key; y keys nodes left and right children are equal to or greater than the node key y n.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: F_Harary_Graph_Theory;;
+		*);;
+
+concept_cartesian_tree <= nrel_using_constants: 
+					{
+					concept_binary_tree;
+					concept_binary_search_tree
+					};;
+
+concept_cartesian_tree <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: ссылка на родительский узел] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: link to the parent node] (* <- lang_en;; *);;
+		-> rrel_key_sc_element: concept_tree;;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Ссылка на родительский узел не обязательна, она желательна только для линейного алгоритма построения дерева.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Link to the parent node is not required, it is desirable only for a linear algorithm for constructing the tree.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: F_Harary_Graph_Theory;;
+		*);;
+
+concept_cartesian_tree <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: применение декартова дерева] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [treap application] (* <- lang_en;; *);;
+		-> rrel_key_sc_element: concept_tree; concept_self_balancing_search_tree;;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Декартово дерево не является самобалансирующимся в обычном смысле, и применяют его по следующим причинам: проще реализуется, по сравнению, например, с настоящими самобалансирующимися деревьями вроде красно-чёрного; хорошо ведёт себя «в среднем», если ключи y раздать случайно.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Treap self-balancing is not in the usual sense, and it is used for the following reasons: easy realized, compared, for example, self-balancing these trees like the red-black; well-behaved "on average", if the keys are accidentally give y.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: F_Harary_Graph_Theory;;
+		*);;
+
+concept_cartesian_tree <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_cartesian_tree.png";;
+			*);;
+	*);;

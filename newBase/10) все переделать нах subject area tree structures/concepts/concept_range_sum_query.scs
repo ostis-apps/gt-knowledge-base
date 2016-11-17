@@ -1,0 +1,59 @@
+sc_node_not_relation -> concept_range_sum_query;;
+
+concept_range_sum_query => nrel_main_idtf:
+	[дерево сумм](* <-lang_ru;; *);
+	[range sum query](* <-lang_en;; *);;
+
+
+concept_range_sum_query => nrel_idtf:
+	[RSQ](* <-lang_en;; *);;
+
+concept_range_sum_query <- rrel_key_sc_element: 
+		... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: дерево сумм] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: range sum query] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Дерево сумм - модификация RMQ, которая будет возвращать сумму всех элемнтов на отрезке. Суть структуры не меняется, однако вместо поля max, должно присутствовать полу sum, для которого будут иные операции пересчета.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Tree sums - RMQ modification, which will return the sum of all elements in the segment. The essence of the structure is not changed, but instead of the field max, the floor must be present sum, which will be different for the conversion operation.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: F_Harary_Graph_Theory;;
+		*);;
+
+concept_range_sum_query <= nrel_using_constants: 
+					{
+					concept_range_maximum_tree
+					};;
+
+concept_range_sum_query <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: максимаьная вместительность] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: maximum capacity] (* <- lang_en;; *);;
+		-> rrel_key_sc_element: concept_tree;;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Ни на каком из отрезков значение суммы не должно превосходить максимальной вместительности используемого типа переменных.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[On any of the segments of the value of the sum should not exceed the maximum spaciousness of the type variables.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: F_Harary_Graph_Theory;;
+		*);;
+
+concept_range_sum_query <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_range_sum_query.png";;
+			*);;
+	*);;

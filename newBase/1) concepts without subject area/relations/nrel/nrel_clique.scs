@@ -1,0 +1,81 @@
+sc_node_norole_relation->nrel_clique;;
+
+nrel_clique => nrel_main_idtf:
+	[клика*](* <-lang_ru;; *);
+	[clique*](* <-lang_en;; *);;
+
+nrel_clique <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: клика] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: clique] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Клика неориентированного графа - подмножество его вершин, таких, что любые две вершины подмножества соединены ребром.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Undirected graph clique - a subset of vertices such that any two vertices are connected by an edge subset.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: F_Harary_Graph_Theory;;
+		*);;
+
+nrel_clique<= nrel_using_constants:
+						{
+						concept_vertex;
+						concept_edge
+						};;
+
+
+		
+nrel_clique <- binary_relation;;
+nrel_clique => nrel_arity_of_relations: 2(* <- number ;;*);;
+nrel_clique => nrel_first_domain: concept_graph;;
+nrel_clique => nrel_second_domain: concept_graph;;
+rrel_point_of_articulation<= nrel_definitional_domain: 
+	...
+	(*
+	<= nrel_combination: 
+		{
+		concept_graph; 
+		concept_graph
+		};;
+	*);;
+
+nrel_base_graph <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/nrel_clique.png";;
+			*);;
+	*);;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

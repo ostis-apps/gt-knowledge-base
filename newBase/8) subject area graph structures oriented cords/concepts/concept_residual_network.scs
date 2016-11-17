@@ -1,0 +1,49 @@
+sc_node_not_relation -> concept_residual_network;;
+
+concept_residual_network => nrel_main_idtf:
+	[остаточная сеть] (* <- lang_ru;; *);
+	[residual network] (* <- lang_en;; *);;
+
+concept_residual_network <- rrel_key_sc_element: 
+        ... 
+            (*
+	<- sc_definition;;
+	=> nrel_main_idtf: [Определение: остаточная сеть] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Definition: residual network] (* <- lang_en;; *);;	
+	<= nrel_sc_text_translation: ... 
+	(*
+		-> rrel_example: [Остаточная сеть — граф  G =(V,E), где E — множество рёбер с положительной остаточной пропускной способностью.] (* <- lang_ru;; *);;
+		-> rrel_example: [A residual network is a graph G =(V,E) where E - a set of edges with positive residual capacity.] (* <- lang_en;; *);;
+		*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+*);;
+
+concept_residual_network<= nrel_using_constants: {
+			concept_directed_graph;
+			concept_node;
+			concept_oredge		
+			};;		
+			
+concept_residual_network <- rrel_key_sc_element: 
+        	... 
+		(*
+		<- sc_statement;;
+		-> rrel_key_sc_element: concept_node; concept_oredge;;		
+		=> nrel_main_idtf: [Утверждение: путь из u в v] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: path from u to v](* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[В остаточной сети может быть ребро из u в v, даже если его нет в исходной сети. Это выполняется, когда в исходной сети есть обратное ребро (v,u) и поток по нему положителен.] (* <- lang_ru;; *);;
+                        -> rrel_example: 
+				[There can be a path from u to v in the residual network, even though there is no path from u to v in the original network. Since flows in opposite directions cancel out, decreasing the flow from v to u is the same as increasing the flow from u to v.] (* <- lang_en;; *);;
+			*);;
+        <= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+		*);;
+		
+concept_residual_network <- rrel_key_sc_element: ... (*
+	<- sc_illustration;;
+	<= nrel_sc_text_translation: ... (*
+		-> rrel_example: "file://contents/residual_network.png";;
+	*);;
+*);;

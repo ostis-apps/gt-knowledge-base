@@ -1,0 +1,52 @@
+concept_weighted_dycks_word
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[взвешенное слово Дика]
+	(* <- lang_ru;; *);
+	[weighted Dyck's word]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...  
+	(*
+		<- definition;;
+		=> nrel_main_idtf: 
+			[Опр.(взвешенное слово Дика)]
+			(* <- lang_ru;; *);
+			[Def.(weighted Dyck's word)]
+			(* <- lang_en;; *);;		
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content_html/definition_for_concept_weighted_dycks_word_ru.html"
+				(* <- lang_ru;;	*);			
+                "file://content_html/definition_for_concept_weighted_dycks_word_en.html"
+				(* <- lang_en;;	*);;
+			*);;		
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+	*);
+<= nrel_using_constants: 
+{
+	concept_dycks_word;
+	nrel_weight
+};
+<- rrel_key_sc_element:
+	...  
+	(*
+		<- statement;;
+		=> nrel_main_idtf: 
+			[Утв.(взвешенное слово Дика; взвешенное дерево)]
+			(* <- lang_ru;; *);
+			[Stat.(weighted Dyck's word; weighted tree)]
+			(* <- lang_en;; *);;		
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content_html/statement_for_concept_weighted_dycks_word_ru.html"
+				(* <- lang_ru;;	*);			
+                "file://content_html/statement_for_concept_weighted_dycks_word_en.html"
+				(* <- lang_en;;	*);;
+			*);;		
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+	*);;

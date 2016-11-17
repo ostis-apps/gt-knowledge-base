@@ -1,0 +1,63 @@
+sc_node_not_relation -> concept_polygon_circle_graph;;
+concept_polygon_circle_graph => nrel_main_idtf:
+	[граф многоугольников на окружности] (* <- lang_ru;; *);
+	[a polygon-circle graph] (* <- lang_en;; *);;
+	
+concept_polygon_circle_graph <- rrel_key_sc_element: 
+	...  
+	(*
+	=> nrel_main_idtf: [Определение: граф многоугольников на окружности] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Definition: a polygon-circle graph](* <- lang_en;; *);;	
+	<- sc_definition;; 
+	<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+	<= nrel_sc_text_translation: 
+		... 
+		(*
+		-> rrel_example: 
+		[ Графом многоугольников на окружности называется граф пересечений, в котором каждая вершина соответствует многоугольнику с вершинами, лежащими на окружности, а рёбра, соединяющие две вершины графа, задаются пересечением двух многоугольников, соответствующих этим вершинам.](* <- lang_ru;; *);;
+		-> rrel_example: 
+                [A polygon-circle graph, also called a spider graph, is a type of an intersection graph, where each vertex is represented as a polygon and each edge as an intersection of two polygons representing those vertices, enclosed by a bounding circle.] (* <-lang_en;; *);;
+		*);;
+<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+	*);;
+concept_polygon_circle_graph<= nrel_using_constants:
+					{
+					concept_intersection_graph;
+					concept_graph;
+					concept_edge;
+					concept_vertex
+					};;
+
+concept_polygon_circle_graph <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_polygon_circle_graph.png";;
+			*);;
+	*);;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

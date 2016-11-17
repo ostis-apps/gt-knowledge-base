@@ -1,0 +1,17 @@
+rrel_binary_vertex
+	<- sc_relation;
+	<- sc_node_role_relation;
+	<- oriented_relation;
+
+	=> nrel_main_idtf: [бинарная вершина] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [binary vertex] (* <- lang_en;; *);
+
+	<- rrel_key_sc_element: ... (*
+		<- sc_definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: [вершина с двумя потомками в бинарном дереве.] (* <- lang_ru;; *);;
+			<= nrel_using_constants: {
+				concept_binary_tree
+			};;
+		*);;
+	*);;

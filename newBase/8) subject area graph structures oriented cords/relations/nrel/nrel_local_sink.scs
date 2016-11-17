@@ -1,0 +1,78 @@
+sc_node_norole_relation->nrel_local_sink;;
+
+nrel_local_sink=>nrel_main_idtf:
+	[локальный сток*]	(*<-lang_ru;;*);
+	[local sink*]	(*<-lang_en;;*);;
+
+nrel_local_sink <- binary_relation;;
+nrel_local_sink => nrel_arity_of_relations: 2	(* <- number ;;*);;
+
+nrel_local_sink <- antireflexive_relation;;
+nrel_local_sink <- antitransitive_relation;;
+nrel_local_sink <- antisymmetric_relation;;
+
+nrel_local_sink => nrel_first_domain: concept_directed_graph;;
+nrel_local_sink => nrel_second_domain: concept_node;; 
+nrel_local_sink <= nrel_definitional_domain: 
+	...
+	(*
+	<= nrel_combination: 
+		{
+		concept_directed_graph;
+		concept_node
+		};;
+	*);;
+
+nrel_local_sink <- rrel_key_sc_element: 
+     ... 
+	(*
+	=> nrel_main_idtf: [Определение: локальный сток] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Definition: local sink] (* <- lang_en;; *);;
+	<- sc_definition;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: 
+			[Локальный сток - это узел в орграфе из которого не исходят дуги.]	(* <- lang_ru;; *);;
+		-> rrel_example: 
+			[A local sink is a node of a directed graph with no entering edges](*<- lang_en;;*);;
+		*);;
+	<= nrel_bibliographical_sink: emelichev_melnikov_lekcii_po_tg;;
+	*);;
+
+nrel_local_sink<= nrel_using_constants:{
+				concept_directed_graph;
+				nrel_path_in_the_digraph;
+				concept_number;
+				concept_node;
+				concept_oredge
+				};;
+				
+nrel_local_sink<- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: терминал] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: terminal] (* <- lang_en;; *);;
+		-> rrel_key_sc_element: concept_oredge; concept_node; concept_directed_graph; nrel_path_in_the_digraph;;
+
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Локальный сток также называется терминалом.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[A local sink is also called terminal.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_sink: R_Distel_Graph_Theory;;
+		*);;				
+	
+nrel_local_sink <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/local_sink.gif";;
+			*);;
+	*);;

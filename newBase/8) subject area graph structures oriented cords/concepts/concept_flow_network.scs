@@ -1,0 +1,49 @@
+sc_node_not_relation -> concept_flow_network;;
+
+concept_flow_network => nrel_main_idtf:
+	[транспортная сеть] (* <- lang_ru;; *);
+	[flow network] (* <- lang_en;; *);;
+
+concept_flow_network <- rrel_key_sc_element: 
+        ... 
+            (*
+	<- sc_definition;;
+	=> nrel_main_idtf: [Определение: транспортная сеть] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Definition: flow network] (* <- lang_en;; *);;	
+	<= nrel_sc_text_translation: ... 
+	(*
+		-> rrel_example: [В теории графов транспортная сеть — ориентированный граф G=(V, E) , в котором каждое ребро (u,v) in E имеет неотрицательную пропускную способность c(u,v)>=0 и поток f(u,v).] (* <- lang_ru;; *);;
+		-> rrel_example: [A flow network is a directed graph where each edge has a capacity and each edge receives a flow.] (* <- lang_en;; *);;
+		*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+*);;
+
+concept_flow_network<= nrel_using_constants: {
+			concept_directed_graph;
+			concept_node;
+			concept_oredge		
+			};;		
+			
+concept_flow_network <- rrel_key_sc_element: 
+        	... 
+		(*
+		<- sc_statement;;
+		-> rrel_key_sc_element: concept_node; concept_oredge;;		
+		=> nrel_main_idtf: [Утверждение: целочисленная трансопртная сеть] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: uniterally connected graph](* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Целочисленная транспортная сеть — транспортная сеть, все пропускные способности ребер которой — целые числа.] (* <- lang_ru;; *);;
+                        -> rrel_example: 
+				[Integer flow network is the flow network, all capacities of that edges are integers.] (* <- lang_en;; *);;
+			*);;
+        <= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+		*);;
+		
+concept_flow_network <- rrel_key_sc_element: ... (*
+	<- sc_illustration;;
+	<= nrel_sc_text_translation: ... (*
+		-> rrel_example: "file://contents/flow_network.png";;
+	*);;
+*);;

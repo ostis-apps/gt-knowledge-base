@@ -1,0 +1,75 @@
+sc_node_not_relation -> concept_van_emde_boas_tree;;
+
+concept_van_emde_boas_tree => nrel_main_idtf:
+	[дерево Ван Емде Боаса](* <-lang_ru;; *);
+	[Van Emde Boas tree](* <-lang_en;; *);;
+
+concept_van_emde_boas_tree => nrel_idtf:
+	[vEB tree](* <-lang_en;; *);;
+
+concept_van_emde_boas_tree <- rrel_key_sc_element: 
+		... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: дерево Ван Емде Боаса] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: Van Emde Boas tree] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Дерево ван Эмде Боаса  — структура данных, представляющая собой самоболансирующееся дерево поиска, позволяющее хранить целые неотрицательные числа в интервале (0,2^k) и осуществлять над ними все соответствующие дереву поиска операции.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Van Emde Boas tree - data structure that represents a self-balancing search tree that allows you to store non-negative integers in the range (0, 2^k) and exercise over them all the relevant search tree operations.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: F_Harary_Graph_Theory;;
+		*);;
+
+concept_van_emde_boas_tree <= nrel_using_constants: 
+					{
+					concept_binary_search_tree
+					};;
+
+concept_van_emde_boas_tree <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: операции над деревом] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: operations on the tree] (* <- lang_en;; *);;
+		-> rrel_key_sc_element: concept_binary_search_tree;;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Данная структура позволяет хранить k-битные числа и производить над ними операции find, insert, remove, next, prev, min, max и некоторые другие операции, которые присущи всем деревьям поиска.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[This structure allows you to store k-bit numbers and perform operations on them find, insert, remove, next, prev, min, max, and some other operations that are common to all search trees.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: F_Harary_Graph_Theory;;
+		*);;
+
+concept_van_emde_boas_tree <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: особенность дерева Ван Емде Боаса] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: feature tree van Emde Boas] (* <- lang_en;; *);;
+		-> rrel_key_sc_element: concept_tree; concept_binary_search_tree;;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Особенностью этой структуры является то, что все операции выполняются за O(log k), что асимптотически лучше, чем O(log n) в большинстве других деревьев поиска, где n — количество элементов в дереве.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[A feature of this structure is that all operations are performed in O (log k), better asymptotically than O (log n) in most of the other search trees, where n - the number of elements in the tree.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: F_Harary_Graph_Theory;;
+		*);;
+
+concept_van_emde_boas_tree <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_van_emde_boas_tree.png";;
+			*);;
+	*);;

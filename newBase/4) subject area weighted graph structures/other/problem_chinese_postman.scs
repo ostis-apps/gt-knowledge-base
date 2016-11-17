@@ -1,0 +1,47 @@
+problem_chinese_postman
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[задача китайского почтальона]
+	(* <- lang_ru;; *);
+	[chinese postman problem]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...  
+	(*
+		<- definition;;
+		=> nrel_main_idtf: 
+			[Опр.(задача китайского почтальона)]
+			(* <- lang_ru;; *);
+			[Def.(chinese postman problem)]
+			(* <- lang_en;; *);;		
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content_html/definition_for_problem_chinese_postman_ru.html"
+				(* <- lang_ru;;	*);			
+                "file://content_html/definition_for_problem_chinese_postman_en.html"
+				(* <- lang_en;;	*);;
+			*);;		
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+	*);
+<- rrel_key_sc_element:
+	...  
+	(*
+		<- statement;;
+		=> nrel_main_idtf: 
+			[Утв.(Математическая постановка задачи китайского почтальона)]
+			(* <- lang_ru;; *);
+			[Stat.(Math setting of chinese postman problem)]
+			(* <- lang_en;; *);;		
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content_html/statement_for_problem_chinese_postman_ru.html"
+				(* <- lang_ru;;	*);			
+                "file://content_html/statement_for_problem_chinese_postman_en.html"
+				(* <- lang_en;;	*);;
+			*);;		
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+	*);;

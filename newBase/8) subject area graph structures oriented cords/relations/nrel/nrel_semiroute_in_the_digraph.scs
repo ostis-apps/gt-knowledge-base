@@ -1,0 +1,56 @@
+sc_node_norole_relation->nrel_semiroute_in_the_digraph;;
+
+nrel_semiroute_in_the_digraph=>nrel_main_idtf:
+	[полумаршрут в орграфе*]	(*<-lang_ru;;*);
+	[semiroute in the digraph*]	(*<-lang_en;;*);;
+
+nrel_semiroute_in_the_digraph => nrel_arity_of_relations: 2	(* <- number ;;*);;
+nrel_semiroute_in_the_digraph <- binary_relation;;
+
+nrel_semiroute_in_the_digraph <- reflexive_relation;;
+nrel_semiroute_in_the_digraph <- antisymmetric_relation;;
+nrel_semiroute_in_the_digraph <- transitive_relation;;
+
+nrel_semiroute_in_the_digraph => nrel_definitional_domain: concept_directed_graph;;
+nrel_semiroute_in_the_digraph => nrel_first_domain: concept_directed_graph;;
+nrel_semiroute_in_the_digraph => nrel_second_domain: concept_directed_graph;; 
+
+nrel_semiroute_in_the_digraph <- rrel_key_sc_element: 
+     ... 
+	(*
+	=> nrel_main_idtf: [Определение:  полумаршрут в орграфе] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Definition: semiroute in the digraph] (* <- lang_en;; *);;
+	<- sc_definition;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: 
+			[Полумаршрутом в орграфе называют чередующуюся последовательность вершин и дуг между ними, направление дуг не учитывается (вершины могут повторяться).]	(* <- lang_ru;; *);;
+		-> rrel_example: 
+			[Semiroute in the digraph is a sequence of nodes and arcs in which the arc directions are ignored.](*<- lang_en;;*);;
+		*);;
+	<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+	*);;
+
+nrel_semiroute_in_the_digraph<= nrel_using_constants:{
+				concept_directed_graph;
+				concept_node;
+				concept_oredge;
+				nrel_route_in_the_digraph
+				};;
+				
+nrel_semiroute_in_the_digraph<- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: длина маршрута] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: semiroute length] (* <- lang_en;; *);;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Длина полумаршрута — количество дуг в нём.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[The semiroute length is the number of arcs in it](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: R_Distel_Graph_Theory;;
+		*);;				
+

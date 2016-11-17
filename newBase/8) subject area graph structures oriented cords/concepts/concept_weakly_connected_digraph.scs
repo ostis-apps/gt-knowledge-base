@@ -1,0 +1,50 @@
+sc_node_not_relation -> concept_weakly_connected_digraph;;
+
+concept_weakly_connected_digraph => nrel_main_idtf:
+	[слабо связный орграф] (* <- lang_ru;; *);
+	[weakly connected digraph] (* <- lang_en;; *);;
+
+concept_weakly_connected_digraph <- rrel_key_sc_element: 
+        ... 
+            (*
+	<- sc_definition;;
+	=> nrel_main_idtf: [Определение: слабо связный орграф] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Definition: weakly connected digraph] (* <- lang_en;; *);;	
+	<= nrel_sc_text_translation: ... 
+	(*
+		-> rrel_example: [Ориентированный граф называется слабо-связным, если является связным неориентированный граф, полученный из него заменой ориентированных рёбер неориентированными.] (* <- lang_ru;; *);;
+		-> rrel_example: [A directed graph in which it is possible to reach any node starting from any other node by traversing edges in some direction] (* <- lang_en;; *);;
+		*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+*);;
+
+concept_weakly_connected_digraph<= nrel_using_constants: {
+			concept_directed_digraph;
+			concept_node;
+			concept_oredge;
+			nrel_path_in_the_digraph			
+			};;		
+			
+concept_weakly_connected_digraph <- rrel_key_sc_element: 
+        	... 
+		(*
+		<- sc_statement;;
+		-> rrel_key_sc_element: nrel_connected_component;;		
+		=> nrel_main_idtf: [Утверждение: слабо связный граф] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: weakly connected graph](* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Слабо-связный граф сожержит одну компоненту связности.] (* <- lang_ru;; *);;
+                        -> rrel_example: 
+				[Weakly connected graph contains one connected component.] (* <- lang_en;; *);;
+			*);;
+        <= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+		*);;
+		
+concept_weakly_connected_digraph <- rrel_key_sc_element: ... (*
+	<- sc_illustration;;
+	<= nrel_sc_text_translation: ... (*
+		-> rrel_example: "file://contents/weakly_connected_digraph.png";;
+	*);;
+*);;

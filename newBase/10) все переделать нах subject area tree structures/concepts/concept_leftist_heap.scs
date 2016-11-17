@@ -1,0 +1,55 @@
+sc_node_not_relation -> concept_leftist_heap;;
+
+concept_leftist_heap => nrel_main_idtf:
+	[левосторонняя куча](* <-lang_ru;; *);
+	[leftist heap](* <-lang_en;; *);;
+
+concept_leftist_heap <- rrel_key_sc_element: 
+		... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: левосторонняя куча] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: leftist heap] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Левосторонняя куча — двоичное левосторонее дерево (не обязательно сбалансированное), но с соблюдением порядка кучи.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Left-linear heap - a binary left-linear tree (not necessarily balanced), but in compliance with the order of the heap.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: R_Distel_Graph_Theory;;
+		*);;
+
+concept_leftist_heap <= nrel_using_constants: 
+					{
+					concept_left_linear_tree
+					};;
+
+concept_leftist_heap <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: ближайшая свободная позиция] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: nearest free position] (* <- lang_en;; *);;
+		-> rrel_key_sc_element: concept_binary_tree;;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Левосторонняя куча накладывает на двоичное дерево дополнительное условие. Ближайшая свободная позиция должна быть самой правой позицией в дереве.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Leftlist heap imposes an additional condition binary tree. The nearest free position must be the right-most position in the tree.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: R_Distel_Graph_Theory;;
+		*);;
+
+concept_leftist_heap <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_leftist_heap.jpg";;
+			*);;
+	*);;

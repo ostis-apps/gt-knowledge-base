@@ -1,0 +1,46 @@
+sc_node_norole_relation ->nrel_not_trivial_path;;
+
+nrel_not_trivial_path
+
+=> nrel_main_idtf:
+[ нетривиальный маршрут* ] (* <-lang_ru;; *);
+[ not trivial path* ] (* <-lang_en;; *);
+
+
+=> nrel_arity_of_relations: 3 (* <- number ;;*);
+
+
+<-rrel_key_sc_element:
+...
+(*<-sc_definition;;
+=> nrel_main_idtf: [Опр.(нетривиальный маршрут)] (* <- lang_ru;; *);;
+<=nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Маршрут называется нетривиальным, если он содержит хотя бы одно ребро. ] (*<-lang_ru;;*);;
+<= nrel_using_constants:
+	{
+		nrel_path;
+		rrel_edge
+	};;	
+*);;
+*);
+
+=> nrel_definitional_domain:
+...
+(*
+<= nrel_integration:
+...
+(*
+->concept_graph;;
+->nrel_vertexes_corresponding;;
+->concept_graph;;
+*);;
+*);
+=> nrel_first_domain:
+concept_graph;
+=> nrel_second_domain:
+concept_graph;
+=> nrel_third_domain:
+nrel_vertexes_corresponding;;

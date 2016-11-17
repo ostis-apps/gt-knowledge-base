@@ -1,0 +1,55 @@
+sc_node_not_relation -> concept_avl_tree;;
+
+concept_avl_tree => nrel_main_idtf:
+	[АВЛ-дерево](* <-lang_ru;; *);
+	[AVL-tree](* <-lang_en;; *);;
+
+concept_avl_tree <- rrel_key_sc_element: 
+		... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: АВЛ-дерево] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: AVL-tree] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[АВЛ-дерево — это двоичное дерево поиска, ключи которого удовлетворяют стандартному свойству: ключ любого узла дерева не меньше любого ключа в левом поддереве данного узла и не больше любого ключа в правом поддереве этого узла. Это значит, что для поиска нужного ключа в АВЛ-дереве можно использовать стандартный алгоритм. Для простоты дальнейшего изложения будем считать, что все ключи в дереве целочисленны и не повторяются.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[AVL tree - a binary search tree whose keys match a standard property: any node of the tree key is not less than any key in the left subtree of the node and no longer of any key in the right subtree of this node. This means that you can use a standard algorithm for finding the right key in the AVL tree. To simplify further discussion, we assume that all the keys are integers in the tree and are not repeated.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+		*);;
+
+concept_avl_tree <= nrel_using_constants: 
+					{
+					concept_binary_search_tree
+					};;
+					
+concept_avl_tree <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: высота поддерева] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: subtree height] (* <- lang_en;; *);;
+		-> rrel_key_sc_element: concept_tree;;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Для любого узла дерева высота его правого поддерева отличается от высоты левого поддерева не более чем на единицу.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[For each node of the tree height of its right subtree differs from the height of the left subtree is not more than one unit.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+		*);;
+
+concept_avl_tree <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_avl_tree.gif";;
+			*);;
+	*);;

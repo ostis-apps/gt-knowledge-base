@@ -1,0 +1,71 @@
+sc_node_not_relation -> concept_red_black_tree;;
+
+concept_red_black_tree => nrel_main_idtf:
+	[красно-черное дерево](* <-lang_ru;; *);
+	[red-black tree](* <-lang_en;; *);;
+
+concept_red_black_tree => nrel_idtf:
+	[RB tree](* <-lang_en;; *);;
+
+concept_red_black_tree <- rrel_key_sc_element: 
+		... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: красно-черное дерево] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: red-black tree] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Красно-чёрное дерево — это одно из самобалансирующихся двоичных деревьев поиска, гарантирующих логарифмический рост высоты дерева от числа узлов и быстро выполняющее основные операции дерева поиска: добавление, удаление и поиск узла. Сбалансированность достигается за счёт введения дополнительного атрибута узла дерева — «цвета». Этот атрибут может принимать одно из двух возможных значений — «чёрный» или «красный».](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Red-black tree - is one of the self-balancing binary search trees, guaranteeing the logarithmic growth of tree height on the number of units and quickly perform the basic operations of the search tree: add, delete and search site. Balance is achieved through the introduction of an additional attribute tree node - "color". This attribute can take one of two possible values - "black" or "red."](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: F_Harary_Graph_Theory;;
+		*);;
+
+concept_red_black_tree <= nrel_using_constants: 
+					{
+					concept_tree;
+					concept_binary_search_tree
+					};;
+
+concept_red_black_tree <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: свойства] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: properties] (* <- lang_en;; *);;
+		-> rrel_key_sc_element: concept_tree; concept_binary_search_tree;;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Красно-чёрное дерево — двоичное дерево поиска, в котором каждый узел имеет атрибут цвет, принимающий значения красный или чёрный. В дополнение к обычным требованиям, налагаемым на двоичные деревья поиска, к красно-чёрным деревьям применяются следующие требования:
+
+1.) Узел либо красный, либо чёрный.
+2.) Корень — чёрный. (В других определениях это правило иногда опускается. Это правило слабо влияет на анализ, так как корень всегда может быть изменен с красного на чёрный, но не обязательно наоборот).
+3.) Все листья(NIL) — чёрные.
+4.) Оба потомка каждого красного узла — чёрные.
+5.) Всякий простой путь от данного узла до любого листового узла, являющегося его потомком, содержит одинаковое число чёрных узлов.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Red-black tree - a binary search tree in which each node has a color attribute, which takes values ​​of red or black. In addition to the usual requirements imposed on binary search trees, a red-black trees, the following requirements apply:
+
+1.) Node either red or black.
+2) Root - black. (In other definitions, this rule is sometimes omitted. It usually has little effect on the analysis, since the root can always be changed from red to black, but not necessarily vice versa).
+3.) All the leaves (NIL) - black.
+4) Both the descendant of every red node - black.
+5.) Every simple path from a given node to any leaf node, being a descendant of his, contains the same number of black nodes.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: F_Harary_Graph_Theory;;
+		*);;
+
+concept_red_black_tree <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_red_black_tree.png";;
+			*);;
+	*);;

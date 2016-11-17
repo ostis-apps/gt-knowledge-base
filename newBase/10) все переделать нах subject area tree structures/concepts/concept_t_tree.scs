@@ -1,0 +1,39 @@
+sc_node_not_relation -> concept_t_tree;;
+
+concept_t_tree => nrel_main_idtf:
+	[T-дерево](* <-lang_ru;; *);
+	[T-tree](* <-lang_en;; *);;
+
+concept_t_tree <- rrel_key_sc_element: 
+		... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: T-дерево] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: T-tree] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[T-дерево — сбалансированное дерево, оптимизированное для случаев, когда востребованные (горячие) данные полностью хранятся в оперативной памяти.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[T-Tree - balanced binary tree is optimized for cases where the demand (hot) data is completely stored in memory.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: F_Harary_Graph_Theory;;
+		*);;
+
+concept_t_tree <= nrel_using_constants: 
+					{
+					concept_binary_tree;
+					concept_balanced_tree
+					};;
+
+concept_t_tree <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_t_tree.jpg";;
+			*);;
+	*);;

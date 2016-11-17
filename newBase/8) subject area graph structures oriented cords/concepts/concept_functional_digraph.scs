@@ -1,0 +1,50 @@
+sc_node_not_relation -> concept_functional_digraph;;
+
+concept_functional_digraph => nrel_main_idtf:
+	[функциональный орграф] (* <- lang_ru;; *);
+	[functional digraph] (* <- lang_en;; *);;
+
+concept_functional_digraph <- rrel_key_sc_element: 
+        ... 
+            (*
+	<- sc_definition;;
+	=> nrel_main_idtf: [Определение: функциональный орграф] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Definition: functional digraph] (* <- lang_en;; *);;	
+	<= nrel_sc_text_translation: ... 
+	(*
+		-> rrel_example: [Функциональный орграф - орграф, у которого полустепень исхода каждой вершины равна 1.] (* <- lang_ru;; *);;
+		-> rrel_example: [A functional graph is a directed graph in which each vertex has outdegree one, and can therefore be specified by a function mapping {1,...,n} onto itself.] (* <- lang_en;; *);;
+		*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+*);;
+
+concept_functional_digraph<= nrel_using_constants: {
+			concept_directed_graph;
+			concept_node;
+			nrel_outdegree;
+			concept_oredge		
+			};;		
+			
+concept_functional_digraph <- rrel_key_sc_element: 
+        	... 
+		(*
+		<- sc_statement;;
+		-> rrel_key_sc_element: concept_node; concept_oredge; nrel_outdegree;;		
+		=> nrel_main_idtf: [Утверждение: функциональный орграф] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: functional digraph](* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[В функциональном графе из каждой вершины может выходить только одно ребро.] (* <- lang_ru;; *);;
+                        -> rrel_example: 
+				[There is only one edge can go out from each node in a functional digraph.] (* <- lang_en;; *);;
+			*);;
+        <= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+		*);;
+		
+concept_functional_digraph <- rrel_key_sc_element: ... (*
+	<- sc_illustration;;
+	<= nrel_sc_text_translation: ... (*
+		-> rrel_example: "file://contents/functional_digraph.png";;
+	*);;
+*);;

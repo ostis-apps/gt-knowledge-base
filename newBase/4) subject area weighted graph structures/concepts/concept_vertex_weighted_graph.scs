@@ -1,0 +1,43 @@
+concept_vertex_weighted_graph
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[граф со взвешенными вершинами]
+	(* <-lang_ru;; *);
+	[vertex-weighted graph]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...  
+	(*
+		<- definition;;
+		=> nrel_main_idtf: 
+			[Опр.(граф со взвешенными вершинами)]
+			(* <- lang_ru;; *);
+			[Def.(vertex-weighted graph)]
+			(* <- lang_en;; *);;		
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content_html/definition_for_concept_vertex_weighted_graph_ru.html"
+				(* <- lang_ru;;	*);			
+                "file://content_html/definition_for_concept_vertex_weighted_graph_en.html"
+				(* <- lang_en;;	*);;
+			*);;		
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+	*);
+<= nrel_using_constants: 
+{
+	rrel_vertex;
+	nrel_vertex_weight
+};
+<- rrel_key_sc_element: 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation: 
+			...
+			(*
+			-> rrel_example:
+				"file://content_img/concept_vertex_weighted_graph.gif";;
+			*);;
+	*);;

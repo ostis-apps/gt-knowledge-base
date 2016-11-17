@@ -1,0 +1,73 @@
+sc_node_not_relation -> concept_quadtree;;
+
+concept_quadtree => nrel_main_idtf:
+	[дерево квадрантов](* <-lang_ru;; *);
+	[quadtree](* <-lang_en;; *);;
+
+
+concept_quadtree <- rrel_key_sc_element: 
+		... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: дерево квадрантов] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: quadtree] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Дерево квадрантов — дерево, в котором у каждого внутреннего узла ровно 4 потомка. Деревья квадрантов часто используются для рекурсивного разбиения двухмерного пространства по 4 квадранта (области). Области представляют собой квадраты, прямоугольники или имеют произвольную форму. ](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Quadrants Tree - a tree in which each internal angle is equal to 4 offspring. Quadtree often used to recursively partition a two-dimensional space on the quadrant 4 (region). The areas are squares, rectangles or have an arbitrary shape.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+		*);;
+
+concept_quadtree <= nrel_using_constants: 
+					{
+					concept_tree
+					};;
+
+concept_quadtree <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: черты видов деревьев квадрантов] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: traits species quadrants trees] (* <- lang_en;; *);;
+		-> rrel_key_sc_element: concept_tree;;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Общие черты разных видов деревьев квадрантов: разбиение пространства на адаптирующиеся ячейки, максимально возможный объём каждой ячейки, соответствие направления дерева пространственному разбиению.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[The common features of different species of trees quadrants: the partition of adapting to the cell, the maximum possible volume of each cell line direction tree spatial partitioning.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+		*);;
+
+concept_quadtree <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: классификация деревьев квадрантов] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: quadrants classification trees] (* <- lang_en;; *);;
+		-> rrel_key_sc_element: concept_tree;;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Деревья квадрантов могут быть классифицированы в соответствии с типом данных, который они представляют — пространством, точками, прямыми, кривыми. Также их можно разделить по тому, зависит ли форма дерева от порядка обработки данных. ](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Quadrants of the tree can be classified according to the type of data that they represent - the space, points, lines, curves. They can also be split according to whether the shape of the tree depends on the processing order.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+		*);;
+
+concept_quadtree <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_quadtree.png";;
+			*);;
+	*);;
