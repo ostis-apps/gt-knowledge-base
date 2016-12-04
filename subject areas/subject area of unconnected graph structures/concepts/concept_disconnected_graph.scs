@@ -1,0 +1,37 @@
+sc_node_not_relation->concept_disconnected_graph;;
+
+concept_disconnected_graph => nrel_main_idtf:
+	[несвязный граф](* <-lang_ru;; *);
+	[disconnected graph](* <-lang_en;; *);;
+
+concept_disconnected_graph <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: несвязный граф] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: disconnected graph] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Если граф имеет две различные компоненты связности, то он несвязен.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Graph is disconnected if it has two different connected components.](*<- lang_en;;*);;
+		*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+*);;
+concept_disconnected_graph<= nrel_using_constants:
+						{
+						nrel_connected_component
+						};;
+
+concept_disconnected_graph <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_disconnected_graph.png";;
+			*);;
+	*);;

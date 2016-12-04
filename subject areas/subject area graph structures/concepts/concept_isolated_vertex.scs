@@ -1,0 +1,39 @@
+sc_node_not_relation -> concept_isolated_vertex;;
+concept_isolated_vertex => nrel_main_idtf:
+	[изолированная вершина] (* <- lang_ru;; *);
+	[isolated vertex] (* <- lang_en;; *);;
+	
+concept_isolated_vertex <- rrel_key_sc_element: 
+	...  
+	(*
+	=> nrel_main_idtf: [Определение: изолированная вершина] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Definition: isolated vertex](* <- lang_en;; *);;	
+	<- sc_definition;; 
+	<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+	<= nrel_sc_text_translation: 
+		... 
+		(*
+		-> rrel_example: 
+		[Вершина называется изолированной, если её степень равна нулю, то есть это вершина, не являющаяся конечной ни для какого ребра.](* <- lang_ru;; *);;
+		-> rrel_example: 
+                [Vertex is called isolated if it's degree equals to 0.] (* <-lang_en;; *);;
+		*);;
+	*);;
+
+concept_isolated_vertex<= nrel_using_constants:
+					{
+					nrel_vertex_degree
+					};;
+	
+concept_isolated_vertex <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_isolated_vertex.png";;
+			*);;
+	*);;
+concept_node => nrel_inclusion: concept_isolated_vertex;;

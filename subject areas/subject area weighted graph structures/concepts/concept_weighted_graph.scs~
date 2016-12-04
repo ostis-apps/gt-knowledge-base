@@ -1,0 +1,54 @@
+sc_node_not_relation->concept_weighted_graph;;
+
+concept_weighted_graph => nrel_main_idtf:
+	[взвешенный граф](* <-lang_ru;; *);
+	[weighted graph](* <-lang_en;; *);;
+
+concept_weighted_graph <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: взвешенный граф] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: weighted graph] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Пусть G — граф, W: EG -> R+ — вещественно-значная функция, ставящая в соответствие каждому ребру e положительное (или неотрицательное) число W(e) — вес ребра e. Пару (G, W) назовем взвешенным графом.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[A weighted graph (G,W) - W: EG -> R + - valued function that assigns to each edge e positive (or non-negative) number of W(e) - the weight of edge e.](*<- lang_en;;*);;
+		*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+*);;
+concept_weighted_graph<= nrel_using_constants:
+						{
+						concept_edge;
+						nrel_edge_weight
+						};;
+
+concept_weighted_graph <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: применение взвешенных графов] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: use of weighted graphs] (* <- lang_en;; *);;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Взвешенный граф используется для решения реальных задач: нахождения фактические расстояния между отдельными пунктами, стоимость, время проезда и прочее.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[A weighted graph is used to solve real problems: finding the factual distance between the individual items cost, time of travel and so on.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+		*);;
+			
+concept_weighted_graph <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_weighted_graph.png";;
+			*);;
+	*);;

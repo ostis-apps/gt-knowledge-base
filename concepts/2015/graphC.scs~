@@ -1,6 +1,0 @@
-concept_connected_graph ->C;;
-
-concept_connected_graph -> rrel_vertex: c1;;
-concept_connected_graph -> rrel_vertex: c2;;
-concept_connected_graph -> rrel_vertex: c3;;
-concept_connected_graph -> rrel_vertex: c4;;

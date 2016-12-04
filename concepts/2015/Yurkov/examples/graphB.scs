@@ -1,8 +1,0 @@
-concept_connected_graph->B(*
-	->rrel_vertex: b1;;
-	->rrel_vertex: b2;;
-	->rrel_vertex: b3;;
-	->rrel_edge: ( b1 => b2 );;
-	->rrel_edge: ( b2 => b3 );;
-	->rrel_edge: ( b3 => b1 );;
-*);;

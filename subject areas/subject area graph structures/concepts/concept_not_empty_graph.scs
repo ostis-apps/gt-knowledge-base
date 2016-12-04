@@ -1,0 +1,27 @@
+sc_node_not_relation->concept_not_empty_graph;;
+
+
+concept_not_empty_graph
+=> nrel_main_idtf:
+	[ непустой граф ] (* <-lang_ru;; *);
+	[ not empty graph] (* <-lang_en;; *);
+
+
+<-rrel_key_sc_element:
+	...
+	(*<-sc_definition;;
+	=> nrel_main_idtf: [Опр.(непустой граф)] (* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+		[Непустой граф - граф, содержащий рёбра.] (*<-lang_ru;;*);;	
+		*);;
+*);
+
+
+<= nrel_using_constants:
+	{
+		concept_graph;
+		rrel_edge
+	};;

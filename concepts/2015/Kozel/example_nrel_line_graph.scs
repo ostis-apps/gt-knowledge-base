@@ -1,8 +1,0 @@
-concept_graph ->..graph;;
-..graph -> rrel_vertex : v1; v2 ; v3 ; v4   ;;
-..graph ->rrel_edge : 	(v1 <=> v2) ; (v3 <=> v1)  ; (v4 <=> v3)   ; (v1 <=> v4 );;
-
-nrel_line_graph  -> rrel_example : ( ..graph => ..graph2);;
-..graph2 -> rrel_vertex : u1; u2 ; u3 ; u4  ;;
-..graph2 ->rrel_edge : 	(u1 <=> u2) ; (u1 <=> u3) ;  (u1 <=> u4) ;  (u2 <=> u3) ;  (u3 <=> u4);;
-	
