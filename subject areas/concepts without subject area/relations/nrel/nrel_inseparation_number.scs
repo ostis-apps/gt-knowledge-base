@@ -1,0 +1,29 @@
+sc_node_norole_relation ->nrel_inseparation_number;;
+binary_relation -> nrel_inseparation_number;;
+oriented_relation ->nrel_inseparation_number;;
+
+nrel_inseparation_number
+	=> nrel_main_idtf: 
+		[ число внутреннего разделения* ] (* <-lang_ru;; *);
+		[ inseparation number* ] (* <-lang_en;; *);
+	
+<= nrel_using_constants:
+							{
+								rrel_vertex;
+								nrel_path_gt;
+								nrel_weight
+							};			
+
+
+=> nrel_definitional_domain:
+...
+(*
+				<= nrel_combination:
+					...
+						(*
+								->rrel_vertex;;
+								->number;;
+							*);;
+*);
+ => nrel_first_domain: rrel_vertex;
+ => nrel_second_domain: number;;

@@ -1,0 +1,47 @@
+sc_node_norole_relation ->nrel_graph_bondary_facets;;
+
+nrel_graph_bondary_facets
+
+=> nrel_main_idtf:
+[ граница грани графа* ] (* <-lang_ru;; *);
+[ graph bondary facets* ] (* <-lang_en;; *);
+
+
+=> nrel_arity_of_relations: 3 (* <- number ;;*);
+
+
+<-rrel_key_sc_element:
+...
+(*<-sc_definition;;
+=> nrel_main_idtf: [Опр.(граница грани графа)] (* <- lang_ru;; *);;
+<=nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Граница грани - множество вершин и ребер, принадлежащих грани. ] (*<-lang_ru;;*);;
+<= nrel_using_constants:
+	{
+		rrel_vertex;
+		rrel_edge;
+		nrel_graph_facets
+	};;	
+*);;
+*);
+
+=> nrel_definitional_domain:
+...
+(*
+<= nrel_integration:
+...
+(*
+->rrel_vertex;;
+->rrel_edge;;
+->concept_graph;;
+*);;
+*);
+=> nrel_first_domain:
+rrel_vertex;
+=> nrel_second_domain:
+rrel_edge;
+=> nrel_third_domain:
+concept_graph;;

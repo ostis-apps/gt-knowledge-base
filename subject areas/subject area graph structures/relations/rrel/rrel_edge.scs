@@ -19,26 +19,3 @@ rrel_edge<= nrel_using_constants:
 				{
 					rrel_vertex
 				};;
-
-rrel_edge<-rrel_key_sc_element: ...
-	(*
-	=>nrel_main_idtf:[Утв.(ребро) ](*<-lang_ru;;*);;
-	<- sc_statement;;
-	<=nrel_sc_text_translation:
-		...
-		(*
-		-> rrel_example: [Два ребра, имеющие общую концевую вершину называются смежными. ] (*<-lang_ru;;*);;
-		*);;
-*);;
-
-rrel_edge<-rrel_key_sc_element:
-	... 
-	(*
-	=>nrel_main_idtf:[Утв.(ребро) ](*<-lang_ru;;*);;
-	<- sc_statement;;
-	<=nrel_sc_text_translation:
-		...
-		(*
-		-> rrel_example: [Ребро, концы которого совпадают называется петлей. ] (*<-lang_ru;;*);;	
-		*);;
-*);;

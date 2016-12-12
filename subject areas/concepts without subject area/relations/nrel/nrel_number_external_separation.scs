@@ -1,0 +1,35 @@
+sc_node_norole_relation->nrel_number_external_separation;;
+
+nrel_number_external_separation=>nrel_main_idtf:
+	[число внешнего разделения*]
+		(*<-lang_ru;;*);
+	[number of the external separation*]
+		(*<-lang_en;;*);;
+
+nrel_number_external_separation => nrel_arity_of_relations: 2
+	(* <- number ;;*);;
+
+nrel_number_external_separation <- binary_relation;;
+nrel_number_external_separation <- antireflexive_relation;;
+nrel_number_external_separation <- antisymmetric_relation;;
+
+nrel_number_external_separation => nrel_first_domain: concept_graph;;
+nrel_number_external_separation => nrel_second_domain: number;; 
+
+nrel_number_external_separation <- rrel_key_sc_element: 
+     ... 
+	(*
+	=> nrel_main_idtf: [Опр.(Число внешнего разделения вершины)] (* <- lang_ru;; *);;
+	<- sc_definition;;
+	<= nrel_sc_text_translation: ...
+		(*
+		-> rrel_example: 
+			[Число внешнего разделения вершины - максимальное из длин путей от данной вершины до всех остольных.]
+				(* <- lang_ru;; *);;
+		<= nrel_using_constants:
+				{
+					nrel_length_path;
+					rrel_vertex
+				};;
+		*);;
+	*);;

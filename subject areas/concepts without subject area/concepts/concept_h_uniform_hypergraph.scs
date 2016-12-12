@@ -1,0 +1,25 @@
+sc_node_not_relation->concept_h_uniform_hypergraph;;
+
+concept_h_uniform_hypergraph	=> nrel_main_idtf: 
+		[h-униформный гиперграф] (* <-lang_ru;; *);
+		[h-The uniform hypergraph] (* <-lang_en;; *);;
+
+concept_h_uniform_hypergraph <= nrel_inclusion: concept_hypergraph;;
+
+concept_h_uniform_hypergraph <- rrel_key_sc_element:
+		...  
+		(*
+		<-sc_definition;;
+		=> nrel_main_idtf: [Опр.(h-униформный гиперграф)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example: 
+				[h-униформный гиперграф - гиперграф без кратных ребер, у которого степень каждого ребра равна h. .] (*<-lang_ru;;*);;
+				<= nrel_using_constants:
+				{
+					concept_hypergraph;
+					rrel_edge
+				};;
+			*);;
+		*);;

@@ -1,49 +1,21 @@
-sc_node_not_relation -> concept_binary_tree;;
+concept_binary_tree
+	<- sc_node_not_relation;
 
-concept_binary_tree => nrel_main_idtf:
-	[бинарное дерево](* <-lang_ru;; *);
-	[binary tree](* <-lang_en;; *);;
+	=> nrel_main_idtf: [бинарное дерево] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [binary tree] (* <- lang_en;; *);
 
-concept_binary_tree => nrel_idtf:
-	[двоичное дерево](* <-lang_ru;; *);;
+	<= nrel_inclusion: concept_directed_tree;
 
-concept_binary_tree <- rrel_key_sc_element: 
-		... 
-		(*
+	<- rrel_key_sc_element: ... (*
 		<- sc_definition;;
-		=> nrel_main_idtf: [Определение: бинарное дерево] (* <- lang_ru;; *);;
-		=> nrel_main_idtf: [Definition: binary tree] (* <- lang_en;; *);;
-		<= nrel_sc_text_translation: ...
-			(*
-			-> rrel_example: 
-				[Бинарное дерево — дерево в котором каждая
-				вершина имеет не более двух потомков (детей).](*<- lang_ru;;*);;
-			-> rrel_example: 
-				[The binary tree - a tree growing from the root, and from each vertex has at most two arcs, labeled right or left arc.](*<- lang_en;;*);;
-			*);;
-		<= nrel_bibliographical_source: R_Distel_Graph_Theory;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: [ордерево, растущее из корня, причем из каждой вершины исходит не более двух дуг, помеченных как правая или левая дуга.] (* <- lang_ru;; *);;
+			<= nrel_using_constants: {
+				concept_directed_tree;
+				rrel_vertex
+			};;
 		*);;
-
-concept_binary_tree <= nrel_using_constants: 
-					{
-					concept_directed_tree
-					};;
-
-concept_binary_tree <- rrel_main_key_sc_element:
-		...
-		(*
-		=> nrel_main_idtf: [Утверждение: практическое применение] (* <- lang_ru;; *);;
-		=> nrel_main_idtf: [Statement: practical use] (* <- lang_en;; *);;
-		-> rrel_key_sc_element: concept_binary_search_tree; concept_binary_heap;;
-		<- sc_statement;;
-		<= nrel_sc_text_translation: ...
-			(*
-			-> rrel_example: 
-				[Для практических целей обычно используют два подвида бинарных деревьев — двоичное дерево поиска и двоичная куча.](*<- lang_ru;;*);;
-			-> rrel_example: 
-				[For practical purposes, generally use two sub binary tree - a binary search tree and a binary heap.](*<- lang_en;;*);;
-			*);;
-		*);;
+	*);;
 
 concept_binary_tree <- rrel_key_sc_element: 
 	...

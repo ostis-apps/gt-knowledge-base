@@ -1,0 +1,56 @@
+sc_node_not_relation->concept_rooted_tree;;
+
+
+concept_rooted_tree
+=> nrel_main_idtf:
+[ корневое дерево ] (* <-lang_ru;; *);
+[ rooted tree ] (* <-lang_en;; *);
+
+
+<-rrel_key_sc_element:
+...
+(*<-sc_definition;;
+=> nrel_main_idtf: [Опр.(корневое дерево)] (* <- lang_ru;; *);;
+<=nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Корневое дерево — дерево, в котором выделена одна вершина (корень дерева).] (*<-lang_ru;;*);;
+<= nrel_using_constants:
+	{
+		concept_tree;
+		rrel_vertex
+	};;	
+*);;
+*);
+
+
+<-rrel_key_sc_element: ...
+(*
+=>nrel_main_idtf:[Утв.(корневое дерево) ](*<-lang_ru;;*);;
+<- sc_statement;;
+<=nrel_sc_text_translation:
+...
+(*
+-> rrel_example: [Существует только один корень в корневом дереве.] (*<-lang_ru;;*);;
+*);;
+*);
+
+
+<-rrel_key_sc_element:
+... (*
+=>nrel_main_idtf:[Утв.(корневое дерево) ](*<-lang_ru;;*);;
+<- sc_statement;;
+<=nrel_sc_text_translation:
+...
+(*
+-> rrel_example: [Остальные узлы (за исключением корня) распределены среди m >= 0 непересекающихся множеств T_1, ..., T_m, и каждое из множеств является корневым деревом; деревья T_1, ..., T_m называются поддеревьями данного корня T] (*<-lang_ru;;*);;
+<= nrel_using_constants:
+	{
+		rrel_vertex;
+		concept_tree
+	};;	
+*);;
+*);;
+
+

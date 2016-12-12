@@ -1,0 +1,40 @@
+sc_node_norole_relation ->nrel_thickness_of_graph;;
+binary_relation -> nrel_thickness_of_graph;;
+oriented_relation ->nrel_thickness_of_graph;;
+
+nrel_thickness_of_graph
+	=> nrel_main_idtf: 
+		[ толщина графа* ] (* <-lang_ru;; *);
+		[ thickness of a graph* ] (* <-lang_en;; *);
+
+	<-rrel_key_sc_element:
+		...  
+		(*<-sc_definition;;
+	=> nrel_main_idtf: [Опр.(толщина графа)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:
+		...
+			(*
+				-> rrel_example: 
+				[Толщина графа - наименьшее число планарных частичных графов (подграфов в слабом смысле) графа G, объединение которых дает исходный граф G.] (*<-lang_ru;;*);;	
+			*);;
+		*);
+	
+<= nrel_using_constants:
+							{
+								concept_planar_graph;
+								concept_graph
+							};			
+
+
+=> nrel_definitional_domain:
+...
+(*
+				<= nrel_combination:
+					...
+						(*
+								->concept_graph;;
+								->number;;
+							*);;
+*);
+ => nrel_first_domain: concept_graph;
+ => nrel_second_domain: number;;

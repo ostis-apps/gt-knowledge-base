@@ -1,0 +1,45 @@
+sc_node_not_relation->concept_block;;
+
+concept_block
+
+=> nrel_main_idtf:
+	[ блок ] (* <-lang_ru;; *);
+	[ block ] (* <-lang_en;; *);
+
+
+<-rrel_key_sc_element:
+	...
+	(*
+		<-sc_definition;;
+		=> nrel_main_idtf: [Опр.(блок)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:
+			...
+			(*
+				-> rrel_example:
+					[блок - это граф без шарниров.] (*<-lang_ru;;*);;
+				<= nrel_using_constants:
+					{
+						concept_graph;
+						nrel_hinge
+					};;	
+			*);;
+	*);
+
+
+<-rrel_key_sc_element: 
+	...
+	(*
+		=>nrel_main_idtf:[Утв.(блок) ](*<-lang_ru;;*);;
+		<- sc_statement;;
+		<=nrel_sc_text_translation:
+			...
+			(*
+				-> rrel_example: [В блоке нет вершины, в результате удаления которой вместе со всеми инцидентными ей рёбрами количество компонент связности в данном блоке возрастает.] (*<-lang_ru;;*);;
+				<= nrel_using_constants:
+					{
+						rrel_vertex;
+						nrel_connected_component;
+						rrel_edge
+					};;	
+			*);;
+	*);;

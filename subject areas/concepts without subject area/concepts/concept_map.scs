@@ -1,0 +1,16 @@
+concept_map
+	<- sc_node_not_relation;
+
+	=> nrel_main_idtf: [карта] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [map] (* <- lang_en;; *);
+
+	<- rrel_key_sc_element: ... (*
+		<- sc_definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: [связный плоский мультиграф без мостов; К. представляет собой модель географической карты (оттуда и название), в которой граница любой страны состоит из одной замкнутой линии, а соседними считаются страны, имеющие общую границу ненулевой длины.] (* <- lang_ru;; *);;
+			<= nrel_using_constants: {
+				concept_multigraph;
+				concept_bridge
+			};;
+		*);;
+	*);;

@@ -1,0 +1,21 @@
+sc_node_not_relation -> concept_tightened_graph;;
+concept_tightened_graph => nrel_main_idtf:
+	[Стягиваемый граф] (* <- lang_ru;;*);
+	[Tightened graph] (* <- lang_en;;*);;
+concept_tightened_graph <- rrel_key_sc_element: ...  
+	(*
+	=> nrel_main_idtf: [Опр.(Стягиваемый граф)] (* <- lang_ru;; *);;
+	<- sc_definition;; 
+	<= nrel_sc_text_translation: ... (*
+		-> rrel_example: 
+			[Стягиваемый граф(Tightened graph)
+- граф G называется стягиваемым к H, если H может быть получен из G с помощью некоторой последовательности стягиваний ребер.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+	<= nrel_using_constants: {	
+				concept_graph;
+				rrel_edge
+			};;
+//concept_tightened_graph -> rrel_example: example_tightened_graph;; 
+concept_graph => nrel_inclusion: concept_tightened_graph;;

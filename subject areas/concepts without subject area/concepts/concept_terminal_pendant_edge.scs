@@ -1,0 +1,16 @@
+concept_terminal_pendant_edge
+	<- sc_node_not_relation;
+
+	=> nrel_main_idtf: [висячее ребро] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [terminal pendant edge] (* <- lang_en;; *);
+
+	<- rrel_key_sc_element: ... (*
+		<- sc_definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: [ребро, одна из концевых вершин которого имеет степень 1.] (* <- lang_ru;; *);;
+			<= nrel_using_constants: {
+				concept_cycle;
+				concept_vertex
+				};;
+			*);;
+	*);;

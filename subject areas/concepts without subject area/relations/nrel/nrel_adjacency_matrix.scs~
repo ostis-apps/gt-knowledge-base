@@ -1,0 +1,56 @@
+sc_node_norole_relation ->nrel_adjacency_matrix;;
+sc_relation -> nrel_adjacency_matrix;;
+ternary_relation -> nrel_adjacency_matrix;;
+oriented_relation -> nrel_adjacency_matrix;;
+
+nrel_adjacency_matrix
+	=> nrel_main_idtf: 
+		[ матрица смежности* ] (* <-lang_ru;; *);
+		[ adjacency matrix* ] (* <-lang_en;; *);
+
+=> nrel_arity_of_relations: 3 (* <- number ;;*);
+<-rrel_key_sc_element:
+		...  
+		(*<-sc_definition;;
+		=> nrel_main_idtf: [Опр.(матрица смежности)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:
+		...
+			(*
+				-> rrel_example: 
+				[Матрица смежности графа — это матрица, значения элементов которой характеризуются смежностью вершин графа. При этом значению элемента матрицы присваивается количество рёбер, которые соединяют соответствующие вершины (то есть которые инцидентны обоим вершинам).] (*<-lang_ru;;*);;
+			*);;
+		*);
+
+<= nrel_using_constants:
+							{
+								concept_graph;
+								nrel_vertex_adjacency
+							};	
+			
+<-rrel_key_sc_element: ...
+	(*
+		=>nrel_main_idtf:[Утв.(матрица смежности; петля) ](*<-lang_ru;;*);;
+		<- sc_statement;;	
+		<=nrel_sc_text_translation:
+		...
+			(*
+				-> rrel_example: [Петля считается сразу двумя соединениями для вершины, то есть к значению элемента матрицы в таком случае следует прибавлять 2.] (*<-lang_ru;;*);;	
+			*);;
+		*);			
+
+=> nrel_definitional_domain:
+...
+(*
+				<= nrel_combination:
+					...
+						(*
+								->concept_graph;;
+								->concept_matrix;;
+								->set_of_correspondences;;
+							*);;
+*);
+ => nrel_first_domain: concept_graph;
+
+ => nrel_second_domain: concept_matrix;
+
+=> nrel_third_domain: set_of_correspondences;

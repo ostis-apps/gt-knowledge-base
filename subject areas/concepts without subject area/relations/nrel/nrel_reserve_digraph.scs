@@ -1,0 +1,29 @@
+sc_node_norole_relation ->nrel_reserve_digraph;;
+binary_relation -> nrel_reserve_digraph;;
+non_oriented_relation ->nrel_reserve_digraph;;
+
+nrel_reserve_digraph
+	=> nrel_main_idtf: 
+		[ обратный орграф* ] (* <-lang_ru;; *);
+		[ reserve digraph* ] (* <-lang_en;; *);
+
+	<-rrel_key_sc_element:
+		...  
+		(*<-sc_definition;;
+		=> nrel_main_idtf: [Опр.(обратный орграф)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:
+		...
+			(*
+				-> rrel_example: 
+				[Обратный орграф - орграф, получаемый из исходного заменой всех дуг противоположно ориентированными дугами.] (*<-lang_ru;;*);;	
+			*);;
+		*);
+<= nrel_using_constants:
+							{
+								rrel_arc;
+								concept_directed_graph
+							};
+
+ => nrel_definitional_domain:concept_graph;
+ => nrel_first_domain: concept_graph;
+ => nrel_second_domain: concept_graph;;

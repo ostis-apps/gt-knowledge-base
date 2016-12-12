@@ -1,0 +1,28 @@
+sc_node_not_relation -> concept_cayley_graph;;
+
+concept_cayley_graph => nrel_main_idtf:
+	[граф Кэли]
+	(* <- lang_ru;;	*);
+	[Cayley graph]
+	(* <- lang_en;;	*);;
+
+concept_cayley_graph <- rrel_key_sc_element:
+	...  
+	(*
+	=> nrel_main_idtf: [Опр.(граф Кэли)] (* <- lang_ru;; *);;
+	<- sc_definition;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Граф Кэли — граф, который строится по группе с выделенной системой образующих. Назван в честь Кэли.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+	
+	<= nrel_using_constants:
+			{	
+			concept_graph
+			};;
+
+concept_graph => nrel_inclusion: concept_cayley_graph;;

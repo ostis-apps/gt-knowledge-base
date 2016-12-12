@@ -1,10 +1,7 @@
 sc_node_not_relation-> concept_subj_domain_eulerian_graph;;
 subject_domain -> concept_subj_domain_eulerian_graph;;
-
 concept_subj_domain_eulerian_graph => nrel_main_idtf:
 	[Раздел. Предметная область эйлеровых графов](* <-lang_ru;; *);
 	[Subject domain eulerian graph](* <-lang_en;; *);;
 
-
-concept_subj_domain_eulerian_graph -> rrel_maximum_studied_object_class: concept_eulerian_graph;;
-concept_subj_domain_eulerian_graph -> rrel_studied_relation: nrel_eulerian_chain;;
+concept_subj_domain_graph_structures_cyclic => nrel_inclusion: concept_subj_domain_eulerian_graph;;

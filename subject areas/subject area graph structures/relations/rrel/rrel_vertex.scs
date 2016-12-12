@@ -19,16 +19,4 @@ rrel_vertex
 <= nrel_using_constants:
 		{
 		concept_graph
-		};	
-
-
-<-rrel_key_sc_element: ...
-	(*
-	=>nrel_main_idtf:[Утв.(вершина)](*<-lang_ru;;*);;
-	<- sc_statement;;
-	<=nrel_sc_text_translation:
-		...
-		(*
-		-> rrel_example: [Вершины рассматривается как лишённые характерных черт неделимые объекты ] (*<-lang_ru;;*);;
-		*);;
-	*);;
+		};;

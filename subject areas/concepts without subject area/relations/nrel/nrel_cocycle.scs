@@ -1,0 +1,112 @@
+sc_node_norole_relation->nrel_cocycle;;
+
+nrel_cocycle => nrel_main_idtf:
+	[коцикл*](* <-lang_ru;; *);
+	[cocycle*](* <-lang_en;; *);;
+
+nrel_cocycle <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: коцикл] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: cocycle] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Коцикл - минимальный разрез, минимальное множество рёбер, удаление которого делает граф несвязным.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Cocycle is minimal incision, minimal set of edges, which makes the removal of a graph disconnected.](*<- lang_en;;*);;
+		*);;
+		<= nrel_bibliographical_source: F_Harary_Graph_Theory;;
+*);;
+
+nrel_cocycle<= nrel_using_constants:
+						{
+						concept_edge
+						};;
+
+
+		
+nrel_cocycle <- binary_relation;;
+nrel_cocycle => nrel_arity_of_relations: 2(* <- number ;;*);;
+nrel_cocycle => nrel_first_domain: concept_graph;;
+nrel_cocycle => nrel_second_domain: concept_node;;
+rrel_point_of_articulation<= nrel_definitional_domain: 
+	...
+	(*
+	<= nrel_combination: 
+		{
+		concept_graph; 
+		concept_node
+		};;
+	*);;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+sc_node_norole_relation->nrel_cocycle;;
+
+nrel_cocycle=>nrel_main_idtf:
+	[коцикл*]
+		(*<-lang_ru;;*);
+	[cocycle*]
+		(*<-lang_en;;*);;
+
+nrel_cocycle => nrel_arity_of_relations: 2
+	(* <- number ;;*);;
+
+nrel_cocycle <- binary_relation;;
+
+nrel_cocycle => nrel_definitional_domain: concept_graph;;
+nrel_cocycle => nrel_first_domain: concept_graph;;
+nrel_cocycle => nrel_second_domain: arcs;; 
+
+nrel_cocycle <- rrel_key_sc_element: 
+     ... 
+	(*
+	=> nrel_main_idtf: [Опр.(Коцикл)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Коцикл - минимальный разрез, минимальное множество рёбер, удаление которого делает граф несвязным.]
+				(* <- lang_ru;; *);;
+		<= nrel_using_constants:
+				{
+					rrel_edge;
+					nrel_cut;
+					concept_graph
+				};;
+		*);;
+	*);;

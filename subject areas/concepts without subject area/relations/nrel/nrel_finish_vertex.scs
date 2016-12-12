@@ -1,0 +1,18 @@
+nrel_finish_vertex
+	<- sc_node_norole_relation;
+	<- binary_relation;
+
+	=> nrel_main_idtf: [конечная вершина] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [finish vertex] (* <- lang_en;; *);
+
+	=> nrel_arity_of_relations: 2 (* <- number;; *);
+
+	<- rrel_key_sc_element: ... (*
+		<- sc_definition;;
+		<= nrel_sc_text_translation: ... (*
+			-> rrel_example: [Вершина, которая является внешним (не принадлежащим фрагменту) преемником хотя бы одной вершины фрагмента.] (* <- lang_ru;; *);;
+			<= nrel_using_constants: {
+				concept_vertex
+				};;
+			*);;
+	*);;

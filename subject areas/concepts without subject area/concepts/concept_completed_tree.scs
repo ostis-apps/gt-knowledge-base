@@ -1,0 +1,27 @@
+sc_node_not_relation -> concept_completed_tree;;
+
+concept_completed_tree => nrel_main_idtf: 
+		[завершенное дерево] (* <-lang_ru;; *);
+		[completed tree] (* <-lang_en;; *);;
+
+concept_completed_tree <= nrel_inclusion: concept_tree;;
+			
+concept_completed_tree <- rrel_key_sc_element:
+		...  
+		(*
+		<-sc_definition;;
+		=> nrel_main_idtf: [Опр.(Завершенное дерево)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example: 
+				[Завершенное дерево - дерево, построенное из полного дерева глубины k путем удаления некоторых вершин-листьев и ведущих к ним дуг.] (*<-lang_ru;;*);;
+				<= nrel_using_constants:
+				{
+					concept_tree;
+					rrel_vertex;
+					rrel_oredge
+				};;
+			*);;
+		*);;
+

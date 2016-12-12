@@ -1,8 +1,0 @@
-concept_subj_domain_graph_structures_connected => nrel_inclusion: concept_subj_domain_k_partite;;
-concept_subj_domain_graph_structures_connected -> rrel_studied_relation: nrel_cocycle;;
-concept_subj_domain_graph_structures_connected -> rrel_studied_relation: nrel_connected_component;;
-concept_subj_domain_graph_structures_connected <= nrel_subdividing: 
-	{  
-	concept_subj_domain_cyclic_graph;
-	concept_subj_domain_acyclic_graph
-	};;

@@ -1,0 +1,20 @@
+sc_node_not_relation -> concept_unigraph;;
+concept_unigraph => nrel_main_idtf:
+	[Униграф] (* <- lang_ru;;*);
+	[Unigraph] (* <- lang_en;;*);;
+concept_unigraph <- rrel_key_sc_element: ...  
+	(*
+	=> nrel_main_idtf: [Опр.(Униграф)] (* <- lang_ru;; *);;
+	<- sc_definition;; 
+	<= nrel_sc_text_translation: ... (*
+		-> rrel_example: 
+			[Униграф(Unigraph)
+- реализация униграфической степенной последовательности. ]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+	<= nrel_using_constants: {	
+				concept_graph
+			};;
+concept_unigraph -> rrel_example: example_unigraph;; 
+concept_graph => nrel_inclusion: concept_unigraph;;

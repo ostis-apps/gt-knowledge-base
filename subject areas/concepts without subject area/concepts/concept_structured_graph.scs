@@ -1,0 +1,19 @@
+sc_node_not_relation -> concept_structured_graph;;
+concept_structured_graph => nrel_main_idtf:
+	[Структурный граф] (* <- lang_ru;;*);
+	[Structured graph] (* <- lang_en;;*);;
+concept_structured_graph <- rrel_key_sc_element: ...  
+	(*
+	=> nrel_main_idtf: [Опр.(Структурный граф)] (* <- lang_ru;; *);;
+	<- sc_definition;; 
+	<= nrel_sc_text_translation: ... (*
+		-> rrel_example: 
+			[Структурный граф - то же, что и Диаграмма Хассе.]
+			(* <- lang_ru;; *);;
+		*);;
+	*);
+	<= nrel_using_constants: {	
+				concept_graph
+			};;
+concept_structured_graph -> rrel_example: example_structured_graph;; 
+concept_graph => nrel_inclusion: concept_structured_graph;;
