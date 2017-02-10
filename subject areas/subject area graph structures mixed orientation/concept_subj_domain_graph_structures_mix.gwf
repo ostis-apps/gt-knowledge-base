@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<GWF version="2.0">
-    <staticSector>
-        <node type="node/const/group" idtf="concept_subj_domain_graph_structures_mix" shapeColor="0" id="73068352" parent="0" left="0" top="0" right="356" bottom="28" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="298" y="350" haveBus="false" idtf_pos="3">
-            <content type="0" mime_type="" content_visibility="false" file_name=""/>
-        </node>
-    </staticSector>
-</GWF>
