@@ -1,0 +1,41 @@
+sc_node_norole_relation->nrel_set_deadlock;;
+
+nrel_set_deadlock=> nrel_main_idtf:
+	[множество тупиков*](* <-lang_ru;; *);
+	[deadlock set*](* <-lang_en;; *);;
+	
+nrel_set_deadlock <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Определение: множество тупиков] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: deadlock set] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Множество тупиков - отношение между графом и множеством, содержащим все его тупики.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Deadlock set is a relation between graph and a set, which contains all the deadlocks of this graph.](*<- lang_en;;*);;
+		*);;
+*);;
+
+nrel_set_deadlock<= nrel_using_constants:
+						{
+						rrel_deadlock;
+						set;
+						concept_graph
+						};;
+						
+nrel_set_deadlock <- binary_relation;;
+nrel_set_deadlock => nrel_arity_of_relations: 2(* <- number ;;*);;
+nrel_set_deadlock => nrel_first_domain: concept_graph;;
+nrel_set_deadlock => nrel_second_domain: set;;
+nrel_set_deadlock<= nrel_definitional_domain: 
+	...
+	(*
+	<= nrel_combination: 
+		{
+		concept_graph; 
+		set
+		};;
+	*);;
