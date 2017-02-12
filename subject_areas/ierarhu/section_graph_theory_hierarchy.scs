@@ -11,5 +11,6 @@ section_graph_theory_hierarchy
 		concept_subj_domain_hypergraphs;
 		concept_subj_domain_pseudographs;
 		concept_subj_domain_multigraphs;
-		section_subject_domain_of_n_graph
+		section_subject_domain_of_n_graph;
+		section_exercise_graph_theory
 		};;
