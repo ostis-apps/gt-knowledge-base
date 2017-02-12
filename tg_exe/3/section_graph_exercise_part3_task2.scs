@@ -1,0 +1,14 @@
+section_graph_exercise_part3_task2
+=> nrel_main_idtf:
+	[Задача 2. Новогодние подарки]
+	(* <- lang_ru;; *);
+	[Task 2. New Year gifts]
+	(* <- lang_en;; *);
+
+<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://html/3.2.html"
+			(* <- lang_ru;; *);;
+		*);;

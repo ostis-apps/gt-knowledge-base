@@ -1,0 +1,14 @@
+section_graph_exercise_part4_task1
+=> nrel_main_idtf:
+	[Задача 1. Лабиринт]
+	(* <- lang_ru;; *);
+	[Task 1. Maze]
+	(* <- lang_en;; *);
+
+<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://html/4.1.html"
+			(* <- lang_ru;; *);;
+		*);;
