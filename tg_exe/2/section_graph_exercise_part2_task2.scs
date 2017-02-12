@@ -1,0 +1,14 @@
+section_graph_exercise_part2_task2
+=> nrel_main_idtf:
+	[Задача 2. Мальчики и девочки]
+	(* <- lang_ru;; *);
+	[Task 2. Boys and girls]
+	(* <- lang_en;; *);
+
+<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://html/2.2.html"
+			(* <- lang_ru;; *);;
+		*);;

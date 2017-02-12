@@ -1,0 +1,14 @@
+section_graph_exercise_part2_task3
+=> nrel_main_idtf:
+	[Задача 3. Соревнования по теннису]
+	(* <- lang_ru;; *);
+	[Task 3. Tennis competition]
+	(* <- lang_en;; *);
+
+<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://html/2.3.html"
+			(* <- lang_ru;; *);;
+		*);;
