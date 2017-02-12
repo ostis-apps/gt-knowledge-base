@@ -1,7 +1,7 @@
 section_graph_theory_hierarchy 
 <- sc_node_not_relation;
 => nrel_main_idtf: 
-    [Раздел. Теория графов](* <- lang_ru;; *);
+    [Раздел. Предметная область теории графов](* <- lang_ru;; *);
 => nrel_main_idtf: 
     [Section. Graph Theory](* <- lang_en;; *);
 
