@@ -1,0 +1,14 @@
+section_graph_exercise_part5_task3
+=> nrel_main_idtf:
+	[Задача 3. Картинная галерея]
+	(* <- lang_ru;; *);
+	[Task 3. Art gallery]
+	(* <- lang_en;; *);
+
+<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://html/5.3.html"
+			(* <- lang_ru;; *);;
+		*);;

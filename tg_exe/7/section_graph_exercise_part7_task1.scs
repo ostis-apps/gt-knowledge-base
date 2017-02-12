@@ -1,0 +1,14 @@
+section_graph_exercise_part7_task1
+=> nrel_main_idtf:
+	[Задача 1. Ребра паросочетания]
+	(* <- lang_ru;; *);
+	[Task 1. Edges matchings]
+	(* <- lang_en;; *);
+
+<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://html/7.1.html"
+			(* <- lang_ru;; *);;
+		*);;

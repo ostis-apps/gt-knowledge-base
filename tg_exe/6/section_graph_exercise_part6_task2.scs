@@ -1,0 +1,14 @@
+section_graph_exercise_part6_task2
+=> nrel_main_idtf:
+	[Задача 2. Треугольники и плоскость]
+	(* <- lang_ru;; *);
+	[Task 2. Triangles and plane]
+	(* <- lang_en;; *);
+
+<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://html/6.2.html"
+			(* <- lang_ru;; *);;
+		*);;

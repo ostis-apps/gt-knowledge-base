@@ -1,0 +1,39 @@
+section_exercise_graph_theory
+=> nrel_main_idtf:
+	[Раздел. Задачи по теории графов](* <- lang_ru;; *);
+	[Section. Graph theory exercise](* <- lang_en;; *);
+
+<= nrel_section_decomposition:
+	{
+	    section_graph_exercise_part1
+		(*
+		=> nrel_section_base_order: 
+			section_graph_exercise_part2;;
+		*);
+		section_graph_exercise_part2
+		(*
+		=> nrel_section_base_order: 
+			section_graph_exercise_part3;;
+		*);
+		section_graph_exercise_part3
+		(*
+		=> nrel_section_base_order: 
+			section_graph_exercise_part4;;
+		*);
+		section_graph_exercise_part4
+		(*
+		=> nrel_section_base_order: 
+			section_graph_exercise_part5;;
+		*);
+		section_graph_exercise_part5
+		(*
+		=> nrel_section_base_order: 
+			section_graph_exercise_part6;;
+		*);
+		section_graph_exercise_part6
+		(*
+		=> nrel_section_base_order: 
+			section_graph_exercise_part7;;
+		*);
+		section_graph_exercise_part7
+	};;

@@ -1,0 +1,14 @@
+section_graph_exercise_part3_task1
+=> nrel_main_idtf:
+	[Задача 1. Времена года]
+	(* <- lang_ru;; *);
+	[Task 1. Seasons]
+	(* <- lang_en;; *);
+
+<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://html/3.1.html"
+			(* <- lang_ru;; *);;
+		*);;
