@@ -1,0 +1,16 @@
+section_graph_exercise_part6
+=> nrel_main_idtf:
+	[Раздел. Глава 6]
+	(* <- lang_ru;; *);
+	[Section. Part 6]
+	(* <- lang_en;; *);
+
+<= nrel_section_decomposition:
+	{
+	    section_graph_exercise_part6_task1		
+	        (*
+		=> nrel_section_base_order: 
+			section_graph_exercise_part6_task2;;
+		*);
+		section_graph_exercise_part6_task2
+	};;
