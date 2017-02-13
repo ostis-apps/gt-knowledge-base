@@ -33,9 +33,9 @@ nrel_connected_graph_backbone<-rrel_key_sc_element:
 <= nrel_integration:
 ...
 (*
-<-concept_tree;;
-<-nrel_vertexes_corresponding;;
-<-concept_graph;;
+->concept_tree;;
+->nrel_vertexes_corresponding;;
+->concept_graph;;
 *);;
 *);
 => nrel_first_domain:
@@ -45,5 +45,5 @@ concept_graph;
 => nrel_third_domain:
 nrel_vertexes_corresponding;;
 
-sc_node_norole_relation -> nrel_vertexes_corresponding;;
+sc_node_norole_relation => nrel_vertexes_corresponding;;
 nrel_vertexes_corresponding => nrel_main_idtf: [соответствие вершин] (* <- lang_ru;; *);;
