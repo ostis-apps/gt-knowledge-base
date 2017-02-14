@@ -1,7 +1,7 @@
 section_exercise_graph_theory
 => nrel_main_idtf:
-	[Раздел. Задачи по теории графов](* <- lang_ru;; *);
-	[Section. Graph theory exercise](* <- lang_en;; *);
+	[Упражнения. Предметная область теории графов](* <- lang_ru;; *);
+	[Exercises. Subject area of graph theory](* <- lang_en;; *);
 
 <= nrel_section_decomposition:
 	{
