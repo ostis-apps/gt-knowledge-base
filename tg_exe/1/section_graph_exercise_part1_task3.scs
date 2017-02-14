@@ -1,0 +1,14 @@
+section_graph_exercise_part1_task3
+=> nrel_main_idtf:
+	[Задача 3. Танцы марсиан]
+	(* <- lang_ru;; *);
+	[Task 3. Marsian dances]
+	(* <- lang_en;; *);
+
+<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://html/1.3.html"
+			(* <- lang_ru;; *);;
+		*);;

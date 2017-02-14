@@ -1,0 +1,16 @@
+section_graph_theory_hierarchy 
+<- sc_node_not_relation;
+=> nrel_main_idtf: 
+    [Раздел. Предметная область теории графов](* <- lang_ru;; *);
+=> nrel_main_idtf: 
+    [Section. Graph Theory](* <- lang_en;; *);
+
+<=nrel_section_decomposition:
+		{
+		concept_subj_domain_graph_structures;
+		concept_subj_domain_hypergraphs;
+		concept_subj_domain_pseudographs;
+		concept_subj_domain_multigraphs;
+		section_subject_domain_of_n_graph;
+		section_exercise_graph_theory
+		};;

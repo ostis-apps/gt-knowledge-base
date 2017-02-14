@@ -1,0 +1,14 @@
+section_graph_exercise_part3_task3
+=> nrel_main_idtf:
+	[Задача 3. Курортный городок]
+	(* <- lang_ru;; *);
+	[Task 3. Resort town]
+	(* <- lang_en;; *);
+
+<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://html/3.3.html"
+			(* <- lang_ru;; *);;
+		*);;

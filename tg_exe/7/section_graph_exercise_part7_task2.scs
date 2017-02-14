@@ -1,0 +1,14 @@
+section_graph_exercise_part7_task2
+=> nrel_main_idtf:
+	[Задача 2. Школьная математическая олимпиада]
+	(* <- lang_ru;; *);
+	[Task 2. School mathematical competition]
+	(* <- lang_en;; *);
+
+<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://html/7.2.html"
+			(* <- lang_ru;; *);;
+		*);;

@@ -1,0 +1,14 @@
+section_graph_exercise_part1_task1
+=> nrel_main_idtf:
+	[Задача 1. Озера и каналы]
+	(* <- lang_ru;; *);
+	[Task 1. Lakes and channels]
+	(* <- lang_en;; *);
+
+<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://html/1.1.html"
+			(* <- lang_ru;; *);;
+		*);;

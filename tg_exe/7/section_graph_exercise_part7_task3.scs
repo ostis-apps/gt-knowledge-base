@@ -1,0 +1,14 @@
+section_graph_exercise_part7_task3
+=> nrel_main_idtf:
+	[Задача 3. Вечер танцев]
+	(* <- lang_ru;; *);
+	[Task 3. Evening dances]
+	(* <- lang_en;; *);
+
+<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://html/7.3.html"
+			(* <- lang_ru;; *);;
+		*);;
