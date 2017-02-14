@@ -1,0 +1,49 @@
+sc_node_norole_relation ->nrel_connected_graph_backbone;;
+
+nrel_connected_graph_backbone
+
+=> nrel_main_idtf:
+[ остов связного графа* ] (* <-lang_ru;; *);
+[ connected graph backbone* ] (* <-lang_en;; *);;
+
+
+nrel_connected_graph_backbone=> nrel_arity_of_relations: 3 (* <- number ;;*);;
+
+
+nrel_connected_graph_backbone<-rrel_key_sc_element:
+...
+(*<-sc_definition;;
+=> nrel_main_idtf: [Опр.(остов связного графа)] (* <- lang_ru;; *);;
+<=nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+[Остов связного графа - дерево, содержащее все вершины графа. ] (*<-lang_ru;;*);;
+<= nrel_using_constants:
+	{
+		concept_tree;
+		rrel_vertex
+	};;	
+*);;
+*);
+
+=> nrel_definitional_domain:
+...
+(*
+<= nrel_integration:
+...
+(*
+<-concept_tree;;
+<-nrel_vertexes_corresponding;;
+<-concept_graph;;
+*);;
+*);
+=> nrel_first_domain:
+concept_tree;
+=> nrel_second_domain:
+concept_graph;
+=> nrel_third_domain:
+nrel_vertexes_corresponding;;
+
+sc_node_norole_relation -> nrel_vertexes_corresponding;;
+nrel_vertexes_corresponding => nrel_main_idtf: [соответствие вершин] (* <- lang_ru;; *);;
