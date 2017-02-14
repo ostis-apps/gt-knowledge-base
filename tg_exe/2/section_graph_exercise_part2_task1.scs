@@ -1,0 +1,14 @@
+section_graph_exercise_part2_task1
+=> nrel_main_idtf:
+	[Задача 1. Пересечения прямых]
+	(* <- lang_ru;; *);
+	[Task 1. Straights intersection]
+	(* <- lang_en;; *);
+
+<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://html/2.1.html"
+			(* <- lang_ru;; *);;
+		*);;

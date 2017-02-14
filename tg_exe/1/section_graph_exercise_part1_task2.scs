@@ -1,0 +1,14 @@
+section_graph_exercise_part1_task2
+=> nrel_main_idtf:
+	[Задача 2. Шахматный турнир]
+	(* <- lang_ru;; *);
+	[Task 2. Chess tournament]
+	(* <- lang_en;; *);
+
+<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://html/1.2.html"
+			(* <- lang_ru;; *);;
+		*);;

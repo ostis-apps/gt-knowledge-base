@@ -1,0 +1,21 @@
+section_graph_exercise_part1
+=> nrel_main_idtf:
+	[Раздел. Глава 1]
+	(* <- lang_ru;; *);
+	[Section. Part 1]
+	(* <- lang_en;; *);
+
+<= nrel_section_decomposition:
+	{
+	    section_graph_exercise_part1_task1		
+	        (*
+		=> nrel_section_base_order: 
+			section_graph_exercise_part1_task2;;
+		*);
+		section_graph_exercise_part1_task2		
+	        (*
+		=> nrel_section_base_order: 
+			section_graph_exercise_part1_task3;;
+		*);
+		section_graph_exercise_part1_task3
+	};;

@@ -1,0 +1,14 @@
+section_graph_exercise_part5_task2
+=> nrel_main_idtf:
+	[Задача 2. Каркас куба]
+	(* <- lang_ru;; *);
+	[Task 2. Cube frame]
+	(* <- lang_en;; *);
+
+<= nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+			"file://html/5.2.html"
+			(* <- lang_ru;; *);;
+		*);;
