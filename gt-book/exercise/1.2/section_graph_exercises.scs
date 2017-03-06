@@ -1,0 +1,11 @@
+section_graph_exercises_1_2
+=> nrel_main_idtf:
+	[Множество упражнений. Способы задания графов]
+	(* <- lang_ru;; *);
+	[Set of exercises. Methods of specifying graphs]
+	(* <- lang_en;; *);
+
+
+->section_graph_exercise_1_2_1;
+->section_graph_exercise_1_2_2;
+->section_graph_exercise_1_2_3;;

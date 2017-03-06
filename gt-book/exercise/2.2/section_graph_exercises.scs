@@ -1,0 +1,8 @@
+section_graph_exercises_2_2
+=> nrel_main_idtf:
+	[Множество упражнений. Подграфы]
+	(* <- lang_ru;; *);
+	[Set of exercises. Subgraphs]
+	(* <- lang_en;; *);
+
+->section_graph_exercise_2_2_1;;

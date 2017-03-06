@@ -1,0 +1,8 @@
+section_graph_exercises_6_2
+=> nrel_main_idtf:
+	[Множество упражнений. Поиск в глубину]
+	(* <- lang_ru;; *);
+	[Set of exercises. Depth-first search]
+	(* <- lang_en;; *);
+
+->section_graph_exercise_6_2_1;;

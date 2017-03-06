@@ -1,0 +1,23 @@
+section_graph_operations
+=> nrel_main_idtf:
+	[Раздел. Операции над графами]
+	(* <- lang_ru;; *);
+	[Section. Graph operations]
+	(* <- lang_en;; *);
+
+=> nrel_exercises: section_graph_exercises_2_6;
+<= nrel_sc_text_translation: 
+
+		...
+		(*
+		-> rrel_example:
+			"file://html/2.6_eng.html"
+			(* <- lang_en;; *);;
+		*);
+		...
+		(*
+		-> rrel_example:
+			"file://html/2.6.html"
+			(* <- lang_ru;; *);;
+		*);;
+

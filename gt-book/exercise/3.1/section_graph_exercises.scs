@@ -1,0 +1,8 @@
+section_graph_exercises_3_1
+=> nrel_main_idtf:
+	[Множество упражнений. Определения и примеры]
+	(* <- lang_ru;; *);
+	[Set of exercises. Definitions and examples]
+	(* <- lang_en;; *);
+
+->section_graph_exercise_3_1_1;;

@@ -1,0 +1,8 @@
+section_graph_exercises_6_4
+=> nrel_main_idtf:
+	[Множество упражнений. Нахождение кратчайшего пути (Алгоритм Дейкстры)]
+	(* <- lang_ru;; *);
+	[Set of exercises. Finding the shortest path (Dijkstra)]
+	(* <- lang_en;; *);
+
+->section_graph_exercise_6_4_1;;

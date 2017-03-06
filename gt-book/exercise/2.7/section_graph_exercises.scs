@@ -1,0 +1,8 @@
+section_graph_exercises_2_7
+=> nrel_main_idtf:
+	[Множество упражнений. Матрица смежности и инцидентности]
+	(* <- lang_ru;; *);
+	[Set of exercises. The adjacency matrix and incidence]
+	(* <- lang_en;; *);
+
+->section_graph_exercise_2_7_1;;

@@ -1,0 +1,8 @@
+section_graph_exercises_3_3
+=> nrel_main_idtf:
+	[Множество упражнений. Ориентированные эйлеровы графы]
+	(* <- lang_ru;; *);
+	[Set of exercises. Oriented Euler graphs]
+	(* <- lang_en;; *);
+
+->section_graph_exercise_3_3_1;;

@@ -1,0 +1,18 @@
+section_the_directed_acyclic_graph_and_trees
+=> nrel_main_idtf:
+	[Раздел. Ориентированные ациклические графы и деревья]
+	(* <- lang_ru;; *);
+	[Section. The directed acyclic graph and trees]
+	(* <- lang_en;; *);
+
+
+<= nrel_section_decomposition:
+	{
+	        section_directed_acyclic_graph		
+	        (*
+		=> nrel_section_base_order: 
+			section_trees;;
+		*);
+		section_trees
+	};;
+

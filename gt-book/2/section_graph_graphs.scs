@@ -1,0 +1,42 @@
+section_graph_graphs
+=> nrel_main_idtf:
+	[Раздел. Графы]
+	(* <- lang_ru;; *);
+	[Section. Graphs]
+	(* <- lang_en;; *);
+
+
+<= nrel_section_decomposition:
+	{
+		section_types_of_graphs
+			        (*
+		=> nrel_section_base_order: 
+			section_subgraphs;;
+		*);
+		section_subgraphs
+			        (*
+		=> nrel_section_base_order: 
+			section_strongly_connected_components_graphs_and_graph;;
+		*);
+		section_strongly_connected_components_graphs_and_graph
+			        (*
+		=> nrel_section_base_order: 
+			section_routes_circuit_paths_and_cycles;;
+		*);
+		section_routes_circuit_paths_and_cycles
+			        (*
+		=> nrel_section_base_order: 
+			section_connectedness_and_components_count;;
+		*);
+		section_connectedness_and_components_count
+			        (*
+		=> nrel_section_base_order: 
+			section_graph_operations;;
+		*);
+		section_graph_operations
+			        (*
+		=> nrel_section_base_order: 
+			section_the_adjacency_matrix_and_incidence;;
+		*);
+		section_the_adjacency_matrix_and_incidence
+	};;

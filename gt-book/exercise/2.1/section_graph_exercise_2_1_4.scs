@@ -1,0 +1,17 @@
+section_graph_exercise_2_1_4
+=> nrel_main_idtf:
+	[Упражнение. Упражнение 4]
+	(* <- lang_ru;; *);
+	[Exercise. Exercise 4]
+	(* <- lang_en;; *);
+=>nrel_next: section_graph_exercise_2_1_5;
+<-rrel_key_sc_element: concept_bipartite_graph;
+<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://htmls/section_graph_exercise4.html" (* <-lang_ru;; *);;
+		*);
+		...
+		(*
+		-> rrel_example: "file://htmls/section_graph_exercise4_en.html" (* <-lang_en;; *);; 
+		*);;

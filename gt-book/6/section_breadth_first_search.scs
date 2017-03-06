@@ -1,0 +1,25 @@
+section_breadth_first_search
+=> nrel_main_idtf:
+	[Раздел. Поиск в ширину]
+	(* <- lang_ru;; *);
+	[Section. Breadth-first search]
+	(* <- lang_en;; *);
+
+=> nrel_exercises: section_graph_exercises_6_3;
+
+
+<= nrel_sc_text_translation: 
+
+		...
+		(*
+		-> rrel_example:
+			"file://html/6.3_eng.html"
+			(* <- lang_en;; *);;
+		*);
+		...
+		(*
+		-> rrel_example:
+			"file://html/6.3.html"
+			(* <- lang_ru;; *);;
+		*);;
+

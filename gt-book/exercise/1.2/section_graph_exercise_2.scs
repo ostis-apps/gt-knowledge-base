@@ -1,0 +1,34 @@
+section_graph_exercise_1_2_2
+=> nrel_main_idtf:
+	[Упражнение. Упражнение 2]
+	(* <- lang_ru;; *);
+	[Exercise. Exercise 2]
+	(* <- lang_en;; *);
+=>nrel_next: section_graph_exercise_1_2_3;
+<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://htmls/section_graph_exercise2.html" (* <-lang_ru;; *);;
+		*);
+		...
+		(*
+		-> rrel_example: "file://htmls/section_graph_exercise2_en .html" (* <-lang_en;; *);; 
+		*);
+=>graph_exercise_1_2_2_answer;;
+
+graph_exercise_1_2_2_answer
+=> nrel_main_idtf:
+	[Упражнение. Упражнение 2 Ответ]
+	(* <- lang_ru;; *);
+	[Exercise. Exercise 2 Answer]
+	(* <- lang_en;; *);
+<=nrel_sc_text_translation:
+    ...
+    (*
+    -> rrel_example: [Список - это способ представления графа, в котором в первом столбце представлена вершина, а во втором столбце - все вершины инцидентные вершины из первого столбца.] (*<-lang_ru;;*);;
+    *);
+	...
+	(*
+    -> rrel_example: [List - a way of representing a graph in which the first column shows the vertex and the second column - all the vertices incident to the vertex of the first column.] (*<-lang_ru;;*);;
+    *);;
+

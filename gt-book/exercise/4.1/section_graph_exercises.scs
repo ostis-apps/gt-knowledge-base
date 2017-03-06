@@ -1,0 +1,8 @@
+section_graph_exercises_4_1
+=> nrel_main_idtf:
+	[Множество упражнений. Ориентированные ациклические графы]
+	(* <- lang_ru;; *);
+	[Set of exercises. Directed acyclic graph]
+	(* <- lang_en;; *);
+
+->section_graph_exercise_4_1_1;;

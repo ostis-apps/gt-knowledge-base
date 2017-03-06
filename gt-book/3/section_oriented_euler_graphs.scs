@@ -1,0 +1,25 @@
+section_oriented_euler_graphs
+=> nrel_main_idtf:
+	[Раздел. Ориентированные эйлеровы графы]
+	(* <- lang_ru;; *);
+	[Section. Oriented Euler graphs]
+	(* <- lang_en;; *);
+
+=> nrel_exercises: section_graph_exercises_3_3;
+
+
+<= nrel_sc_text_translation: 
+
+		...
+		(*
+		-> rrel_example:
+			"file://html/3.3_eng.html"
+			(* <- lang_en;; *);;
+		*);
+		...
+		(*
+		-> rrel_example:
+			"file://html/3.3.html"
+			(* <- lang_ru;; *);;
+		*);;
+

@@ -1,0 +1,8 @@
+section_graph_exercises_2_4
+=> nrel_main_idtf:
+	[Множество упражнений. Маршруты, цепи, пути и циклы]
+	(* <- lang_ru;; *);
+	[Set of exercises. Section routes circuit paths and cycles]
+	(* <- lang_en;; *);
+
+->section_graph_exercise_2_4_1;;

@@ -1,0 +1,8 @@
+section_graph_exercises_2_5
+=> nrel_main_idtf:
+	[Множество упражнений. Связность и компоненты графа]
+	(* <- lang_ru;; *);
+	[Set of exercises. Connectedness and components count]
+	(* <- lang_en;; *);
+
+->section_graph_exercise_2_5_1;;

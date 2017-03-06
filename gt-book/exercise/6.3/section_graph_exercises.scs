@@ -1,0 +1,8 @@
+section_graph_exercises_6_3
+=> nrel_main_idtf:
+	[Множество упражнений. Поиск в ширину]
+	(* <- lang_ru;; *);
+	[Set of exercises. Breadth-first search]
+	(* <- lang_en;; *);
+
+->section_graph_exercise_6_3_1;;

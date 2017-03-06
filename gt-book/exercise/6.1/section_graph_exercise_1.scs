@@ -1,0 +1,32 @@
+section_graph_exercise_6_1_1
+=> nrel_main_idtf:
+	[Упражнение. Упражнение 1]
+	(* <- lang_ru;; *);
+	[Exercise. Exercise 1]
+	(* <- lang_en;; *);
+<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://htmls/section_graph_exercise1.html" (* <-lang_ru;; *);;
+		*);
+		...
+		(*
+		-> rrel_example: "file://htmls/section_graph_exercise1_en.html" (* <-lang_en;; *);; 
+		*);
+=>graph_exercise_6_1_1_answer;;
+
+graph_exercise_6_1_1_answer
+=> nrel_main_idtf:
+	[Упражнение. Упражнение 1 Ответ]
+	(* <- lang_ru;; *);
+	[Exercise. Exercise 1 Answer]
+	(* <- lang_en;; *);
+<=nrel_sc_text_translation:
+    ...
+    (*
+    -> rrel_example: [Лабиринт - это перекрестки, соединенные коридорами.] (*<-lang_ru;;*);;
+    *);
+	...
+	(*
+    -> rrel_example: [Maze is corners which are connected by corridors] (*<-lang_ru;;*);;
+    *);;

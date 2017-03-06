@@ -1,0 +1,24 @@
+section_routes_circuit_paths_and_cycles
+=> nrel_main_idtf:
+	[Раздел. Маршруты, цепи, пути и циклы]
+	(* <- lang_ru;; *);
+	[Section. Section routes circuit paths and cycles]
+	(* <- lang_en;; *);
+
+=> nrel_exercises: section_graph_exercises_2_4;
+
+<= nrel_sc_text_translation: 
+
+		...
+		(*
+		-> rrel_example:
+			"file://html/2.4_eng.html"
+			(* <- lang_en;; *);;
+		*);
+		...
+		(*
+		-> rrel_example:
+			"file://html/2.4.html"
+			(* <- lang_ru;; *);;
+		*);;
+

@@ -1,0 +1,167 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<title></title>
+	<meta name="generator" content="LibreOffice 4.2.8.2 (Linux)">
+	<meta name="created" content="20151021;153543217707148">
+	<meta name="changed" content="20151021;154235384820115">
+	<style type="text/css">
+	<!--
+		@page { margin: 2cm }
+		p { margin-bottom: 0.25cm; line-height: 120% }
+		h5.cjk { font-family: "Droid Sans Fallback" }
+		h5.ctl { font-family: "FreeSans" }
+	-->
+	</style>
+</head>
+<body lang="ru-RU" dir="ltr">
+<h5 class="western"><a name="_Toc278281390"></a><font face="Times New Roman, serif"><font size="4" style="font-size: 14pt">
+Definitions and examples</font></font> 
+</h5>
+<p align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<font size="4" style="font-size: 14pt"><i><sc_element sys_idtf = "concept_graph">The graph</sc_element></i></font><font size="4" style="font-size: 14pt">
+G = (V, E) consists of two sets: a finite set of elements called
+vertices and a finite set of elements called ribs.</font> <font size="4" style="font-size: 14pt">Each
+edge is defined by a pair of vertices.</font> <font size="4" style="font-size: 14pt">If
+the edges of the graph are defined by ordered pairs of vertices, then
+G is called a directional or </font><font size="4" style="font-size: 14pt"><i><sc_element sys_idtf = "concept_directed_graph">directed graph.</sc_element>
+</i></font> <font size="4" style="font-size: 14pt">Otherwise G
+is undirected or </font><font size="4" style="font-size: 14pt"><sc_element sys_idtf = "concept_undirected_graph"><i>undirected graph.</sc_element>
+</i></font><font size="4" style="font-size: 14pt"> To indicate
+the vertices of the graph will use the symbols v </font><sub><font size="4" style="font-size: 14pt">1</font></sub><font size="4" style="font-size: 14pt">,
+v </font><sub><font size="4" style="font-size: 14pt">2, v 3,</font></sub><font size="4" style="font-size: 14pt">
+..., and to refer to the ribs - E </font><sub><font size="4" style="font-size: 14pt">1</font></sub><font size="4" style="font-size: 14pt">,
+E </font><sub><font size="4" style="font-size: 14pt">2, </font></sub><font size="4" style="font-size: 14pt">E
+</font><sub><font size="4" style="font-size: 14pt">3</font></sub><font size="4" style="font-size: 14pt">.</font>
+<font size="4" style="font-size: 14pt">.</font> <font size="4" style="font-size: 14pt">.</font>
+<font size="4" style="font-size: 14pt">.</font> <font size="4" style="font-size: 14pt">The
+vertices </font><sub><font size="4" style="font-size: 14pt">v</font></sub><font size="4" style="font-size: 14pt">
+i and </font><sub><font size="4" style="font-size: 14pt">v</font></sub><font size="4" style="font-size: 14pt">
+j, determining an edge </font><sub><font size="4" style="font-size: 14pt">e</font></sub><font size="4" style="font-size: 14pt">
+i, called the end vertices of e </font><sub><font size="4" style="font-size: 14pt">i.</font></sub>
+<font size="4" style="font-size: 14pt">In this case, the edge e is
+denoted as </font><sub><font size="4" style="font-size: 14pt"><span lang="en-US">i</span></font></sub><sub><font size="4" style="font-size: 14pt">
+e i = (v i, v</font></sub> j). <font size="4" style="font-size: 14pt">Note
+that the set E may be more than one edge with the same end vertices.</font>
+<font size="4" style="font-size: 14pt">All edges have the same end
+vertices are called parallel.</font> <font size="4" style="font-size: 14pt">Furthermore,
+the end vertices of the edge is not necessarily different.</font> <font size="4" style="font-size: 14pt">If
+e </font><sub><font size="4" style="font-size: 14pt">i = (v i, v i),</font></sub><font size="4" style="font-size: 14pt">
+the edge </font><sub><font size="4" style="font-size: 14pt">e</font></sub><font size="4" style="font-size: 14pt">
+i is called a loop.</font> <font size="4" style="font-size: 14pt">A
+graph is simple if it does not contain loops and parallel edges.</font>
+<font size="4" style="font-size: 14pt">A graph G is a graph of order
+n, if the set of vertices consists of n elements.</font> 
+</p>
+<p align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<font size="4" style="font-size: 14pt">Graf, has no edges, called
+</font><font size="4" style="font-size: 14pt"><i><sc_element sys_idtf = "concept_empty_graph">empty.</sc_element></i></font> <font size="4" style="font-size: 14pt">A
+graph that has no vertices (and hence, ribs), called</font>
+<font size="4" style="font-size: 14pt"><i>null-graph</i></font> <font size="4" style="font-size: 14pt">.</font>
+</p>
+<p align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<font size="4" style="font-size: 14pt">Graphically, the graph can be
+represented by a diagram which shows the tip of a point or a circle,
+and the edge - a line segment connecting the dots or circles,
+corresponding to the end vertices of the edge.</font> <font size="4" style="font-size: 14pt">For
+example, if V = {v </font><sub><font size="4" style="font-size: 14pt">1,
+</font></sub><font size="4" style="font-size: 14pt">v </font><sub><font size="4" style="font-size: 14pt">2</font></sub><font size="4" style="font-size: 14pt">,
+v </font><sub><font size="4" style="font-size: 14pt">3,</font></sub><font size="4" style="font-size: 14pt">
+v </font><sub><font size="4" style="font-size: 14pt">4,</font></sub><font size="4" style="font-size: 14pt">
+v </font><sub><font size="4" style="font-size: 14pt">5,</font></sub><font size="4" style="font-size: 14pt">
+v </font><sub><font size="4" style="font-size: 14pt">6}</font></sub><font size="4" style="font-size: 14pt">
+and E = {e </font><sub><font size="4" style="font-size: 14pt">1,</font></sub><font size="4" style="font-size: 14pt">
+e </font><sub><font size="4" style="font-size: 14pt">2,</font></sub><font size="4" style="font-size: 14pt">
+e </font><sub><font size="4" style="font-size: 14pt">3,</font></sub><font size="4" style="font-size: 14pt">
+e </font><sub><font size="4" style="font-size: 14pt">4,</font></sub><font size="4" style="font-size: 14pt">
+e </font><sub><font size="4" style="font-size: 14pt">5},</font></sub><font size="4" style="font-size: 14pt">
+such that e </font><sub><font size="4" style="font-size: 14pt">1</font></sub><font size="4" style="font-size: 14pt">
+= ( v </font><sub><font size="4" style="font-size: 14pt">1</font></sub><font size="4" style="font-size: 14pt">,
+v </font><sub><font size="4" style="font-size: 14pt">2),</font></sub><font size="4" style="font-size: 14pt">
+e </font><sub><font size="4" style="font-size: 14pt">2</font></sub><font size="4" style="font-size: 14pt">
+= (v </font><sub><font size="4" style="font-size: 14pt">1,</font></sub><font size="4" style="font-size: 14pt">
+v </font><sub><font size="4" style="font-size: 14pt">4),</font></sub><font size="4" style="font-size: 14pt">
+e </font><sub><font size="4" style="font-size: 14pt">3</font></sub><font size="4" style="font-size: 14pt">
+= (v </font><sub><font size="4" style="font-size: 14pt">5,</font></sub><font size="4" style="font-size: 14pt">
+v </font><sub><font size="4" style="font-size: 14pt">6),</font></sub><font size="4" style="font-size: 14pt">
+e </font><sub><font size="4" style="font-size: 14pt">4</font></sub><font size="4" style="font-size: 14pt">
+= (v </font><sub><font size="4" style="font-size: 14pt">1,</font></sub><font size="4" style="font-size: 14pt">
+v </font><sub><font size="4" style="font-size: 14pt">2),</font></sub><font size="4" style="font-size: 14pt">
+e </font><sub><font size="4" style="font-size: 14pt">5</font></sub><font size="4" style="font-size: 14pt">
+= (v </font><sub><font size="4" style="font-size: 14pt">5,</font></sub><font size="4" style="font-size: 14pt">
+v </font><sub><font size="4" style="font-size: 14pt">5)</font></sub><font size="4" style="font-size: 14pt">
+, then the graph G = (V, E) is represented as shown in Fig.</font> <font size="4" style="font-size: 14pt">1.
+In this graph e </font><sub><font size="4" style="font-size: 14pt">1
+and e 4</font></sub><font size="4" style="font-size: 14pt"> -
+parallel edges, ie </font><sub><font size="4" style="font-size: 14pt">5</font></sub><font size="4" style="font-size: 14pt">
+- loop.</font> <font size="4" style="font-size: 14pt">They say that
+the edge </font><font size="4" style="font-size: 14pt"><i>incident to</i></font><font size="4" style="font-size: 14pt">
+its terminal vertices.</font> <font size="4" style="font-size: 14pt">Two
+vertices </font><font size="4" style="font-size: 14pt"><i>are
+adjacent if they</i></font><font size="4" style="font-size: 14pt">
+are end vertices of an edge.</font> <font size="4" style="font-size: 14pt">If
+two edges have a common top end, they are called </font><font size="4" style="font-size: 14pt"><i>adjacent.</i></font><font size="4" style="font-size: 14pt">
+</font> 
+</p>
+<p align="center" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%; page-break-after: avoid">
+<img src="data:image/png;base64,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" name="Рисунок 8" align="bottom" width="390" height="209" border="0"></p>
+<p align="center" style="text-indent: 1.25cm; margin-bottom: 0.35cm; line-height: 130%">
+<font size="2" style="font-size: 9pt"><b>Picture 1</b></font> 
+</p>
+<p align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<font size="4" style="font-size: 14pt">For example, in the graph in
+Fig.</font> <font size="4" style="font-size: 14pt">1 edge e </font><sub><font size="4" style="font-size: 14pt">1</font></sub><font size="4" style="font-size: 14pt">
+incident vertices v </font><sub><font size="4" style="font-size: 14pt">1</font></sub><font size="4" style="font-size: 14pt">
+and v </font><sub><font size="4" style="font-size: 14pt">2;</font></sub>
+<sub><font size="4" style="font-size: 14pt">v</font></sub><font size="4" style="font-size: 14pt">
+1 and v </font><sub><font size="4" style="font-size: 14pt">4</font></sub><font size="4" style="font-size: 14pt">
+are adjacent vertices, and E </font><sub><font size="4" style="font-size: 14pt">1</font></sub><font size="4" style="font-size: 14pt">
+and E </font><sub><font size="4" style="font-size: 14pt">2</font></sub><font size="4" style="font-size: 14pt">
+- adjacent edges.</font> 
+</p>
+<p align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<font size="4" style="font-size: 14pt">The number of incident to the
+vertex edges </font><sub><font size="4" style="font-size: 14pt">v</font></sub><font size="4" style="font-size: 14pt">
+i called the degree of the vertices and is denoted </font><sub><font size="4" style="font-size: 14pt">d</font></sub><font size="4" style="font-size: 14pt">
+(v i).</font> <font size="4" style="font-size: 14pt">Sometimes the
+degree of a vertex is also called its valence.</font> <font size="4" style="font-size: 14pt">The
+top level is called the </font><font size="4" style="font-size: 14pt"><i>hanging
+vertices</i></font><font size="4" style="font-size: 14pt"> 1.</font>
+<font size="4" style="font-size: 14pt">The only edge incident hanging
+top, called a hanging.</font> <font size="4" style="font-size: 14pt">The
+top level 0 </font><font size="4" style="font-size: 14pt"><i>is</i></font><font size="4" style="font-size: 14pt">
+called <sc_element sys_idtf = "concept_isolated_vertex">isolated.</sc_element></font> <font size="4" style="font-size: 14pt">By
+definition, the loop at the vertex </font><sub><font size="4" style="font-size: 14pt">v</font></sub><font size="4" style="font-size: 14pt">
+i add 2 to the power of the corresponding vertex.</font> <font size="4" style="font-size: 14pt">The
+values ​​of δ (G) and Δ (G) denote the minimum and maximum
+degree of G, respectively.</font> 
+</p>
+<p align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<font size="4" style="font-size: 14pt">The graph G in Fig.</font> <font size="4" style="font-size: 14pt">1
+d (v </font><sub><font size="4" style="font-size: 14pt">1</font></sub><font size="4" style="font-size: 14pt">
+</font><font size="4" style="font-size: 14pt">)</font><font size="4" style="font-size: 14pt">=
+3, d (v </font><sub><font size="4" style="font-size: 14pt">2</font></sub><font size="4" style="font-size: 14pt">
+</font><font size="4" style="font-size: 14pt">)</font><font size="4" style="font-size: 14pt">=
+2, d (v </font><sub><font size="4" style="font-size: 14pt">3 </font></sub><font size="4" style="font-size: 14pt">)=0</font><font size="4" style="font-size: 14pt">,
+d (v </font><sub><font size="4" style="font-size: 14pt">4</font></sub><font size="4" style="font-size: 14pt">)=</font><font size="4" style="font-size: 14pt">1,
+d (v </font><sub><font size="4" style="font-size: 14pt">5</font></sub><font size="4" style="font-size: 14pt">)</font><font size="4" style="font-size: 14pt">=
+3, d (v </font><sub><font size="4" style="font-size: 14pt">6</font></sub><font size="4" style="font-size: 14pt">)</font><font size="4" style="font-size: 14pt">=
+1.</font> 
+</p>
+<p align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<font size="4" style="font-size: 14pt">Note that v </font><sub><font size="4" style="font-size: 14pt">3</font></sub><font size="4" style="font-size: 14pt">
+- isolated vertex, v </font><sub><font size="4" style="font-size: 14pt">4</font></sub><font size="4" style="font-size: 14pt">
+and v </font><sub><font size="4" style="font-size: 14pt">6</font></sub><font size="4" style="font-size: 14pt">
+- Hanging tops </font><font size="4" style="font-size: 14pt">e </font><sub><font size="4" style="font-size: 14pt">2</font></sub><font size="4" style="font-size: 14pt">
+- hanging edge.</font> <font size="4" style="font-size: 14pt">It is
+easy to check that the sum of the degrees of the vertices in the
+graph G is 10, while the number of edges is equal to 5. Thus, the sum
+of degrees of vertices of G is equal to twice the number of edges of
+G, and therefore is an even number.</font> <font size="4" style="font-size: 14pt">Moreover,
+it can be shown that the number of vertices of G as odd degree is
+even.</font> <font size="4" style="font-size: 14pt">These results are
+not unique to the graph in Fig.</font> <font size="4" style="font-size: 14pt">1.</font>
+</p>
+</body>
+</html>

@@ -1,0 +1,16 @@
+section_graph_exercise_2_1_6
+=> nrel_main_idtf:
+	[Упражнение. Упражнение 6]
+	(* <- lang_ru;; *);
+	[Exercise. Exercise 6]
+	(* <- lang_en;; *);
+<-rrel_key_sc_element: concept_undirected_graph; concept_directed_graph; concept_cyclic_graph; concept_connected_graph; concept_acyclic_graph;
+<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://htmls/section_graph_exercise6.html" (* <-lang_ru;; *);;
+		*);
+		...
+		(*
+		-> rrel_example: "file://htmls/section_graph_exercise6_en.html" (* <-lang_en;; *);; 
+		*);;

@@ -1,0 +1,16 @@
+section_graph_exercise_5_2_3
+=> nrel_main_idtf:
+	[Упражнение. Упражнение 3]
+	(* <- lang_ru;; *);
+	[Exercise. Exercise 3]
+	(* <- lang_en;; *);
+<-rrel_key_sc_element: concept_graph; rrel_point_articulation;	
+<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://htmls/section_graph_exercise3.html" (* <-lang_ru;; *);;
+		*);
+		...
+		(*
+		-> rrel_example: "file://htmls/section_graph_exercise3_en .html" (* <-lang_en;; *);; 
+		*);;

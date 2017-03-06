@@ -1,0 +1,23 @@
+section_planarity_and_duality
+=> nrel_main_idtf:
+	[Раздел. Планарность и двойственность]
+	(* <- lang_ru;; *);
+	[Section. Planarity and duality]
+	(* <- lang_en;; *);
+
+
+<= nrel_section_decomposition:
+	{
+	        section_planar_graphs		
+	        (*
+		=> nrel_section_base_order: 
+			section_points_of_articulation_bridges_and_power;;
+		*);
+		section_points_of_articulation_bridges_and_power
+		(*
+		=> nrel_section_base_order: 
+			section_dual_graph;;
+		*);
+		section_dual_graph
+	};;
+

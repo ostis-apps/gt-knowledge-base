@@ -1,0 +1,16 @@
+section_graph_basic_concepts
+=> nrel_main_idtf:
+	[Раздел. Основные понятия]
+	(* <- lang_ru;; *);
+	[Section. Basic Concepts]
+	(* <- lang_en;; *);
+
+<= nrel_section_decomposition:
+	{
+	        section_definitions_and_examples		
+	        (*
+		=> nrel_section_base_order: 
+			section_methods_of_specifying_graphs;;
+		*);
+		section_methods_of_specifying_graphs
+	};;

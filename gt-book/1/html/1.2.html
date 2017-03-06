@@ -1,0 +1,167 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<title></title>
+	<meta name="generator" content="LibreOffice 4.2.8.2 (Linux)">
+	<meta name="created" content="20151017;222521444016258">
+	<meta name="changed" content="20151017;223110538415142">
+	<style type="text/css">
+	<!--
+		@page { margin: 2cm }
+		p { margin-bottom: 0.25cm; line-height: 120% }
+		h5 { margin-top: 0.42cm; page-break-after: auto }
+		h5.western { font-family: "Calibri", serif; font-size: 13pt; font-style: italic }
+		h5.cjk { font-family: "Droid Sans Fallback"; font-size: 13pt; so-language: en-US; font-style: italic }
+		h5.ctl { font-family: "Calibri"; font-size: 13pt; font-style: italic }
+		a:link { so-language: zxx }
+	-->
+	</style>
+</head>
+<body lang="ru-RU" dir="ltr">
+<h5 class="western" style="margin-left: 1.25cm"><a name="_Toc278281391"></a>
+<font face="Times New Roman, serif"><font size="4" style="font-size: 14pt">
+Способы задания графов</font></font></h5>
+<p align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<font size="4" style="font-size: 14pt">Первое и на наш
+взгляд самое простое задание <sc_element sys_idtf = "concept_graph">графа.</sc_element> -
+это представление его с помощью картинки
+в соответствии с геометрическим
+определением графа. При этом, в соответствии
+с договоренностью выше, вершинам
+конкретного представления графа будут
+приписаны номера.</font></p>
+<p align="justify" style="margin-bottom: 0cm; line-height: 130%"><font size="4" style="font-size: 14pt">Так
+на рис.2 даны два представления одного
+и того же графа.</font></p>
+<p align="justify" style="margin-bottom: 0cm; line-height: 130%"><br>
+</p>
+<p align="center" style="margin-bottom: 0cm; line-height: 130%; page-break-after: avoid">
+<img src="data:image/png;base64,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" name="Рисунок 9" align="bottom" width="354" height="161" border="0"></p>
+<p align="center" style="text-indent: 1.25cm; margin-bottom: 0.35cm; line-height: 130%">
+<font size="2" style="font-size: 9pt"><b>Рисунок 2</b></font></p>
+<p align="justify" style="margin-bottom: 0cm; line-height: 130%"><br>
+</p>
+<p align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<font size="4" style="font-size: 14pt">Другое задание
+<sc_element sys_idtf = "concept_graph">графа</sc_element> - списком. Можно считать, что в
+соответствии с теоретико-множественным
+определением графа все элементы множества
+</font><font size="4" style="font-size: 14pt"><span lang="en-US">R</span></font><font face="Cambria Math, serif"><font size="4" style="font-size: 14pt">⊆</font></font><font size="4" style="font-size: 14pt"><span lang="en-US">V</span></font><font face="Cambria Math, serif"><font size="4" style="font-size: 14pt">×</font></font><font size="4" style="font-size: 14pt"><span lang="en-US">V</span></font><font size="4" style="font-size: 14pt">,
+входящего в определение, т.е. упорядоченные
+пары, упорядочены сначала по первым
+элементам пар, а затем по вторым, в
+соответствии с нумерацией вершин
+(нумерацией элементов множества </font><font size="4" style="font-size: 14pt"><span lang="en-US">V</span></font><font size="4" style="font-size: 14pt">).
+Тогда два представления <sc_element sys_idtf = "concept_graph">графа</sc_element> с рис.2
+будут заданы двумя списками (рис. 3):</font></p>
+<p align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<br>
+</p>
+<p align="center" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%; page-break-after: avoid">
+<img src="data:image/png;base64,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" name="Рисунок 10" align="bottom" width="228" height="139" border="0"></p>
+<p align="center" style="text-indent: 1.25cm; margin-bottom: 0.35cm; line-height: 130%">
+<font size="2" style="font-size: 9pt"><b>Рисунок 3</b></font></p>
+<p align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<font size="4" style="font-size: 14pt">В первом столбце
+- первые элементы пар, затем по строкам,
+списком через запятую, идут вторые
+элементы.</font></p>
+<p align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<font size="4" style="font-size: 14pt">Третье задание
+графа - матрицами. Ниже выписаны две
+матрицы - </font><font size="4" style="font-size: 14pt"><span lang="en-US">A</span></font><font size="4" style="font-size: 14pt">
+и </font><font size="4" style="font-size: 14pt"><span lang="en-US">B</span></font><font size="4" style="font-size: 14pt">,
+задающие два представления графа с рис.
+2:</font></p>
+<p align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<br>
+</p>
+<p align="center" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%; page-break-after: avoid">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAVEAAAByCAIAAABlW3U5AAAElklEQVR4nO3d7W7iSBAFUCLl/V85G4kRy/LhHburTdn3nJ/RTNFu18UGQfH98/Nzmenr62v2Q5yMHXtgQ9Za3rHvDz42L/3umH27sRUbLLfQxMy/fNTfP17XNKP4zhWqlnF52hCxv2reQiVFSg7neRkLLTQr8+/O1vWPIzt13aPBtQ1WKCzybkPEvnMLFRYZPJyFZbxrobn39vfuH36koW97tHkl4xVKilRtSI4+LVRSpORwNixjSua1b4nkJ4LYA6/1soX2u84DHcg8ZKnPvLuyQpm394GHPM9zC7nOQxaZhyz7Zf7+HsPN28WGrHeyHfvU4ex6nb8e5KXiU0eXik9lDG70eJGqDcnRp4VKipQcztpl7H1vX9Lc40WaLKOqSJQ+296kyNoKXs9DFpmHLDIPWWQessg8ZJF5yCLzkEXmIYvMQxaZhywyD1lkHrLsnfnCL0V9fL59n2OJ0mfbm0zaX7uMXTNfNZx83kjwPZdRVSRKn21vMml/wzIONt/+UyPBZyzDfPu1+mx7k0n725bh9TxkkXnIIvOQReYhi8xDFpmHLAebb99kwvmZjuVA+mx7k3O3bRnHm2//kZHgk5Zhvv1afba9yaT9Dcsw3/4MRaL02fYmRcy3B5bIPGSRecgi85BF5iGLzEMWmYcsMg9ZZB6yyDxkkXnIIvOQ5W3mJ31DsM9c8TMNyW/iYX7rpINqdfb7FBn9Xl3JBPiXZfvMFT/NkPw+HsYtzzioJme/T5ENffgi89eHL499n7niZxqSH6XP2e9TZEMfej1PGU9bh/CYeaeNEhqprRXX+Xf3D04tN7cmedkVWqiD/2T+Nprr5T91YljwcGF/eZ3XQh38m/nnc/aJ9QBzubdnP1qogz+Z/5t3XAZPTJ+54oceTt7T39zYX7TQhCIbfN+eeu8f/uEvVfrMFS8psv+Q/J4f2nt+G2jeCvuc/T5FVvXh7z/73vmNliYjwUuK7L+MGZ+VGrfzc1CTs9+nyNoW8pmcIzn6SwA6kPkjEXjGyTxkkXnIIvOQReYhi8xDFpmHLDIPWWQessg8ZJF5yLJ35luNBB8sUvUtN5+iX6vJzwo0KbK2wq6ZbzISvKRI1TK2/cdYfX5WoEmRDRX2y3yfkeDjRapG028YTh5ufMeatFBJkW0VvJ6HLDIPWWQessg8ZJF5yCLzkGW/zPcZCT5e5Eyj6dM0aaGSItsq7Hqd7zMSfLxIyTIuFUPy0+z/swKdi2yosPe9fZOR4CVFmiwjTZ9tb1JkbQWv5yGLzEMWmYcsMg9ZZB6yyDxkkXnIIvOQReYhi8xDFpmHLDIPWT6Q+dMMJ2+yjDR9flagSQO0/l7dmYaTN1lGmj4/K9CkAQ7w/fnLKYaTN1lGmj4/K9CkAcy3B/6fzEMWmYcsMg9ZZB6y1GfeW9CFMndSCxV63smDXecPPVd8RpEofXasSQMcYL795UTDyZssI02fnxVo0gBd5tsv3Js1GQleUmT2MpIv/iEtVFJkbQsd7N4eGDQr896GGWT3tNCgd7s38TrvnG1m36600GYL+zb33t4528CO3dNCGyzv2D85RORb5VeYrgAAAABJRU5ErkJggg==" name="Рисунок 11" align="bottom" width="337" height="114" border="0"></p>
+<p align="center" style="text-indent: 1.25cm; margin-bottom: 0.35cm; line-height: 130%">
+<font size="2" style="font-size: 9pt"><b>Рисунок 4</b></font></p>
+<p align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<font size="4" style="font-size: 14pt">Большинство задач
+информатики удобно решать при использовании
+матричного задания графов. Квадратная
+таблица </font><font size="4" style="font-size: 14pt"><span lang="en-US">R</span></font><font size="4" style="font-size: 14pt">
+= ||</font><font size="4" style="font-size: 14pt"><span lang="en-US">r</span></font><sub><font size="4" style="font-size: 14pt"><span lang="en-US">i</span></font></sub><sub><font size="4" style="font-size: 14pt">,</font></sub><sub><font size="4" style="font-size: 14pt"><span lang="en-US">j</span></font></sub><font size="4" style="font-size: 14pt">||</font><font size="4" style="font-size: 14pt"><span lang="en-US">n</span></font><sub><font size="4" style="font-size: 14pt"><span lang="en-US">x</span></font></sub><font size="4" style="font-size: 14pt">(</font><font size="4" style="font-size: 14pt"><span lang="en-US">n</span></font><font size="4" style="font-size: 14pt">)
+называется матрицей смежности, если ее
+элементы образуются по правилу:</font></p>
+<p align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<br>
+</p>
+<p align="center" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<font size="4" style="font-size: 14pt"><span lang="en-US">r</span></font><sub><font size="4" style="font-size: 14pt"><span lang="en-US">i</span></font></sub><sub><font size="4" style="font-size: 14pt">,</font></sub><sub><font size="4" style="font-size: 14pt"><span lang="en-US">j</span></font></sub><font size="4" style="font-size: 14pt">
+= 
+<img src="data:image/png;base64,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"></font></p>
+<p align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<br>
+</p>
+<p align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<font size="4" style="font-size: 14pt">Представления
+<sc_element sys_idtf = "concept_graph">графа</sc_element> в соответствии с различными
+определениями будем называть различными
+видами представлений. Между различными
+видами представлений графа существует
+взаимнооднозначное соответствие.
+Действительно, поскольку речь идет о
+представлении графа, то множество вершин
+можно считать пронумерованным. Тогда
+дуге (ребро будем рассматривать как
+пару противоположно направленных дуг),
+идущей из вершины </font><font size="4" style="font-size: 14pt"><span lang="en-US">i</span></font><font size="4" style="font-size: 14pt">
+в вершину </font><font size="4" style="font-size: 14pt"><span lang="en-US">j</span></font><font size="4" style="font-size: 14pt">
+будет соответствовать упорядоченная
+пара (</font><font size="4" style="font-size: 14pt"><span lang="en-US">i</span></font><font size="4" style="font-size: 14pt">,
+</font><font size="4" style="font-size: 14pt"><span lang="en-US">j</span></font><font size="4" style="font-size: 14pt">)
+или, что то же самое, в списке вершины </font><font size="4" style="font-size: 14pt"><span lang="en-US">i</span></font><font size="4" style="font-size: 14pt">
+будет присутствовать вершина </font><font size="4" style="font-size: 14pt"><span lang="en-US">j</span></font><font size="4" style="font-size: 14pt">,
+а в матрице </font><font size="4" style="font-size: 14pt"><span lang="en-US">A</span></font><font size="4" style="font-size: 14pt">
+= (</font><font size="4" style="font-size: 14pt"><span lang="en-US">a</span></font><sub><font size="4" style="font-size: 14pt"><span lang="en-US">ij</span></font></sub><font size="4" style="font-size: 14pt">),
+представляющей граф, элемент</font><font size="4" style="font-size: 14pt"><span lang="en-US">a</span></font><sub><font size="4" style="font-size: 14pt"><span lang="en-US">ij</span></font></sub><font size="4" style="font-size: 14pt">
+= 1. Отсутствию дуги, идущей из вершины
+</font><font size="4" style="font-size: 14pt"><span lang="en-US">i</span></font><font size="4" style="font-size: 14pt">
+в вершину </font><font size="4" style="font-size: 14pt"><span lang="en-US">j</span></font><font size="4" style="font-size: 14pt">,
+будет соответствовать отсутствие
+вершины </font><font size="4" style="font-size: 14pt"><span lang="en-US">j</span></font><font size="4" style="font-size: 14pt">
+в списке вершины </font><font size="4" style="font-size: 14pt"><span lang="en-US">i</span></font><font size="4" style="font-size: 14pt">,
+а </font><font size="4" style="font-size: 14pt"><span lang="en-US">a</span></font><sub><font size="4" style="font-size: 14pt"><span lang="en-US">ij</span></font></sub><font size="4" style="font-size: 14pt">
+= 0.</font></p>
+<p align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<font size="4" style="font-size: 14pt">В силу указанного
+выше взаимнооднозначного соответствия
+между различными видами представлений
+мы и можем воспользоваться различными
+определениями одного и того же понятия
+- <sc_element sys_idtf = "concept_graph">граф</sc_element>. При этом при изучении различных
+свойств графа мы стараемся каждый раз
+пользоваться тем языком, который наиболее
+удобен для описания выбранного свойства.
+Вероятно, не следует выбирать один из
+языков в качестве единственного языка
+теории графов. Иногда для описания того
+или иного свойства, атрибута графа,
+требуется конкретный язык. Так если мы
+говорим о плоском (планарном) графе, то
+нам по необходимости приходится
+использовать геометрический язык теории
+графов. Если же мы говорим о &quot;спектре&quot;
+графа, то мы формулируем это понятие на
+матричном языке.</font></p>
+<p align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<font face="Times New Roman, serif"><font size="4" style="font-size: 14pt">Теория
+графов замечательна тем, что трудные
+задачи (проблемы) в ней появляются и
+легко формулируются сразу же после
+формулировки основных понятий теории
+графов. Так после формулировки понятия
+представления (представителя) графа
+сразу же появляется задача - если нам
+даны два представления, то это представления
+одного и того же графа или разных? Т.е.
+мы сразу же вышли на так называемую
+проблему изоморфизма графов.</font></font></p>
+</body>
+</html>

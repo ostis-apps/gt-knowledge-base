@@ -1,0 +1,25 @@
+section_depth_first_search
+=> nrel_main_idtf:
+	[Раздел. Поиск в глубину]
+	(* <- lang_ru;; *);
+	[Section. Depth-first search]
+	(* <- lang_en;; *);
+
+=> nrel_exercises: section_graph_exercises_6_2;
+
+
+<= nrel_sc_text_translation: 
+
+		...
+		(*
+		-> rrel_example:
+			"file://html/6.2_eng.html"
+			(* <- lang_en;; *);;
+		*);
+		...
+		(*
+		-> rrel_example:
+			"file://html/6.2.html"
+			(* <- lang_ru;; *);;
+		*);;
+

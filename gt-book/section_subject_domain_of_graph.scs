@@ -1,0 +1,38 @@
+section_subject_domain_of_n_graph
+=> nrel_main_idtf:
+	[Раздел. Предметная область теории графов]
+	(* <- lang_ru;; *);
+	[Section. Subject domain of graph theory]
+	(* <- lang_en;; *);
+
+//=> nrel_exercises: exercise_section_subject_domain_of_graph;
+
+<= nrel_section_decomposition:
+	{
+	        section_graph_basic_concepts
+		(*
+		=> nrel_section_base_order: 
+			section_graph_graphs;;
+		*);
+		section_graph_graphs
+		(*
+		=> nrel_section_base_order: 
+			section_graph_digraphs;;
+		*);
+		section_graph_digraphs
+		(*
+		=> nrel_section_base_order: 
+			section_the_directed_acyclic_graph_and_trees;;
+		*);
+		section_the_directed_acyclic_graph_and_trees
+		(*
+		=> nrel_section_base_order: 
+			section_planarity_and_duality;;
+		*);
+		section_planarity_and_duality
+		(*
+		=> nrel_section_base_order: 
+			section_search_on_graphs;;
+		*);
+		section_search_on_graphs
+	};;

@@ -1,0 +1,143 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<title></title>
+	<meta name="generator" content="LibreOffice 4.2.8.2 (Linux)">
+	<meta name="created" content="20151020;100259938917102">
+	<meta name="changed" content="20151020;100330938566741">
+	<style type="text/css">
+	<!--
+		@page { margin: 2cm }
+		p { margin-bottom: 0.25cm; line-height: 120% }
+		h5 { margin-top: 0.42cm; page-break-after: auto }
+		h5.western { font-family: "Calibri", serif; font-size: 13pt; font-style: italic }
+		h5.cjk { font-family: "Droid Sans Fallback"; font-size: 13pt; so-language: en-US; font-style: italic }
+		h5.ctl { font-family: "Calibri"; font-size: 13pt; font-style: italic }
+	-->
+	</style>
+</head>
+<body lang="ru-RU" dir="ltr">
+<h5 class="western" style="margin-left: 1.25cm"><a name="_Toc278281405"></a>
+<font face="Times New Roman, serif"><font size="4" style="font-size: 14pt">
+Ориентированные ациклические графы</font></font></h5>
+<p align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<font size="4" style="font-size: 14pt">В этом разделе
+изучаются свойства важного класса
+ориентированных графов, а именно
+</font>
+<font size="4" style="font-size: 14pt">
+	<i>	
+		<sc_element sys_idtf ="concept_acyclic_graph">
+			ациклических
+		</sc_element>	
+	</i>
+</font>
+<font size="4" style="font-size: 14pt">.
+Как мы знаем, ориентированный граф —
+ациклический, если он не содержит
+контуров. Очевидно, простейшим примером
+ациклического ориентированного графа
+является ориентированное дерево.</font></p>
+<p align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<font size="4" style="font-size: 14pt">Основной результат,
+который мы получим в этом разделе,
+заключается в том, что вершины ациклического
+ориентированного графа G на </font><font size="4" style="font-size: 14pt"><span lang="en-US">n</span></font><font size="4" style="font-size: 14pt">
+вершинах можно пометить таким образом
+целыми числами из множества {1, 2, ... , </font><font size="4" style="font-size: 14pt"><span lang="en-US">n</span></font><font size="4" style="font-size: 14pt">},
+что если в графе G имеется дуга (i, </font><font size="4" style="font-size: 14pt"><span lang="en-US">j</span></font><font size="4" style="font-size: 14pt">),
+то i &lt;</font><font size="4" style="font-size: 14pt"><span lang="en-US">j</span></font><font size="4" style="font-size: 14pt">.</font></p>
+<p align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<font size="4" style="font-size: 14pt">Определенное нами
+упорядочение вершин называется
+топологической сортировкой. Топологически
+отсортированы, например, вершины
+ациклического ориентированного графа
+на рисунке 31.</font></p>
+<p align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<font size="4" style="font-size: 14pt">Справедливость
+основного результата этого раздела
+определяется следующей теоремой:</font></p>
+<p align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<font size="4" style="font-size: 14pt"><b>Теорема 1</b></font><font size="4" style="font-size: 14pt">.
+</font><font size="4" style="font-size: 14pt">В 
+	<i>
+		<sc_element sys_idtf ="concept_acyclic_graph">
+			ациклическом ориентированном графе
+		</sc_element>
+	</i>
+ имеются по крайней
+мере одна вершина с нулевой полустепенью
+захода и одна вершина с нулевой
+полустепенью исхода.</font></p>
+<p align="center" style="margin-left: 0.64cm; margin-bottom: 0cm; line-height: 130%">
+<img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/wgALCAEaAaQBAREA/8QAGwABAAIDAQEAAAAAAAAAAAAAAAUGAgMEAQf/2gAIAQEAAAABv4AAACpycyAAAAAAAAwpNz3AAAAAAAAPIGV6gAAAAAAAEBA8l57wAAAAAAA4q/G3qKr8jZswAAAAAAMK/t47NsQaPm5EAAAAAAIaOscPK9QrU9D8tl2AAAAAAckDLyUZqmAwq9r01eZlQAAAABjXcrD7hWrQBHapZDcNh3AAAAA8p3bP7ihXPqAVax7muu9UvtAAAAOOud0/kctYuIBXNdnEXQPpXSAAADVXNthyCsWTMAVizejXXt096AAAQUZZ+kHHFWEAI/nmAcMHO9oAAI6uzssAq9myABVbUB5W1k9AAaa9vn/QcvVpgrGABX5fp89ByVyekANW0Q0dYekDTWrVXJ7cABhXpGEtvoFf5rPkFYwsXFETMmPPRHQNnr1pAAK52R9nAOSuTkkhN8b5vpdo68NmOVVnd7X7nx88js2PdWqNmvfPdmWHB0b88ulHSnnu0heWZqNjld2emszEoNewHLE2AGvT1PPdfmqtT3Thqw0xfdlk1OeKn6tee4IWPs2wAVa0gAFVtQAY19YfdewDmrM5JgFbn9oAEZhLACMhbH1AAQHDadgGiFsIAFRtmQDnrcnMgADlq83LgVa0gA5q/aQMaxjZ9gAAEFxWjIInKUACsWLaCLgbJ3AAADkrXfPZinXD0A1Vu0hoq8jPAAAAKT1WfaUvptYDH5xf+oUTbctgAAAA1V3umWus2oByQll9cEF1z+QAAAAEZEWPfH8k2BUrZ7hWume9AAAAAGFc6pysT/QEJ1SMLGWbeAAAAAAjoSfgLX6ccLO1yUmAAAAAAAxr2jZZmmr9nlhyAAAAAAAR9X6rLTpGf6gAAAAAAA8qPPYpUAAAAAAAByxFhAAAAAAAANETOgAAAAAAAHJzyYAAAD//xAAqEAACAgIABQUBAQACAwAAAAADBAECAAUREhMgMBAUFUBQJDEGNCEiJf/aAAgBAQABBQL7RVie41ti3T/StaK1918kcXJ0/wBL/cPCYpXmkh/Sa2y6soncaZX2bQGl2xNV/POyJat7sPDXTq5ag6io6lDEDFDBA7G4SVtFo/Lm0Vgr9jSvropcnHZmpStK+j6klgBBvr2CzrrLOCar+SxsBhmFWXbDFQVXDWNcAarh7HRysYRamG3ramsN8q163rePxTsiXrN2djKyQlYx1qFQILdEfbasWqCba9zCCoWllGUMWdGxH4UzFYLsLGuDWRFvS1opVakut97i/uAIn6wPRtCjOVaOlgyULT799xFHYWO7gxUFX1f2My2vFYB4D/x7EZKlH6WpW9bolWsvsaFtz15vtnZEvW5WtlgNMoHIjhHqc9Vw63X8SeHZ6/3QtIXip2NqCYpBmlHwnocf2LkqKpdpJZX1n/tEcO5z+x2I5Y8R/wCLYdtqVvh9fcdltjFrfWc2Y1sqm1sLhAMFO5k8Lg1YbQLxuLwytrjdRbuOqJmvFnW4BkTNPpNOBUpFn9liuvCr4Xf63IjhHkHEq7jwH1swRbYzFvOQlBVJsrFuHWx1P876HHc2EJUQ9ZSb+baimy4CdUPgOuNinI1rJWcE1XvklK27GNiINvZnfwIRgp3kJUQ1LVW9NpaSYOkDH5bRzV1lrUl696KhBz5H+d7OsqSy+xsK8Tx7tmBXjqAWipS0BQmwWELi5scWRCt4mlBuUulWXo5Q0T/p2HnY/m2TTXtyTNWNj4TLiYrIW9dZVwbVPRrZBVuJ9c1B7QVra+0kd2VLcrUdV0ajVold6sSPZc3LsM5djx5dhhvkPf1+Y5aztazJ9pGe62mQ1s8hnY5a1iWRI0Acvu0ymxPnyN8+RvnyBMttLVqXbx0Vt9ec+XHny4s+YDGfLCyNqCY+UBny6uNnFsBS5UBB7BSuRtVZiu0Utnvlcl1flDuFS292vnu18htec64s64s64saToS49rcd6OUuBIsUXUTV6BACLlaxSuEHQtbqMIXWeEz2xWsT3MBg4dTf+buvXnoNcQq9k1rOdOme3DObWlIqNMNK9Eee1BkpLWz49TL69aBU0YLZTTp0z4hPPilIz4tfPiF+PxC3A6Sq401z2b9uWAWevKaYegp2ta8Z5FsCrFrat6+JaPbbfzq/2bLxzPCDbLjcGvtJfTkrx7yhGekrMa2VXQtV8O0iRxS3OPyvsQspr14Ar4mngq50W9jgADXH5WdYMmA2dwErat47yjgotWaZp5XK++2Ef+I8BDDDX3rD0ra8QPomXGxSyzOslTYCbjvPMKbXyHJ0g6gM8vfMxWGNrxILV3LetK0j6bmuofAPEVvExaO3YL+4UQP7hXx7K8mJSsDp3NPBUr0HNlZdUStPrHXGxSVmtfYO3WJlbRaOyl/Y7fxEvAx6ykmL2kNQNSbA7cq6ygbfa2+t6pBFJrMpepKev/IA8wdMwcwfBM8I2TxW7L06S/ZsdmyEyaBW8rStI+5elSVImZSy2woxPpNa2z/obLwMHquFBTmF6sNhWrzObHLaoXSiOEffZSEzEtMa6RloWuNrwyvr2ZKPvP/8AQ2ERwjLWisF2BWLr6ylLfh2rF6lRKvdTYVN6PjusYJamF27Bro1UVqqHG9iJbBqtPYMVA1/GZTE1WpWtdgyhaGHjrXOxliiwdeC5LlOMFJM1scV1wFvypjjBdbyXk43KJs2CX0ISohjH8iwbYcbB11rzEREfmMJiaqyAy9NdterJj0AKzFXL1Ay7gQDXp+f/ALmx1Q5i6XuqrIAVj9I5OkLW3g36hbVGPVViFP02f+sjEQp9r//EADwQAAEDAQQHBQYFBAIDAAAAAAEAAgMRBBITQSEiMDEyUVIgIzNCUBBAYXGRkhQ0U4GhBUOCsSSiYmNy/9oACAEBAAY/AveprVO+6wDVomumdeJ9TqdwTo3uuWZv/ZNw+HL1S46Ik79UJuGKN9Tu1vO5BS2lrBcIppTo5IqjeW8lejd+3qFZHU+CvO/49n580MNlLO08R3uQYwUaMlfZqyt3FG6cC2s/7LBtrbp68lUGo9Mqdyw7G28T58gsa0OxZebskYQaWZm8jzINaKAe0TRaJ2bisOdgvDiaVes9ZYejktQ62bTvHpVxneSdIV61OuR/phXY2hoX4SA654j0hCNm4dkWyIf/AGOaEjDqlYkTsKXmEIba2nKTmqtNR6NekdRUjrDB1Zlao1s3H2Xt7zoaFff4r9Lu0QdxX4d3gScB5ey68VCxLG6+zOIqnC/pPodSsGxtvu68gsS1OxZPjuHtJO4I2t/ht0RjYFo0O8pWtxs1T7bw1JOoK5a23o/1QrzHVHoDm1BiGj5lB9pddjyjCoxoHYfZT4R5JlwUbTYicO7t/iBB7DVp9t1wqEZLE6nNhzWFKMOXkVdrrcvfL0jqLDia6KHNxWll883Kg7DpH7gjbJhrONWjZOdGaSf7RhPFGaU7Ou3WG5w3ps0rZC0aNPJB8bqj3m891AsOxMxH9WQWLanYsn8LR2mWXyt1nKgy2bJh4cmh3z7WsAVjWJ9x/TkVhWhuFN7vdb3kp8rVfthuRZRhXY2ho7bpDkjaJPEl07R0f0V08Ueqe3SRv7rWrNZ+eYV6N1fc70jv2WjuIP5KqBef1HYx2QHVGs5UG1c3+3KNHz2ONY34cnLIrCtgw5f9+4XnuoFhWNl93Vkse0nEl/1sHRNOs3f7HPcaAKS1P4pDthK3iiN4Jr+Y2N2RtVqVmg5clWN2nlsLpcK9m4NeTpaq2x11mTGq5G2g2Be7cFiy1vzu1fZHZW/3TQprBkKbYgqWyu3xlOw63juomhlulD95bscWB2FNzbmsC2tuPydke2JpzJeyulOmMrnXtzSdyvSOoEJDJoO5avcQfyVqNq7qO/ZXJC6nwKijq+4zmqF2j4qa0b2N1W+4RS+V+hyZeb3R3lQug8nEdldkaCr0JM0PQd6q3Q7NvtuOqTnRXmyaE5lpZhubzU8kYIgO5MlDcRrDpamzSMfBEc6IOZ/UKt+S1bTeKriN+S3tW9n1W9qIhcb+dNyGrH9V4cTv8l+Vj+5flGfctNkZ9y02Rn1Tj/UY7jKatE4QQB8N6rSStax/Ra9lcF+Xevy71+Xcq/hpPotSCa98WrvYHH4tXgT/AGLwZ/sXhTfYvBn+xcMo/wAVuk+1b3fRNjiddN7iOSwbQ7EGTlqgt/xXEfovFp8147PqjSaP7ldv3T8V4zPuXjs+5aJmfcvEb9V4jfqvEb9VjQTCKTmM0YLRHWQbrmmqdKAdXeFPPNGXNc7SUHQ8DtK7yNrvmrrRQey69tQsSya0ecaujVkG9h7JoN/bdGRvCdFnG672y05qjGAdnSFwheG1RwQtDZHuyVLgd8SuALwmrTAw/svy7Pojh2eO9lUK9LxHJu5eHX5rwloiW5eZeb6q9JI+nKq/EQtLGf8AszVoL6F7+S/BtgcJToUcfIdq+3Ul6gsC2tpyk5q801Gzmj8sgvD3CSc8Mehu0qVhWWPFdzWPa34j+WQ9tborsLsjQ4LEszjJDnGtQ62bTso7U3+06pTXDMV2zn55JozOk7PWOvk0KszjDD0tzVyNtBtjLD3c2RCwLcKO61VpqNg6M7inwP44jto4AdSPWcqbG89wARZZGXWfqOV53eSdTvcbkjahX7MTLFmwrRqvzadhHL5ZdDtq+TkFJaX8Up2FSsGyMxX88gsW2yXz0qjRQe6X4+7mycFgW4U6ZMiqjd2nDzDWCa48W520iskekuNXfJBo3Dt6xq7JoV6YmGDpV2NtPd7krbwV+B2JCPIVdcbj+RVQa9lzHaI5tI2ZedwUltf5+H5doue4ABYdhZozeViSHEl5n3tkkTdJOtRCKdtYsnhBzDVpz7EcjRrVoqS6QM9jVYUbHNjB0pjOQ7N2IsI/8UJ7a8u5MVGig99LXCoKxbG7VziKuOGHL0n26RVaNEM38HYukdknyzb5dNOxWR9FqdxB/JTY2aNa8481QegaRddk4JrbQ3Ei/UCvMcCPY5meSMcnix6HbBsTT3MWl3zVPZUmgWFYW16nnJYk7saXmfRKOFQsWxOu82HcsOVuFN0n2NtsI3cYTZG7j2hEzTLJoAVwb/MfZdGvLkwK/a3XGdAV2NtB6PrjT1BXZu9g6uSN0hzTvWE49xLw/DsukedyNstHG7hHIK9I6gXcd1B1nNVpefm4+laVi2N2G/pyKdZLWMOVfg7RxDhdz9pe80AX4mbRAzgac1hWRmI/nkFiWx2K7pyCoPTe8bp6s1STvYxpY/NqwrQ4X/KeaMj3UaEJJyRB5Ix5l3vcwZMG9XY209RM8Wo8adChaye+BxNWo3T6mXXb3wT5MFsfqjnu3NRINQ55PqknyTaD3v8A/8QAKhABAAICAQMDBAICAwAAAAAAAQARITFBUWFxECAwQFCB8ZGhscHR4fD/2gAIAQEAAT8h+qSrqy9VpY1C0i7r7mieskrfd04Ud5wTHTp9zQFJZCO6BbvrUTsTgT7m1dXcMXolMY0RdFyApHaVVtGeR9wrl7G38Rem5W5H+pbTlM8Sg6gIZTaPnswoTcDB3VzBi9YNvMDmTSP2xm9DKwYvEYLI+L/Bl8TDrnTxAbCoD15E6XPaNkMfGYoRO3vxlwpP/KPtVZldTPuPJt/LD5DwEIVdPA9A/sfbo2YPh1llgbGWTDk0vmMXwodQBKmkfsyMZ4Ly+Cd6eePxRLnXUL6MQaJ5Yq58o+4ExCkisVS+BdPREd9jHVF+Tx2g+3Xxv2NwtBtZaEmGIg3/ANgIAFeiB0FrD9dz57/BZqnPQY5mLUvbn1PsTyb4mKDAOPzBRn0n16gW6lco0CDitlp44tgQidD2Y26CxkeYfPoCfDjYDXQrTCCBsfVkNtiR0yc6Xh0jWh71L2Zw/C/D6yps8XzEbTwalO0AKTgABQexqgGFfDkcHHxakLrgnDExm96Pa/cDeg8SnAVzl4QsDdPqWoD5Yxe2MIDRq5R0exANAA4PdQOlv+thCVGFfGw1WPP4MGzGfaRQncuNeRKzAVUMI6fEGyz6ajPiZv8AEBc6f/mDjjoe9LdMeeJuEb3wdPkR5nfa8RjXN+c97Uj0GyAaonw/ErSHJyfRuxDwdsdavEtgQDuzO/DnYf0OoBYA18qWsvdHwEEpLJ3/AC/zJTvdQpR4wRLNfOrEfLGbrcrQjcxavXhABQUe+1SYjp6VAnaytXC8HzXV6xAGdF+fQR96UgSr5PzB15lW58lB4T4CAD0Ptyb1U2kw6m2zfmCwHwfA69Haw+oLAZa2QcQ57eF4ICNBfMElYlR3dsXkczW5UuDHVMy3/MCC2/gYu3ard5himooCxsdV7qtAKMiP2FlQ695TJ12GS0A2xxgpzwdoHfIOVfn22XV59pgQt1VCHW2K7QnxHLjXOVcWPH0DocGt34m6S1TdSqVLJHCY+KoN4UyRhfNugdpZmjZs9cPFmi6gU1o4lmK4TqXASuZlC81LsbCncwHFWWnucR+XHQqoUQByIBUQABzhmfv40qo6x+/gDztdFlndvOLLF3i2z+PSqzoxWc3ippZFg1A7xuFVEaYtRXxZYgfwGYKY/ig6mYeSfqZZqHQSwSQV5QILQJitf5jeaOtp+1x2D/KfvMsCzouftMQ2M3TUIVYsfCpugX8kIQ5zwuMkx9YC0fTGCVWfWMIikNUi508dH8z9en61EaW+E/X5+jz9Hg4jLsKHeIw2mp1gelcuyKFHccOoi4srP68Vw4MdB6KzPwxKt7b5TxEF/Ih7XQRyU94ekYzCsOch956gOIALdj1odl+itis/QR3G/EArJHeh4g9IN7IvV49Yn6CP2x3i8iFV08iWh9TQ8QaqwDVo23DWB6kBvNtvcDTavvFgfyhKN/M8Ep8BXWO0M1hoky+LWYq5ginN7rH1ZOt3nYSFqDAU0j8a6T8sv52ZK/2+/kC4AOWJeNNNEJchP/S4FFGvT+0FfA66csz43LlDtL1SO4PivNvyJD1IvmWC0rylDOe6r8YFXo6phVccjZHeDjH8zDHbp33lih6BhlJvUH4C9saZxVh8cfNV8qRAA0fCxGusa8ppDH4m3Uy538fQtRt2ibeLMniVVI92fBUpDU78fKLnMw4SXC+nwOFANrM7laTC9jeHRCJQ4D6TL1GcPPeCHPUUytrT7qBxle5OHso7/JqqS7Id9DR794zumUvCBcp3hU/dy/TpwrLM8p3V0I+J1J6lOQ6ntB/+CjLv4k1obhrtuj09wqyW3G6cqHR+I2c+84ePq7dcKn+4VTvPa8w8pLB7LAE1VMMsctmzh+G76Ie2z+f+oYRVBXtQmfkj3hp85ZxXeEThoD602+8JLjkGRY+OkugDfr1tdMlyqgnD4+Eq5oa6xbqr4DiABXrQ92G4jS3UTD26Th4CcrIR6D7BoE9wMSo7RuPJD6lyPogMbM4Zjbah+C92pbw9EAhgPROYNrLn3dYR/wA4vYjfGQAKNfY0hE2MYCWeUigrwN+PS4C4mbIjNnZ7qG2KXB1m/Lz1H0PU4NlhIp8mOzvDoC4Ps9cpOsCREFuoJk9+spbChAZimbz6QRPYDChg6szzb6TIhESo3Yoz4TA7vUr9qBACckZG70f2zhCIuBeozP8Aqz6PqeAWWKRreBbqxenia4vaKAIKDQfbapgaGB+ZUNxxu79ozCpoCqwIQLuGyed5cL2lLdHu3lgwp/v7ggKSyL05Km4tE60epKSPc/cxQS0HNwkQXQBTfN/dNJRbKG8L5fuhG45wkAM6+r//2gAIAQEAAAAQ/wD/AP8A/wD/AP8A/wD/AP8A/wB//wD/AP8A/wD/AOP/AP8A/wD/AP8A/wBv/wD/AP8A/wD/AP3f/wD/AP8A/wD+ef8A/wD/AP8A/wC5/wD/AP8A/wD/APmfK/8A/wD/AP8ALf8A5/8A/wD/AO3v/wCf/wD/AP8Aff8Anz//AP8Ax+/+fX//APp+/wD7/wD/AP8Az/f/AN/b/wD8/b//AP8Aj+e/y/8A9X7fZ97/AP8A3/8A/V7Ibn0Wwc//AOfi7vPV+/8A/wD/AH/4f+f/AP8A+/8Ar/8AP+f/AP8A+v8A/j//AP8A/v8A/wD+f/8A/wD3/wD/APrv/nw//wD/AOuf65//AP8A/wDffx1//wD/AP8AG/UP/wD/AP8A/V/9/wD/AP8A/wD6ej//AP8A/wD/AOHj/wD/AP8A/wD/AO//AP8A/wD/AP8A/wA//wD/AP8A/wD/AP7/AP8A/wD/AP8A/wD3/wD/AP8A/wD/AP8A/wD/AP8A/wD/xAAqEAACAQIFAwQCAwEAAAAAAAAAAREhMRBBUWFxIDCRQFCBobHB0eHx8P/aAAgBAQABPxD1flw8Djp6nM/c4hgkzMZVQhRqGOV7meVGXTKuYUu1A6s2zGvc3ntU4EgOdpkB1u7zi2D+31OnL7g06IqcQaYQHcm9BdfIo3sRSQjZ/wByk4AtYha6tvOyMwF7J+2KnryMi104/cZ5PqkGR3MYSgesaiWNc1217xQuMtdQb2nNh4ILGbPaW4Ussct/MKl+FgGg5BH8+I9FzQq/I+msW09/GFcCxoDGTdmZbQ5zUY2ZL2ZXeKf7WGzUmCOaK14SCJnj7EweupTl1OhsazRrnI9YVHZhArPcoSB82tUu9vY0VV5YsMFuRG/V1ckISKErLBdWcBIK+R9l+DNOesE7PLHRjtvlhyBwoOfLfr2JiSXbEmY0ZItNr6eAQDaIi6Ggu48Qi4lpjXZjUvVIh0IWeKBFxLIa9GXkh9Cjp/sAnR6pV3esZ8nDV4YeSmY794JzqI4JQlouiZO2ub0NdPL+7tSwJrAEhM2r9Jn+kWuPMBEzCIl5repu3reftyUMuZTZhFpWSIS6nSSdDsENpJNC7apvNyCkNoPPp2L0aFB/TJIbS1B+4Qhiaea9La4rZayfkUDqrjFj6a6xX5J/PKEuvczuSuCqbREgy9eseRNk/k02Q10A/wCz07Xo9zuY/ZEiAEZM5iHstKLUfkgvyHCd1TnYQr0gy6Y5Zm/FhHMrEWmJtZrv59SEXp6JSNdJmd76dBZSRZJdacMYebBBSRWQwtInla7zb4XMPUkmTvgrhYGnx12d8nxDPA5UhUV/x32LpvVVkrXor92YTcrgyig5I+i/YVzMFxM0Akkj7CHdqLopBLZd5VBsyZMuIjP6HOfrCmCfKGwhJCVXr1s2tOAC7bNfmkR1qps3VWMvJSORfORB5WNAaU64PAt1j/OZFXkd13SngWGU9Oe58fkaiVYeCIDO/T906CegQsWvMD19crRc1Lfm4dr+ksAsq4sed8OKk1+McVSszuSB01VWaGtk+XgJ8VbgQhJCjLluWRxYQgX04nnBbgLfPNwHxZ3OFUcQAyULHUzYqgGn26Jk5YlkRJTa2w91KRj4N702HV2GS4uVYn2iq4t64TlP9PgRpj+ec2JMoIIRikquCo+6rCs2oFzw8+zos+jZAjdIhlgGaATcK+iKLbzdj1QRNk4rgmhmVr8YrNJDNksQzyXBCrZ0Id9kesHuNkWGC/OMu06wQ4zTHqyFpBqGjU4SwuHPWML2wQdryT07E3Ql31rtYIWYxMbiFOtvzUZsLx6uq9SFpg1aHJYbpmaw4pzqalKUUIWoFmdTlmVMPBwHvXAW0V4qAPT3uHCdKyRs8juNZWGRW/nwc/0sNrqMztpBLprf2guw/wCEiQA81tB5WOdBaECTfqUNN1n8htlS85VVfLLttLdF59+aFOhCRKP3B+uWZCQ73UXvk/p0K4CFJSTJYfi/z2Hx3k2IGEKXgS+fx2kuQ0HDUZkmoRuu83apoerHkafUdu47FT8ZkRYg3RVzd91qRRLV+G2MyxGBuoseqldhSJupjXq/vVE+0r8FFhCS7N9e7cdLvmCHGSBPlYsvQK1XnUvnDq0y2NnTtuxBwh1TuzKUlXeB8Qf1PYqFWYhIhodo+4TJdkCQy6FC9J8iagE2S6AkjVZQ79U9fySDWz4wXuR5p0srxCmVXXNt514mc+sMYkHpVj5PT6vSLrhjK1k9KagyAdVIU3zboHgu1FIlH2ki3LtsRNT1x9U1MgxlQswQqd18IC1vVUf9IWaGEM56C0fRCpbOnBWO9kFv02lmEJgQTJDrzCSKxjobhNia4tNtgTHbgIadEF61NKolkZVGqJRSDlfDxpm3oZhjtoPyLE5UrsNDsmroLtgu3PCmlkoxnyrKsz4FrNfvQLePNFDE7QuEvYFN3HT/ALReTfFYKftNVHOFuJzpFjm26tH12VSwvWswqmFCWCDXy3CRYFI/hD9RSBELSEksl7Gsb8JymQLI319ED4V8zg+zNJbI0h7XU18Z9DLheq2bfXwlq+bOGEal5BW16zf2fXWl8rAqQ6G6eiqdUVyv1T9IkCcrXoV2XHXKSEmuzZzX7VdXwhleqXjQW6/uZ8+1N6u4rk+nShKcXGFIzE8amuM60zDLwWpBbP8AC+wlfDlDWzXhC3tv+UlSJcZyfa8xSJlZ4CS9BK/A4mPguBxifrBQK5pVcv3B/WZdNFDdMRynJl6guMs9f3OPxoGT6DN/f3S6Fsqa7Q4wJRY90QKGnSaJwyoSF6v/2Q==" name="Picture 2" align="bottom" width="202" height="134" border="0"></p>
+<p align="center" style="margin-left: 0.64cm; margin-bottom: 0.35cm; line-height: 130%">
+<font size="2" style="font-size: 9pt"><b>Рисунок 31</b></font></p>
+<p align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<font size="4" style="font-size: 14pt"><b>Доказательство</b></font><font size="4" style="font-size: 14pt"><i>.
+</i></font><font size="4" style="font-size: 14pt">Пусть Р:
+v1,v2...,vp — максимальный ориентированный
+путь графа G. Покажем, что полустепень
+захода v1 и полустепень исхода vp равны
+нулю.</font></p>
+<p align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<font size="4" style="font-size: 14pt">Если полустепень
+захода не равна нулю, то существует
+такая вершина w, </font><font size="4" style="font-size: 14pt">что
+в графе G имеется дуга (w, </font><font size="4" style="font-size: 14pt"><span lang="en-US">v</span></font><sub><font size="4" style="font-size: 14pt">1</font></sub><font size="4" style="font-size: 14pt">).
+Возможны два случая.</font></p>
+<p align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<font size="4" style="font-size: 14pt"><i>Случай 1</i></font><font size="4" style="font-size: 14pt">.
+Пусть<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAD0AAAAOCAIAAAAT7oO9AAADC0lEQVR4nGP5//8/wxAELAPtADLBqLuRwe+Xxxe316zVmrcxTR7Zhv/f7u1ZtOGzR26QAiuI//lgUdb1rHkZKqy41VDi7t/3lnRdda7wlWQmSvn/v2waXvZci58hhP5+uLx+xrx9L8WdkzIC4A7ite9bbE9ADT53/7wzIzDjz9QdaYy7tvxw9PjSHLYhZE2LEfPDDRPnnf349/eLYztf6tyZJZiTZiPC9OXShMBygYVboz92+U2wXDvTnhvdUEYOQUFOJgT/59UO96jL8StmTdXkZkQKjcdLIkLOVxzoNeXEqQYSDl/P1lolvEtKZN+57lvW+uk+okwQd7MruHmy1F1/oLyjrU9UUlOBNTpFjwMoLh9Q0hjw+86ccvnkqamqbBBTeDR9vZk6bry3e/YzpswSw9FYALt20YoZy6ZNKS5V889IcVfhhviJmeXvDwlzRQ58aiDhwPTnu5hnUlqRht4l5/V3f/iIckHTCYuEsdqjvmn3MrNlWqbNjypoVABJ/AaG95yDZ/afZTK/31zLJuWeDQxvZgZWKXO1xwsmLrKNq1ZmI8LZQMAmYZnQZBn74crGWQ0NCtm1YaBk8OPe6V/6qbyM+NSAwb/3N24JWilx/n52/qWmuxonAyJ9c6rayXH/C7YxZhA+oRGqxQkWZJUPyI9/U6mQ3Z6MnHMYONUdhJ7cjQxVYWP48/L8NRY9PWGG5yuCXXcUnFjgwAO05/OtQ1sOPXz6Zvse23BXPcG/D9b1zTr14R/EeSLaEEv/vrl8+Sv7j+//GNiBYfsLqxoI+H7/xPMf0pvm33/EXNbtIcSI5G5G0ZAlC0GM7DUTkQOKWSa4NlYALY8wCvkv3wpm/b6/ZcPzQAM9hn8cyv4x3grsYFEmXjWH6N5L0XBDFIIq2oLQ44BZLuPgMUSMYFUD8eDba09187oSXHgRYoTKEyYOQX480t+fPxOV5AQGABOXekSZKXJmpBb49+XGtk0Pf0e8/P6flxOeYyksv/nsanPADEZ2Pk7KjMIFmHi0MzZfzEATHa0v6QsAkOg8HggQUaUAAAAASUVORK5CYII=" align="bottom">.
+Тогда существует ориентированный путь
+Р:</font><font size="4" style="font-size: 14pt"><span lang="en-US">w</span></font><font size="4" style="font-size: 14pt">,</font><font size="4" style="font-size: 14pt"><span lang="en-US">v</span></font><sub><font size="4" style="font-size: 14pt">1</font></sub><font size="4" style="font-size: 14pt">,</font><font size="4" style="font-size: 14pt"><span lang="en-US">v</span></font><sub><font size="4" style="font-size: 14pt">2</font></sub><font size="4" style="font-size: 14pt">,...,</font><font size="4" style="font-size: 14pt"><span lang="en-US">v</span></font><sub><font size="4" style="font-size: 14pt">p</font></sub><font size="4" style="font-size: 14pt">,
+содержащий все дуги пути Р. Это противоречит
+максимальности упомянутого пути.</font></p>
+<p align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<font size="4" style="font-size: 14pt"><i>Случай 2</i></font><font size="4" style="font-size: 14pt">.
+Пусть для некоторого i </font><font size="4" style="font-size: 14pt"><i>w=v</i></font><sub><font size="4" style="font-size: 14pt"><span lang="en-US"><i>i</i></span></font></sub><font size="4" style="font-size: 14pt">.
+Тогда в графе G имеется контур
+С:</font><font size="4" style="font-size: 14pt"><span lang="en-US">v</span></font><sub><font size="4" style="font-size: 14pt">1</font></sub><font size="4" style="font-size: 14pt">,</font><font size="4" style="font-size: 14pt"><span lang="en-US">v</span></font><sub><font size="4" style="font-size: 14pt">2</font></sub><font size="4" style="font-size: 14pt">...,</font><font size="4" style="font-size: 14pt"><span lang="en-US">v</span></font><sub><font size="4" style="font-size: 14pt"><span lang="en-US">i</span></font></sub><font size="4" style="font-size: 14pt">,</font><font size="4" style="font-size: 14pt"><span lang="en-US">v</span></font><sub><font size="4" style="font-size: 14pt">1</font></sub><font size="4" style="font-size: 14pt">.
+Это противоречит условиям теоремы.</font></p>
+<p align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<font size="4" style="font-size: 14pt">Таким образом, не
+существует такой вершины w, что (</font><font size="4" style="font-size: 14pt"><span lang="en-US">w</span></font><font size="4" style="font-size: 14pt">,
+</font><font size="4" style="font-size: 14pt"><span lang="en-US">v</span></font><sub><font size="4" style="font-size: 14pt"><span lang="en-US">i</span></font></sub><font size="4" style="font-size: 14pt">)
+— дуга графа С.</font></p>
+<p align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<font size="4" style="font-size: 14pt">Другими словами,
+полустепень захода </font><font size="4" style="font-size: 14pt"><span lang="en-US">v</span></font><sub><font size="4" style="font-size: 14pt">1</font></sub><font size="4" style="font-size: 14pt">
+равна нулю. Рассуждая аналогичным
+образом, можно показать, что равна нулю
+полустепень исхода v</font><sub><font size="4" style="font-size: 14pt">p</font></sub><font size="4" style="font-size: 14pt">.
+▪</font></p>
+<p align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<font size="4" style="font-size: 14pt">Для осуществления
+топологической сортировки вершин
+ациклического ориентированного графа
+G на </font><font size="4" style="font-size: 14pt"><span lang="en-US">n</span></font><font size="4" style="font-size: 14pt">
+вершинах проделаем следующее.</font></p>
+<p align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<font size="4" style="font-size: 14pt">Выберем произвольную
+вершину с нулевой полустепенью исхода.
+Это возможно, поскольку граф G —
+ациклический, а по теореме 1 в нем должна
+иметься хотя бы одна такая вершина.
+Пометим выбранную вершину целым </font><font size="4" style="font-size: 14pt"><span lang="en-US">n</span></font><font size="4" style="font-size: 14pt">.
+Теперь удалим из графа G эту вершину и
+инцидентные ему дуги. Обозначим
+получившийся граф через G'.</font></p>
+<p align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<font size="4" style="font-size: 14pt">Поскольку граф G'
+также ациклический, можно выбрать в нем
+вершину с нулевой полустепенью исхода.
+Пометим эту вершину целым числом </font><font size="4" style="font-size: 14pt"><span lang="en-US">n</span></font><font size="4" style="font-size: 14pt">—1.
+Повторим описанную процедуру до тех
+пор, пока не пометим все вершины. Легко
+видеть, что эта процедура порождает
+топологическую сортировку вершин графа
+G.</font></p>
+</body>
+</html>

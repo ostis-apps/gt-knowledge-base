@@ -1,0 +1,9 @@
+section_graph_exercises_2_6
+=> nrel_main_idtf:
+	[Множество упражнений. Операции над графами]
+	(* <- lang_ru;; *);
+	[Set of exercises. Graph operations]
+	(* <- lang_en;; *);
+
+->section_graph_exercise_2_6_1;;
+

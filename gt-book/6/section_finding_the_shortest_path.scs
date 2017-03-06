@@ -1,0 +1,25 @@
+section_finding_the_shortest_path
+=> nrel_main_idtf:
+	[Раздел. Нахождение кратчайшего пути (Алгоритм Дейкстры)]
+	(* <- lang_ru;; *);
+	[Section. Finding the shortest path (Dijkstra)]
+	(* <- lang_en;; *);
+
+=> nrel_exercises: section_graph_exercises_6_4;
+
+
+<= nrel_sc_text_translation: 
+
+		...
+		(*
+		-> rrel_example:
+			"file://html/6.4_eng.html"
+			(* <- lang_en;; *);;
+		*);
+		...
+		(*
+		-> rrel_example:
+			"file://html/6.4.html"
+			(* <- lang_ru;; *);;
+		*);;
+
