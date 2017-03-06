@@ -1,0 +1,23 @@
+section_definitions_and_examples
+=> nrel_main_idtf:
+	[Раздел. Определения и примеры]
+	(* <- lang_ru;; *);
+	[Section. Definitions and examples]
+	(* <- lang_en;; *);
+
+=> nrel_exercises: section_graph_exercises_1_1;
+<= nrel_sc_text_translation: 
+
+		...
+		(*
+		-> rrel_example:
+			"file://html/1.1_eng.html"
+			(* <- lang_en;; *);;
+		*);
+		...
+		(*
+		-> rrel_example:
+			"file://html/1.1.html"
+			(* <- lang_ru;; *);;
+		*);;
+

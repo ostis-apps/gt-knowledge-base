@@ -1,0 +1,24 @@
+section_connectedness_and_components_count
+=> nrel_main_idtf:
+	[Раздел. Связность и компоненты графа]
+	(* <- lang_ru;; *);
+	[Section. Connectedness and components count]
+	(* <- lang_en;; *);
+
+=> nrel_exercises: section_graph_exercises_2_5;
+
+<= nrel_sc_text_translation: 
+
+		...
+		(*
+		-> rrel_example:
+			"file://html/2.5_eng.html"
+			(* <- lang_en;; *);;
+		*);
+		...
+		(*
+		-> rrel_example:
+			"file://html/2.5.html"
+			(* <- lang_ru;; *);;
+		*);;
+

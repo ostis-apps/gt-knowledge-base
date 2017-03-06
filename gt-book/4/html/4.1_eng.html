@@ -1,0 +1,151 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<title></title>
+	<meta name="generator" content="LibreOffice 4.2.8.2 (Linux)">
+	<meta name="author" content="Kotenok-Olen'ka">
+	<meta name="created" content="20101204;81300000000000">
+	<meta name="changed" content="20151023;193519368857808">
+	<meta name="AppVersion" content="14.0000">
+	<meta name="DocSecurity" content="0">
+	<meta name="HyperlinksChanged" content="false">
+	<meta name="LinksUpToDate" content="false">
+	<meta name="ScaleCrop" content="false">
+	<meta name="ShareDoc" content="false">
+	<style type="text/css">
+	<!--
+		@page { margin-left: 3cm; margin-right: 1cm; margin-top: 2cm; margin-bottom: 1.27cm }
+		@page:first { }
+		p { margin-bottom: 0.21cm; direction: ltr; line-height: 120%; text-align: left; widows: 2; orphans: 2 }
+		p.western { font-family: "Times New Roman", serif; font-size: 12pt }
+		p.cjk { font-family: "Times New Roman"; font-size: 12pt; so-language: ru-RU }
+		p.ctl { font-family: "Times New Roman"; font-size: 12pt }
+		h5 { margin-top: 0.42cm; direction: ltr; line-height: 100%; text-align: left; widows: 2; orphans: 2; page-break-after: auto }
+		h5.western { font-family: "Calibri", serif; font-size: 13pt; font-style: italic }
+		h5.cjk { font-family: "Times New Roman"; font-size: 13pt; so-language: en-US; font-style: italic }
+		h5.ctl { font-family: "Calibri"; font-size: 13pt; font-style: italic }
+		a:link { color: #0000ff; so-language: zxx }
+	-->
+	</style>
+</head>
+<body lang="ru-RU" link="#0000ff" dir="ltr">
+<h5 class="western" align="left"><a name="_Toc278281405"></a><font face="Times New Roman, serif"><font size="4" style="font-size: 14pt">Directed
+acyclic graph</font></font> 
+</h5>
+<p class="western" align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<font size="4" style="font-size: 14pt">In this section we study the
+properties of an important class of directed graphs, namely </font>
+<font size="4" style="font-size: 14pt">
+	<i>
+		<sc_element sys_idtf ="concept_acyclic_graph">
+			acyclic.
+		</sc_element>
+	</i>
+</font>
+<font size="4" style="font-size: 14pt">As we know, a directed graph -
+is acyclic if it contains no circuits.</font> <font size="4" style="font-size: 14pt">Obviously,
+the simplest example of an acyclic directed graph is a directed tree.</font>
+</p>
+<p class="western" align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<font size="4" style="font-size: 14pt">The main result that we obtain
+in this section is that the vertices of an acyclic directed graph G
+on </font><font size="4" style="font-size: 14pt"><span lang="en-US">n
+vertices</span></font><font size="4" style="font-size: 14pt"> can be
+marked so that integers in the set {1, </font><font size="4" style="font-size: 14pt"><span lang="en-US">2,</span></font><font size="4" style="font-size: 14pt">
+..., n}, that if a graph G has an arc </font><font size="4" style="font-size: 14pt"><span lang="en-US">(i,</span></font><font size="4" style="font-size: 14pt">
+j), then </font><font size="4" style="font-size: 14pt"><span lang="en-US">i</span></font><font size="4" style="font-size: 14pt">
+&lt;j.</font> 
+</p>
+<p class="western" align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<font size="4" style="font-size: 14pt">We defined the ordering of
+vertices is called a topological sorting.</font> <font size="4" style="font-size: 14pt">Topologically
+sorted, for example, the top of an acyclic directed graph in Figure
+31.</font> 
+</p>
+<p class="western" align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<font size="4" style="font-size: 14pt">The validity of the main
+result of this section is the following theorem:</font> 
+</p>
+<p class="western" align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<font size="4" style="font-size: 14pt"><b>Theorem </b></font><font size="4" style="font-size: 14pt"><i><b>1.</b></i></font><font size="4" style="font-size: 14pt">
+In acyclic directed graph has at least one vertex with zero indegree
+and one vertex with zero outdegree.</font> 
+</p>
+<p class="western" align="center" style="margin-left: 0.64cm; margin-bottom: 0cm; line-height: 130%">
+<img src="data:image/jpeg;base64,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" name="Picture 2" align="bottom" width="202" height="134" border="0"></p>
+<p class="western" align="center" style="margin-left: 0.64cm; margin-bottom: 0.35cm; line-height: 130%">
+<font size="2" style="font-size: 9pt"><b>Figure 31</b></font> 
+</p>
+<p class="western" align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<font size="4" style="font-size: 14pt"><i><b>Proof.</b></i></font><font size="4" style="font-size: 14pt">
+Let P: v1, v2 ..., vp - the maximum directed path graph G. We show
+that indegree v1 and outdegree vp zero.</font> 
+</p>
+<p class="western" align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<font size="4" style="font-size: 14pt">If indegree not zero, then
+there is a vertex w, which in G there is an arc </font><font size="4" style="font-size: 14pt"><span lang="en-US">(w,</span></font><font size="4" style="font-size: 14pt">
+v </font><sub><font size="4" style="font-size: 14pt">1).</font></sub>
+<font size="4" style="font-size: 14pt">Two cases are possible.</font>
+</p>
+<p class="western" align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<font size="4" style="font-size: 14pt"><i>Case 1.</i></font><font size="4" style="font-size: 14pt">
+Let</font>  w ≠ v, 1&lt;=i&lt;=p<font size="4" style="font-size: 14pt">.</font>
+<font size="4" style="font-size: 14pt">Then there is a directed path
+</font><font size="4" style="font-size: 14pt"><span lang="en-US">P:</span></font><font size="4" style="font-size: 14pt">
+w, v </font><sub><font size="4" style="font-size: 14pt"><span lang="en-US">1,</span></font></sub><sub><font size="4" style="font-size: 14pt">
+v </font></sub><sub><font size="4" style="font-size: 14pt"><span lang="en-US">2,</span></font></sub><font size="4" style="font-size: 14pt">
+..., v p, containing all of the arc path P. This contradicts the
+maximality of said path.</font> 
+</p>
+<p class="western" align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<font size="4" style="font-size: 14pt"><i>Case 2.</i></font><font size="4" style="font-size: 14pt">
+Suppose that for some </font><sub><font size="4" style="font-size: 14pt"><span lang="en-US"><i>i</i></span></font></sub><font size="4" style="font-size: 14pt">
+w = v i.</font> <font size="4" style="font-size: 14pt">Then the graph
+G has a circuit </font><font size="4" style="font-size: 14pt"><span lang="en-US">C:</span></font><font size="4" style="font-size: 14pt">
+v </font><sub><font size="4" style="font-size: 14pt"><span lang="en-US">1,</span></font></sub><sub><font size="4" style="font-size: 14pt">
+v 2 </font></sub><sub><font size="4" style="font-size: 14pt"><span lang="en-US">...,</span></font></sub><font size="4" style="font-size: 14pt">
+v i, v </font><sub><font size="4" style="font-size: 14pt">1.</font></sub>
+<font size="4" style="font-size: 14pt">This is contrary to the
+conditions of the theorem.</font> 
+</p>
+<p class="western" align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<font size="4" style="font-size: 14pt">Thus, there exists a vertex w,
+that </font><sub><font size="4" style="font-size: 14pt"><span lang="en-US">(w,</span></font></sub><font size="4" style="font-size: 14pt">
+v i) - arc of S.</font> 
+</p>
+<p class="western" align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<font size="4" style="font-size: 14pt">In other words, indegree </font><sub><font size="4" style="font-size: 14pt">1</font></sub><font size="4" style="font-size: 14pt">
+</font><font size="4" style="font-size: 14pt"><span lang="en-US">v</span></font><font size="4" style="font-size: 14pt">
+is zero.</font> <font size="4" style="font-size: 14pt">Arguing
+similarly, we can show that zero outdegree </font><sub><font size="4" style="font-size: 14pt">v</font></sub><font size="4" style="font-size: 14pt">
+p.</font> ▪ 
+</p>
+<p class="western" align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<font size="4" style="font-size: 14pt">To implement topological
+sorting the vertices of an acyclic directed graph G on </font><font size="4" style="font-size: 14pt"><span lang="en-US">n
+vertices</span></font><font size="4" style="font-size: 14pt"> we
+proceed as follows.</font> 
+</p>
+<p class="western" align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<font size="4" style="font-size: 14pt">We choose an arbitrary vertex
+zero outdegree.</font> <font size="4" style="font-size: 14pt">This is
+possible because the graph G - acyclic, and by Theorem 1, it must
+have at least one such vertex.</font> <font size="4" style="font-size: 14pt">Mark
+selected by a top </font><font size="4" style="font-size: 14pt"><span lang="en-US">n.</span></font>
+<font size="4" style="font-size: 14pt">Now remove from the vertex of
+the graph G and the arc incident to him.</font> <font size="4" style="font-size: 14pt">We
+denote the resulting graph by G '.</font> 
+</p>
+<p class="western" align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<font size="4" style="font-size: 14pt">Since the graph G 'is also
+acyclic, you can select it in the top of the zero outdegree.</font>
+<font size="4" style="font-size: 14pt">Marking the top of the integer
+</font><font size="4" style="font-size: 14pt"><span lang="en-US">n
+-1.</span></font> <font size="4" style="font-size: 14pt">Repeat the
+procedure until until you mark all peaks.</font> <font size="4" style="font-size: 14pt">It
+is easy to see that this procedure produces a topological sort
+vertices of G.</font> 
+</p>
+</body>
+</html>

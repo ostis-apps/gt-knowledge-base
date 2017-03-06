@@ -1,0 +1,9 @@
+section_graph_exercises_5_3
+=> nrel_main_idtf:
+	[Множество упражнений. Двойственные графы]
+	(* <- lang_ru;; *);
+	[Set of exercises. Dual graph]
+	(* <- lang_en;; *);
+
+->section_graph_exercise_5_3_1;
+->section_graph_exercise_5_3_2;;

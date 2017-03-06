@@ -1,0 +1,33 @@
+section_graph_exercise_2_4_1
+=> nrel_main_idtf:
+	[Упражнение. Упражнение 1]
+	(* <- lang_ru;; *);
+	[Exercise. Exercise 1]
+	(* <- lang_en;; *);
+<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://htmls/section_graph_exercise1.html" (* <-lang_ru;; *);;
+		*);
+		...
+		(*
+		-> rrel_example: "file://htmls/section_graph_exercise1_en.html" (* <-lang_en;; *);; 
+		*);
+<-rrel_key_sc_element: nrel_chain;
+=>graph_exercise_2_4_1_answer;;
+
+graph_exercise_2_4_1_answer
+=> nrel_main_idtf:
+	[Упражнение. Упражнение 1 Ответ]
+	(* <- lang_ru;; *);
+	[Exercise. Exercise 1 Answer]
+	(* <- lang_en;; *);
+<=nrel_sc_text_translation:
+    ...
+    (*
+    -> rrel_example: [Цепь - это маршрут, все рёбра которого различны.] (*<-lang_ru;;*);;
+    *);
+	...
+	(*
+    -> rrel_example: [The route called a chain if all its edges are different.] (*<-lang_en;;*);;
+    *);;

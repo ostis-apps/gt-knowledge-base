@@ -1,0 +1,10 @@
+section_graph_exercises_5_2
+=> nrel_main_idtf:
+	[Множество упражнений. Точки сочленения, мосты и блоки]
+	(* <- lang_ru;; *);
+	[Set of exercises. Points of articulation, bridges and power]
+	(* <- lang_en;; *);
+
+->section_graph_exercise_5_2_1;
+->section_graph_exercise_5_2_2;
+->section_graph_exercise_5_2_3;;

@@ -1,0 +1,9 @@
+section_graph_exercises_4_2
+=> nrel_main_idtf:
+	[Множество упражнений. Деревья]
+	(* <- lang_ru;; *);
+	[Set of exercises. Trees]
+	(* <- lang_en;; *);
+
+->section_graph_exercise_4_2_1;;
+

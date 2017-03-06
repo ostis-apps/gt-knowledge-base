@@ -1,0 +1,25 @@
+section_dual_graph
+=> nrel_main_idtf:
+	[Раздел. Двойственные графы]
+	(* <- lang_ru;; *);
+	[Section. Dual graph]
+	(* <- lang_en;; *);
+
+=> nrel_exercises: section_graph_exercises_5_3;
+
+
+<= nrel_sc_text_translation: 
+
+		...
+		(*
+		-> rrel_example:
+			"file://html/5.3_eng.html"
+			(* <- lang_en;; *);;
+		*);
+		...
+		(*
+		-> rrel_example:
+			"file://html/5.3.html"
+			(* <- lang_ru;; *);;
+		*);;
+

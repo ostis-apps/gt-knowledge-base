@@ -1,0 +1,27 @@
+section_search_on_graphs
+=> nrel_main_idtf:
+	[Раздел. Поиск на графах]
+	(* <- lang_ru;; *);
+	[Section. Search on graphs]
+	(* <- lang_en;; *);
+
+<= nrel_section_decomposition:
+	{
+	        section_research_maze		
+	        (*
+		=> nrel_section_base_order: 
+			section_depth_first_search;;
+		*);
+		section_depth_first_search
+		(*
+		=> nrel_section_base_order: 
+			section_breadth_first_search;;
+		*);
+		section_breadth_first_search	
+		(*
+		=> nrel_section_base_order: 
+			section_finding_the_shortest_path;;
+		*);
+		section_finding_the_shortest_path
+	};;
+

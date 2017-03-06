@@ -1,0 +1,17 @@
+section_graph_exercise_5_3_1
+=> nrel_main_idtf:
+	[Упражнение. Упражнение 1]
+	(* <- lang_ru;; *);
+	[Exercise. Exercise 1]
+	(* <- lang_en;; *);
+=>nrel_next: section_graph_exercise_5_3_2;
+<-rrel_key_sc_element: concept_graph; concept_planar_graph;
+<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://htmls/section_graph_exercise1.html" (* <-lang_ru;; *);;
+		*);
+		...
+		(*
+		-> rrel_example: "file://htmls/section_graph_exercise1_en.html" (* <-lang_en;; *);; 
+		*);;

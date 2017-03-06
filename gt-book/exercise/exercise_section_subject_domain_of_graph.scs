@@ -1,0 +1,113 @@
+/*
+exercise_section_subject_domain_of_graph
+=> nrel_main_idtf:
+	[Множество упражнений. Предметная область теории графов]
+	(* <- lang_ru;; *);
+	[Set of exercises. Section subject domain of graph]
+	(* <- lang_en;; *);
+
+
+  		->section_graph_exercises_1_1
+  		(*
+  		=> nrel_next: 
+  			section_graph_exercises_1_2;;
+  		*);
+  		->section_graph_exercises_1_2
+  		(*
+  		=> nrel_next: 
+  			section_graph_exercises_2_1;;
+  		*);
+  		->section_graph_exercises_2_1
+  		(*
+  		=> nrel_next: 
+  			section_graph_exercises_2_2;;
+  		*);
+  		->section_graph_exercises_2_2
+  		(*
+  		=> nrel_next: 
+  			section_graph_exercises_2_3;;
+  		*);
+  		->section_graph_exercises_2_3
+  		(*
+  		=> nrel_next: 
+  			section_graph_exercises_2_4;;
+  		*);
+  		->section_graph_exercises_2_4
+  				(*
+  		=> nrel_next: 
+  			section_graph_exercises_2_5;;
+  		*);
+  		->section_graph_exercises_2_5
+  		(*
+  		=> nrel_next: 
+  			section_graph_exercises_2_6;;
+  		*);
+  		->section_graph_exercises_2_6
+  		(*
+  		=> nrel_next: 
+  			section_graph_exercises_2_7;;
+  		*);
+  		->section_graph_exercises_2_7
+  		(*
+  		=> nrel_next: 
+  			section_graph_exercises_3_1;;
+  		*);
+  		->section_graph_exercises_3_1
+  		(*
+  		=> nrel_next: 
+  			section_graph_exercises_3_2;;
+  		*);
+  		->section_graph_exercises_3_2
+  		(*
+  		=> nrel_next: 
+  			section_graph_exercises_3_3;;
+  		*);
+  		->section_graph_exercises_3_3
+  		(*
+  		=> nrel_next: 
+  			section_graph_exercises_4_1;;
+  		*);
+  		->section_graph_exercises_4_1
+  		(*
+  		=> nrel_next: 
+  			section_graph_exercises_4_2;;
+		  *);
+		  section_graph_exercises_4_2
+		  (*
+	  	=> nrel_next: 
+		  	section_graph_exercises_5_1;;
+  		*);
+	  	section_graph_exercises_5_1
+	  	(*
+	  	=> nrel_next: 
+	  		section_graph_exercises_5_2;;
+	  	*);
+	  	section_graph_exercises_5_2
+	  	(*
+	  	=> nrel_next: 
+	  		section_graph_exercises_5_3;;
+	  	*);
+	  	section_graph_exercises_5_3
+	  	(*
+	  	=> nrel_next: 
+	  		section_graph_exercises_6_1;;
+	  	*);
+		  section_graph_exercises_6_1
+  		(*
+  		=> nrel_next: 
+  			section_graph_exercises_6_2;;
+  		*);
+  		->section_graph_exercises_6_2
+  		(*
+  		=> nrel_next: 
+  			section_graph_exercises_6_3;;
+  		*);
+  		->section_graph_exercises_6_3
+  		(*
+  		=> nrel_next: 
+  			section_graph_exercises_6_4;;
+  		*);
+  		->section_graph_exercises_6_4;	
+
+<-concept_exercise;;
+*/

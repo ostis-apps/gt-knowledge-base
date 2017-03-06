@@ -1,0 +1,9 @@
+section_graph_exercises_5_1
+=> nrel_main_idtf:
+	[Множество упражнений. Планарные графы]
+	(* <- lang_ru;; *);
+	[Set of exercises. Planar graphs]
+	(* <- lang_en;; *);
+
+->section_graph_exercise_5_1_1;
+->section_graph_exercise_5_1_2;;

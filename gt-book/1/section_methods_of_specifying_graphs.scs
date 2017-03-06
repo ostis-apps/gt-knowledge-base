@@ -1,0 +1,22 @@
+section_methods_of_specifying_graphs
+=> nrel_main_idtf:
+	[Раздел. Способы задания графов]
+	(* <- lang_ru;; *);
+	[Section. Methods of specifying graphs]
+	(* <- lang_en;; *);
+=> nrel_exercises: section_graph_exercises_1_2;
+<= nrel_sc_text_translation: 
+
+		...
+		(*
+		-> rrel_example:
+			"file://html/1.2_eng.html"
+			(* <- lang_en;; *);;
+		*);
+		...
+		(*
+		-> rrel_example:
+			"file://html/1.2.html"
+			(* <- lang_ru;; *);;
+		*);;
+

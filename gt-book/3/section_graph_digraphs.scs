@@ -1,0 +1,22 @@
+section_graph_digraphs
+=> nrel_main_idtf:
+	[Раздел. Орграфы]
+	(* <- lang_ru;; *);
+	[Section. Digraphs]
+	(* <- lang_en;; *);
+
+
+<= nrel_section_decomposition:
+	{
+	        section_definitions_and_examples_digraphs		
+	        (*
+		=> nrel_section_base_order: 
+			section_digraph_and_matrix;;
+		*);
+		section_digraph_and_matrix
+		(*
+		=> nrel_section_base_order: 
+			section_oriented_euler_graphs;;
+		*);
+		section_oriented_euler_graphs
+	};;

@@ -1,0 +1,188 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<title></title>
+	<meta name="generator" content="LibreOffice 4.2.8.2 (Linux)">
+	<meta name="created" content="20151020;100259938917102">
+	<meta name="changed" content="20151020;100958794585855">
+	<style type="text/css">
+	<!--
+		@page { margin: 2cm }
+		p { margin-bottom: 0.25cm; line-height: 120% }
+		h5 { margin-top: 0.42cm; page-break-after: auto }
+		h5.western { font-family: "Calibri", serif; font-size: 13pt; font-style: italic }
+		h5.cjk { font-family: "Droid Sans Fallback"; font-size: 13pt; so-language: en-US; font-style: italic }
+		h5.ctl { font-family: "Calibri"; font-size: 13pt; font-style: italic }
+		a:link { so-language: zxx }
+	-->
+	</style>
+</head>
+<body lang="ru-RU" dir="ltr">
+<h5 class="western" style="margin-left: 1.25cm"><a name="_Toc278281409"></a>
+<font face="Times New Roman, serif"><font size="4" style="font-size: 14pt">
+Исследование лабиринта</font></font></h5>
+<p align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<font size="4" style="font-size: 14pt">Процесс поиска на
+<i><sc_element sys_idtf = "concept_graph">графах</sc_element></i> становится поучительным, если
+представлять его в терминах эквивалентной
+задачи, которая имеет долгую и интересную
+историю  - задачи поиска выхода из
+лабиринта, который состоит из перекрестков,
+соединенных коридорами. В этом разделе
+представлен подробный анализ базового
+метода исследования каждого коридора
+в заданном лабиринте. Для некоторых
+лабиринтов конкретная задача может
+быть решена с применением простого
+правила, однако для большей части
+лабиринтов требуется более сложная
+стратегия. Использование терминов
+лабиринт (maze) вместо <i><sc_element sys_idtf = "concept_graph">граф</sc_element></i>, коридор
+(passage) вместо ребро и перекресток
+(intersection) вместо вершина есть ни что иное,
+как просто семантическое различие,
+однако на данной стадии переход на
+другую терминологию поможет глубже
+прочувствовать задачу.</font></p>
+<p align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<font size="4" style="font-size: 14pt">Мы полагаем, что
+на каждом перекрестке установлены
+лампы, которые в исходном состоянии
+выключены, и двери в обоих концах каждого
+коридора, которые в исходном состоянии
+закрыты. Далее мы полагаем, что в двери
+встроены окна, а источники света
+достаточно мощные и коридоры достаточно
+прямые, так что мы, открыв дверь, можем
+определить, освешен или нет перекресток
+на другом конце коридора (если даже
+дверь на другом конце коридора закрыта).
+</font>
+</p>
+<p align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<font size="4" style="font-size: 14pt">Наша цель заключается
+в том, чтобы зажечь все лампы и открыть
+все двери.</font></p>
+<p align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<font size="4" style="font-size: 14pt">Для достижения
+этой цели мы должны иметь в своем
+распоряжении набор правил, которым
+будем систематически следовать. Следующая
+стратегия исследования лабиринта,
+которую мы будем называть исследованием
+Тремо, известна, по меньшей мере, с
+девятнадцатого столетия: </font>
+</p>
+<p align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<font size="4" style="font-size: 14pt">(i) Если на текущем
+перекрестке нет закрытых дверей,
+переходите к шагу (iii). В противном случае
+откройте любую дверь любого коридора,
+ведущую из текущего перекрестка (и
+оставьте ее открытой).</font></p>
+<p align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<font size="4" style="font-size: 14pt">(ii) Если вы видите,
+что лампа, установленная на перекрестке
+на другом конце этого коридора уже
+включена, попробуйте открыть другую
+дверь на текущем перекрестке (шаг (i)).
+Иначе (если вы видите, что перекресток
+на другом конце соответствующего
+коридора не освещен), проследуйте по
+коридору к этому перекрестку, разматывая
+при этом нить, включите свет и переходите
+к шагу (i).</font></p>
+<p align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<font size="4" style="font-size: 14pt">(iii) Если все двери
+на текущем перекрестке открыты, проверьте,
+не находитесь ли вы в отправной точке.
+Если да, то процесс окончен. Если нет,
+воспользуйтесь нитью, чтобы двигаться
+назад вдоль коридора, который привел
+вас в этот перекресток в первый
+раз,разматывая нить по мере продвижения,
+и ищите другую замкнутую дверь уже там
+(т.е. вернитесь к шагу (i)).</font></p>
+<p align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<font size="4" style="font-size: 14pt"><b>Свойство 6.1</b></font><font size="4" style="font-size: 14pt">.
+</font><font size="4" style="font-size: 14pt">Когда мы
+проводим исследование Тремо некоторого
+лабиринта, мы зажигаем все лампы и
+открываем все двери в лабиринте и
+завершаем обход там, где его начинали.</font></p>
+<p align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<font size="4" style="font-size: 14pt"><b>Доказательство.
+</b></font><font size="4" style="font-size: 14pt">Чтобы доказать
+это утверждение методом индукции, мы
+сначала отметим, что оно выполняется в
+тривиальном случае, т.е. для лабиринта,
+который содержит один перекресток и ни
+одного коридора - мы просто включаем
+свет. Для любого лабиринта, который
+содержит более одного перекрестка, мы
+полагаем, что это свойство справедливо
+для всех лабиринтов с меньшим числом
+перекрестков. Достаточно показать, что
+мы посетили все перекрестки, поскольку
+мы открываем все двери на каждом
+посещенном перекрестке. Теперь рассмотрим
+первый коридор, который мы выбираем на
+первом перекрестке, и разделим все
+перекрестки на два подмножества: (i) те,
+которые мы можем достичь, выбрав этот
+коридор и не возвращаясь в отправную
+точку, и (ii) те, которые мы не можем
+достичь, не вернувшись в отправную
+точку. По индуктивному предположению
+мы знаем, что посетили все перекрестки
+в (i) (игнорируя все коридоры, возвращающие
+на начальный перекресток, который
+освещен) и вернулись на начальный
+перекресток.</font></p>
+<p align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<font size="4" style="font-size: 14pt">Следовательно,
+применяя индуктивное предположение
+еще раз, мы знаем, что посетили все
+перекрестки (игнорируя коридоры, ведущие
+из отправной точки на перекрестки в
+(ii), которые освещены). ▪</font></p>
+<p align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<font size="4" style="font-size: 14pt">Существуют четыре
+различные ситуации, которые возникают
+при выборе очередного коридора и которые
+мы должны учитывать, принимая одно из
+возможных решений:</font></p>
+<p align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<font size="4" style="font-size: 14pt">(i) Коридор не
+освещен, следовательно, мы его выбираем.</font></p>
+<p align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<font size="4" style="font-size: 14pt">(</font><font size="4" style="font-size: 14pt"><span lang="en-US">ii</span></font><font size="4" style="font-size: 14pt">)
+Коридор уже был использован (в нем мы
+размотали нить), следовательно, мы
+выбираем его (и сматываем нить в клубок).</font></p>
+<p align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<font size="4" style="font-size: 14pt">(</font><font size="4" style="font-size: 14pt"><span lang="en-US">iii</span></font><font size="4" style="font-size: 14pt">)
+Дверь на другом конце коридора закрыта
+(но сам перекресток освещен), в силу
+этого обстоятельства мы пропускаем
+этот коридор.</font></p>
+<p align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<font size="4" style="font-size: 14pt">(</font><font size="4" style="font-size: 14pt"><span lang="en-US">iv</span></font><font size="4" style="font-size: 14pt">)
+Дверь на другом конце коридора открыта
+(а перекресток освещен), в силу этого
+обстоятельства мы пропускаем этот
+коридор.</font></p>
+<p align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<font face="Times New Roman, serif"><font size="4" style="font-size: 14pt">Первая
+и вторая ситуации относятся к любому
+коридору, который мы обходим, сначала
+с одного его конца, а затем с другого.
+Третья и четвертая ситуация относятся
+к любому коридору, который мы пропускаем,
+сначала с одного его конца, а затем с
+другого. Далее мы увидим, как этот план
+исследования лабиринта преобразуется
+непосредственно в поиск на <i><sc_element sys_idtf = "concept_graph">графе</sc_element></i>.</font></font></p>
+</body>
+</html>

@@ -1,0 +1,25 @@
+section_the_adjacency_matrix_and_incidence
+=> nrel_main_idtf:
+	[Раздел. Матрица смежности и инцидентности]
+	(* <- lang_ru;; *);
+	[Section. The adjacency matrix and incidence]
+	(* <- lang_en;; *);
+
+=> nrel_exercises: section_graph_exercises_2_7;
+
+
+<= nrel_sc_text_translation: 
+
+		...
+		(*
+		-> rrel_example:
+			"file://html/2.7_eng.html"
+			(* <- lang_en;; *);;
+		*);
+		...
+		(*
+		-> rrel_example:
+			"file://html/2.7.html"
+			(* <- lang_ru;; *);;
+		*);;
+

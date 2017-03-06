@@ -1,0 +1,25 @@
+section_points_of_articulation_bridges_and_power
+=> nrel_main_idtf:
+	[Раздел. Точки сочленения, мосты и блоки]
+	(* <- lang_ru;; *);
+	[Section. Points of articulation, bridges and power]
+	(* <- lang_en;; *);
+
+=> nrel_exercises: section_graph_exercises_5_2;
+
+
+<= nrel_sc_text_translation: 
+
+		...
+		(*
+		-> rrel_example:
+			"file://html/5.2_eng.html"
+			(* <- lang_en;; *);;
+		*);
+		...
+		(*
+		-> rrel_example:
+			"file://html/5.2.html"
+			(* <- lang_ru;; *);;
+		*);;
+

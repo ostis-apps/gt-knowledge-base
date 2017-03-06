@@ -1,0 +1,8 @@
+section_graph_exercises_3_2
+=> nrel_main_idtf:
+	[Множество упражнений. Орграфы и матрицы]
+	(* <- lang_ru;; *);
+	[Set of exercises. Digraph and matrix]
+	(* <- lang_en;; *);
+
+->section_graph_exercise_3_2_1;;

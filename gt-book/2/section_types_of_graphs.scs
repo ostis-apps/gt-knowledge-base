@@ -1,0 +1,25 @@
+section_types_of_graphs
+=> nrel_main_idtf:
+	[Раздел. Типы графов]
+	(* <- lang_ru;; *);
+	[Section. Types of graphs]
+	(* <- lang_en;; *);
+
+=> nrel_exercises: section_graph_exercises_2_1;
+
+
+<= nrel_sc_text_translation: 
+
+		...
+		(*
+		-> rrel_example:
+			"file://html/2.1_eng.html"
+			(* <- lang_en;; *);;
+		*);
+		...
+		(*
+		-> rrel_example:
+			"file://html/2.1.html"
+			(* <- lang_ru;; *);;
+		*);;
+

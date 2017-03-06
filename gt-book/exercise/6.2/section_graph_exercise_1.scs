@@ -1,0 +1,32 @@
+section_graph_exercise_6_2_1
+=> nrel_main_idtf:
+	[Упражнение. Упражнение 1]
+	(* <- lang_ru;; *);
+	[Exercise. Exercise 1]
+	(* <- lang_en;; *);
+<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://htmls/section_graph_exercise1.html" (* <-lang_ru;; *);;
+		*);
+		...
+		(*
+		-> rrel_example: "file://htmls/section_graph_exercise1_en.html" (* <-lang_en;; *);; 
+		*);
+=>graph_exercise_6_2_1_answer;;
+
+graph_exercise_6_2_1_answer
+=> nrel_main_idtf:
+	[Упражнение. Упражнение 1 Ответ]
+	(* <- lang_ru;; *);
+	[Exercise. Exercise 1 Answer]
+	(* <- lang_en;; *);
+<=nrel_sc_text_translation:
+    ...
+    (*
+    -> rrel_example: [Метод поиска в глубину - это когда, посетив конкретную вершину, мы помечаем ее специальной меткой, свидетельствующей о том, что она посещена, затем, в режиме рекурсии, мы посещаем все смежные с нею вершины, которые еще не были помечены.] (*<-lang_ru;;*);;
+    *);
+	...
+	(*
+    -> rrel_example: [The method of depth-first search there when visiting a particular vertex, we mark its special label indicating that it had, then, in the mode of recursion, we visit all the vertices adjacent to it, which has not yet been tagged.] (*<-lang_ru;;*);;
+    *);;

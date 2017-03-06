@@ -1,0 +1,32 @@
+section_graph_exercise_6_4_1
+=> nrel_main_idtf:
+	[Упражнение. Упражнение 1]
+	(* <- lang_ru;; *);
+	[Exercise. Exercise 1]
+	(* <- lang_en;; *);
+<= nrel_sc_text_translation:
+		...
+		(* 
+		-> rrel_example: "file://htmls/section_graph_exercise1.html" (* <-lang_ru;; *);;
+		*);
+		...
+		(*
+		-> rrel_example: "file://htmls/section_graph_exercise1_en.html" (* <-lang_en;; *);; 
+		*);
+=>graph_exercise_6_4_1_answer;;
+
+graph_exercise_6_4_1_answer
+=> nrel_main_idtf:
+	[Упражнение. Упражнение 1 Ответ]
+	(* <- lang_ru;; *);
+	[Exercise. Exercise 1 Answer]
+	(* <- lang_en;; *);
+<=nrel_sc_text_translation:
+    ...
+    (*
+    -> rrel_example: [Алгоритм Дейкстры находит кратчайшие пути от одной вершины до всех остальных в взвешенном графе] (*<-lang_ru;;*);;
+    *);
+	...
+	(*
+    -> rrel_example: [Dijkstra's algorithm finds the shortest path from one vertex to all others in the weighted graph] (*<-lang_ru;;*);;
+    *);;

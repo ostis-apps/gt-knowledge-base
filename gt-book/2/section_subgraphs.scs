@@ -1,0 +1,25 @@
+section_subgraphs
+=> nrel_main_idtf:
+	[Раздел. Подграфы]
+	(* <- lang_ru;; *);
+	[Section. Subgraphs]
+	(* <- lang_en;; *);
+
+=> nrel_exercises: section_graph_exercises_2_2;
+
+
+<= nrel_sc_text_translation: 
+
+		...
+		(*
+		-> rrel_example:
+			"file://html/2.2_eng.html"
+			(* <- lang_en;; *);;
+		*);
+		...
+		(*
+		-> rrel_example:
+			"file://html/2.2.html"
+			(* <- lang_ru;; *);;
+		*);;
+

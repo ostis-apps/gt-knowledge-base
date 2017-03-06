@@ -1,0 +1,157 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<title></title>
+	<meta name="generator" content="LibreOffice 4.2.8.2 (Linux)">
+	<meta name="author" content="Kotenok-Olen'ka">
+	<meta name="created" content="20101204;81300000000000">
+	<meta name="changed" content="20151023;195806285808548">
+	<meta name="AppVersion" content="14.0000">
+	<meta name="DocSecurity" content="0">
+	<meta name="HyperlinksChanged" content="false">
+	<meta name="LinksUpToDate" content="false">
+	<meta name="ScaleCrop" content="false">
+	<meta name="ShareDoc" content="false">
+	<style type="text/css">
+	<!--
+		@page { margin-left: 3cm; margin-right: 1cm; margin-top: 2cm; margin-bottom: 1.27cm }
+		@page:first { }
+		p { margin-bottom: 0.21cm; direction: ltr; line-height: 120%; text-align: left; widows: 2; orphans: 2 }
+		p.western { font-family: "Times New Roman", serif; font-size: 12pt }
+		p.cjk { font-family: "Times New Roman"; font-size: 12pt; so-language: ru-RU }
+		p.ctl { font-family: "Times New Roman"; font-size: 12pt }
+		h5 { margin-top: 0.42cm; direction: ltr; line-height: 100%; text-align: left; widows: 2; orphans: 2; page-break-after: auto }
+		h5.western { font-family: "Calibri", serif; font-size: 13pt; font-style: italic }
+		h5.cjk { font-family: "Times New Roman"; font-size: 13pt; so-language: en-US; font-style: italic }
+		h5.ctl { font-family: "Calibri"; font-size: 13pt; font-style: italic }
+		a:link { color: #0000ff; so-language: zxx }
+	-->
+	</style>
+</head>
+<body lang="ru-RU" link="#0000ff" dir="ltr">
+<h5 class="western" align="left"><a name="_Toc278281409"></a><font size="4" style="font-size: 14pt"><font face="Times New Roman, serif">Research
+maze</font> </font>
+</h5>
+<p class="western" align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<font size="4" style="font-size: 14pt">The search process on the
+<i><sc_element sys_idtf = "concept_graph">graph</sc_element></i> becomes instructive when to present it in terms of the
+equivalent problem, which has a long and interesting history - the
+problem find a way out of the maze, which consists of the
+intersections, connected by corridors. This section provides a
+detailed analysis of the basic research method of each corridor in a
+given maze. For some labyrinths specific task can be solved with
+simple rules, but for the greater part of the labyrinth requires more
+complex strategy. Use of terms maze (maze) instead of <i><sc_element sys_idtf = "concept_graph">graph</sc_element></i>, a
+corridor (passage), instead of the edge and the intersection
+(intersection) instead of the vertex is nothing else than a semantic
+difference, but at this stage of the transition to a different
+terminology will feel deeper problem. </font>
+</p>
+<p class="western" align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<font size="4" style="font-size: 14pt">We believe that at every
+intersection mounted lamps that are turned off in the initial state,
+and the doors at both ends of each corridor, which in the initial
+state are closed. Further, we believe that the doors are built in
+windows and lights are powerful enough and corridors quite straight,
+so we opened the door, we can determine whether or not the
+intersection osveshen at the other end of the corridor (even if the
+door at the other end of the corridor is closed). </font>
+</p>
+<p class="western" align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<font size="4" style="font-size: 14pt">Our goal is to light all the
+lights and open all the doors. </font>
+</p>
+<p class="western" align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<font size="4" style="font-size: 14pt">To achieve this goal, we must
+have at its disposal a set of rules that will be followed
+systematically. Next research strategy labyrinth, which we call the
+study of three, known at least since the nineteenth century: </font>
+</p>
+<p class="western" align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<font size="4" style="font-size: 14pt">(i) if the current
+intersection no closed doors, proceed to step (iii). Otherwise, open
+any door of any of the corridor leading from the intersection of the
+current (and leave it open). </font>
+</p>
+<p class="western" align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<font size="4" style="font-size: 14pt">(ii) If you see that the lamp
+is installed at the intersection at the other end of the corridor is
+already on, try to open another door at the current intersection
+(step (i)). Otherwise (if you see that the intersection at the other
+end of that corridor is not illuminated), follow the corridor to the
+intersection, while unwinding the thread, turn on the lights and go
+to step (i). </font>
+</p>
+<p class="western" align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<font size="4" style="font-size: 14pt">(iii) if all the doors are
+open at the current intersection, check to see whether you are in a
+starting point. If so, then the process is finished. If not, use the
+thread to move back along the corridor that led you to this
+crossroads for the first time, unwinding the thread as you go and
+look for another closed door is already there (ie, return to step
+(i)). </font>
+</p>
+<p class="western" align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<font size="4" style="font-size: 14pt"><b>Property 6.1.</b> When we
+conduct research Tremaux a maze, we light all the lights and open all
+the doors in the maze and completing the tour where it started. </font>
+</p>
+<p class="western" align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<font size="4" style="font-size: 14pt"><b>Proof.</b> To prove this
+assertion by induction, we first note that it is done in the trivial
+case, ie, for the labyrinth, which contains one intersection and no
+corridor - we just turn on the light. For any of the labyrinth, which
+contains more than one intersection, we believe that this property
+holds for all labyrinths with fewer intersections. It suffices to
+show that we have visited all the corners, as we open the doors at
+each visit crossroads. Now look at the first corridor, which we
+choose at the first intersection, and divide all crossings into two
+subsets: (i) those that we can achieve by this corridor, and without
+returning to the starting point, and (ii) those that we can not
+achieved without returning to the starting point. By the induction
+hypothesis, we know that visited all corners in (i) (ignoring all the
+corridors, which return to the initial intersection, which is
+illuminated) and returned to the initial intersection. </font>
+</p>
+<p class="western" align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<font size="4" style="font-size: 14pt">Therefore, applying the
+induction hypothesis again, we know that visited all corners
+(ignoring the corridors leading from the starting point at the
+crossroads in (ii), which are illuminated). </font>
+</p>
+<p class="western" align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<font size="4" style="font-size: 14pt">There are four different
+situations that arise in the selection of the next corridor, and that
+we should consider taking one of the possible solutions: </font>
+</p>
+<p class="western" align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<font size="4" style="font-size: 14pt">(i) The corridor is not
+illuminated, therefore we choose. </font>
+</p>
+<p class="western" align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<font size="4" style="font-size: 14pt"><span lang="en-US">(Ii)</span>
+The corridor has already been used (in which we unwound the thread),
+so we choose it (and wound yarn into a ball). </font>
+</p>
+<p class="western" align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<font size="4" style="font-size: 14pt"><span lang="en-US">(Iii)</span>
+The door at the other end of the hall is closed (but the crossroads
+lit), by virtue of this fact we miss this corridor. </font>
+</p>
+<p class="western" align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<font size="4" style="font-size: 14pt"><span lang="en-US">(Iv)</span>
+The door at the other end of the corridor is open (and the
+intersection is lit), by virtue of this fact we miss this corridor. </font>
+</p>
+<p class="western" align="justify" style="text-indent: 1.25cm; margin-bottom: 0cm; line-height: 130%">
+<font size="4" style="font-size: 14pt"><font face="Times New Roman, serif">The
+first and second situation refers to any passage that we bypass, with
+the first one end and then the other.</font> <font face="Times New Roman, serif">The
+third and fourth situation refer to any passage that we are missing,
+first with one end and then the other.</font> <font face="Times New Roman, serif">Next
+we'll see how this plan studies the maze is converted directly into
+search box.</font> </font>
+</p>
+</body>
+</html>

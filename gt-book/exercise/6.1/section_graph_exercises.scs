@@ -1,0 +1,8 @@
+section_graph_exercises_6_1
+=> nrel_main_idtf:
+	[Множество упражнений. Исследование лабиринта]
+	(* <- lang_ru;; *);
+	[Set of exercises. Research maze]
+	(* <- lang_en;; *);
+
+->section_graph_exercise_6_1_1;;

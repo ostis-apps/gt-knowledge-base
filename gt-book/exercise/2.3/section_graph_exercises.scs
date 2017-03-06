@@ -1,0 +1,9 @@
+section_graph_exercises_2_3
+=> nrel_main_idtf:
+	[Множество упражнений. Сильно связные графы и компоненты графа]
+	(* <- lang_ru;; *);
+	[Set of exercises. Strongly connected graphs and graph components]
+	(* <- lang_en;; *);
+
+->section_graph_exercise_2_3_1;
+->section_graph_exercise_2_3_2;;
