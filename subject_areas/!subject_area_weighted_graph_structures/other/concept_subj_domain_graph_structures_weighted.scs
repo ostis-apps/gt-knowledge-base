@@ -5,7 +5,6 @@ concept_subj_domain_graph_structures_weighted
 	(* <- lang_ru;; *);
 	[Subject domain of weighted graph structures]
 	(* <- lang_en;; *);
-<- subject_domain;
 -> rrel_maximum_studied_object_class: concept_weighted_graph;
 -> rrel_not_maximum_studied_object_class: 
 	concept_vertex_weighted_graph;
@@ -23,6 +22,7 @@ concept_subj_domain_graph_structures_weighted
 	algorithm_little;
 	algorithm_dijkstra;
 	algorithm_kruskal;
+	algorithm_ford_bellman;
 	algorithm_prim;
 	algorithm_boruvka;
 -> rrel_explored_relation: 
