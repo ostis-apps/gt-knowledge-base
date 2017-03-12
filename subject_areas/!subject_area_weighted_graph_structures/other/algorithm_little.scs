@@ -24,4 +24,44 @@ algorithm_little
 				(* <- lang_en;;	*);;
 			*);;		
 		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+	*);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- statement;;
+		=> nrel_main_idtf:
+			[Утв.(алгоритм Литтла)]
+			(* <- lang_ru;; *);
+			[Stat.(Little's  algorithm)]
+			(* <- lang_en;; *);;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example:
+				"file://content_html/statement_for_littles_algorithm_ru.html"
+				(* <- lang_ru;;	*);
+                "file://content_html/statement_for_littles_algorithm_en.html"
+				(* <- lang_en;;	*);;
+			*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+	*);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- statement;;
+		=> nrel_main_idtf:
+			[Утв.(Cущность алгоритма Литтла)]
+			(* <- lang_ru;; *);
+			[Stat.(Essence of Little's  algorithm)]
+			(* <- lang_en;; *);;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example:
+				"file://content_html/statement_for_essence_of_littles_algorithm_ru.html"
+				(* <- lang_ru;;	*);
+                "file://content_html/statement_for_essence_of_littles_algorithm_en.html"
+				(* <- lang_en;;	*);;
+			*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
 	*);;
