@@ -1,0 +1,6 @@
+Little's algorithm
+1) In each row of the value matrix, we find the minimal element and subtract it from all elements of the row. We do this for columns that do not contain zero. We obtain a cost matrix, each row and each column of which contains at least one zero element.
+2) For each zero element of the matrix cij, we calculate the coefficient Гi, j, which is equal to the sum of the smallest element i of the row (excluding the element Ci, j = 0) and the smallest element j of the column. Of all the coefficients Γi, j, we choose a one that is maximal Γk, l = max {Γi, j}. A corresponding arc (k, l) is introduced into the Hamiltonian contour.
+3) Remove the k-th row and column l, change the value of the element Cl, k (for the arc (k, l) is included in the contour, then the return path from l to k is inadmissible).
+4) Repeat the algorithm of step 1, until the order of the matrix becomes equal to two.
+5) Then, in the current oriented graph, we introduce two missing arcs that are uniquely determined by the matrix of order 2. We obtain a Hamiltonian contour.

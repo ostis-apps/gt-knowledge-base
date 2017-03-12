@@ -3,7 +3,7 @@ nrel_min_spanning_tree
 => nrel_main_idtf:
 	[минимальное остовное дерево*]
 	(* <- lang_ru;; *);
-	[minimum spanning tree*]
+	[minimal spanning tree*]
 	(* <- lang_en;; *);
 => nrel_idtf:
 	[минимальный остов*]
