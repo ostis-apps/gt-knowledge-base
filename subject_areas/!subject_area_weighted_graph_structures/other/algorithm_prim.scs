@@ -5,6 +5,7 @@ algorithm_prim
 	(* <- lang_ru;; *);
 	[Prim's algorithm]
 	(* <- lang_en;; *);
+<= nrel_inclusion: greedy_algorithm;
 <- rrel_key_sc_element:
 	...  
 	(*

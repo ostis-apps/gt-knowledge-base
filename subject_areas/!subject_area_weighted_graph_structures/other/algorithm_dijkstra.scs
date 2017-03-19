@@ -5,6 +5,7 @@ algorithm_dijkstra
 	(* <- lang_ru;; *);
 	[Dijkstra's algorithm]
 	(* <- lang_en;; *);
+<= nrel_inclusion: greedy_algorithm;
 <- rrel_key_sc_element:
 	...  
 	(*

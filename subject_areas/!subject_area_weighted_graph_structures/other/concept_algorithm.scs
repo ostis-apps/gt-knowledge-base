@@ -1,0 +1,46 @@
+concept_algorithm
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[алгоритм]
+	(* <- lang_ru;; *);
+	[algorithm]
+	(* <- lang_en;; *);
+<= nrel_inclusion: greedy_algorithm;
+<- rrel_key_sc_element:
+	...
+	(*
+		<- definition;;
+		=> nrel_main_idtf:
+			[Опр.(алгоритм)]
+			(* <- lang_ru;; *);
+			[Def.(algorithm)]
+			(* <- lang_en;; *);;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example:
+				"file://content_html/definition_for_algorithm_ru.html"
+				(* <- lang_ru;;	*);
+                "file://content_html/definition_for_algorithm_en.html"
+				(* <- lang_en;;	*);;
+			*);;
+	*);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- statement;;
+		=> nrel_main_idtf:
+			[Утв.(формы записи алгоритма)]
+			(* <- lang_ru;; *);
+			[Stat.(algorithm recording forms)]
+			(* <- lang_en;; *);;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example:
+				"file://content_html/statement_for_algorithm_ru.html"
+				(* <- lang_ru;;	*);
+                "file://content_html/statement_for_algorithm_en.html"
+				(* <- lang_en;;	*);;
+			*);;
+	*);;
