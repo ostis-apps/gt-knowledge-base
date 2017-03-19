@@ -1,32 +1,33 @@
 sc_node_norole_relation ->nrel_spanning_tree;;
-sc_relation -> nrel_spanning_tree;;
 binary_relation -> nrel_spanning_tree;;
 non_oriented_relation -> nrel_spanning_tree;;
 
 nrel_spanning_tree
 	=> nrel_main_idtf: 
-		[ каркас* ] (* <-lang_ru;; *);
 		[ spanning tree* ] (* <-lang_en;; *);
 	=> nrel_idtf :
-		[остовное дерево ](* <-lang_ru;; *);
-	    	[скелет ](* <-lang_ru;; *);
-		[остов ](* <-lang_ru;; *);
+		[остовное дерево*](* <-lang_ru;; *);
+		[ каркас* ] (* <-lang_ru;; *);
+	    	[скелет*](* <-lang_ru;; *);
+		[остов*](* <-lang_ru;; *);
 				
 <-rrel_key_sc_element:
 		...  
 		(*<-sc_definition;;
 		=> nrel_main_idtf: [Опр.(каркас)] (* <- lang_ru;; *);;
+		<= nrel_using_constants:
+							{
+								concept_forest;
+								concept_node;
+								concept_graph							
+							};;
 		<=nrel_sc_text_translation:
 		...
 			(*
 			-> rrel_example: [Каркас - лес , содержащий все вершины графа.] (*<-lang_ru;;*);;	
 			*);;
 		*);
-<= nrel_using_constants:
-							{
-								concept_branching;
-								concept_vertex							
-							};
+
 		
 => nrel_definitional_domain: concept_undirected_graph;
  => nrel_first_domain:  concept_undirected_graph;

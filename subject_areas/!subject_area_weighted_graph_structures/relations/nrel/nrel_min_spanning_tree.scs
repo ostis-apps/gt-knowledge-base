@@ -1,12 +1,12 @@
 nrel_min_spanning_tree
 <- sc_node_norole_relation;
 => nrel_main_idtf:
-	[минимальное остовное дерево*]
+	[минимальный остов*]
 	(* <- lang_ru;; *);
 	[minimal spanning tree*]
 	(* <- lang_en;; *);
 => nrel_idtf:
-	[минимальный остов*]
+	[минимальный остовное дерево*]
 	(* <- lang_ru;; *);
 	[кратчайший остов*]
 	(* <- lang_ru;; *);
@@ -16,6 +16,11 @@ nrel_min_spanning_tree
 	...  
 	(*
 		<- definition;;
+		<= nrel_using_constants:
+        {
+        	nrel_weight;
+        	nrel_subtree
+        };;
 		=> nrel_main_idtf: 
 			[Опр.(минимальное остовное дерево*)]
 			(* <- lang_ru;; *);
@@ -32,42 +37,35 @@ nrel_min_spanning_tree
 			*);;		
 		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
 	*);
-<= nrel_using_constants: 
-{
-	nrel_weight;
-	nrel_subtree
-};
 => nrel_first_domain: concept_weighted_graph;
 => nrel_second_domain: concept_weighted_tree;
 <= nrel_definitional_domain:
 ...
-(*
-	<= nrel_combination:
-	{
-		concept_weighted_graph;
-		concept_weighted_tree
-	};;
-*);
+    (*
+        <= nrel_combination:
+        {
+            concept_weighted_graph;
+            concept_weighted_tree
+        };;
+    *);
 <- rrel_key_sc_element:
 	...  
 	(*
 		<- statement;;
-		=> nrel_main_idtf: 
-			[Утв.(минимальное остовное дерево*)]
-			(* <- lang_ru;; *);
-			[Stat.(minimum spanning tree*)]
-			(* <- lang_en;; *);;	
-		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
-	*);
-
-<- rrel_key_sc_element:
-	...  
-	(*
-		<- statement;;
-		=> nrel_main_idtf: 
-			[Утв.(минимальное остовное дерево*; остов с минимальным весом самого тяжёлого ребра*)]
-			(* <- lang_ru;; *);
-			[Stat.(minimum spanning tree*; spanning tree with minimum weight of the heaviest edge*)]
-			(* <- lang_en;; *);;				
-		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+		=> nrel_main_idtf:
+        			[Утв.(минимальное остовное дерево*)]
+        			(* <- lang_ru;; *);
+        			[Stat.(minimum spanning tree*)]
+        			(* <- lang_en;; *);;
+        		<= nrel_sc_text_translation:
+        			...
+        			(*
+        			-> rrel_example:
+        				"file://content_html/statement_for_minimum_spanning_tree_ru.html"
+        				(* <- lang_ru;;	*);
+                        "file://content_html/statement_for_minimum_spanning_tree_en.html"
+        				(* <- lang_en;;	*);;
+        			*);;
+        		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
 	*);;
+

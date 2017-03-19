@@ -18,11 +18,14 @@ concept_subj_domain_graph_structures_weighted
 	problem_finding_min_weight_path;
 	problem_steiner;
 	problem_traveling_salesman;
+	problem_of_shortest_path;
+	algorithm_search_A_star;
 	algorithm_hungarian;
 	algorithm_little;
 	algorithm_dijkstra;
 	algorithm_kruskal;
 	algorithm_ford_bellman;
+	algorithm_floyd_worshell;
 	algorithm_prim;
 	algorithm_boruvka;
 -> rrel_explored_relation: 

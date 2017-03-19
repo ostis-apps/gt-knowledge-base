@@ -1,0 +1,47 @@
+algorithm_floyd_worshell
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[алгоритм Флойда - Уоршелла]
+	(* <- lang_ru;; *);
+	[Floyd-Worshell's algorithm]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- definition;;
+		=> nrel_main_idtf:
+			[Опр.(алгоритм Флойда - Уоршелла)]
+			(* <- lang_ru;; *);
+			[Def.(Floyd-Worshell's algorithm)]
+			(* <- lang_en;; *);;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example:
+				"file://content_html/definition_for_algorithm_floyd-worshell_ru.html"
+				(* <- lang_ru;;	*);
+                "file://content_html/definition_for_algorithm_floyd-worshell_en.html"
+				(* <- lang_en;;	*);;
+			*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+	*);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- statement;;
+		=> nrel_main_idtf:
+			[Утв.(алгоритм Форда-Беллмана)]
+			(* <- lang_ru;; *);
+			[Stat.(Ford-Bellman's algorithm)]
+			(* <- lang_en;; *);;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example:
+				"file://content_html/statement_for_algorithm_floyd-worshell_ru.html"
+				(* <- lang_ru;;	*);
+                "file://content_html/statement_for_algorithm_floyd-worshell_en.html"
+				(* <- lang_en;;	*);;
+			*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+	*);;

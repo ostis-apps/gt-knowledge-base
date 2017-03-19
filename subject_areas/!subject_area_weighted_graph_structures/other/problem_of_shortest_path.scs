@@ -1,0 +1,27 @@
+problem_of_shortest_path
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[Задача о кратчайшем пути в заданный пункт назначения]
+	(* <- lang_ru;; *);
+	[The problem of the shortest path to a given destination]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- definition;;
+		=> nrel_main_idtf:
+			[Опр.(Задача о кратчайшем пути в заданный пункт назначения)]
+			(* <- lang_ru;; *);
+			[Def.(The problem of the shortest path to a given destination)]
+			(* <- lang_en;; *);;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example:
+				"file://content_html/definition_for_problem_of_shortest_path_ru.html"
+				(* <- lang_ru;;	*);
+                "file://content_html/definition_for_problem_of_shortest_path_en.html"
+				(* <- lang_en;;	*);;
+			*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+	*);;
