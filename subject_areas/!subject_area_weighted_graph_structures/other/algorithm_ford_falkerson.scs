@@ -1,0 +1,47 @@
+algorithm_ford_falkerson
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[алгоритм Форда-Фалкерсона]
+	(* <- lang_ru;; *);
+	[Ford-Falkerson's algorithm]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- definition;;
+		=> nrel_main_idtf:
+			[Опр.(алгоритм Форда — Фалкерсона)]
+			(* <- lang_ru;; *);
+			[Def.(Ford-Falkerson's algorithm)]
+			(* <- lang_en;; *);;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example:
+				"file://content_html/definition_for_ford_falkerson_algorithm_ru.html"
+				(* <- lang_ru;;	*);
+                "file://content_html/definition_for_ford_falkerson_algorithm_en.html"
+				(* <- lang_en;;	*);;
+			*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+	*);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- statement;;
+		=> nrel_main_idtf:
+			[Утв.(алгоритм Форда — Фалкерсона)]
+			(* <- lang_ru;; *);
+			[Stat.(Ford-Falkerson's algorithm)]
+			(* <- lang_en;; *);;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example:
+				"file://content_html/statement_for_ford_falkerson_algorithm_ru.html"
+				(* <- lang_ru;;	*);
+                "file://content_html/statement_for_ford_falkerson_algorithm_en.html"
+				(* <- lang_en;;	*);;
+			*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+	*);;
