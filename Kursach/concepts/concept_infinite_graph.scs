@@ -1,0 +1,39 @@
+sc_node_not_relation->concept_infinite_graph;;
+
+concept_infinite_graph
+=> nrel_main_idtf:
+	[ бесконечный граф ] (* <-lang_ru;; *);
+	[ infinite graph ] (* <-lang_en;; *);
+
+<-rrel_key_sc_element:
+	...
+	(*
+	<-sc_definition;;
+	<= nrel_using_constants:
+	{
+		concept_graph;
+		concept_node;
+		concept_arg
+	};;
+	=> nrel_main_idtf: [Опр.(бесконечный граф)] (* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+		[Бесконечный граф — граф, имеющий бесконечно много вершин и/или рёбер.] (*<-lang_ru;;*);;			
+		*);;
+	*);
+
+<- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://picture/concept_infinite_graph.gif";;
+			*);;
+	*);;
+
+
