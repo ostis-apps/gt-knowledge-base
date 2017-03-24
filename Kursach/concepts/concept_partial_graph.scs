@@ -1,0 +1,55 @@
+sc_node_not_relation->concept_partial_graph;;
+
+concept_partial_graph
+=> nrel_main_idtf:
+	[ частичный граф ] (* <-lang_ru;; *);
+	[ partial graph ] (* <-lang_en;; *);
+
+
+<-rrel_key_sc_element:
+	...
+	(*
+	<-sc_definition;;
+	<= nrel_using_constants:
+	{		
+		concept_arg;
+		concept_node		
+	};;
+	=> nrel_main_idtf: [Опр.(частичный граф)] (* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+		[Частичный граф - подграф, содержащий все вершины исходного графа и подмножество его рёбер.] (*<-lang_ru;;*);;			
+		*);;
+	*);
+
+<-rrel_key_sc_element:
+	... 
+	(*
+	=>nrel_main_idtf:[Утв.(частичный граф) ](*<-lang_ru;;*);;
+	<- sc_statement;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Частичный граф содержит часть ребер.] (*<-lang_ru;;*);;
+		*);;
+	*);
+
+<-rrel_key_sc_element:
+	... 
+	(*
+	=>nrel_main_idtf:[Утв.(частичный граф) ](*<-lang_ru;;*);;
+	<- sc_statement;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Ноль-граф любого графа считается его частичным гра­фом.] (*<-lang_ru;;*);;
+		*);;
+	*);;
+
+
+
+
+
+

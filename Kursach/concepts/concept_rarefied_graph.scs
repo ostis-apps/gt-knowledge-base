@@ -1,0 +1,28 @@
+sc_node_not_relation->concept_rarefied_graph;;
+
+concept_rarefied_graph
+=> nrel_main_idtf:
+	[ разреженный граф ] (* <-lang_ru;; *);
+	[ rarefied graph ] (* <-lang_en;; *);
+
+<-rrel_key_sc_element:
+	...
+	(*
+	<-sc_definition;;
+	<= nrel_using_constants:
+	{
+		concept_graph;
+		concept_arg;
+		concept_node
+	};;
+	=> nrel_main_idtf: [Опр.(разреженный граф)] (* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+		[Разреженный граф - это граф, в котором количество рёбер близко к количеству вершин в графе.] (*<-lang_ru;;*);;			
+		*);;
+	*);;
+
+
+
