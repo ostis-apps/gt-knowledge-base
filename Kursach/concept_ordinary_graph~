@@ -1,0 +1,56 @@
+sc_node_not_relation->concept_ordinary_graph;;
+
+concept_ordinary_graph
+=> nrel_main_idtf:
+	[ обыкновенный граф ] (* <-lang_ru;; *);
+	[ ordinary graph ] (* <-lang_en;; *);
+
+
+<-rrel_key_sc_element:
+	...
+	(*
+	<-sc_definition;;
+	=> nrel_main_idtf: [Опр.(обыкновенный граф)] (* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+		[Обыкновенный граф - это множество точек (вершин) на плоскости, некоторые из которых соединены между собой ненаправленными отрезками (ребрами) (прямолинейными или криволинейными).] (*<-lang_ru;;*);;	
+		<= nrel_using_constants:
+		{
+			concept_graph;
+			concept_arg;
+			concept_node
+		};;		
+		*);;
+	*);
+
+<-rrel_key_sc_element:
+	... 
+	(*
+	=>nrel_main_idtf:[Утв.(обыкновенный граф) ](*<-lang_ru;;*);;
+	<- sc_statement;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Каждый обыкновенный граф обладает, по крайней мере, одним собственным изоморфизмом, а именно, тривиальным изоморфизмом, при котором каждая вершина и ребро соответствуют самим себе.] (*<-lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://picture/concept_ordinary_graph.gif";;
+			*);;
+	*);;
+
+
+
+
+
+

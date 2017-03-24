@@ -1,0 +1,88 @@
+sc_node_not_relation->concept_graph_cycle;;
+
+concept_graph_cycle
+=> nrel_main_idtf:
+	[ граф-цикл ] (* <-lang_ru;; *);
+	[ graph-cycle ] (* <-lang_en;; *);
+
+
+<-rrel_key_sc_element:
+	...
+	(*
+	<-sc_definition;;
+	<= nrel_using_constants:
+	{
+		concept_graph;
+		concept_node;
+		concept_cycle
+	};;
+	=> nrel_main_idtf: [Опр.(граф-цикл)] (* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+		[Граф-цикл - это граф, состоящий из единственного цикла, или, другими словами, некоторого числа вершин, соединённых замкнутой цепью. ] (*<-lang_ru;;*);;			
+		*);;
+	*);
+
+<-rrel_key_sc_element:
+	... 
+	(*
+	=>nrel_main_idtf:[Утв.(граф-цикл) ](*<-lang_ru;;*);;
+	<- sc_statement;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Граф-цикл связен.] (*<-lang_ru;;*);;
+		*);;
+	*);
+
+<-rrel_key_sc_element:
+	... 
+	(*
+	=>nrel_main_idtf:[Утв.(граф-цикл) ](*<-lang_ru;;*);;
+	<- sc_statement;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Граф-цикл является Эйлеровым графом.] (*<-lang_ru;;*);;
+		*);;
+	*);
+
+<-rrel_key_sc_element:
+	... 
+	(*
+	=>nrel_main_idtf:[Утв.(граф-цикл) ](*<-lang_ru;;*);;
+	<- sc_statement;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Граф-цикл является Эйлеровым и Гамильтоновым графом.] (*<-lang_ru;;*);;
+		*);;
+	*);
+
+<-rrel_key_sc_element:
+	... 
+	(*
+	=>nrel_main_idtf:[Утв.(граф-цикл) ](*<-lang_ru;;*);;
+	<- sc_statement;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Граф-цикл 2-регулярен.] (*<-lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://picture/concept_graph_cycle.png";;
+			*);;
+	*);;
+
+

@@ -1,0 +1,93 @@
+sc_node_not_relation->concept_dual_graph;;
+
+concept_dual_graph
+=> nrel_main_idtf:
+	[ двойственный граф ] (* <-lang_ru;; *);
+	[ dual graph ] (* <-lang_en;; *);
+
+
+<-rrel_key_sc_element:
+	...
+	(*
+	<-sc_definition;;
+	{				
+		concept_planar_graph;
+		concept_graph;
+		concept_node;	
+		concept_arg		
+	};;
+	=> nrel_main_idtf: [Опр.(двойственный граф)] (* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+		[Двойственный граф G' к планарному графу G — это граф, в котором вершины соответствуют граням графа G; эти вершины соединены ребром, только если соответствующие им грани графа G имеют общее ребро.] (*<-lang_ru;;*);;	
+		<= nrel_using_constants:
+		*);;
+	*);
+
+<-rrel_key_sc_element:
+	... 
+	(*
+	=>nrel_main_idtf:[Утв.(двойственный граф) ](*<-lang_ru;;*);;
+	<- sc_statement;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Двойственный граф является псевдографом: в нём могут быть петли и кратные рёбра.] (*<-lang_ru;;*);;
+		*);;
+	*);
+
+<-rrel_key_sc_element:
+	... 
+	(*
+	=>nrel_main_idtf:[Утв.(двойственный граф) ](*<-lang_ru;;*);;
+	<- sc_statement;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Двойственный планарному граф является плоским мультиграфом.] (*<-lang_ru;;*);;
+		*);;
+	*);
+
+<-rrel_key_sc_element:
+	... 
+	(*
+	=>nrel_main_idtf:[Утв.(двойственный граф) ](*<-lang_ru;;*);;
+	<- sc_statement;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Если G является связным графом и если G′ — двойственен G, то G двойственен G′.] (*<-lang_ru;;*);;
+		*);;
+	*);
+
+<-rrel_key_sc_element:
+	... 
+	(*
+	=>nrel_main_idtf:[Утв.(двойственный граф) ](*<-lang_ru;;*);;
+	<- sc_statement;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Поскольку двойственный граф зависит от способа укладки, к одному и тому же планарному графу могут существовать несколько двойственных (неизоморфных).] (*<-lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://picture/concept_dual_graph.png";;
+			*);;
+	*);;
+
+
+
+
+
+
