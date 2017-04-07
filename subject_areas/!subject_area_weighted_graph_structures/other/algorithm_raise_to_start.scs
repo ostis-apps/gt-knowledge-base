@@ -1,0 +1,51 @@
+algorithm_raise_to_start
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[алгоритм "поднять-в-начало" ]
+	(* <- lang_ru;; *);
+	["raise-to-start" algorithm]
+	(* <- lang_en;; *);
+<= nrel_inclusion: 	algorithm_for_pushing_the_pref;
+<- rrel_key_sc_element:
+	...
+	(*
+		<- definition;;
+		<= nrel_using_constants:
+                        {
+                        	algorithm_for_pushing_the_pref;
+                        	concept_directed_graph
+                        };;
+		=> nrel_main_idtf:
+			[Опр.(алгоритм "поднять-в-начало")]
+			(* <- lang_ru;; *);
+			[Def.("raise-to-start" algorithm)]
+			(* <- lang_en;; *);;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example:
+				"file://content_html/definition_for_algorithm_raise_to_start_ru.html"
+				(* <- lang_ru;;	*);
+                "file://content_html/definition_for_algorithm_raise_to_start_en.html"
+				(* <- lang_en;;	*);;
+			*);;
+	*);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- statement;;
+		=> nrel_main_idtf:
+			[Утв.(алгоритм "поднять-в-начало")]
+			(* <- lang_ru;; *);
+			[Stat.("raise-to-start" algorithm)]
+			(* <- lang_en;; *);;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example:
+				"file://content_html/statement_for_algorithm_raise_to_start_ru.html"
+				(* <- lang_ru;;	*);
+                "file://content_html/statement_for_algorithm_raise_to_start_en.html"
+				(* <- lang_en;;	*);;
+			*);;
+	*);;

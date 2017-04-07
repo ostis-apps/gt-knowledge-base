@@ -10,6 +10,12 @@ concept_weighted_tree
 	...  
 	(*
 		<- definition;;
+		<= nrel_using_constants:
+        {
+        	rrel_edge;
+        	rrel_vertex;
+        	nrel_weight
+        };;
 		=> nrel_main_idtf: 
 			[Опр.(взвешенное дерево)]
 			(* <- lang_ru;; *);
@@ -26,12 +32,6 @@ concept_weighted_tree
 			*);;		
 		<= nrel_bibliographical_source: F_Harary_Graph_Theory;;
 	*);
-<= nrel_using_constants: 
-{
-	rrel_edge;
-	rrel_vertex;
-	nrel_weight
-};
 <- rrel_key_sc_element:
 	...  
 	(*

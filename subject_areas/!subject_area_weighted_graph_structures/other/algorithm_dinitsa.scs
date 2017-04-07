@@ -1,9 +1,9 @@
-algorithm_search_A_star
+algorithm_dinitsa
 <- sc_node_not_relation;
 => nrel_main_idtf:
-	[алгоритм поиска A*]
+	[алгоритм Диница]
 	(* <- lang_ru;; *);
-	[search A* algorithm]
+	[Dinitsa's algorithm]
 	(* <- lang_en;; *);
 <= nrel_inclusion: 	concept_graph_algorithm;
 <- rrel_key_sc_element:
@@ -12,22 +12,21 @@ algorithm_search_A_star
 		<- definition;;
 		<= nrel_using_constants:
                         {
-                        	concept_weighted_graph;
-                        	rrel_vertex;
-                        	nrel_edge_weight
+                        	concept_flow_network;
+                        	concept_directed_graph
                         };;
 		=> nrel_main_idtf:
-			[Опр.(алгоритм поиска A*)]
+			[Опр.(алгоритм Диница)]
 			(* <- lang_ru;; *);
-			[Def.(search A* algorithm)]
+			[Def.(Dinitsa's algorithm)]
 			(* <- lang_en;; *);;
 		<= nrel_sc_text_translation:
 			...
 			(*
 			-> rrel_example:
-				"file://content_html/definition_for_algorithm_search_A_star_ru.html"
+				"file://content_html/definition_for_algorithm_dinitsa_ru.html"
 				(* <- lang_ru;;	*);
-                "file://content_html/definition_for_algorithm_search_A_star_en.html"
+                "file://content_html/definition_for_algorithm_dinitsa_en.html"
 				(* <- lang_en;;	*);;
 			*);;
 		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
@@ -37,17 +36,17 @@ algorithm_search_A_star
 	(*
 		<- statement;;
 		=> nrel_main_idtf:
-			[Утв.(алгоритм поиска A*)]
+			[Утв.(алгоритм Диница)]
 			(* <- lang_ru;; *);
-			[Stat.(search A* algorithm)]
+			[Stat.(Dinitsa's algorithm)]
 			(* <- lang_en;; *);;
 		<= nrel_sc_text_translation:
 			...
 			(*
 			-> rrel_example:
-				"file://content_html/statement_for_algorithm_search_A_star_ru.html"
+				"file://content_html/statement_for_algorithm_dinitsa_ru.html"
 				(* <- lang_ru;;	*);
-                "file://content_html/statement_for_algorithm_search_A_star_en.html"
+                "file://content_html/statement_for_algorithm_dinitsa_en.html"
 				(* <- lang_en;;	*);;
 			*);;
 		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;

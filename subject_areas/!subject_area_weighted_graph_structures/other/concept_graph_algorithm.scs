@@ -1,19 +1,18 @@
-concept_algorithm
+concept_graph_algorithm
 <- sc_node_not_relation;
 => nrel_main_idtf:
-	[алгоритм]
+	[алгоритм на графах]
 	(* <- lang_ru;; *);
-	[algorithm]
+	[algorithm on graphs]
 	(* <- lang_en;; *);
-<= nrel_inclusion: greedy_algorithm;
 <- rrel_key_sc_element:
 	...
 	(*
 		<- definition;;
 		=> nrel_main_idtf:
-			[Опр.(алгоритм)]
+			[Опр.(алгоритм на графах)]
 			(* <- lang_ru;; *);
-			[Def.(algorithm)]
+			[Def.(algorithm on graphs)]
 			(* <- lang_en;; *);;
 		<= nrel_sc_text_translation:
 			...
@@ -30,9 +29,9 @@ concept_algorithm
 	(*
 		<- statement;;
 		=> nrel_main_idtf:
-			[Утв.(формы записи алгоритма)]
+			[Утв.(формы записи алгоритма на графах)]
 			(* <- lang_ru;; *);
-			[Stat.(algorithm recording forms)]
+			[Stat.(algorithm on graphs recording forms)]
 			(* <- lang_en;; *);;
 		<= nrel_sc_text_translation:
 			...

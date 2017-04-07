@@ -5,6 +5,7 @@ greedy_algorithm
 	(* <- lang_ru;; *);
 	[greedy algoritm]
 	(* <- lang_en;; *);
+<= nrel_inclusion: 	concept_graph_algorithm;
 <- rrel_key_sc_element:
 	...
 	(*
