@@ -5,10 +5,17 @@ algorithm_ford_falkerson
 	(* <- lang_ru;; *);
 	[Ford-Falkerson's algorithm]
 	(* <- lang_en;; *);
+<= nrel_inclusion: 	concept_graph_algorithm;
 <- rrel_key_sc_element:
 	...
 	(*
 		<- definition;;
+		<= nrel_using_constants:
+                        {
+                        	concept_weighted_graph;
+                        	rrel_vertex;
+                        	nrel_edge_weight
+                        };;
 		=> nrel_main_idtf:
 			[Опр.(алгоритм Форда — Фалкерсона)]
 			(* <- lang_ru;; *);

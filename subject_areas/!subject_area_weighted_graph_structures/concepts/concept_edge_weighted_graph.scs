@@ -9,6 +9,12 @@ concept_edge_weighted_graph
 	...  
 	(*
 		<- definition;;
+		<= nrel_using_constants:
+        {
+        	rrel_edge;
+        	rrel_oredge;
+        	nrel_edge_weight
+        };;
 		=> nrel_main_idtf: 
 			[Опр.(граф со взвешенными рёбрами)]
 			(* <- lang_ru;; *);
@@ -25,12 +31,6 @@ concept_edge_weighted_graph
 			*);;		
 		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
 	*);
-<= nrel_using_constants: 
-{
-	rrel_edge;
-	rrel_oredge;
-	nrel_edge_weight
-};
 <- rrel_key_sc_element: 
 	...
 	(*

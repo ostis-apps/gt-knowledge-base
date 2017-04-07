@@ -1,5 +1,5 @@
-We set up an array of distances d [0 \ldots n-1], which, after testing the algorithm, will contain the answer to the problem. At the beginning of the work we fill it in the following way: d [v] = 0, and all other elements d [] are equal to infinity \infty.
+We set up an array of distances d [0 .. n-1], which, after testing the algorithm, will contain the answer to the problem. At the beginning of the work we fill it in the following way: d [v] = 0, and all other elements d [] are equal to infinity .
 
 The Ford-Bellman algorithm itself consists of several phases. At each phase, the entire edge of the graph is viewed, and the algorithm attempts to relax along each edge (a, b) of the value c. Relaxation along an edge is an attempt to improve the value of d [b] by the value of d [a] + c. In fact, this means that we are trying to improve the answer for vertex b, using the edge (a, b) and the current response for vertex a.
 
-It is stated that enough n-1 phases of the algorithm are sufficient to correctly calculate the lengths of all shortest paths in the graph (we repeat, we assume that cycles of negative weight are absent). For unattainable vertices, the distance d [] remains equal to infinity \infty.
+It is stated that enough n-1 phases of the algorithm are sufficient to correctly calculate the lengths of all shortest paths in the graph (we repeat, we assume that cycles of negative weight are absent). For unattainable vertices, the distance d [] remains equal to infinity .
