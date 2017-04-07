@@ -5,7 +5,7 @@ concept_subj_domain_graph_structures_weighted
 	(* <- lang_ru;; *);
 	[Subject domain of weighted graph structures]
 	(* <- lang_en;; *);
--> rrel_maximum_studied_object_class: concept_weighted_graph;
+
 -> rrel_not_maximum_studied_object_class: 
 	concept_vertex_weighted_graph;
 	concept_edge_weighted_graph;
@@ -19,6 +19,7 @@ concept_subj_domain_graph_structures_weighted
 	problem_steiner;
 	problem_traveling_salesman;
 	problem_of_shortest_path;
+	algorithm_dinitsa;
 	algorithm_ford_bellman;
 	algorithm_ford_falkerson;
 	algorithm_search_A_star;

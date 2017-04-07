@@ -10,6 +10,13 @@ algorithm_prim
 	...  
 	(*
 		<- definition;;
+		<= nrel_using_constants:
+                        {
+                        	concept_weighted_graph;
+                        	nrel_min_spanning_tree;
+                        	concept_connected_graph;
+                        	concept_undirected_graph
+                        };;
 		=> nrel_main_idtf: 
 			[Опр.(алгоритм Прима)]
 			(* <- lang_ru;; *);
@@ -18,7 +25,7 @@ algorithm_prim
 		<= nrel_sc_text_translation:
 			...
 			(*
-			-> rrel_example: 
+			-> rrel_example:
 				"file://content_html/definition_for_prims_algorithm_ru.html"
 				(* <- lang_ru;;	*);			
                 "file://content_html/definition_for_prims_algorithm_en.html"

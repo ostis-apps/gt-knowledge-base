@@ -10,10 +10,17 @@ algorithm_hungarian
 	(* <- lang_ru;; *);
 	[алгоритм Манкреса решения задачи о назначениях]
 	(* <- lang_ru;; *);
+<= nrel_inclusion: 	concept_graph_algorithm;
 <- rrel_key_sc_element:
 	...  
 	(*
 		<- definition;;
+		<= nrel_using_constants:
+                        {
+                        	concept_weighted_graph;
+                        	rrel_vertex;
+                        	nrel_edge_weight
+                        };;
 		=> nrel_main_idtf: 
 			[Опр.(венгерский алгоритм)]
 			(* <- lang_ru;; *);

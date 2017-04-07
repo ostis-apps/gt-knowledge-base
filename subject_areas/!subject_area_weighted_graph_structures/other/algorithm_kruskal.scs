@@ -10,6 +10,12 @@ algorithm_kruskal
 	...  
 	(*
 		<- definition;;
+		<= nrel_using_constants:
+                        {
+                        	concept_weighted_graph;
+                        	rrel_vertex;
+                        	nrel_edge_weight
+                        };;
 		=> nrel_main_idtf: 
 			[Опр.(алгоритм Краскала)]
 			(* <- lang_ru;; *);

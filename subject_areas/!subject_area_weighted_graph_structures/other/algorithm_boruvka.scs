@@ -5,10 +5,18 @@ algorithm_boruvka
 	(* <- lang_ru;; *);
 	[Boruvka's algorithm]
 	(* <- lang_en;; *);
+<= nrel_inclusion: 	concept_graph_algorithm;
 <- rrel_key_sc_element:
 	...  
 	(*
 		<- definition;;
+		<= nrel_using_constants:
+                        {
+                        	concept_weighted_graph;
+                        	rrel_vertex;
+                        	nrel_edge_weight;
+                        	concept_directed_graph
+                        };;
 		=> nrel_main_idtf: 
 			[Опр.(алгоритм Борувки)]
 			(* <- lang_ru;; *);
