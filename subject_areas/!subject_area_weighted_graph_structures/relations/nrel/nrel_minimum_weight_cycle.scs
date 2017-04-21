@@ -1,0 +1,41 @@
+nrel_minimum_weight_cycle
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+	[цикл минимального веса*]
+	(* <- lang_ru;; *);
+	[minimum weight cycle*]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- definition;;
+		<= nrel_using_constants:
+        {
+        	nrel_cycle_weight;
+        	nrel_edge_weight;
+        	concept_weighted_graph
+
+        };;
+		=> nrel_main_idtf:
+			[Опр.(цикл минимального веса*)]
+			(* <- lang_ru;; *);
+			[Def.(minimum weight cycle*)]
+			(* <- lang_en;; *);;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example:
+				[Цикл минимального веса - это такой цикл в графе, вес которого является минимальным из возможных.]
+				(* <- lang_ru;;	*);
+                [The minimum weight cycle is a cycle in a graph whose weight is the minimum possible.]
+				(* <- lang_en;;	*);;
+			*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+	*);
+=> nrel_first_domain: concept_flow_network;
+=> nrel_second_domain: number;
+<= nrel_definitional_domain:
+...
+(*
+	<= nrel_combination:concept_weighted_graph;;
+*);;

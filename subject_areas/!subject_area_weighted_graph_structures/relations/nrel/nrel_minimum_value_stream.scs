@@ -1,0 +1,46 @@
+nrel_minimum_value_stream
+<- sc_node_norole_relation;
+=> nrel_main_idtf:
+	[поток минимальной стоимости*]
+	(* <- lang_ru;; *);
+	[minimum value stream*]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- definition;;
+		<= nrel_using_constants:
+        {
+        	concept_flow_network;
+        	rrel_oredge;
+        	rrel_vertex;
+        	nrel_edge_weight
+
+        };;
+		=> nrel_main_idtf:
+			[Опр.(Поток минимальной стоимости*)]
+			(* <- lang_ru;; *);
+			[Def.(minimum value stream*)]
+			(* <- lang_en;; *);;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example:
+				"file://content_html/definition_for_nrel_minimum_value_stream_ru.html"
+				(* <- lang_ru;;	*);
+                "file://content_html/definition_for_nrel_minimum_value_stream_en.html"
+				(* <- lang_en;;	*);;
+			*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+	*);
+=> nrel_first_domain: concept_flow_network;
+=> nrel_second_domain: number;
+<= nrel_definitional_domain:
+...
+(*
+	<= nrel_combination:
+	{
+		concept_flow_network;
+		number
+	};;
+*);;

@@ -1,0 +1,52 @@
+algorithm_finding_the_largest_weighted_vertex_weighted_match
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[алгоритм нахождения наибольшего по весу вершинно-взвешаного паросочетания]
+	(* <- lang_ru;; *);
+	[algorithm for finding the largest weighted vertex-weighted match]
+	(* <- lang_en;; *);
+<= nrel_inclusion: algorithm_hungarian;
+<- rrel_key_sc_element:
+	...
+	(*
+		<- definition;;
+		<= nrel_using_constants:
+                {
+                	concept_weighted_graph;
+                	rrel_vertex;
+                	nrel_vertex_weight
+                };;
+		=> nrel_main_idtf:
+			[Опр.(алгоритм нахождения наибольшего по весу вершинно-взвешаного паросочетания)]
+			(* <- lang_ru;; *);
+			[Def.(algorithm for finding the largest weighted vertex-weighted match)]
+			(* <- lang_en;; *);;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example:
+				"file://content_html/definition_for_finding_the_largest_weighted_vertex_weighted_match_algorithm_ru.html"
+				(* <- lang_ru;;	*);
+                "file://content_html/definition_for_finding_the_largest_weighted_vertex_weighted_match_en.html"
+				(* <- lang_en;;	*);;
+			*);;
+	*);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- statement;;
+		=> nrel_main_idtf:
+			[Утв.(алгоритм нахождения наибольшего по весу вершинно-взвешаного паросочетания)]
+			(* <- lang_ru;; *);
+			[Stat.(algorithm for finding the largest weighted vertex-weighted match)]
+			(* <- lang_en;; *);;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example:
+				"file://content_html/statement_for_finding_the_largest_weighted_vertex_weighted_match_algorithm_ru.html"
+				(* <- lang_ru;;	*);
+                "file://content_html/statement_for_finding_the_largest_weighted_vertex_weighted_match_algorithm_en.html"
+				(* <- lang_en;;	*);;
+			*);;
+	*);;
