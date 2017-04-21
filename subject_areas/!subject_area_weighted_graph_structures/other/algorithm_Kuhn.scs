@@ -1,0 +1,55 @@
+algorithm_Kuhn
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[алгоритм Куна]
+	(* <- lang_ru;; *);
+	[Kuhn's algorithm]
+	(* <- lang_en;; *);
+<= nrel_inclusion: 	greedy_algorithm;
+<- rrel_key_sc_element:
+	...
+	(*
+		<- definition;;
+		<= nrel_using_constants:
+                        {
+                        	concept_weighted_graph;
+                        	rrel_vertex;
+                        	nrel_edge_weight;
+                        	concept_directed_graph
+                        };;
+		=> nrel_main_idtf:
+			[Опр.(алгоритм Куна)]
+			(* <- lang_ru;; *);
+			[Def.(Kuhn's algorithm)]
+			(* <- lang_en;; *);;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example:
+				"file://content_html/definition_for_Kuhn_algorithm_ru.html"
+				(* <- lang_ru;;	*);
+                "file://content_html/definition_for_Kuhn_algorithm_en.html"
+				(* <- lang_en;;	*);;
+			*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+	*);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- statement;;
+		=> nrel_main_idtf:
+			[Утв.(алгоритм Куна)]
+			(* <- lang_ru;; *);
+			[Stat.(Kuhn's algorithm)]
+			(* <- lang_en;; *);;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example:
+				"file://content_html/statement_for_Kuhn_algorithm_ru.html"
+				(* <- lang_ru;;	*);
+                "file://content_html/statement_for_Kuhn_algorithm_en.html"
+				(* <- lang_en;;	*);;
+			*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+	*);;

@@ -9,6 +9,11 @@ concept_weighted_dycks_word
 	...  
 	(*
 		<- definition;;
+		<= nrel_using_constants:
+        {
+        	concept_dycks_word;
+        	nrel_weight
+        };;
 		=> nrel_main_idtf: 
 			[Опр.(взвешенное слово Дика)]
 			(* <- lang_ru;; *);
@@ -25,11 +30,7 @@ concept_weighted_dycks_word
 			*);;		
 		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
 	*);
-<= nrel_using_constants: 
-{
-	concept_dycks_word;
-	nrel_weight
-};
+
 <- rrel_key_sc_element:
 	...  
 	(*

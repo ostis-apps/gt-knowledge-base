@@ -9,6 +9,11 @@ concept_vertex_weighted_graph
 	...  
 	(*
 		<- definition;;
+            <= nrel_using_constants:
+            {
+                rrel_vertex;
+                nrel_vertex_weight
+            };;
 		=> nrel_main_idtf: 
 			[Опр.(граф со взвешенными вершинами)]
 			(* <- lang_ru;; *);
@@ -25,11 +30,7 @@ concept_vertex_weighted_graph
 			*);;		
 		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
 	*);
-<= nrel_using_constants: 
-{
-	rrel_vertex;
-	nrel_vertex_weight
-};
+
 <- rrel_key_sc_element: 
 	...
 	(*

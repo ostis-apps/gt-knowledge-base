@@ -12,6 +12,11 @@ nrel_vertex_weight
 	...
 	(*
 		<- definition;;
+		<= nrel_using_constants:
+        {
+        	rrel_vertex;
+        	number
+        };;
 		=> nrel_main_idtf:
 			[Опр.(вес вершины*)]
 			(* <- lang_ru;; *);
@@ -27,11 +32,7 @@ nrel_vertex_weight
 					(* <- lang_en;; *);;
 			*);;
 	*);
-<= nrel_using_constants:
-{
-	rrel_vertex;
-	number
-};
+
 <- binary_relation;
 <- oriented_relation;
 <- antireflexive_relation;

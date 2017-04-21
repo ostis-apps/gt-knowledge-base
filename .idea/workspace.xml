@@ -2,64 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="499e2712-9a7b-4738-96f7-abd986f2325f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/gt-knowledge-base.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/concepts/concept_transportation_network.scs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/concepts/content_html/definition_for_concept_transportation_network_en.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/concepts/content_html/definition_for_concept_transportation_network_ru.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/concepts/content_html/statement_for_concept_transportation_network_en.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/concepts/content_html/statement_for_concept_transportation_network_ru.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/algorithm_dinitsa.scs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/algorithm_for_pushing_the_pref.scs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/definition_for_algorithm_dinitsa_en.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/definition_for_algorithm_dinitsa_ru.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/definition_for_problem_maximum_flow_en.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/definition_for_problem_maximum_flow_ru.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/definition_for_pushing_the_pref_algorithm_en.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/definition_for_pushing_the_pref_algorithm_ru.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/statement_for_algorithm_dinitsa_en.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/statement_for_algorithm_dinitsa_ru.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/statement_for_problem_maximum_flow_en.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/statement_for_problem_maximum_flow_ru.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/statement_for_pushing_the_pref_algorithm_en.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/statement_for_pushing_the_pref_algorithm_ru.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/problem_maximum_flow.scs" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/subject_areas/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/subject_areas/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/subject_areas/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/subject_areas/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/subject_areas/.idea/subject_areas.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/subject_areas/.idea/workspace.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/subject_areas/subject_area_graph_structures_oriented_cords/concepts/concept_transportation_network.scs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/subject_areas/subject_area_graph_structures_oriented_cords/relations/nrel/contents/minimum_cut.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/subject_areas/subject_area_graph_structures_oriented_cords/relations/nrel/nrel_minimum_cut.scs" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/concepts/concept_min_weight_tree.scs" afterPath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/relations/nrel/nrel_min_weight_tree.scs" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/concepts/content_html/definition_for_concept_min_weight_tree_en.html" afterPath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/relations/nrel/content_html/definition_for_nrel_min_weight_tree_en.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/concepts/content_html/definition_for_concept_min_weight_tree_ru.html" afterPath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/relations/nrel/content_html/definition_for_nrel_min_weight_tree_ru.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/concepts/content_img/concept_min_weight_tree.png" afterPath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/relations/nrel/content_img/nrel_min_weight_tree.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/concept_algorithm.scs" afterPath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/concept_graph_algorithm.scs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/concepts/concept_edge_weighted_graph.scs" afterPath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/concepts/concept_edge_weighted_graph.scs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/concepts/concept_weighted_tree.scs" afterPath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/concepts/concept_weighted_tree.scs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/algorithm_boruvka.scs" afterPath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/algorithm_boruvka.scs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/algorithm_floyd_worshell.scs" afterPath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/algorithm_floyd_worshell.scs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/algorithm_ford_bellman.scs" afterPath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/algorithm_ford_bellman.scs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/algorithm_ford_falkerson.scs" afterPath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/algorithm_ford_falkerson.scs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/algorithm_hungarian.scs" afterPath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/algorithm_hungarian.scs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/algorithm_kruskal.scs" afterPath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/algorithm_kruskal.scs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/algorithm_little.scs" afterPath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/algorithm_little.scs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/algorithm_prim.scs" afterPath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/algorithm_prim.scs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/algorithm_search_A_star.scs" afterPath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/algorithm_search_A_star.scs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/concept_subj_domain_graph_structures_weighted.scs" afterPath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/concept_subj_domain_graph_structures_weighted.scs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/statement_for_ford_bellman_algorithm_en.html" afterPath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/statement_for_ford_bellman_algorithm_en.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/statement_for_ford_bellman_algorithm_ru.html" afterPath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/statement_for_ford_bellman_algorithm_ru.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/greedy_algorithm.scs" afterPath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/greedy_algorithm.scs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/relations/nrel/nrel_chain_weight.scs" afterPath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/relations/nrel/nrel_chain_weight.scs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subject_areas/subject_area_graph_structures_oriented_cords/concepts/concept_flow_network.scs" afterPath="$PROJECT_DIR$/subject_areas/subject_area_graph_structures_oriented_cords/concepts/concept_flow_network.scs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/algorithm_Kuhn.scs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/algorithm_ant.scs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/algorithm_edmonds_Carp.scs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/algorithm_finding_the_largest_weighted_vertex_weighted_match.scs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/definition_for_Kuhn_algorithm_en.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/definition_for_Kuhn_algorithm_ru.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/definition_for_ant_algorithm_en.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/definition_for_ant_algorithm_ru.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/definition_for_edmonds_carp_algorithm_en.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/definition_for_edmonds_carp_algorithm_ru.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/definition_for_finding_the_largest_weighted_vertex_weighted_match_algorithm_ru.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/definition_for_finding_the_largest_weighted_vertex_weighted_match_en.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/statement_for_Kuhn_algorithm_en.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/statement_for_Kuhn_algorithm_ru.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/statement_for_ant_algorithm_en.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/statement_for_ant_algorithm_ru.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/statement_for_edmonds_carp_algorithm_en.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/statement_for_edmonds_carp_algorithm_ru.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/statement_for_finding_the_largest_weighted_vertex_weighted_match_algorithm_en.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/statement_for_finding_the_largest_weighted_vertex_weighted_match_algorithm_ru.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/relations/nrel/content_html/definition_for_nrel_circulation_en.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/relations/nrel/content_html/definition_for_nrel_circulation_ru.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/relations/nrel/nrel_circulation.scs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/relations/nrel/nrel_minimum_value_stream.scs" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/relations/nrel/content_html/definition_for_nrel_min_weight_cycle_en.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/relations/nrel/content_html/definition_for_nrel_min_weight_cycle_ru.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/relations/nrel/nrel_min_weight_cycle.scs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/relations/nrel/nrel_subgraph_weight.scs" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/subject_areas/concepts_without_subject_area/relations/nrel/nrel_weight_matrix.scs" afterPath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/relations/nrel/nrel_weight_matrix.scs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/concepts/concept_shortest_steiner_tree.scs" afterPath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/concepts/concept_shortest_steiner_tree.scs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/concepts/concept_vertex_weighted_graph.scs" afterPath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/concepts/concept_vertex_weighted_graph.scs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/concepts/concept_weighted_dycks_word.scs" afterPath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/concepts/concept_weighted_dycks_word.scs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/concepts/concept_weighted_graph.scs" afterPath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/concepts/concept_weighted_graph.scs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/relations/nrel/nrel_cycle_weight.scs" afterPath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/relations/nrel/nrel_cycle_weight.scs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/relations/nrel/nrel_edge_weight.scs" afterPath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/relations/nrel/nrel_edge_weight.scs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/relations/nrel/nrel_min_perfect_matching.scs" afterPath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/relations/nrel/nrel_min_perfect_matching.scs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/relations/nrel/nrel_vertex_weight.scs" afterPath="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/relations/nrel/nrel_vertex_weight.scs" />
     </list>
     <ignored path="gt-knowledge-base.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -79,22 +59,42 @@
     <favorites_list name="gt-knowledge-base" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="algorithm_raise_to_start.scs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/algorithm_raise_to_start.scs">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="nrel_minimum_value_stream.scs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/relations/nrel/nrel_minimum_value_stream.scs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="846">
-              <caret line="47" column="78" selection-start-line="47" selection-start-column="37" selection-end-line="47" selection-end-column="78" />
+            <state relative-caret-position="18">
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="nrel_minimum_cut.scs" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/relations/nrel/nrel_minimum_cut.scs">
+      <file leaf-file-name="nrel_minimum_weight_cycle.scs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/relations/nrel/nrel_minimum_weight_cycle.scs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+            <state relative-caret-position="245">
+              <caret line="39" column="48" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="definition_for_nrel_minimum_value_stream_en.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/relations/nrel/content_html/definition_for_nrel_minimum_value_stream_en.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="1" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="definition_for_nrel_minimum_value_stream_ru.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/relations/nrel/content_html/definition_for_nrel_minimum_value_stream_ru.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -120,10 +120,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/definition_for_pushing_the_pref_algorithm_ru.html" />
-        <option value="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/definition_for_pushing_the_pref_algorithm_en.html" />
-        <option value="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/statement_for_pushing_the_pref_algorithm_en.html" />
-        <option value="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/statement_for_pushing_the_pref_algorithm_ru.html" />
         <option value="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/algorithm_for_pushing_the_pref.scs" />
         <option value="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/algorithm_prim.scs" />
         <option value="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/relations/nrel/nrel_chain_weight.scs" />
@@ -131,13 +127,50 @@
         <option value="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/relations/nrel/content_html/definition_for_nrel_minimum_cut_en.html" />
         <option value="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/relations/nrel/content_html/statement_for_nrel_minimum_cut_ru.html" />
         <option value="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/relations/nrel/content_html/statement_for_nrel_minimum_cut_en.html" />
-        <option value="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/algorithm_raise_to_start.scs" />
         <option value="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/definition_for_algorithm_raise_to_start_ru.html" />
         <option value="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/definition_for_algorithm_raise_to_start_en.html" />
         <option value="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/statement_for_algorithm_raise_to_start_ru.html" />
         <option value="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/statement_for_algorithm_raise_to_start_en.html" />
         <option value="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/relations/nrel/nrel_minimum_cut.scs" />
         <option value="$USER_HOME$/new/ostis/kb/LB3.gwf" />
+        <option value="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/algorithm_raise_to_start.scs" />
+        <option value="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/relations/nrel/nrel_min_weight_cycle.scs" />
+        <option value="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/concepts/concept_shortest_steiner_tree.scs" />
+        <option value="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/concepts/concept_vertex_weighted_graph.scs" />
+        <option value="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/concepts/concept_weighted_dycks_word.scs" />
+        <option value="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/concepts/concept_weighted_graph.scs" />
+        <option value="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/relations/nrel/nrel_cycle_weight.scs" />
+        <option value="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/relations/nrel/nrel_edge_weight.scs" />
+        <option value="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/relations/nrel/nrel_min_perfect_matching.scs" />
+        <option value="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/definition_for_finding_the_largest_weighted_vertex_weighted_match_algorithm_ru.html" />
+        <option value="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/definition_for_finding_the_largest_weighted_vertex_weighted_match_en.html" />
+        <option value="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/algorithm_finding_the_largest_weighted_vertex_weighted_match.scs" />
+        <option value="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/statement_for_finding_the_largest_weighted_vertex_weighted_match_algorithm_ru.html" />
+        <option value="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/statement_for_finding_the_largest_weighted_vertex_weighted_match_algorithm_en.html" />
+        <option value="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/algorithm_Kuhn's.scs" />
+        <option value="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/algorithm_Kuhn.scs" />
+        <option value="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/definition_for_Kuhn_algorithm_en.html" />
+        <option value="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/definition_for_Kuhn_algorithm_ru.html" />
+        <option value="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/statement_for_Kuhn_algorithm_ru.html" />
+        <option value="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/statement_for_Kuhn_algorithm_en.html" />
+        <option value="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/definition_for_edmonds_carp_algorithm_ru.html" />
+        <option value="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/definition_for_edmonds_carp_algorithm_en.html" />
+        <option value="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/statement_for_edmonds_carp_algorithm_ru.html" />
+        <option value="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/statement_for_edmonds_carp_algorithm_en.html" />
+        <option value="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/algorithm_edmonds_Carp.scs" />
+        <option value="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/algorithm_ant.scs" />
+        <option value="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/definition_for_ant_algorithm_ru.html" />
+        <option value="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/definition_for_ant_algorithm_en.html" />
+        <option value="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/statement_for_ant_algorithm_ru.html" />
+        <option value="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/statement_for_ant_algorithm_en.html" />
+        <option value="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/concepts/concept_circulation.scs" />
+        <option value="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/relations/nrel/nrel_circulation.scs" />
+        <option value="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/relations/nrel/content_html/definition_for_nrel_circulation_ru.html" />
+        <option value="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/relations/nrel/content_html/definition_for_nrel_circulation_en.html" />
+        <option value="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/relations/nrel/nrel_minimum_value_stream.scs" />
+        <option value="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/relations/nrel/content_html/definition_for_nrel_minimum_value_stream_ru.html" />
+        <option value="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/relations/nrel/content_html/definition_for_nrel_minimum_value_stream_en.html" />
+        <option value="$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/relations/nrel/nrel_minimum_weight_cycle.scs" />
       </list>
     </option>
   </component>
@@ -149,9 +182,9 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="81" />
-    <option name="y" value="52" />
-    <option name="width" value="1265" />
-    <option name="height" value="628" />
+    <option name="y" value="24" />
+    <option name="width" value="1285" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -178,6 +211,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -272,46 +307,18 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="other" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gt-knowledge-base" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gt-knowledge-base" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="subject_areas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="!subject_area_weighted_graph_structures" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="other" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="content_html" />
+              <option name="myItemId" value="concepts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/IdeaProjects/StdClientServer" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
@@ -549,6 +556,7 @@
       <setting name="cmdLine" value="run-app" />
       <setting name="passParentEnv" value="true" />
       <setting name="launchBrowser" value="true" />
+      <setting name="depsClasspath" value="false" />
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method />
     </configuration>
@@ -714,6 +722,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -740,42 +754,46 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1491547438554</updated>
-      <workItem from="1491547442602" duration="6532000" />
+      <workItem from="1491547442602" duration="9874000" />
+      <workItem from="1491564201807" duration="321000" />
+      <workItem from="1491691342169" duration="994000" />
+      <workItem from="1491735220635" duration="98000" />
+      <workItem from="1492717025117" duration="9995000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6532000" />
+    <option name="totallyTimeSpent" value="21282000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="81" y="52" width="1265" height="628" extended-state="0" />
+    <frame x="81" y="24" width="1285" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33126935" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25348645" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32830188" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2534302" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -805,6 +823,24 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
       <collection />
@@ -825,155 +861,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/concepts/concept_transportation_network.scs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/algorithm_dinitsa.scs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="43" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/definition_for_pushing_the_pref_algorithm_ru.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="100" selection-start-line="0" selection-start-column="100" selection-end-line="0" selection-end-column="100" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/definition_for_pushing_the_pref_algorithm_en.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="124" selection-start-line="0" selection-start-column="124" selection-end-line="0" selection-end-column="124" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/statement_for_pushing_the_pref_algorithm_ru.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="156" selection-start-line="0" selection-start-column="156" selection-end-line="0" selection-end-column="156" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/statement_for_pushing_the_pref_algorithm_en.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="157" selection-start-line="0" selection-start-column="157" selection-end-line="0" selection-end-column="157" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/algorithm_dijkstra.scs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/concept_graph_algorithm.scs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-54">
-          <caret line="0" column="23" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/algorithm_prim.scs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="27" column="28" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/subject_areas/subject_area_graph_structures_oriented_cords/relations/nrel/nrel_minimum_cut.scs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-800">
-          <caret line="9" column="16" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/relations/nrel/nrel_chain_weight.scs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/relations/nrel/content_html/definition_for_nrel_minimum_cut_ru.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="66" selection-start-line="0" selection-start-column="66" selection-end-line="0" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/relations/nrel/content_html/definition_for_nrel_minimum_cut_en.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="95" selection-start-line="0" selection-start-column="95" selection-end-line="0" selection-end-column="95" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/relations/nrel/content_html/statement_for_nrel_minimum_cut_ru.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="66" selection-start-line="0" selection-start-column="66" selection-end-line="0" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/relations/nrel/content_html/statement_for_nrel_minimum_cut_en.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/algorithm_for_pushing_the_pref.scs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="30" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/algorithm_little.scs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="16" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/definition_for_algorithm_raise_to_start_ru.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="208" selection-start-line="0" selection-start-column="208" selection-end-line="0" selection-end-column="208" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/definition_for_algorithm_raise_to_start_en.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="207" selection-start-line="0" selection-start-column="207" selection-end-line="0" selection-end-column="207" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -981,7 +872,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="97" selection-start-line="0" selection-start-column="97" selection-end-line="0" selection-end-column="97" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -989,15 +879,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="102" selection-start-line="0" selection-start-column="102" selection-end-line="0" selection-end-column="102" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/algorithm_raise_to_start.scs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="846">
-          <caret line="47" column="78" selection-start-line="47" selection-start-column="37" selection-end-line="47" selection-end-column="78" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1005,14 +886,363 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
           <caret line="997" column="103" selection-start-line="997" selection-start-column="103" selection-end-line="997" selection-end-column="103" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/relations/nrel/nrel_minimum_cut.scs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
-          <caret line="3" column="22" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
+          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/concepts/concept_shortest_steiner_tree.scs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/concepts/concept_transportation_network.scs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-378">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/concepts/concept_vertex_weighted_graph.scs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/concepts/concept_weighted_dycks_word.scs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/concepts/concept_weighted_graph.scs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/concepts/concept_weighted_tree.scs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-756">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/relations/nrel/nrel_min_weight_tree.scs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="15" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/relations/nrel/nrel_chain_weight.scs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/relations/nrel/nrel_edge_weight.scs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-490">
+          <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/relations/nrel/nrel_min_spanning_tree.scs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/relations/nrel/nrel_min_weight_cycle.scs" />
+    <entry file="file://$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/relations/nrel/nrel_min_perfect_matching.scs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="18" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/algorithm_raise_to_start.scs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/definition_for_finding_the_largest_weighted_vertex_weighted_match_algorithm_ru.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/definition_for_finding_the_largest_weighted_vertex_weighted_match_en.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="108" selection-start-line="2" selection-start-column="108" selection-end-line="2" selection-end-column="108" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/statement_for_finding_the_largest_weighted_vertex_weighted_match_algorithm_ru.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="247" selection-start-line="0" selection-start-column="247" selection-end-line="0" selection-end-column="247" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/statement_for_finding_the_largest_weighted_vertex_weighted_match_algorithm_en.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="265" selection-start-line="0" selection-start-column="265" selection-end-line="0" selection-end-column="265" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/algorithm_finding_the_largest_weighted_vertex_weighted_match.scs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/algorithm_boruvka.scs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="54" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/definition_for_Kuhn_algorithm_en.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="71" selection-start-line="0" selection-start-column="71" selection-end-line="0" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/definition_for_Kuhn_algorithm_ru.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="80" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/statement_for_Kuhn_algorithm_ru.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/statement_for_Kuhn_algorithm_en.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="63" selection-start-line="0" selection-start-column="63" selection-end-line="0" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/algorithm_Kuhn.scs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="54" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/definition_for_edmonds_carp_algorithm_ru.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="92" selection-start-line="0" selection-start-column="92" selection-end-line="0" selection-end-column="92" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/definition_for_edmonds_carp_algorithm_en.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="99" selection-start-line="0" selection-start-column="99" selection-end-line="0" selection-end-column="99" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/statement_for_edmonds_carp_algorithm_ru.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="100" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/statement_for_edmonds_carp_algorithm_en.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="88" selection-start-line="0" selection-start-column="88" selection-end-line="0" selection-end-column="88" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/algorithm_dinitsa.scs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/algorithm_dijkstra.scs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="54" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/algorithm_edmonds_Carp.scs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="52" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/definition_for_ant_algorithm_ru.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="187" selection-start-line="0" selection-start-column="187" selection-end-line="0" selection-end-column="187" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/definition_for_ant_algorithm_en.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="197" selection-start-line="0" selection-start-column="197" selection-end-line="0" selection-end-column="197" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/statement_for_ant_algorithm_en.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="277" selection-start-line="0" selection-start-column="277" selection-end-line="0" selection-end-column="277" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/content_html/statement_for_ant_algorithm_ru.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="268" selection-start-line="0" selection-start-column="268" selection-end-line="0" selection-end-column="268" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/concepts/concept_edge_weighted_graph.scs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="43" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/other/algorithm_ant.scs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="49" column="67" selection-start-line="49" selection-start-column="37" selection-end-line="49" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/relations/nrel/nrel_cycle_weight.scs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/concepts/concept_circulation.scs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/relations/nrel/content_html/definition_for_nrel_circulation_ru.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/relations/nrel/content_html/definition_for_nrel_circulation_en.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="67" selection-start-line="0" selection-start-column="67" selection-end-line="0" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/relations/nrel/nrel_circulation.scs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-302">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/relations/nrel/content_html/definition_for_nrel_minimum_value_stream_ru.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/relations/nrel/content_html/definition_for_nrel_minimum_value_stream_en.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="1" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/relations/nrel/nrel_minimum_value_stream.scs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subject_areas/!subject_area_weighted_graph_structures/relations/nrel/nrel_minimum_weight_cycle.scs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="39" column="48" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="48" />
           <folding />
         </state>
       </provider>
