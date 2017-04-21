@@ -12,6 +12,12 @@ nrel_edge_weight
 	...
 	(*
 		<- definition;;
+		<= nrel_using_constants:
+        {
+        	rrel_edge;
+        	rrel_oredge;
+        	number
+        };;
 		=> nrel_main_idtf:
 			[Опр.(вес ребра*)]
 			(* <- lang_ru;; *);
@@ -27,12 +33,6 @@ nrel_edge_weight
 					(* <- lang_en;; *);;
 			*);;
 	*);
-<= nrel_using_constants:
-{
-	rrel_edge;
-	rrel_oredge;
-	number
-};
 <- binary_relation;
 <- oriented_relation;
 <- antireflexive_relation;

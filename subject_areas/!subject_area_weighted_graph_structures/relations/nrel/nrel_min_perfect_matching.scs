@@ -12,6 +12,11 @@ nrel_min_perfect_matching
 	...  
 	(*
 		<- definition;;
+		<= nrel_using_constants:
+        {
+        	nrel_perfect_matching;
+        	nrel_edge_weight
+        };;
 		=> nrel_main_idtf: 
 			[Опр.(совершенное паросочетание минимального веса*)]
 			(* <- lang_ru;; *);
@@ -28,11 +33,7 @@ nrel_min_perfect_matching
 			*);;		
 		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
 	*);
-<= nrel_using_constants: 
-{
-	nrel_perfect_matching;
-	nrel_edge_weight
-};
+
 => nrel_first_domain: concept_weighted_graph;
 => nrel_second_domain: concept_weighted_graph;
 <= nrel_definitional_domain: concept_weighted_graph;

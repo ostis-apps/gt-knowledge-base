@@ -1,0 +1,54 @@
+ant_algorithm
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[алгоритм Эдмондса — Карпа]
+	(* <- lang_ru;; *);
+	[ant algorithm]
+	(* <- lang_en;; *);
+<= nrel_inclusion: 	algorithm_ford_falkerson;
+<- rrel_key_sc_element:
+	...
+	(*
+		<- definition;;
+		<= nrel_using_constants:
+                        {
+                        	concept_weighted_graph;
+                        	problem_traveling_salesman;
+                        	nrel_path_in_graph
+                        };;
+		=> nrel_main_idtf:
+			[Опр.(муравьиный алгоритм)]
+			(* <- lang_ru;; *);
+			[Def.(ant algorithm)]
+			(* <- lang_en;; *);;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example:
+				"file://content_html/definition_for_ant_algorithm_ru.html"
+				(* <- lang_ru;;	*);
+                "file://content_html/definition_for_ant_algorithm_en.html"
+				(* <- lang_en;;	*);;
+			*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+	*);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- statement;;
+		=> nrel_main_idtf:
+			[Утв.(муравьиный алгоритм)]
+			(* <- lang_ru;; *);
+			[Stat.(ant algorithm)]
+			(* <- lang_en;; *);;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example:
+				"file://content_html/statement_for_ant_algorithm_ru.html"
+				(* <- lang_ru;;	*);
+                "file://content_html/statement_for_ant_algorithm_en.html"
+				(* <- lang_en;;	*);;
+			*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+	*);;
