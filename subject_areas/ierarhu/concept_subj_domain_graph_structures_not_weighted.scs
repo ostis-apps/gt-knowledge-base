@@ -1,0 +1,7 @@
+sc_node_not_relation-> concept_subj_domain_graph_structures_not_weighted;;
+subject_domain -> concept_subj_domain_graph_structures_not_weighted;;
+
+concept_subj_domain_graph_structures_not_weighted => nrel_main_idtf:
+	[Раздел. Предметная область невзвешенных графов](* <-lang_ru;; *);;
+
+concept_graph_structure => nrel_inclusion: concept_subj_domain_graph_structures_not_weighted;;

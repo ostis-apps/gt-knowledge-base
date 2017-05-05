@@ -74,12 +74,6 @@ subject_domain -> concept_subj_domain_graph_structures_weighted;;
 concept_subj_domain_graph_structures_weighted => nrel_main_idtf:
 	[Раздел. Предметная область взвешанных графовых структур](* <-lang_ru;; *);
 	[subject domain of the weighted graph structures](* <-lang_en;; *);;
-sc_node_not_relation -> concept_subj_domain_graph_structures_not_weighted;;
-subject_domain -> concept_subj_domain_graph_structures_not_weighted;;
-concept_subj_domain_graph_structures_not_weighted => nrel_main_idtf:
-	[Раздел. Предметная область невзвешанных графовых структур](* <-lang_ru;; *);
-	[subject domain of the unweighted graph structures](* <-lang_en;; *);;
-
 
 concept_subj_domain_graph_structures <= nrel_subdividing: 
 	{  
