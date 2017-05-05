@@ -6,7 +6,7 @@ nrel_vertex_neighbourhood
 	=> rel_main_idtf: [neighbourhood of a vertex*] (* <- lang_en;; *);
 
 	=> nrel_arity_of_relations: 2 (* <- number;; *);
-	=> nrel_first_domain: concept_vertex;
+	=> nrel_first_domain: concept_node;
 	=> nrel_definitional_domain: nrel_vertex_set;
 
 	<- rrel_key_sc_element: ... (*

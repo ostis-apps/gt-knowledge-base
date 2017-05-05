@@ -9,7 +9,7 @@ nrel_connective_index
 		<= nrel_sc_text_translation: ... (*
 			-> rrel_example: [число компонент связности в графе, получаемом из исходного граф удалением данной вершины и всех инцидентных ей ребер] (* <- lang_ru;; *);;
 			<= nrel_using_constants: {
-				concept_vertex
+				concept_node
 				};;
 			*);;
 	*);;

@@ -46,11 +46,11 @@ nrel_node_depth
 					...
 						(*
 								->concept_rooted_tree;;
-								->concept_vertex;;
+								->concept_node;;
 								->number;;
 							*);;
 *);
 
 =>nrel_first_domain:concept_rooted_tree;
-=>nrel_second_domain:concept_vertex;
+=>nrel_second_domain:concept_node;
 =>nrel_third_domain:number;;

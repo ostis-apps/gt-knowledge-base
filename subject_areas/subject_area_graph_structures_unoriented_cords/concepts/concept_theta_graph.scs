@@ -22,7 +22,7 @@ concept_theta_graph <- rrel_key_sc_element:
 concept_theta_graph<= nrel_using_constants:
 					{
 					nrel_chain;
-					concept_vertex;
+					concept_node;
 					concept_graph
 					};;
 	

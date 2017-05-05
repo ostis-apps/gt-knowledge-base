@@ -24,7 +24,7 @@ concept_bichromatic_graph <= nrel_using_constants:
 					{
 					concept_graph;
 					concept_edge;
-					concept_vertex
+					concept_node
 					};;
 
 

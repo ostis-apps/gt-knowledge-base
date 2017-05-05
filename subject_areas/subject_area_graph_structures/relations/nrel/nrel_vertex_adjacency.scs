@@ -32,12 +32,12 @@ nrel_vertex_adjacency
 	<= nrel_combination: 
 		{
 		concept_graph;
-		concept_vertex
+		concept_node
 		};;
 	*);
 
  => nrel_first_domain:concept_graph;
 
- => nrel_second_domain: concept_vertex;
+ => nrel_second_domain: concept_node;
 
- => nrel_third_domain: concept_vertex;;
+ => nrel_third_domain: concept_node;;

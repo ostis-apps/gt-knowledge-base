@@ -56,7 +56,7 @@ nrel_weight
 {
 	concept_edge;
 	concept_oredge;
-	concept_vertex
+	concept_node
 };
 => nrel_second_domain: number;
 <= nrel_definitional_domain:
@@ -67,7 +67,7 @@ nrel_weight
 		{
 			concept_edge;
 			concept_oredge;
-			concept_vertex
+			concept_node
 		};
 		number
 	};;

@@ -9,7 +9,7 @@ nrel_graph_invariant
 		<= nrel_sc_text_translation: ... (*
 			-> rrel_example: [число, связанное с графом G, которое принимает одно и то же значение на любом графе, изоморфном G.] (* <- lang_ru;; *);;
 			<= nrel_using_constants: {
-				concept_vertex
+				concept_node
 				};;
 			*);;
 	*);;

@@ -21,7 +21,7 @@ nrel_simple_chain <- rrel_key_sc_element:
 *);;
 nrel_simple_chain<= nrel_using_constants:
 						{
-							concept_vertex;
+							concept_node;
 							nrel_sequence
 						};;
 

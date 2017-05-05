@@ -23,7 +23,7 @@ concept_double_split_graph <= nrel_using_constants:
 						{
 						concept_graph;
 						concept_double_split_graph;
-						concept_vertex
+						concept_node
 						};;
 
 

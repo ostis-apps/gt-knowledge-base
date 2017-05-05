@@ -10,7 +10,7 @@ nrel_outdegree
 			-> rrel_example: [в орграфе - число дуг, исходящих из вершины] (* <- lang_ru;; *);;
 			<= nrel_using_constants: {
 				concept_directed_graph;
-				concept_vertex
+				concept_node
 				};;
 			*);;
 	*);;

@@ -14,7 +14,7 @@ nrel_vertex_approach_degree <= nrel_definitional_domain:
 		{
 		concept_directed_graph;
 		number; 
-		concept_vertex
+		concept_node
 		};;
 	*);;
 
@@ -25,7 +25,7 @@ nrel_vertex_approach_degree => nrel_second_domain:
 	number;;
 
 nrel_vertex_approach_degree => nrel_third_domain : 
-	concept_vertex;;
+	concept_node;;
 
 nrel_vertex_approach_degree <- rrel_key_sc_element: 
 	...

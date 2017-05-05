@@ -22,7 +22,7 @@ concept_unit_disk_graph <- rrel_key_sc_element:
 concept_unit_disk_graph<= nrel_using_constants:
 						{
 						concept_intersection_graph;
-						concept_vertex;
+						concept_node;
 						concept_edge
 						};;
 

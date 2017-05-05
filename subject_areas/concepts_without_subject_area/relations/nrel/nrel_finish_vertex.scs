@@ -12,7 +12,7 @@ nrel_finish_vertex
 		<= nrel_sc_text_translation: ... (*
 			-> rrel_example: [Вершина, которая является внешним (не принадлежащим фрагменту) преемником хотя бы одной вершины фрагмента.] (* <- lang_ru;; *);;
 			<= nrel_using_constants: {
-				concept_vertex
+				concept_node
 				};;
 			*);;
 	*);;

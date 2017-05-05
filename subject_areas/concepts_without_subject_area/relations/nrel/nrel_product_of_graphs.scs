@@ -9,7 +9,7 @@ nrel_product_of_graphs
 		<= nrel_sc_text_translation: ... (*
 			-> rrel_example: [граф, вершины которого - декартово произведение множеств вершин исходных графов] (* <- lang_ru;; *);;
 			<= nrel_using_constants: {
-				concept_vertex
+				concept_node
 				};;
 			*);;
 	*);;

@@ -22,7 +22,7 @@ concept_kograph <- rrel_key_sc_element:
 concept_kograph <= nrel_using_constants:
 						{
 						concept_graph;
-						concept_vertex
+						concept_node
 
 						};;
 

@@ -9,7 +9,7 @@ concept_output
 		<= nrel_sc_text_translation: ... (*
 			-> rrel_example: [вершина в орграфе, полустепень исхода которой равна 0, а полустепень захода больше нуля.] (* <- lang_ru;; *);;
 			<= nrel_using_constants: {
-				concept_vertex;
+				concept_node;
 				concept_directed_graph
 			};;
 		*);;

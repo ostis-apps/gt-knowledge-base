@@ -30,9 +30,9 @@ nrel_inradius
 				<= nrel_combination:
 					...
 						(*
-								->concept_vertex;;
+								->concept_node;;
 								->number;;
 							*);;
 *);
- => nrel_first_domain: concept_vertex;
+ => nrel_first_domain: concept_node;
  => nrel_second_domain: concept_number;;

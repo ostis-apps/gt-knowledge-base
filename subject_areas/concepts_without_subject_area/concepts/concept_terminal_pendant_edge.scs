@@ -10,7 +10,7 @@ concept_terminal_pendant_edge
 			-> rrel_example: [ребро, одна из концевых вершин которого имеет степень 1.] (* <- lang_ru;; *);;
 			<= nrel_using_constants: {
 				concept_cycle;
-				concept_vertex
+				concept_node
 				};;
 			*);;
 	*);;

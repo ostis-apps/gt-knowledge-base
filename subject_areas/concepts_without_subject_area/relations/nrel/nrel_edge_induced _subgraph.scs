@@ -23,7 +23,7 @@ nrel_edge_induced_subgraph <- rrel_key_sc_element:
 nrel_edge_induced_subgraph <= nrel_using_constants:
 						{
 						nrel_subgraph;
-						concept_vertex;
+						concept_node;
 						concept_edge
 						};;
 

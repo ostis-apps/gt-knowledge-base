@@ -9,7 +9,7 @@ nrel_indegree
 		<= nrel_sc_text_translation: ... (*
 			-> rrel_example: [в орграфе - число дуг, заходящих в вершину] (* <- lang_ru;; *);;
 			<= nrel_using_constants: {
-				concept_vertex
+				concept_node
 				};;
 			*);;
 	*);;

@@ -23,7 +23,7 @@ concept_multigraph <- rrel_key_sc_element:
 concept_multigraph<= nrel_using_constants:
 					{
 					concept_edge;
-					concept_vertex;
+					concept_node;
 					concept_graph
 					};;
 	

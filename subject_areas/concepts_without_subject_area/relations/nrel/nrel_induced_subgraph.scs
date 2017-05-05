@@ -9,7 +9,7 @@ nrel_induced_subgraph
 		<= nrel_sc_text_translation: ... (*
 			-> rrel_example: [подграф, порождаемый заданным множеством вершин, есть подграф в сильном смысле; подграф, порождаемый заданным множеством ребер, есть подграф в слабом смысле.] (* <- lang_ru;; *);;
 			<= nrel_using_constants: {
-				concept_vertex
+				concept_node
 				};;
 			*);;
 	*);;
