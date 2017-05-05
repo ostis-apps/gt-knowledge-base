@@ -1,0 +1,55 @@
+sc_node_not_relation -> concept_diamond;;
+
+concept_diamond => nrel_main_idtf:
+    [алмаз]
+    (* <- lang_ru;; *);;
+
+concept_diamond <- rrel_key_sc_element: 
+        ... 
+        (*
+            <- sc_definition;;
+            => nrel_main_idtf:
+                [Определение: алмаз]
+                (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [Алмаз - это планарный неориентированный граф с 4 вершинами и 5 ребрами.]
+                       (*<- lang_ru;; *);;
+                *);;
+            <= nrel_using_constants:
+                        {
+                            concept_regular_graph
+                        };;
+        *);;
+
+concept_diamond <- rrel_key_sc_element:
+        ...
+        (*
+            <- sc_statement;;
+            => nrel_main_idtf:
+                [Утверждение: граф К4 и алмаз]
+                (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [Алмаз получается удалением ребра из графа K4.]
+                       (* <- lang_ru;; *);;
+                *);;
+            <= nrel_using_constants:
+                        {
+                            rrel_edge
+                        };;
+        *);;
+            
+concept_diamond <- rrel_key_sc_element: 
+        ...
+        (*
+            <- sc_illustration;;
+            <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> rrel_example:
+                        "file://contents/concept_diamond.png";;
+                    *);;
+        *);;

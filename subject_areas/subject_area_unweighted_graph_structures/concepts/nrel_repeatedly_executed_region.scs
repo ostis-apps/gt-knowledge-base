@@ -1,0 +1,59 @@
+sc_node_norole_relation -> nrel_repeatedly_executed_region;;
+
+nrel_repeatedly_executed_region => nrel_main_idtf:
+    [участок повторяемости*]
+    (* <- lang_ru;; *);;
+
+nrel_repeatedly_executed_region <- rrel_key_sc_element: 
+        ... 
+        (*
+            <- sc_definition;;
+            => nrel_main_idtf:
+                [Определение: участок повторяемости.]
+                (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [Участок повторяемости - это конструкция, позволяющая на основе анализа уграфа эффективно выявлять
+                        циклическую структуру алгоритма и находить отношения частот выполнения между всеми подмножествами
+                        его элементов, которые не противоречат достоверным отношениям частот выполнения.]
+                       (* <- lang_ru;; *);;
+                *);;
+            <= nrel_using_constants:
+                            {
+                                concept_graph
+                            };;
+        *);;
+
+nrel_repeatedly_executed_region <- rrel_key_sc_element:
+        ...
+        (*
+            <- sc_statement;;
+            => nrel_main_idtf:
+                [Утверждение: участок повторяемости нулевого уровня]
+                (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [Граф G содержит единственный участок повторяемости нулевого уровня, состоящий из всех простых цепочек V.]
+                       (*<- lang_ru;; *);;
+                *);;
+        *);;
+
+nrel_repeatedly_executed_region <- binary_relation;;
+nrel_repeatedly_executed_region => nrel_arity_of_relations: 2 (* <- number;; *);;
+nrel_repeatedly_executed_region => nrel_first_domain: concept_graph;;
+nrel_repeatedly_executed_region => nrel_second_domain: concept_graph;;
+nrel_repeatedly_executed_region <= nrel_definitional_domain: concept_graph;;
+
+nrel_repeatedly_executed_region <- rrel_key_sc_element: 
+        ...
+        (*
+            <- sc_illustration;;
+            <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> rrel_example:
+                        "file://contents/nrel_repeatedly_executed_region.gif";;
+                    *);;
+        *);;

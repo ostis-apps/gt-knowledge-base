@@ -1,0 +1,59 @@
+sc_node_not_relation -> concept_bifurcant;;
+
+concept_bifurcant => nrel_main_idtf:
+    [бифуркант]
+    (* <- lang_ru;; *);;
+
+concept_bifurcant <- rrel_key_sc_element: 
+        ... 
+        (*
+            <- sc_definition;;
+            => nrel_main_idtf:
+                [Определение: бифуркант]
+                (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [Бифуркант - ордерево, ориентированное от корня, у которого полустепень исхода каждой вершины равна 0 или 2.]
+                       (*<- lang_ru;; *);;
+                *);;
+            <= nrel_using_constants:
+                        {
+                            concept_tree;
+                            nrel_root;
+                            rrel_vertex
+                        };;
+        *);;
+
+concept_bifurcant <- rrel_key_sc_element:
+        ...
+        (*
+            <- sc_statement;;
+            => nrel_main_idtf:
+                [Утверждение: полустепень исхода]
+                (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [полустепень исхода корня бифурканта не может быть отличным от 0 или 2.]
+                       (* <- lang_ru;; *);;
+                *);;
+            <= nrel_using_constants:
+                        {
+                            concept_outdegree
+                        };;
+        *);;
+
+/*            
+concept_bifurcant <- rrel_key_sc_element: 
+        ...
+        (*
+            <- sc_illustration;;
+            <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> rrel_example:
+                        "file://contents/concept_bifurcant.jpg";;
+                    *);;
+        *);;
+*/

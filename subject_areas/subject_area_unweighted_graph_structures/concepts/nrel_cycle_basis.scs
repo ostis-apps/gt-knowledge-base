@@ -1,0 +1,46 @@
+sc_node_norole_relation -> nrel_cycle_basis;;
+
+nrel_cycle_basis => nrel_main_idtf:
+    [базис циклов*]
+    (* <- lang_ru;; *);;
+
+nrel_cycle_basis <- rrel_key_sc_element: 
+        ... 
+        (*
+            <- sc_definition;;
+            => nrel_main_idtf:
+                [Определение: базис циклов.]
+                (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [Базис циклов - это базис пространства циклов графа, состоящий только из простых циклов.]
+                       (* <- lang_ru;; *);;
+                *);;
+            <= nrel_using_constants:
+                            {
+                                concept_graph;
+                                nrel_cycle
+                            };;
+        *);;
+
+nrel_cycle_basis <- rrel_key_sc_element:
+        ...
+        (*
+            <- sc_statement;;
+            => nrel_main_idtf:
+                [Утверждение: базис циклов]
+                (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [Базис циклов состоит из всех независимых или минимальных простых циклов графа, от которых зависят все циклы.]
+                       (*<- lang_ru;; *);;
+                *);;
+        *);;
+
+nrel_cycle_basis <- binary_relation;;
+nrel_cycle_basis => nrel_arity_of_relations: 2 (* <- number;; *);;
+nrel_cycle_basis => nrel_first_domain: concept_graph;;
+nrel_cycle_basis => nrel_second_domain: concept_graph;;
+nrel_cycle_basis <= nrel_definitional_domain: concept_graph;;

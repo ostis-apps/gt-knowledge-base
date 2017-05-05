@@ -1,0 +1,49 @@
+sc_node_norole_relation -> nrel_grundy_number;;
+
+nrel_grundy_number => nrel_main_idtf:
+    [число Гранди*]
+    (* <- lang_ru;; *);;
+
+nrel_grundy_number <- rrel_key_sc_element: 
+        ... 
+        (*
+            <- sc_definition;;
+            => nrel_main_idtf:
+                [Определение: число Гранди.]
+                (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [Число Гранди Г(G) — наибольшее число k, для которого G имеет раскраску Гранди порядка k.]
+                       (* <- lang_ru;; *);;
+                *);;
+            <= nrel_using_constants:
+                            {
+                                concept_number
+                            };;
+        *);;
+
+nrel_grundy_number <- rrel_key_sc_element:
+        ...
+        (*
+            <- sc_statement;;
+            => nrel_main_idtf:
+                [Утверждение: соотношение между хроматическим и ахроматическим числом]
+                (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [Известно, что Х(G) <= Г(G) <= P(G), где Х(G) и P(G) — хроматическое и ахроматическое числа.]
+                       (*<- lang_ru;; *);;
+                *);;
+        *);;
+
+nrel_grundy_number <- binary_relation;;
+nrel_grundy_number => nrel_arity_of_relations: 2 (* <- number;; *);;
+nrel_grundy_number => nrel_first_domain: concept_graph;;
+nrel_grundy_number => nrel_second_domain: concept_number;;
+nrel_grundy_number <= nrel_definitional_domain: 
+                                {
+                                    concept_graph;
+                                    concept_number
+                                };;

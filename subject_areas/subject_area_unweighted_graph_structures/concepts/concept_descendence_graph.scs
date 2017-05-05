@@ -1,0 +1,43 @@
+sc_node_not_relation -> concept_descendence_graph;;
+
+concept_descendence_graph => nrel_main_idtf:
+    [граф потомства]
+    (* <- lang_ru;; *);;
+
+concept_descendence_graph <- rrel_key_sc_element: 
+        ... 
+        (*
+            <- sc_definition;;
+            => nrel_main_idtf:
+                [Определение: граф потомства]
+                (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [Граф потомства - это транзитивное замыкание графа воспроизведения.]
+                       (*<- lang_ru;; *);;
+                *);;
+            <= nrel_using_constants:
+                        {
+                            concept_graph
+                        };;
+        *);;
+
+concept_descendence_graph <- rrel_key_sc_element:
+        ...
+        (*
+            <- sc_statement;;
+            => nrel_main_idtf:
+                [Утверждение: граф потомства и граф популяции]
+                (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [Граф потомства выражает отношение предок—потомок среди членов некоторой популяции.]
+                       (* <- lang_ru;; *);;
+                *);;
+            <= nrel_using_constants:
+                        {
+                            concept_graph
+                        };;
+        *);;

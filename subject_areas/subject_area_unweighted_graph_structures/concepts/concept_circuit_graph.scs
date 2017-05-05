@@ -1,0 +1,58 @@
+sc_node_not_relation -> concept_circuit_graph;;
+
+concept_circuit_graph => nrel_main_idtf:
+    [циркулянтный граф]
+    (* <- lang_ru;; *);;
+
+concept_circuit_graph <- rrel_key_sc_element: 
+        ... 
+        (*
+            <- sc_definition;;
+            => nrel_main_idtf:
+                [Формулировка определения: циркулянтный граф]
+                (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [Пусть p — натуральное число и пусть S — подмножество множества {1, 2, ..., p-1} такое, 
+                        что i ∈ S влечет p-i ∈ S. Циркулянтный граф G(p,S) имеет в качестве вершин 0, 1, ..., p-1 
+                        и две вершины i и j смежны тогда и только тогда, когда i - j ∈ S, причем вычитание берется по модулю p.]
+                       (*<- lang_ru;; *);;
+                *);;
+            <= nrel_using_constants:
+                        {
+                            rrel_edge
+                        };;
+        *);;
+
+concept_circuit_graph <- rrel_key_sc_element:
+        ...
+        (*
+            <- sc_statement;;
+            => nrel_main_idtf:
+                [Утверждение: группа симметрий]
+                (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [Циркулянтный граф имеет симметрию, переводящую любую вершину в любую другую вершину.]
+                       (* <- lang_ru;; *);;
+                *);;
+            <= nrel_using_constants:
+                        {
+                            concept_oriented_graph
+                        };;
+        *);;
+
+          
+concept_circuit_graph <- rrel_key_sc_element: 
+        ...
+        (*
+            <- sc_illustration;;
+            <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> rrel_example:
+                        "file://contents/concept_circulant_graph.png";;
+                    *);;
+        *);;

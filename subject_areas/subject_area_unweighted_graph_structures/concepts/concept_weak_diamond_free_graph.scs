@@ -1,0 +1,47 @@
+sc_node_not_relation -> concept_weak_diamond_free_graph;;
+
+concept_weak_diamond_free_graph => nrel_main_idtf:
+    [слабо алмазо-свободный граф]
+    (* <- lang_ru;; *);;
+
+concept_weak_diamond_free_graph <- rrel_key_sc_element: 
+        ... 
+        (*
+            <- sc_definition;;
+            => nrel_main_idtf:
+                [Определение: слабо алмазо-свободный граф]
+                (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [Граф называется слабо алмазо-свободным графом, если каждый индуцированный подграф 
+                        содержит вершину V такую, что её степень не превышает 2ω(G)-1, где ω(G) - плотность графа G,
+                        и окрестность N(v) порождает алмазо-свободный подграф.]
+                       (*<- lang_ru;; *);;
+                *);;
+            <= nrel_using_constants:
+                        {
+                            concept_diamond_free_graph;
+                            concept_diamond
+                        };;
+        *);;
+
+concept_weak_diamond_free_graph <- rrel_key_sc_element:
+        ...
+        (*
+            <- sc_statement;;
+            => nrel_main_idtf:
+                [Утверждение: класс слабо алмазо-свободных графов]
+                (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [Класс слабо алмазо-свободных графов содержит хордальные и совершенные реберные графы.]
+                       (* <- lang_ru;; *);;
+                *);;
+            <= nrel_using_constants:
+                        {
+                            concept_chordal_graph;
+                            concept_perfect_graph
+                        };;
+        *);;

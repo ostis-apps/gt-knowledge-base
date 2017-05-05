@@ -1,0 +1,37 @@
+sc_node_norole_relation -> nrel_cutting_width;;
+
+nrel_cutting_width => nrel_main_idtf:
+    [разрезающая ширина*]
+    (* <- lang_ru;; *);;
+
+nrel_cutting_width <- rrel_key_sc_element: 
+        ... 
+        (*
+            <- sc_definition;;
+            => nrel_main_idtf:
+                [Определение: разрезающая ширина.]
+                (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [Разрезающей шириной графа G называется величина min{L} max{i} |C(G,L, i)|.]
+                       (* <- lang_ru;; *);;
+                *);;
+            <= nrel_using_constants:
+                            {
+                                concept_graph
+                            };;
+        *);;
+
+nrel_cutting_width <- binary_relation;;
+nrel_cutting_width => nrel_arity_of_relations: 2 (* <- number;; *);;
+nrel_cutting_width => nrel_first_domain: concept_graph;;
+nrel_cutting_width => nrel_second_domain: concept_number;;
+nrel_cutting_width <= nrel_definitional_domain: ...
+	    (*
+	        <= nrel_combination: 
+		        {
+		            concept_graph; 
+		            concept_number
+		        };;
+	    *);;

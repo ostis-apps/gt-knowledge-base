@@ -1,0 +1,56 @@
+sc_node_not_relation -> concept_hertz_graph;;
+
+concept_hertz_graph => nrel_main_idtf:
+    [граф Герца]
+    (* <- lang_ru;; *);;
+
+concept_hertz_graph <- rrel_key_sc_element: 
+        ... 
+        (*
+            <- sc_definition;;
+            => nrel_main_idtf:
+                [Определение: граф Герца]
+                (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [Граф Герца для орграфа G - это бесконтурный орграф, получаемый из G путем стягивания каждой бикомпоненты в отдельную вершину.]
+                       (*<- lang_ru;; *);;
+                *);;
+            <= nrel_using_constants:
+                        {
+                            concept_graph
+                        };;
+        *);;
+
+concept_hertz_graph <- rrel_key_sc_element:
+        ...
+        (*
+            <- sc_statement;;
+            => nrel_main_idtf:
+                [Утверждение: фактор-граф и граф Герца]
+                (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [Граф Герца для графа G есть фактор-граф графа G по семейству бикомпонент.]
+                       (* <- lang_ru;; *);;
+                *);;
+            <= nrel_using_constants:
+                        {
+                            concept_graph;
+                            nrel_bicomponent
+                        };;
+        *);;
+            
+concept_hertz_graph <- rrel_key_sc_element: 
+        ...
+        (*
+            <- sc_illustration;;
+            <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> rrel_example:
+                        "file://contents/concept_hertz_graph.png";;
+                    *);;
+        *);;

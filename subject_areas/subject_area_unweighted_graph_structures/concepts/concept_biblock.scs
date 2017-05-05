@@ -1,0 +1,43 @@
+sc_node_not_relation -> concept_biblock;;
+
+concept_biblock => nrel_main_idtf:
+    [библок]
+    (* <- lang_ru;; *);;
+
+concept_biblock <- rrel_key_sc_element: 
+        ... 
+        (*
+            <- sc_definition;;
+            => nrel_main_idtf:
+                [Определение: библок]
+                (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [Библок - бисвязный граф без полушарниров.]
+                       (*<- lang_ru;; *);;
+                *);;
+            <= nrel_using_constants:
+                        {
+                            concept_graph
+                        };;
+        *);;
+
+concept_biblock <- rrel_key_sc_element:
+        ...
+        (*
+            <- sc_statement;;
+            => nrel_main_idtf:
+                [Утверждение: полустепень исхода]
+                (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [Библок является подграфом некоторого графа, являющиймся библоком и максимальным относительно этого свойства.]
+                       (* <- lang_ru;; *);;
+                *);;
+            <= nrel_using_constants:
+                        {
+                            concept_biblock
+                        };;
+        *);;

@@ -1,0 +1,44 @@
+sc_node_not_relation -> concept_shennon_graph;;
+
+concept_shennon_graph => nrel_main_idtf:
+    [граф Шеннона]
+    (* <- lang_ru;; *);;
+
+concept_shennon_graph <- rrel_key_sc_element: 
+        ... 
+        (*
+            <- sc_definition;;
+            => nrel_main_idtf:
+                [Определение: граф Шеннона]
+                (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [Граф Шеннона - трехвершинный мультиграф с вершинами u, v, w такими, что пары вершин u, w и v, w соединены t ребрами, а вершины u и v — D - t ребрами, где D — степень графа.]
+                       (*<- lang_ru;; *);;
+                *);;
+            <= nrel_using_constants:
+                        {
+                            concept_multigraph;
+                            rrel_vertex
+                        };;
+        *);;
+
+concept_shennon_graph <- rrel_key_sc_element:
+        ...
+        (*
+            <- sc_statement;;
+            => nrel_main_idtf:
+                [Утверждение: треугольный граф]
+                (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [Граф Шеннона является треугольным.]
+                       (* <- lang_ru;; *);;
+                *);;
+            <= nrel_using_constants:
+                        {
+                            concept_triangle_graph
+                        };;
+        *);;

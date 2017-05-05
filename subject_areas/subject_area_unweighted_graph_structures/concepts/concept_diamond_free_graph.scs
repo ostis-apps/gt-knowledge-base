@@ -1,0 +1,76 @@
+sc_node_not_relation -> concept_diamond_free_graph;;
+
+concept_diamond_free_graph => nrel_main_idtf:
+    [алмазо-свободный граф]
+    (* <- lang_ru;; *);;
+
+concept_diamond_free_graph <- rrel_key_sc_element: 
+        ... 
+        (*
+            <- sc_definition;;
+            => nrel_main_idtf:
+                [Определение: алмазо-свободный граф]
+                (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [Алмазо-свободный граф - это граф, который не содержит индуцированных подграфов, изоморфных алмазу.]
+                       (*<- lang_ru;; *);;
+                *);;
+            <= nrel_using_constants:
+                        {
+                            concept_diamond
+                        };;
+        *);;
+
+concept_diamond_free_graph <- rrel_key_sc_element:
+        ...
+        (*
+            <- sc_statement;;
+            => nrel_main_idtf:
+                [Утверждение: графы без треугольников]
+                (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [Графы без треугольников являются алмазо-свободными графами, 
+                        потому что каждый алмаз содержит треугольник.]
+                       (* <- lang_ru;; *);;
+                *);;
+            <= nrel_using_constants:
+                        {
+                            concept_triangle_free_graph;
+                            concept_diamond
+                        };;
+        *);;
+
+concept_diamond_free_graph <- rrel_key_sc_element:
+        ...
+        (*
+            <- sc_statement;;
+            => nrel_main_idtf:
+                [Утверждение: локальная группировка]
+                (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [Алмазо-свободные графы локально сгруппированы: они являются графами, у которых каждый сосед является кластером.]
+                       (* <- lang_ru;; *);;
+                *);;
+            <= nrel_using_constants:
+                        {
+                            concept_graph
+                        };;
+        *);;
+            
+concept_diamond_free_graph <- rrel_key_sc_element: 
+        ...
+        (*
+            <- sc_illustration;;
+            <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> rrel_example:
+                        "file://contents/concept_diamond.png";;
+                    *);;
+        *);;

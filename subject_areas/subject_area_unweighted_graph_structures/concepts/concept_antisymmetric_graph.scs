@@ -1,0 +1,45 @@
+sc_node_not_relation -> concept_antisymmetric_graph;;
+
+concept_antisymmetric_graph => nrel_main_idtf:
+    [антисимметрический граф]
+    (* <- lang_ru;; *);;
+
+concept_antisymmetric_graph <- rrel_key_sc_element: 
+        ... 
+        (*
+            <- sc_definition;;
+            => nrel_main_idtf:
+                [Определение: антисимметрический граф]
+                (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [Антисимметрический граф - это орграф, для которого выполнено следующее условие: 
+                        если дуга (vi,vj) принадлежит орграфу, то в нем нет противоположно ориентированной дуги (vj,vi).]
+                       (*<- lang_ru;; *);;
+                *);;
+            <= nrel_using_constants:
+                        {
+                            concept_edge;
+                            concept_graph
+                        };;
+        *);;
+
+concept_antisymmetric_graph <- rrel_key_sc_element:
+        ...
+        (*
+            <- sc_statement;;
+            => nrel_main_idtf:
+                [Утверждение: петли в антисимметрическом графе]
+                (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [В антисимметрическом графе нет петель.]
+                       (* <- lang_ru;; *);;
+                *);;
+            <= nrel_using_constants:
+                        {
+                            rrel_loop
+                        };;
+        *);;

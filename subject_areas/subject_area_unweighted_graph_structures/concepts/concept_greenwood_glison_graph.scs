@@ -1,0 +1,43 @@
+sc_node_not_relation -> concept_greenwood_glison_graph;;
+
+concept_greenwood_glison_graph => nrel_main_idtf:
+    [граф Гринвуда-Глисона]
+    (* <- lang_ru;; *);;
+
+concept_greenwood_glison_graph <- rrel_key_sc_element: 
+        ... 
+        (*
+            <- sc_definition;;
+            => nrel_main_idtf:
+                [Определение: граф Гринвуда-Глисона]
+                (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [Граф Гринвуда-Глисона E3 — расширенный нечетный граф Ek для k = 3, это 5-регулярный граф на 16 вершинах.]
+                       (*<- lang_ru;; *);;
+                *);;
+            <= nrel_using_constants:
+                        {
+                            concept_regular_graph
+                        };;
+        *);;
+
+concept_greenwood_glison_graph <- rrel_key_sc_element:
+        ...
+        (*
+            <- sc_statement;;
+            => nrel_main_idtf:
+                [Утверждение: контуры и циклы]
+                (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [Граф Гринвуда-Глисона является дополнением графа Клебша.]
+                       (* <- lang_ru;; *);;
+                *);;
+            <= nrel_using_constants:
+                        {
+                            concept_clebsch_graph
+                        };;
+        *);;

@@ -1,0 +1,58 @@
+sc_node_not_relation -> concept_hamiltonian_connected_digraph;;
+
+concept_hamiltonian_connected_digraph => nrel_main_idtf:
+    [гамильтоново-связный орграф]
+    (* <- lang_ru;; *);;
+
+concept_hamiltonian_connected_digraph <- rrel_key_sc_element: 
+        ... 
+        (*
+            <- sc_definition;;
+            => nrel_main_idtf:
+                [Определение: гамильтоново-связный орграф]
+                (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [Гамильтоново-связный орграф – граф, в котором любые две вершины соединены гамильтоновым путем.]
+                       (*<- lang_ru;; *);;
+                *);;
+            <= nrel_using_constants:
+                        {
+                            concept_edge;
+                            nrel_hamiltonian_path
+                        };;
+        *);;
+
+concept_hamiltonian_connected_digraph <- rrel_key_sc_element:
+        ...
+        (*
+            <- sc_statement;;
+            => nrel_main_idtf:
+                [Утверждение: ориентированность гамильтоново-связного графа]
+                (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [гамильтоново-связный орграф является ориентированным.]
+                       (* <- lang_ru;; *);;
+                *);;
+            <= nrel_using_constants:
+                        {
+                            concept_oriented_graph
+                        };;
+        *);;
+
+/*            
+concept_hamiltonian_connected_digraph <- rrel_key_sc_element: 
+        ...
+        (*
+            <- sc_illustration;;
+            <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> rrel_example:
+                        "file://contents/concept_hamiltonian_connected_digraph.jpg";;
+                    *);;
+        *);;
+*/

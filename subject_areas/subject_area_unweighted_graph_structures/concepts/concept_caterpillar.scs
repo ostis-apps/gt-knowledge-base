@@ -1,0 +1,58 @@
+sc_node_not_relation -> concept_caterpillar;;
+
+concept_caterpillar => nrel_main_idtf:
+    [гусеница]
+    (* <- lang_ru;; *);;
+
+concept_caterpillar <- rrel_key_sc_element: 
+        ... 
+        (*
+            <- sc_definition;;
+            => nrel_main_idtf:
+                [Определение: гусеница]
+                (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [Гусеница - дерево, внутренние вершины которого порождают подграф, изоморфный пути.]
+                       (*<- lang_ru;; *);;
+                *);;
+            <= nrel_using_constants:
+                        {
+                            concept_tree;
+                            nrel_path_gt
+                        };;
+        *);;
+
+concept_caterpillar <- rrel_key_sc_element:
+        ...
+        (*
+            <- sc_statement;;
+            => nrel_main_idtf:
+                [Утверждение: расстояние от центра]
+                (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [Все вершины гусеницы находятся на расстоянии 1 от центрального пути.]
+                       (* <- lang_ru;; *);;
+                *);;
+            <= nrel_using_constants:
+                        {
+                            nrel_path_gt;
+                            concept_graph;
+                            rrel_vertex
+                        };;
+        *);;
+            
+concept_caterpillar <- rrel_key_sc_element: 
+        ...
+        (*
+            <- sc_illustration;;
+            <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> rrel_example:
+                        "file://contents/concept_caterpillar.png";;
+                    *);;
+        *);;

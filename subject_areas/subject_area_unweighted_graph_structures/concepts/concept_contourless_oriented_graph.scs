@@ -1,0 +1,56 @@
+sc_node_not_relation -> concept_contourless_oriented_graph;;
+
+concept_contourless_oriented_graph => nrel_main_idtf:
+    [бесконтурный орграф]
+    (* <- lang_ru;; *);;
+
+concept_contourless_oriented_graph <- rrel_key_sc_element: 
+        ... 
+        (*
+            <- sc_definition;;
+            => nrel_main_idtf:
+                [Определение: бесконтурный орграф]
+                (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [Бесконтурный орграф - орграф, не содержащий контуров, но возможно, имеющий циклы.]
+                       (*<- lang_ru;; *);;
+                *);;
+            <= nrel_using_constants:
+                        {
+                            concept_oriented_graph
+                        };;
+        *);;
+
+concept_contourless_oriented_graph <- rrel_key_sc_element:
+        ...
+        (*
+            <- sc_statement;;
+            => nrel_main_idtf:
+                [Утверждение: контуры и циклы]
+                (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [Бесконтурный орграф может иметь циклы, но не имеет контуров.]
+                       (* <- lang_ru;; *);;
+                *);;
+            <= nrel_using_constants:
+                        {
+                            concept_contourless_oriented_graph;
+                            nrel_cycle
+                        };;
+        *);;
+            
+concept_contourless_oriented_graph <- rrel_key_sc_element: 
+        ...
+        (*
+            <- sc_illustration;;
+            <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> rrel_example:
+                        "file://contents/concept_contourless_oriented_graph.gif";;
+                    *);;
+        *);;

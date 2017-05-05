@@ -1,0 +1,38 @@
+sc_node_norole_relation -> nrel_bisection_width;;
+
+nrel_bisection_width => nrel_main_idtf:
+    [ширина бисекции*]
+    (* <- lang_ru;; *);;
+
+nrel_bisection_width <- rrel_key_sc_element: 
+        ... 
+        (*
+            <- sc_definition;;
+            => nrel_main_idtf:
+                [Определение: ширина бисекции.]
+                (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [Шириной бисекции графа G называется величина
+                        min{L} |C(G,L, {|V|\2})|.]
+                       (* <- lang_ru;; *);;
+                *);;
+            <= nrel_using_constants:
+                            {
+                                concept_graph
+                            };;
+        *);;
+
+nrel_bisection_width <- binary_relation;;
+nrel_bisection_width => nrel_arity_of_relations: 2 (* <- number;; *);;
+nrel_bisection_width => nrel_first_domain: concept_graph;;
+nrel_bisection_width => nrel_second_domain: concept_number;;
+nrel_bisection_width <= nrel_definitional_domain: ...
+	    (*
+	        <= nrel_combination: 
+		        {
+		            concept_graph; 
+		            concept_number
+		        };;
+	    *);;

@@ -1,0 +1,47 @@
+sc_node_norole_relation -> nrel_dissection;;
+
+nrel_dissection => nrel_main_idtf:
+    [рассечение*]
+    (* <- lang_ru;; *);;
+
+nrel_dissection <- rrel_key_sc_element: 
+        ... 
+        (*
+            <- sc_definition;;
+            => nrel_main_idtf:
+                [Определение: рассечение.]
+                (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [Рассечение - совокупность простых путей или простых контуров такая, 
+                        что никакие два пути рассечения не имеют общих вершин и каждая вершина
+                        графа принадлежит одному из путей рассечения.]
+                    (* <- lang_ru;; *);;
+                *);;
+            <= nrel_using_constants:
+                            {
+                                nrel_path
+                            };;
+        *);;
+
+nrel_dissection <- rrel_key_sc_element:
+        ...
+        (*
+            <- sc_statement;;
+            => nrel_main_idtf:
+                [Утверждение: принадлежность вершины]
+                (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [Каждая вершина графа принадлежит только одному из путей рассечения.]
+                       (*<- lang_ru;; *);;
+                *);;
+        *);;
+
+nrel_dissection <- binary_relation;;
+nrel_dissection => nrel_arity_of_relations: 2 (* <- number;; *);;
+nrel_dissection => nrel_first_domain: concept_graph;;
+nrel_dissection => nrel_second_domain: concept_graph;;
+nrel_dissection <= nrel_definitional_domain: concept_graph;;

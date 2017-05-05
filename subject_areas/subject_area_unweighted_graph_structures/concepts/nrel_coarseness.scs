@@ -1,0 +1,50 @@
+sc_node_norole_relation -> nrel_coarseness;;
+
+nrel_coarseness => nrel_main_idtf:
+    [крупность*]
+    (* <- lang_ru;; *);;
+
+nrel_coarseness <- rrel_key_sc_element: 
+        ... 
+        (*
+            <- sc_definition;;
+            => nrel_main_idtf:
+                [Определение: крупность.]
+                (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [Крупность - наибольшее число непланарных подграфов, не пересекающихся по ребрам и содержащихся в данном графе.]
+                    (* <- lang_ru;; *);;
+                *);;
+            <= nrel_using_constants:
+                            {
+                                concept_graph;
+                                nrel_subgraph
+                            };;
+        *);;
+
+nrel_coarseness <- rrel_key_sc_element:
+        ...
+        (*
+            <- sc_statement;;
+            => nrel_main_idtf:
+                [Утверждение: крупность планарного графа]
+                (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [Крупность планарного графа всегда равна нулю.]
+                       (*<- lang_ru;; *);;
+                *);;
+        *);;
+
+nrel_coarseness <- binary_relation;;
+nrel_coarseness => nrel_arity_of_relations: 2 (* <- number;; *);;
+nrel_coarseness => nrel_first_domain: concept_graph;;
+nrel_coarseness => nrel_second_domain: nrel_subgraph;;
+nrel_coarseness <= nrel_definitional_domain: 
+                            {
+                                concept_graph;
+                                nrel_subgraph
+                            };;

@@ -1,0 +1,43 @@
+sc_node_not_relation -> concept_dilvorth_theorem;;
+
+concept_dilvorth_theorem => nrel_main_idtf:
+    [теорема Дилворта]
+    (* <- lang_ru;; *);;
+
+concept_dilvorth_theorem <- rrel_key_sc_element: 
+        ... 
+        (*
+            <- sc_definition;;
+            => nrel_main_idtf:
+                [Формулировка: теорема Дилворта]
+                (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [Для любого частично упорядоченного множества P = (S, <=) минимальное число цепей, покрывающих все точки S, равно мощности наибольшей антицепи..]
+                       (*<- lang_ru;; *);;
+                *);;
+            <= nrel_using_constants:
+                        {
+                            nrel_chain
+                        };;
+        *);;
+
+concept_dilvorth_theorem <- rrel_key_sc_element:
+        ...
+        (*
+            <- sc_statement;;
+            => nrel_main_idtf:
+                [Утверждение: максимальная длина антицепи]
+                (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [Из существования антицепи мощности m вытекает, что максимальная длина антицепи Y не меньше m.]
+                       (* <- lang_ru;; *);;
+                *);;
+            <= nrel_using_constants:
+                        {
+                            concept_oriented_graph
+                        };;
+        *);;

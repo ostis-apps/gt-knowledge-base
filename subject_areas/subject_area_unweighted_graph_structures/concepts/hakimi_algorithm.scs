@@ -1,0 +1,45 @@
+sc_node_not_relation -> hakimi_algorithm;;
+
+hakimi_algorithm => nrel_main_idtf:
+    [алгоритм Хакими]
+    (* <- lang_ru;; *);;
+
+hakimi_algorithm <- rrel_key_sc_element: 
+        ... 
+        (*
+            <- sc_definition;;
+            => nrel_main_idtf:
+                [Определение: алгоритм Хакими]
+                (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [Алгоритм Хакими позволяет найти точное расположение абсолютного центра и значение его разделения (радиус).]
+                       (*<- lang_ru;; *);;
+                *);;
+            <= nrel_using_constants:
+                        {
+                            concept_regular_graph
+                        };;
+        *);;
+
+hakimi_algorithm <- rrel_key_sc_element:
+        ...
+        (*
+            <- sc_statement;;
+            => nrel_main_idtf:
+                [Утверждение: суть алгоритма Хакими]
+                (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [Алгорим Хакими состоит всего из двух шагов.
+                        1)Для каждого ребра найти точку с наименьшим разделением.
+                        2)Из всех этих точек выбрать точку с наименьшим разделением — она и будет абсолютным центром.]
+                       (* <- lang_ru;; *);;
+                *);;
+            <= nrel_using_constants:
+                        {
+                            concept_edge
+                        };;
+        *);;
