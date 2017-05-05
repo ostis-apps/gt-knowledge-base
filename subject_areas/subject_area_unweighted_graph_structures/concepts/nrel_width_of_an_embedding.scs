@@ -1,0 +1,49 @@
+sc_node_norole_relation -> nrel_width_of_an_embedding;;
+
+nrel_width_of_an_embedding => nrel_main_idtf:
+    [ширина укладки*]
+    (* <- lang_ru;; *);;
+
+nrel_width_of_an_embedding <- rrel_key_sc_element: 
+        ... 
+        (*
+            <- sc_definition;;
+            => nrel_main_idtf:
+                [Формулировка: ширина укладки.]
+                (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [Ширина укладки (Width of an embedding) — пусть f(T) — укладка ордерева T, 
+                        дуги которого ориентированы к корню; дуга (i,k) проходит над j, если i < j < k;
+                        если Wf(i,T) — количество дуг, проходящих над i в укладке f, то ширина укладки 
+                        есть величина W(f,T), равная max{i} Wf(i,T).]
+                       (* <- lang_ru;; *);;
+                *);;
+            <= nrel_using_constants:
+                            {
+                                concept_oredge;
+                                nrel_embedding
+                            };;
+        *);;
+
+nrel_width_of_an_embedding <- rrel_key_sc_element:
+        ...
+        (*
+            <- sc_statement;;
+            => nrel_main_idtf:
+                [Утверждение: ширина укладки]
+                (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [Ширина укладки - это число.]
+                       (*<- lang_ru;; *);;
+                *);;
+        *);;
+
+nrel_width_of_an_embedding <- binary_relation;;
+nrel_width_of_an_embedding => nrel_arity_of_relations: 2 (* <- number;; *);;
+nrel_width_of_an_embedding => nrel_first_domain: nrel_embedding;;
+nrel_width_of_an_embedding => nrel_second_domain: concept_number;;
+nrel_width_of_an_embedding <= nrel_definitional_domain: concept_graph;;

@@ -1,0 +1,44 @@
+sc_node_not_relation -> concept_g_restricted_graph;;
+
+concept_g_restricted_graph => nrel_main_idtf:
+    [Г-ограниченный граф]
+    (* <- lang_ru;; *);;
+
+concept_g_restricted_graph <- rrel_key_sc_element: 
+        ... 
+        (*
+            <- sc_definition;;
+            => nrel_main_idtf:
+                [Определение: Г-ограниченный граф]
+                (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [Г-Ограниченный граф - граф G = (X,Г), для которого существует такое m, что |Гx| <= m для всех x ∈ X.]
+                       (*<- lang_ru;; *);;
+                *);;
+            <= nrel_using_constants:
+                        {
+                            concept_edge;
+                            nrel_hamiltonian_path
+                        };;
+        *);;
+
+concept_g_restricted_graph <- rrel_key_sc_element:
+        ...
+        (*
+            <- sc_statement;;
+            => nrel_main_idtf:
+                [Утверждение: ориентированность Г-ограниченного графа]
+                (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [Г-ограниченный граф является неориентированным.]
+                       (* <- lang_ru;; *);;
+                *);;
+            <= nrel_using_constants:
+                        {
+                            concept_unoriented_graph
+                        };;
+        *);;

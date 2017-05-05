@@ -1,0 +1,45 @@
+sc_node_norole_relation -> nrel_one_base;;
+
+nrel_one_base => nrel_main_idtf:
+    [1-база*]
+    (* <- lang_ru;; *);;
+
+nrel_one_base <- rrel_key_sc_element: 
+        ... 
+        (*
+            <- sc_definition;;
+            => nrel_main_idtf:
+                [Определение: 1-база.]
+                (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [1-База - это такой минимальный набор S попарно несмежных вершин, что любая вершина орграфа или принадлежит S, или смежна с некоторой вершиной множества S.]
+                       (* <- lang_ru;; *);;
+                *);;
+            <= nrel_using_constants:
+                            {
+                                rrel_vertex
+                            };;
+        *);;
+
+nrel_one_base <- rrel_key_sc_element:
+        ...
+        (*
+            <- sc_statement;;
+            => nrel_main_idtf:
+                [Утверждение: 1-база]
+                (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [Каждый орграф имеет вершинную базу, но не каждый имеет 1-базу; однако каждый бесконтурный орграф имеет 1-базу.]
+                       (*<- lang_ru;; *);;
+                *);;
+        *);;
+
+nrel_one_base <- binary_relation;;
+nrel_one_base => nrel_arity_of_relations: 2 (* <- number;; *);;
+nrel_one_base => nrel_first_domain: concept_graph;;
+nrel_one_base => nrel_second_domain: concept_graph;;
+nrel_one_base <= nrel_definitional_domain: concept_graph;;

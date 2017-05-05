@@ -1,0 +1,45 @@
+sc_node_not_relation -> concept_spanning_cotree;;
+
+concept_spanning_cotree => nrel_main_idtf:
+    [коостов]
+    (* <- lang_ru;; *);;
+
+concept_spanning_cotree <- rrel_key_sc_element: 
+        ... 
+        (*
+            <- sc_definition;;
+            => nrel_main_idtf:
+                [Определение: коостов]
+                (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [Коостов — частичный граф, порождаемый ребрами, не входящими в заданный каркас (остов).]
+                       (*<- lang_ru;; *);;
+                *);;
+            <= nrel_using_constants:
+                        {
+                            nrel_carcass;
+                            concept_tree;
+                            concept_edge
+                        };;
+        *);;
+
+concept_spanning_cotree <- rrel_key_sc_element:
+        ...
+        (*
+            <- sc_statement;;
+            => nrel_main_idtf:
+                [Утверждение: необходимость коостовов]
+                (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [Коостовы служат кобазами циклического матроида графа.]
+                       (* <- lang_ru;; *);;
+                *);;
+            <= nrel_using_constants:
+                        {
+                            concept_matroid
+                        };;
+        *);;

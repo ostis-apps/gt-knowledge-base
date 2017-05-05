@@ -1,0 +1,50 @@
+sc_node_norole_relation -> nrel_dominance_number;;
+
+nrel_dominance_number => nrel_main_idtf:
+    [число доминирования*]
+    (* <- lang_ru;; *);;
+
+nrel_dominance_number <- rrel_key_sc_element: 
+        ... 
+        (*
+            <- sc_definition;;
+            => nrel_main_idtf:
+                [Определение: число доминирования.]
+                (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [Число доминирования - наименьшая мощность доминирующего множества в графе.]
+                    (* <- lang_ru;; *);;
+                *);;
+            <= nrel_using_constants:
+                            {
+                                concept_graph
+                            };;
+        *);;
+
+nrel_dominance_number <- rrel_key_sc_element:
+        ...
+        (*
+            <- sc_statement;;
+            => nrel_main_idtf:
+                [Утверждение: нахождение числа доминирования]
+                (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [Для нахождения числа доминирования необходимо посчитать мощность множества X,
+                        в котором любая вершина графа или принадлежит X, или смежна с вершиной из X.]
+                       (*<- lang_ru;; *);;
+                *);;
+        *);;
+
+nrel_dominance_number <- binary_relation;;
+nrel_dominance_number => nrel_arity_of_relations: 2 (* <- number;; *);;
+nrel_dominance_number => nrel_first_domain: concept_graph;;
+nrel_dominance_number => nrel_second_domain: concept_number;;
+nrel_dominance_number <= nrel_definitional_domain: 
+                            {
+                                concept_graph;
+                                concept_number
+                            };;

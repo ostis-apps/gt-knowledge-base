@@ -1,0 +1,60 @@
+sc_node_not_relation -> concept_depth_first_spanning_tree;;
+
+concept_depth_first_spanning_tree => nrel_main_idtf:
+    [глубинное остовное дерево]
+    (* <- lang_ru;; *);;
+
+concept_depth_first_spanning_tree <- rrel_key_sc_element: 
+        ... 
+        (*
+            <- sc_definition;;
+            => nrel_main_idtf:
+                [Определение: глубинное остовное дерево]
+                (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [Глубинное остовное дерево - это каркас, построенный поиском в глубину в неориентированном графе.]
+                       (*<- lang_ru;; *);;
+                *);;
+            <= nrel_using_constants:
+                        {
+                            concept_graph;
+                            concept_tree
+                        };;
+        *);;
+
+concept_depth_first_spanning_tree <- rrel_key_sc_element:
+        ...
+        (*
+            <- sc_statement;;
+            => nrel_main_idtf:
+                [Утверждение: множество дуг глубинного остовного дерева]
+                (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [Все множество дуг орграфа разбивается относительно его глубинного остовного дерева на четыре класса: 
+                        древесные — дуги, принадлежащие дереву;
+                        обратные — дуги, ведущие от потомков к предкам (возможно, от вершин в себя);
+                        прямые — дуги, идущие от предков к потомкам, но не являющиеся древесными;
+                        поперечные — дуги, соединяющие вершины, которые не являются ни предками, ни потомками относительно друг друга.]
+                       (* <- lang_ru;; *);;
+                *);;
+            <= nrel_using_constants:
+                        {
+                            concept_edge
+                        };;
+        *);;
+
+concept_depth_first_spanning_tree <- rrel_key_sc_element: 
+        ...
+        (*
+            <- sc_illustration;;
+            <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> rrel_example:
+                        "file://contents/concept_depth_first_spanning_tree.png";;
+                    *);;
+        *);;

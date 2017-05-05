@@ -1,0 +1,46 @@
+sc_node_norole_relation -> nrel_graph_endomorphism;;
+
+nrel_graph_endomorphism => nrel_main_idtf:
+    [эндоморфизм графа*]
+    (* <- lang_ru;; *);;
+
+nrel_graph_endomorphism <- rrel_key_sc_element: 
+        ... 
+        (*
+            <- sc_definition;;
+            => nrel_main_idtf:
+                [Определение: эндоморфизм графа.]
+                (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [Эндоморфизм графа - это гомоморфизм графа в самого себя.]
+                       (* <- lang_ru;; *);;
+                *);;
+            <= nrel_using_constants:
+                            {
+                                concept_graph;
+                                concept_tree
+                            };;
+        *);;
+
+nrel_graph_endomorphism <- rrel_key_sc_element:
+        ...
+        (*
+            <- sc_statement;;
+            => nrel_main_idtf:
+                [Утверждение: множество всех эндоморфизмов графа.]
+                (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [Множество всех эндоморфизмов графа называется полугруппой графа.]
+                       (*<- lang_ru;; *);;
+                *);;
+        *);;
+
+nrel_graph_endomorphism <- binary_relation;;
+nrel_graph_endomorphism => nrel_arity_of_relations: 2 (* <- number;; *);;
+nrel_graph_endomorphism => nrel_first_domain: concept_graph;;
+nrel_graph_endomorphism => nrel_second_domain: concept_graph;;
+nrel_graph_endomorphism <= nrel_definitional_domain: concept_graph;;

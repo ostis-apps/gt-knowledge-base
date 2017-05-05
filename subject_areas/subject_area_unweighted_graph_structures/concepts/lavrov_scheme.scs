@@ -1,0 +1,50 @@
+sc_node_not_relation -> lavrov_scheme;;
+
+lavrov_scheme => nrel_main_idtf:
+    [схема Лаврова]
+    (* <- lang_ru;; *);;
+
+lavrov_scheme <- rrel_key_sc_element: 
+        ... 
+        (*
+            <- sc_definition;;
+            => nrel_main_idtf:
+                [Определение: схема Лаврова]
+                (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [Схема Лаврова - одна из основных формальных моделей программ, 
+                        используемых для алгоритмов оптимизации программ.]
+                       (*<- lang_ru;; *);;
+                *);;
+        *);;
+
+lavrov_scheme <- rrel_key_sc_element:
+        ...
+        (*
+            <- sc_statement;;
+            => nrel_main_idtf:
+                [Утверждение: информационные связи]
+                (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [В схемах Лаврова исследуются информационные связи между операторами
+                        в условиях неизменности логической структуры программ.]
+                       (* <- lang_ru;; *);;
+                *);;
+        *);;
+
+        
+lavrov_scheme <- rrel_key_sc_element: 
+        ...
+        (*
+            <- sc_illustration;;
+            <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> rrel_example:
+                        "file://contents/lavrov_scheme.gif";;
+                    *);;
+        *);;

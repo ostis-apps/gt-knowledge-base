@@ -1,0 +1,61 @@
+sc_node_norole_relation -> nrel_acyclic_coloring;;
+
+nrel_acyclic_coloring => nrel_main_idtf:
+    [ациклическая раскраска*]
+    (* <- lang_ru;; *);;
+
+nrel_acyclic_coloring <- rrel_key_sc_element: 
+        ... 
+        (*
+            <- sc_definition;;
+            => nrel_main_idtf:
+                [Определение: ациклическая раскраска.]
+                (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [Ациклическая раскраска - это правильная раскраска вершин, в которой любой двуцветный подграф не имеет циклов.]
+                       (* <- lang_ru;; *);;
+                *);;
+            <= nrel_using_constants:
+                            {
+                                nrel_cycle
+                            };;
+        *);;
+
+nrel_acyclic_coloring <- rrel_key_sc_element:
+        ...
+        (*
+            <- sc_statement;;
+            => nrel_main_idtf:
+                [Утверждение: ациклическое хроматическое число]
+                (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [Ациклическим хроматическим числом A(G) графа G называется наименьшее число цветов, необходимое в любой ациклической раскраске G.]
+                       (*<- lang_ru;; *);;
+                *);;
+        *);;
+
+nrel_acyclic_coloring <- rrel_key_sc_element: 
+        ...
+        (*
+            <- sc_illustration;;
+            <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> rrel_example:
+                        "file://contents/nrel_acyclic_coloring.png";;
+                    *);;
+        *);;
+
+nrel_acyclic_coloring <- binary_relation;;
+nrel_acyclic_coloring => nrel_arity_of_relations: 2 (* <- number;; *);;
+nrel_acyclic_coloring => nrel_first_domain: concept_graph;;
+nrel_acyclic_coloring => nrel_second_domain: concept_number;;
+nrel_acyclic_coloring <= nrel_definitional_domain: 
+                                        {
+                                            concept_graph;
+                                            concept_number
+                                        };;

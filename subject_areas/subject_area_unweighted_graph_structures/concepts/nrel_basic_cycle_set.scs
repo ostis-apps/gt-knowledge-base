@@ -1,0 +1,46 @@
+sc_node_norole_relation -> nrel_basic_cycle_set;;
+
+nrel_basic_cycle_set => nrel_main_idtf:
+    [базисное множество циклов*]
+    (* <- lang_ru;; *);;
+
+nrel_basic_cycle_set <- rrel_key_sc_element: 
+        ... 
+        (*
+            <- sc_definition;;
+            => nrel_main_idtf:
+                [Определение: базисное множество циклов.]
+                (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [Базисное множество циклов - это множество всех m - n + 1 базисных циклов графа G относительно каркаса T.]
+                       (* <- lang_ru;; *);;
+                *);;
+            <= nrel_using_constants:
+                            {
+                                concept_graph;
+                                concept_tree
+                            };;
+        *);;
+
+nrel_basic_cycle_set <- rrel_key_sc_element:
+        ...
+        (*
+            <- sc_statement;;
+            => nrel_main_idtf:
+                [Утверждение: кольцевая сумма базисных циклов.]
+                (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [Любой цикл графа G может быть выражен в виде кольцевой суммы базисных циклов.]
+                       (*<- lang_ru;; *);;
+                *);;
+        *);;
+
+nrel_basic_cycle_set <- binary_relation;;
+nrel_basic_cycle_set => nrel_arity_of_relations: 2 (* <- number;; *);;
+nrel_basic_cycle_set => nrel_first_domain: concept_graph;;
+nrel_basic_cycle_set => nrel_second_domain: concept_graph;;
+nrel_basic_cycle_set <= nrel_definitional_domain: concept_graph;;

@@ -1,0 +1,50 @@
+sc_node_norole_relation -> nrel_reconstruction_of_a_graph;;
+
+nrel_reconstruction_of_a_graph => nrel_main_idtf:
+    [реконструкция графа*]
+    (* <- lang_ru;; *);;
+
+nrel_reconstruction_of_a_graph <- rrel_key_sc_element: 
+        ... 
+        (*
+            <- sc_definition;;
+            => nrel_main_idtf:
+                [Определение: реконструкция графа.]
+                (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [Реконструкция графа - для данного G такой граф H, у которого набор подграфов вида H\v (H\e) 
+                        для всех v ∈ V(H) (для всех e ∈ E(H)) равен соответствующему набору для графа G.]
+                    (* <- lang_ru;; *);;
+                *);;
+            <= nrel_using_constants:
+                            {
+                                concept_graph;
+                                nrel_subgraph;
+                                rrel_vertex;
+                                concept_edge
+                            };;
+        *);;
+
+nrel_reconstruction_of_a_graph <- rrel_key_sc_element:
+        ...
+        (*
+            <- sc_statement;;
+            => nrel_main_idtf:
+                [Утверждение: равенство наборов]
+                (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [Набор подграфов вида H\v (H\e) для всех v ∈ V(H) (для всех e ∈ E(H))
+                        равен соответствующему набору для графа G.]
+                       (*<- lang_ru;; *);;
+                *);;
+        *);;
+
+nrel_reconstruction_of_a_graph <- binary_relation;;
+nrel_reconstruction_of_a_graph => nrel_arity_of_relations: 2 (* <- number;; *);;
+nrel_reconstruction_of_a_graph => nrel_first_domain: concept_graph;;
+nrel_reconstruction_of_a_graph => nrel_second_domain: concept_graph;;
+nrel_reconstruction_of_a_graph <= nrel_definitional_domain: concept_graph;;

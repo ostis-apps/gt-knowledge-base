@@ -1,0 +1,59 @@
+sc_node_not_relation -> concept_desargues_graph;;
+
+concept_desargues_graph => nrel_main_idtf:
+    [граф Дезарга]
+    (* <- lang_ru;; *);;
+
+concept_desargues_graph <- rrel_key_sc_element: 
+        ... 
+        (*
+            <- sc_definition;;
+            => nrel_main_idtf:
+                [Определение: граф Дезарга]
+                (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [Граф Дезарга — граф, вершины которого — это двухэлементные подмножества из O. 
+                        Две вершины в графе Дезарга смежны тогда и только тогда, когда соответствующие им подмножества пересекаются]
+                       (*<- lang_ru;; *);;
+                *);;
+            <= nrel_using_constants:
+                        {
+                            concept_graph;
+                            rrel_vertex
+                        };;
+        *);;
+
+concept_desargues_graph <- rrel_key_sc_element:
+        ...
+        (*
+            <- sc_statement;;
+            => nrel_main_idtf:
+                [Утверждение: связь с графом Перерсена]
+                (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [Граф Дезарга — граф, дополнительный к графу Петерсена.]
+                       (* <- lang_ru;; *);;
+                *);;
+            <= nrel_using_constants:
+                        {
+                            concept_petersen_graph
+                        };;
+        *);;
+
+/*            
+concept_desargues_graph <- rrel_key_sc_element: 
+        ...
+        (*
+            <- sc_illustration;;
+            <= nrel_sc_text_translation:
+                    ...
+                    (*
+                        -> rrel_example:
+                        "file://contents/concept_desargues_graph.jpg";;
+                    *);;
+        *);;
+*/
