@@ -13,7 +13,7 @@ nrel_matching => nrel_first_domain: concept_graph;;
 nrel_matching <- rrel_key_sc_element: 
      	... 
 	(*
-	<- sc_definition;;
+	<- definition;;
 	=> nrel_main_idtf: [Опр.(паросочетание графа)] (* <- lang_ru;; *);;
 	<= nrel_sc_text_translation: ...
 		(*
@@ -31,7 +31,7 @@ nrel_matching<= nrel_using_constants:
 nrel_matching <- rrel_key_sc_element: 
 	...
 	(*
-		<- sc_illustration;;
+		<- illustration;;
 		<= nrel_sc_text_translation:
 			...
 			(*

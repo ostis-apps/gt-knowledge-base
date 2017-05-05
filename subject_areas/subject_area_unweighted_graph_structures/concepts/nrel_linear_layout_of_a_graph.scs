@@ -7,7 +7,7 @@ nrel_linear_layout_of_a_graph => nrel_main_idtf:
 nrel_linear_layout_of_a_graph <- rrel_key_sc_element: 
         ... 
         (*
-            <- sc_definition;;
+            <- definition;;
             => nrel_main_idtf:
                 [Определение: линейное размещение графа.]
                 (* <- lang_ru;; *);;
@@ -26,7 +26,7 @@ nrel_linear_layout_of_a_graph <- rrel_key_sc_element:
 nrel_linear_layout_of_a_graph <- rrel_key_sc_element:
         ...
         (*
-            <- sc_statement;;
+            <- statement;;
             => nrel_main_idtf:
                 [Утверждение: линейное размещение графа]
                 (* <- lang_ru;; *);;

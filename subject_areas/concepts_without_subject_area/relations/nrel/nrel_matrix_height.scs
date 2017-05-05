@@ -15,7 +15,7 @@ nrel_matrix_height
 
 <-rrel_key_sc_element:
 		...  
-		(*<-sc_definition;;
+		(*<-definition;;
 		=> nrel_main_idtf: [Опр.(высота матрицы)] (* <- lang_ru;; *);;
 		<=nrel_sc_text_translation:
 		...

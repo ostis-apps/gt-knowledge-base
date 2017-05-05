@@ -7,7 +7,7 @@ concept_circulant_graph => nrel_main_idtf:
 concept_circulant_graph <- rrel_key_sc_element: 
         ... 
 		(*
-		<- sc_definition;;
+		<- definition;;
 		=> nrel_main_idtf: [Определение: циркулярный граф] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Definition: circulant graph] (* <- lang_en;; *);;
 		<= nrel_sc_text_translation: ...

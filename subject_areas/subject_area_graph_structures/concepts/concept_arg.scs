@@ -6,7 +6,7 @@ concept_arg => nrel_main_idtf:
 concept_arg <-rrel_key_sc_element:
 		...
 		(*
-		<-sc_definition;;
+		<-definition;;
 		=> nrel_main_idtf: [Определение: ребро] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Definition: arg] (* <- lang_en;; *);;
 		=> nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;

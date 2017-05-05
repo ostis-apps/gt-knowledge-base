@@ -10,7 +10,7 @@ concept_self_balancing_search_tree => nrel_idtf:
 concept_self_balancing_search_tree <- rrel_key_sc_element: 
 		... 
 		(*
-		<- sc_definition;;
+		<- definition;;
 		=> nrel_main_idtf: [Определение: самоболансирующееся дерево поиска] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Definition: self-balancing search tree] (* <- lang_en;; *);;
 		<= nrel_sc_text_translation: ...
@@ -32,7 +32,7 @@ concept_self_balancing_search_tree <= nrel_using_constants:
 concept_self_balancing_search_tree <- rrel_key_sc_element: 
 	...
 	(*
-		<- sc_illustration;;
+		<- illustration;;
 		<= nrel_sc_text_translation:
 		...
 			(*

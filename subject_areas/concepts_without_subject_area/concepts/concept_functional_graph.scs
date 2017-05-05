@@ -9,7 +9,7 @@ concept_functional_graph
 
 <-rrel_key_sc_element:
 ...
-(*<-sc_definition;;
+(*<-definition;;
 => nrel_main_idtf: [Опр.(функциональный граф)] (* <- lang_ru;; *);;
 <=nrel_sc_text_translation:
 ...
@@ -28,7 +28,7 @@ concept_functional_graph
 <-rrel_key_sc_element: ...
 (*
 =>nrel_main_idtf:[Утв.(функциональный граф) ](*<-lang_ru;;*);;
-<- sc_statement;;
+<- statement;;
 <=nrel_sc_text_translation:
 ...
 (*
@@ -40,7 +40,7 @@ concept_functional_graph
 <-rrel_key_sc_element:
 ... (*
 =>nrel_main_idtf:[Утв.(функциональный граф) ](*<-lang_ru;;*);;
-<- sc_statement;;
+<- statement;;
 <=nrel_sc_text_translation:
 ...
 (*

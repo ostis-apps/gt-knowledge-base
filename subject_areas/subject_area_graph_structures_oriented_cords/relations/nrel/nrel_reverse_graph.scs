@@ -18,7 +18,7 @@ nrel_reverse_graph<= nrel_definitional_domain: concept_directed_graph;;
 nrel_reverse_graph <- rrel_key_sc_element: 
         ... 
 		(*
-		<- sc_definition;;
+		<- definition;;
 		=> nrel_main_idtf: [Определение: обратный граф] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Definition: reverse graph] (* <- lang_en;; *);;
 		<= nrel_sc_text_translation: ...
@@ -41,7 +41,7 @@ nrel_reverse_graph <- rrel_main_key_sc_element:
 		=> nrel_main_idtf: [Утверждение: остовный подграф] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Statement: spanning subgraph] (* <- lang_en;; *);;
 		-> rrel_key_sc_element: concept_directed_graph;;
-		<- sc_statement;;
+		<- statement;;
 		<= nrel_sc_text_translation: ...
 			(*
 			-> rrel_example: 

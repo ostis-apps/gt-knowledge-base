@@ -7,7 +7,7 @@ concept_shennon_graph => nrel_main_idtf:
 concept_shennon_graph <- rrel_key_sc_element: 
         ... 
         (*
-            <- sc_definition;;
+            <- definition;;
             => nrel_main_idtf:
                 [Определение: граф Шеннона]
                 (* <- lang_ru;; *);;
@@ -27,7 +27,7 @@ concept_shennon_graph <- rrel_key_sc_element:
 concept_shennon_graph <- rrel_key_sc_element:
         ...
         (*
-            <- sc_statement;;
+            <- statement;;
             => nrel_main_idtf:
                 [Утверждение: треугольный граф]
                 (* <- lang_ru;; *);;

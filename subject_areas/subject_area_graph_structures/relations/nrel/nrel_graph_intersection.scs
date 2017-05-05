@@ -11,7 +11,7 @@ nrel_graph_intersection
 => nrel_arity_of_relations: 3 (* <- number ;;*);
 <-rrel_key_sc_element:
 		...  
-		(*<-sc_definition;;
+		(*<-definition;;
 		=> nrel_main_idtf: [Опр.(пересечеие графов)] (* <- lang_ru;; *);;
 		<=nrel_sc_text_translation:
 		...
@@ -36,7 +36,7 @@ nrel_graph_intersection
 <- rrel_key_sc_element: 
 	...
 	(*
-		<- sc_illustration;;
+		<- illustration;;
 		<= nrel_sc_text_translation:
 		...
 			(*

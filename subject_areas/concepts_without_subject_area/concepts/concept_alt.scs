@@ -7,7 +7,7 @@ concept_alt
 	<= nrel_inclusion: concept_graph;
 
 	<- rrel_key_sc_element: ... (*
-		<- sc_definition;;
+		<- definition;;
 		<= nrel_sc_text_translation: ... (*
 			-> rrel_example: [фрагмент управляющего графа с единственной начальной вершиной, т.е. выделенной вершиной, которая либо совпадает с входом управляющего графа, либо имеет заходящую дугу с началом вне данного фрагмента.] (* <- lang_ru;; *);;
 			<= nrel_using_constants: {

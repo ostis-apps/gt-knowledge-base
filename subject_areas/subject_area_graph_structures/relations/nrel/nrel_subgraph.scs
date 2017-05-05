@@ -7,7 +7,7 @@ nrel_subgraph => nrel_main_idtf:
 nrel_subgraph <- rrel_key_sc_element: 
         ... 
 		(*
-		<- sc_definition;;
+		<- definition;;
 		=> nrel_main_idtf: [Определение: подграф] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Definition: subgraph] (* <- lang_en;; *);;
 		<= nrel_sc_text_translation: ...
@@ -32,7 +32,7 @@ nrel_subgraph <- rrel_main_key_sc_element:
 		=> nrel_main_idtf: [Утверждение: необходимое условие для того,чтобы подграф был остовным] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Statement: a necessary condition for the graph was spanning] (* <- lang_en;; *);;
 		-> rrel_key_sc_element: concept_node;;
-		<- sc_statement;;
+		<- statement;;
 		<= nrel_sc_text_translation: ...
 			(*
 			-> rrel_example: 

@@ -8,7 +8,7 @@ concept_rectangular_graph <- rrel_key_sc_element:
 	...  
 	(*
 	=> nrel_main_idtf: [Опр.(прямоугольный граф)] (* <- lang_ru;; *);;
-	<-sc_definition;;
+	<-definition;;
 	<= nrel_sc_text_translation: 
 		...
 		(*
@@ -26,7 +26,7 @@ concept_rectangular_graph <- rrel_key_sc_element:
 	... 
 	(*
 	=> nrel_main_idtf: [Утв.(плоский граф; ребро)] (* <- lang_ru;; *);;
-	<- sc_statement;;
+	<- statement;;
 	<= nrel_sc_text_translation: 
 		...
 		(*

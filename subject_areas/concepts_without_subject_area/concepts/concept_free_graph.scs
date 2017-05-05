@@ -7,7 +7,7 @@ concept_free_graph => nrel_main_idtf:
 concept_free_graph <- rrel_key_sc_element: 
         ... 
 		(*
-		<- sc_definition;;
+		<- definition;;
 		=> nrel_main_idtf: [Определение: бесконтурный граф] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Definition: free graph] (* <- lang_en;; *);;
 		<= nrel_sc_text_translation: ...
@@ -31,7 +31,7 @@ concept_free_graph <- rrel_main_key_sc_element:
 		=> nrel_main_idtf: [Утверждение: вершина база в бесконтурном графе] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Statement: vertex base in the free graph] (* <- lang_en;; *);;
 		-> rrel_key_sc_element: concept_node; nrel_base_graph;;
-		<- sc_statement;;
+		<- statement;;
 		<= nrel_sc_text_translation: ...
 			(*
 			-> rrel_example: 
@@ -46,7 +46,7 @@ concept_free_graph <- rrel_main_key_sc_element:
 concept_free_graph <- rrel_key_sc_element: 
 	...
 	(*
-		<- sc_illustration;;
+		<- illustration;;
 		<= nrel_sc_text_translation:
 		...
 			(*

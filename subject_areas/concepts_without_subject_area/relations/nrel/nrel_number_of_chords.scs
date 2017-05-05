@@ -14,7 +14,7 @@ nrel_number_of_chords => nrel_definitional_domain: concept_graph;;
 nrel_number_of_chords => nrel_first_domain: number;; 
 
 nrel_number_of_chords <- rrel_key_sc_element: ... (*
-	<- sc_definition;;
+	<- definition;;
 	<= nrel_sc_text_translation: ... (*
 		-> rrel_example: 
 			[Количество ребер графа, не принадлежащих его дереву.] (* <- lang_ru;; *);;

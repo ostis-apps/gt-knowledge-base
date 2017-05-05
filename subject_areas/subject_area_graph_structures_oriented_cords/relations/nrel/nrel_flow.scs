@@ -28,7 +28,7 @@ nrel_flow <- rrel_key_sc_element:
 	(*
 	=> nrel_main_idtf: [Определение: поток] (* <- lang_ru;; *);;
 	=> nrel_main_idtf: [Definition: flow] (* <- lang_en;; *);;
-	<- sc_definition;;
+	<- definition;;
 	<= nrel_sc_text_translation: ...
 		(*
 		-> rrel_example: 
@@ -53,7 +53,7 @@ nrel_flow<- rrel_main_key_sc_element:
 		(*
 		=> nrel_main_idtf: [Утверждение: ограничение пропускной способности.] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Statement: capacity constraints] (* <- lang_en;; *);;
-		<- sc_statement;;
+		<- statement;;
 		<= nrel_sc_text_translation: ...
 			(*
 			-> rrel_example: 
@@ -67,7 +67,7 @@ nrel_flow<- rrel_main_key_sc_element:
 nrel_flow <- rrel_key_sc_element: 
 	...
 	(*
-		<- sc_illustration;;
+		<- illustration;;
 		<= nrel_sc_text_translation:
 		...
 			(*

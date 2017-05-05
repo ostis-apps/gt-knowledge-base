@@ -6,7 +6,7 @@ concept_network	=> nrel_main_idtf:
 
 concept_network	<- rrel_key_sc_element:
 		...  
-		(*<-sc_definition;;
+		(*<-definition;;
 		=> nrel_main_idtf: [Опр.(сеть)] (* <- lang_ru;; *);;
 		<=nrel_sc_text_translation:
 		...
@@ -26,7 +26,7 @@ concept_network<= nrel_using_constants:
 concept_network <- rrel_key_sc_element: 
 	...
 	(*
-		<- sc_illustration;;
+		<- illustration;;
 		<= nrel_sc_text_translation:
 		...
 			(*

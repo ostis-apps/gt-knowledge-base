@@ -10,7 +10,7 @@ nrel_zone
 	=> nrel_definitional_domain: concept_subgraph;
 
 	<- rrel_key_sc_element: ... (*
-		<- sc_definition;;
+		<- definition;;
 		<= nrel_sc_text_translation: ... (*
 			-> rrel_example: [нетривиальный сильно связный подграф; зона называется одновходовой, если она имеет единственную входную вершину, и многовходовой, если она имеет не менее двух таких вершин. ] 
 				(* <- lang_ru;; *);;

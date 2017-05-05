@@ -20,7 +20,7 @@ nrel_unilaterally_connected_component <- rrel_key_sc_element:
 	(*
 	=> nrel_main_idtf: [Определение: компонента односторонней связности] (* <- lang_ru;; *);;
 	=> nrel_main_idtf: [Definition: unilaterally connected component] (* <- lang_en;; *);;
-	<- sc_definition;;
+	<- definition;;
 	<= nrel_sc_text_translation: ...
 		(*
 		-> rrel_example: 
@@ -46,7 +46,7 @@ nrel_unilaterally_connected_component<- rrel_main_key_sc_element:
 		(*
 		=> nrel_main_idtf: [Утверждение: содержание односторонней компоненты] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Statement: unilateral component content] (* <- lang_en;; *);;
-		<- sc_statement;;
+		<- statement;;
 		<= nrel_sc_text_translation: ...
 			(*
 			-> rrel_example: 

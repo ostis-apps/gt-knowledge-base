@@ -12,7 +12,7 @@ nrel_not_trivial_path
 
 <-rrel_key_sc_element:
 ...
-(*<-sc_definition;;
+(*<-definition;;
 => nrel_main_idtf: [Опр.(нетривиальный маршрут)] (* <- lang_ru;; *);;
 <=nrel_sc_text_translation:
 ...

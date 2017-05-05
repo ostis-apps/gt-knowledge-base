@@ -7,7 +7,7 @@ nrel_repeatedly_executed_region => nrel_main_idtf:
 nrel_repeatedly_executed_region <- rrel_key_sc_element: 
         ... 
         (*
-            <- sc_definition;;
+            <- definition;;
             => nrel_main_idtf:
                 [Определение: участок повторяемости.]
                 (* <- lang_ru;; *);;
@@ -28,7 +28,7 @@ nrel_repeatedly_executed_region <- rrel_key_sc_element:
 nrel_repeatedly_executed_region <- rrel_key_sc_element:
         ...
         (*
-            <- sc_statement;;
+            <- statement;;
             => nrel_main_idtf:
                 [Утверждение: участок повторяемости нулевого уровня]
                 (* <- lang_ru;; *);;
@@ -49,7 +49,7 @@ nrel_repeatedly_executed_region <= nrel_definitional_domain: concept_graph;;
 nrel_repeatedly_executed_region <- rrel_key_sc_element: 
         ...
         (*
-            <- sc_illustration;;
+            <- illustration;;
             <= nrel_sc_text_translation:
                     ...
                     (*

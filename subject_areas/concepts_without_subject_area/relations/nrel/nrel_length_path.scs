@@ -19,7 +19,7 @@ nrel_length_path => nrel_second_domain: number;;
 nrel_length_path <- rrel_key_sc_element: 
      ... 
 	(*
-	<- sc_definition;;
+	<- definition;;
 	=> nrel_main_idtf: [Опр.(Длина пути)] (* <- lang_ru;; *);;
 	<= nrel_sc_text_translation: ...
 		(*

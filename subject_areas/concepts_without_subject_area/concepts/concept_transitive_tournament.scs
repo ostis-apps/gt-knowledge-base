@@ -7,7 +7,7 @@ concept_transitive_tournament => nrel_main_idtf:
 concept_transitive_tournament <- rrel_key_sc_element: ...  
 	(*
 	=> nrel_main_idtf: [Опр.(транзитивный турнир)] (* <- lang_ru;; *);;
-	<- sc_definition;; 
+	<- definition;; 
 	<= nrel_sc_text_translation: ... (*
 		-> rrel_example: 
 			[турнир, у которого из существования дуг (u,v) и (v,w) вытекает существование дуги (u,w)]

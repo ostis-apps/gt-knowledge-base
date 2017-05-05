@@ -13,7 +13,7 @@ concept_n_ary_tree <= nrel_subdividing:
 concept_n_ary_tree <- rrel_key_sc_element: 
 		... 
 		(*
-		<- sc_definition;;
+		<- definition;;
 		=> nrel_main_idtf: [Определение: N-арное дерево] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Definition: N-ary tree] (* <- lang_en;; *);;
 		<= nrel_sc_text_translation: ...
@@ -38,7 +38,7 @@ concept_n_ary_tree <- rrel_main_key_sc_element:
 		=> nrel_main_idtf: [Утверждение: разбиение N-арных деревьев] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Statement: partition N-ary trees] (* <- lang_en;; *);;
 		-> rrel_key_sc_element: concept_tree; concept_binary_tree;;
-		<- sc_statement;;
+		<- statement;;
 		<= nrel_sc_text_translation: ...
 			(*
 			-> rrel_example: 
@@ -52,7 +52,7 @@ concept_n_ary_tree <- rrel_main_key_sc_element:
 concept_n_ary_tree <- rrel_key_sc_element: 
 	...
 	(*
-		<- sc_illustration;;
+		<- illustration;;
 		<= nrel_sc_text_translation:
 		...
 			(*

@@ -7,7 +7,7 @@ nrel_graph_block => nrel_main_idtf:
 nrel_graph_block <- rrel_key_sc_element: 
         ... 
         (*
-            <- sc_definition;;
+            <- definition;;
             => nrel_main_idtf:
                 [Определение: блок графа.]
                 (* <- lang_ru;; *);;
@@ -28,7 +28,7 @@ nrel_graph_block <- rrel_key_sc_element:
 nrel_graph_block <- rrel_key_sc_element:
         ...
         (*
-            <- sc_statement;;
+            <- statement;;
             => nrel_main_idtf:
                 [Утверждение: принадлежность ребра блоку]
                 (* <- lang_ru;; *);;

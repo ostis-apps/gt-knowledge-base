@@ -7,7 +7,7 @@ nrel_acyclic_coloring => nrel_main_idtf:
 nrel_acyclic_coloring <- rrel_key_sc_element: 
         ... 
         (*
-            <- sc_definition;;
+            <- definition;;
             => nrel_main_idtf:
                 [Определение: ациклическая раскраска.]
                 (* <- lang_ru;; *);;
@@ -26,7 +26,7 @@ nrel_acyclic_coloring <- rrel_key_sc_element:
 nrel_acyclic_coloring <- rrel_key_sc_element:
         ...
         (*
-            <- sc_statement;;
+            <- statement;;
             => nrel_main_idtf:
                 [Утверждение: ациклическое хроматическое число]
                 (* <- lang_ru;; *);;
@@ -41,7 +41,7 @@ nrel_acyclic_coloring <- rrel_key_sc_element:
 nrel_acyclic_coloring <- rrel_key_sc_element: 
         ...
         (*
-            <- sc_illustration;;
+            <- illustration;;
             <= nrel_sc_text_translation:
                     ...
                     (*

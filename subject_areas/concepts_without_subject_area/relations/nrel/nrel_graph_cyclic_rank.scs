@@ -12,7 +12,7 @@ nrel_graph_cyclic_rank
 
 <-rrel_key_sc_element:
 ...
-(*<-sc_definition;;
+(*<-definition;;
 => nrel_main_idtf: [Опр.(циклический ранг графа)] (* <- lang_ru;; *);;
 <=nrel_sc_text_translation:
 ...

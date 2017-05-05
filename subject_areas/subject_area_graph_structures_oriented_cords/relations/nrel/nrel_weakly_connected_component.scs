@@ -20,7 +20,7 @@ nrel_weakly_connected_component <- rrel_key_sc_element:
 	(*
 	=> nrel_main_idtf: [Определение: компонента слабой связности] (* <- lang_ru;; *);;
 	=> nrel_main_idtf: [Definition: weakly connected component] (* <- lang_en;; *);;
-	<- sc_definition;;
+	<- definition;;
 	<= nrel_sc_text_translation: ...
 		(*
 		-> rrel_example: 
@@ -45,7 +45,7 @@ nrel_weakly_connected_component<- rrel_main_key_sc_element:
 		(*
 		=> nrel_main_idtf: [Утверждение: содержание односторонней компоненты] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Statement: unilateral component content] (* <- lang_en;; *);;
-		<- sc_statement;;
+		<- statement;;
 		<= nrel_sc_text_translation: ...
 			(*
 			-> rrel_example: 
@@ -59,7 +59,7 @@ nrel_weakly_connected_component<- rrel_main_key_sc_element:
 nrel_weakly_connected_component <- rrel_key_sc_element: 
 	...
 	(*
-		<- sc_illustration;;
+		<- illustration;;
 		<= nrel_sc_text_translation:
 		...
 			(*

@@ -7,7 +7,7 @@ concept_directed_tree => nrel_main_idtf:
 concept_directed_tree <- rrel_key_sc_element: 
         ... 
             (*
-	<- sc_definition;;
+	<- definition;;
 	=> nrel_main_idtf: [Определение: ориентированное дерево] (* <- lang_ru;; *);;
 	=> nrel_main_idtf: [Definition: directed tree] (* <- lang_en;; *);;	
 	<= nrel_sc_text_translation: ... 
@@ -28,7 +28,7 @@ concept_directed_tree<= nrel_using_constants: {
 concept_directed_tree <- rrel_key_sc_element: 
         	... 
 		(*
-		<- sc_statement;;
+		<- statement;;
 		-> rrel_key_sc_element: concept_node; nrel_path_in_the_digraph;;		
 		=> nrel_main_idtf: [Утверждение: достижимость вершин из корня] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Definition: reachability of nodes from the root](* <- lang_en;; *);;
@@ -43,7 +43,7 @@ concept_directed_tree <- rrel_key_sc_element:
 		*);;
 		
 concept_directed_tree <- rrel_key_sc_element: ... (*
-	<- sc_illustration;;
+	<- illustration;;
 	<= nrel_sc_text_translation: ... (*
 		-> rrel_example: "file://contents/directed_tree.gif";;
 	*);;

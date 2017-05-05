@@ -7,7 +7,7 @@ concept_hamiltonian_connected_digraph => nrel_main_idtf:
 concept_hamiltonian_connected_digraph <- rrel_key_sc_element: 
         ... 
         (*
-            <- sc_definition;;
+            <- definition;;
             => nrel_main_idtf:
                 [Определение: гамильтоново-связный орграф]
                 (* <- lang_ru;; *);;
@@ -27,7 +27,7 @@ concept_hamiltonian_connected_digraph <- rrel_key_sc_element:
 concept_hamiltonian_connected_digraph <- rrel_key_sc_element:
         ...
         (*
-            <- sc_statement;;
+            <- statement;;
             => nrel_main_idtf:
                 [Утверждение: ориентированность гамильтоново-связного графа]
                 (* <- lang_ru;; *);;

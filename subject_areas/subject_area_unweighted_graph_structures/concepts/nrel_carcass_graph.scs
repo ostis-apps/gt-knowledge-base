@@ -7,7 +7,7 @@ nrel_carcass_graph => nrel_main_idtf:
 nrel_carcass_graph <- rrel_key_sc_element: 
         ... 
         (*
-            <- sc_definition;;
+            <- definition;;
             => nrel_main_idtf:
                 [Определение: граф каркасов.]
                 (* <- lang_ru;; *);;
@@ -28,7 +28,7 @@ nrel_carcass_graph <- rrel_key_sc_element:
 nrel_carcass_graph <- rrel_key_sc_element:
         ...
         (*
-            <- sc_statement;;
+            <- statement;;
             => nrel_main_idtf:
                 [Утверждение: граф каркасов]
                 (* <- lang_ru;; *);;

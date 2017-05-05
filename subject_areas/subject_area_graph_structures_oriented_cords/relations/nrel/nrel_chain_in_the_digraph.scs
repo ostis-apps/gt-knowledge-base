@@ -20,7 +20,7 @@ nrel_chain_in_the_digraph <- rrel_key_sc_element:
 	(*
 	=> nrel_main_idtf: [Определение:  цепь в орграфе] (* <- lang_ru;; *);;
 	=> nrel_main_idtf: [Definition: chain in the digraph] (* <- lang_en;; *);;
-	<- sc_definition;;
+	<- definition;;
 	<= nrel_sc_text_translation: ...
 		(*
 		-> rrel_example: 
@@ -43,7 +43,7 @@ nrel_chain_in_the_digraph<- rrel_main_key_sc_element:
 		(*
 		=> nrel_main_idtf: [Утверждение: полупуть] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Statement: semipath] (* <- lang_en;; *);;
-		<- sc_statement;;
+		<- statement;;
 		<= nrel_sc_text_translation: ...
 			(*
 			-> rrel_example: 
@@ -57,7 +57,7 @@ nrel_chain_in_the_digraph<- rrel_main_key_sc_element:
 nrel_chain_in_the_digraph <- rrel_key_sc_element: 
 	...
 	(*
-		<- sc_illustration;;
+		<- illustration;;
 		<= nrel_sc_text_translation:
 		...
 			(*

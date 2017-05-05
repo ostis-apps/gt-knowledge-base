@@ -7,7 +7,7 @@ concept_kograph => nrel_main_idtf:
 concept_kograph <- rrel_key_sc_element: 
         ... 
 		(*
-		<- sc_definition;;
+		<- definition;;
 		=> nrel_main_idtf: [Определение: кограф] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Definition:  kograph] (* <- lang_en;; *);;
 		<= nrel_sc_text_translation: ...
@@ -32,7 +32,7 @@ concept_kograph <= nrel_using_constants:
 concept_kograph <- rrel_key_sc_element: 
 	...
 	(*
-		<- sc_illustration;;
+		<- illustration;;
 		<= nrel_sc_text_translation:
 		...
 			(*

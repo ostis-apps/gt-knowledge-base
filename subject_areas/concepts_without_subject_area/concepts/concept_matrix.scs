@@ -6,7 +6,7 @@ concept_matrix	=> nrel_main_idtf:
 
 concept_matrix	<- rrel_key_sc_element:
 		...  
-		(*<-sc_definition;;
+		(*<-definition;;
 		=> nrel_main_idtf: [Опр.(матрица)] (* <- lang_ru;; *);;
 		<=nrel_sc_text_translation:
 		...
@@ -20,7 +20,7 @@ concept_matrix	<- rrel_key_sc_element:
 concept_matrix	 <- rrel_key_sc_element: 
 	...
 	(*
-		<- sc_illustration;;
+		<- illustration;;
 		<= nrel_sc_text_translation:
 		...
 			(*

@@ -10,7 +10,7 @@ nrel_rooted_tree_absolute
 	=> nrel_definitional_domain: nrel_vertex_set;
 
 	<- rrel_key_sc_element: ... (*
-		<- sc_definition;;
+		<- definition;;
 		<= nrel_sc_text_translation: ... (*
 			-> rrel_example: [некорневое дерево с теми же вершинами и ребрами, что и исходное корневое.] 
 				(* <- lang_ru;; *);;

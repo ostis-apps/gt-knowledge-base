@@ -10,7 +10,7 @@ nrel_weight_matrix
 	=> nrel_definitional_domain: nrel_vertex_set;
 
 	<- rrel_key_sc_element: ... (*
-		<- sc_definition;;
+		<- definition;;
 		<= nrel_sc_text_translation: ... (*
 			-> rrel_example: [вариант матрицы смежности для взвешенного графа, представляет собой квадратную матрицу размером n (times) n (n - число вершин), (i,j)-й элемент которой равен весу ребра / дуги (v(_i) , v(_j)), если таковое имеется в графе] 
 				(* <- lang_ru;; *);;

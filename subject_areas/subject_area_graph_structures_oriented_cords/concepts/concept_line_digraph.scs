@@ -7,7 +7,7 @@ concept_line_digraph => nrel_main_idtf:
 concept_line_digraph <- rrel_key_sc_element: 
         ... 
             (*
-	<- sc_definition;;
+	<- definition;;
 	=> nrel_main_idtf: [Определение: реберный орграф] (* <- lang_ru;; *);;
 	=> nrel_main_idtf: [Definition: line digraph] (* <- lang_en;; *);;	
 	<= nrel_sc_text_translation: ... 
@@ -25,7 +25,7 @@ concept_line_digraph<= nrel_using_constants: {
 			};;		
 		
 concept_line_digraph <- rrel_key_sc_element: ... (*
-	<- sc_illustration;;
+	<- illustration;;
 	<= nrel_sc_text_translation: ... (*
 		-> rrel_example: "file://contents/line_digraph.png";;
 	*);;

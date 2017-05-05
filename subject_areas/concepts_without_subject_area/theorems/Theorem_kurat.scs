@@ -1,7 +1,7 @@
 concept_planar_graph <- rrel_key_sc_element: theorem_pontr_kurat
 			(*
 			=>nrel_main_idtf:[Теорема Понтрягина-Куратовского](*<-lang_ru;;*);;
-		<- sc_statement;;	
+		<- statement;;	
 		<=nrel_sc_text_translation:
 		...
 			(*

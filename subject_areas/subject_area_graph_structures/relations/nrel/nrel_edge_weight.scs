@@ -7,7 +7,7 @@ nrel_edge_weight => nrel_main_idtf:
 nrel_edge_weight <- rrel_key_sc_element: 
         ... 
 		(*
-		<- sc_definition;;
+		<- definition;;
 		=> nrel_main_idtf: [Определение: вес ребра] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Definition: weight of edge] (* <- lang_en;; *);;
 		<= nrel_sc_text_translation: ...
@@ -31,7 +31,7 @@ nrel_edge_weight <- rrel_main_key_sc_element:
 		=> nrel_main_idtf: [Утверждение: вес пути во взвешенном графе] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Statement: weight path in a weighted graph] (* <- lang_en;; *);;
 		-> rrel_key_sc_element:concept_weighted_graph; concept_edge; nrel_path_in_graph;;
-		<- sc_statement;;
+		<- statement;;
 		<= nrel_sc_text_translation: ...
 			(*
 			-> rrel_example: 
@@ -59,7 +59,7 @@ nrel_edge_weight<= nrel_definitional_domain:
 nrel_edge_weight <- rrel_key_sc_element: 
 	...
 	(*
-		<- sc_illustration;;
+		<- illustration;;
 		<= nrel_sc_text_translation:
 		...
 			(*

@@ -7,7 +7,7 @@ concept_residual_network => nrel_main_idtf:
 concept_residual_network <- rrel_key_sc_element: 
         ... 
             (*
-	<- sc_definition;;
+	<- definition;;
 	=> nrel_main_idtf: [Определение: остаточная сеть] (* <- lang_ru;; *);;
 	=> nrel_main_idtf: [Definition: residual network] (* <- lang_en;; *);;	
 	<= nrel_sc_text_translation: ... 
@@ -27,7 +27,7 @@ concept_residual_network<= nrel_using_constants: {
 concept_residual_network <- rrel_key_sc_element: 
         	... 
 		(*
-		<- sc_statement;;
+		<- statement;;
 		-> rrel_key_sc_element: concept_node; concept_oredge;;		
 		=> nrel_main_idtf: [Утверждение: путь из u в v] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Definition: path from u to v](* <- lang_en;; *);;
@@ -42,7 +42,7 @@ concept_residual_network <- rrel_key_sc_element:
 		*);;
 		
 concept_residual_network <- rrel_key_sc_element: ... (*
-	<- sc_illustration;;
+	<- illustration;;
 	<= nrel_sc_text_translation: ... (*
 		-> rrel_example: "file://contents/residual_network.png";;
 	*);;

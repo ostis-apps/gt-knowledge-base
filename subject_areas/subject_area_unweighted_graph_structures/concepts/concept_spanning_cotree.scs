@@ -7,7 +7,7 @@ concept_spanning_cotree => nrel_main_idtf:
 concept_spanning_cotree <- rrel_key_sc_element: 
         ... 
         (*
-            <- sc_definition;;
+            <- definition;;
             => nrel_main_idtf:
                 [Определение: коостов]
                 (* <- lang_ru;; *);;
@@ -28,7 +28,7 @@ concept_spanning_cotree <- rrel_key_sc_element:
 concept_spanning_cotree <- rrel_key_sc_element:
         ...
         (*
-            <- sc_statement;;
+            <- statement;;
             => nrel_main_idtf:
                 [Утверждение: необходимость коостовов]
                 (* <- lang_ru;; *);;

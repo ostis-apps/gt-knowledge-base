@@ -7,7 +7,7 @@ concept_bicentre_tree
 	<= nrel_inclusion: concept_tree;
 
 	<- rrel_key_sc_element: ... (*
-		<- sc_definition;;
+		<- definition;;
 		<= nrel_sc_text_translation: ... (*
 			-> rrel_example: [дерево, центр которого состоит из двух смежных вершин.] (* <- lang_ru;; *);;
 			<= nrel_using_constants: {

@@ -7,7 +7,7 @@ nrel_cutting_width => nrel_main_idtf:
 nrel_cutting_width <- rrel_key_sc_element: 
         ... 
         (*
-            <- sc_definition;;
+            <- definition;;
             => nrel_main_idtf:
                 [Определение: разрезающая ширина.]
                 (* <- lang_ru;; *);;

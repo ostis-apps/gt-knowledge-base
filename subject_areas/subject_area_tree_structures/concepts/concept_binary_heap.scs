@@ -15,7 +15,7 @@ concept_binary_heap => nrel_idtf:
 concept_binary_heap <- rrel_key_sc_element: 
 		... 
 		(*
-		<- sc_definition;;
+		<- definition;;
 		=> nrel_main_idtf: [Определение: двоичная куча] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Definition: binary heap] (* <- lang_en;; *);;
 		<= nrel_sc_text_translation: ...
@@ -39,7 +39,7 @@ concept_binary_heap <- rrel_main_key_sc_element:
 		=> nrel_main_idtf: [Утверждение: структура для двоичной кучи] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Statement: structure for binary heap] (* <- lang_en;; *);;
 		-> rrel_key_sc_element: concept_heap;;
-		<- sc_statement;;
+		<- statement;;
 		<= nrel_sc_text_translation: ...
 			(*
 			-> rrel_example: 
@@ -56,7 +56,7 @@ concept_binary_heap <- rrel_main_key_sc_element:
 		=> nrel_main_idtf: [Утверждение: высота кучи] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Statement: heap height] (* <- lang_en;; *);;
 		-> rrel_key_sc_element: concept_heap; concept_binary_tree;;
-		<- sc_statement;;
+		<- statement;;
 		<= nrel_sc_text_translation: ...
 			(*
 			-> rrel_example: 
@@ -70,7 +70,7 @@ concept_binary_heap <- rrel_main_key_sc_element:
 concept_binary_heap <- rrel_key_sc_element: 
 	...
 	(*
-		<- sc_illustration;;
+		<- illustration;;
 		<= nrel_sc_text_translation:
 		...
 			(*

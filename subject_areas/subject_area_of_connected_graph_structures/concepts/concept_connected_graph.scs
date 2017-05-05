@@ -7,7 +7,7 @@ concept_connected_graph => nrel_main_idtf:
 concept_connected_graph <- rrel_key_sc_element: 
         ... 
 		(*
-		<- sc_definition;;
+		<- definition;;
 		=> nrel_main_idtf: [Определение: связный граф] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Definition: connected graph] (* <- lang_en;; *);;
 		<= nrel_sc_text_translation: ...
@@ -31,7 +31,7 @@ concept_connected_graph <- rrel_main_key_sc_element:
 		=> nrel_main_idtf: [Утверждение: о недостижимых вершинах] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Statement: about unreached vertices] (* <- lang_en;; *);;
 		-> rrel_key_sc_element: concept_node;;
-		<- sc_statement;;
+		<- statement;;
 		<= nrel_sc_text_translation: ...
 			(*
 			-> rrel_example: 
@@ -45,7 +45,7 @@ concept_connected_graph <- rrel_main_key_sc_element:
 concept_connected_graph <- rrel_key_sc_element: 
 	...
 	(*
-		<- sc_illustration;;
+		<- illustration;;
 		<= nrel_sc_text_translation:
 		...
 			(*

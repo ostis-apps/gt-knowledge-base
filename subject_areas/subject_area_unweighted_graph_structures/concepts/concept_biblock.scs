@@ -7,7 +7,7 @@ concept_biblock => nrel_main_idtf:
 concept_biblock <- rrel_key_sc_element: 
         ... 
         (*
-            <- sc_definition;;
+            <- definition;;
             => nrel_main_idtf:
                 [Определение: библок]
                 (* <- lang_ru;; *);;
@@ -26,7 +26,7 @@ concept_biblock <- rrel_key_sc_element:
 concept_biblock <- rrel_key_sc_element:
         ...
         (*
-            <- sc_statement;;
+            <- statement;;
             => nrel_main_idtf:
                 [Утверждение: полустепень исхода]
                 (* <- lang_ru;; *);;

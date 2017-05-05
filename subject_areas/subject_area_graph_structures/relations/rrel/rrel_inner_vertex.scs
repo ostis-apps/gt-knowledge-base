@@ -7,7 +7,7 @@ rrel_inner_vertex
 
 	<-rrel_key_sc_element:
 		...  
-		(*<-sc_definition;;
+		(*<-definition;;
 		=> nrel_main_idtf: [Опр.(внутренняя вершина)] (* <- lang_ru;; *);;
 		<=nrel_sc_text_translation:
 		...

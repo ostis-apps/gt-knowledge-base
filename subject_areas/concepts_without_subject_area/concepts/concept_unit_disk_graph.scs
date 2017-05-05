@@ -7,7 +7,7 @@ concept_unit_disk_graph => nrel_main_idtf:
 concept_unit_disk_graph <- rrel_key_sc_element: 
         ... 
 		(*
-		<- sc_definition;;
+		<- definition;;
 		=> nrel_main_idtf: [Определение: граф единичных кругов] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Definition: unit disk graph] (* <- lang_en;; *);;
 		<= nrel_sc_text_translation: ...
@@ -31,7 +31,7 @@ concept_unit_disk_graph<= nrel_using_constants:
 concept_unit_disk_graph <- rrel_key_sc_element: 
 	...
 	(*
-		<- sc_illustration;;
+		<- illustration;;
 		<= nrel_sc_text_translation:
 		...
 			(*

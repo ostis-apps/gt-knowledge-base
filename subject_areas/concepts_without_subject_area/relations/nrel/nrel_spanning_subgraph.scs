@@ -10,7 +10,7 @@ binary_relation -> nrel_spanning_subtree;;
 oriented_relation ->nrel_spanning_subtree;;
 nrel_spanning_subtree	<- rrel_key_sc_element:
 		...  
-		(*<-sc_definition;;
+		(*<-definition;;
 		=> nrel_main_idtf: [Опр.(остовный подграф)] (* <- lang_ru;; *);;
 		<=nrel_sc_text_translation:
 		...

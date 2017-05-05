@@ -7,7 +7,7 @@ concept_minimum_spanning_tree => nrel_main_idtf:
 concept_minimum_spanning_tree <- rrel_key_sc_element: 
 		... 
 		(*
-		<- sc_definition;;
+		<- definition;;
 		=> nrel_main_idtf: [Определение: минимальное остовное дерево] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Definition: minimum spanning tree] (* <- lang_en;; *);;
 		<= nrel_sc_text_translation: ...
@@ -34,7 +34,7 @@ concept_minimum_spanning_tree <- rrel_main_key_sc_element:
 		=> nrel_main_idtf: [Утверждение: пример] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Statement: example] (* <- lang_en;; *);;
 		-> rrel_key_sc_element: concept_edge_weight; concept_node;;
-		<- sc_statement;;
+		<- statement;;
 		<= nrel_sc_text_translation: ...
 			(*
 			-> rrel_example: 
@@ -55,7 +55,7 @@ concept_minimum_spanning_tree <- rrel_main_key_sc_element:
 		=> nrel_main_idtf: [Утверждение: алгоритмы] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Statement: algorithms] (* <- lang_en;; *);;
 		-> rrel_key_sc_element: concept_tree;;
-		<- sc_statement;;
+		<- statement;;
 		<= nrel_sc_text_translation: ...
 			(*
 			-> rrel_example: 
@@ -69,7 +69,7 @@ concept_minimum_spanning_tree <- rrel_main_key_sc_element:
 concept_minimum_spanning_tree <- rrel_key_sc_element: 
 	...
 	(*
-		<- sc_illustration;;
+		<- illustration;;
 		<= nrel_sc_text_translation:
 		...
 			(*

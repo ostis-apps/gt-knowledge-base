@@ -20,7 +20,7 @@ nrel_semiroute_in_the_digraph <- rrel_key_sc_element:
 	(*
 	=> nrel_main_idtf: [Определение:  полумаршрут в орграфе] (* <- lang_ru;; *);;
 	=> nrel_main_idtf: [Definition: semiroute in the digraph] (* <- lang_en;; *);;
-	<- sc_definition;;
+	<- definition;;
 	<= nrel_sc_text_translation: ...
 		(*
 		-> rrel_example: 
@@ -43,7 +43,7 @@ nrel_semiroute_in_the_digraph<- rrel_main_key_sc_element:
 		(*
 		=> nrel_main_idtf: [Утверждение: длина маршрута] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Statement: semiroute length] (* <- lang_en;; *);;
-		<- sc_statement;;
+		<- statement;;
 		<= nrel_sc_text_translation: ...
 			(*
 			-> rrel_example: 

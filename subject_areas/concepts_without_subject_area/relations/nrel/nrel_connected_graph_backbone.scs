@@ -12,7 +12,7 @@ nrel_connected_graph_backbone=> nrel_arity_of_relations: 3 (* <- number ;;*);;
 
 nrel_connected_graph_backbone<-rrel_key_sc_element:
 ...
-(*<-sc_definition;;
+(*<-definition;;
 => nrel_main_idtf: [Опр.(остов связного графа)] (* <- lang_ru;; *);;
 <=nrel_sc_text_translation:
 ...

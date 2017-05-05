@@ -5,7 +5,7 @@ concept_unigraph => nrel_main_idtf:
 concept_unigraph <- rrel_key_sc_element: ...  
 	(*
 	=> nrel_main_idtf: [Опр.(Униграф)] (* <- lang_ru;; *);;
-	<- sc_definition;; 
+	<- definition;; 
 	<= nrel_sc_text_translation: ... (*
 		-> rrel_example: 
 			[Униграф(Unigraph)

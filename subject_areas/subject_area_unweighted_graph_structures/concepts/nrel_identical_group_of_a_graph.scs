@@ -7,7 +7,7 @@ nrel_identical_group_of_a_graph => nrel_main_idtf:
 nrel_identical_group_of_a_graph <- rrel_key_sc_element: 
         ... 
         (*
-            <- sc_definition;;
+            <- definition;;
             => nrel_main_idtf:
                 [Определение: тождественная группа графа.]
                 (* <- lang_ru;; *);;
@@ -26,7 +26,7 @@ nrel_identical_group_of_a_graph <- rrel_key_sc_element:
 nrel_identical_group_of_a_graph <- rrel_key_sc_element:
         ...
         (*
-            <- sc_statement;;
+            <- statement;;
             => nrel_main_idtf:
                 [Утверждение: группы перестановок]
                 (* <- lang_ru;; *);;

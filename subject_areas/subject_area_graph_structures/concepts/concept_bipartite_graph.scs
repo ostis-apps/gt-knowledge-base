@@ -12,7 +12,7 @@ concept_bipartite_graph
 <-rrel_key_sc_element:
 		...  
 		(*
-		<-sc_definition;;
+		<-definition;;
 		=> nrel_main_idtf: [Определение: двудольный граф] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Definition: bipartite graph](* <- lang_en;; *);;		
 		<=nrel_sc_text_translation:
@@ -35,7 +35,7 @@ concept_bipartite_graph <= nrel_using_constants: {
 concept_bipartite_graph <- rrel_key_sc_element: 
         	... 
 		(*
-		<- sc_statement;;
+		<- statement;;
 		-> rrel_key_sc_element: nrel_cycle;;
 		=> nrel_main_idtf: [Утверждение: двудольный граф] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Definition: bipartite graph](* <- lang_en;; *);;
@@ -52,7 +52,7 @@ concept_bipartite_graph <- rrel_key_sc_element:
 <- rrel_key_sc_element: 
 		...
 		(*
-		<- sc_illustration;;
+		<- illustration;;
 		<= nrel_sc_text_translation: ...
 			(*
 			-> rrel_example:

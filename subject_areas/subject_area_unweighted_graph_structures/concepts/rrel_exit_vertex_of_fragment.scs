@@ -7,7 +7,7 @@ rrel_exit_vertex_of_fragment => nrel_main_idtf:
 rrel_exit_vertex_of_fragment <- rrel_key_sc_element: 
 		... 
 		(*
-			<- sc_definition;;
+			<- definition;;
 			=> nrel_main_idtf:
 				[Определение: выходная вершина фрагмента]
 				(* <- lang_ru;; *);;
@@ -28,7 +28,7 @@ rrel_exit_vertex_of_fragment <- rrel_key_sc_element:
 rrel_exit_vertex_of_fragment <- rrel_main_key_sc_element:
 		...
 		(*
-			<- sc_statement;;
+			<- statement;;
 			=> nrel_main_idtf:
 				[Утверждение: полустепень захода]
 				(* <- lang_ru;; *);;
@@ -43,7 +43,7 @@ rrel_exit_vertex_of_fragment <- rrel_main_key_sc_element:
 rrel_exit_vertex_of_fragment <- rrel_key_sc_element:
 		...
 		(*
-            <- sc_statement;;
+            <- statement;;
 		    => nrel_main_idtf:
             	[Утверждение: полустепень исхода]
             	(* <- lang_ru;; *);;

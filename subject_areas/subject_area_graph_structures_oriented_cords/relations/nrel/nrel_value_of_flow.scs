@@ -26,7 +26,7 @@ nrel_value_of_flow <= nrel_definitional_domain:
 nrel_value_of_flow <- rrel_key_sc_element: 
         ... 
 		(*
-		<- sc_definition;;
+		<- definition;;
 		=> nrel_main_idtf: [Определение: величина потока] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Definition: value of flow] (* <- lang_en;; *);;
 		<= nrel_sc_text_translation: ...
@@ -51,7 +51,7 @@ nrel_value_of_flow <- rrel_main_key_sc_element:
 		(*
 		=> nrel_main_idtf: [Утверждение: величина потока] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Statement: value of flow] (* <- lang_en;; *);;
-		<- sc_statement;;
+		<- statement;;
 		<= nrel_sc_text_translation: ...
 			(*
 			-> rrel_example: 
@@ -65,7 +65,7 @@ nrel_value_of_flow <- rrel_main_key_sc_element:
 nrel_value_of_flow <- rrel_key_sc_element: 
 	...
 	(*
-		<- sc_illustration;;
+		<- illustration;;
 		<= nrel_sc_text_translation:
 		...
 			(*

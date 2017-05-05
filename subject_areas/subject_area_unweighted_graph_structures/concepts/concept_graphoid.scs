@@ -7,7 +7,7 @@ concept_graphoid => nrel_main_idtf:
 concept_graphoid <- rrel_key_sc_element: 
         ... 
         (*
-            <- sc_definition;;
+            <- definition;;
             => nrel_main_idtf:
                 [Определение: графоид]
                 (* <- lang_ru;; *);;
@@ -27,7 +27,7 @@ concept_graphoid <- rrel_key_sc_element:
 concept_graphoid <- rrel_key_sc_element:
         ...
         (*
-            <- sc_statement;;
+            <- statement;;
             => nrel_main_idtf:
                 [Утверждение: требования к циклам и коциклам]
                 (* <- lang_ru;; *);;

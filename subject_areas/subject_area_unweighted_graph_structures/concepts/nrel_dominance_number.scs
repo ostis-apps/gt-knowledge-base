@@ -7,7 +7,7 @@ nrel_dominance_number => nrel_main_idtf:
 nrel_dominance_number <- rrel_key_sc_element: 
         ... 
         (*
-            <- sc_definition;;
+            <- definition;;
             => nrel_main_idtf:
                 [Определение: число доминирования.]
                 (* <- lang_ru;; *);;
@@ -26,7 +26,7 @@ nrel_dominance_number <- rrel_key_sc_element:
 nrel_dominance_number <- rrel_key_sc_element:
         ...
         (*
-            <- sc_statement;;
+            <- statement;;
             => nrel_main_idtf:
                 [Утверждение: нахождение числа доминирования]
                 (* <- lang_ru;; *);;

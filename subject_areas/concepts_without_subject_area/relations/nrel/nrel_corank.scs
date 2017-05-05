@@ -12,7 +12,7 @@ nrel_corank
 
 <-rrel_key_sc_element:
 ...
-(*<-sc_definition;;
+(*<-definition;;
 => nrel_main_idtf: [Опр.(коранг)] (* <- lang_ru;; *);;
 <=nrel_sc_text_translation:
 ...

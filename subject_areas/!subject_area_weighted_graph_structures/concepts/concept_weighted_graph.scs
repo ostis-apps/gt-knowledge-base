@@ -7,7 +7,7 @@ concept_weighted_graph => nrel_main_idtf:
 concept_weighted_graph <- rrel_key_sc_element: 
         ... 
 		(*
-		<- sc_definition;;
+		<- definition;;
 		=> nrel_main_idtf: [Определение: взвешенный граф] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Definition: weighted graph] (* <- lang_en;; *);;
 		<= nrel_sc_text_translation: ...
@@ -30,7 +30,7 @@ concept_weighted_graph <- rrel_main_key_sc_element:
 		(*
 		=> nrel_main_idtf: [Утверждение: применение взвешенных графов] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Statement: use of weighted graphs] (* <- lang_en;; *);;
-		<- sc_statement;;
+		<- statement;;
 		<= nrel_sc_text_translation: ...
 			(*
 			-> rrel_example: 

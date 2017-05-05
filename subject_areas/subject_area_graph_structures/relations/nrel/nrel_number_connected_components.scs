@@ -7,7 +7,7 @@ nrel_number_connected_components=> nrel_main_idtf:
 nrel_number_connected_components <- rrel_key_sc_element: 
         ... 
 		(*
-		<- sc_definition;;
+		<- definition;;
 		=> nrel_main_idtf: [Определение: количество компонент связности] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Definition: connected components number] (* <- lang_en;; *);;
 		<= nrel_sc_text_translation: ...

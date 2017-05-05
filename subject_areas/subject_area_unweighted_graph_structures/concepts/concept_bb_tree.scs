@@ -7,7 +7,7 @@ concept_bb_tree => nrel_main_idtf:
 concept_bb_tree <- rrel_key_sc_element: 
         ... 
         (*
-            <- sc_definition;;
+            <- definition;;
             => nrel_main_idtf:
                 [Определение: ББ-Дерево]
                 (* <- lang_ru;; *);;
@@ -27,7 +27,7 @@ concept_bb_tree <- rrel_key_sc_element:
 concept_bb_tree <- rrel_key_sc_element:
         ...
         (*
-            <- sc_statement;;
+            <- statement;;
             => nrel_main_idtf:
                 [Утверждение: баланс ББ-Дерева]
                 (* <- lang_ru;; *);;
@@ -46,7 +46,7 @@ concept_bb_tree <- rrel_key_sc_element:
 concept_bb_tree <- rrel_key_sc_element: 
         ...
         (*
-            <- sc_illustration;;
+            <- illustration;;
             <= nrel_sc_text_translation:
                     ...
                     (*

@@ -5,7 +5,7 @@ rrel_tree_leaf
 	[tree leaf' ] (* <-lang_en;; *);
 <-rrel_key_sc_element:
 	...
-	(*<-sc_definition;;
+	(*<-definition;;
 		=> nrel_main_idtf: [Опр.(лист дерева)] (* <- lang_ru;; *);;
 		<=nrel_sc_text_translation:
 		...

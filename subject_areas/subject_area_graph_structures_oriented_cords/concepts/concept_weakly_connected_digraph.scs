@@ -7,7 +7,7 @@ concept_weakly_connected_digraph => nrel_main_idtf:
 concept_weakly_connected_digraph <- rrel_key_sc_element: 
         ... 
             (*
-	<- sc_definition;;
+	<- definition;;
 	=> nrel_main_idtf: [Определение: слабо связный орграф] (* <- lang_ru;; *);;
 	=> nrel_main_idtf: [Definition: weakly connected digraph] (* <- lang_en;; *);;	
 	<= nrel_sc_text_translation: ... 
@@ -28,7 +28,7 @@ concept_weakly_connected_digraph<= nrel_using_constants: {
 concept_weakly_connected_digraph <- rrel_key_sc_element: 
         	... 
 		(*
-		<- sc_statement;;
+		<- statement;;
 		-> rrel_key_sc_element: nrel_connected_component;;		
 		=> nrel_main_idtf: [Утверждение: слабо связный граф] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Definition: weakly connected graph](* <- lang_en;; *);;
@@ -43,7 +43,7 @@ concept_weakly_connected_digraph <- rrel_key_sc_element:
 		*);;
 		
 concept_weakly_connected_digraph <- rrel_key_sc_element: ... (*
-	<- sc_illustration;;
+	<- illustration;;
 	<= nrel_sc_text_translation: ... (*
 		-> rrel_example: "file://contents/weakly_connected_digraph.png";;
 	*);;

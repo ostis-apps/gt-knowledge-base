@@ -10,7 +10,7 @@ nrel_elementary_cycle
 
 <-rrel_key_sc_element:
 ...
-(*<-sc_definition;;
+(*<-definition;;
 => nrel_main_idtf: [Опр.(элементарный цикл)] (* <- lang_ru;; *);;
 <=nrel_sc_text_translation:
 ...

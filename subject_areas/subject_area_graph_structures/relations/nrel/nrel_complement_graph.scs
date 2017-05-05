@@ -11,7 +11,7 @@ nrel_complement_graph
 => nrel_arity_of_relations: 2 (* <- number ;;*);
 <-rrel_key_sc_element:
 	...  
-	(*<-sc_definition;;
+	(*<-definition;;
 	=> nrel_main_idtf: [Опр.(дополнение графа)] (* <- lang_ru;; *);;
 		<=nrel_sc_text_translation:
 		...

@@ -10,7 +10,7 @@ concept_cayley_graph <- rrel_key_sc_element:
 	...  
 	(*
 	=> nrel_main_idtf: [Опр.(граф Кэли)] (* <- lang_ru;; *);;
-	<- sc_definition;; 
+	<- definition;; 
 	<= nrel_sc_text_translation: 
 		...
 		(*

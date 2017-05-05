@@ -27,7 +27,7 @@ nrel_path_gt<= nrel_using_constants:
 nrel_path_gt<- rrel_key_sc_element: 
      ... 
 	(*
-	<- sc_definition;;
+	<- definition;;
 	=> nrel_main_idtf: [Опр.(путь в графе)] (* <- lang_ru;; *);;
 	<= nrel_sc_text_translation: 
 		...

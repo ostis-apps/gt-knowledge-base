@@ -10,7 +10,7 @@ concept_block
 <-rrel_key_sc_element:
 	...
 	(*
-		<-sc_definition;;
+		<-definition;;
 		=> nrel_main_idtf: [Опр.(блок)] (* <- lang_ru;; *);;
 		<=nrel_sc_text_translation:
 			...
@@ -30,7 +30,7 @@ concept_block
 	...
 	(*
 		=>nrel_main_idtf:[Утв.(блок) ](*<-lang_ru;;*);;
-		<- sc_statement;;
+		<- statement;;
 		<=nrel_sc_text_translation:
 			...
 			(*

@@ -9,7 +9,7 @@ nrel_path_in_graph
 
 	<-rrel_key_sc_element:
 	...
-		(*<-sc_definition;;
+		(*<-definition;;
 		=> nrel_main_idtf: [Опр.(путь в графе)] (* <- lang_ru;; *);;
 			<=nrel_sc_text_translation:
 			...

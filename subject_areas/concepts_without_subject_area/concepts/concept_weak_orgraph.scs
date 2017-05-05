@@ -5,7 +5,7 @@ concept_weak_orgraph => nrel_main_idtf:
 concept_weak_orgraph <- rrel_key_sc_element: ...  
 	(*
 	=> nrel_main_idtf: [Опр.(Слабый орграф)] (* <- lang_ru;; *);;
-	<- sc_definition;; 
+	<- definition;; 
 	<= nrel_sc_text_translation: ... (*
 		-> rrel_example: 
 			[Слабый орграф - то же, что и Слабо связный граф.]

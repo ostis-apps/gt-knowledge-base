@@ -9,7 +9,7 @@ concept_h_uniform_hypergraph <= nrel_inclusion: concept_hypergraph;;
 concept_h_uniform_hypergraph <- rrel_key_sc_element:
 		...  
 		(*
-		<-sc_definition;;
+		<-definition;;
 		=> nrel_main_idtf: [Опр.(h-униформный гиперграф)] (* <- lang_ru;; *);;
 		<=nrel_sc_text_translation:
 		...

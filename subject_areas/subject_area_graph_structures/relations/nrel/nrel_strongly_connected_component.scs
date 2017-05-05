@@ -19,7 +19,7 @@ nrel_strongly_connected_component <- rrel_key_sc_element:
 	(*
 	=> nrel_main_idtf: [Определение: компонента сильной связности] (* <- lang_ru;; *);;
 	=> nrel_main_idtf: [Definition: strongly connected component] (* <- lang_en;; *);;
-	<- sc_definition;;
+	<- definition;;
 	<= nrel_sc_text_translation: ...
 		(*
 		-> rrel_example: 
@@ -41,7 +41,7 @@ nrel_strongly_connected_component<- rrel_main_key_sc_element:
 		(*
 		=> nrel_main_idtf: [Утверждение: наиболее быстрые алгоритмы для поиска компонент сильной связности] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Statement: the fastest algorithms to detect strongly connected components] (* <- lang_en;; *);;
-		<- sc_statement;;
+		<- statement;;
 		<= nrel_sc_text_translation: ...
 			(*
 			-> rrel_example: 

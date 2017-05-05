@@ -12,7 +12,7 @@ nrel_cartesian_sum_of_graphs
 	=> nrel_definitional_domain: concept_graph;
 
 	<- rrel_key_sc_element: ... (*
-		<- sc_definition;;
+		<- definition;;
 		<= nrel_sc_text_translation: ... (*
 			-> rrel_example: [граф, множество вершин которого есть декартова сумма множеств вершин графов] (* <- lang_ru;; *);;
 			<= nrel_using_constants: {

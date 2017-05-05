@@ -5,7 +5,7 @@ concept_bichromatic_graph => nrel_main_idtf:
 concept_bichromatic_graph <- rrel_key_sc_element: ...  
 	(*
 	=> nrel_main_idtf: [Опр.(бихроматический граф)] (* <- lang_ru;; *);;
-	<- sc_definition;; 
+	<- definition;; 
 	<= nrel_sc_text_translation: ... (*
 		-> rrel_example: 
 			[Бихроматический граф - граф с хроматическим числом, равным 2. К бихроматическим графам относятся деревья и двудольные графы. ]

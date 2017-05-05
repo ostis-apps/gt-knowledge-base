@@ -18,7 +18,7 @@ nrel_spanning_semipath <= nrel_definitional_domain: concept_directed_graph;;
 nrel_spanning_semipath<- rrel_key_sc_element: 
         ... 
 		(*
-		<- sc_definition;;
+		<- definition;;
 		=> nrel_main_idtf: [Определение: остовный полупуть] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Definition: spanning semipath] (* <- lang_en;; *);;
 		<= nrel_sc_text_translation: ...
@@ -44,7 +44,7 @@ nrel_spanning_semipath<- rrel_main_key_sc_element:
 		=> nrel_main_idtf: [Утверждение: цепь в орграфе] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Statement: chain in the directed graph] (* <- lang_en;; *);;
 		-> rrel_key_sc_element: concept_path_in_the_digraph;;
-		<- sc_statement;;
+		<- statement;;
 		<= nrel_sc_text_translation: ...
 			(*
 			-> rrel_example: 

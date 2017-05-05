@@ -7,7 +7,7 @@ nrel_base_graph => nrel_main_idtf:
 nrel_base_graph <- rrel_key_sc_element: 
         ... 
 		(*
-		<- sc_definition;;
+		<- definition;;
 		=> nrel_main_idtf: [Определение: база графа] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Definition: base of the graph] (* <- lang_en;; *);;
 		<= nrel_sc_text_translation: ...
@@ -31,7 +31,7 @@ nrel_base_graph <- rrel_main_key_sc_element:
 		=> nrel_main_idtf: [Утверждение: база в ациклическом графе] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Statement: base in the acyclic graph] (* <- lang_en;; *);;
 		-> rrel_key_sc_element: concept_acyclic_graph; nrel_base_graph;;
-		<- sc_statement;;
+		<- statement;;
 		<= nrel_sc_text_translation: ...
 			(*
 			-> rrel_example: 
@@ -59,7 +59,7 @@ rrel_point_of_articulation<= nrel_definitional_domain:
 nrel_base_graph <- rrel_key_sc_element: 
 	...
 	(*
-		<- sc_illustration;;
+		<- illustration;;
 		<= nrel_sc_text_translation:
 		...
 			(*

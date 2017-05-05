@@ -7,7 +7,7 @@ concept_eulerian_digraph => nrel_main_idtf:
 concept_eulerian_digraph <- rrel_key_sc_element: 
         ... 
 		(*
-		<- sc_definition;;
+		<- definition;;
 		=> nrel_main_idtf: [Определение: эйлеров орграф] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Definition: eulerian digraph] (* <- lang_en;; *);;
 		<= nrel_sc_text_translation: ...
@@ -31,7 +31,7 @@ concept_eulerian_digraph <- rrel_main_key_sc_element:
 		=> nrel_main_idtf: [Утверждение: необходимое условие для того,чтобы граф был эйлеровым.] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Statement: a necessary condition for the digraph to be Eulerian] (* <- lang_en;; *);;
 		-> rrel_key_sc_element: concept_node; nrel_vertex_degree;;
-		<- sc_statement;;
+		<- statement;;
 		<= nrel_sc_text_translation: ...
 			(*
 			-> rrel_example: 
@@ -48,7 +48,7 @@ concept_eulerian_digraph <- rrel_main_key_sc_element:
 		=> nrel_main_idtf: [Утверждение: о разбиении связного эйлерова графа на простые контуры.] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Statement: a partition of connected Eulerian digraph on a simple contours.] (* <- lang_en;; *);;
 		-> rrel_key_sc_element: nrel_simple_cycle; concept_edge;;
-		<- sc_statement;;
+		<- statement;;
 		<= nrel_sc_text_translation: ...
 			(*
 			-> rrel_example: 
@@ -62,7 +62,7 @@ concept_eulerian_digraph <- rrel_main_key_sc_element:
 concept_eulerian_digraph <- rrel_key_sc_element: 
 	...
 	(*
-		<- sc_illustration;;
+		<- illustration;;
 		<= nrel_sc_text_translation:
 		...
 			(*

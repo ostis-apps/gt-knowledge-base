@@ -5,7 +5,7 @@ rrel_root_vertex
 [ root vertex' ] (* <-lang_en;; *);
 ->rrel_key_sc_element:
 ...
-(*<-sc_definition;;
+(*<-definition;;
 => nrel_main_idtf: [Опр.(корневая вершина)] (* <- lang_ru;; *);;
 <=nrel_sc_text_translation:
 ...

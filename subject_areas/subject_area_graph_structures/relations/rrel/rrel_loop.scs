@@ -28,7 +28,7 @@ rrel_loop => nrel_definitional_domain:
 rrel_loop<- rrel_key_sc_element:
 		...  
 		(*
-		    <-sc_definition;;
+		    <-definition;;
                     => nrel_main_idtf: [Определение: петля] (* <- lang_ru;; *);;
 		    => nrel_main_idtf: [Definition: loop] (* <- lang_en;; *);;
 		    <=nrel_sc_text_translation: ...
@@ -52,7 +52,7 @@ rrel_loop <- rrel_key_sc_element: ...
 	=>nrel_main_idtf:[Утверждение: о петлях в мультиграфе](*<-lang_ru;;*);;
 	=>nrel_main_idtf:[Statement: loops in multigraph](*<-lang_en;;*);;
 	-> rrel_key_sc_element: concept_pseudograph; concept_node; concept_edge;;
-	<- sc_statement;;
+	<- statement;;
 	<=nrel_sc_text_translation: ...
 		(*
 			-> rrel_example:
@@ -68,7 +68,7 @@ rrel_loop <- rrel_key_sc_element: ...
 	=>nrel_main_idtf:[Утверждение: о псевдографе](*<-lang_ru;;*);;
 	=>nrel_main_idtf:[Statement: pseudograph](*<-lang_en;;*);;
 	-> rrel_key_sc_element: nrel_vertex_degree; concept_node;;
-	<- sc_statement;;
+	<- statement;;
 	<=nrel_sc_text_translation: ...
 		(*
 			-> rrel_example:

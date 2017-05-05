@@ -6,7 +6,7 @@ rrel_terminal_vertex
 [ terminal vertex' ] (* <-lang_en;; *);
 ->rrel_key_sc_element:
 ...
-(*<-sc_definition;;
+(*<-definition;;
 => nrel_main_idtf: [Опр.(висячая вершина)] (* <- lang_ru;; *);;
 <=nrel_sc_text_translation:
 ...
@@ -22,7 +22,7 @@ rrel_terminal_vertex
 <-rrel_key_sc_element: ...
 (*
 =>nrel_main_idtf:[Утв.(висячая вершина) ](*<-lang_ru;;*);;
-<- sc_statement;;
+<- statement;;
 <=nrel_sc_text_translation:
 ...
 (*
@@ -36,7 +36,7 @@ rrel_terminal_vertex
 *);
 ... (*
 =>nrel_main_idtf:[Утв.(висячая вершина) ](*<-lang_ru;;*);;
-<- sc_statement;;
+<- statement;;
 <=nrel_sc_text_translation:
 ...
 (*

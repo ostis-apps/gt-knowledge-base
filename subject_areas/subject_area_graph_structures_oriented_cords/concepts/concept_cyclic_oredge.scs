@@ -7,7 +7,7 @@ concept_cyclic_oredge => nrel_main_idtf:
 concept_cyclic_oredge <- rrel_key_sc_element: 
         ... 
             (*
-	<- sc_definition;;
+	<- definition;;
 	=> nrel_main_idtf: [Определение: ориентированно-циклическое ребро] (* <- lang_ru;; *);;
 	=> nrel_main_idtf: [Definition: cyclic oredge] (* <- lang_en;; *);;	
 	<= nrel_sc_text_translation: ... 
@@ -25,7 +25,7 @@ concept_cyclic_oredge<= nrel_using_constants: {
 			};;		
 		
 concept_cyclic_oredge <- rrel_key_sc_element: ... (*
-	<- sc_illustration;;
+	<- illustration;;
 	<= nrel_sc_text_translation: ... (*
 		-> rrel_example: "file://contents/cyclic_oredge.bmp";;
 	*);;

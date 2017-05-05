@@ -7,7 +7,7 @@ concept_functional_digraph => nrel_main_idtf:
 concept_functional_digraph <- rrel_key_sc_element: 
         ... 
             (*
-	<- sc_definition;;
+	<- definition;;
 	=> nrel_main_idtf: [Определение: функциональный орграф] (* <- lang_ru;; *);;
 	=> nrel_main_idtf: [Definition: functional digraph] (* <- lang_en;; *);;	
 	<= nrel_sc_text_translation: ... 
@@ -28,7 +28,7 @@ concept_functional_digraph<= nrel_using_constants: {
 concept_functional_digraph <- rrel_key_sc_element: 
         	... 
 		(*
-		<- sc_statement;;
+		<- statement;;
 		-> rrel_key_sc_element: concept_node; concept_oredge; nrel_outdegree;;		
 		=> nrel_main_idtf: [Утверждение: функциональный орграф] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Definition: functional digraph](* <- lang_en;; *);;
@@ -43,7 +43,7 @@ concept_functional_digraph <- rrel_key_sc_element:
 		*);;
 		
 concept_functional_digraph <- rrel_key_sc_element: ... (*
-	<- sc_illustration;;
+	<- illustration;;
 	<= nrel_sc_text_translation: ... (*
 		-> rrel_example: "file://contents/functional_digraph.png";;
 	*);;

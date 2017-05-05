@@ -15,7 +15,7 @@ nrel_number_of_edges<= nrel_using_constants: {
 		};;
 nrel_number_of_edges <- rrel_key_sc_element: ... 
 (*
-	<- sc_definition;;
+	<- definition;;
 	<= nrel_sc_text_translation: ... (*
 		-> rrel_example: [Количество ребер графа.] (* <- lang_ru;; *);;
 	*);;

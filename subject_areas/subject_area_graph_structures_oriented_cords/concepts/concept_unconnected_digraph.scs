@@ -7,7 +7,7 @@ concept_unconnected_digraph => nrel_main_idtf:
 concept_unconnected_digraph <- rrel_key_sc_element: 
         ... 
             (*
-	<- sc_definition;;
+	<- definition;;
 	=> nrel_main_idtf: [Определение: несвязный орграф] (* <- lang_ru;; *);;
 	=> nrel_main_idtf: [Definition: unconnected digraph] (* <- lang_en;; *);;	
 	<= nrel_sc_text_translation: ... 
@@ -29,7 +29,7 @@ concept_unconnected_digraph<= nrel_using_constants: {
 concept_unconnected_digraph <- rrel_key_sc_element: 
         	... 
 		(*
-		<- sc_statement;;
+		<- statement;;
 		-> rrel_key_sc_element: nrel_connected_component;;		
 		=> nrel_main_idtf: [Утверждение: несвязный орграф] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Definition: unconnected digraph](* <- lang_en;; *);;

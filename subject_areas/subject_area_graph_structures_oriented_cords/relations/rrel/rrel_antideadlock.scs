@@ -7,7 +7,7 @@ rrel_antideadlock
 <-rrel_key_sc_element:
 	...
 	(*
-		<-sc_definition;;
+		<-definition;;
 		=> nrel_main_idtf: [Опр.(Антитупик)] (* <- lang_ru;; *);;
 		<=nrel_sc_text_translation:
 		...

@@ -7,7 +7,7 @@ concept_comparability_graph => nrel_main_idtf:
 concept_comparability_graph <- rrel_key_sc_element: 
         ... 
 		(*
-		<- sc_definition;;
+		<- definition;;
 		=> nrel_main_idtf: [Определение: граф сравнимости] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Definition: сomparability graph] (* <- lang_en;; *);;
 		<= nrel_sc_text_translation: ...
@@ -30,7 +30,7 @@ concept_comparability_graph<= nrel_using_constants:
 concept_comparability_graph <- rrel_key_sc_element: 
 	...
 	(*
-		<- sc_illustration;;
+		<- illustration;;
 		<= nrel_sc_text_translation:
 		...
 			(*

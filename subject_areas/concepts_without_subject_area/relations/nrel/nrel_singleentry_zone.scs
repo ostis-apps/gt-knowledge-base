@@ -21,7 +21,7 @@ nrel_singleentry_zone <- rrel_key_sc_element:
      ... 
 	(*
 	=> nrel_main_idtf: [Опр.(Одновходная зона)] (* <- lang_ru;; *);;
-	<- sc_definition;;
+	<- definition;;
 	<= nrel_sc_text_translation: ...
 		(*
 		-> rrel_example: 

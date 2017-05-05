@@ -11,7 +11,7 @@ nrel_digraph_complement
 
 	<-rrel_key_sc_element:
 		...  
-		(*<-sc_definition;;
+		(*<-definition;;
 		=> nrel_main_idtf: [Опр.(обратный орграф)] (* <- lang_ru;; *);;
 		<=nrel_sc_text_translation:
 		...

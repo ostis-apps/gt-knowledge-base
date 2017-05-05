@@ -7,7 +7,7 @@ concept_caterpillar => nrel_main_idtf:
 concept_caterpillar <- rrel_key_sc_element: 
         ... 
         (*
-            <- sc_definition;;
+            <- definition;;
             => nrel_main_idtf:
                 [Определение: гусеница]
                 (* <- lang_ru;; *);;
@@ -27,7 +27,7 @@ concept_caterpillar <- rrel_key_sc_element:
 concept_caterpillar <- rrel_key_sc_element:
         ...
         (*
-            <- sc_statement;;
+            <- statement;;
             => nrel_main_idtf:
                 [Утверждение: расстояние от центра]
                 (* <- lang_ru;; *);;
@@ -48,7 +48,7 @@ concept_caterpillar <- rrel_key_sc_element:
 concept_caterpillar <- rrel_key_sc_element: 
         ...
         (*
-            <- sc_illustration;;
+            <- illustration;;
             <= nrel_sc_text_translation:
                     ...
                     (*

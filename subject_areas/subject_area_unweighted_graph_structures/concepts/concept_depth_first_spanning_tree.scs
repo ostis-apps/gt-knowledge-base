@@ -7,7 +7,7 @@ concept_depth_first_spanning_tree => nrel_main_idtf:
 concept_depth_first_spanning_tree <- rrel_key_sc_element: 
         ... 
         (*
-            <- sc_definition;;
+            <- definition;;
             => nrel_main_idtf:
                 [Определение: глубинное остовное дерево]
                 (* <- lang_ru;; *);;
@@ -27,7 +27,7 @@ concept_depth_first_spanning_tree <- rrel_key_sc_element:
 concept_depth_first_spanning_tree <- rrel_key_sc_element:
         ...
         (*
-            <- sc_statement;;
+            <- statement;;
             => nrel_main_idtf:
                 [Утверждение: множество дуг глубинного остовного дерева]
                 (* <- lang_ru;; *);;
@@ -50,7 +50,7 @@ concept_depth_first_spanning_tree <- rrel_key_sc_element:
 concept_depth_first_spanning_tree <- rrel_key_sc_element: 
         ...
         (*
-            <- sc_illustration;;
+            <- illustration;;
             <= nrel_sc_text_translation:
                     ...
                     (*

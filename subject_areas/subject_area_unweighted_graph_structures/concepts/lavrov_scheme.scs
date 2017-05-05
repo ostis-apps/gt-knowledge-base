@@ -7,7 +7,7 @@ lavrov_scheme => nrel_main_idtf:
 lavrov_scheme <- rrel_key_sc_element: 
         ... 
         (*
-            <- sc_definition;;
+            <- definition;;
             => nrel_main_idtf:
                 [Определение: схема Лаврова]
                 (* <- lang_ru;; *);;
@@ -23,7 +23,7 @@ lavrov_scheme <- rrel_key_sc_element:
 lavrov_scheme <- rrel_key_sc_element:
         ...
         (*
-            <- sc_statement;;
+            <- statement;;
             => nrel_main_idtf:
                 [Утверждение: информационные связи]
                 (* <- lang_ru;; *);;
@@ -40,7 +40,7 @@ lavrov_scheme <- rrel_key_sc_element:
 lavrov_scheme <- rrel_key_sc_element: 
         ...
         (*
-            <- sc_illustration;;
+            <- illustration;;
             <= nrel_sc_text_translation:
                     ...
                     (*

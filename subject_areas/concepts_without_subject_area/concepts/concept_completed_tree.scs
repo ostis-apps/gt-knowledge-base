@@ -9,7 +9,7 @@ concept_completed_tree <= nrel_inclusion: concept_tree;;
 concept_completed_tree <- rrel_key_sc_element:
 		...  
 		(*
-		<-sc_definition;;
+		<-definition;;
 		=> nrel_main_idtf: [Опр.(Завершенное дерево)] (* <- lang_ru;; *);;
 		<=nrel_sc_text_translation:
 		...

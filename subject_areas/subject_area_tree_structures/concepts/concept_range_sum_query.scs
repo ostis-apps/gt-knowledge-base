@@ -11,7 +11,7 @@ concept_range_sum_query => nrel_idtf:
 concept_range_sum_query <- rrel_key_sc_element: 
 		... 
 		(*
-		<- sc_definition;;
+		<- definition;;
 		=> nrel_main_idtf: [Определение: дерево сумм] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Definition: range sum query] (* <- lang_en;; *);;
 		<= nrel_sc_text_translation: ...
@@ -35,7 +35,7 @@ concept_range_sum_query <- rrel_main_key_sc_element:
 		=> nrel_main_idtf: [Утверждение: максимаьная вместительность] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Statement: maximum capacity] (* <- lang_en;; *);;
 		-> rrel_key_sc_element: concept_tree;;
-		<- sc_statement;;
+		<- statement;;
 		<= nrel_sc_text_translation: ...
 			(*
 			-> rrel_example: 
@@ -49,7 +49,7 @@ concept_range_sum_query <- rrel_main_key_sc_element:
 concept_range_sum_query <- rrel_key_sc_element: 
 	...
 	(*
-		<- sc_illustration;;
+		<- illustration;;
 		<= nrel_sc_text_translation:
 		...
 			(*

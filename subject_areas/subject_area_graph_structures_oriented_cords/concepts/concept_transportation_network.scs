@@ -6,7 +6,7 @@ concept_transportation_network	=> nrel_main_idtf:
 
 concept_transportation_network	<- rrel_key_sc_element:
 		...  
-		(*<-sc_definition;;
+		(*<-definition;;
 		=> nrel_main_idtf: [Опр.(транспортная сеть)] (* <- lang_ru;; *);;
 		<=nrel_sc_text_translation:
 		...
@@ -23,7 +23,7 @@ concept_transportation_network<= nrel_using_constants:
 concept_transportation_network <- rrel_key_sc_element: 
 	...
 	(*
-		<- sc_illustration;;
+		<- illustration;;
 		<= nrel_sc_text_translation:
 		...
 			(*

@@ -10,7 +10,7 @@ nrel_vertex_neighbourhood
 	=> nrel_definitional_domain: nrel_vertex_set;
 
 	<- rrel_key_sc_element: ... (*
-		<- sc_definition;;
+		<- definition;;
 		<= nrel_sc_text_translation: ... (*
 			-> rrel_example: [Множество N(v) всех вершин графа G, смежных с вершиной v.] 
 				(* <- lang_ru;; *);;

@@ -7,7 +7,7 @@ concept_circuit_graph => nrel_main_idtf:
 concept_circuit_graph <- rrel_key_sc_element: 
         ... 
         (*
-            <- sc_definition;;
+            <- definition;;
             => nrel_main_idtf:
                 [Формулировка определения: циркулянтный граф]
                 (* <- lang_ru;; *);;
@@ -28,7 +28,7 @@ concept_circuit_graph <- rrel_key_sc_element:
 concept_circuit_graph <- rrel_key_sc_element:
         ...
         (*
-            <- sc_statement;;
+            <- statement;;
             => nrel_main_idtf:
                 [Утверждение: группа симметрий]
                 (* <- lang_ru;; *);;
@@ -48,7 +48,7 @@ concept_circuit_graph <- rrel_key_sc_element:
 concept_circuit_graph <- rrel_key_sc_element: 
         ...
         (*
-            <- sc_illustration;;
+            <- illustration;;
             <= nrel_sc_text_translation:
                     ...
                     (*

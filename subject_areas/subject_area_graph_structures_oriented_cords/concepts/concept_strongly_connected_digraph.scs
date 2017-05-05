@@ -7,7 +7,7 @@ concept_strongly_connected_digraph => nrel_main_idtf:
 concept_strongly_connected_digraph <- rrel_key_sc_element: 
         ... 
             (*
-	<- sc_definition;;
+	<- definition;;
 	=> nrel_main_idtf: [Опрежеление: сильно связный орграф] (* <- lang_ru;; *);;
 	=> nrel_main_idtf: [Definition: strongly connected digraph] (* <- lang_en;; *);;	
 	<= nrel_sc_text_translation: ... 
@@ -28,7 +28,7 @@ concept_strongly_connected_digraph<= nrel_using_constants: {
 concept_strongly_connected_digraph <- rrel_key_sc_element: 
         	... 
 		(*
-		<- sc_statement;;
+		<- statement;;
 		-> rrel_key_sc_element: concept_node; nrel_contour;;		
 		=> nrel_main_idtf: [Утверждение: сильно связный орграф] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Definition: strongly connected digraph](* <- lang_en;; *);;
@@ -43,7 +43,7 @@ concept_strongly_connected_digraph <- rrel_key_sc_element:
 		*);;
 		
 concept_strongly_connected_digraph <- rrel_key_sc_element: ... (*
-	<- sc_illustration;;
+	<- illustration;;
 	<= nrel_sc_text_translation: ... (*
 		-> rrel_example: "file://contents/strongly_connected_digraph.png";;
 	*);;

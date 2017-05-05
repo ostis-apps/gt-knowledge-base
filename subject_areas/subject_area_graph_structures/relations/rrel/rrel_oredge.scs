@@ -6,7 +6,7 @@ rrel_oredge
 rrel_oredge<-rrel_key_sc_element:
 			...
 			(*
-			<-sc_definition;;
+			<-definition;;
 			=> nrel_main_idtf: [Опр.(дуга)] (* <- lang_ru;; *);;
 			<=nrel_sc_text_translation:
 				...

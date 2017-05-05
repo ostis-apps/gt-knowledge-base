@@ -7,7 +7,7 @@ concept_t_tree => nrel_main_idtf:
 concept_t_tree <- rrel_key_sc_element: 
 		... 
 		(*
-		<- sc_definition;;
+		<- definition;;
 		=> nrel_main_idtf: [Определение: T-дерево] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Definition: T-tree] (* <- lang_en;; *);;
 		<= nrel_sc_text_translation: ...
@@ -29,7 +29,7 @@ concept_t_tree <= nrel_using_constants:
 concept_t_tree <- rrel_key_sc_element: 
 	...
 	(*
-		<- sc_illustration;;
+		<- illustration;;
 		<= nrel_sc_text_translation:
 		...
 			(*

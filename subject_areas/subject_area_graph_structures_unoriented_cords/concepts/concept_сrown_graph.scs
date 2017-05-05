@@ -6,7 +6,7 @@ concept_crown_graph => nrel_main_idtf:
 concept_crown_graph <- rrel_key_sc_element: 
         ... 
 		(*
-		<- sc_definition;;
+		<- definition;;
 		=> nrel_main_idtf: [Определение: корона] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Definition: crown graph] (* <- lang_en;; *);;
 		<= nrel_sc_text_translation: ...
@@ -31,7 +31,7 @@ concept_crown_graph <= nrel_using_constants:
 concept_crown_graph <- rrel_key_sc_element: 
 	...
 	(*
-		<- sc_illustration;;
+		<- illustration;;
 		<= nrel_sc_text_translation:
 		...
 			(*

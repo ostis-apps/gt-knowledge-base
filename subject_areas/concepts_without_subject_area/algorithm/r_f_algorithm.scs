@@ -6,7 +6,7 @@ r_f_algorithm => nrel_main_idtf:
 
 r_f_algorithm <- rrel_key_sc_element:
 		...  
-		(*<-sc_definition;;
+		(*<-definition;;
 		=> nrel_main_idtf: [Опр.(алгоритм Робертса-Флореса)] (* <- lang_ru;; *);;
 		<=nrel_sc_text_translation:
 		...

@@ -9,7 +9,7 @@ concept_petersen_graph <= nrel_inclusion: concept_odd_graph;;
 concept_petersen_graph <- rrel_key_sc_element:
 		...  
 		(*
-		<-sc_definition;;
+		<-definition;;
 		=> nrel_main_idtf: [Опр.(Граф Петерсена)] (* <- lang_ru;; *);;
 		<=nrel_sc_text_translation:
 		...
@@ -45,7 +45,7 @@ concept_petersen_graph <- rrel_key_sc_element:
 concept_petersen_graph <- rrel_key_sc_element: 
 	...
 	(*
-		<- sc_illustration;;
+		<- illustration;;
 		<= nrel_sc_text_translation:
 		...
 			(*

@@ -7,7 +7,7 @@ nrel_set_antideadlock=> nrel_main_idtf:
 nrel_set_antideadlock <- rrel_key_sc_element: 
         ... 
 		(*
-		<- sc_definition;;
+		<- definition;;
 		=> nrel_main_idtf: [Определение: множество антитупиков] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Definition: antideadlock set] (* <- lang_en;; *);;
 		<= nrel_sc_text_translation: ...

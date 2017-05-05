@@ -11,7 +11,7 @@ nrel_min_independent_set_of_vertices
 
 	<-rrel_key_sc_element:
 		...  
-		(*<-sc_definition;;
+		(*<-definition;;
 		=> nrel_main_idtf: [Опр.(минимальное вершинное покрытие)] (* <- lang_ru;; *);;
 		<=nrel_sc_text_translation:
 		...

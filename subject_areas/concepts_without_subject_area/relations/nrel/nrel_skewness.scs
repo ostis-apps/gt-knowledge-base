@@ -20,7 +20,7 @@ nrel_skewness <- rrel_key_sc_element:
      ... 
 	(*
 	=> nrel_main_idtf: [Опр.(Искаженность графа)] (* <- lang_ru;; *);;
-	<- sc_definition;;
+	<- definition;;
 	<= nrel_sc_text_translation: ...
 		(*
 		-> rrel_example: 

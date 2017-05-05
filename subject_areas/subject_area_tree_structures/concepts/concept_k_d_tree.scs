@@ -10,7 +10,7 @@ concept_k_d_tree => nrel_idtf:
 concept_k_d_tree <- rrel_key_sc_element: 
 		... 
 		(*
-		<- sc_definition;;
+		<- definition;;
 		=> nrel_main_idtf: [Определение: k-d дерево] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Definition: k-d tree] (* <- lang_en;; *);;
 		<= nrel_sc_text_translation: ...
@@ -34,7 +34,7 @@ concept_k_d_tree <- rrel_main_key_sc_element:
 		=> nrel_main_idtf: [Утверждение: однородные и неоднородные k-деревья] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Statement: uniform and non-uniform k-trees] (* <- lang_en;; *);;
 		-> rrel_key_sc_element: concept_tree;;
-		<- sc_statement;;
+		<- statement;;
 		<= nrel_sc_text_translation: ...
 			(*
 			-> rrel_example: 
@@ -47,7 +47,7 @@ concept_k_d_tree <- rrel_main_key_sc_element:
 concept_k_d_tree <- rrel_key_sc_element: 
 	...
 	(*
-		<- sc_illustration;;
+		<- illustration;;
 		<= nrel_sc_text_translation:
 		...
 			(*

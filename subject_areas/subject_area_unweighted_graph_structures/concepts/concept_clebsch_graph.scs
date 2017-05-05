@@ -7,7 +7,7 @@ concept_clebsch_graph => nrel_main_idtf:
 concept_clebsch_graph <- rrel_key_sc_element: 
         ... 
         (*
-            <- sc_definition;;
+            <- definition;;
             => nrel_main_idtf:
                 [Определение: граф Клебша]
                 (* <- lang_ru;; *);;
@@ -29,7 +29,7 @@ concept_clebsch_graph <- rrel_key_sc_element:
 concept_clebsch_graph <- rrel_key_sc_element:
         ...
         (*
-            <- sc_statement;;
+            <- statement;;
             => nrel_main_idtf:
                 [Утверждение: контуры и циклы]
                 (* <- lang_ru;; *);;
@@ -49,7 +49,7 @@ concept_clebsch_graph <- rrel_key_sc_element:
 concept_clebsch_graph <- rrel_key_sc_element:
         ...
         (*
-            <- sc_statement;;
+            <- statement;;
             => nrel_main_idtf:
                 [Утверждение: дополнение графа Клебша]
                 (* <- lang_ru;; *);;
@@ -69,7 +69,7 @@ concept_clebsch_graph <- rrel_key_sc_element:
 concept_clebsch_graph <- rrel_key_sc_element: 
         ...
         (*
-            <- sc_illustration;;
+            <- illustration;;
             <= nrel_sc_text_translation:
                     ...
                     (*

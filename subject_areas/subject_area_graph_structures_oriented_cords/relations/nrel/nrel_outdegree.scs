@@ -28,7 +28,7 @@ nrel_outdegree <- rrel_key_sc_element:
 	(*
 	=> nrel_main_idtf: [Определение: полустепень исхода] (* <- lang_ru;; *);;
 	=> nrel_main_idtf: [Definition: outdegree] (* <- lang_en;; *);;
-	<- sc_definition;;
+	<- definition;;
 	<= nrel_sc_text_translation: ...
 		(*
 		-> rrel_example: 
@@ -52,7 +52,7 @@ nrel_outdegree<- rrel_main_key_sc_element:
 		=> nrel_main_idtf: [Утверждение: сумма полустепеней исхода и захода] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Statement: the sum of outdegrees and outdegrees of nodes] (* <- lang_en;; *);;
 		-> rrel_key_sc_element: concept_oredge; concept_directed_graph;;
-		<- sc_statement;;
+		<- statement;;
 		<= nrel_sc_text_translation: ...
 			(*
 			-> rrel_example: 

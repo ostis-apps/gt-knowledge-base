@@ -7,7 +7,7 @@ concept_fibonacci_heap => nrel_main_idtf:
 concept_fibonacci_heap <- rrel_key_sc_element: 
 		... 
 		(*
-		<- sc_definition;;
+		<- definition;;
 		=> nrel_main_idtf: [Определение: фибоначчиева куча] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Definition: fibonacci heap] (* <- lang_en;; *);;
 		<= nrel_sc_text_translation: ...
@@ -32,7 +32,7 @@ concept_fibonacci_heap <- rrel_main_key_sc_element:
 		=> nrel_main_idtf: [Утверждение: операции фибоначчиевых куч] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Statement: operation Fibonacci heap] (* <- lang_en;; *);;
 		-> rrel_key_sc_element: concept_binomial_heap;;
-		<- sc_statement;;
+		<- statement;;
 		<= nrel_sc_text_translation: ...
 			(*
 			-> rrel_example: 
@@ -49,7 +49,7 @@ concept_fibonacci_heap <- rrel_main_key_sc_element:
 		=> nrel_main_idtf: [Утверждение: преимущества фиббоначчиевых куч] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Statement: advantage of the Fibonacci heap] (* <- lang_en;; *);;
 		-> rrel_key_sc_element: concept_binary_heap;;
-		<- sc_statement;;
+		<- statement;;
 		<= nrel_sc_text_translation: ...
 			(*
 			-> rrel_example: 
@@ -63,7 +63,7 @@ concept_fibonacci_heap <- rrel_main_key_sc_element:
 concept_fibonacci_heap <- rrel_key_sc_element: 
 	...
 	(*
-		<- sc_illustration;;
+		<- illustration;;
 		<= nrel_sc_text_translation:
 		...
 			(*

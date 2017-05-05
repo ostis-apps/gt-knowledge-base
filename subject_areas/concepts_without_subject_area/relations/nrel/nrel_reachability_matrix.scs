@@ -12,7 +12,7 @@ nrel_reachability_matrix
 
 	<-rrel_key_sc_element:
 		...  
-		(*<-sc_definition;;
+		(*<-definition;;
 		=> nrel_main_idtf: [Опр.(матрица достижимости)] (* <- lang_ru;; *);;
 		<=nrel_sc_text_translation:
 		...

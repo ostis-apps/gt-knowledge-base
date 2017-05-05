@@ -11,7 +11,7 @@ nrel_weight
 => nrel_idtf : [вес ребра*]  (* <-lang_ru;; *);
 <-rrel_key_sc_element:
 		...  
-		(*<-sc_definition;;
+		(*<-definition;;
 		=> nrel_main_idtf: [Опр.(вес ребра)] (* <- lang_ru;; *);;
 		<=nrel_sc_text_translation:
 			...
@@ -25,7 +25,7 @@ nrel_weight
 <-rrel_key_sc_element: ...
 	(*
 		=>nrel_main_idtf:[Утв.(вес )](*<-lang_ru;;*);;
-		<- sc_statement;;	
+		<- statement;;	
 		<=nrel_sc_text_translation:
 			...
 			(*

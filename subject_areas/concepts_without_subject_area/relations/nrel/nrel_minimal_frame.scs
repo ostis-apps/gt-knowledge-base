@@ -14,7 +14,7 @@ nrel_minimal_frame
 
 	<-rrel_key_sc_element:
 		...  
-		(*<-sc_definition;;
+		(*<-definition;;
 	=> nrel_main_idtf: [Опр.(минимальный каркас)] (* <- lang_ru;; *);;
 		<=nrel_sc_text_translation:
 		...

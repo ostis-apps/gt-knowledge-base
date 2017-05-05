@@ -20,7 +20,7 @@ nrel_bicomponent <- rrel_key_sc_element:
 	(*
 	=> nrel_main_idtf: [Определение: бикомпонента] (* <- lang_ru;; *);;
 	=> nrel_main_idtf: [Definition: bicomponent] (* <- lang_en;; *);;
-	<- sc_definition;;
+	<- definition;;
 	<= nrel_sc_text_translation: ...
 		(*
 		-> rrel_example: 
@@ -45,7 +45,7 @@ nrel_bicomponent<- rrel_main_key_sc_element:
 		(*
 		=> nrel_main_idtf: [Утверждение: пересечение различных бикомпонент.] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Statement: the intersection of different bicomponents.] (* <- lang_en;; *);;
-		<- sc_statement;;
+		<- statement;;
 		<= nrel_sc_text_translation: ...
 			(*
 			-> rrel_example: 
@@ -59,7 +59,7 @@ nrel_bicomponent<- rrel_main_key_sc_element:
 nrel_bicomponent <- rrel_key_sc_element: 
 	...
 	(*
-		<- sc_illustration;;
+		<- illustration;;
 		<= nrel_sc_text_translation:
 		...
 			(*

@@ -7,7 +7,7 @@ nrel_vertex_induced_subgraph => nrel_main_idtf:
 nrel_vertex_induced_subgraph <- rrel_key_sc_element: 
         ... 
 		(*
-		<- sc_definition;;
+		<- definition;;
 		=> nrel_main_idtf: [Определение: вершинно-порожденный подграф] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Definition: Vertex-induced subgraph] (* <- lang_en;; *);;
 		<= nrel_sc_text_translation: ...
@@ -38,7 +38,7 @@ nrel_vertex_induced_subgraph<= nrel_definitional_domain: concept_graph;;
 nrel_vertex_induced_subgraph <- rrel_key_sc_element: 
 	...
 	(*
-		<- sc_illustration;;
+		<- illustration;;
 		<= nrel_sc_text_translation:
 		...
 			(*

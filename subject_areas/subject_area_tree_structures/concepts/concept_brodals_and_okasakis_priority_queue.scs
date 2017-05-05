@@ -7,7 +7,7 @@ concept_brodals_and_okasakis_priority_queue => nrel_main_idtf:
 concept_brodals_and_okasakis_priority_queue <- rrel_key_sc_element: 
 		... 
 		(*
-		<- sc_definition;;
+		<- definition;;
 		=> nrel_main_idtf: [Определение: куча Бродала-Окасаки] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Definition: Brodal's and Okasaki's Priority Queue] (* <- lang_en;; *);;
 		<= nrel_sc_text_translation: ...
@@ -28,7 +28,7 @@ concept_brodals_and_okasakis_priority_queue <= nrel_using_constants:
 concept_brodals_and_okasakis_priority_queue <- rrel_key_sc_element: 
 	...
 	(*
-		<- sc_illustration;;
+		<- illustration;;
 		<= nrel_sc_text_translation:
 		...
 			(*

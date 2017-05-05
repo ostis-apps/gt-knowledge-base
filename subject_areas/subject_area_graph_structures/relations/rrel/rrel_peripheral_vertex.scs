@@ -6,7 +6,7 @@ rrel_peripheral_vertex	=> nrel_main_idtf:
 
 rrel_peripheral_vertex	<- rrel_key_sc_element:
 		...  
-		(*<-sc_definition;;
+		(*<-definition;;
 		=> nrel_main_idtf: [Опр.(периферийная вершина)] (* <- lang_ru;; *);;
 		<=nrel_sc_text_translation:
 		...

@@ -11,7 +11,7 @@ nrel_similar_verticies
 	=> nrel_definitional_domain: rrel_vertex;
 
 	<- rrel_key_sc_element: ... (*
-		<- sc_definition;;
+		<- definition;;
 		<= nrel_sc_text_translation: ... (*
 			-> rrel_example: [вершины a и b такие, что для некоторого автоморфизма alpha имеет место равенство alpha(a) = b.] 
 				(* <- lang_ru;; *);;

@@ -5,7 +5,7 @@ concept_countable_graph => nrel_main_idtf:
 concept_countable_graph <- rrel_key_sc_element: ...  
 	(*
 	=> nrel_main_idtf: [Опр.(Счетный граф)] (* <- lang_ru;; *);;
-	<- sc_definition;; 
+	<- definition;; 
 	<= nrel_sc_text_translation: ... (*
 		-> rrel_example: 
 			[Счетный граф(Countable graph)

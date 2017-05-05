@@ -20,7 +20,7 @@ nrel_condensation_of_the_digraph <- rrel_key_sc_element:
 	(*
 	=> nrel_main_idtf: [Определение: конденсация орграфа] (* <- lang_ru;; *);;
 	=> nrel_main_idtf: [Definition: condensation of the digraph] (* <- lang_en;; *);;
-	<- sc_definition;;
+	<- definition;;
 	<= nrel_sc_text_translation: ...
 		(*
 		-> rrel_example: 
@@ -45,7 +45,7 @@ nrel_condensation_of_the_digraph<- rrel_main_key_sc_element:
 		(*
 		=> nrel_main_idtf: [Утверждение: содержание сильных компонент связности] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Statement:  strongly connected component content] (* <- lang_en;; *);;
-		<- sc_statement;;
+		<- statement;;
 		<= nrel_sc_text_translation: ...
 			(*
 			-> rrel_example: 
@@ -59,7 +59,7 @@ nrel_condensation_of_the_digraph<- rrel_main_key_sc_element:
 nrel_condensation_of_the_digraph <- rrel_key_sc_element: 
 	...
 	(*
-		<- sc_illustration;;
+		<- illustration;;
 		<= nrel_sc_text_translation:
 		...
 			(*

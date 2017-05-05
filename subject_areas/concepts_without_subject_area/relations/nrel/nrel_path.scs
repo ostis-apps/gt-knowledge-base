@@ -23,7 +23,7 @@ nrel_path => nrel_second_domain: concept_graph;;
 nrel_path <- rrel_key_sc_element: 
      ... 
 	(*
-	<- sc_definition;;
+	<- definition;;
 	<= nrel_sc_text_translation: ...
 		(*
 		-> rrel_example: 

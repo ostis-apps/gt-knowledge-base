@@ -7,7 +7,7 @@ nrel_bisection_width => nrel_main_idtf:
 nrel_bisection_width <- rrel_key_sc_element: 
         ... 
         (*
-            <- sc_definition;;
+            <- definition;;
             => nrel_main_idtf:
                 [Определение: ширина бисекции.]
                 (* <- lang_ru;; *);;

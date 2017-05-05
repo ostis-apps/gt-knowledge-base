@@ -14,7 +14,7 @@ nrel_vertex_valency
 
 <-rrel_key_sc_element:
 ...
-(*<-sc_definition;;
+(*<-definition;;
 => nrel_main_idtf: [Опр.(валентность вершины)] (* <- lang_ru;; *);;
 <=nrel_sc_text_translation:
 ...
@@ -34,7 +34,7 @@ nrel_vertex_valency
 <-rrel_key_sc_element: ...
 (*
 =>nrel_main_idtf:[Утв.(валентность вершины) ](*<-lang_ru;;*);;
-<- sc_statement;;
+<- statement;;
 <=nrel_sc_text_translation:
 ...
 (*
@@ -51,7 +51,7 @@ nrel_vertex_valency
 <-rrel_key_sc_element: ...
 (*
 =>nrel_main_idtf:[Утв.(валентность вершины) ](*<-lang_ru;;*);;
-<- sc_statement;;
+<- statement;;
 <=nrel_sc_text_translation:
 ...
 (*

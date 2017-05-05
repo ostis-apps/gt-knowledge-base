@@ -7,7 +7,7 @@ concept_colour_graph_of_a_group
 	<= nrel_inclusion: concept_directed_graph;
 
 	<- rrel_key_sc_element: ... (*
-		<- sc_definition;;
+		<- definition;;
 		<= nrel_sc_text_translation: ... (*
 			-> rrel_example: [полный симметрический орграф D(F), множество вершин которого совпадает с множеством элементов группы F и в котором дуге (f(_i) ,f(_j)) приписывается цвет, совпадающий с элементом f(_i)(^-1) f(_j) группы F.] (* <- lang_ru;; *);;
 			<= nrel_using_constants: {
@@ -20,7 +20,7 @@ concept_colour_graph_of_a_group
 concept_colour_graph_of_a_group <- rrel_key_sc_element: 
 	...
 	(*
-		<- sc_illustration;;
+		<- illustration;;
 		<= nrel_sc_text_translation:
 		...
 			(*

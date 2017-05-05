@@ -7,7 +7,7 @@ concept_suffix_tree => nrel_main_idtf:
 concept_suffix_tree <- rrel_key_sc_element: 
 		... 
 		(*
-		<- sc_definition;;
+		<- definition;;
 		=> nrel_main_idtf: [Определение: суффиксное дерево] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Definition: suffix tree] (* <- lang_en;; *);;
 		<= nrel_sc_text_translation: ...
@@ -31,7 +31,7 @@ concept_suffix_tree <- rrel_main_key_sc_element:
 		=> nrel_main_idtf: [Утверждение: nребования суффиксного дерева к памяти] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Statement: requirements suffix tree to the memory] (* <- lang_en;; *);;
 		-> rrel_key_sc_element: concept_tree;;
-		<- sc_statement;;
+		<- statement;;
 		<= nrel_sc_text_translation: ...
 			(*
 			-> rrel_example: 
@@ -45,7 +45,7 @@ concept_suffix_tree <- rrel_main_key_sc_element:
 concept_suffix_tree <- rrel_key_sc_element: 
 	...
 	(*
-		<- sc_illustration;;
+		<- illustration;;
 		<= nrel_sc_text_translation:
 		...
 			(*

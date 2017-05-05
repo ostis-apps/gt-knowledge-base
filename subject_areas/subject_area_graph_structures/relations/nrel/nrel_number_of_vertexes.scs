@@ -15,7 +15,7 @@ nrel_number_of_vertexes<= nrel_using_constants: {
 				concept_graph
 		};;
 nrel_number_of_vertexes <- rrel_key_sc_element: ... (*
-	<- sc_definition;;
+	<- definition;;
 	<= nrel_sc_text_translation: ... (*
 		-> rrel_example: [Количество вершин графа.] (* <- lang_ru;; *);;
 	*);;

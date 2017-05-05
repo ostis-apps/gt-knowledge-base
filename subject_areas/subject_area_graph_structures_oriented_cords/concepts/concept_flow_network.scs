@@ -7,7 +7,7 @@ concept_flow_network => nrel_main_idtf:
 concept_flow_network <- rrel_key_sc_element: 
         ... 
             (*
-	<- sc_definition;;
+	<- definition;;
 	=> nrel_main_idtf: [Определение: транспортная сеть] (* <- lang_ru;; *);;
 	=> nrel_main_idtf: [Definition: flow network] (* <- lang_en;; *);;	
 	<= nrel_sc_text_translation: ... 
@@ -27,7 +27,7 @@ concept_flow_network<= nrel_using_constants: {
 concept_flow_network <- rrel_key_sc_element: 
         	... 
 		(*
-		<- sc_statement;;
+		<- statement;;
 		-> rrel_key_sc_element: concept_node; concept_oredge;;		
 		=> nrel_main_idtf: [Утверждение: целочисленная трансопртная сеть] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Definition: uniterally connected graph](* <- lang_en;; *);;
@@ -42,7 +42,7 @@ concept_flow_network <- rrel_key_sc_element:
 		*);;
 		
 concept_flow_network <- rrel_key_sc_element: ... (*
-	<- sc_illustration;;
+	<- illustration;;
 	<= nrel_sc_text_translation: ... (*
 		-> rrel_example: "file://contents/flow_network.png";;
 	*);;

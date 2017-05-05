@@ -29,7 +29,7 @@ nrel_vertex_outcome_degree <- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Опр.(степень исхода вершины*)] (* <- lang_ru;; *);;
-	<- sc_definition;;   
+	<- definition;;   
 	<= nrel_sc_text_translation: 
 		...
 		(*

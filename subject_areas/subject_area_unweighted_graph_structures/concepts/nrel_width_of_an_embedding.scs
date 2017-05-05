@@ -7,7 +7,7 @@ nrel_width_of_an_embedding => nrel_main_idtf:
 nrel_width_of_an_embedding <- rrel_key_sc_element: 
         ... 
         (*
-            <- sc_definition;;
+            <- definition;;
             => nrel_main_idtf:
                 [Формулировка: ширина укладки.]
                 (* <- lang_ru;; *);;
@@ -30,7 +30,7 @@ nrel_width_of_an_embedding <- rrel_key_sc_element:
 nrel_width_of_an_embedding <- rrel_key_sc_element:
         ...
         (*
-            <- sc_statement;;
+            <- statement;;
             => nrel_main_idtf:
                 [Утверждение: ширина укладки]
                 (* <- lang_ru;; *);;

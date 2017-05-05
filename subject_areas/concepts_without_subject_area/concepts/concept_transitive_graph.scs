@@ -10,7 +10,7 @@ concept_transitive_graph <- rrel_key_sc_element:
 	...  
 	(*
 	=> nrel_main_idtf: [Опр.(транзитивный граф)] (* <- lang_ru;; *);;
-	<- sc_definition;; 
+	<- definition;; 
 	<= nrel_sc_text_translation: 
 		...
 		(*

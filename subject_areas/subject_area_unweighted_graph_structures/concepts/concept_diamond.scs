@@ -7,7 +7,7 @@ concept_diamond => nrel_main_idtf:
 concept_diamond <- rrel_key_sc_element: 
         ... 
         (*
-            <- sc_definition;;
+            <- definition;;
             => nrel_main_idtf:
                 [Определение: алмаз]
                 (* <- lang_ru;; *);;
@@ -26,7 +26,7 @@ concept_diamond <- rrel_key_sc_element:
 concept_diamond <- rrel_key_sc_element:
         ...
         (*
-            <- sc_statement;;
+            <- statement;;
             => nrel_main_idtf:
                 [Утверждение: граф К4 и алмаз]
                 (* <- lang_ru;; *);;
@@ -45,7 +45,7 @@ concept_diamond <- rrel_key_sc_element:
 concept_diamond <- rrel_key_sc_element: 
         ...
         (*
-            <- sc_illustration;;
+            <- illustration;;
             <= nrel_sc_text_translation:
                     ...
                     (*

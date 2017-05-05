@@ -5,7 +5,7 @@ concept_unicyclic_graph
 	=> nrel_main_idtf: [unicyclic graph] (* <- lang_en;; *);
 
 	<- rrel_key_sc_element: ... (*
-		<- sc_definition;;
+		<- definition;;
 		<= nrel_sc_text_translation: ... (*
 			-> rrel_example: [граф, имеющий в точности один цикл.] (* <- lang_ru;; *);;
 			<= nrel_using_constants: {

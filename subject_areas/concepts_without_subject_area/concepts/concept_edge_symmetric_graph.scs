@@ -5,7 +5,7 @@ concept_edge_symmetric_graph => nrel_main_idtf:
 concept_edge_symmetric_graph <- rrel_key_sc_element: ...  
 	(*
 	=> nrel_main_idtf: [Опр.(Реберно-симметрический граф)] (* <- lang_ru;; *);;
-	<- sc_definition;; 
+	<- definition;; 
 	<= nrel_sc_text_translation: ... (*
 		-> rrel_example: 
 			[Реберно-симметрический граф(Line-symmetric graph, edge symmetric graph)

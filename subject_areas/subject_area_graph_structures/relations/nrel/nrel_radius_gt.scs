@@ -28,7 +28,7 @@ nrel_radius_gt<- rrel_key_sc_element:
 	...
 	(*
 	=> nrel_main_idtf: [Опр.(радиус графа*)] (* <- lang_ru;; *);;
-	<- sc_definition;;   
+	<- definition;;   
 	<= nrel_sc_text_translation: 
 		...
 		(*

@@ -7,7 +7,7 @@ concept_r_tree => nrel_main_idtf:
 concept_r_tree <- rrel_key_sc_element: 
 		... 
 		(*
-		<- sc_definition;;
+		<- definition;;
 		=> nrel_main_idtf: [Определение: R-дерево] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Definition: R-tree] (* <- lang_en;; *);;
 		<= nrel_sc_text_translation: ...
@@ -32,7 +32,7 @@ concept_r_tree <- rrel_main_key_sc_element:
 		=> nrel_main_idtf: [Утверждение: структура R-дерева] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Statement: R-tree structure] (* <- lang_en;; *);;
 		-> rrel_key_sc_element: concept_tree;;
-		<- sc_statement;;
+		<- statement;;
 		<= nrel_sc_text_translation: ...
 			(*
 			-> rrel_example: 
@@ -49,7 +49,7 @@ concept_r_tree <- rrel_main_key_sc_element:
 		=> nrel_main_idtf: [Утверждение: построение R-дерева] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Statement: R-tree construction] (* <- lang_en;; *);;
 		-> rrel_key_sc_element: concept_tree;;
-		<- sc_statement;;
+		<- statement;;
 		<= nrel_sc_text_translation: ...
 			(*
 			-> rrel_example: 
@@ -63,7 +63,7 @@ concept_r_tree <- rrel_main_key_sc_element:
 concept_r_tree <- rrel_key_sc_element: 
 	...
 	(*
-		<- sc_illustration;;
+		<- illustration;;
 		<= nrel_sc_text_translation:
 		...
 			(*

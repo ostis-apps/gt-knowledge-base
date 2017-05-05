@@ -7,7 +7,7 @@ nrel_min_ostov=> nrel_main_idtf:
 nrel_min_ostov <- rrel_key_sc_element: 
         ... 
 		(*
-		<- sc_definition;;
+		<- definition;;
 		=> nrel_main_idtf: [Определение: минимальное остовное дерево] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Definition: minimal ostov tree] (* <- lang_en;; *);;
 		<= nrel_sc_text_translation: ...

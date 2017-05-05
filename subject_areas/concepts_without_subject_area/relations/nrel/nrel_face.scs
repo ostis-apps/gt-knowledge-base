@@ -21,7 +21,7 @@ nrel_face <- rrel_key_sc_element:
      ... 
 	(*
 	=> nrel_main_idtf: [Опр.(Грань графа)] (* <- lang_ru;; *);;
-	<- sc_definition;;
+	<- definition;;
 	<= nrel_sc_text_translation: ...
 		(*
 		-> rrel_example: 

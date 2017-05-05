@@ -7,7 +7,7 @@ concept_diamond_free_graph => nrel_main_idtf:
 concept_diamond_free_graph <- rrel_key_sc_element: 
         ... 
         (*
-            <- sc_definition;;
+            <- definition;;
             => nrel_main_idtf:
                 [Определение: алмазо-свободный граф]
                 (* <- lang_ru;; *);;
@@ -26,7 +26,7 @@ concept_diamond_free_graph <- rrel_key_sc_element:
 concept_diamond_free_graph <- rrel_key_sc_element:
         ...
         (*
-            <- sc_statement;;
+            <- statement;;
             => nrel_main_idtf:
                 [Утверждение: графы без треугольников]
                 (* <- lang_ru;; *);;
@@ -47,7 +47,7 @@ concept_diamond_free_graph <- rrel_key_sc_element:
 concept_diamond_free_graph <- rrel_key_sc_element:
         ...
         (*
-            <- sc_statement;;
+            <- statement;;
             => nrel_main_idtf:
                 [Утверждение: локальная группировка]
                 (* <- lang_ru;; *);;
@@ -66,7 +66,7 @@ concept_diamond_free_graph <- rrel_key_sc_element:
 concept_diamond_free_graph <- rrel_key_sc_element: 
         ...
         (*
-            <- sc_illustration;;
+            <- illustration;;
             <= nrel_sc_text_translation:
                     ...
                     (*

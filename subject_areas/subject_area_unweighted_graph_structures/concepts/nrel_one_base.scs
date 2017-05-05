@@ -7,7 +7,7 @@ nrel_one_base => nrel_main_idtf:
 nrel_one_base <- rrel_key_sc_element: 
         ... 
         (*
-            <- sc_definition;;
+            <- definition;;
             => nrel_main_idtf:
                 [Определение: 1-база.]
                 (* <- lang_ru;; *);;
@@ -26,7 +26,7 @@ nrel_one_base <- rrel_key_sc_element:
 nrel_one_base <- rrel_key_sc_element:
         ...
         (*
-            <- sc_statement;;
+            <- statement;;
             => nrel_main_idtf:
                 [Утверждение: 1-база]
                 (* <- lang_ru;; *);;

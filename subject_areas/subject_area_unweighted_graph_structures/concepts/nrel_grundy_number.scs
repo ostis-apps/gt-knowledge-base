@@ -7,7 +7,7 @@ nrel_grundy_number => nrel_main_idtf:
 nrel_grundy_number <- rrel_key_sc_element: 
         ... 
         (*
-            <- sc_definition;;
+            <- definition;;
             => nrel_main_idtf:
                 [Определение: число Гранди.]
                 (* <- lang_ru;; *);;
@@ -26,7 +26,7 @@ nrel_grundy_number <- rrel_key_sc_element:
 nrel_grundy_number <- rrel_key_sc_element:
         ...
         (*
-            <- sc_statement;;
+            <- statement;;
             => nrel_main_idtf:
                 [Утверждение: соотношение между хроматическим и ахроматическим числом]
                 (* <- lang_ru;; *);;

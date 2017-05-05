@@ -7,7 +7,7 @@ concept_locally_restricted_graph => nrel_main_idtf:
 concept_locally_restricted_graph <- rrel_key_sc_element: 
         ... 
         (*
-            <- sc_definition;;
+            <- definition;;
             => nrel_main_idtf:
                 [Определение: локально ограниченный граф]
                 (* <- lang_ru;; *);;
@@ -27,7 +27,7 @@ concept_locally_restricted_graph <- rrel_key_sc_element:
 concept_locally_restricted_graph <- rrel_key_sc_element:
         ...
         (*
-            <- sc_statement;;
+            <- statement;;
             => nrel_main_idtf:
                 [Утверждение: кратности вершин]
                 (* <- lang_ru;; *);;

@@ -9,7 +9,7 @@ concept_g_graph => nrel_inclusion: concept_planar_graph;;
 concept_g_graph <- rrel_key_sc_element:
 		...  
 		(*
-		<-sc_definition;;
+		<-definition;;
 		=> nrel_main_idtf: [Опр.(Граф рода G)] (* <- lang_ru;; *);;
 		<=nrel_sc_text_translation:
 		...

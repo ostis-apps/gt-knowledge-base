@@ -26,7 +26,7 @@ nrel_maximum_cut <= nrel_definitional_domain:
 nrel_maximum_cut <- rrel_key_sc_element: 
         ... 
 		(*
-		<- sc_definition;;
+		<- definition;;
 		=> nrel_main_idtf: [Определение: максимальный разрез] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Definition: maximum cut] (* <- lang_en;; *);;
 		<= nrel_sc_text_translation: ...
@@ -53,7 +53,7 @@ nrel_maximum_cut <- rrel_main_key_sc_element:
 		(*
 		=> nrel_main_idtf: [Утверждение: 21 NP-полная задача Карпа] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Statement: Karp's 21 NP-complete problems] (* <- lang_en;; *);;
-		<- sc_statement;;
+		<- statement;;
 		<= nrel_sc_text_translation: ...
 			(*
 			-> rrel_example: 
@@ -67,7 +67,7 @@ nrel_maximum_cut <- rrel_main_key_sc_element:
 nrel_maximum_cut <- rrel_key_sc_element: 
 	...
 	(*
-		<- sc_illustration;;
+		<- illustration;;
 		<= nrel_sc_text_translation:
 		...
 			(*

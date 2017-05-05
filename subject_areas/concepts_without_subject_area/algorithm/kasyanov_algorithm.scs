@@ -6,7 +6,7 @@ kasyanov_algorithm	=> nrel_main_idtf:
 
 kasyanov_algorithm	<- rrel_key_sc_element:
 		...  
-		(*<-sc_definition;;
+		(*<-definition;;
 		=> nrel_main_idtf: [Опр.(алгоритм Касьянова)] (* <- lang_ru;; *);;
 		<=nrel_sc_text_translation:
 		...

@@ -7,7 +7,7 @@ nrel_graph_endomorphism => nrel_main_idtf:
 nrel_graph_endomorphism <- rrel_key_sc_element: 
         ... 
         (*
-            <- sc_definition;;
+            <- definition;;
             => nrel_main_idtf:
                 [Определение: эндоморфизм графа.]
                 (* <- lang_ru;; *);;
@@ -27,7 +27,7 @@ nrel_graph_endomorphism <- rrel_key_sc_element:
 nrel_graph_endomorphism <- rrel_key_sc_element:
         ...
         (*
-            <- sc_statement;;
+            <- statement;;
             => nrel_main_idtf:
                 [Утверждение: множество всех эндоморфизмов графа.]
                 (* <- lang_ru;; *);;

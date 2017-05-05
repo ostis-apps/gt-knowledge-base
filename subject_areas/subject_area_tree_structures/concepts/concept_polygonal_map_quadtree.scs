@@ -7,7 +7,7 @@ concept_polygonal_map_quadtree => nrel_main_idtf:
 concept_polygonal_map_quadtree <- rrel_key_sc_element: 
 		... 
 		(*
-		<- sc_definition;;
+		<- definition;;
 		=> nrel_main_idtf: [Определение: дерево квадрантов, хранящее информацию о многоугольниках] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Definition: polygonal map quadtree] (* <- lang_en;; *);;
 		<= nrel_sc_text_translation: ...
@@ -28,7 +28,7 @@ concept_polygonal_map_quadtree <= nrel_using_constants:
 concept_polygonal_map_quadtree <- rrel_key_sc_element: 
 	...
 	(*
-		<- sc_illustration;;
+		<- illustration;;
 		<= nrel_sc_text_translation:
 		...
 			(*

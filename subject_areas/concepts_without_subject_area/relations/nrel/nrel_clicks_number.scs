@@ -20,7 +20,7 @@ nrel_clicks_number <- rrel_key_sc_element:
      ... 
 	(*
 	=> nrel_main_idtf: [Опр.(Кликовое число)] (* <- lang_ru;; *);;
-	<- sc_definition;;
+	<- definition;;
 	<= nrel_sc_text_translation: ...
 		(*
 		-> rrel_example: 

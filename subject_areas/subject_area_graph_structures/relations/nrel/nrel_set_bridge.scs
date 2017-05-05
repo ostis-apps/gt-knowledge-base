@@ -7,7 +7,7 @@ nrel_set_bridge=> nrel_main_idtf:
 nrel_set_bridge <- rrel_key_sc_element: 
         ... 
 		(*
-		<- sc_definition;;
+		<- definition;;
 		=> nrel_main_idtf: [Определение: множество мостов] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Definition: bridge set] (* <- lang_en;; *);;
 		<= nrel_sc_text_translation: ...

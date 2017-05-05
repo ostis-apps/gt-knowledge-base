@@ -7,7 +7,7 @@ hakimi_algorithm => nrel_main_idtf:
 hakimi_algorithm <- rrel_key_sc_element: 
         ... 
         (*
-            <- sc_definition;;
+            <- definition;;
             => nrel_main_idtf:
                 [Определение: алгоритм Хакими]
                 (* <- lang_ru;; *);;
@@ -26,7 +26,7 @@ hakimi_algorithm <- rrel_key_sc_element:
 hakimi_algorithm <- rrel_key_sc_element:
         ...
         (*
-            <- sc_statement;;
+            <- statement;;
             => nrel_main_idtf:
                 [Утверждение: суть алгоритма Хакими]
                 (* <- lang_ru;; *);;

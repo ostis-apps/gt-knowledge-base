@@ -10,7 +10,7 @@ concept_spanning_tree => nrel_idtf:
 concept_spanning_tree <- rrel_key_sc_element: 
 		... 
 		(*
-		<- sc_definition;;
+		<- definition;;
 		=> nrel_main_idtf: [Определение: остовное дерево] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Definition: spanning tree] (* <- lang_en;; *);;
 		<= nrel_sc_text_translation: ...	
@@ -37,7 +37,7 @@ concept_spanning_tree <- rrel_main_key_sc_element:
 		=> nrel_main_idtf: [Утверждение: построение остовного дерева] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Statement: construction of spanning tree] (* <- lang_en;; *);;
 		-> rrel_key_sc_element: concept_tree;;
-		<- sc_statement;;
+		<- statement;;
 		<= nrel_sc_text_translation: ...
 			(*
 			-> rrel_example: 
@@ -54,7 +54,7 @@ concept_spanning_tree <- rrel_main_key_sc_element:
 		=> nrel_main_idtf: [Утверждение: кратчайший путь остовных деревьев] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Statement: the shortest path spanning trees] (* <- lang_en;; *);;
 		-> rrel_key_sc_element: concept_tree;;
-		<- sc_statement;;
+		<- statement;;
 		<= nrel_sc_text_translation: ...
 			(*
 			-> rrel_example: 
@@ -71,7 +71,7 @@ concept_spanning_tree <- rrel_main_key_sc_element:
 		=> nrel_main_idtf: [Утверждение: нахождение оптимального остовного дерева] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Statement: нахождение оптимального остовного дерева] (* <- lang_en;; *);;
 		-> rrel_key_sc_element: concept_tree;;
-		<- sc_statement;;
+		<- statement;;
 		<= nrel_sc_text_translation: ...
 			(*
 			-> rrel_example: 
@@ -85,7 +85,7 @@ concept_spanning_tree <- rrel_main_key_sc_element:
 concept_spanning_tree <- rrel_key_sc_element: 
 	...
 	(*
-		<- sc_illustration;;
+		<- illustration;;
 		<= nrel_sc_text_translation:
 		...
 			(*

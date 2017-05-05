@@ -7,7 +7,7 @@ concept_split_graph => nrel_main_idtf:
 concept_split_graph <- rrel_key_sc_element: 
         ... 
 		(*
-		<- sc_definition;;
+		<- definition;;
 		=> nrel_main_idtf: [Определение: расщепляемый граф] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Definition:  split graph] (* <- lang_en;; *);;
 		<= nrel_sc_text_translation: ...

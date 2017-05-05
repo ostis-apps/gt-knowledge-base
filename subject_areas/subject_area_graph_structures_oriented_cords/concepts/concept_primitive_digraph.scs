@@ -7,7 +7,7 @@ concept_primitive_digraph => nrel_main_idtf:
 concept_primitive_digraph <- rrel_key_sc_element: 
         ... 
             (*
-	<- sc_definition;;
+	<- definition;;
 	=> nrel_main_idtf: [Определение: примитивный орграф] (* <- lang_ru;; *);;
 	=> nrel_main_idtf: [Definition: primitive digraph] (* <- lang_en;; *);;	
 	<= nrel_sc_text_translation: ... 
@@ -30,7 +30,7 @@ concept_primitive_digraph<= nrel_using_constants: {
 concept_primitive_digraph <- rrel_key_sc_element: 
         	... 
 		(*
-		<- sc_statement;;
+		<- statement;;
 		-> rrel_key_sc_element: concept_node; nrel_oredge; nrel_contour;;		
 		=> nrel_main_idtf: [Утверждение: примитивный орграф] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Definition: primitive digraph](* <- lang_en;; *);;

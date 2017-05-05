@@ -7,7 +7,7 @@ concept_region_quadtree => nrel_main_idtf:
 concept_region_quadtree <- rrel_key_sc_element: 
 		... 
 		(*
-		<- sc_definition;;
+		<- definition;;
 		=> nrel_main_idtf: [Определение: дерево квадрантов, разбивающее пространство] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Definition: region quadtree] (* <- lang_en;; *);;
 		<= nrel_sc_text_translation: ...
@@ -28,7 +28,7 @@ concept_region_quadtree <= nrel_using_constants:
 concept_region_quadtree <- rrel_key_sc_element: 
 	...
 	(*
-		<- sc_illustration;;
+		<- illustration;;
 		<= nrel_sc_text_translation:
 		...
 			(*

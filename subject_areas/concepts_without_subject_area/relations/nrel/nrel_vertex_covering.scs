@@ -9,7 +9,7 @@ nrel_vertex_covering
 
 	<-rrel_key_sc_element:
 		...  
-		(*<-sc_definition;;
+		(*<-definition;;
 		=> nrel_main_idtf: [Опр.(вершинное покрытие)] (* <- lang_ru;; *);;
 		<=nrel_sc_text_translation:
 		...

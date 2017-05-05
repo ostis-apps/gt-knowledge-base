@@ -12,7 +12,7 @@ nrel_cut
 
 <-rrel_key_sc_element:
 ...
-(*<-sc_definition;;
+(*<-definition;;
 => nrel_main_idtf: [Опр.(разрез)] (* <- lang_ru;; *);;
 <=nrel_sc_text_translation:
 ...
@@ -33,7 +33,7 @@ nrel_cut
 <-rrel_key_sc_element: ...
 (*
 =>nrel_main_idtf:[Утв.(разрез) ](*<-lang_ru;;*);;
-<- sc_statement;;
+<- statement;;
 <=nrel_sc_text_translation:
 ...
 (*
@@ -42,7 +42,7 @@ nrel_cut
 *);
 ... (*
 =>nrel_main_idtf:[Утв.(автоморфизм) ](*<-lang_ru;;*);;
-<- sc_statement;;
+<- statement;;
 <=nrel_sc_text_translation:
 ...
 (*

@@ -7,7 +7,7 @@ concept_noneparable_graph => nrel_main_idtf:
 concept_noneparable_graph <- rrel_key_sc_element: 
         ... 
 		(*
-		<- sc_definition;;
+		<- definition;;
 		=> nrel_main_idtf: [Опр.(неразделимый граф)] (* <- lang_ru;; *);;
 		<= nrel_sc_text_translation: ...
 			(*

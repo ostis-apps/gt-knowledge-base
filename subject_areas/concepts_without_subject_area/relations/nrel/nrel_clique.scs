@@ -7,7 +7,7 @@ nrel_clique => nrel_main_idtf:
 nrel_clique <- rrel_key_sc_element: 
         ... 
 		(*
-		<- sc_definition;;
+		<- definition;;
 		=> nrel_main_idtf: [Определение: клика] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Definition: clique] (* <- lang_en;; *);;
 		<= nrel_sc_text_translation: ...
@@ -45,7 +45,7 @@ rrel_point_of_articulation<= nrel_definitional_domain:
 nrel_base_graph <- rrel_key_sc_element: 
 	...
 	(*
-		<- sc_illustration;;
+		<- illustration;;
 		<= nrel_sc_text_translation:
 		...
 			(*

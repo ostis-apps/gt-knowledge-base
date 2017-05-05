@@ -7,7 +7,7 @@ concept_contourless_oriented_graph => nrel_main_idtf:
 concept_contourless_oriented_graph <- rrel_key_sc_element: 
         ... 
         (*
-            <- sc_definition;;
+            <- definition;;
             => nrel_main_idtf:
                 [Определение: бесконтурный орграф]
                 (* <- lang_ru;; *);;
@@ -26,7 +26,7 @@ concept_contourless_oriented_graph <- rrel_key_sc_element:
 concept_contourless_oriented_graph <- rrel_key_sc_element:
         ...
         (*
-            <- sc_statement;;
+            <- statement;;
             => nrel_main_idtf:
                 [Утверждение: контуры и циклы]
                 (* <- lang_ru;; *);;
@@ -46,7 +46,7 @@ concept_contourless_oriented_graph <- rrel_key_sc_element:
 concept_contourless_oriented_graph <- rrel_key_sc_element: 
         ...
         (*
-            <- sc_illustration;;
+            <- illustration;;
             <= nrel_sc_text_translation:
                     ...
                     (*

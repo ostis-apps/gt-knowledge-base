@@ -10,7 +10,7 @@ nrel_fragment
 	=> nrel_definitional_domain: concept_subgraph;
 
 	<- rrel_key_sc_element: ... (*
-		<- sc_definition;;
+		<- definition;;
 		<= nrel_sc_text_translation: ... (*
 			-> rrel_example: [любая часть уграфа. Фрагмент C является подфрагментом фрагмента S, если C - часть S. Подфрагмент C фрагмента S, отличный от S, называется собственным подфрагментом.] 
 				(* <- lang_ru;; *);;

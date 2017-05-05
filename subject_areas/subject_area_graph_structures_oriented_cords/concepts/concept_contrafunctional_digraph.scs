@@ -7,7 +7,7 @@ concept_contrafunctional_digraph => nrel_main_idtf:
 concept_contrafunctional_digraph <- rrel_key_sc_element: 
         ... 
             (*
-	<- sc_definition;;
+	<- definition;;
 	=> nrel_main_idtf: [Определение: контрафункциональный орграф] (* <- lang_ru;; *);;
 	=> nrel_main_idtf: [Definition: contrafunctional digraph] (* <- lang_en;; *);;	
 	<= nrel_sc_text_translation: ... 
@@ -28,7 +28,7 @@ concept_contrafunctional_digraph<= nrel_using_constants: {
 concept_contrafunctional_digraph <- rrel_key_sc_element: 
         	... 
 		(*
-		<- sc_statement;;
+		<- statement;;
 		-> rrel_key_sc_element: concept_node; nrel_oredge; nrel_outdegree;;		
 		=> nrel_main_idtf: [Утверждение: контрафункциональный орграф] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Definition: contrafunctional digraph](* <- lang_en;; *);;

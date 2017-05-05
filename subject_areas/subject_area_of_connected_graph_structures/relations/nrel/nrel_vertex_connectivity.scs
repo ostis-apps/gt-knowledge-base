@@ -7,7 +7,7 @@ nrel_vertex_connectivity => nrel_main_idtf:
 nrel_vertex_connectivity <- rrel_key_sc_element: 
         ... 
 		(*
-		<- sc_definition;;
+		<- definition;;
 		=> nrel_main_idtf: [Определение: вершинная связность] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Definition: vertex connectivity] (* <- lang_en;; *);;
 		<= nrel_sc_text_translation: ...
@@ -32,7 +32,7 @@ nrel_vertex_connectivity <- rrel_main_key_sc_element:
 		=> nrel_main_idtf: [Утверждение: вершинная связность несвязного графа] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Statement: vertex connectivity of disconnected graph] (* <- lang_en;; *);;
 		-> rrel_key_sc_element:concept_disconnected_graph;;
-		<- sc_statement;;
+		<- statement;;
 		<= nrel_sc_text_translation: ...
 			(*
 			-> rrel_example: 
@@ -49,7 +49,7 @@ nrel_vertex_connectivity <- rrel_main_key_sc_element:
 		=> nrel_main_idtf: [Утверждение: вершинная связность связного графа с с единственной точкой сочленения] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Statement: vertex connectivity of connected graph with one articulation point] (* <- lang_en;; *);;
 		-> rrel_key_sc_element:concept_connected_graph; rrel_point_articulation;;
-		<- sc_statement;;
+		<- statement;;
 		<= nrel_sc_text_translation: ...
 			(*
 			-> rrel_example: 

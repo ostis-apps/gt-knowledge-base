@@ -5,7 +5,7 @@ concept_pseudosymmetric_digraph => nrel_main_idtf:
 concept_pseudosymmetric_digraph <- rrel_key_sc_element: ...  
 	(*
 	=> nrel_main_idtf: [Опр.(Псевдосимметрический граф)] (* <- lang_ru;; *);;
-	<- sc_definition;; 
+	<- definition;; 
 	<= nrel_sc_text_translation: ... (*
 		-> rrel_example: 
 			[Псевдосимметрический граф(Pseudosymmetric digraph)

@@ -10,7 +10,7 @@ oriented_relation ->nrel_subtree;;
 
 nrel_subtree	<- rrel_key_sc_element:
 		...  
-		(*<-sc_definition;;
+		(*<-definition;;
 		=> nrel_main_idtf: [Опр.(поддерево)] (* <- lang_ru;; *);;
 		<=nrel_sc_text_translation:
 		...

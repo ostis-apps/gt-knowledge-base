@@ -10,7 +10,7 @@ concept_cartesian_tree => nrel_idtf:
 concept_cartesian_tree <- rrel_key_sc_element: 
 		... 
 		(*
-		<- sc_definition;;
+		<- definition;;
 		=> nrel_main_idtf: [Определение: декартово дерево] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Definition: cartesian tree] (* <- lang_en;; *);;
 		<= nrel_sc_text_translation: ...
@@ -35,7 +35,7 @@ concept_cartesian_tree <- rrel_main_key_sc_element:
 		=> nrel_main_idtf: [Утверждение: ссылка на родительский узел] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Statement: link to the parent node] (* <- lang_en;; *);;
 		-> rrel_key_sc_element: concept_tree;;
-		<- sc_statement;;
+		<- statement;;
 		<= nrel_sc_text_translation: ...
 			(*
 			-> rrel_example: 
@@ -52,7 +52,7 @@ concept_cartesian_tree <- rrel_main_key_sc_element:
 		=> nrel_main_idtf: [Утверждение: применение декартова дерева] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [treap application] (* <- lang_en;; *);;
 		-> rrel_key_sc_element: concept_tree; concept_self_balancing_search_tree;;
-		<- sc_statement;;
+		<- statement;;
 		<= nrel_sc_text_translation: ...
 			(*
 			-> rrel_example: 
@@ -66,7 +66,7 @@ concept_cartesian_tree <- rrel_main_key_sc_element:
 concept_cartesian_tree <- rrel_key_sc_element: 
 	...
 	(*
-		<- sc_illustration;;
+		<- illustration;;
 		<= nrel_sc_text_translation:
 		...
 			(*
