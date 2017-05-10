@@ -1,0 +1,67 @@
+sc_node_not_relation->concept_outerplanar_graph;;
+
+concept_outerplanar_graph
+=> nrel_main_idtf:
+	[ внешнепланарный граф ] (* <-lang_ru;; *);
+	[ outerplanar graph ] (* <-lang_en;; *);
+
+<-rrel_key_sc_element:
+	...
+	(*
+	<-sc_definition;;
+	<= nrel_using_constants:
+	{		
+		concept_planar_graph;
+		nrel_face;				
+		rrel_vertex
+	};;
+	=> nrel_main_idtf: [Опр.(внешнепланарный граф)] (* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+		[Внешнепланарный граф - планарный граф, который имеет укладку на плоскости такую, что все его вершины принадлежат одной грани.] (*<-lang_ru;;*);;		
+		*);;
+	*);
+
+<-rrel_key_sc_element:
+	... 
+	(*
+	=>nrel_main_idtf:[Утв.(внешнепланарный граф) ](*<-lang_ru;;*);;
+	<- sc_statement;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Внешнепланарные графы имеют гамильтоновы циклы тогда и только тогда, когда они двусвязны, и в этом случае внешняя грань образует единственный гамильтонов цикл.] (*<-lang_ru;;*);;
+		*);;
+	*);
+
+<-rrel_key_sc_element:
+	... 
+	(*
+	=>nrel_main_idtf:[Утв.(внешнепланарный граф) ](*<-lang_ru;;*);;
+	<- sc_statement;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Любой внешнепланарный граф раскрашиваем в 3 цвета и имеет вырождение и древесную ширину не больше 2.] (*<-lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://picture/concept_outerplanar_graph.png";;
+			*);;
+	*);;
+
+
+
+
+
+

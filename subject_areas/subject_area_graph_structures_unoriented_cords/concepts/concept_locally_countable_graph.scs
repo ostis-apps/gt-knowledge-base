@@ -1,0 +1,27 @@
+sc_node_not_relation->concept_locally_countable_graph;;
+
+concept_locally_countable_graph
+=> nrel_main_idtf:
+	[ локально счетный граф ] (* <-lang_ru;; *);
+	[ locally countable graph ] (* <-lang_en;; *);
+
+<-rrel_key_sc_element:
+	...
+	(*
+	<-sc_definition;;
+	<= nrel_using_constants:
+	{
+		concept_infinite_graph;
+		rrel_vertex;
+		nrel_vertex_degree
+	};;
+	=> nrel_main_idtf: [Опр.(локально счетный граф)] (* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+		[Локально счетный граф - это бесконечный граф, все вершины которого имеют счетную степень.] (*<-lang_ru;;*);;			
+		*);;
+	*);;
+
+

@@ -1,0 +1,63 @@
+sc_node_not_relation->concept_geometry_point;;
+
+concept_geometry_point => nrel_main_idtf:
+	[геометрическая точка](* <-lang_ru;; *);
+	[concept geometry point](* <-lang_en;; *);;
+
+concept_geometry_point <- rrel_key_sc_element:... 
+		(*
+		<- sc_definition;;		
+		=> nrel_main_idtf: [Опр.(геометрическая точка)] (* <- lang_ru;; *);;		
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Геометрическая точка — абстрактный объект в пространстве, не имеющий никаких измеримых характеристик (нульмерный объект). Точка является одним из фундаментальных понятий в математике.](*<- lang_ru;;*);;			
+		*);;		
+*);;
+			
+concept_geometry_point <-rrel_key_sc_element:
+	... 
+	(*
+	=>nrel_main_idtf:[Утв.(геометрическая точка) ](*<-lang_ru;;*);;
+	<- sc_statement;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [В современной аксиоматике евклидовой геометрии точка является первичным понятием, задаваемым лишь перечнем его свойств — аксиомами.] (*<-lang_ru;;*);;
+		*);;
+	*);;
+
+concept_geometry_point <-rrel_key_sc_element:
+	... 
+	(*
+	=>nrel_main_idtf:[Утв.(геометрическая точка) ](*<-lang_ru;;*);;
+	<- sc_statement;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [В выбранной системе координат любую точку двумерного евклидова пространства можно представить как упорядоченную пару (x; y) действительных чисел.] (*<-lang_ru;;*);;
+		*);;
+	*);;
+
+concept_geometry_point <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_geometry_point.png";;
+			*);;
+	*);;
+
+
+
+
+
+
+
+
+
+
+

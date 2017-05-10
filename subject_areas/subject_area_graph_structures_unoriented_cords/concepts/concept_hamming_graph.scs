@@ -1,0 +1,46 @@
+sc_node_not_relation->concept_hamming_graph;;
+
+concept_hamming_graph => nrel_main_idtf:
+	[граф Хэмминга](* <-lang_ru;; *);
+	[Hamming graph](* <-lang_en;; *);;
+
+concept_hamming_graph <- rrel_key_sc_element:... 
+		(*
+		<- sc_definition;;
+		<= nrel_using_constants:
+			{
+				rrel_vertex;
+				cortege				
+			};;
+		=> nrel_main_idtf: [Опр.(граф Хэмминга)] (* <- lang_ru;; *);;		
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Пусть S — множество из q элементов, а d — положительное число. Граф Хэмминга H(d,q) имеет множество вершин S^d, множество упорядоченных d-кортежей элементов множества S (последовательности длины d элементов из S).](*<- lang_ru;;*);;			
+		*);;		
+*);;
+			
+concept_based_graph <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://picture/concept_hamming_graph.gif";;
+			*);;
+	*);;
+
+
+
+
+
+
+
+
+
+
+
+
+

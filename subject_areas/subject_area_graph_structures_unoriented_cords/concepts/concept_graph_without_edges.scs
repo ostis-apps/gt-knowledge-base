@@ -1,0 +1,25 @@
+sc_node_not_relation->concept_graph_without_edges;;
+
+concept_graph_without_edges => nrel_main_idtf:
+	[ безреберный граф ] (* <-lang_ru;; *);
+	[ graph without edges ] (* <-lang_en;; *);
+
+<-rrel_key_sc_element:
+	...
+	(*
+	<-sc_definition;;
+	<= nrel_using_constants:
+	{		
+		concept_graph;
+		rrel_edge;
+		concept_empty_graph
+	};;
+	=> nrel_main_idtf: [Опр.(безреберный граф)] (* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+		[Безреберный граф - граф, не содержащий ребер, то же, что пустой граф.] (*<-lang_ru;;*);;			
+		*);;
+	*);;
+

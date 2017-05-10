@@ -1,0 +1,64 @@
+sc_node_not_relation->concept_lamanov_graph;;
+
+concept_lamanov_graph
+=> nrel_main_idtf:
+	[ Ламанов граф ] (* <-lang_ru;; *);
+	[ Lamanov_graph ] (* <-lang_en;; *);
+
+<-rrel_key_sc_element:
+	...
+	(*
+	<-sc_definition;;
+	<= nrel_using_constants:
+	{
+		concept_graph;
+		concept_rarefied_graph;
+		rrel_edge;
+		rrel_vertex
+	};;
+	=> nrel_main_idtf: [Опр.(Ламанов граф)] (* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+		[Ламанов граф — граф из семейства разреженных графов, описывающий минимальные жёсткие системы отрезков и шарниров на плоскости. Формально — Ламанов граф с n вершинами — это такой граф G, что, во-первых, для каждого k любой подграф графа n, содержащий k вершин, имеет не более, чем 2k-3 ребра и, во-вторых, сам граф G имеет ровно 2n-3 ребра.] (*<-lang_ru;;*);;			
+		*);;
+	*);
+
+<-rrel_key_sc_element:
+	... 
+	(*
+	=>nrel_main_idtf:[Утв.(Ламанов граф) ](*<-lang_ru;;*);;
+	<- sc_statement;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Если разместить вершины Ламанова графа на евклидовой плоскости так, чтобы они находились в общем положении и двигать вершины так, чтобы длины всех рёбер оставались неизменными, то это движение с необходимостью будет евклидовой изометрией.] (*<-lang_ru;;*);;
+		*);;
+	*);
+
+<-rrel_key_sc_element:
+	... 
+	(*
+	=>nrel_main_idtf:[Утв.(Ламанов граф) ](*<-lang_ru;;*);;
+	<- sc_statement;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Каждый плоский Ламанов граф может быть реализован как псевдотриангуляция.] (*<-lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://picture/concept_lamanov_graph.png";;
+			*);;
+	*);;
+
+

@@ -1,0 +1,25 @@
+algorithm_paterson_wegman <- sc_node_not_relation;;
+
+algorithm_paterson_wegman => nrel_main_idtf:
+	[ алгоритм Патерсона-Вегмана ] (* <-lang_ru;; *);
+	[ algorithm Paterson-Wegman ] (* <-lang_en;; *);
+
+<-rrel_key_sc_element:
+	...
+	(*
+	<-sc_definition;;
+	<= nrel_using_constants:
+			{
+				rrel_oredge;
+				rrel_vertex;
+				concept_graph
+			};;		
+	=> nrel_main_idtf: [Опр.(алгоритм Патерсона-Вегмана)] (* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+		[Адгоритм Патерсона-Вегмана - алгоритм построения наибольшего общего унификатора двух термов, представленных бесконтурными графами (дэгами), за линейное относительно суммарного числа вершин и дуг графа время.](*<-lang_ru;;*);;			
+		*);;
+	*);;
+

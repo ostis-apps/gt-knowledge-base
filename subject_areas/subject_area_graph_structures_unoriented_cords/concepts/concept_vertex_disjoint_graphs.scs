@@ -1,0 +1,22 @@
+sc_node_not_relation->concept_vertex_disjoint_graphs;;
+
+concept_vertex_disjoint_graphs => nrel_main_idtf:
+	[вершинно-непересекающиеся графы](* <-lang_ru;; *);
+	[vertex disjoint graphs](* <-lang_en;; *);;
+
+concept_vertex_disjoint_graphs <- rrel_key_sc_element:... 
+		(*
+		<- sc_definition;;
+		<= nrel_using_constants:
+			{
+				concept_graph;
+				rrel_vertex
+			};;
+		=> nrel_main_idtf: [Опр.(вершинно-непересекающиеся графы)] (* <- lang_ru;; *);;		
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Вершинно-непересекающиеся графы - графы, не имеющие общих вершин.](*<- lang_ru;;*);;			
+		*);;		
+*);;
+

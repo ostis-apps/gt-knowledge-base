@@ -1,0 +1,59 @@
+sc_node_not_relation->concept_vertex_symmetrical_graph;;
+
+concept_vertex_symmetrical_graph => nrel_main_idtf:
+	[вершинно-симметрический граф](* <-lang_ru;; *);
+	[vertex symmetrical graph](* <-lang_en;; *);;
+
+concept_vertex_symmetrical_graph <- rrel_key_sc_element:... 
+		(*
+		<- sc_definition;;
+		<= nrel_using_constants:
+			{
+				concept_graph;
+				rrel_vertex;
+				nrel_automorphism
+			};;
+		=> nrel_main_idtf: [Опр.(вершинно-симметрический граф)] (* <- lang_ru;; *);;		
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Вершинно-симметрический граф - граф, у которого любая пара вершин подобна, т.е. вершины из этой пары переводятся друг в друга автоморфизмом.](*<- lang_ru;;*);;			
+		*);;		
+*);;
+
+concept_vertex_symmetrical_graph <-rrel_key_sc_element:
+	... 
+	(*
+	=>nrel_main_idtf:[Утв.(вершинно-симметрический граф) ](*<-lang_ru;;*);;
+	<- sc_statement;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Граф симметричен, если его группа автоморфизмов действует транзитивно на упорядоченных парах смежных вершин (таким образом, на всех рёбрах, как если бы они имели ориентацию).] (*<-lang_ru;;*);;
+		*);;
+	*);;
+			
+concept_vertex_symmetrical_graph <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://picture/concept_vertex_symmetrical_graph.png";;
+			*);;
+	*);;
+
+
+
+
+
+
+
+
+
+
+
+
+
