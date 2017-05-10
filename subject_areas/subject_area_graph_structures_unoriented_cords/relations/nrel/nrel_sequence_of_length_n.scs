@@ -1,0 +1,32 @@
+sc_node_norole_relation->nrel_sequence_of_length_n;;
+binary_relation -> nrel_sequence_of_length_n;;
+
+nrel_sequence_of_length_n => nrel_main_idtf:
+	[ маршрут длины n* ] (* <-lang_ru;; *);
+	[ sequence of length n* ] (* <-lang_en;; *);
+
+<-rrel_key_sc_element:
+	...
+	(*
+	<-sc_definition;;
+	<= nrel_using_constants:
+	{
+		nrel_sequence;
+		rrel_edge
+	};;
+	=> nrel_main_idtf: [Опр.(маршрут длины n*)] (* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+		[Маршрут длины n - маршрут, состоящий из n ребер.] (*<-lang_ru;;*);;			
+		*);;
+	*);
+
+=> nrel_first_domain: concept_graph;
+=> nrel_second_domain: concept_graph;;
+
+
+
+
+

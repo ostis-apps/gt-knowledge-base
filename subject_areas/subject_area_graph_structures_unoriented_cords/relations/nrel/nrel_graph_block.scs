@@ -1,0 +1,50 @@
+sc_node_norole_relation -> nrel_graph_block;;
+
+nrel_graph_block => nrel_main_idtf:
+    [блок графа*]
+    (* <- lang_ru;; *);;
+
+nrel_graph_block <- rrel_key_sc_element: 
+        ... 
+        (*
+            <- sc_definition;;
+            => nrel_main_idtf:
+                [Определение: блок графа.]
+                (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [Блок графа - это связный, непустой, не имеющий собственных точек сочленения 
+                        максимальный подграф неориентированного графа.]
+                    (* <- lang_ru;; *);;
+                *);;
+            <= nrel_using_constants:
+                            {
+                                concept_graph;
+                                rrel_point_of_articulation
+                            };;
+        *);;
+
+nrel_graph_block <- rrel_key_sc_element:
+        ...
+        (*
+            <- sc_statement;;
+            => nrel_main_idtf:
+                [Утверждение: принадлежность ребра блоку]
+                (* <- lang_ru;; *);;
+            -> rrel_key_sc_element: 
+                concept_edge;;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [Каждое ребро графа принадлежит точно одному из его блоков, так же как и каждая вершина, 
+                        не являющаяся ни изолированной, ни точкой сочленения.]
+                       (*<- lang_ru;; *);;
+                *);;
+        *);;
+
+nrel_graph_block <- binary_relation;;
+nrel_graph_block => nrel_arity_of_relations: 2 (* <- number;; *);;
+nrel_graph_block => nrel_first_domain: concept_graph;;
+nrel_graph_block => nrel_second_domain: concept_graph;;
+nrel_graph_block <= nrel_definitional_domain: concept_graph;;

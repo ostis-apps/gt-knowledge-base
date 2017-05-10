@@ -1,0 +1,51 @@
+sc_node_not_relation->concept_magic_graph;;
+
+concept_magic_graph
+=> nrel_main_idtf:
+	[ магический граф ] (* <-lang_ru;; *);
+	[ magic graph ] (* <-lang_en;; *);
+
+<-rrel_key_sc_element:
+	...
+	(*
+	<-sc_definition;;
+	<= nrel_using_constants:
+	{
+		concept_graph;
+		rrel_edge;
+		rrel_vertex;
+		nrel_adjacency
+	};;
+	=> nrel_main_idtf: [Опр.(магический граф)] (* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+		[Магический граф - это граф, допускающий такую разметку его рёбер положительными целыми числами, что сумма меток всех рёбер, смежных любой вершине, постоянна (то есть не зависит от выбора вершины).] (*<-lang_ru;;*);;			
+		*);;
+	*);
+
+<-rrel_key_sc_element:
+	... 
+	(*
+	=>nrel_main_idtf:[Утв.(магический граф) ](*<-lang_ru;;*);;
+	<- sc_statement;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Если метки — первые q целых положительных чисел, где q — число рёбер, то граф и его разметка называются супермагическими.] (*<-lang_ru;;*);;
+		*);;
+	*);
+
+<-rrel_key_sc_element:
+	... 
+	(*
+	=>nrel_main_idtf:[Утв.(магический граф) ](*<-lang_ru;;*);;
+	<- sc_statement;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Граф, рёбра и вершины которого можно пометить целыми числами так, что сумма метки вершины и меток всех смежных вершине дуг будет постоянной величиной, называется тотально-магическим.] (*<-lang_ru;;*);;
+		*);;
+	*);;
+

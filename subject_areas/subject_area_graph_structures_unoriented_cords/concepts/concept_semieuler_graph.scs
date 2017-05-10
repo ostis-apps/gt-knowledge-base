@@ -1,0 +1,37 @@
+sc_node_not_relation->concept_semieuler_graph;;
+
+concept_semieuler_graph
+=> nrel_main_idtf:
+	[ полуэйлеров граф ] (* <-lang_ru;; *);
+	[ semieuler graph ] (* <-lang_en;; *);
+
+<-rrel_key_sc_element:
+	...
+	(*
+	<-sc_definition;;
+	<= nrel_using_constants:
+	{
+		concept_graph;
+		rrel_edge
+	};;
+	=> nrel_main_idtf: [Опр.(полуэйлеров граф)] (* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+		[Полуэйлеров граф - это граф, в котором существует цепь, проходящая через каждое его ребро.] (*<-lang_ru;;*);;			
+		*);;
+	*);
+
+<-rrel_key_sc_element:
+	... 
+	(*
+	=>nrel_main_idtf:[Утв.(полуэйлеров граф) ](*<-lang_ru;;*);;
+	<- sc_statement;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Каждый эйлеров граф является полуэйлеровым.] (*<-lang_ru;;*);;
+		*);;
+	*);;
+

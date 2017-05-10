@@ -1,40 +1,54 @@
 sc_node_not_relation -> concept_self_complementary_graph;;
+
 concept_self_complementary_graph => nrel_main_idtf:
 	[самодополнительный граф] (* <- lang_ru;; *);
 	[self complementary graph] (* <- lang_en;; *);;
 	
 concept_self_complementary_graph <- rrel_key_sc_element: 
 	...  
-	(*
-	=> nrel_main_idtf: [Определение: самодополнительный граф] (* <- lang_ru;; *);;
-	=> nrel_main_idtf: [Definition: self complementary graph](* <- lang_en;; *);;	
-	<- definition;; 
-	<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+	(*		
+	<- sc_definition;; 	
+	<= nrel_using_constants:
+	{
+		concept_graph;
+		nrel_isomorphic;
+		nrel_complement_graph
+	};;
+	=> nrel_main_idtf: [Опр.(самодополнительный граф)] (* <- lang_ru;; *);;
 	<= nrel_sc_text_translation: 
 		... 
 		(*
 		-> rrel_example: 
-		[Самодополнительный граф - граф, изоморфный своему дополнению.](* <- lang_ru;; *);;
-		-> rrel_example: 
-                [Self-complementary graph is graph isomorphic to its complement.] (* <-lang_en;; *);;
+		[Самодополнительный граф - граф, изоморфный своему дополнению.](* <- lang_ru;; *);;		
 		*);;
 	*);;
-concept_self_complementary_graph<= nrel_using_constants:
-					{
-					concept_graph
-					};;
-	
+
+concept_self_complementary_graph <-rrel_key_sc_element:
+	... 
+	(*
+	=>nrel_main_idtf:[Утв.(самодополнительный граф) ](*<-lang_ru;;*);;
+	<- sc_statement;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Самодополнительный граф с n вершинами имеет в точности половину числа рёбер полного графа, т. е. n(n − 1)/4 рёбер, и (если вершин больше одной) его диаметр должен быть либо 2, либо 3[1]. Поскольку n(n −1) должен делиться на 4, n должен быть сравнимым с 0 или 1 по модулю 4.] (*<-lang_ru;;*);;
+		*);;
+	*);;
+
 concept_self_complementary_graph <- rrel_key_sc_element: 
 	...
 	(*
-		<- illustration;;
+		<- sc_illustration;;
 		<= nrel_sc_text_translation:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/concept_self_complementary_graph.png";;
+				"file://picture/concept_self_complementary_graph.png";;
 			*);;
 	*);;
+
+
+	
 
 
 

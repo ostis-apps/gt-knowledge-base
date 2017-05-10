@@ -1,0 +1,95 @@
+sc_node_not_relation->concept_Turan_graph;;
+
+concept_Turan_graph => nrel_main_idtf:
+	[граф Турана](* <-lang_ru;; *);
+	[Turan graph](* <-lang_en;; *);;
+
+concept_Turan_graph <- rrel_key_sc_element:... 
+		(*
+		<- sc_definition;;
+		<= nrel_using_constants:
+			{
+				concept_graph;
+				rrel_edge;
+				rrel_vertex
+			};;
+		=> nrel_main_idtf: [Опр.(граф Турана)] (* <- lang_ru;; *);;		
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Граф Турана - граф , обладающий наибольшим возможным количеством ребер  при данном числе вершин n и данной плотности.](*<- lang_ru;;*);;			
+		*);;		
+*);;
+
+concept_Turan_graph <-rrel_key_sc_element:
+	... 
+	(*
+	=>nrel_main_idtf:[Утв.(граф Турана) ](*<-lang_ru;;*);;
+	<- sc_statement;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Граф Турана T(n,r) — это граф, образованный разложением n вершин на r подмножеств, с как можно близким размером, и вершины в этом графе соединены ребром, если они принадлежат разным подмножествам.] (*<-lang_ru;;*);;
+		*);;
+	*);;
+
+concept_Turan_graph <-rrel_key_sc_element:
+	... 
+	(*
+	=>nrel_main_idtf:[Утв.(граф Турана) ](*<-lang_ru;;*);;
+	<- sc_statement;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [По принципу Дирихле, любое множество из r + 1 вершин в графе Турана включает две вершины из одной и той же доли графа. ] (*<-lang_ru;;*);;
+		*);;
+	*);;
+
+concept_Turan_graph <-rrel_key_sc_element:
+	... 
+	(*
+	=>nrel_main_idtf:[Утв.(граф Турана) ](*<-lang_ru;;*);;
+	<- sc_statement;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Граф Турана T(n,2) — это полный двудольный граф, и, если n чётно, это граф Мура.] (*<-lang_ru;;*);;
+		*);;
+	*);;
+
+concept_Turan_graph <-rrel_key_sc_element:
+	... 
+	(*
+	=>nrel_main_idtf:[Утв.(граф Турана) ](*<-lang_ru;;*);;
+	<- sc_statement;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Любой граф Турана является кографом.] (*<-lang_ru;;*);;
+		*);;
+	*);;
+			
+concept_Turan_graph <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://picture/concept_Turan_graph.png";;
+			*);;
+	*);;
+
+
+
+
+
+
+
+
+
+
+
+
+

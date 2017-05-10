@@ -1,0 +1,92 @@
+sc_node_not_relation->concept_graph_Halina;;
+
+concept_graph_Halina
+=> nrel_main_idtf:
+	[ граф Халина ] (* <-lang_ru;; *);
+	[ graph Halina ] (* <-lang_en;; *);
+
+
+<-rrel_key_sc_element:
+	...
+	(*
+	<-sc_definition;;
+	<= nrel_using_constants:
+	{		
+		concept_planar_graph;
+		concept_tree;				
+		rrel_vertex
+	};;
+	=> nrel_main_idtf: [Опр.(граф Халина)] (* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+		[Граф Халина - это некоторый вид планарного графа, который строится из дерева, имеющего по меньшей мере 4 вершины, ни одна из которых не имеет в точности двух соседей.] (*<-lang_ru;;*);;		
+		*);;
+	*);
+
+<-rrel_key_sc_element:
+	... 
+	(*
+	=>nrel_main_idtf:[Утв.(граф Халина) ](*<-lang_ru;;*);;
+	<- sc_statement;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Любой граф Халина 3-связен, что означает, что нельзя разбить граф на два графа путём удаления двух вершин.] (*<-lang_ru;;*);;
+		*);;
+	*);
+
+<-rrel_key_sc_element:
+	... 
+	(*
+	=>nrel_main_idtf:[Утв.(граф Халина) ](*<-lang_ru;;*);;
+	<- sc_statement;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Любой граф Халина рёберно минимально 3-связен, что означает, что после удаления любого ребра граф перестаёт быть 3-связен.] (*<-lang_ru;;*);;
+		*);;
+	*);
+
+<-rrel_key_sc_element:
+	... 
+	(*
+	=>nrel_main_idtf:[Утв.(граф Халина) ](*<-lang_ru;;*);;
+	<- sc_statement;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Любой граф Халина является гамильтоновым графом и любое ребро принадлежит гамильтонову циклу. Более того, любой граф Халина остаётся гамильтоновым после удаления любой вершины.] (*<-lang_ru;;*);;
+		*);;
+	*);
+
+<-rrel_key_sc_element:
+	... 
+	(*
+	=>nrel_main_idtf:[Утв.(граф Халина) ](*<-lang_ru;;*);;
+	<- sc_statement;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Граф Халина можно представить в виде множества вершин и рёбер выпуклого многогранника. Таким образом, он является графом многогранника, но в этом случае, как и для любого графа многогранника, его вложение в плоскость единственно с точностью до выбора грани, которая будет его внешней гранью.] (*<-lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://picture/concept_graph_Halina.png";;
+			*);;
+	*);;
+
+
+
+
+
+

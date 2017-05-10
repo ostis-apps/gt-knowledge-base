@@ -1,0 +1,19 @@
+algorithm_knuth_bendix<- sc_node_not_relation;;
+
+algorithm_knuth_bendix => nrel_main_idtf:
+	[ алгоритм Кнута-Бендикса ] (* <-lang_ru;; *);
+	[ algorithm Knuth-Bendix ] (* <-lang_en;; *);
+
+<-rrel_key_sc_element:
+	...
+	(*
+	<-sc_definition;;	
+	=> nrel_main_idtf: [Опр.(алгоритм Кнута-Бендикса)] (* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+		[Адгоритм Кнута-Бендикса - алгоритм построения полной системы переписывания термов.] (*<-lang_ru;;*);;			
+		*);;
+	*);;
+

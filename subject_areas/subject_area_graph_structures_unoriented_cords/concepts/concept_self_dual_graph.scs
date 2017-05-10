@@ -1,0 +1,24 @@
+sc_node_not_relation->concept_self_dual_graph;;
+
+concept_self_dual_graph => nrel_main_idtf:
+	[самодвойственный граф](* <-lang_ru;; *);
+	[self dual graph](* <-lang_en;; *);;
+
+concept_self_dual_graph <- rrel_key_sc_element:... 
+		(*
+		<- sc_definition;;
+		<= nrel_using_constants:
+			{
+				concept_dual_graph;
+				nrel_isomorphic;
+				concept_graph
+			};;
+		=> nrel_main_idtf: [Опр.(самодвойственный граф)] (* <- lang_ru;; *);;		
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Самодвойственный граф - граф, который изоморфен своему двойственному графу.](*<- lang_ru;;*);;			
+		*);;		
+*);;
+	
+

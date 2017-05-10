@@ -1,0 +1,29 @@
+sc_node_norole_relation ->nrel_maximal_singular_graph;; 
+binary_relation -> nrel_maximal_singular_graph;;
+
+nrel_maximal_singular_graph
+=> nrel_main_idtf:
+	[ максимальный сингулярный граф* ] (* <-lang_ru;; *);
+	[ maximal singular graph* ] (* <-lang_en;; *);
+
+<-rrel_key_sc_element:
+	...
+	(*
+	<-sc_definition;;
+	<= nrel_using_constants:
+	{				
+		nrel_maximal_exclusion_graph;
+		rrel_edge		
+	};;
+	=> nrel_main_idtf: [Опр.(максимальный сингулярный граф*)] (* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+		[Максимальный сингулярный граф — максимальный граф H такой, что добавление одного ребра e к H порождает только одну запрещенную часть из заданного семейства запрещенных частей.] (*<-lang_ru;;*);;	
+		*);;
+	*);
+
+ => nrel_definitional_domain:concept_graph;
+ => nrel_first_domain: concept_graph;
+ => nrel_second_domain: concept_graph;;

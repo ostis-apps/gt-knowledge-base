@@ -1,0 +1,47 @@
+sc_node_not_relation->concept_based_graph;;
+
+concept_based_graph => nrel_main_idtf:
+	[базируемый граф](* <-lang_ru;; *);
+	[based graph](* <-lang_en;; *);;
+
+concept_based_graph <- rrel_key_sc_element:... 
+		(*
+		<- sc_definition;;
+		<= nrel_using_constants:
+			{
+				concept_undirected_graph;
+				rrel_edge;
+				concept_base_graph
+			};;
+		=> nrel_main_idtf: [Опр.(базируемый граф)] (* <- lang_ru;; *);;		
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Базируемый граф - неориентированный граф, который надлежащей ориентацией ребер может быть превращен в базовый граф.](*<- lang_ru;;*);;			
+		*);;		
+*);;
+			
+concept_based_graph <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://picture/concept_based_graph.png";;
+			*);;
+	*);;
+
+
+
+
+
+
+
+
+
+
+
+
+

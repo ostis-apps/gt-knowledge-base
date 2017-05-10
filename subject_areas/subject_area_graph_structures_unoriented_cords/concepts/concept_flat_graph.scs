@@ -1,0 +1,54 @@
+sc_node_not_relation->concept_flat_graph;;
+
+concept_flat_graph
+=> nrel_main_idtf:
+	[ плоский граф ] (* <-lang_ru;; *);
+	[ flat graph ] (* <-lang_en;; *);
+
+<-rrel_key_sc_element:
+	...
+	(*
+	<-sc_definition;;
+	<= nrel_using_constants:
+	{
+		concept_geometrical_graph;
+		rrel_edge;
+		rrel_vertex
+	};;
+	=> nrel_main_idtf: [Опр.(плоский граф)] (* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+		[Плоский граф - это геометрический граф, в котором никакие два ребра не имеют общих точек, кроме инцидентной им обоим вершины (не пересекаются).] (*<-lang_ru;;*);;			
+		*);;
+	*);
+
+<-rrel_key_sc_element:
+	... 
+	(*
+	=>nrel_main_idtf:[Утв.(плоский граф) ](*<-lang_ru;;*);;
+	<- sc_statement;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Плоский граф является уложенным графом на плоскости.] (*<-lang_ru;;*);;
+		*);;
+	*);
+
+<- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://picture/concept_flat_graph.png";;
+			*);;
+	*);;
+
+
+
+
+
