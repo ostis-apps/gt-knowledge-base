@@ -1,0 +1,29 @@
+sc_node_norole_relation  -> nrel_simple_cutset;;
+binary_relation -> nrel_simple_cutset;;
+
+nrel_simple_cutset
+=> nrel_main_idtf:
+	[ простой разрез* ] (* <-lang_ru;; *);
+	[ simple cutset* ] (* <-lang_en;; *);
+
+<-rrel_key_sc_element:
+	...
+	(*
+	<-sc_definition;;
+	<= nrel_using_constants:
+	{				
+		nrel_cut;
+		proper_subset	
+	};;
+	=> nrel_main_idtf: [Опр.(простой разрез*)] (* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+		[Простой разрез — это разрез, у которого любое собственное подмножество элементов не является разрезом.] (*<-lang_ru;;*);;	
+		*);;
+	*);
+
+ => nrel_definitional_domain:concept_graph;
+ => nrel_first_domain: concept_graph;
+ => nrel_second_domain: concept_graph;;

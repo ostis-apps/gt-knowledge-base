@@ -1,0 +1,29 @@
+sc_node_norole_relation ->nrel_maximal_strongly_singular_graph;; 
+binary_relation -> nrel_maximal_strongly_singular_graph;;
+
+nrel_maximal_strongly_singular_graph
+=> nrel_main_idtf:
+	[ максимальный сильно сингулярный граф* ] (* <-lang_ru;; *);
+	[ maximal strongly singular graph* ] (* <-lang_en;; *);
+
+<-rrel_key_sc_element:
+	...
+	(*
+	<-sc_definition;;
+	<= nrel_using_constants:
+	{				
+		nrel_maximal_singular_graph;
+		rrel_edge		
+	};;
+	=> nrel_main_idtf: [Опр.(максимальный сильно сингулярный граф*)] (* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+		[Максимальный сильно сингулярный граф — максимальный сингулярный граф, у которого никакая запрещенная составляющая (сумма некоторого числа запрещенных графов из заданного семейства), определяемая двумя добавляемыми к графу ребрами, не может быть ликвидирована удалением одного ребра.] (*<-lang_ru;;*);;	
+		*);;
+	*);
+
+ => nrel_definitional_domain:concept_graph;
+ => nrel_first_domain: concept_graph;
+ => nrel_second_domain: concept_graph;;

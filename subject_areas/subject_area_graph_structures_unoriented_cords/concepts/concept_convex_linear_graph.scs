@@ -1,0 +1,46 @@
+sc_node_not_relation->concept_convex_linear_graph;;
+
+concept_convex_linear_graph => nrel_main_idtf:
+	[выпуклый прямолинейный граф](* <-lang_ru;; *);
+	[convex linear graph](* <-lang_en;; *);;
+
+concept_convex_linear_graph <- rrel_key_sc_element:... 
+		(*
+		<- sc_definition;;
+		<= nrel_using_constants:
+			{
+				concept_flat_graph;
+				nrel_face
+			};;
+		=> nrel_main_idtf: [Опр.(выпуклый прямолинейный граф)] (* <- lang_ru;; *);;		
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Выпуклый прямолинейный граф - плоский граф, у которого граница каждой грани есть выпуклый многоугольник.](*<- lang_ru;;*);;			
+		*);;		
+*);;
+			
+concept_convex_linear_graph <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://picture/concept_convex_linear_graph.png";;
+			*);;
+	*);;
+
+
+
+
+
+
+
+
+
+
+
+
+

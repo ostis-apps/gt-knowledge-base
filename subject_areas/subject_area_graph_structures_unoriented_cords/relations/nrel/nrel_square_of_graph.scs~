@@ -1,0 +1,30 @@
+sc_node_norole_relation ->nrel_square_of_graph;; 
+binary_relation -> nrel_square_of_graph;;
+
+nrel_square_of_graph
+=> nrel_main_idtf:
+	[ квадрат графа* ] (* <-lang_ru;; *);
+	[ square of graph* ] (* <-lang_en;; *);
+
+<-rrel_key_sc_element:
+	...
+	(*
+	<-sc_definition;;
+	<= nrel_using_constants:
+	{				
+		concept_graph;
+		rrel_vertex;	
+		nrel_vertex_adjacency		
+	};;
+	=> nrel_main_idtf: [Опр.(квадрат графа*)] (* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+		[Квадрат графа — граф с тем же множеством вершин, что и исходный, но в котором две вершины смежны, если расстояние между ними в исходном графе не превосходит 2.] (*<-lang_ru;;*);;	
+		*);;
+	*);
+
+ => nrel_definitional_domain:concept_graph;
+ => nrel_first_domain: concept_graph;
+ => nrel_second_domain: concept_graph;;

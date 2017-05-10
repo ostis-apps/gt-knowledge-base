@@ -1,0 +1,30 @@
+sc_node_norole_relation ->nrel_interior_face;; 
+binary_relation -> nrel_interior_face;;
+
+nrel_interior_face
+=> nrel_main_idtf:
+	[ внутренняя грань* ] (* <-lang_ru;; *);
+	[ interior face* ] (* <-lang_en;; *);
+
+<-rrel_key_sc_element:
+	...
+	(*
+	<-sc_definition;;
+	<= nrel_using_constants:
+	{				
+		nrel_face;
+		concept_flat_graph;
+		nrel_outer_face		
+	};;
+	=> nrel_main_idtf: [Опр.(внутренняя грань*)] (* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+		[Внутренняя грань - это любая грань плоского графа, не являющаяся внешней.] (*<-lang_ru;;*);;	
+		*);;
+	*);
+
+ => nrel_definitional_domain:concept_graph;
+ => nrel_first_domain: concept_graph;
+ => nrel_second_domain: concept_graph;;

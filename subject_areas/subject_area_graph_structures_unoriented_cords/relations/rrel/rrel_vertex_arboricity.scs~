@@ -1,0 +1,36 @@
+sc_node_role_relation ->rrel_vertex_arboricity;;
+
+rrel_vertex_arboricity => nrel_main_idtf:
+		[вершинная древесность'](* <-lang_ru;; *);
+		[vertex arboricity'](* <-lang_en;; *);;
+
+rrel_vertex_arboricity <- rrel_key_sc_element:
+		...  
+		(*
+		    <-sc_definition;;
+			<= nrel_using_constants:
+				{
+		                  concept_edge;
+		                  concept_node
+				};;
+                    => nrel_main_idtf: [Опр.(вершинная древесность)] (* <- lang_ru;; *);;		    
+		    <=nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Вершинная древесность - наименьшее число  подмножеств, на которые можно разбить множество вершин графа так, чтобы каждое подмножество порождало лес.] (*<-lang_ru;;*);;
+			*);;		    
+		*);;
+
+rrel_vertex_arboricity <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://picture/rrel_vertex_arboricity.png";;
+			*);;
+	*);;
+
+

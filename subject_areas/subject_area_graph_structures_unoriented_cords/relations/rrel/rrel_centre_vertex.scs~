@@ -1,0 +1,24 @@
+sc_node_role_relation -> rrel_centre_vertex;;
+
+rrel_centre_vertex => nrel_main_idtf:
+		[центральная вершина'](* <-lang_ru;; *);
+		[сenter vertex'](* <-lang_en;; *);;
+
+rrel_centre_vertex <- rrel_key_sc_element:
+		...  
+		(*
+		    <-sc_definition;;
+			<= nrel_using_constants:
+				{
+		                  nrel_eccentricity;
+				  nrel_radius_gt;
+		                  concept_node
+				};;
+                    => nrel_main_idtf: [Опр.(центральная вершина)] (* <- lang_ru;; *);;		    
+		    <=nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Центральная вершина - вершина, эксцентриситет которой равен радиусу графа.] (*<-lang_ru;;*);;
+			*);;		    
+		*);;
+

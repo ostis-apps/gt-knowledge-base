@@ -1,0 +1,29 @@
+sc_node_norole_relation ->nrel_isometric_subgraph;; 
+binary_relation -> nrel_dual_graph;;
+non_oriented_relation ->nrel_isometric_subgraph;;
+
+nrel_isometric_subgraph
+=> nrel_main_idtf:
+	[ изометрический подграф* ] (* <-lang_ru;; *);
+	[ isometric subgraph* ] (* <-lang_en;; *);
+
+<-rrel_key_sc_element:
+	...
+	(*
+	<-sc_definition;;
+	<= nrel_using_constants:
+	{				
+		nrel_subgraph	
+	};;
+	=> nrel_main_idtf: [Опр.(изометрический подграф*)] (* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+		[Изометрический подграф — подграф H графа G, у которого все расстояния внутри H те же самые, что и в G.] (*<-lang_ru;;*);;	
+		*);;
+	*);
+
+ => nrel_definitional_domain:concept_graph;
+ => nrel_first_domain: concept_graph;
+ => nrel_second_domain: concept_graph;;

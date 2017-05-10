@@ -1,0 +1,28 @@
+sc_node_not_relation->concept_general_graph;;
+
+concept_general_graph
+=> nrel_main_idtf:
+	[ общий граф ] (* <-lang_ru;; *);
+	[ general graph ] (* <-lang_en;; *);
+
+<-rrel_key_sc_element:
+	...
+	(*
+	<-sc_definition;;
+	<= nrel_using_constants:
+		{
+			concept_graph;
+			rrel_edge;
+			rrel_loop;
+			nrel_multiplicity_of_element
+		};;
+	=> nrel_main_idtf: [Опр.(общий граф)] (* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+		[Общий граф - это граф, в котором допускаются и кратные ребра, и кратные петли.] (*<-lang_ru;;*);;	
+		*);;
+	*);;
+
+

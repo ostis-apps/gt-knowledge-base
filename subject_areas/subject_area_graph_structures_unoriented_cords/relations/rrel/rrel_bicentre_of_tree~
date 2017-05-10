@@ -1,0 +1,32 @@
+sc_node_role_relation ->rrel_bicentre_of_tree;;
+
+rrel_bicentre_of_tree => nrel_main_idtf:
+		[бицентр дерева'](* <-lang_ru;; *);
+		[icentre of tree'](* <-lang_en;; *);;
+
+rrel_bicentre_of_tree => nrel_arity_of_relations: 2 (* <- number ;;*);;
+
+rrel_bicentre_of_tree <- binary_relation;;
+rrel_bicentre_of_tree <- antisymmetric_relation;;
+rrel_bicentre_of_tree <- antireflexive_relation;;
+rrel_bicentre_of_tree <- antitranzitive_relation;;
+
+rrel_bicentre_of_tree => nrel_first_domain: concept_tree;;
+rrel_bicentre_of_tree => nrel_second_domain: rrel_center_vertex;;
+
+rrel_bicentre_of_tree <- rrel_key_sc_element:
+		...  
+		(*
+		    <-sc_definition;;
+		<= nrel_using_constants:
+			{
+		        	nrel_vertex_adjacency		                
+			};;
+                    => nrel_main_idtf: [Опр.(бицентр дерева)] (* <- lang_ru;; *);;		    
+		    <=nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Бицентр дерева - пара смежных вершин, образующих центр дерева.] (*<-lang_ru;;*);;
+			*);;		    
+		*);;
+

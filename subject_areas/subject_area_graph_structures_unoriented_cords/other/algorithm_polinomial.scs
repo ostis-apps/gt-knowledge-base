@@ -1,0 +1,19 @@
+algorithm_polinomial <- sc_node_not_relation;;
+
+algorithm_polinomial => nrel_main_idtf:
+	[ полиномиальный алгоритм ] (* <-lang_ru;; *);
+	[ polinomial algorithm ] (* <-lang_en;; *);
+
+<-rrel_key_sc_element:
+	...
+	(*
+	<-sc_definition;;	
+	=> nrel_main_idtf: [Опр.(полиномиальный алгоритм)] (* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+		[Полиномиальный алгоритм — алгоритм, у которого временная сложность равна O(p(n)), где p(n) — некоторый полином.] (*<-lang_ru;;*);;			
+		*);;
+	*);;
+

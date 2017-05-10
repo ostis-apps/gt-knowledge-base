@@ -1,0 +1,30 @@
+sc_node_norole_relation ->nrel_exterior_of_cycle;; 
+binary_relation -> nrel_exterior_of_cycle;;
+
+nrel_exterior_of_cycle
+=> nrel_main_idtf:
+	[ внешность цикла* ] (* <-lang_ru;; *);
+	[ exterior of cycle* ] (* <-lang_en;; *);
+
+<-rrel_key_sc_element:
+	...
+	(*
+	<-sc_definition;;
+	<= nrel_using_constants:
+	{				
+		nrel_subgraph;
+		nrel_cycle;
+		concept_node		
+	};;
+	=> nrel_main_idtf: [Опр.(внешность цикла)] (* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+		[Внешность цикла — это подграф, порожденный вершинами, не принадлежащими данному циклу.] (*<-lang_ru;;*);;	
+		*);;
+	*);
+
+ => nrel_definitional_domain:concept_graph;
+ => nrel_first_domain: concept_graph;
+ => nrel_second_domain: concept_graph;;

@@ -1,0 +1,42 @@
+sc_node_norole_relation->nrel_alternating_chain;;
+
+nrel_alternating_chain => nrel_main_idtf:
+	[ альтернирующая цепь* ] (* <-lang_ru;; *);
+	[ alternating chain* ] (* <-lang_en;; *);
+
+<-rrel_key_sc_element:
+	...
+	(*
+	<-sc_definition;;
+	<= nrel_using_constants:
+	{
+		nrel_chain;
+		concept_arg;
+		nrel_vertex_adjacency;
+		subset
+	};;
+	=> nrel_main_idtf: [Опр.(альтернирующая цепь)] (* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+		[Альтернирующая цепь - цепь в графе, множество ребер которого разбито на два непересекающихся подмножества, такая, что любые два смежных ребра в ней принадлежат разным подмножествам.] (*<-lang_ru;;*);;			
+		*);;
+	*);
+
+<- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://picture/nrel_alternating_chain.png";;
+			*);;
+	*);;
+
+
+
+
+

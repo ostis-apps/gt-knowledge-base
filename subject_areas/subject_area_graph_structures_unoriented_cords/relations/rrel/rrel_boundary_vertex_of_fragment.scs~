@@ -1,0 +1,26 @@
+sc_node_role_relation ->rrel_boundary_vertex_of_fragment;;
+
+rrel_boundary_vertex_of_fragment => nrel_main_idtf:
+		[граничная вершина фрагмента'](* <-lang_ru;; *);
+		[boundary vertex of fragment'](* <-lang_en;; *);;
+
+rrel_boundary_vertex_of_fragment <- rrel_key_sc_element:
+		...  
+		(*
+		    <-sc_definition;;
+			<= nrel_using_constants:
+				{
+		                  rrel_vertex;
+		                  nrel_adjacency
+				};;
+                    => nrel_main_idtf: [Опр.(граничная вершина фрагмента')] (* <- lang_ru;; *);;		    
+		    <=nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Граничная вершина фрагмента - вершина фрагмента, среди смежных вершин которой есть вершины, не принадлежащие фрагменту.] (*<-lang_ru;;*);;
+			*);;		    
+		*);;
+
+rrel_boundary_vertex_of_fragment => nrel_definitional_domain:concept_graph;;
+rrel_boundary_vertex_of_fragment => nrel_first_domain: concept_node;;
+

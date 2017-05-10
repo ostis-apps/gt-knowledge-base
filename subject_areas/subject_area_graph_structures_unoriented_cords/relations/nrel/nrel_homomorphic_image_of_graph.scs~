@@ -1,0 +1,29 @@
+sc_node_norole_relation ->nrel_homomorphic_image_of_graph;; 
+binary_relation -> nrel_homomorphic_image_of_graph;;
+
+nrel_homomorphic_image_of_graph
+=> nrel_main_idtf:
+	[ гомоморфный образ графа* ] (* <-lang_ru;; *);
+	[ homomorphic image of graph* ] (* <-lang_en;; *);
+
+<-rrel_key_sc_element:
+	...
+	(*
+	<-sc_definition;;
+	<= nrel_using_constants:
+	{				
+		concept_graph;
+		nrel_gomomorphic	
+	};;
+	=> nrel_main_idtf: [Опр.(гомоморфный образ графа*)] (* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+		[Гомоморфный образ графа - граф, в который гомоморфно отображается исходный граф.] (*<-lang_ru;;*);;	
+		*);;
+	*);
+
+ => nrel_definitional_domain:concept_graph;
+ => nrel_first_domain: concept_graph;
+ => nrel_second_domain: concept_graph;;

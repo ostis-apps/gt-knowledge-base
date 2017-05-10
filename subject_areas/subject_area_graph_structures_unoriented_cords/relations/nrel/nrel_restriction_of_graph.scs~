@@ -1,0 +1,30 @@
+sc_node_norole_relation ->nrel_restriction_of_graph;; 
+binary_relation -> nrel_restriction_of_graph;;
+
+nrel_restriction_of_graph
+=> nrel_main_idtf:
+	[ ограничение графа* ] (* <-lang_ru;; *);
+	[ restriction of graph* ] (* <-lang_en;; *);
+
+<-rrel_key_sc_element:
+	...
+	(*
+	<-sc_definition;;
+	<= nrel_using_constants:
+	{		
+		concept_graph;
+		concept_partial_graph;
+		rrel_edge		
+	};;
+	=> nrel_main_idtf: [Опр.(ограничение графа*)] (* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+		[Ограничение графа — для данного графа G частичный граф , порожденный подмножеством T множества ребер графа G.] (*<-lang_ru;;*);;	
+		*);;
+	*);
+
+ => nrel_definitional_domain:concept_graph;
+ => nrel_first_domain: concept_graph;
+ => nrel_second_domain: concept_graph;;

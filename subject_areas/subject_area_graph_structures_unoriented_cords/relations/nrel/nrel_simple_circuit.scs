@@ -1,0 +1,28 @@
+sc_node_norole_relation  -> nrel_simple_circuit;;
+binary_relation -> nrel_simple_circuit;;
+
+nrel_simple_circuit
+=> nrel_main_idtf:
+	[ простой цикл* ] (* <-lang_ru;; *);
+	[ simple circuit* ] (* <-lang_en;; *);
+
+<-rrel_key_sc_element:
+	...
+	(*
+	<-sc_definition;;
+	<= nrel_using_constants:
+	{				
+		nrel_cycle;
+		rrel_vertex	
+	};;
+	=> nrel_main_idtf: [Опр.(простой цикл*)] (* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+		[Простой цикл — это цикл, в котором ни одна вершина не встречается дважды.] (*<-lang_ru;;*);;	
+		*);;
+	*);
+
+ => nrel_first_domain: concept_graph;
+ => nrel_second_domain: concept_graph;;

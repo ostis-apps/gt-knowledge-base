@@ -1,0 +1,28 @@
+sc_node_norole_relation ->nrel_order_of_graph;; 
+binary_relation -> nrel_order_of_graph;;
+
+nrel_order_of_graph
+=> nrel_main_idtf:
+	[ порядок графа* ] (* <-lang_ru;; *);
+	[ order of graph* ] (* <-lang_en;; *);
+
+<-rrel_key_sc_element:
+	...
+	(*
+	<-sc_definition;;
+	<= nrel_using_constants:
+	{		
+		concept_graph;
+		rrel_vertex		
+	};;
+	=> nrel_main_idtf: [Опр.(порядок графа*)] (* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+		[Порядок графа — число вершин в графе.] (*<-lang_ru;;*);;	
+		*);;
+	*);
+
+ => nrel_first_domain: concept_graph;
+ => nrel_second_domain: number;;

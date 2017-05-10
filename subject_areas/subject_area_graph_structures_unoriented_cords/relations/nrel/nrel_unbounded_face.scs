@@ -1,0 +1,29 @@
+sc_node_norole_relation->nrel_unbounded_face;;
+binary_relation -> nrel_unbounded_face;;
+
+nrel_unbounded_face => nrel_main_idtf:
+	[ бесконечная грань плоского графа* ] (* <-lang_ru;; *);
+	[ unbounded face* ] (* <-lang_en;; *);
+
+<-rrel_key_sc_element:
+	...
+	(*
+	<-sc_definition;;
+	<= nrel_using_constants:
+	{
+		nrel_face;
+		concept_flat_graph
+	};;
+	=> nrel_main_idtf: [Опр.(бесконечная грань плоского графа*)] (* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+		[Бесконечная грань плоского графа - единственная неограниченная грань плоского графа.] (*<-lang_ru;;*);;			
+		*);;
+	*);
+
+ => nrel_definitional_domain:concept_graph;
+ => nrel_first_domain: concept_graph;
+ => nrel_second_domain: concept_graph;;
+

@@ -1,0 +1,42 @@
+sc_node_not_relation->nrel_abstract_dual_graph;;
+binary_relation -> nrel_abstract_dual_graph;;
+
+nrel_abstract_dual_graph => nrel_main_idtf:
+	[абстрактно двойственный граф](* <-lang_ru;; *);
+	[abstract dual graph](* <-lang_en;; *);;
+
+nrel_abstract_dual_graph <- rrel_key_sc_element:... 
+		(*
+		<- sc_definition;;
+		<= nrel_using_constants:
+			{
+				concept_graph;
+				rrel_edge;
+				nrel_simple_cutset;
+				nrel_simple_circuit;
+				bijection
+			};;
+		=> nrel_main_idtf: [Опр.(абстрактно двойственный граф*)] (* <- lang_ru;; *);;		
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Абстрактно двойственный граф - это граф, у которого подмножество ребер образует простой цикл тогда и только тогда, когда соответствующее ему (при некоторой биекции) подмножество ребер исходного графа образует простой разрез и наоборот.](*<- lang_ru;;*);;			
+		*);;		
+*);;
+			
+concept_abstract_dual_graph <-rrel_key_sc_element:
+	... 
+	(*
+	=>nrel_main_idtf:[Утв.(абстрактно двойственный граф*) ](*<-lang_ru;;*);;
+	<- sc_statement;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Граф, геометрически двойственный плоскому графу, является абстрактно двойственным ему.] (*<-lang_ru;;*);;
+		*);;
+	*);;
+
+concept_abstract_dual_graph => nrel_definitional_domain:concept_graph;;
+concept_abstract_dual_graph => nrel_first_domain: concept_graph;;
+concept_abstract_dual_graph => nrel_second_domain: concept_graph;;
+
