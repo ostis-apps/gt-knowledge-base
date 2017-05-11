@@ -1,0 +1,44 @@
+sc_node_not_relation -> concept_nearly_regular_graph;;
+concept_nearly_regular_graph => nrel_main_idtf:[почти однородный граф](* <-lang_ru;; *);;
+concept_nearly_regular_graph => nrel_idtf:[nearly regular graph](* <- lang_en;; *);;
+
+concept_nearly_regular_graph <- rrel_key_sc_element:
+...(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр.(почти однородный граф)] (* <- lang_ru;; *);;
+		<=nrel_using_constants:
+			{
+				nrel_graph;
+				rrel_edge;
+				rrel_vertex
+			};;
+		<= nrel_sc_text_translation: ...(*
+				-> rrel_example: [Почти однородный граф -двудольный (бесконечный) граф , у которого степени вершин в каждой доле имеют вид  для , где отклонения  и  - положительные или отрицательные целые числа, причем лишь конечное их число отлично от нуля. ](*<- lang_ru;;*);;
+			*);;
+			<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+*);;
+
+concept_nearly_regular_graph <- rrel_key_sc_element:
+	...(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [Утв.(однородный граф,почти однородный граф)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...(*
+			-> rrel_example: [Частным случаем однородного графа является почти однородный граф. ](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+concept_regular_graph => nrel_inclusion:concept_nearly_regular_graph;;
+
+concept_nearly_regular_graph <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://pic/concept_nearly_regular_graph.png";;
+			*);;
+	*);;
+

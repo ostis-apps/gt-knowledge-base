@@ -1,0 +1,33 @@
+sc_node_not_relation -> concept_evaluated_graph;;
+concept_evaluated_graph => nrel_main_idtf:[перенумерованный граф](* <-lang_ru;; *);;
+concept_evaluated_graph => nrel_idtf:[evaluated graph](* <- lang_en;; *);;
+
+concept_evaluated_graph <- rrel_key_sc_element:
+...(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр.(перенумерованный граф)] (* <- lang_ru;; *);;
+		<=nrel_using_constants:
+			{
+				nrel_graph;
+				rrel_edge;
+				rrel_vertex
+			};;
+		<= nrel_sc_text_translation: ...(*
+				-> rrel_example: [Перенумерованный граф - граф, вершины которого занумерованы натурольными числами от 1 до n, где n -число вершин в графе, используемыми в качестве имен вершин. ](*<- lang_ru;;*);;
+			*);;
+*);;
+
+concept_graph => nrel_inclusion:concept_evaluated_graph;;
+
+concept_evaluated_graph <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://pic/concept_evaluated_graph.png";;
+			*);;
+	*);;
+

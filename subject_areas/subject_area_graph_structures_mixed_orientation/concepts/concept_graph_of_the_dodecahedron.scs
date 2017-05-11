@@ -1,0 +1,33 @@
+sc_node_not_relation -> concept_graph_of_the_dodecahedron;;
+concept_graph_of_the_dodecahedron => nrel_main_idtf:[граф додекаэдра](* <-lang_ru;; *);;
+concept_graph_of_the_dodecahedron => nrel_idtf: [graph of the dodecahedron](* <- lang_en;; *);;
+
+concept_graph_of_the_dodecahedron <- rrel_key_sc_element:
+		...(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр.(граф додекаэдра)] (* <- lang_ru;; *);;
+		<=nrel_using_constants:
+			{
+				concept_graph;
+				rrel_edge;
+				rrel_vertex
+			};;
+		<= nrel_sc_text_translation: 
+		...(*
+				-> rrel_example: [Граф додекаэдра - плоский граф, получаемый проектированием додекаэдра на поверхность описанной вокруг него сферы и последующей стереографической проекцией полученного изображения на плоскость; полученный плоский граф является связным графом, каждая грань которого ограничена многоугольником.  ](*<- lang_ru;;*);;
+			*);;
+*);;
+
+concept_graph_of_the_dodecahedron <= nrel_inclusion:{ concept_polytop_graph; concept_graph};;
+
+concept_graph_of_the_dodecahedron <- rrel_key_sc_element: 
+	...(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://pic/concept_graph_of_the_dodecahedron.png";;
+			*);;
+	*);;
+

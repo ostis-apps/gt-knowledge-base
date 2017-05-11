@@ -1,0 +1,54 @@
+sc_node_not_relation -> concept_random_graph;;
+concept_random_graph => nrel_main_idtf:[случайный граф](* <-lang_ru;; *);;
+concept_random_graph => nrel_idtf:[random graph](* <- lang_en;; *);;
+
+concept_random_graph <- rrel_key_sc_element:
+...(*
+		<- sc_definition;;
+		<=nrel_using_constants:
+			{
+				concept_graph;
+				rrel_edge;
+				rrel_vertex
+			};;
+		=> nrel_main_idtf: [Опр.(случайный граф)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...(*
+				-> rrel_example: [Случайный граф — это общий термин для обозначения вероятностного распределения графов.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+concept_random_graph <- rrel_key_sc_element:
+	...(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [Утв.(случайный граф,граф)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...(*
+			-> rrel_example: [Случайные графы можно описать просто распределением вероятности или случайным процессом, создающим эти графы. ](*<- lang_ru;;*);;
+			*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+*);;
+
+concept_random_graph <- rrel_key_sc_element:
+	...(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [Утв.(случайный граф,граф,модель случайных графов Эрдёш — Реньи*)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...(*
+			-> rrel_example: [Теория случайных графов находится на стыке теории графов и теории вероятностей. С математической точки зрения случайные графы необходимы для ответа на вопрос о свойствах типичных графов. Случайные графы нашли практическое применение во всех областях, где нужно смоделировать сложные сети — известно большое число случайных моделей графов, отражающих разнообразные типы сложных сетей в различных областях. В математическом контексте термин случайный граф означает почти всегда модель случайных графов Эрдёш — Реньи. В других контекстах любая модель графов означает случайный граф. ](*<- lang_ru;;*);;
+			*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+*);;
+
+
+concept_graph => nrel_inclusion:concept_random_graph;;
+
+concept_random_graph <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://pic/concept_random_graph.png";;
+			*);;
+	*);;
+

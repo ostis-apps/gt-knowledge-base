@@ -1,0 +1,19 @@
+concept_graph <- rrel_key_sc_element: circumstance_problem
+			(*
+			
+		<- sc_statement;;	
+		<=nrel_sc_text_translation:
+		...
+			(*
+				-> rrel_example: 
+				 [Существует ли такой граф L = (X,U) для произвольного заданного графа P, что окружение O(L,x) изоморфно графу P для любой вершины x [include] X?  ] (*<-lang_ru;;*);;
+<= nrel_using_constants:
+							{
+								concept_graph;
+								nrel_isomorphism;
+								rrel_vertex
+							};;	
+			*);;
+		*);;
+circumstance_problem => nrel_main_idtf:[проблема окружения](* <-lang_ru;; *);;
+

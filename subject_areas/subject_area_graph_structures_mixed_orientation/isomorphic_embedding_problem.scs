@@ -1,0 +1,18 @@
+nrel_isomorphism <- rrel_key_sc_element: isomorphic_embedding_problem
+			(*
+
+		<- sc_statement;;	
+		<=nrel_sc_text_translation:
+		...
+			(*
+				-> rrel_example: 
+				 [Для двух графов G и G' требуется установить, существует ли в графе G' подграф (в сильном смысле, порожденный подграф) изоморфный G. ] (*<-lang_ru;;*);;
+<= nrel_using_constants:
+							{
+								nrel_isomorphism;
+								concept_graph;
+								nrel_subgraph
+							};;	
+			*);;
+		*);;
+isomorphic_embedding_problem => nrel_main_idtf:[проблема изоморфной вложимости](*<-lang_ru;;*);;

@@ -1,0 +1,53 @@
+sc_node_norole_relation -> nrel_graph_cutset_space;;
+nrel_graph_cutset_space => nrel_main_idtf: [пространство разрезов графа*](*<-lang_ru;;*);;
+nrel_graph_cutset_space => nrel_idtf: [graph cutset space*](*<-lang_en;;*);;
+
+nrel_graph_cutset_space <- rrel_key_sc_element:
+...(*	
+	<= nrel_using_constants: {
+		concept_graph;
+		concept_empty_set;
+		concept_number
+		};;
+	=> nrel_main_idtf: [Опр(пространство разрезов графа*)] (* <- lang_ru;; *);;
+	<- sc_definition;;
+	<= nrel_sc_text_translation: ...(*
+						-> rrel_example: [Пространство разрезов графа
+- для графа G множество, содержащее все разрезы графа, объединения попарно непересекающихся разрезов и пустое множество. ](*<- lang_ru;;*);;
+						*);;
+
+	*);;
+
+nrel_graph_cutset_space <- rrel_key_sc_element:
+...(*
+	=> nrel_main_idtf: [Утв(пространство разрезов графа*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: ...(*
+						-> rrel_example: [Размерность подпространства разрезов совпадает с числом векторов в фундаментальной системе разрезов.](*<- lang_ru;;*);;
+						*);;
+
+	*);;
+
+
+nrel_graph_cutset_space => nrel_first_domain: concept_graph;;
+nrel_graph_cutset_space => nrel_second_domain: concept_set;;
+nrel_graph_cutset_space => nrel_definitional_domain: 
+	...
+	(*
+		<= nrel_association:
+				...(*
+					->concept_graph;;
+					->concept_set;;
+				*);;
+	*);;
+
+
+nrel_graph_cutset_space => nrel_arity_of_relations: 2(*<-concept_number;;*);;
+sc_node_norole_relation -> nrel_arity_of_relations;;
+nrel_arity_of_relations => nrel_main_idtf: [арность отношения*](*<-lang_ru;;*);;
+
+nrel_graph_cutset_space <- oriented_relation;;
+nrel_graph_cutset_space <- antireflexive_relation;;
+nrel_graph_cutset_space <- antisymmetric_relation;;
+nrel_graph_cutset_space <- antitransitive_relation;;
+

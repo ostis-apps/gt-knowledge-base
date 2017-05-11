@@ -1,0 +1,17 @@
+nrel_isomorphism <- rrel_key_sc_element: isomorphism_problem
+			(*
+
+		<- sc_statement;;	
+		<=nrel_sc_text_translation:
+		...
+			(*
+				-> rrel_example: 
+				 [Пусть G и G' - два графа, причем |V(G)| = |V(G')| и |E(G)| = |E(G')|. Требуется установить, изоморфен ли граф G графу G'. ] (*<-lang_ru;;*);;
+<= nrel_using_constants:
+							{
+								nrel_isomorphism;
+								concept_graph
+							};;	
+			*);;
+		*);;
+isomorphism_problem => nrel_main_idtf:[проблема изоморфизма графов](*<-lang_ru;;*);;

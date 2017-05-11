@@ -1,0 +1,18 @@
+concept_graph <- rrel_key_sc_element: konigs_problem
+			(*
+
+		<- sc_statement;;	
+		<=nrel_sc_text_translation:
+		...
+			(*
+				-> rrel_example: 
+				 [Установить, какие условия необходимы и достаточны, чтобы для заданной на множестве V группы подстановок Г существовал такой граф G с множеством вершин V, что Aut(G) = Г. ] (*<-lang_ru;;*);;
+<= nrel_using_constants:
+							{
+								concept_graph;
+								rrel_vertex;
+								nrel_independent_set_of_vertices
+							};;	
+			*);;
+		*);;
+konigs_problem => nrel_main_idtf:[проблема Конига](*<-lang_ru;;*);;

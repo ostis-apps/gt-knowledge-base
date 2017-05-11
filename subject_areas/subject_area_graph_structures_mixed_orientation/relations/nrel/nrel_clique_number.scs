@@ -1,0 +1,59 @@
+sc_node_norole_relation -> nrel_clique_number;;
+nrel_clique_number => nrel_main_idtf: [кликовое число*](*<-lang_ru;;*);;
+nrel_clique_number => nrel_idtf: [clique number*](*<-lang_en;;*);;
+
+nrel_clique_number <- rrel_key_sc_element:
+...(*	
+	<= nrel_using_constants: {
+		concept_graph;
+		rrel_vertex;
+		rrel_edge;
+		concept_number};;
+	=> nrel_main_idtf: [Опр(кликовое число*)] (* <- lang_ru;; *);;
+	<- sc_definition;;
+	<= nrel_sc_text_translation: ...(*
+						-> rrel_example: [Кликовое число w(G) графа G — это число вершин в наибольшей клике графа G. ](*<- lang_ru;;*);;
+						*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+
+	*);;
+
+nrel_clique_number <- rrel_key_sc_element:
+...(*
+	=> nrel_main_idtf: [Утв(кликовое число*,граф,ребро')] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: ...(*
+						-> rrel_example: [Число пересечений графа G — это наименьшее число клик, вместе покрывающих все рёбра графа G.](*<- lang_ru;;*);;
+						*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+
+	*);;
+
+
+nrel_clique_number -> rrel_example: ( .G => .3 );;
+.G <- concept_graph;;
+.3 <- concept_number;;
+
+
+nrel_clique_number => nrel_first_domain: concept_graph;;
+nrel_clique_number => nrel_second_domain: concept_number;;
+nrel_clique_number => nrel_definitional_domain: 
+	...
+	(*
+		<= nrel_association:
+				...(*
+					->concept_graph;;
+					->concept_number;;
+				*);;
+	*);;
+
+
+nrel_clique_number => nrel_arity_of_relations: 2(*<-concept_number;;*);;
+sc_node_norole_relation -> nrel_arity_of_relations;;
+nrel_arity_of_relations => nrel_main_idtf: [арность отношения*](*<-lang_ru;;*);;
+
+nrel_clique_number <- oriented_relation;;
+nrel_clique_number <- antireflexive_relation;;
+nrel_clique_number <- antisymmetric_relation;;
+nrel_clique_number <- antitransitive_relation;;
+

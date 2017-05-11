@@ -1,0 +1,49 @@
+sc_node_role_relation -> rrel_isthmus;;
+rrel_isthmus => nrel_main_idtf: [перешеек'](*<-lang_ru;;*);;
+rrel_isthmus => nrel_idtf: [isthmus'](*<-lang_en;;*);;
+
+rrel_isthmus <- rrel_key_sc_element:
+...(*	
+	<= nrel_using_constants: {
+		concept_graph;
+		rrel_vertex;
+		rrel_edge;
+		concept_number};;
+	=> nrel_main_idtf: [Опр(перешеек')] (* <- lang_ru;; *);;
+	<- sc_definition;;
+	<= nrel_sc_text_translation: ...(*
+						-> rrel_example: [Перешеек - ребро в теории графов, удаление которого увеличивает число компонент связности.](*<- lang_ru;;*);;
+						*);;
+
+	*);;
+
+rrel_isthmus <- rrel_key_sc_element:
+...(*
+	=> nrel_main_idtf: [Утв(перешеек',разрезающее рёбро',разрезающая дуга*,мост')] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: ...(*
+						-> rrel_example: [Такие рёбра также известны как разрезающие рёбра, разрезающие дуги или мост.](*<- lang_ru;;*);;
+						*);;
+
+	*);;
+
+rrel_isthmus <- rrel_key_sc_element:
+...(*
+	=> nrel_main_idtf: [Утв(перешеек',звено*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: ...(*
+						-> rrel_example: [Всякий перешеек, как следует из определения, является обязательно звеном.](*<- lang_ru;;*);;
+						*);;
+
+	*);;
+
+rrel_isthmus <- rrel_key_sc_element:
+...(*
+	=> nrel_main_idtf: [Утв(перешеек',лес,граф)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: ...(*
+						-> rrel_example: [Граф, в котором каждое ребро является перешейком, называется лесом.](*<- lang_ru;;*);;
+						*);;
+
+	*);;
+

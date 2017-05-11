@@ -1,0 +1,31 @@
+sc_node_role_relation ->rrel_subdivided_edge;;
+rrel_subdivided_edge => nrel_main_idtf: [подразбитое ребро'](*<-lang_ru;;*);;
+rrel_subdivided_edge => nrel_idtf: [subdivided edge'](*<-lang_en;;*);;
+
+rrel_subdivided_edge <- rrel_key_sc_element:
+...(*	
+	<= nrel_using_constants: {
+		concept_graph;
+		rrel_vertex;
+		rrel_edge;
+		concept_number};;
+	=> nrel_main_idtf: [Опр(подразбитое ребро')] (* <- lang_ru;; *);;
+	<- sc_definition;;
+	<= nrel_sc_text_translation: ...(*
+						-> rrel_example: [Подразбитое ребро - ребро e = (x,y), замененное в результате применения операции подразбиения ребра на ребра (x,z) и (z,y).](*<- lang_ru;;*);;
+						*);;
+
+	*);;
+
+rrel_subdivided_edge <- rrel_key_sc_element:
+...(*
+	=> nrel_main_idtf: [Утв(подразбитое ребро')] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: ...(*
+						-> rrel_example: [Возможно многократное применение операции подразбиения ребра, т.е. замена ребра на простую цепь. ](*<- lang_ru;;*);;
+						*);;
+
+	*);;
+
+
+

@@ -1,0 +1,53 @@
+sc_node_not_relation -> concept_goldner_harary_graph;;
+concept_goldner_harary_graph => nrel_main_idtf:[граф Голднера–Харари](* <-lang_ru;; *);;
+concept_goldner_harary_graph => nrel_idtf: [Goldner–Harary graph](* <- lang_en;; *);;
+
+concept_goldner_harary_graph <- rrel_key_sc_element:
+		...(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр.(граф Голднера–Харари)] (* <- lang_ru;; *);;
+		<=nrel_using_constants:
+			{
+				concept_graph;
+				rrel_edge;
+				rrel_vertex
+			};;
+		<= nrel_sc_text_translation: 
+		...(*
+				-> rrel_example: [Граф Голднера–Харари — это простой неориентированный граф с 11 вершинами и 27 рёбрами. ](*<- lang_ru;;*);;
+			*);;
+*);;
+
+concept_goldner_harary_graph <- rrel_key_sc_element:
+	...(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [Утв.(граф Голднера–Харари)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...(*
+			-> rrel_example: [Граф Голднера–Харари назван в честь А. Голднера и Ф. Харари, которые в 1975 году доказали, что он является наименьшим негамильтоновым максимальным планарным графом. Тот же самый граф был уже приведён в качестве примера негамильтонова симплициального многогранника Грюнбаумом в 1967.](*<- lang_ru;;*);;
+			*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+*);;
+
+concept_goldner_harary_graph <- rrel_key_sc_element:
+	...(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [Утв.(граф Голднера–Харари, максимально планарный граф)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...(*
+			-> rrel_example: [Граф Голднера–Харари планарен — его можно нарисовать на плоскости без пресечения рёбер. При рисовании на плоскости все грани графа треугольны, что делает его максимальным планарным графом. Как и любой максимальный планарный граф, он таже вершинно 3-связен — удаление любых двух вершин оставляет подграф связным.](*<- lang_ru;;*);;
+			*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+*);;
+
+concept_graph => nrel_inclusion:concept_goldner_harary_graph;;
+
+concept_goldner_harary_graph <- rrel_key_sc_element: 
+	...(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://pic/concept_goldner_Harary_graph.png";;
+			*);;
+	*);;
+

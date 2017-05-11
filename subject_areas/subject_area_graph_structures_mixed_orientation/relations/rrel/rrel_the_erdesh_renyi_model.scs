@@ -1,0 +1,31 @@
+sc_node_role_relation -> rrel_the_erdesh_renyi_model;;
+rrel_the_erdesh_renyi_model => nrel_main_idtf: [модель Эрдеша – Реньи*](*<-lang_ru;;*);;
+rrel_the_erdesh_renyi_model => nrel_idtf: [the Erdesh-Renyi model*](*<-lang_en;;*);;
+
+rrel_the_erdesh_renyi_model <- rrel_key_sc_element:
+...(*	
+	<= nrel_using_constants: {
+		concept_graph;
+		rrel_vertex;
+		rrel_edge;
+		concept_number};;
+	=> nrel_main_idtf: [Опр(модель Эрдеша – Реньи*)] (* <- lang_ru;; *);;
+	<- sc_definition;;
+	<= nrel_sc_text_translation: ...(*
+						-> rrel_example: [В модели Эрдёша – Реньи каждое ребро независимо от всех остальных ребер входит в случайный граф с вероятностью p. ](*<- lang_ru;;*);;
+						*);;
+
+	*);;
+
+rrel_the_erdesh_renyi_model <- rrel_key_sc_element:
+...(*
+	=> nrel_main_idtf: [Утв(модель Эрдеша – Реньи*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: ...(*
+						-> rrel_example: [Наука о случайном графе изучает вероятности тех или иных
+свойств графов. Наибольший интерес представляет «динамика» этих вероятностей, т. е. их изменение с ростом n. А числу вершин и впрямь ничто не мешает расти. При этом вероятность возникновения ребра графа тоже вполне может эволюционировать.](*<- lang_ru;;*);;
+						*);;
+
+	*);;
+
+

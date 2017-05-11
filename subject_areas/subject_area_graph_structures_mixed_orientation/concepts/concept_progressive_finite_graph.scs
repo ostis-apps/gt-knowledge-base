@@ -1,0 +1,44 @@
+sc_node_not_relation -> concept_progressive_finite_graph;;
+concept_progressive_finite_graph => nrel_main_idtf:[прогрессивно конечный граф](* <-lang_ru;; *);;
+concept_progressive_finite_graph => nrel_idtf:[progressive finite graph](* <- lang_en;; *);;
+
+concept_progressive_finite_graph <- rrel_key_sc_element:
+...(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр.(прогрессивно конечный граф)] (* <- lang_ru;; *);;
+		<=nrel_using_constants:
+			{
+				nrel_graph;
+				rrel_edge;
+				rrel_vertex
+			};;
+		<= nrel_sc_text_translation: ...(*
+				-> rrel_example: [Прогрессивно конечный граф - это граф, в котором не существует путей бесконечной длины, начинающихся в какой-либо вершине. ](*<- lang_ru;;*);;
+			*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+*);;
+
+concept_progressive_finite_graph <- rrel_key_sc_element:
+	...(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [Утв.(прогрессивно ограниченный граф,прогрессивно конечный граф)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...(*
+			-> rrel_example: [Прогрессивно конечный граф не является прогрессивно ограниченным графом.](*<- lang_ru;;*);;
+			*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+*);;
+
+concept_graph => nrel_inclusion:concept_progressive_finite_graph;;
+
+concept_progressive_finite_graph <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://pic/concept_progressive_finite_graph.png";;
+			*);;
+	*);;
+

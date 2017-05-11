@@ -1,0 +1,45 @@
+sc_node_not_relation -> concept_starred_graph;;
+concept_starred_graph => nrel_main_idtf:[звездный граф](* <-lang_ru;; *);;
+concept_starred_graph => nrel_idtf:[starred graph](* <- lang_en;; *);;
+
+concept_starred_graph <- rrel_key_sc_element:
+...(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр.(звездный граф)] (* <- lang_ru;; *);;
+		<=nrel_using_constants:
+			{
+				concept_graph;
+				rrel_edge;
+				rrel_vertex
+			};;
+		<= nrel_sc_text_translation: ...(*
+				-> rrel_example: [Звездный граф — полный двудольный граф K{1,n}; в случае n = 3 используются названия "лапа" и "гроздь".](*<- lang_ru;;*);;
+			*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+*);;
+
+concept_starred_graph <- rrel_key_sc_element:
+	...(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [Утв.(звездный граф,вершина')] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...(*
+			-> rrel_example: [Звездный граф, имеющий одну вершину степени р, а остальные вершины степени 1, является р-раскрашиваемым, он бихроматичен. ](*<- lang_ru;;*);;
+			*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+*);;
+
+
+concept_graph => nrel_inclusion:concept_starred_graph;;
+
+concept_starred_graph <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://pic/concept_starred_graph.png";;
+			*);;
+	*);;
+

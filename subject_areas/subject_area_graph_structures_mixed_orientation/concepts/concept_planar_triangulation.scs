@@ -1,0 +1,44 @@
+sc_node_not_relation -> concept_planar_triangulation;;
+concept_planar_triangulation => nrel_main_idtf:[плоская триангуляция](* <-lang_ru;; *);;
+concept_planar_triangulation => nrel_idtf: [planar triangulation](* <- lang_en;; *);;
+
+concept_planar_triangulation <- rrel_key_sc_element:
+		...(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр.(плоская триангуляция)] (* <- lang_ru;; *);;
+		<=nrel_using_constants:
+			{
+				concept_graph;
+				concept_planar_graph;
+				rrel_edge;
+				rrel_vertex
+			};;
+		<= nrel_sc_text_translation: 
+		...(*
+				-> rrel_example: [Если каждая грань плоского графа ограничена циклом из трех ребер, то такой граф называется плоской триангуляцией. ](*<- lang_ru;;*);;
+			*);;
+*);;
+
+concept_planar_triangulation <- rrel_key_sc_element:
+	...(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [Утв.(плоская триангуляция, плоская карта)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...(*
+			-> rrel_example: [Плоская карта, каждая грань к-рой ограничена тремя ребрами, наз. плоской триангуляцией.](*<- lang_ru;;*);;
+			*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+*);;
+
+concept_planar_triangulation <= nrel_inclusion: {concept_planar_graph;concept_graph};;
+
+concept_planar_triangulation <- rrel_key_sc_element: 
+	...(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://pic/concept_planar_triangulation.png";;
+			*);;
+	*);;
+

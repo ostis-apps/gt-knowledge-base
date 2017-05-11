@@ -1,0 +1,62 @@
+sc_node_norole_relation -> nrel_bicoloured_subgraph;;
+nrel_bicoloured_subgraph => nrel_main_idtf: [двуцветный подграф*](*<-lang_ru;;*);;
+nrel_bicoloured_subgraph => nrel_idtf: [bicoloured subgraph*](*<-lang_en;;*);;
+
+nrel_bicoloured_subgraph <- rrel_key_sc_element:
+...(*	
+	<= nrel_using_constants: {
+		concept_graph;
+		rrel_vertex;
+		rrel_edge;
+		concept_number};;
+	=> nrel_main_idtf: [Опр(двуцветный подграф*)] (* <- lang_ru;; *);;
+	<- sc_definition;;
+	<= nrel_sc_text_translation: ...(*
+						-> rrel_example: [Двуцветный подграф - подграф правильно раскрашенного графа, порожденный вершинами, окрашенными в два заданных цвета. ](*<- lang_ru;;*);;
+						*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+
+	*);;
+
+
+nrel_bicoloured_subgraph -> rrel_example: ( .G => .K );;
+.G <- concept_graph;;
+.K <- concept_graph;;
+
+
+nrel_bicoloured_subgraph => nrel_first_domain: concept_graph;;
+nrel_bicoloured_subgraph => nrel_second_domain: concept_graph;;
+nrel_bicoloured_subgraph => nrel_definitional_domain: 
+	...
+	(*
+		<= nrel_association:
+				...(*
+					->concept_graph;;
+					->concept_graph;;
+				*);;
+	*);;
+
+
+nrel_bicoloured_subgraph => nrel_arity_of_relations: 2(*<-concept_number;;*);;
+sc_node_norole_relation -> nrel_arity_of_relations;;
+nrel_arity_of_relations => nrel_main_idtf: [арность отношения*](*<-lang_ru;;*);;
+
+nrel_subdegrees_of_a_graph <- oriented_relation;;
+nrel_subdegrees_of_a_graph <- antireflexive_relation;;
+nrel_subdegrees_of_a_graph <- antisymmetric_relation;;
+nrel_subdegrees_of_a_graph <- antitransitive_relation;;
+
+
+nrel_bicoloured_subgraph <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://pics/nrel_bicoloured_subgraph.png";;
+			*);;
+	*);;
+
+

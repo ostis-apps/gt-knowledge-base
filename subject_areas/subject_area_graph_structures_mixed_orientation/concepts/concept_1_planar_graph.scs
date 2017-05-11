@@ -1,0 +1,50 @@
+sc_node_not_relation -> concept_1_planar_graph;;
+concept_1_planar_graph => nrel_main_idtf:[1-планарный граф](* <-lang_ru;; *);;
+concept_1_planar_graph => nrel_idtf:[1-planar graph](* <- lang_en;; *);;
+
+concept_1_planar_graph <- rrel_key_sc_element:
+...(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр.(1-планарный граф)] (* <- lang_ru;; *);;
+		<=nrel_using_constants:
+			{
+				concept_graph;
+				concept_bipartite_graph
+			};;
+		<= nrel_sc_text_translation: ...(*
+				-> rrel_example:[1-планарный граф — это граф, который может быть нарисован в евклидовой плоскости таким образом, что каждое ребро имеет максимум одно пересечение с единственным другим ребром. ](*<- lang_ru;;*);;
+			*);;
+*);;
+
+concept_1_planar_graph <- rrel_key_sc_element:
+	...(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [Утв.(1-планарный граф,вершина',ребро')] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...(*
+			-> rrel_example:[Любой 1-планарный граф с n вершинами имеет не более 4n − 8 рёбер. ](*<- lang_ru;;*);;
+			*);;
+*);;
+ 
+concept_1_planar_graph <- rrel_key_sc_element:
+	...(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [Утв.(1-планарный граф,полиэдральный граф,вершина',ребро')] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...(*
+			-> rrel_example: [1-планарный граф является оптимальным 1-планарным графом, если он имеет в точности 4n − 8 рёбер, максимально возможное число. В 1-планарном вложении оптимального 1-планарного графа непересекающиеся рёбра обязательно образуют разбиение на четырёхугольники (т.е. образуют полиэдральный граф, в котором каждая грань является четырёхугольником). Любое разбиение на четырёхугольники порождает 1-планарный граф путём добавления двух диагоналей в каждую квадратную грань. Отсюда следует, что любой оптимальный 1-планарный граф является эйлеровым (все его вершины имеют чётную степень), что наименьшая степень в таких графах — 6, и что любой оптимальный 1-планарный граф имеет по меньшей мере восемь вершин со степенью в точности шесть. ](*<- lang_ru;;*);;
+			*);;
+*);;
+
+concept_planar_graph => nrel_inclusion:concept_1_planar_graph;;
+
+concept_1_planar_graph <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://pic/concept_1_planar_graph.png";;
+			*);;
+	*);;
+
