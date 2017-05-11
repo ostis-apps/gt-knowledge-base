@@ -1,0 +1,38 @@
+sc_node_not_relation -> concept_sorting_tree;;
+concept_sorting_tree => nrel_main_idtf:
+	[дерево сортировки] (* <- lang_ru;; *);
+	[sorting tree] (* <- lang_en;; *);;
+	
+concept_sorting_tree <- rrel_key_sc_element: 
+	...  
+	(*
+	=> nrel_main_idtf: [Определение: дерево сортировки] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Definition: sorting tree](* <- lang_en;; *);;	
+	<- sc_definition;; 
+        <= nrel_using_constants:
+					{
+					concept_tree;
+					concept_leaf_vertex
+					};;
+	<= nrel_sc_text_translation: 
+		... 
+		(*
+		-> rrel_example: 
+		[Дерево сортировки - одерево для организации хранения информации в виде слов, для которых определен лексикографический порядок; слова хранятся во всех вершинах или только в висячих (см. выровненное дерево ), причем размещение слов производится по специальным правилам, учитывающим отношение порядка. Деревья сортировки имеют то или иное строение, обеспечивающее логарифмическую трудоемкость поиска; для поддержания этой структуры используются специальные преобразования.](* <- lang_ru;; *);;
+		*);;
+	*);;
+
+	
+concept_sorting_tree <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_binary_sorting_tree.png";;
+			*);;
+	*);;
+
+concept_tree => nrel_inclusion: concept_sorting_tree;;

@@ -1,0 +1,72 @@
+sc_node_norole_relation->nrel_bramble;;
+
+nrel_bramble => nrel_main_idtf:
+	[ежевика графа*](* <-lang_ru;; *);
+	[bramble*](* <-lang_en;; *);;
+
+nrel_bramble <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- sc_definition;;
+		<= nrel_using_constants:
+						{
+						concept_undirected_graph;
+                                                nrel_set_of_subgraphs;
+						nrel_subgraph;
+						concept_node;
+						concept_arg
+						};;
+		=> nrel_main_idtf: [Определение: ежевика графа] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: bramble] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[В теории графов ежевикой для неориентированного графа G называется семейство связных подграфов графа G, которые касаются друг друга: для любой пары подграфов, не имеющих общих вершин, должно существовать ребро, конечные вершины которого лежат в этих двух подграфах. ](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[In graph theory, a bramble for an undirected graph G is a family of connected subgraphs of G that all touch each other: for every pair of disjoint subgraphs, there must exist an edge in G that has one endpoint in each subgraph. ](*<- lang_en;;*);;
+		*);;
+		
+*);;
+
+
+
+nrel_bramble <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: ежевики используются для описания древесной ширины графа.] (* <- lang_ru;; *);;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Ежевики используются для описания древесной ширины графа.](*<- lang_ru;;*);;
+
+			*);;
+
+		*);;
+		
+nrel_bramble <- binary_relation;;
+nrel_bramble <- oriented_relation;;
+nrel_bramble => nrel_first_domain: concept_undirected_graph;;
+nrel_bramble => nrel_second_domain: set;;
+
+nrel_bramble<= nrel_definitional_domain: 
+	...
+	(*
+	<= nrel_combination: 
+		{
+		concept_undirected_graph;
+		set
+		};;
+	*);;
+
+nrel_bramble <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+			"file://contents/nrel_bramble.png";;
+			*);;
+	*);;

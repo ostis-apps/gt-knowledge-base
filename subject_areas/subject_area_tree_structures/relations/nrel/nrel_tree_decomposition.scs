@@ -1,0 +1,52 @@
+sc_node_norole_relation->nrel_tree_decomposition;;
+
+nrel_tree_decomposition => nrel_main_idtf:
+	[древесная декомпозиция*](* <-lang_ru;; *);
+	[tree decomposition*](* <-lang_en;; *);;
+
+nrel_tree_decomposition <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- sc_definition;;
+		<= nrel_using_constants:
+						{
+						concept_graph;
+                                                picturePr2;
+						concept_tree_width;
+						concept_tree
+						};;
+		=> nrel_main_idtf: [Определение: древесная декомпозиция] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: tree decomposition] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[В теории графов древесная декомпозиция — это отображение графа в дерево, которое может быть использовано для определения древесной ширины графа и ускорения решения определённых вычислительных задач на графах. ](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[In graph theory, a tree decomposition is a mapping of a graph into a tree that can be used to define the treewidth of the graph and speed up solving certain computational problems on the graph. ](*<- lang_en;;*);;
+		*);;
+		
+*);;
+
+
+nrel_tree_decomposition <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: использование древесной декомпозиии.] (* <- lang_ru;; *);;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Древесная декомпозиция играет важную роль в задачах, подобных вероятностному логическому выводу, поиску допустимых значений, оптимизации запросов СУБД и разложения матриц.](*<- lang_ru;;*);;
+
+			*);;
+			<= nrel_using_constants:
+					{
+						concept_tree_width
+                                               
+					};;	
+		*);;
+		
+nrel_tree_decomposition <- binary_relation;;
+nrel_tree_decomposition <- oriented_relation;;
+nrel_tree_decomposition => nrel_first_domain: concept_graph;;
+nrel_tree_decomposition => nrel_second_domain: concept_tree;;

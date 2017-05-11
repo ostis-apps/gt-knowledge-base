@@ -1,0 +1,39 @@
+sc_node_not_relation -> concept_binary_sorting_tree;;
+concept_binary_sorting_tree => nrel_main_idtf:
+	[бинарное дерево сортировки] (* <- lang_ru;; *);
+	[binary sorting tree] (* <- lang_en;; *);;
+	
+concept_binary_sorting_tree <- rrel_key_sc_element: 
+	...  
+	(*
+	=> nrel_main_idtf: [Определение: бинарное дерево сортировки] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Definition: binary sorting tree](* <- lang_en;; *);;	
+	<- sc_definition;; 
+	<= nrel_using_constants:
+					{
+					concept_sorting_tree;
+					concept_binary_tree
+					};;
+	
+	<= nrel_sc_text_translation: 
+		... 
+		(*
+		-> rrel_example: 
+		[Бинарное дерево сортировки - дерево сортировки на базе бинарного дерева. ](* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_binary_sorting_tree <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_binary_sorting_tree.png";;
+			*);;
+	*);;
+
+concept_binary_tree => nrel_inclusion: concept_binary_sorting_tree;;
+concept_sorting_tree => nrel_inclusion: concept_binary_sorting_tree;;

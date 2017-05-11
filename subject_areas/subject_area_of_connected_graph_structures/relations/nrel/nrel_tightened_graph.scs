@@ -1,0 +1,31 @@
+sc_node_norole_relation ->nrel_tightened_graph;; 
+binary_relation -> nrel_tightened_graph;;
+oriented_relation ->nrel_tightened_graph;;
+
+nrel_tightened_graph
+=> nrel_main_idtf:
+	[стягиваемый граф*] (* <-lang_ru;; *);
+	[dual graph*] (* <-lang_en;; *);
+
+<-rrel_key_sc_element:
+	...
+	(*
+	<-sc_definition;;
+	<= nrel_using_constants:
+	{				
+		concept_graph;
+		nrel_edge_contraction		
+	};;
+	=> nrel_main_idtf: [Опр.(стягиваемый граф*)] (* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+		[Граф G называется стягиваемым к H, если H может быть получен из G с помощью некоторой последовательности стягиваний ребер.] (*<-lang_ru;;*);;	
+		*);;
+	*);
+
+ => nrel_first_domain: concept_graph;
+ => nrel_second_domain: concept_graph;;
+
+nrel_tightened_graph<= nrel_definitional_domain:concept_graph;;

@@ -1,0 +1,39 @@
+sc_node_not_relation->nrel_set_of_subgraphs;;
+
+nrel_set_of_subgraphs => nrel_main_idtf:
+	[семейство подграфов*](* <-lang_ru;; *);
+	[set of subgraphs*](* <-lang_en;; *);;
+
+nrel_set_of_subgraphs <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- sc_definition;;
+		<= nrel_using_constants:
+						{
+							set;
+							concept_graph
+						};;
+		=> nrel_main_idtf: [Определение: семейство подграфов] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: set of subgraphs] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Семейство подграфов - множество подграфов графа.](*<- lang_ru;;*);;
+		*);;
+*);;
+
+
+		
+nrel_set_of_subgraphs <- binary_relation;;
+nrel_set_of_subgraphs <- oriented_relation;;
+nrel_set_of_subgraphs => nrel_first_domain: concept_graph;;
+nrel_set_of_subgraphs => nrel_second_domain: set;;
+nrel_set_of_subgraphs<= nrel_definitional_domain: 
+	...
+	(*
+	<= nrel_combination: 
+		{
+		concept_graph;
+		set
+		};;
+	*);;

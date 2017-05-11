@@ -1,0 +1,57 @@
+sc_node_not_relation -> nrel_rooted_balance;;
+nrel_rooted_balance => nrel_main_idtf:
+	[корневой баланс*] (* <- lang_ru;; *);
+	[rooted balance*] (* <- lang_en;; *);;
+	
+nrel_rooted_balance <- rrel_key_sc_element: 
+	...  
+	(*
+	=> nrel_main_idtf: [Определение: корневой баланс*] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Definition: rooted balance*](* <- lang_en;; *);;	
+	<- sc_definition;; 
+ 	<= nrel_using_constants:
+					{
+					concept_binary_tree;
+                                        value;
+					nrel_subtree;
+					rrel_tree_root
+					};;
+	<= nrel_sc_text_translation: 
+		... 
+		(*
+		-> rrel_example: 
+		[Корневой баланс в бинарном дереве величина, характеризующая соотношение между весами левого и правого поддеревьев корня](* <- lang_ru;; *);;
+		*);;
+	*);;
+
+
+nrel_rooted_balance <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: о  весе дерева при корневом балансе.] (* <- lang_ru;; *);;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[В качестве весов могут выступать высоты поддеревьев, мощности поддеревьев и др.](*<- lang_ru;;*);;
+
+			*);;
+		*);;
+
+		
+nrel_rooted_balance <- binary_relation;;
+nrel_rooted_balance <- oriented_relation;;
+nrel_rooted_balance => nrel_first_domain: concept_binary_tree;;
+nrel_rooted_balance => nrel_second_domain: value;;
+nrel_rooted_balance<= nrel_definitional_domain: 
+	...
+	(*
+	<= nrel_combination: 
+		{
+		concept_binary_tree;
+		value
+		};;
+	*);;
+		
+
+

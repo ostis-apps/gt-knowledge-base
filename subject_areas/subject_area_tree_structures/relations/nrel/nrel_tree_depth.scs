@@ -1,0 +1,58 @@
+sc_node_not_relation -> nrel_tree_depth;;
+nrel_tree_depth => nrel_main_idtf:
+	[глубина дерева*] (* <- lang_ru;; *);
+	[tree depth*] (* <- lang_en;; *);;
+	
+nrel_tree_depth <- rrel_key_sc_element: 
+	...  
+	(*
+	=> nrel_main_idtf: [Определение: глубина дерева*] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Definition: tree depth*](* <- lang_en;; *);;	
+	<- sc_definition;; 
+ 	<= nrel_using_constants:
+					{
+					concept_tree;
+                                        nrel_graph_invariant;
+					concept_star_graph
+					};;
+	<= nrel_sc_text_translation: 
+		... 
+		(*
+		-> rrel_example: 
+		[В теории графов глубина дерева связного неориентированного графа G — это числовой инвариант G, глубина дерева измеряет, насколько граф далёк от звезды.](* <- lang_ru;; *);;
+		-> rrel_example: 
+                 [In graph theory, the tree-depth of a connected undirected graph G is a numerical invariant of G, this parameter measures how far a graph is from being a star.] (* <-lang_en;; *);;
+		*);;
+	*);;
+
+
+nrel_tree_depth <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: о  глубине дерева.] (* <- lang_ru;; *);;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Глубина дерева измеряет, насколько граф далёк от звезды.](*<- lang_ru;;*);;
+
+			*);;
+		*);;
+
+		
+nrel_tree_depth <- binary_relation;;
+nrel_tree_depth <- oriented_relation;;
+nrel_tree_depth => nrel_first_domain: concept_graph;;
+nrel_tree_depth => nrel_second_domain: number;;
+nrel_tree_depth<= nrel_definitional_domain: 
+	...
+	(*
+	<= nrel_combination: 
+		{
+		concept_graph;
+		number
+		};;
+	*);;
+		
+
+

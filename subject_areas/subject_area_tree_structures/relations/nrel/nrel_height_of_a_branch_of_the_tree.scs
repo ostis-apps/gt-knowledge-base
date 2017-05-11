@@ -1,0 +1,55 @@
+sc_node_not_relation->nrel_height_of_a_branch_of_the_tree;;
+
+nrel_height_of_a_branch_of_the_tree => nrel_main_idtf:
+	[высота ветви дерева*](* <-lang_ru;; *);
+	[height of a branch of the tree*](* <-lang_en;; *);;
+
+nrel_height_of_a_branch_of_the_tree <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- sc_definition;;
+    		<= nrel_using_constants:
+						{
+							number;
+							concept_arg;
+							concept_branch_of_the_tree
+						};;
+		=> nrel_main_idtf: [Определение: высота ветви дерева] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: height of a branch of the tree] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Высота ветви дерева - число ребер в ветви дерева.](*<- lang_ru;;*);;
+		*);;
+*);;
+
+
+nrel_height_of_a_branch_of_the_tree <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: о высоте ветви дерева.] (* <- lang_ru;; *);;
+		-> rrel_key_sc_element: concept_node;;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Высота ветви дерева - число ребер в ветви дерева.](*<- lang_ru;;*);;
+
+			*);;
+		*);;
+
+		
+nrel_height_of_a_branch_of_the_tree <- binary_relation;;
+nrel_height_of_a_branch_of_the_tree <- oriented_relation;;
+nrel_height_of_a_branch_of_the_tree => nrel_first_domain: concept_graph;;
+nrel_height_of_a_branch_of_the_tree => nrel_second_domain: number;;
+nrel_height_of_a_branch_of_the_tree<= nrel_definitional_domain: 
+	...
+	(*
+	<= nrel_combination: 
+		{
+		concept_graph;
+		number
+		};;
+	*);;
+		

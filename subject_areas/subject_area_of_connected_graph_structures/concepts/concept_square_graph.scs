@@ -1,0 +1,40 @@
+sc_node_not_relation->concept_square_graph;;
+
+concept_square_graph=> nrel_main_idtf: 
+		[рамочный граф] (* <-lang_ru;; *);
+		[square graph] (* <-lang_en;; *);;
+
+concept_square_graph <- rrel_key_sc_element:
+		...  
+		(*
+		<-sc_definition;;
+		<= nrel_using_constants:
+				{
+					concept_undirected_graph;
+					rrel_edge;
+					rrel_node
+				};;
+		=> nrel_main_idtf: [Опр.(рамочный граф)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				[В теории графов рамочным графом называется вид неориентированного графа, который можно нарисовать на плоскости таким способом, что любая ограниченная грань является четырёхугольником и любая вершина с тремя и менее соседями инцидентна неограниченной грани.] (*<-lang_ru;;*);;
+			*);;
+		*);;
+
+
+
+concept_square_graph <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_square_graph.png";;
+			*);;
+	*);;
+
+concept_undirected_graph => nrel_inclusion: concept_square_graph;;
