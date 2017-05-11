@@ -1,5 +1,5 @@
 sc_node_norole_relation ->nrel_isometric_subgraph;; 
-binary_relation -> nrel_dual_graph;;
+binary_relation -> nrel_isometric_subgraph;;
 non_oriented_relation ->nrel_isometric_subgraph;;
 
 nrel_isometric_subgraph
