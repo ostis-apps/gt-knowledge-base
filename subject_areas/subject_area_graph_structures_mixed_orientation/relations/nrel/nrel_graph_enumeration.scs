@@ -1,0 +1,53 @@
+sc_node_norole_relation -> nrel_graph_enumeration;;
+nrel_graph_enumeration => nrel_main_idtf: [перечисление графов*](*<-lang_ru;;*);;
+nrel_graph_enumeration => nrel_idtf: [graph enumeration*](*<-lang_en;;*);;
+
+nrel_graph_enumeration <- rrel_key_sc_element:
+...(*	
+	<= nrel_using_constants: {
+		concept_graph;
+		rrel_vertex;
+		rrel_edge;
+		concept_number};;
+	=> nrel_main_idtf: [Опр(перечисление графов*)] (* <- lang_ru;; *);;
+	<- sc_definition;;
+	<= nrel_sc_text_translation: ...(*
+						-> rrel_example: [Перечисление графов - подсчет числа неизоморфных графов в заданном классе (с заданными характеристиками).](*<- lang_ru;;*);;
+						*);;
+
+	*);;
+
+nrel_graph_enumeration <- rrel_key_sc_element:
+...(*
+	=> nrel_main_idtf: [Утв(перечисление графов*,производящая функция')] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: ...(*
+						-> rrel_example: [Производящая (порождающая) функция Gp(x) для числа помеченных графов с р вершинами задаётся соотношением:
+Gp(x) = (1+x)m = ∑Cmkxk, m = Cp2.](*<- lang_ru;;*);;
+						*);;
+
+	*);;
+
+
+nrel_graph_enumeration => nrel_first_domain: concept_graph;;
+nrel_graph_enumeration => nrel_second_domain: concept_number;;
+nrel_graph_enumeration => nrel_definitional_domain: 
+	...
+	(*
+		<= nrel_association:
+				...(*
+					->concept_graph;;
+					->concept_number;;
+				*);;
+	*);;
+
+
+nrel_graph_enumeration => nrel_arity_of_relations: 2(*<-concept_number;;*);;
+sc_node_norole_relation -> nrel_arity_of_relations;;
+nrel_arity_of_relations => nrel_main_idtf: [арность отношения*](*<-lang_ru;;*);;
+
+nrel_graph_enumeration <- oriented_relation;;
+nrel_graph_enumeration <- antireflexive_relation;;
+nrel_graph_enumeration <- antisymmetric_relation;;
+nrel_graph_enumeration <- antitransitive_relation;;
+

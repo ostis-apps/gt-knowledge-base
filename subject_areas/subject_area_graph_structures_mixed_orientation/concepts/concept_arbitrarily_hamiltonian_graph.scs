@@ -1,0 +1,43 @@
+sc_node_not_relation -> concept_arbitrarily_hamiltonian_graph;;
+concept_arbitrarily_hamiltonian_graph => nrel_main_idtf:[произвольно гамильтонов граф](* <-lang_ru;; *);;
+concept_arbitrarily_hamiltonian_graph => nrel_idtf:[arbitrarily hamiltonian graph](* <- lang_en;; *);;
+
+concept_arbitrarily_hamiltonian_graph <- rrel_key_sc_element:
+...(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр.(произвольно гамильтонов граф)] (* <- lang_ru;; *);;
+		<=nrel_using_constants:
+			{
+				nrel_graph;
+				rrel_edge;
+				rrel_vertex
+			};;
+		<= nrel_sc_text_translation: ...(*
+				-> rrel_example: [Произвольно гамильтонов граф -это граф, для которого гамильтонов цикл всегда получается с помощью следующей процедуры: начинаем с произвольной вершины, последовательно переходим в любую смежную вершину, еще не пройденную, и продолжаем до тех пор, пока не исчерпаем все вершины. ](*<- lang_ru;;*);;
+			*);;
+*);;
+
+concept_arbitrarily_hamiltonian_graph <- rrel_key_sc_element:
+	...(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [Утв.(гамильтонова графа, произвольно гамильтонов граф)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...(*
+			-> rrel_example: [Из гамильтонова графа можно получить произвольно гамильтонов граф.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+concept_graph => nrel_inclusion:concept_arbitrarily_hamiltonian_graph;;
+
+concept_arbitrarily_hamiltonian_graph  <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://pic/concept_arbitrarily_hamiltonian_graph.png";;
+			*);;
+	*);;
+

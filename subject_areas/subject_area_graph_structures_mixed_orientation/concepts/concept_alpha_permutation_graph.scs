@@ -1,0 +1,32 @@
+sc_node_not_relation -> concept_alpha_permutation_graph;;
+concept_alpha_permutation_graph => nrel_main_idtf:[альфа-перестановочный граф](* <-lang_ru;; *);;
+concept_alpha_permutation_graph => nrel_idtf:[alpha-permutation graph](* <- lang_en;; *);;
+
+concept_alpha_permutation_graph <- rrel_key_sc_element:
+...(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр.(Альфа-перестановочный граф)] (* <- lang_ru;; *);;
+		<=nrel_using_constants:
+			{
+				nrel_graph;
+				rrel_edge;
+				rrel_vertex
+			};;
+		<= nrel_sc_text_translation: ...(*
+				-> rrel_example: [Альфа-перестановочный граф - для помеченного графа G и любой подстановки alpha из симметрической группы S(p) граф, представляющий собой объединение двух непересекающихся копий G1 и G2 графа G, между которыми проведены ребра, соединяющие вершины графа G1 с вершинами графа G2. ](*<- lang_ru;;*);;
+			*);;
+*);;
+
+concept_alpha_permutation_graph <- rrel_key_sc_element:
+	...(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [Утв.(альфа-перестановочный граф, перестановочный граф)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...(*
+			-> rrel_example: [Альфа-перестановочный граф является частным случаем перестановочного графа.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+concept_graph => nrel_inclusion:concept_alpha_permutation_graph;;
+
+

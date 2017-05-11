@@ -1,0 +1,51 @@
+sc_node_norole_relation -> nrel_base_of_matroid;;
+nrel_base_of_matroid => nrel_main_idtf: [база матроида*](*<-lang_ru;;*);;
+nrel_base_of_matroid => nrel_idtf: [base of a matroid*](*<-lang_en;;*);;
+
+nrel_base_of_matroid <- rrel_key_sc_element:
+...(*	
+	<= nrel_using_constants: {
+		concept_matroid
+		};;
+	=> nrel_main_idtf: [Опр(База матроида*)] (* <- lang_ru;; *);;
+	<- sc_definition;;
+	<= nrel_sc_text_translation: ...(*
+						-> rrel_example: [База матроида — максимальное по включению независимое множество. ](*<- lang_ru;;*);;
+						*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+
+	*);;
+
+nrel_cobase_of_matroid <- rrel_key_sc_element:
+...(*
+	=> nrel_main_idtf: [Утв(Теорема о равномощности баз матроида)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: ...(*
+						-> rrel_example: [Пусть B_1 и B_2 — базы матроида M. Тогда |B_1| = |B_2|.](*<- lang_ru;;*);;
+						*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+
+	*);;
+
+
+nrel_base_of_matroid => nrel_first_domain: concept_matroid;;
+nrel_base_of_matroid => nrel_second_domain: concept_set;;
+nrel_base_of_matroid => nrel_definitional_domain: 
+	...
+	(*
+		<= nrel_association:
+				...(*
+					->concept_matroid;;
+					->concept_set;;
+				*);;
+	*);;
+
+
+nrel_base_of_matroid => nrel_arity_of_relations: 2(*<-concept_number;;*);;
+sc_node_norole_relation -> nrel_arity_of_relations;;
+nrel_arity_of_relations => nrel_main_idtf: [арность отношения*](*<-lang_ru;;*);;
+
+nrel_base_of_matroid <- oriented_relation;;
+nrel_base_of_matroid <- antireflexive_relation;;
+nrel_base_of_matroid <- antisymmetric_relation;;
+nrel_base_of_matroid <- antitransitive_relation;;

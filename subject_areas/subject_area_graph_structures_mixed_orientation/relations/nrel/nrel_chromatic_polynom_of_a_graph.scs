@@ -1,0 +1,64 @@
+sc_node_norole_relation -> nrel_chromatic_polynom_of_a_graph;;
+nrel_chromatic_polynom_of_a_graph => nrel_main_idtf: [хроматический полином графа*](*<-lang_ru;;*);;
+nrel_chromatic_polynom_of_a_graph => nrel_idtf: [chromatic polynom of a graph*](*<-lang_en;;*);;
+
+nrel_chromatic_polynom_of_a_graph <- rrel_key_sc_element:
+...(*	
+	<= nrel_using_constants: {
+		concept_graph;
+		rrel_vertex;
+		rrel_edge;
+		concept_number};;
+	=> nrel_main_idtf: [Опр(хроматический полином графа)] (* <- lang_ru;; *);;
+	<- sc_definition;;
+	<= nrel_sc_text_translation: ...(*
+						-> rrel_example: [Хроматический полином графа - то же что Хроматическая функция. т.е. функция , выражающая количество попарно различных T -раскрасок графа G.](*<- lang_ru;;*);;
+						*);;
+
+	*);;
+
+nrel_chromatic_polynom_of_a_graph <- rrel_key_sc_element:
+...(*
+	=> nrel_mqain_idtf: [Утв(хроматический полином графа*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: ...(*
+						-> rrel_example: [Хроматический полином графа имеет вид 
+P(G,x) = P(G1,x) +P(G2,x),где G1 - граф, полученный из G добавлением нового ребра (uv), а граф G2 получается из G отождествлением вершин u и v. ](*<- lang_ru;;*);;
+						*);;
+
+	*);;
+nrel_chromatic_polynom_of_a_graph <- rrel_key_sc_element:
+...(*
+	=> nrel_main_idtf: [Утв(хроматический полином графа*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: ...(*
+						-> rrel_example: [Хроматическая функция любого графа является полиномом от T-раскрасок графа G, поэтому ее обычно называют хроматическим полиномом графа. ](*<- lang_ru;;*);;
+						*);;
+
+	*);;
+
+
+nrel_chromatic_polynom_of_a_graph => nrel_first_domain: concept_graph;;
+nrel_chromatic_polynom_of_a_graph => nrel_second_domain: concept_number;;
+nrel_chromatic_polynom_of_a_graph => nrel_definitional_domain: 
+	...
+	(*
+		<= nrel_association:
+				...(*
+					->concept_graph;;
+					->concept_number;;
+				*);;
+	*);;
+
+
+nrel_chromatic_polynom_of_a_graph => nrel_arity_of_relations: 2(*<-concept_number;;*);;
+sc_node_norole_relation -> nrel_arity_of_relations;;
+nrel_arity_of_relations => nrel_main_idtf: [арность отношения*](*<-lang_ru;;*);;
+
+nrel_chromatic_polynom_of_a_graph <- oriented_relation;;
+nrel_chromatic_polynom_of_a_graph <- antireflexive_relation;;
+nrel_chromatic_polynom_of_a_graph <- antisymmetric_relation;;
+nrel_chromatic_polynom_of_a_graph <- antitransitive_relation;;
+
+
+

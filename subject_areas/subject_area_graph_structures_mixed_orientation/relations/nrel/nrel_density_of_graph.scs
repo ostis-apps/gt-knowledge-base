@@ -1,0 +1,58 @@
+sc_node_norole_relation -> nrel_density_of_graph;;
+nrel_density_of_graph => nrel_main_idtf: [плотность графа*](*<-lang_ru;;*);;
+nrel_density_of_graph => nrel_idtf: [density of graph*](*<-lang_en;;*);;
+
+nrel_density_of_graph <- rrel_key_sc_element:
+...(*	
+	<= nrel_using_constants: {
+		concept_graph;
+		rrel_vertex;
+		rrel_edge;
+		concept_number};;
+	=> nrel_main_idtf: [Опр(плотность графа*)] (* <- lang_ru;; *);;
+	<- sc_definition;;
+	<= nrel_sc_text_translation: ...(*
+						-> rrel_example: [Плотностью j(G) графа G называется максимальное число вершин наибольшего полного подграфа, содержащегося в данном графе.](*<- lang_ru;;*);;
+						*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+	*);;
+
+nrel_density_of_graph <- rrel_key_sc_element:
+...(*
+	=> nrel_main_idtf: [Утв(плотность графа*,граф)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: ...(*
+						-> rrel_example: [Для любого графа G выполняется неравенство
+j(G) ≤ c(G).](*<- lang_ru;;*);;
+						*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+	*);;
+
+
+nrel_density_of_graph -> rrel_example: ( .G => .3 );;
+.G <- concept_graph;;
+.3 <- concept_number;;
+
+
+nrel_density_of_graph => nrel_first_domain: concept_graph;;
+nrel_density_of_graph => nrel_second_domain: concept_number;;
+nrel_density_of_graph => nrel_definitional_domain: 
+	...
+	(*
+		<= nrel_association:
+				...(*
+					->concept_graph;;
+					->concept_number;;
+				*);;
+	*);;
+
+
+nrel_density_of_graph => nrel_arity_of_relations: 2(*<-concept_number;;*);;
+sc_node_norole_relation -> nrel_arity_of_relations;;
+nrel_arity_of_relations => nrel_main_idtf: [арность отношения*](*<-lang_ru;;*);;
+
+nrel_density_of_graph <- oriented_relation;;
+nrel_density_of_graph <- antireflexive_relation;;
+nrel_density_of_graph <- antisymmetric_relation;;
+nrel_density_of_graph <- antitransitive_relation;;
+

@@ -1,0 +1,42 @@
+sc_node_not_relation -> concept_levi_graph;;
+concept_levi_graph => nrel_main_idtf:[граф Леви](* <-lang_ru;; *);;
+concept_levi_graph => nrel_idtf:[Levi graph](* <- lang_en;; *);;
+
+concept_levi_graph <- rrel_key_sc_element:
+...(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр.(граф Леви)] (* <- lang_ru;; *);;
+		<=nrel_using_constants:
+			{
+				concept_graph;
+				concept_bipartite_graph
+			};;
+		<= nrel_sc_text_translation: ...(*
+				-> rrel_example: [Граф Ле́ви (также граф инциде́нтности) — двудольный граф, соответствующий структуре инцидентности. ](*<- lang_ru;;*);;
+			*);;
+*);;
+
+concept_levi_graph <- rrel_key_sc_element:
+	...(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [Утв.(граф Леви, двудольный граф)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...(*
+			-> rrel_example: [Граф Леви системы точек и линий обычно имеет обхват по меньшей мере шесть: любой цикл длины 4 должен соответствовать двум линиям, проходящим через те же самые две точки. Следовательно, любой двудольный граф с обхватом по меньшей мере шесть можно рассматривать как граф Леви абстрактной структуры инцидентности. ](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+concept_graph => nrel_inclusion:concept_levi_graph;;
+
+concept_levi_graph <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://pic/concept_levi_graph.png";;
+			*);;
+	*);;
+

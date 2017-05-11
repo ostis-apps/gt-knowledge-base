@@ -1,0 +1,57 @@
+sc_node_norole_relation -> nrel_coarseness;;
+nrel_coarseness => nrel_main_idtf: [крупность*](*<-lang_ru;;*);;
+nrel_coarseness => nrel_idtf: [coarseness*](*<-lang_en;;*);;
+
+nrel_coarseness <- rrel_key_sc_element:
+...(*	
+	<= nrel_using_constants: {
+		concept_graph;
+		concept_empty_set;
+		concept_unplanar_graph;
+		concept_number
+		};;
+	=> nrel_main_idtf: [Опр(крупность*)] (* <- lang_ru;; *);;
+	<- sc_definition;;
+	<= nrel_sc_text_translation: ...(*
+						-> rrel_example: [Крупность - наибольшее число непланарных подграфов, не пересекающихся по ребрам и содержащихся в данном графе. ](*<- lang_ru;;*);;
+						*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+
+	*);;
+
+nrel_coarseness <- rrel_key_sc_element:
+...(*
+	=> nrel_main_idtf: [Утв(крупность*)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: ...(*
+						-> rrel_example: [Другие названия крупности - зернистость, шероховатость.](*<- lang_ru;;*);;
+						*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+
+	*);;
+
+nrel_clique_number -> rrel_example: ( .G => .5 );;
+.G <- concept_graph;;
+.5 <- concept_number;;
+
+nrel_coarseness => nrel_first_domain: concept_graph;;
+nrel_coarseness => nrel_second_domain: concept_number;;
+nrel_coarseness => nrel_definitional_domain: 
+	...
+	(*
+		<= nrel_association:
+				...(*
+					->concept_graph;;
+					->concept_number;;
+				*);;
+	*);;
+
+
+nrel_coarseness => nrel_arity_of_relations: 2(*<-concept_number;;*);;
+sc_node_norole_relation -> nrel_arity_of_relations;;
+nrel_arity_of_relations => nrel_main_idtf: [арность отношения*](*<-lang_ru;;*);;
+
+nrel_coarseness <- oriented_relation;;
+nrel_coarseness <- antireflexive_relation;;
+nrel_coarseness <- antisymmetric_relation;;
+nrel_coarseness <- antitransitive_relation;;

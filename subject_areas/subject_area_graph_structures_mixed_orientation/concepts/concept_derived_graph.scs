@@ -1,0 +1,43 @@
+sc_node_not_relation -> concept_derived_graph;;
+concept_derived_graph => nrel_main_idtf:[производный граф](* <-lang_ru;; *);;
+concept_derived_graph => nrel_idtf:[derived graph](* <- lang_en;; *);;
+
+concept_derived_graph <- rrel_key_sc_element:
+...(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр.(производный граф)] (* <- lang_ru;; *);;
+		<=nrel_using_constants:
+			{
+				concept_graph;
+				rrel_edge;
+				rrel_vertex
+			};;
+		<= nrel_sc_text_translation: ...(*
+				-> rrel_example: [Производный граф - фактор-уграф, полученный из исходного стягиванием в вершины его максимальных интервалов. ](*<- lang_ru;;*);;
+			*);;
+*);;
+
+concept_derived_graph <- rrel_key_sc_element:
+	...(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [Утв.(производный граф,  k-производный граф)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...(*
+			-> rrel_example: [Частным случаем производного графа является k-производный граф. ](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+concept_graph => nrel_inclusion:concept_derived_graph;;
+
+concept_derived_graph <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://pic/derived_graph.png";;
+			*);;
+	*);;
+

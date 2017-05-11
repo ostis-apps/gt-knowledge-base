@@ -1,0 +1,51 @@
+sc_node_not_relation -> concept_homeomorphical_graphs;;
+concept_homeomorphical_graphs => nrel_main_idtf:[гомеоморфные графы](* <-lang_ru;; *);;
+concept_homeomorphical_graphs => nrel_idtf:[homeomorphical graphs](* <- lang_en;; *);;
+
+concept_homeomorphical_graphs <- rrel_key_sc_element:
+...(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр.(гомеоморфные графы)] (* <- lang_ru;; *);;
+		<=nrel_using_constants:
+			{
+				concept_graph;
+				rrel_edge;
+				rrel_vertex
+			};;
+		<= nrel_sc_text_translation: ...(*
+				-> rrel_example: [Гомеоморфные графы — графы, получаемые из одного графа с помощью последовательности подразбиений ребер. ](*<- lang_ru;;*);;
+			*);;
+*);;
+
+concept_homeomorphical_graphs <- rrel_key_sc_element:
+	...(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [Утв.(гомеоморфные графы, простой цикл*)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...(*
+			-> rrel_example: [Два простых цикла гомеоморфны.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+concept_homeomorphical_graphs <- rrel_key_sc_element:
+	...(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [Утв.(гомеоморфные графы, планарный граф, непланарный граф)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...(*
+			-> rrel_example: [Два графа гомеоморфны, если они либо оба планарны, либо оба непланарны.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+concept_graph  => nrel_inclusion:concept_homeomorphical_graphs;;
+
+concept_homeomorphical_graphs <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://pic/concept_homeomorphical_graphs.png";;
+			*);;
+	*);;
+

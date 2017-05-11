@@ -1,0 +1,52 @@
+sc_node_norole_relation -> nrel_matroid_cycle_space;;
+nrel_matroid_cycle_space => nrel_main_idtf: [пространство циклов матроида*](*<-lang_ru;;*);;
+nrel_matroid_cycle_space => nrel_idtf: [matroid cycle space*](*<-lang_en;;*);;
+
+nrel_matroid_cycle_space <- rrel_key_sc_element:
+...(*	
+	<= nrel_using_constants: {
+		concept_matroid;
+		concept_empty_set;
+		concept_number
+		};;
+	=> nrel_main_idtf: [Опр(пространство коциклов матроида*)] (* <- lang_ru;; *);;
+	<- sc_definition;;
+	<= nrel_sc_text_translation: ...(*
+						-> rrel_example: [Пространство циклов матроида для матроида M - множество L, содержащее все циклы матроида M, объединения попарно непересекающихся циклов и пустое множество. ](*<- lang_ru;;*);;
+						*);;
+
+	*);;
+
+nrel_matroid_cycle_space <- rrel_key_sc_element:
+...(*
+	=> nrel_main_idtf: [Утв(цикл*, матроид)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: ...(*
+						-> rrel_example: [Матроид циклов графа можно предстаить с помощью матрицы инцидентности.](*<- lang_ru;;*);;
+						*);;
+
+	*);;
+
+
+nrel_matroid_cycle_space => nrel_first_domain: concept_matroid;;
+nrel_matroid_cycle_space => nrel_second_domain: concept_set;;
+nrel_matroid_cycle_space => nrel_definitional_domain: 
+	...
+	(*
+		<= nrel_association:
+				...(*
+					->concept_matroid;;
+					->concept_set;;
+				*);;
+	*);;
+
+
+nrel_matroid_cycle_space => nrel_arity_of_relations: 2(*<-concept_number;;*);;
+sc_node_norole_relation -> nrel_arity_of_relations;;
+nrel_arity_of_relations => nrel_main_idtf: [арность отношения*](*<-lang_ru;;*);;
+
+nrel_matroid_cycle_space <- oriented_relation;;
+nrel_matroid_cycle_space <- antireflexive_relation;;
+nrel_matroid_cycle_space <- antisymmetric_relation;;
+nrel_matroid_cycle_space <- antitransitive_relation;;
+

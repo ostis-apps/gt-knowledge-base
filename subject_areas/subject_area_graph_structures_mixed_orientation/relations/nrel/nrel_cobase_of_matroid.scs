@@ -1,0 +1,49 @@
+sc_node_norole_relation -> nrel_cobase_of_matroid;;
+nrel_cobase_of_matroid => nrel_main_idtf: [кобаза матроида*](*<-lang_ru;;*);;
+nrel_cobase_of_matroid => nrel_idtf: [cobase of a matroid*](*<-lang_en;;*);;
+
+nrel_cobase_of_matroid <- rrel_key_sc_element:
+...(*	
+	<= nrel_using_constants: {
+		concept_matroid
+		};;
+	=> nrel_main_idtf: [Опр(кобаза матроида*)] (* <- lang_ru;; *);;
+	<- sc_definition;;
+	<= nrel_sc_text_translation: ...(*
+						-> rrel_example: [Кобаза матроида - дополнение  базы  матроида. ](*<- lang_ru;;*);;
+						*);;
+
+	*);;
+
+nrel_cobase_of_matroid <- rrel_key_sc_element:
+...(*
+	=> nrel_main_idtf: [Утв(кобаза матроида*,коцикл матроида*,двойственный матроид)] (* <- lang_ru;; *);;
+	<- sc_statement;;
+	<= nrel_sc_text_translation: ...(*
+						-> rrel_example: [Поскольку кобазы, коциклы и т. д. являются базами, циклами и т. д. двойственного матроида, то для любого утверждения о циклах, базах и т. д. матроида сущест­вует аналогичное двойственное утверждение о двойствен­ных объектах — коциклах, кобазах и т. д. Если одно из этих утверждений верно для всех матроидов, то верно и двойственное утверждение.](*<- lang_ru;;*);;
+						*);;
+
+	*);;
+
+
+nrel_cobase_of_matroid => nrel_first_domain: concept_matroid;;
+nrel_cobase_of_matroid => nrel_second_domain: concept_set;;
+nrel_cobase_of_matroid => nrel_definitional_domain: 
+	...
+	(*
+		<= nrel_association:
+				...(*
+					->concept_matroid;;
+					->concept_set;;
+				*);;
+	*);;
+
+
+nrel_cobase_of_matroid => nrel_arity_of_relations: 2(*<-concept_number;;*);;
+sc_node_norole_relation -> nrel_arity_of_relations;;
+nrel_arity_of_relations => nrel_main_idtf: [арность отношения*](*<-lang_ru;;*);;
+
+nrel_cobase_of_matroid <- oriented_relation;;
+nrel_cobase_of_matroid <- antireflexive_relation;;
+nrel_cobase_of_matroid <- antisymmetric_relation;;
+nrel_cobase_of_matroid <- antitransitive_relation;;

@@ -1,0 +1,51 @@
+sc_node_not_relation -> concept_heawood_graph;;
+concept_heawood_graph => nrel_main_idtf:[граф Хивуда](* <-lang_ru;; *);;
+concept_heawood_graph => nrel_idtf:[Heawood graph](* <- lang_en;; *);;
+
+concept_heawood_graph <- rrel_key_sc_element:
+...(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр.(граф Хивуда)] (* <- lang_ru;; *);;
+		<=nrel_using_constants:
+			{
+				concept_graph;
+				rrel_edge;
+				rrel_vertex
+			};;
+		<= nrel_sc_text_translation: ...(*
+				-> rrel_example: [Граф Хивуда — ненаправленный граф с 14 вершинами и 21 ребром, названый в честь Перси Джона Хивуда. ](*<- lang_ru;;*);;
+			*);;
+*);;
+
+concept_heawood_graph <- rrel_key_sc_element:
+	...(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [Утв.(граф Хивуда, тороидальный граф)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...(*
+			-> rrel_example: [Граф Хивуда является тороидальным графом, то есть его можно вложить без пересечений в тор. Одно из вложений такого типа размещает вершины и рёбра графа в трёхмерном евклидовом пространстве в виде множества вершин и рёбер невыпуклого многогранника с топологией тора, многогранника Силаши.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+concept_heawood_graph <- rrel_key_sc_element:
+	...(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [Утв.(граф Хивуда, граф Леви)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...(*
+			-> rrel_example: [Граф Хивуда является также графом Леви поверхности Фано, то есть графом, представляющим инцидентность точек и прямых в этой геометрии.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+concept_graph => nrel_inclusion:concept_heawood_graph;;
+
+concept_heawood_graph <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://pic/concept_heawood_graph.png";;
+			*);;
+	*);;
+

@@ -1,0 +1,51 @@
+sc_node_not_relation -> concept_graph_of_Hamming;;
+concept_graph_of_Hamming => nrel_main_idtf:[граф Хэмминга](* <-lang_ru;; *);;
+concept_graph_of_Hamming => nrel_idtf:[graph of Hamming](* <- lang_en;; *);;
+
+concept_graph_of_Hamming <- rrel_key_sc_element:
+...(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр.(граф Хэмминга)] (* <- lang_ru;; *);;
+		<=nrel_using_constants:
+			{
+				concept_graph;
+				rrel_edge;
+				rrel_vertex
+			};;
+		<= nrel_sc_text_translation: ...(*
+				-> rrel_example: [Графы Хэмминга — это специальный класс графов, названных именем Ричарда Хэмминга и используемых в некоторых областях математики и информатики. ](*<- lang_ru;;*);;
+			*);;
+*);;
+
+concept_graph_of_Hamming <- rrel_key_sc_element:
+	...(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [Утв.(граф Хэмминга, вершина')] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...(*
+			-> rrel_example: [Две вершины смежны, если они отличаются ровно одной координатой, то есть если расстояние Хэмминга равно единице.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+concept_graph_of_Hamming <- rrel_key_sc_element:
+	...(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [Утв.(граф Хэмминга, прямое произведение графов*)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...(*
+			-> rrel_example: [Граф Хэмминга H(d,q) равен прямому произведению d полных графов.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+concept_graph  => nrel_inclusion:concept_graph_of_Hamming;;
+
+concept_graph_of_Hamming <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://pic/concept_hamming's_graph.png";;
+			*);;
+	*);;
+

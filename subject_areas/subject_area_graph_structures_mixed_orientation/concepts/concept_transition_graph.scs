@@ -1,0 +1,44 @@
+sc_node_not_relation -> concept_transition_graph;;
+concept_transition_graph => nrel_main_idtf:[граф переходов](* <-lang_ru;; *);;
+concept_transition_graph => nrel_idtf: [transition graph](* <- lang_en;; *);;
+
+concept_transition_graph <- rrel_key_sc_element:
+		...(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр.(граф переходов)] (* <- lang_ru;; *);;
+		<=nrel_using_constants:
+			{
+				concept_graph;
+				rrel_edge;
+				rrel_vertex
+			};;
+		<= nrel_sc_text_translation: 
+		...(*
+				-> rrel_example: [Граф переходов — графическое представление множества состояний и функции переходов. Представляет собой размеченный  граф, вершины которого — состояния КА, дуги — переходы из одного состояния в другое, а метки дуг — символы, по которым осуществляется переход из одного состояния в другое.](*<- lang_ru;;*);;
+			*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+*);;
+
+concept_transition_graph <- rrel_key_sc_element:
+	...(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [Утв.(граф переходов)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...(*
+			-> rrel_example: [Если переход из состояния q1 в q2 может быть осуществлен по одному из нескольких символов, то все они должны быть надписаны над дугой диаграммы.](*<- lang_ru;;*);;
+			*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+*);;
+
+concept_graph => nrel_inclusion:concept_transition_graph;;
+
+concept_transition_graph <- rrel_key_sc_element: 
+	...(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://pic/concept_transition_graph.png";;
+			*);;
+	*);;
+

@@ -1,0 +1,54 @@
+sc_node_not_relation -> concept_compound_graph;;
+concept_compound_graph => nrel_main_idtf:[составной граф](* <-lang_ru;; *);;
+concept_compound_graph => nrel_idtf:[compound graph](* <- lang_en;; *);;
+
+concept_compound_graph <- rrel_key_sc_element:
+...(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр.(составной граф)] (* <- lang_ru;; *);;
+		<=nrel_using_constants:
+			{
+				concept_graph;
+				rrel_edge;
+				rrel_vertex
+			};;
+		<= nrel_sc_text_translation: ...(*
+				-> rrel_example: [Составной граф — граф, который представим в виде декартова произведения двух нетривиальных графов. ](*<- lang_ru;;*);;
+			*);;
+*);;
+
+concept_compound_graph <- rrel_key_sc_element:
+	...(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [Утв.(составной граф,вершина',орграф,дерево, подграф*)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...(*
+			-> rrel_example: [Составной граф G = (GC, TI) состоит из обычного ориентированного графа GC = (B∪S, EG) и дерева вложенностей ТI = (B∪S, ET). При этом множество В содержит листья дерева, называемые базовыми вершинами(base nodes), а множество S содержит внутренние вершины дерева, называемые подграфами (subgraphs).](*<- lang_ru;;*);;
+			*);;
+*);;
+
+concept_compound_graph <- rrel_key_sc_element:
+	...(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [Утв.(составной граф,вершина',ребро*,дерево, подграф*)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...(*
+			-> rrel_example: [В составном графе ребра графа GC соответствуют отношению следования между базовыми вершинами и подграфами, а ребра дерева TI изображает отношение вложенности между 
+базовыми вершинами и подграфами. Подграфы могут содержать другие подграфы или базовые вершины.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+
+concept_graph  => nrel_inclusion:concept_compound_graph;;
+
+concept_compound_graph <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://pic/concept_compound_graph.png";;
+			*);;
+	*);;
+

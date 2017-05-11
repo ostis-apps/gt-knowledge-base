@@ -1,0 +1,43 @@
+sc_node_not_relation -> concept_collapsible_graph;;
+concept_collapsible_graph => nrel_main_idtf:[разборный граф](* <-lang_ru;; *);;
+concept_collapsible_graph => nrel_idtf: [collapsible graph](* <- lang_en;; *);;
+
+concept_collapsible_graph <- rrel_key_sc_element:
+		...(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр.(разборный граф)] (* <- lang_ru;; *);;
+		<=nrel_using_constants:
+			{
+				concept_graph;
+				rrel_edge;
+				rrel_vertex
+			};;
+		<= nrel_sc_text_translation: 
+		...(*
+				-> rrel_example: [Разборный граф - уграф G, который может быть преобразован в тривиальный итеративным применением следующих двух преобразований:  - удаление петли и слиянием двух вершин.  ](*<- lang_ru;;*);;
+			*);;
+*);;
+
+concept_collapsible_graph <- rrel_key_sc_element:
+	...(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [Утв.(разборный граф)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...(*
+			-> rrel_example: [Преобразование  определено для любой вершины p уграфа G и состоит в удалении дуги  из G. Преобразование  определено только для такой пары вершин p и q, что p - единственный предшественник q; оно удаляет p и  из G и заменяет в нем дуги, заходящие в p, на дуги, заходящие в q. ](*<- lang_ru;;*);;
+			*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+*);;
+
+concept_graph => nrel_inclusion:concept_collapsible_graph;;
+
+concept_collapsible_graph <- rrel_key_sc_element: 
+	...(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://pic/concept_collapsible_graph.png";;
+			*);;
+	*);;
+

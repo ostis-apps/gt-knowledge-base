@@ -1,0 +1,18 @@
+nrel_clique <- rrel_key_sc_element: clique_problem
+			(*			
+
+		<- sc_statement;;	
+		<=nrel_sc_text_translation:
+		...
+			(*
+				-> rrel_example: 
+				 [Заданы граф G и натуральное число c; установить, верно ли неравенство w(G)>=c, где w(G) - кликовое число (плотность).  ] (*<-lang_ru;;*);;
+<= nrel_using_constants:
+							{
+								concept_graph;
+								concept_number;
+								nrel_clique_number
+							};;	
+			*);;
+		*);;
+clique_problem => nrel_main_idtf:[проблема клики](*<-lang_ru;;*);;

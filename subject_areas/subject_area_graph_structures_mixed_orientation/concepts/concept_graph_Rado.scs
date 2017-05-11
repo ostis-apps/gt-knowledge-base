@@ -1,0 +1,53 @@
+sc_node_not_relation -> concept_graph_Rado;;
+concept_graph_Rado => nrel_main_idtf:[граф Радо](* <-lang_ru;; *);;
+concept_graph_Rado => nrel_idtf:[graph Rado](* <- lang_en;; *);;
+
+concept_graph_Rado <- rrel_key_sc_element:
+...(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр.(граф Радо)] (* <- lang_ru;; *);;
+		<=nrel_using_constants:
+			{
+				concept_graph;
+				rrel_edge;
+				rrel_vertex
+			};;
+		<= nrel_sc_text_translation: ...(*
+				-> rrel_example: [В теории графов граф Радо — это уникальный (с точностью до изоморфизма) счётный граф R, такой, что для любого конечного графа G и его вершины v любое вложение G − v в R в качестве порождённого подграфа может быть расширено до вложения G в R. ](*<- lang_ru;;*);;
+			*);;
+*);;
+
+concept_graph_Rado <- rrel_key_sc_element:
+	...(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [Утв.(граф Радо,порождённый подграф*)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...(*
+			-> rrel_example: [Граф Радо содержит все конечные и счётные бесконечные графы в качестве порождённых подграфов.](*<- lang_ru;;*);;
+			*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+*);;
+
+concept_graph_Rado <- rrel_key_sc_element:
+	...(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [Утв.(граф Радо,случайный граф,граф Эрдёша-Реньи)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...(*
+			-> rrel_example: [Граф Радо известен также под именами случайный граф и граф Эрдёша-Реньи.](*<- lang_ru;;*);;
+			*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+*);;
+
+concept_graph => nrel_inclusion:concept_graph_Rado;;
+
+concept_graph_Rado <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://pic/concept_graph_Rado.png";;
+			*);;
+	*);;
+
