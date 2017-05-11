@@ -1,0 +1,55 @@
+sc_node_not_relation->nrel_centroid;;
+
+nrel_centroid => nrel_main_idtf:
+	[центроид*](* <-lang_ru;; *);
+	[centroid*](* <-lang_en;; *);;
+
+nrel_centroid <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- sc_definition;;
+		<= nrel_using_constants:
+						{
+							rrel_centroid_vertex;
+							concept_tree;
+							set
+						};;
+		=> nrel_main_idtf: [Определение: центроид] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: centroid] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Центроид - множество центроидных вершин дерева.](*<- lang_ru;;*);;
+		*);;
+*);;
+
+
+nrel_centroid <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: о центроиде.] (* <- lang_ru;; *);;
+		-> rrel_key_sc_element: concept_node;;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Центроид состоит или из одной вершины, или из двух смежных вершин.](*<- lang_ru;;*);;
+
+			*);;
+		*);;
+
+		
+nrel_centroid <- binary_relation;;
+nrel_centroid <-oriented_relation;;
+nrel_centroid => nrel_first_domain: concept_graph;;
+nrel_centroid => nrel_second_domain: set;;
+nrel_centroid<= nrel_definitional_domain: 
+	...
+	(*
+	<= nrel_combination: 
+		{
+		concept_graph;
+		set
+		};;
+	*);;
+		

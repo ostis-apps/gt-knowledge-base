@@ -1,0 +1,41 @@
+sc_node_not_relation -> concept_cogwheel;;
+concept_cogwheel
+
+	=> nrel_main_idtf: 
+		[шестеренка] (* <-lang_ru;; *);
+		[cogwheel] (* <-lang_en;; *);
+
+	<-rrel_key_sc_element:
+		...  
+		(*<-sc_definition;;	
+		<= nrel_using_constants: {
+				rrel_vertex;
+				concept_graph;
+				concept_wheel;
+				concept_square_graph
+			};;
+		=> nrel_main_idtf: [Опр.(шестеренка)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example: 
+				[Шестерёнка — граф, получаемый из колеса путём размещения дополнительных вершин между каждой парой смежных вершин периметра.] (*<-lang_ru;;*);;
+			*);;
+		*);;
+
+
+concept_cogwheel <-rrel_key_sc_element:
+	... 
+	(*
+	=>nrel_main_idtf:[Утв.(Шестеренка) ](*<-lang_ru;;*);;
+	<- sc_statement;;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example: [Шестерёнки принадлежат семейству рамочных графов.](*<-lang_ru;;*);;
+		*);;
+	*);;
+
+concept_graph => nrel_inclusion: concept_cogwheel;;
+concept_square_graph => nrel_inclusion: concept_cogwheel;;
+concept_wheel => nrel_inclusion: concept_cogwheel;;

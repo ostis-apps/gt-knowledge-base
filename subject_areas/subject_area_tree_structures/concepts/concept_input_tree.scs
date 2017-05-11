@@ -1,0 +1,33 @@
+sc_node_not_relation -> concept_input_tree;;
+concept_input_tree => nrel_main_idtf:
+	[входящее дерево] (* <- lang_ru;; *);
+	[input tree] (* <- lang_en;; *);;
+	
+concept_input_tree <- rrel_key_sc_element: 
+	...  
+	(*
+	=> nrel_main_idtf: [Определение: входящее дерево] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Definition: input tree](* <- lang_en;; *);;	
+	<- sc_definition;; 
+        <= nrel_using_constants:
+					{
+					concept_directed_graph;
+					concept_tree;
+					nrel_spanning_tree;
+					concept_oredge;
+					concept_node;
+					rrel_tree_root
+					};;
+	<= nrel_sc_text_translation: 
+		... 
+		(*
+		-> rrel_example: 
+		[Входящее дерево - ордерево (в частности, оркаркас), все дуги которого ориентированы так, что его корень достижим из любой вершины (ориентированы к корню).](* <- lang_ru;; *);;
+
+		*);;
+	*);;
+
+
+
+concept_tree => nrel_inclusion: concept_input_tree;;	
+concept_directable_graph => nrel_inclusion: concept_input_tree;;	

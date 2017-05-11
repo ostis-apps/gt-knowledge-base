@@ -1,0 +1,53 @@
+sc_node_not_relation->nrel_brother_of_a_vertex;;
+
+nrel_brother_of_a_vertex => nrel_main_idtf:
+	[брат вершины*](* <-lang_ru;; *);
+	[brother of a vertex*](* <-lang_en;; *);;
+
+nrel_brother_of_a_vertex <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- sc_definition;;
+		<= nrel_using_constants:
+						{
+							concept_tree;
+							concept_node
+						};;
+		=> nrel_main_idtf: [Определение: брат вершины] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: weight of edge] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Брат вешины v вершина w ордерева, имеющая того же предка, что и v.](*<- lang_ru;;*);;
+		*);;
+*);;
+
+
+nrel_brother_of_a_vertex <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: о братских вершинах.] (* <- lang_ru;; *);;
+		-> rrel_key_sc_element: concept_node;;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Братья вершины имеют одного и того же предка.](*<- lang_ru;;*);;
+
+			*);;
+		*);;
+
+		
+nrel_brother_of_a_vertex <- binary_relation;;
+nrel_brother_of_a_vertex <- notoriented_relation;;
+nrel_brother_of_a_vertex => nrel_first_domain: concept_node;;
+nrel_brother_of_a_vertex => nrel_second_domain: concept_node;;
+nrel_brother_of_a_vertex<= nrel_definitional_domain: 
+	...
+	(*
+	<= nrel_combination: 
+		{
+		concept_node
+		};;
+	*);;
+		

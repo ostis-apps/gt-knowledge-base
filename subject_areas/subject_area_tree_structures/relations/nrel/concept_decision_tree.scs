@@ -1,0 +1,39 @@
+sc_node_not_relation -> concept_decision_tree;;
+concept_decision_tree => nrel_main_idtf:
+	[дерево решений] (* <- lang_ru;; *);
+	[decision tree] (* <- lang_en;; *);;
+	
+concept_decision_tree <- rrel_key_sc_element: 
+	...  
+	(*
+	=> nrel_main_idtf: [Определение: дерево решений] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Definition: decision tree](* <- lang_en;; *);;	
+	<- sc_definition;; 
+        <= nrel_using_constants:
+					{
+					concept_binary_tree;
+					rrel_tree_leaf;
+					nrel_subtree
+					};;
+	<= nrel_sc_text_translation: 
+		... 
+		(*
+		-> rrel_example: 
+		[Дерево решений - бинарное дерево, в котором каждая вершина, отличная от листа, представляет решение. В зависимости от решения, принятого в такой вершине, управление передается левому или правому (относительно этой вершины) поддереву. Результатом принятия последовательности решений, представленных вершинами, начиная с корня, является лист дерева.](* <- lang_ru;; *);;
+		*);;
+	*);;
+
+	
+concept_decision_tree <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_decision_tree.png";;
+			*);;
+	*);;
+
+concept_binary_tree => nrel_inclusion: concept_decision_tree;;	

@@ -1,0 +1,38 @@
+sc_node_not_relation -> concept_justified_tree;;
+concept_justified_tree => nrel_main_idtf:
+	[выровненное дерево] (* <- lang_ru;; *);
+	[justified tree] (* <- lang_en;; *);;
+	
+concept_justified_tree <- rrel_key_sc_element: 
+	...  
+	(*
+	=> nrel_main_idtf: [Определение: выровненное дерево] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Definition: justified tree](* <- lang_en;; *);;	
+	<- sc_definition;; 
+      	<= nrel_using_constants:
+					{
+					concept_tree;
+					rrel_tree_leaf
+					};;
+	
+	<= nrel_sc_text_translation: 
+		... 
+		(*
+		-> rrel_example: 
+		[Выровненное дерево - ордерево, у которого все листья расположены на одном уровне.](* <- lang_ru;; *);;
+		*);;
+	*);;
+
+concept_justified_tree <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_justified_tree.jpg";;
+			*);;
+	*);;
+
+concept_tree => nrel_inclusion: concept_justified_tree;;

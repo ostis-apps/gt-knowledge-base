@@ -1,0 +1,31 @@
+sc_node_norole_relation ->nrel_peninsula;; 
+binary_relation -> nrel_peninsula;;
+oriented_relation ->nrel_peninsula;;
+
+nrel_peninsula
+=> nrel_main_idtf:
+	[полуостров*] (* <-lang_ru;; *);
+	[peninsula*] (* <-lang_en;; *);
+
+<-rrel_key_sc_element:
+	...
+	(*
+	<-sc_definition;;
+	<= nrel_using_constants:
+	{				
+		nrel_subgraph;
+		concept_bridge		
+	};;
+	=> nrel_main_idtf: [Опр.(полуостров*)] (* <- lang_ru;; *);;
+	<=nrel_sc_text_translation:
+		...
+		(*
+		-> rrel_example:
+		[Подграф, соединенный с остальной частью графа мостом.] (*<-lang_ru;;*);;	
+		*);;
+	*);
+
+ => nrel_definitional_domain:concept_graph;
+ => nrel_first_domain: concept_graph;
+ => nrel_second_domain: concept_graph;;
+

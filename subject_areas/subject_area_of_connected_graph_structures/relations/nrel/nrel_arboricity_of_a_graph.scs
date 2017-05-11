@@ -1,0 +1,56 @@
+sc_node_not_relation->nrel_arboricity_of_a_graph;;
+
+nrel_arboricity_of_a_graph => nrel_main_idtf:
+	[древесность графа*](* <-lang_ru;; *);
+	[arboricity of the graph](* <-lang_en;; *);;
+
+nrel_arboricity_of_a_graph <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- sc_definition;;
+    	        <= nrel_using_constants:
+						{
+							number;
+                                                        concept_arg;
+							concept_spanning_tree;
+							concept_forest;
+							nrel_basic_decomposition
+						};;
+		=> nrel_main_idtf: [Определение: древесность графа] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: arboricity of the graph] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Древесность графа наименьшее число непересекающихся по ребрам остовных лесов, на которые можно разложить граф.](*<- lang_ru;;*);;
+		*);;
+*);;
+
+
+nrel_arboricity_of_a_graph <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: о древесности графа.] (* <- lang_ru;; *);;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Древесность графа показывает наименьшее число непересекающихся по ребрам остовных лесов, на которые можно разложить граф.](*<- lang_ru;;*);;
+
+			*);;
+		*);;
+
+		
+nrel_arboricity_of_a_graph <- binary_relation;;
+nrel_arboricity_of_a_graph <- oriented_relation;;
+nrel_arboricity_of_a_graph => nrel_first_domain: concept_graph;;
+nrel_arboricity_of_a_graph => nrel_second_domain: number;;
+nrel_arboricity_of_a_graph<= nrel_definitional_domain: 
+	...
+	(*
+	<= nrel_combination: 
+		{
+		concept_graph;
+		number
+		};;
+	*);;
+		

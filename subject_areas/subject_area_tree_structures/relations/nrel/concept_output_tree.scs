@@ -1,0 +1,30 @@
+sc_node_not_relation -> concept_output_tree;;
+concept_output_tree => nrel_main_idtf:
+	[выходящее дерево] (* <- lang_ru;; *);
+	[output tree] (* <- lang_en;; *);;
+	
+concept_output_tree <- rrel_key_sc_element: 
+	...  
+	(*
+	=> nrel_main_idtf: [Определение: выходящее дерево] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Definition: output tree](* <- lang_en;; *);;	
+	<- sc_definition;; 
+        <= nrel_using_constants:
+					{
+					concept_directed_graph;
+					concept_tree;
+					nrel_spanning_tree;
+					concept_oredge;
+					concept_node;
+					rrel_tree_root
+					};;
+	<= nrel_sc_text_translation: 
+		... 
+		(*
+		-> rrel_example: 
+		[Выходящее дерево - ордерево (в частности, оркаркас), все дуги которого ориентированы так, что любая вершина достижима из корня (ориентированы от корня).](* <- lang_ru;; *);;
+
+		*);;
+	*);;
+
+concept_tree => nrel_inclusion: concept_output_tree;;

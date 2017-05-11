@@ -1,0 +1,45 @@
+sc_node_norole_relation ->nrel_annular_sum_of_graphs;;
+sc_relation -> nrel_annular_sum_of_graphs;;
+quasybinary_relation -> nrel_annular_sum_of_graphs;;
+oriented_relation -> nrel_annular_sum_of_graphs;;
+
+nrel_annular_sum_of_graphs
+	=> nrel_main_idtf: 
+		[кольцевая сумма графа*] (* <-lang_ru;; *);
+		[annular sum of the graph* ] (* <-lang_en;; *);
+<-rrel_key_sc_element:
+		...  
+		(*<-sc_definition;;
+		<= nrel_using_constants:
+							{
+								concept_graph;
+								rrel_node;
+								rrel_edge
+							};;	
+		=> nrel_main_idtf: [Опр.(кольцевая сумма графа)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example: 
+[Кольцевой суммой графов G1 и G2 называется граф , порожденный на множестве ребер , присутствующих в одном графе и отсутствующих в другом. ](*<-lang_ru;;*);;	
+			*);;
+		*);
+
+			
+
+=> nrel_definitional_domain:concept_graph;
+ => nrel_first_domain: 	concept_graph;
+ => nrel_third_domain: 	concept_graph;
+ => nrel_second_domain: concept_graph;
+
+<- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+			"file://contents/nrel_annular_sum_of_graphs.png";;
+			*);;
+	*);;
