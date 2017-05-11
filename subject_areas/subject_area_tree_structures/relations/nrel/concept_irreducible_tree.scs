@@ -1,0 +1,38 @@
+sc_node_not_relation -> concept_irreducible_tree;;
+concept_irreducible_tree
+
+	=> nrel_main_idtf: 
+		[несводимое дерево] (* <-lang_ru;; *);
+		[irreducible tree] (* <-lang_en;; *);
+
+	<-rrel_key_sc_element:
+		...  
+		(*<-sc_definition;;
+		<= nrel_using_constants: {
+				rrel_vertex;
+				concept_tree;
+				nrel_vertex_degree
+			};;
+		=> nrel_main_idtf: [Опр.(несводимое дерево)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example: 
+				[Несводимым называется дерево, в котором нет вершин степени 2.] (*<-lang_ru;;*);;
+			*);;
+		*);
+		
+
+
+	<- rrel_key_sc_element: 
+        ... 
+		(*
+		<- sc_explanation;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Несводимое дерево принадлежат семейству деревьев.] (* <- lang_ru;; *);;
+			*);;
+		*);;
+
+concept_tree => nrel_inclusion: concept_irreducible_tree;;

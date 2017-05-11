@@ -1,0 +1,53 @@
+sc_node_norole_relation->nrel_the_order_of_bramle;;
+
+nrel_the_order_of_bramle => nrel_main_idtf:
+	[порядок ежевики*](* <-lang_ru;; *);
+	[number of the blackberry*](* <-lang_en;; *);;
+
+nrel_the_order_of_bramle <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- sc_definition;;
+		<= nrel_using_constants:
+						{
+						set;
+                                                nrel_dimension_set;
+						nrel_subgraph;
+						nrel_intersection
+						};;
+		=> nrel_main_idtf: [Определение: порядок ежевики] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: number of the blackberry] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[ Порядок ежевики — это наименьший размер множества вершин G, которое имеет непустое пересечение с каждым подграфом ежевики. ](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[The order of a bramble is the smallest size of a hitting set, a set of vertices of G that has a nonempty intersection with each of the subgraphs. ](*<- lang_en;;*);;
+		*);;
+		
+*);;
+
+
+
+nrel_the_order_of_bramle <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: ежевики используются для описания древесной ширины графа.] (* <- lang_ru;; *);;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Порядок ежевики используются для описания древесной ширины графа.](*<- lang_ru;;*);;
+
+			*);;
+			<= nrel_using_constants:
+					{
+						concept_tree_width
+                                               
+					};;	
+		*);;
+		
+nrel_the_order_of_bramle <- binary_relation;;
+nrel_the_order_of_bramle <- oriented_relation;;
+nrel_the_order_of_bramle => nrel_first_domain: number;;
+nrel_the_order_of_bramle => nrel_second_domain: set;;

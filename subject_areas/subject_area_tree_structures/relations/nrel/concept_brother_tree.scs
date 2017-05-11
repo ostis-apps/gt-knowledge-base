@@ -1,0 +1,28 @@
+sc_node_not_relation -> concept_brother_tree;;
+concept_brother_tree => nrel_main_idtf:
+	[братское дерево] (* <- lang_ru;; *);
+	[brother tree] (* <- lang_en;; *);;
+	
+concept_brother_tree <- rrel_key_sc_element: 
+	...  
+	(*
+	=> nrel_main_idtf: [Определение: братское дерево] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Definition: brother tree](* <- lang_en;; *);;	
+	<- sc_definition;; 
+	<= nrel_using_constants:
+					{
+					concept_binary_tree;
+					concept_leaf_vertex;
+					nrel_brother_of_a_vertex
+					};;
+	<= nrel_sc_text_translation: 
+		... 
+		(*
+		-> rrel_example: 
+		[бинарное дерево, у которого все висячие вершины находятся на одном и том же уровне и каждая вершина x с одним потомком имеет брата с двумя сыновьями. Слова (ключи) хранятся во внутренних вершинах с двумя сыновьями.](* <- lang_ru;; *);;
+
+		*);;
+	*);;
+
+
+concept_binary_tree => nrel_inclusion: concept_brother_tree;;	

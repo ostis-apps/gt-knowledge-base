@@ -1,0 +1,62 @@
+sc_node_not_relation -> nrel_tree_width;;
+nrel_tree_width => nrel_main_idtf:
+	[древесная ширина*] (* <- lang_ru;; *);
+	[wood width] (* <- lang_en;; *);;
+	
+nrel_tree_width <- rrel_key_sc_element: 
+	...  
+	(*
+	=> nrel_main_idtf: [Определение: древесная ширина] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Definition: wood width](* <- lang_en;; *);;	
+	<- sc_definition;; 
+	<= nrel_using_constants:
+					{
+					concept_undirected_graph;
+					number;
+                                        concept_graph;
+					nrel_tree_decomposition;
+                                        nrel_clique;
+					concept_chordal_graph;
+					nrel_bramble;
+					nrel_subgraph
+					};;
+	<= nrel_sc_text_translation: 
+		... 
+		(*
+		-> rrel_example: 
+		[В теории графов древесная ширина неориентированного графа — это число, ассоциированное с графом. Ширину дерева можно определить несколькими эквивалентными путями: как размер наибольшего множества вершин в древесном разложении, как размер наибольшей клики в хордальном дополнении графа или как максимальный порядок ежевики, набора связных подграфов, которые касаются друг друга.](* <- lang_ru;; *);;
+		-> rrel_example: 
+                 [In graph theory, the treewidth of an undirected graph is a number associated with the graph. Treewidth may be defined in several equivalent ways: from the size of the largest vertex set in a tree decomposition of the graph, from the size of the largest clique in a chordal completion of the graph or from the maximum order of a bramble, a collection of connected subgraphs that all touch each other.] (* <-lang_en;; *);;
+		*);;
+	*);;
+
+
+nrel_tree_width <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: о  ширине дерева.] (* <- lang_ru;; *);;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Ширину дерева можно определить несколькими эквивалентными путями: как размер наибольшего множества вершин в древесном разложении, как размер наибольшей клики в хордальном дополнении графа или как максимальный порядок ежевики, набора связных подграфов, которые касаются друг друга.](*<- lang_ru;;*);;
+
+			*);;
+		*);;
+
+		
+nrel_tree_width <- binary_relation;;
+nrel_tree_width <- oriented_relation;;
+nrel_tree_width => nrel_first_domain: concept_graph;;
+nrel_tree_width => nrel_second_domain: number;;
+nrel_tree_width<= nrel_definitional_domain: 
+	...
+	(*
+	<= nrel_combination: 
+		{
+		concept_graph;
+		number
+		};;
+	*);;
+
+

@@ -1,0 +1,25 @@
+sc_node_not_relation -> concept_reproduction_graph;;
+concept_reproduction_graph => nrel_main_idtf:
+	[граф воспроизведения] (* <- lang_ru;; *);
+	[reproduction graph] (* <- lang_en;; *);;
+	
+concept_reproduction_graph <- rrel_key_sc_element: 
+	...  
+	(*
+	=> nrel_main_idtf: [Определение: граф воспроизведения] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Definition: reproduction graph](* <- lang_en;; *);;	
+	<- sc_definition;; 
+        <= nrel_using_constants:
+					{
+					concept_free_graph;
+					concept_oredge
+					};;
+	<= nrel_sc_text_translation: 
+		... 
+		(*
+		-> rrel_example: 
+		[Граф воспроизведения - бесконтурный орграф, моделирующий связи членов некоторой популяции со своим потомством; множество вершин граф воспроизведения есть множество членов популяции, а две вершины a и b соединены дугой , если b есть непосредственный потомок a.](* <- lang_ru;; *);;
+		*);;
+	*);;
+concept_free_graph => nrel_inclusion: concept_reproduction_graph;;
+	

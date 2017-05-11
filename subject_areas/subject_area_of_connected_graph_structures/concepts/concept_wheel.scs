@@ -1,0 +1,41 @@
+sc_node_not_relation -> concept_wheel;;
+concept_wheel => nrel_main_idtf:
+	[колесо] (* <- lang_ru;; *);
+	[wheel] (* <- lang_en;; *);;
+	
+concept_wheel <- rrel_key_sc_element: 
+	...  
+	(*
+	=> nrel_main_idtf: [Определение: колесо] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Definition: wheel](* <- lang_en;; *);;	
+	<- sc_definition;; 
+	<= nrel_using_constants:
+					{
+					nrel_cycle;
+					concept_node;
+					concept_graph
+					};;
+	
+	<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+	<= nrel_sc_text_translation: 
+		... 
+		(*
+		-> rrel_example: 
+		[В теории графов колесом Wn называется граф с n вершинами (n ≥ 4), образованный соединением единственной вершины со всеми вершинами (n-1)-цикла.](* <- lang_ru;; *);;
+		-> rrel_example: 
+                [In graph theory, the wheel Wn is a graph with n vertices (n ≥ 4) formed by joining a single vertex with all vertices of the (n-1) -cycle.] (* <-lang_en;; *);;
+		*);;
+	*);;
+
+concept_wheel <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_wheel.png";;
+			*);;
+	*);;
+

@@ -1,0 +1,38 @@
+sc_node_not_relation -> concept_growing_tree;;
+
+concept_growing_tree => nrel_main_idtf:
+	[растущее дерево] (* <- lang_ru;; *);
+	[growing tree] (* <- lang_en;; *);;
+	
+concept_growing_tree <- rrel_key_sc_element: 
+	...  
+	(*		
+	<- sc_definition;; 	
+	<= nrel_using_constants:
+	{
+		concept_directed_tree;
+		rrel_oredge;
+		rrel_tree_root
+	};;
+	=> nrel_main_idtf: [Опр.(растущее дерево)] (* <- lang_ru;; *);;
+	<= nrel_sc_text_translation: 
+		... 
+		(*
+		-> rrel_example: 
+		[Ориентированное дерево все дуги которого ориентированны от корня.](* <- lang_ru;; *);;		
+		*);;
+	*);;
+
+
+concept_growing_tree <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_growing_tree.gif";;
+			*);;
+	*);;
+

@@ -1,0 +1,42 @@
+sc_node_not_relation -> concept_dual_connected_graph;;
+
+concept_dual_connected_graph => nrel_main_idtf:
+	[двусвязный граф]
+	(* <- lang_ru;;	*);
+	[dual connected graph]
+	(* <- lang_en;;	*);;
+
+concept_dual_connected_graph <- rrel_key_sc_element:
+	...  
+	(*
+	=> nrel_main_idtf: [Опр.(двусвязный граф)] (* <- lang_ru;; *);;
+	<- sc_explanation;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+			[Двусвязный граф — связный граф, в котором нет шарниров]
+			(* <- lang_ru;; *);;
+			<= nrel_using_constants:
+			{	
+			concept_connected_graph
+			};;
+		*);;
+	*);;
+
+concept_connected_graph => nrel_inclusion: concept_dual_connected_graph;;
+
+concept_dual_connected_graph <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_dual_connected_graph.png";;
+			*);;
+	*);;
+
+
+concept_graph => nrel_inclusion: concept_dual_connected_graph;;
