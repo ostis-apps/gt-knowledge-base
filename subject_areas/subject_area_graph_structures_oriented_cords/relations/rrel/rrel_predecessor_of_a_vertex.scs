@@ -1,0 +1,47 @@
+sc_node_role_relation -> rrel_predecessor_of_a_vertex;;
+rrel_predecessor_of_a_vertex => nrel_main_idtf: [предок вершины v'](*<-lang_ru;;*);;
+rrel_predecessor_of_a_vertex => nrel_idtf: [predecessor of a vertex'](*<-lang_en;;*);;
+
+rrel_predecessor_of_a_vertex <- rrel_key_sc_element:
+...(*	
+	=> nrel_main_idtf: [Опр.(предок вершины*)] (* <- lang_ru;; *);;
+	<=nrel_using_constants:
+			{
+				rrel_vertex
+			};;
+	<- sc_definition;;
+	<= nrel_sc_text_translation: ...(*
+						-> [Предок вершины' -  для вершины w всякая вершина v, из которой достижима w. ](*<- lang_ru;;*);;
+						*);;
+
+	*);;
+
+rrel_predecessor_of_a_vertex <- rrel_key_sc_element:
+	...(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [Утв.(предок вершины*)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...(*
+			-> [ V называется непосредственным предком (или предшественником), если существует дуга (v,w). ](*<- lang_ru;;*);;
+			*);;
+*);;
+
+rrel_predecessor_of_a_vertex <- rrel_key_sc_element:
+	...(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [Утв.(предок вершины*)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...(*
+			-> [Непосредственный предок в ордереве часто называется отцом вершины w. ](*<- lang_ru;;*);;
+			*);;
+*);;
+
+rrel_predecessor_of_a_vertex <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/rrel_predecessor_of_a_vertex.png";;
+			*);;
+	*);;	

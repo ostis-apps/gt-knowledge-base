@@ -1,0 +1,24 @@
+sc_node_not_relation -> concept_strongly_unilateral_digraph;;
+concept_strongly_unilateral_digraph => nrel_main_idtf:[строго односторонний орграф](* <-lang_ru;; *);;
+concept_strongly_unilateral_digraph => nrel_idtf:[strongly unilateral digraph](* <- lang_en;; *);;
+
+concept_strongly_unilateral_digraph <- rrel_key_sc_element:
+...(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр.(строго односторонний орграф)] (* <- lang_ru;; *);;
+		<=nrel_using_constants:
+			{
+				concept_unilaterally_connected_digraph;
+				concept_strongly_connected_graph
+			};;
+		<= nrel_sc_text_translation: ...(*
+				-> [Строго односторонний орграф —  односторонний, но не сильный орграф. ](*<- lang_ru;;*);;
+			*);;
+*);;
+
+concept_directed_graph => nrel_inclusion:concept_strongly_unilateral_digraph;;
+
+concept_strongly_unilateral_digraph->rrel_example:...
+(*
+->strongly_unilateral_digraph_G;;
+*);;

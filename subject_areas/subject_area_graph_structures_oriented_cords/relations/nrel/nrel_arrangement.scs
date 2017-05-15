@@ -1,0 +1,41 @@
+sc_node_norole_relation -> nrel_arrangement;;
+nrel_arrangement => nrel_main_idtf: [аранжировка*](*<-lang_ru;;*);;
+nrel_arrangement => nrel_idtf: [arrangement*](*<-lang_en;;*);;
+
+nrel_arrangement <- rrel_key_sc_element:
+...(*	
+	<= {rrel_vertex;nrel_path;nrel_length_of_a_cycle};;
+	=> nrel_main_idtf: [Опр.(аранжировка*)] (* <- lang_ru;; *);;
+	<- sc_definition;;
+	<= nrel_sc_text_translation: ...(*
+						-> [Аранжировка - нумерация вершин управляющего графа, обладающая тем свойством, что номера вершин любого простого пути из входа графа образуют монотонно возрастающую последовательность.](*<- lang_ru;;*);;
+						*);;
+
+	*);;
+
+nrel_arrangement -> rrel_example: ( .A => .5 );;
+.A <- concept_graph;;
+.5 <- concept_number;;
+
+
+nrel_arrangement => nrel_first_domain: concept_graph;;
+nrel_arrangement => nrel_second_domain: concept_number;;
+nrel_arrangement => nrel_definitional_domain: 
+	...
+	(*
+		<= nrel_association:
+				...(*
+					->concept_graph;;
+					->concept_number;;
+				*);;
+	*);;
+
+
+nrel_arrangement => nrel_arity_of_relations: 2(*<-concept_number;;*);;
+sc_node_norole_relation -> nrel_arity_of_relations;;
+nrel_arity_of_relations => nrel_main_idtf: [арность отношения*](*<-lang_ru;;*);;
+
+nrel_arrangement <- oriented_relation;;
+nrel_arrangement <- antireflexive_relation;;
+nrel_arrangement <- antisymmetric_relation;;
+nrel_arrangement <- antitransitive_relation;;

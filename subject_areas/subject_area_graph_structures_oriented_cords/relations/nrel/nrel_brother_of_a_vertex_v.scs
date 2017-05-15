@@ -1,0 +1,52 @@
+sc_node_norole_relation -> nrel_brother_of_a_vertex_v;;
+nrel_brother_of_a_vertex_v => nrel_main_idtf: [брат вершины*](*<-lang_ru;;*);;
+nrel_brother_of_a_vertex_v => nrel_idtf: [brother of a vertex v*](*<-lang_en;;*);;
+
+nrel_brother_of_a_vertex_v <- rrel_key_sc_element:
+...(*	
+	<= {rrel_vertex;nrel_path;nrel_length_of_a_cycle};;
+	=> nrel_main_idtf: [Опр.(брат вершины*)] (* <- lang_ru;; *);;
+	<- sc_definition;;
+	<= nrel_sc_text_translation: ...(*
+						-> [Брат вершины - вершина w ордерева, имеющая того же предка (отца), что и v. ](*<- lang_ru;;*);;
+						*);;
+
+	*);;
+
+nrel_brother_of_a_vertex_v -> rrel_example: ( .A => .B );;
+.A <- concept_graph;;
+.B <- concept_graph;;
+
+
+nrel_brother_of_a_vertex_v => nrel_first_domain: concept_graph;;
+nrel_brother_of_a_vertex_v => nrel_second_domain: concept_graph;;
+nrel_brother_of_a_vertex_v => nrel_definitional_domain: 
+	...
+	(*
+		<= nrel_association:
+				...(*
+					->concept_graph;;
+					->concept_graph;;
+				*);;
+	*);;
+
+nrel_brother_of_a_vertex_v <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/nrel_brother_of_a_vertex_v.png";;
+			*);;
+	*);;	
+
+nrel_brother_of_a_vertex_v => nrel_arity_of_relations: 2(*<-concept_number;;*);;
+sc_node_norole_relation -> nrel_arity_of_relations;;
+nrel_arity_of_relations => nrel_main_idtf: [арность отношения*](*<-lang_ru;;*);;
+
+nrel_brother_of_a_vertex_vh <- oriented_relation;;
+nrel_brother_of_a_vertex_v <- antireflexive_relation;;
+nrel_brother_of_a_vertex_v <- symmetric_relation;;
+nrel_brother_of_a_vertex_v <- transitive_relation;;

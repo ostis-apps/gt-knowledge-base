@@ -1,0 +1,45 @@
+sc_node_not_relation -> concept_DAG;;
+concept_DAG => nrel_main_idtf:[дэг](* <-lang_ru;; *);;
+concept_DAG => nrel_idtf:[dag](* <- lang_en;; *);;
+
+concept_DAG <- rrel_key_sc_element:
+...(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр.(дэг)] (* <- lang_ru;; *);;
+		<=nrel_using_constants:
+			{
+				concept_directed_graph;
+				concept_acyclic_digraph
+			};;
+		<= nrel_sc_text_translation: ...(*
+				-> [Дэг —  аббревиатура от directed acyclic graph.](*<- lang_ru;;*);;
+			*);;
+*);;
+
+concept_DAG <- rrel_key_sc_element:
+	...(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [Утв.(граф процедур)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...(*
+			-> [ Для ориентированных графов то же самое, что бесконтурный орграф. ](*<- lang_ru;;*);;
+			*);;
+*);;
+
+concept_directed_graph => nrel_inclusion:concept_DAG;;
+
+concept_DAG->rrel_example:...
+(*
+->DAG_A;;
+*);;
+
+concept_DAG <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_DAG.png";;
+			*);;
+	*);;

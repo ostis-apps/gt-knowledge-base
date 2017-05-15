@@ -1,0 +1,18 @@
+sc_node_role_relation -> rrel_f_direct_arc;;
+rrel_f_direct_arc => nrel_main_idtf: [f-прямая дуга'](*<-lang_ru;;*);;
+rrel_f_direct_arc => nrel_idtf: [f-direct arc'](*<-lang_en;;*);;
+
+rrel_f_direct_arc <- rrel_key_sc_element:
+...(*	
+	=> nrel_main_idtf: [Опр.(f-прямая дуга')] (* <- lang_ru;; *);;
+	<=nrel_using_constants:
+			{
+				rrel_vertex;
+				rrel_edge
+			};;
+	<- sc_definition;;
+	<= nrel_sc_text_translation: ...(*
+						-> [F-прямая дуга —  дуга, для которой в заданной нумерации F номер начальной вершины строго меньше номера конечной вршины.](*<- lang_ru;;*);;
+						*);;
+
+	*);;

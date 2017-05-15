@@ -1,0 +1,25 @@
+sc_node_not_relation -> concept_self_negational_signed_graph;;
+concept_self_negational_signed_graph => nrel_main_idtf:[самонегативный граф](* <-lang_ru;; *);;
+concept_self_negational_signed_graph => nrel_idtf:[self negational signed graph](* <- lang_en;; *);;
+
+concept_self_negational_signed_graph <- rrel_key_sc_element:
+...(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр.(самонегативный граф)] (* <- lang_ru;; *);;
+		<=nrel_using_constants:
+			{
+				concept_graph;
+				rrel_edge;
+				nrel_graph_isomorphism
+			};;
+		<= nrel_sc_text_translation: ...(*
+				-> [Самонегативный граф —  граф, ребрам которого сопоставлены плюсы и минусы и который изоморфен графу, получаемому из него заменой плюсов на минусы и, наоборот, минусов на плюсы.] (*<- lang_ru;;*);;
+			*);;
+*);;
+
+concept_graph => nrel_inclusion:concept_self_negational_signed_graph;;
+
+concept_self_negational_signed_graph->rrel_example:...
+(*
+->self_negational_signed_graph_G;;
+*);;

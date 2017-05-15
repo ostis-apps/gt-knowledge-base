@@ -1,0 +1,19 @@
+sc_node_role_relation -> reachible_vertex;;
+rrel_reachible_vertex => nrel_main_idtf: [достижимая вершина'](*<-lang_ru;;*);;
+rrel_reachible_vertex => nrel_idtf: [reachible vertex'](*<-lang_en;;*);;
+
+rrel_reachible_vertex <- rrel_key_sc_element:
+...(*	
+	=> nrel_main_idtf: [Опр.(вершина, достижимая из a')] (* <- lang_ru;; *);;
+	<=nrel_using_constants:
+			{
+				concept_directed_graph;
+                nrel_path;
+                rrel_vertex
+			};;
+	<- sc_definition;;
+	<= nrel_sc_text_translation: ...(*
+						-> [Достижимая вершина —   вершина w достижима из вершины v, если в орграфе существует путь из v в w. ](*<- lang_ru;;*);;
+						*);;
+
+	*);;

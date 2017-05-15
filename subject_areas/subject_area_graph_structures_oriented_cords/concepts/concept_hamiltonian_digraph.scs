@@ -1,0 +1,64 @@
+concept_hamiltonian_digraph
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[Гамильтонов орграф]
+	(* <- lang_ru;; *);
+	[Hamiltonian directed graph]
+	(* <- lang_en;; *);
+<= nrel_inclusion: digraph;
+<- rrel_key_sc_element:
+	...  
+	(*
+		<- definition;;
+		<= nrel_using_constants:
+                {
+					concept_directed_graph;
+					nrel_hamiltonian_cycle;
+					nrel_hamiltonian_path;
+					rrel_vertex
+                	
+                };;
+		=> nrel_main_idtf: 
+			[Опр.(Гамильтонов орграф)]
+			(* <- lang_ru;; *);;	
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				[Гамильтонов орграф - орграф, содержащий гамильтонов контур или гамильтонов путь, соединяющий некоторую пару вершин. ]
+				(* <- lang_ru;;	*);;		
+			*);;		
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+	*);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- statement;;
+		=> nrel_main_idtf:
+			[Утв.(Гамильтонов орграф, гамильтонов граф,граф )]
+			(* <- lang_ru;; *);;			
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example:
+				[Панциклические графы являются обобщением гамильтоновых графов, графов, которые имеют циклы максимально возможной длины.]
+				(* <- lang_ru;;	*);;
+			*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+	*);
+<- rrel_key_sc_element:
+	...
+	(*
+		<- statement;;
+		=> nrel_main_idtf:
+			[Утв.(панциклический граф,двудольный граф)]
+			(* <- lang_ru;; *);;			
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example:
+				[К настоящему времени известны лишь достаточные условия гамильтоновости орграфа.]
+				(* <- lang_ru;;	*);;
+			*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+	*);;

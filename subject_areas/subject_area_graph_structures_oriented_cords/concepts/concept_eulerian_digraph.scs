@@ -1,72 +1,25 @@
-sc_node_not_relation->concept_eulerian_digraph;;
+sc_node_not_relation -> concept_eulerian_digraph;;
+concept_eulerian_digraph => nrel_main_idtf:[эйлеров орграф](* <-lang_ru;; *);;
+concept_eulerian_digraph => nrel_idtf:[eulerian digraph](* <- lang_en;; *);;
 
-concept_eulerian_digraph => nrel_main_idtf:
-	[эйлеров орграф](* <-lang_ru;; *);
-	[eulerian digraph](* <-lang_en;; *);;
-
-concept_eulerian_digraph <- rrel_key_sc_element: 
-        ... 
-		(*
-		<- definition;;
-		=> nrel_main_idtf: [Определение: эйлеров орграф] (* <- lang_ru;; *);;
-		=> nrel_main_idtf: [Definition: eulerian digraph] (* <- lang_en;; *);;
-		<= nrel_sc_text_translation: ...
-			(*
-			-> rrel_example: 
-				[Эйлеров орграф — орграф, содержащий эйлеров контур.](*<- lang_ru;;*);;
-			-> rrel_example: 
-				[Eulerian digraph is a digraph, that contains Eulerian contour.](*<- lang_en;;*);;
-		*);;
-		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+concept_eulerian_digraph <- rrel_key_sc_element:
+...(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр.(эйлеров орграф)] (* <- lang_ru;; *);;
+		<=nrel_using_constants:
+			{
+				concept_digraph;
+				concept_eulerian_contour;
+                concept_vertex
+			};;
+		<= nrel_sc_text_translation: ...(*
+				-> [Эйлеров орграф — орграф, в котором есть эйлеров контур; для того чтобы орграф был эйлеровым необходимо и достаточно, чтобы в каждой вершине полустепень захода равнялась полустепени исхода.  ] (*<- lang_ru;;*);;
+			*);;
 *);;
 
-concept_eulerian_digraph<= nrel_using_constants:
-						{
-						concept_directed_graph
-						};;
+concept_digraph => nrel_inclusion:concept_eulerian_digraph;;
 
-concept_eulerian_digraph <- rrel_main_key_sc_element:
-		...
-		(*
-		=> nrel_main_idtf: [Утверждение: необходимое условие для того,чтобы граф был эйлеровым.] (* <- lang_ru;; *);;
-		=> nrel_main_idtf: [Statement: a necessary condition for the digraph to be Eulerian] (* <- lang_en;; *);;
-		-> rrel_key_sc_element: concept_node; nrel_vertex_degree;;
-		<- statement;;
-		<= nrel_sc_text_translation: ...
-			(*
-			-> rrel_example: 
-				[Связный граф является эйлеровым тогда и только тогда, когда он не содержит вершин нечётной степени.](*<- lang_ru;;*);;
-			-> rrel_example: 
-				[A connected digraph is called Eulerian if it doesn't contains vertices of odd degree.](*<- lang_en;;*);;
-			*);;
-		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
-		*);;
-		
-concept_eulerian_digraph <- rrel_main_key_sc_element:
-		...
-		(*
-		=> nrel_main_idtf: [Утверждение: о разбиении связного эйлерова графа на простые контуры.] (* <- lang_ru;; *);;
-		=> nrel_main_idtf: [Statement: a partition of connected Eulerian digraph on a simple contours.] (* <- lang_en;; *);;
-		-> rrel_key_sc_element: nrel_simple_cycle; concept_edge;;
-		<- statement;;
-		<= nrel_sc_text_translation: ...
-			(*
-			-> rrel_example: 
-				[Для связного эйлерова графа множество ребер можно разбить на простые контуры.](*<- lang_ru;;*);;
-			-> rrel_example: 
-				[A set of edges in connected Eulerian digraph can be divided into simple contour.](*<- lang_en;;*);;
-			*);;
-		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
-		*);;
-			
-concept_eulerian_digraph <- rrel_key_sc_element: 
-	...
-	(*
-		<- illustration;;
-		<= nrel_sc_text_translation:
-		...
-			(*
-			-> rrel_example:
-				"file://contents/eulerian_digraph.jpeg";;
-			*);;
-	*);;
+concept_eulerian_digraph->rrel_example:...
+(*
+->eulerian_digraph_G;;
+*);;

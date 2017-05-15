@@ -1,0 +1,40 @@
+sc_node_not_relation -> concept_strongly_cyclic_edge_connected_graph;;
+concept_strongly_cyclic_edge_connected_graph => nrel_main_idtf:[сильно ориентированно-циклически-реберно связный граф](* <-lang_ru;; *);;
+concept_strongly_cyclic_edge_connected_graph => nrel_idtf:[strongly cyclic edge connected graph](* <- lang_en;; *);;
+
+concept_strongly_cyclic_edge_connected_graph <- rrel_key_sc_element:
+...(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр.(сильно ориентированно-циклически-реберно связный граф)] (* <- lang_ru;; *);;
+		<=nrel_using_constants:
+			{
+				concept_directedgraph;
+				rrel_edge;
+                nrel_contour;
+				nrel_inclusion
+
+			};;
+		<= nrel_sc_text_translation: ...(*
+				-> [Сильно ориентированно-циклически-реберно связный граф —  орграф, в котором для любых двух дуг e(1) и e(2) существует последовательность контуров C(1) - C(k) такая,
+что e(1) включает C(1) , e(2) включает C(k) и любая пара контуров C(i) , C(i+1)) имеет по крайней мере одну общую дугу (сильно ориентированно-циклически-реберно связанные дуги).  ] (*<- lang_ru;;*);;
+			*);;
+*);;
+
+concept_digraph => nrel_inclusion:concept_strongly_cyclic_edge_connected_graph;;
+
+concept_strongly_cyclic_edge_connected_graph->rrel_example:...
+(*
+->strongly_cyclic_edge_connected_graph_G;;
+*);;
+
+concept_strongly_cyclic_edge_connected_graph <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_strongly_cyclic_edge_connected_graph.png";;
+			*);;
+	*);;

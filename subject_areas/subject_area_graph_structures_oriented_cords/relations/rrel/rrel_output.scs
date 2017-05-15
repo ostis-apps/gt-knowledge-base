@@ -1,0 +1,20 @@
+sc_node_role_relation -> rrel_output;;
+rrel_output => nrel_main_idtf: [выход'](*<-lang_ru;;*);;
+rrel_output => nrel_idtf: [output'](*<-lang_en;;*);;
+
+rrel_output <- rrel_key_sc_element:
+...(*	
+	=> nrel_main_idtf: [Опр.(выход')] (* <- lang_ru;; *);;
+	<=nrel_using_constants:
+			{
+				concept_directed_graph;
+				nrel_indegree;
+				nrel_outdegree;
+				rrel_vertex
+			};;
+	<- sc_definition;;
+	<= nrel_sc_text_translation: ...(*
+						-> [Выход — вершина в орграфе, полустепень исхода которой равна 0, а полустепень захода больше нуля.](*<- lang_ru;;*);;
+						*);;
+
+	*);;

@@ -1,0 +1,25 @@
+sc_node_not_relation -> concept_symmetric_directed_graph;;
+concept_symmetric_directed_graph => nrel_main_idtf:[симметричный орграф](* <-lang_ru;; *);;
+concept_symmetric_directed_graph => nrel_idtf:[symmetric directed graph](* <- lang_en;; *);;
+
+concept_symmetric_directed_graph <- rrel_key_sc_element:
+...(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр.(симметричный орграф)] (* <- lang_ru;; *);;
+		<=nrel_using_constants:
+			{
+				concept_directed_graph;
+				rrel_vertex;
+                rrel_edge
+			};;
+		<= nrel_sc_text_translation: ...(*
+				-> [Симметричный орграф — орграф, у которого две смежные вершины всегда соединены двумя противоположно ориентированными дугами. ] (*<- lang_ru;;*);;
+			*);;
+*);;
+
+concept_directed_graph => nrel_inclusion:concept_symmetric_directed_graph;;
+
+concept_symmetric_directed_graph->rrel_example:...
+(*
+->symmetric_directed_graph_G;;
+*);;
