@@ -1,0 +1,54 @@
+sc_node_norole_relation -> nrel_hamiltonian_cycle;;
+nrel_hamiltonian_cycle => nrel_main_idtf: [гамильтонов контур*](*<-lang_ru;;*);;
+nrel_hamiltonian_cycle => nrel_idtf: [hamiltonian cycle*](*<-lang_en;;*);;
+
+nrel_hamiltonian_cycle <- rrel_key_sc_element:
+...(*	
+	<= {nrel_contour;rrel_vertex;concept_directed_graph};;
+	=> nrel_main_idtf: [Опр.(гамильтонов контур*)] (* <- lang_ru;; *);;
+	<- sc_definition;;
+	<= nrel_sc_text_translation: ...(*
+						-> [Гамильтонов контур — контур, проходящий через каждую вершину орграфа в точности один раз.](*<- lang_ru;;*);;
+						*);;
+
+	*);;
+
+
+nrel_hamiltonian_cycle <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/nrel_hamiltonian_cycle.gif";;
+			*);;
+	*);;
+
+nrel_hamiltonian_cycle -> rrel_example: ( .G => .F );;
+.G <- concept_graph;;
+.F <- concept_graph;;
+
+
+nrel_hamiltonian_cycle => nrel_first_domain: concept_graph;;
+nrel_hamiltonian_cycle => nrel_second_domain: concept_graph;;
+nrel_hamiltonian_cycle => nrel_definitional_domain: 
+	...
+	(*
+		<= nrel_association:
+				...(*
+					->concept_graph;;
+					->concept_graph;;
+				*);;
+	*);;
+
+
+nrel_hamiltonian_cycle => nrel_arity_of_relations: 2(*<-concept_number;;*);;
+sc_node_norole_relation -> nrel_arity_of_relations;;
+nrel_arity_of_relations => nrel_main_idtf: [арность отношения*](*<-lang_ru;;*);;
+
+nrel_hamiltonian_cycle <- oriented_relation;;
+nrel_hamiltonian_cycle <- antireflexive_relation;;
+nrel_hamiltonian_cycle <- antisymmetric_relation;;
+nrel_hamiltonian_cycle <- antitransitive_relation;;

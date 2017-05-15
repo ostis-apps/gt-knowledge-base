@@ -1,0 +1,42 @@
+sc_node_norole_relation -> nrel_bases_of_a_digraph;;
+nrel_bases_of_a_digraph => nrel_main_idtf: [основание орграфа*](*<-lang_ru;;*);;
+nrel_bases_of_a_digraph => nrel_idtf: [bases of a digraph*](*<-lang_en;;*);;
+
+nrel_bases_of_a_digraph <- rrel_key_sc_element:
+...(*	
+	<= {concept_multigraph;concept_directed_graph;rrel_edge};;
+	=> nrel_main_idtf: [Опр(основание орграфа*)] (* <- lang_ru;; *);;
+	<- sc_definition;;
+	<= nrel_sc_text_translation: ...(*
+						-> [Основание  орграфа -  мультиграф, получаемый из орграфа снятием ориентации с дуг.](*<- lang_ru;;*);;
+						*);;
+
+	*);;
+
+
+nrel_bases_of_a_digraph -> rrel_example: ( .G => .F );;
+.G <- concept_graph;;
+.F <- concept_multigraph;;
+
+
+nrel_bases_of_a_digraph => nrel_first_domain: concept_graph;;
+nrel_bases_of_a_digraph => nrel_second_domain: concept_multigraph;;
+nrel_bases_of_a_digraph => nrel_definitional_domain: 
+	...
+	(*
+		<= nrel_association:
+				...(*
+					->concept_graph;;
+					->concept_multigraph;;
+				*);;
+	*);;
+
+
+nrel_bases_of_a_digraph => nrel_arity_of_relations: 2(*<-concept_number;;*);;
+sc_node_norole_relation -> nrel_arity_of_relations;;
+nrel_arity_of_relations => nrel_main_idtf: [арность отношения*](*<-lang_ru;;*);;
+
+nrel_bases_of_a_digraph <- oriented_relation;;
+nrel_bases_of_a_digraph <- antireflexive_relation;;
+nrel_bases_of_a_digraph <- antisymmetric_relation;;
+nrel_bases_of_a_digraph <- antitransitive_relation;;

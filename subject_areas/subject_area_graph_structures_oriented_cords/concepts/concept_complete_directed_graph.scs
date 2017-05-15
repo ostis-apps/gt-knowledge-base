@@ -1,0 +1,36 @@
+sc_node_not_relation -> concept_complete_directed_graph;;
+concept_complete_directed_graph => nrel_main_idtf:[полный орграф](* <-lang_ru;; *);;
+concept_complete_directed_graph => nrel_idtf:[complete directed graph](* <- lang_en;; *);;
+
+concept_complete_directed_graph <- rrel_key_sc_element:
+...(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр.(полный орграф)] (* <- lang_ru;; *);; 
+		<=nrel_using_constants:
+			{
+				concept_directed_graph;
+                rrel_vertex
+                			};;
+		<= nrel_sc_text_translation: ...(*
+				-> [Полный орграф —  орграф, у которого каждая пара вершин соединена дугой.  ](*<- lang_ru;;*);;
+			*);;
+*);;
+
+concept_directed_graph => nrel_inclusion:concept_complete_directed_graph;;
+
+concept_complete_directed_graph->rrel_example:...
+(*
+->strongly_weak_digraph_G;;
+*);;
+
+concept_complete_directed_graph <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/1.gif";;
+			*);;
+	*);;

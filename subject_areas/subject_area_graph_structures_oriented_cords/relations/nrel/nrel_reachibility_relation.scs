@@ -1,0 +1,42 @@
+sc_node_norole_relation -> nrel_reachibility_relation;;
+nrel_reachibility_relation => nrel_main_idtf: [отношение достижимости*](*<-lang_ru;;*);;
+nrel_reachibility_relation => nrel_idtf: [reachibility relation*](*<-lang_en;;*);;
+
+nrel_reachibility_relation <- rrel_key_sc_element:
+...(*	
+	<= {nrel_path;concept_directed_graph};;
+	=> nrel_main_idtf: [Опр.(отношение достижимости*)] (* <- lang_ru;; *);;
+	<- sc_definition;;
+	<= nrel_sc_text_translation: ...(*
+						-> [Отношение достижимости - отношение R такое, что vRw тогда и только тогда, когда в орграфе существует путь из v в w. ](*<- lang_ru;;*);;
+						*);;
+
+	*);;
+
+
+nrel_reachibility_relation -> rrel_example: ( .B => .A );;
+.A <- concept_graph;;
+.B <- concept_graph;;
+
+
+nrel_reachibility_relation => nrel_first_domain: concept_graph;;
+nrel_reachibility_relation => nrel_second_domain: concept_graph;;
+nrel_reachibility_relation => nrel_definitional_domain: 
+	...
+	(*
+		<= nrel_association:
+				...(*
+					->concept_graph;;
+					->concept_graph;;
+				*);;
+	*);;
+
+
+nrel_reachibility_relation => nrel_arity_of_relations: 2(*<-concept_number;;*);;
+sc_node_norole_relation -> nrel_arity_of_relations;;
+nrel_arity_of_relations => nrel_main_idtf: [арность отношения*](*<-lang_ru;;*);;
+
+nrel_reachibility_relation <- oriented_relation;;
+nrel_reachibility_relation <- antireflexive_relation;;
+nrel_reachibility_relation <- symmetric_relation;;
+nrel_reachibility_relation <- antitransitive_relation;;

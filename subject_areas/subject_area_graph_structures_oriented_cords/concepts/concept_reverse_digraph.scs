@@ -1,0 +1,24 @@
+sc_node_not_relation -> concept_reverse_digraph;;
+concept_reverse_digraph => nrel_main_idtf:[обратный орграф](* <-lang_ru;; *);;
+concept_reverse_digraph => nrel_idtf:[reverse digraph](* <- lang_en;; *);;
+
+concept_reverse_digraph <- rrel_key_sc_element:
+...(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр.(обратный орграф)] (* <- lang_ru;; *);;
+		<=nrel_using_constants:
+			{
+				concept_directed_graph;
+				rrel_edge
+			};;
+		<= nrel_sc_text_translation: ...(*
+				-> [Ообратный орграф —  орграф, получаемый из исходного заменой всех дуг противоположно ориентированными дугами. ](*<- lang_ru;;*);;
+			*);;
+*);;
+
+concept_digraph => nrel_inclusion:concept_reverse_digraph;;
+
+concept_reverse_digraph->rrel_example:...
+(*
+->reverse_digraph_G;;
+*);;

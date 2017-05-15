@@ -1,0 +1,54 @@
+sc_node_norole_relation -> nrel_critical_path;;
+nrel_critical_path => nrel_main_idtf: [критический путь*](*<-lang_ru;;*);;
+nrel_critical_path => nrel_idtf: [critical path*](*<-lang_en;;*);;
+
+nrel_critical_path <- rrel_key_sc_element:
+...(*	
+	<= {nrel_path;concept_directed_graph};;
+	=> nrel_main_idtf: [Опр.(критический путь*)] (* <- lang_ru;; *);;
+	<- sc_definition;;
+	<= nrel_sc_text_translation: ...(*
+						-> [Критический путь - в бесконтурном орграфе с входом s и выходом t путь наибольшей длины из s в t. ](*<- lang_ru;;*);;
+						*);;
+
+	*);;
+
+nrel_critical_path <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/nrel_critical_path.png";;
+			*);;
+	*);;	
+
+
+nrel_critical_path -> rrel_example: ( .A => .B );;
+.A <- concept_vertex;;
+.B <- concept_vertex;;
+
+
+nrel_critical_path => nrel_first_domain: concept_vertex;;
+nrel_critical_path => nrel_second_domain: concept_vertex;;
+nrel_critical_path => nrel_definitional_domain: 
+	...
+	(*
+		<= nrel_association:
+				...(*
+					->concept_vertex;;
+					->concept_vertex;;
+				*);;
+	*);;
+
+
+nrel_critical_path => nrel_arity_of_relations: 2(*<-concept_number;;*);;
+sc_node_norole_relation -> nrel_arity_of_relations;;
+nrel_arity_of_relations => nrel_main_idtf: [арность отношения*](*<-lang_ru;;*);;
+
+nrel_critical_path <- oriented_relation;;
+nrel_critical_path <- antireflexive_relation;;
+nrel_critical_path <- antisymmetric_relation;;
+nrel_critical_path <- antitransitive_relation;;

@@ -1,0 +1,26 @@
+sc_node_not_relation -> concept_locally_finite_graph;;
+concept_locally_finite_graph => nrel_main_idtf:[локально конечный граф](* <-lang_ru;; *);;
+concept_locally_finite_graph => nrel_idtf:[locally finite graph](* <- lang_en;; *);;
+
+concept_locally_finite_graph <- rrel_key_sc_element:
+...(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр.(локально конечный граф)] (* <- lang_ru;; *);;
+		<=nrel_using_constants:
+			{
+				concept_directed_graph;
+				rrel_vertex;
+                nrel_indegree;
+                nrel_outdegree
+			};;
+		<= nrel_sc_text_translation: ...(*
+				-> [Локально конечный граф — орграф, у которого каждая вершина имеет конечные полустепени захода и исхода.  ](*<- lang_ru;;*);;
+			*);;
+*);;
+
+concept_graph => nrel_inclusion:concept_locally_finite_graph;;
+
+concept_locally_finite_graph->rrel_example:...
+(*
+->locally_finite_graph_G;;
+*);;

@@ -1,53 +1,65 @@
 sc_node_not_relation -> concept_call_graph;;
+concept_call_graph => nrel_main_idtf:[граф процедур](* <-lang_ru;; *);;
+concept_call_graph => nrel_idtf:[call graph](* <- lang_en;; *);;
 
-concept_call_graph
-=> nrel_main_idtf:
-	[Граф вызова] (* <-lang_ru;; *);
-	[call graph] (* <-lang_en;; *);
-
-<-rrel_key_sc_element:
-				...
-				(*
-				<-definition;;  => nrel_main_idtf: [Опр.(граф вызова)] (* <- lang_ru;; *);;
-				<=nrel_sc_text_translation:
-							...
-							(*
-							->[Граф вызовов в теории построения компиляторов — ориентированный граф, 
-							который изображает вызовы между функциями в компьютерной программе. В частности,
-							каждый узел представляет собой некоторую процедуру, а каждая дуга (f,g) показывает,
-							что процедура f вызывает процедуру g.] (* <-lang_ru;text;; *);;
-							*);;
-				*);
-
-<= nrel_using_constants:
+concept_call_graph <- rrel_key_sc_element:
+...(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр.(граф процедур)] (* <- lang_ru;; *);;
+		<=nrel_using_constants:
 			{
-				concept_graph							
-			};
+				concept_directed_graph;
+				rrel_edge;
+				rrel_vertex
+			};;
+		<= nrel_sc_text_translation: ...(*
+				-> [Граф процедур — орграф, вершины которого суть процедуры программы, а дуги отражают возможность прямого обращения из одной процедуры к другой. ](*<- lang_ru;;*);;
+			*);;
+*);;
 
-<- rrel_key_sc_element:
-			...
-			(*
-		<- statement;;	
-		<=nrel_sc_text_translation:
+concept_call_graph <- rrel_key_sc_element:
+	...(*
+		<- sc_statement;;
+		=> nrel_idtf: [Утв.(граф процедур)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...(*
+			-> [ В графе процедур предполагается, что все исполнения операторов вызова, обращающихся к одной и той же процедуре, приводят к одним и тем же цепочкам вложенных вызовов процедур. ](*<- lang_ru;;*);;
+			*);;
+*);;
+
+concept_call_graph <- rrel_key_sc_element:
+	...(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [Утв.(граф процедур)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...(*
+			-> [ Для более точного кодирования межпроцедурных связей используется граф вызовов, вершинами которого являются операторы вызовов процедур, а дуги отражают непосредственную вложенность вызовов. В этом графе склеены, однако, выполнения так называемых особых вызовов - таких, при разных исполнениях которых могут вызываться разные процедуры. ](*<- lang_ru;;*);;
+			*);;
+*);;
+
+concept_call_graph <- rrel_key_sc_element:
+	...(*
+		<- sc_statement;;
+		=> nrel_idtf: [Утв.(граф процедур)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...(*
+			-> [ Выполнения особых вызовов расклеиваются в графе зацепленности, вершинами которого являются пары оператор вызова - вызываемая процедура, а дуги отражают непосредственную вложенность соответствующих пар. ](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+concept_graph => nrel_inclusion:concept_call_graph;;
+
+concept_call_graph->rrel_example:...
+(*
+->call_graph_G;;
+*);;
+
+concept_call_graph <- rrel_key_sc_element: 
+	...
+	(*
+		<- sc_illustration;;
+		<= nrel_sc_text_translation:
 		...
 			(*
-				-> rrel_example: 
-				 [граф вызовов — результат анализа программы, который может быть использован для понимания программы человеком, 
-				или в качестве основы для дальнейших анализов. Одно простое применение графа вызовов — это поиск процедур,
-				которые никогда не вызываются.] (*<-lang_ru;;*);;		
+			-> rrel_example:
+				"file://contents/concept_call_graph.png";;
 			*);;
-		*);
-
-<- rrel_key_sc_element:
-			...
-			(*
-		<- statement;;	
-		<=nrel_sc_text_translation:
-		...
-			(*
-				-> rrel_example: 
-				 [Граф вызовов может быть динамическим или статическим. Динамический граф вызовов представляет собой запись выполнения программы.
-					Статический граф вызовов предназначен для представления всех возможных вариантов выполнения программы.] (*<-lang_ru;;*);;
-			*);;
-			*);;
-concept_connected_graph => nrel_inclusion:concept_call_graph;;
+	*);;

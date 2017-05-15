@@ -1,0 +1,37 @@
+sc_node_not_relation -> concept_graph_of_a_strict_partial_order;;
+concept_graph_of_a_strict_partial_order => nrel_main_idtf:[граф строгого частичного упорядочения](* <-lang_ru;; *);;
+concept_graph_of_a_strict_partial_order => nrel_idtf:[graph of a strict partial order](* <- lang_en;; *);;
+
+concept_graph_of_a_strict_partial_order <- rrel_key_sc_element:
+...(*
+		<- sc_definition;;
+		=> nrel_main_idtf: [Опр.(граф строгого частичного упорядочения)] (* <- lang_ru;; *);;
+		<=nrel_using_constants:
+			{
+				concept_directed_graph;
+				rrel_edge;
+				rrel_vertex;
+				concept_acyclic_graph;
+				concept_transitive_digraph
+			};;
+		<= nrel_sc_text_translation: ...(*
+				-> [Граф строгого частичного упорядочения —   бесконтурный транзитивный орграф, вершины которого суть элементы частично упорядоченного множества, а дуги выражают наличия отношения частичного порядка между элементами множества. ](*<- lang_ru;;*);;
+			*);;
+*);;
+
+concept_graph_of_a_strict_partial_order <- rrel_key_sc_element:
+	...(*
+		<- sc_statement;;
+		=> nrel_main_idtf: [Утв.(граф строгого частичного упорядочения)] (* <- lang_ru;; *);;
+		<= nrel_sc_text_translation: ...(*
+			-> [На практике для наглядного представления частично упорядоченных множеств используются так называемые диаграммы (Хассе), представляющие собой транзитивную редукцию Г.с.ч.у. ](*<- lang_ru;;*);;
+			*);;
+*);;
+
+
+concept_graph => nrel_inclusion:concept_graph_of_a_strict_partial_order;;
+
+concept_graph_of_a_strict_partial_order->rrel_example:...
+(*
+->graph_of_a_strict_partial_order_G;;
+*);;

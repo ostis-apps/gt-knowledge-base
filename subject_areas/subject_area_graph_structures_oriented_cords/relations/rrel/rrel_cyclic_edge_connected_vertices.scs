@@ -1,0 +1,19 @@
+sc_node_role_relation -> rrel_cyclic_edge_connected_vertices;;
+rrel_cyclic_edge_connected_vertices => nrel_main_idtf: [ориентированно-циклически-реберно связанные вершины'](*<-lang_ru;;*);;
+rrel_cyclic_edge => nrel_idtf: [cyclic edge connected vertices'](*<-lang_en;;*);;
+
+rrel_cyclic_edge_connected_vertices <- rrel_key_sc_element:
+...(*	
+	=> nrel_main_idtf: [Опр.(ориентированно-циклически-реберно связанные вершины')] (* <- lang_ru;; *);;
+	<=nrel_using_constants:
+			{
+				concept_directed_graph;
+				nrel_contour;
+				rrel_vertex
+			};;
+	<- sc_definition;;
+	<= nrel_sc_text_translation: ...(*
+						-> [Ориентированно-циклически-реберно связанные вершины —  вершины v и w такие, что в орграфе найдется последовательность простых контуров C(1), .., C(k), обладающая следующими свойствами - v принадлежит C(1), w принадлежит C(k) и любая пара соседних контуров C(i) и C(i+1) имеет хотя бы одну общую вершину.](*<- lang_ru;;*);;
+						*);;
+
+	*);;
