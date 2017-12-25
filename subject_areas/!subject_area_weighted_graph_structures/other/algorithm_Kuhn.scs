@@ -1,4 +1,4 @@
-algorithm_Kuhn
+algorithm_kuhn
 <- sc_node_not_relation;
 => nrel_main_idtf:
 	[алгоритм Куна]

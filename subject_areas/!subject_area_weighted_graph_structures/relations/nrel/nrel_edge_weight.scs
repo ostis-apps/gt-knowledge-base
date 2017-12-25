@@ -40,7 +40,7 @@ nrel_edge_weight
 <- antitransitive_relation;
 => nrel_first_domain: 
 {
-	concept_edge;
+	concept_arg;
 	concept_oredge
 };
 => nrel_second_domain: number;
@@ -50,7 +50,7 @@ nrel_edge_weight
 	<= nrel_combination:
 	{
 		{
-			concept_edge;
+			concept_arg;
 			concept_oredge
 		};
 		number
