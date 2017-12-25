@@ -12,6 +12,14 @@ nrel_path_weight
 	...  
 	(*
 		<- definition;;
+		<= nrel_using_constants: 
+		{
+			rrel_oredge;
+			rrel_vertex;
+			nrel_edge_weight;
+			nrel_vertex_weight;
+			nrel_path
+		};;
 		=> nrel_main_idtf: 
 			[Опр.(вес пути*)]
 			(* <- lang_ru;; *);
@@ -28,14 +36,6 @@ nrel_path_weight
 			*);;		
 		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
 	*);
-<= nrel_using_constants: 
-{
-	rrel_oredge;
-	rrel_vertex;
-	nrel_edge_weight;
-	nrel_vertex_weight;
-	nrel_path
-};
 => nrel_first_domain: nrel_path;
 => nrel_second_domain: number;
 <= nrel_definitional_domain:

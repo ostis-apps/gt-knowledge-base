@@ -13,7 +13,7 @@ algorithm_for_pushing_the_pref
 		<= nrel_using_constants:
                 {
                     concept_graph_algorithm;
-                	concept_transporation_network
+                	concept_flow_network
                 };;
 		=> nrel_main_idtf:
 			[Опр.(алгоритм проталкивания предпотока)]

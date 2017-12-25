@@ -24,6 +24,13 @@ nrel_weight
 	...  
 	(*
 		<- definition;;
+		<= nrel_using_constants: 
+		{
+		rrel_edge;
+		rrel_oredge;
+		rrel_vertex;
+		number
+		};;
 		=> nrel_main_idtf: 
 			[Опр.(вес*)]
 			(* <- lang_ru;; *);
@@ -40,13 +47,6 @@ nrel_weight
 			*);;		
 		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
 	*);
-<= nrel_using_constants: 
-{
-	rrel_edge;
-	rrel_oredge;
-	rrel_vertex;
-	number
-};
 <- binary_relation;
 <- oriented_relation;
 <- antireflexive_relation;

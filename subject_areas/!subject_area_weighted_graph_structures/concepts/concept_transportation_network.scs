@@ -9,6 +9,13 @@ concept_transportation_network
 	...
 	(*
 		<- definition;;
+		<= nrel_using_constants:
+        {
+        	concept_orgraph;
+			concept_network;
+			concept_node;
+			concept_oredge
+        };;
 		=> nrel_main_idtf:
 			[Опр.(транспортная сеть)]
 			(* <- lang_ru;; *);

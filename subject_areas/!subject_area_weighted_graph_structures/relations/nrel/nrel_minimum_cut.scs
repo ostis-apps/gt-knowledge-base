@@ -62,7 +62,7 @@ nrel_minimum_cut
     (*
         <= nrel_combination:
         {
-            nrel_chain_in_graph;
+            chain;
             number
         };;
     *);

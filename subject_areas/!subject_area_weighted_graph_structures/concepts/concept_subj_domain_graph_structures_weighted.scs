@@ -10,15 +10,18 @@ concept_subj_domain_graph_structures_weighted
 	concept_vertex_weighted_graph;
 	concept_edge_weighted_graph;
 	concept_weighted_tree;
-	concept_min_weight_tree;
 	concept_shortest_steiner_tree;
 	concept_weighted_dycks_word;
+	concept_graph_algorithm;
+	concept_transportation_network;
+	concept_weighted_graph;
 	problem_allocation;
 	problem_chinese_postman;
 	problem_finding_min_weight_path;
 	problem_steiner;
 	problem_traveling_salesman;
 	problem_of_shortest_path;
+	problem_maximum_flow;
 	algorithm_dinitsa;
 	algorithm_ford_bellman;
 	algorithm_ford_falkerson;
@@ -31,6 +34,12 @@ concept_subj_domain_graph_structures_weighted
 	algorithm_floyd_worshell;
 	algorithm_prim;
 	algorithm_boruvka;
+	algorithm_kuhn;
+	algorithm_for_pushing_the_pref;
+	algorithm_finding_the_largest_weighted_vertex_weighted_match;
+	algorithm_edmonds_Carp;
+	ant_algorithm;
+	algorithm_raise_to_start;
 -> rrel_explored_relation: 
 	nrel_weight;
 	nrel_vertex_weight;
@@ -46,7 +55,10 @@ concept_subj_domain_graph_structures_weighted
 	nrel_min_weight_eulerian_cycle;
 	nrel_min_weight_hamiltonian_cycle;
 	nrel_min_weight_path;
+	nrel_min_weight_tree;
 	nrel_weight_matrix;
+	nrel_circulation;
+	nrel_minimum_cut;
 <- rrel_key_sc_element: 
 	...
 	(*
