@@ -12,7 +12,7 @@ rrel_output <- rrel_key_sc_element:
 				nrel_outdegree;
 				rrel_vertex
 			};;
-	<- sc_definition;;
+	<- definition;;
 	<= nrel_sc_text_translation: ...(*
 						-> [Выход — вершина в орграфе, полустепень исхода которой равна 0, а полустепень захода больше нуля.](*<- lang_ru;;*);;
 						*);;

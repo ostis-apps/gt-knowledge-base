@@ -11,9 +11,9 @@ rrel_forward_arc <- rrel_key_sc_element:
 				rrel_edge;
 				concept_arrangeable_graph;
 				nrel_arrangement;
-				rrel_f_directed_arc
+				rrel_f_direct_arc
 			};;
-	<- sc_definition;;
+	<- definition;;
 	<= nrel_sc_text_translation: ...(*
 						-> [Дуга вперёд — дуга аранжируемого графа, которая является F-прямой дугой для любой его аранжировки F.](*<- lang_ru;;*);;
 						*);;
@@ -22,7 +22,7 @@ rrel_forward_arc <- rrel_key_sc_element:
 	rrel_forward_arc <- rrel_key_sc_element: 
 	...
 	(*
-		<- sc_illustration;;
+		<- illustration;;
 		<= nrel_sc_text_translation:
 		...
 			(*

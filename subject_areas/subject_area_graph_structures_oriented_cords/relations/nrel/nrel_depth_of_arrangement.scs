@@ -4,9 +4,9 @@ nrel_depth_of_arrangement => nrel_idtf: [depth of arrangement*](*<-lang_en;;*);;
 
 nrel_depth_of_arrangement <- rrel_key_sc_element:
 ...(*	
-	<= {concept_number;rrel_edge};;
+	<= nrel_using_constants:{concept_number;rrel_edge};;
 	=> nrel_main_idtf: [Опр.(глубина аранжировки*)] (* <- lang_ru;; *);;
-	<- sc_definition;;
+	<- definition;;
 	<= nrel_sc_text_translation: ...(*
 						-> [Глубина аранжировки - наибольшее число обратных дуг, принадлежащих одному простому пути. ](*<- lang_ru;;*);;
 						*);;
@@ -32,7 +32,7 @@ nrel_depth_of_arrangement => nrel_second_domain: concept_number;;
 nrel_depth_of_arrangement => nrel_definitional_domain: 
 	...
 	(*
-		<= nrel_association:
+		<= nrel_combination:
 				...(*
 					->concept_directed_graph;;
 					->concept_number;;

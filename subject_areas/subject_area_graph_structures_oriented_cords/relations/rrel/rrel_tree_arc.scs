@@ -1,16 +1,16 @@
 sc_node_role_relation -> rrel_tree_arc;;
-rrel_tree_arc => nrel_main_idtf: [древесная дуга*](*<-lang_ru;;*);;
-rrel_tree_arc => nrel_idtf: [tree arc*](*<-lang_en;;*);;
+rrel_tree_arc => nrel_main_idtf: [древесная дуга'](*<-lang_ru;;*);;
+rrel_tree_arc => nrel_idtf: [tree arc'](*<-lang_en;;*);;
 
 rrel_tree_arc <- rrel_key_sc_element:
 ...(*	
-	=> nrel_main_idtf: [Опр.(древесная дуга*)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Опр.(древесная дуга')] (* <- lang_ru;; *);;
 	<=nrel_using_constants:
 			{
-				concept_depth_first_search_tree;
+				section_depth_first_search;
 				rrel_edge
 			};;
-	<- sc_definition;;
+	<- definition;;
 	<= nrel_sc_text_translation: ...(*
 						-> [Древесная дуга —  дуга, принадлежащая дереву поиска в глубину.](*<- lang_ru;;*);;
 						*);;

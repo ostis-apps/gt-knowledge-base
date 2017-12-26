@@ -1,8 +1,7 @@
 sc_node_norole_relation->nrel_spanning_semipath;;
 
-nrel_spanning_semipath=> nrel_main_idtf:
-	[остовный полупуть*](* <-lang_ru;; *);
-	[spanning_semipath*] (* <- lang_en;; *);;
+nrel_spanning_semipath=> nrel_main_idtf:[остовный полупуть*](* <-lang_ru;; *);;
+nrel_spanning_semipath=> nrel_idtf:[spanning_semipath*] (* <- lang_en;; *);;
 
 nrel_spanning_semipath <- binary_relation;;
 nrel_spanning_semipath => nrel_arity_of_relations: 2(* <- number ;;*);;
@@ -18,6 +17,12 @@ nrel_spanning_semipath <= nrel_definitional_domain: concept_directed_graph;;
 nrel_spanning_semipath<- rrel_key_sc_element: 
         ... 
 		(*
+		<= nrel_using_constants:
+						{
+						concept_directed_graph;
+						concept_node;
+						concept_oredge
+						};;
 		<- definition;;
 		=> nrel_main_idtf: [Определение: остовный полупуть] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Definition: spanning semipath] (* <- lang_en;; *);;
@@ -30,13 +35,6 @@ nrel_spanning_semipath<- rrel_key_sc_element:
 		*);;
 		<= nrel_bibliographical_source: F_Harary_Graph_Theory;;
 *);;
-
-nrel_simple_cycle<= nrel_using_constants:
-						{
-						concept_directed_graph;
-						concept_node;
-						concept_oredge
-						};;
 
 nrel_spanning_semipath<- rrel_main_key_sc_element:
 		...

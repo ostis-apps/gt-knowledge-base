@@ -1,4 +1,5 @@
 sc_node_norole_relation -> nrel_reachibility_relation;;
+
 nrel_reachibility_relation => nrel_main_idtf: [отношение достижимости*](*<-lang_ru;;*);;
 nrel_reachibility_relation => nrel_idtf: [reachibility relation*](*<-lang_en;;*);;
 
@@ -6,7 +7,7 @@ nrel_reachibility_relation <- rrel_key_sc_element:
 ...(*	
 	<= {nrel_path;concept_directed_graph};;
 	=> nrel_main_idtf: [Опр.(отношение достижимости*)] (* <- lang_ru;; *);;
-	<- sc_definition;;
+	<- definition;;
 	<= nrel_sc_text_translation: ...(*
 						-> [Отношение достижимости - отношение R такое, что vRw тогда и только тогда, когда в орграфе существует путь из v в w. ](*<- lang_ru;;*);;
 						*);;
@@ -24,7 +25,7 @@ nrel_reachibility_relation => nrel_second_domain: concept_graph;;
 nrel_reachibility_relation => nrel_definitional_domain: 
 	...
 	(*
-		<= nrel_association:
+		<= nrel_combination:
 				...(*
 					->concept_graph;;
 					->concept_graph;;

@@ -1,20 +1,18 @@
-infinite_graph
-<- sc_node_not_relation;
-=> nrel_main_idtf:
-	[Бесконечный граф]
-	(* <- lang_ru;; *);
-	[Infinite graph]
-	(* <- lang_en;; *);
-<= nrel_inclusion: concept_graph;
-<- rrel_key_sc_element:
+sc_node_not_relation -> concept_infinite_graph;;
+
+concept_infinite_graph => nrel_main_idtf:[бесконечный граф](* <- lang_ru;; *);;
+concept_infinite_graph => nrel_idtf:[infinite graph](* <- lang_en;; *);;
+
+concept_infinite_graph <= nrel_inclusion: concept_graph;;
+concept_infinite_graph <- rrel_key_sc_element:
 	...  
 	(*
 		<- definition;;
 		<= nrel_using_constants:
                 {
-					rrel_vertex;
+					concept_node;
 					concept_graph;
-					rrel_edge
+					concept_oredge
                 	
                 };;
 		=> nrel_main_idtf: 

@@ -1,4 +1,4 @@
-sc_node_role_relation -> reachible_vertex;;
+sc_node_role_relation -> rrel_reachible_vertex;;
 rrel_reachible_vertex => nrel_main_idtf: [достижимая вершина'](*<-lang_ru;;*);;
 rrel_reachible_vertex => nrel_idtf: [reachible vertex'](*<-lang_en;;*);;
 
@@ -11,7 +11,7 @@ rrel_reachible_vertex <- rrel_key_sc_element:
                 nrel_path;
                 rrel_vertex
 			};;
-	<- sc_definition;;
+	<- definition;;
 	<= nrel_sc_text_translation: ...(*
 						-> [Достижимая вершина —   вершина w достижима из вершины v, если в орграфе существует путь из v в w. ](*<- lang_ru;;*);;
 						*);;

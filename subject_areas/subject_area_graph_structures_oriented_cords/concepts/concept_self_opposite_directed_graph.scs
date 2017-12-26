@@ -4,22 +4,16 @@ concept_self_opposite_directed_graph => nrel_idtf:[self-opposite directed graph]
 
 concept_self_opposite_directed_graph <- rrel_key_sc_element:
 ...(*
-		<- sc_definition;;
-		=> nrel_main_idtf: [Опр.(самообратный орграф)] (* <- lang_ru;; *);;
-		<=nrel_using_constants:
+		<- definition;;
+		<= nrel_using_constants:
 			{
 				concept_directed_graph;
 				concept_reverse_digraph;
-				nrel_graph_isomorphism
+				nrel_isomorphism
 			};;
+		=> nrel_main_idtf: [Опр.(самообратный орграф)] (* <- lang_ru;; *);;
 		<= nrel_sc_text_translation: ...(*
 				-> [Самообратный орграф —  орграф, изоморфный обратному орграфу. ](*<- lang_ru;;*);;
 			*);;
 *);;
-
 concept_directed_graph => nrel_inclusion:concept_self_opposite_directed_graph;;
-
-concept_self_opposite_directed_graph->rrel_example:...
-(*
-->self_opposite_directed_graph_G;;
-*);;

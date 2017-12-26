@@ -1,11 +1,10 @@
 sc_node_norole_relation->nrel_global_source;;
 
-nrel_global_source=>nrel_main_idtf:
-	[глобальный исток*]	(*<-lang_ru;;*);
-	[global source*]	(*<-lang_en;;*);;
+nrel_global_source=>nrel_main_idtf:[глобальный исток*]	(*<-lang_ru;;*);;
+nrel_global_source=>nrel_idtf:[global source*](*<-lang_en;;*);;
 
 nrel_global_source <- binary_relation;;
-nrel_global_source => nrel_arity_of_relations: 2	(* <- number ;;*);;
+nrel_global_source => nrel_arity_of_relations: 2(* <- number ;;*);;
 
 nrel_global_source <- antireflexive_relation;;
 nrel_global_source <- antitransitive_relation;;
@@ -26,6 +25,13 @@ nrel_global_source <= nrel_definitional_domain:
 nrel_global_source <- rrel_key_sc_element: 
      ... 
 	(*
+	<= nrel_using_constants:{
+				concept_directed_graph;
+				nrel_path_in_the_digraph;
+				concept_number;
+				concept_node;
+				concept_oredge
+				};;
 	=> nrel_main_idtf: [Определение: глобальный исток] (* <- lang_ru;; *);;
 	=> nrel_main_idtf: [Definition: global source] (* <- lang_en;; *);;
 	<- definition;;
@@ -38,14 +44,6 @@ nrel_global_source <- rrel_key_sc_element:
 		*);;
 	<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
 	*);;
-
-nrel_global_source<= nrel_using_constants:{
-				concept_directed_graph;
-				nrel_path_in_the_digraph;
-				concept_number;
-				concept_node;
-				concept_oredge
-				};;
 				
 nrel_global_source<- rrel_main_key_sc_element:
 		...

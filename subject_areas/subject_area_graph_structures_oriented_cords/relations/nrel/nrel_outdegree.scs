@@ -1,8 +1,7 @@
 sc_node_norole_relation->nrel_outdegree;;
 
-nrel_outdegree=>nrel_main_idtf:
-	[полустепень исхода*]	(*<-lang_ru;;*);
-	[outdegree*]	(*<-lang_en;;*);;
+nrel_outdegree=>nrel_main_idtf:[полустепень исхода*](*<-lang_ru;;*);;
+nrel_outdegree=>nrel_idtf:[outdegree*](*<-lang_en;;*);;
 
 nrel_outdegree <- binary_relation;;
 nrel_outdegree => nrel_arity_of_relations: 2	(* <- number ;;*);;
@@ -26,6 +25,13 @@ nrel_outdegree <= nrel_definitional_domain:
 nrel_outdegree <- rrel_key_sc_element: 
      ... 
 	(*
+	<= nrel_using_constants:{
+				concept_directed_graph;
+				concept_number;
+				concept_node;
+				concept_oredge
+				};;
+
 	=> nrel_main_idtf: [Определение: полустепень исхода] (* <- lang_ru;; *);;
 	=> nrel_main_idtf: [Definition: outdegree] (* <- lang_en;; *);;
 	<- definition;;
@@ -38,13 +44,6 @@ nrel_outdegree <- rrel_key_sc_element:
 		*);;
 	<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
 	*);;
-
-nrel_outdegree<= nrel_using_constants:{
-				concept_directed_graph;
-				concept_number;
-				concept_node;
-				concept_oredge
-				};;
 				
 nrel_outdegree<- rrel_main_key_sc_element:
 		...

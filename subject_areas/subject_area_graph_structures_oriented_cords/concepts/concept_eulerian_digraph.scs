@@ -4,22 +4,17 @@ concept_eulerian_digraph => nrel_idtf:[eulerian digraph](* <- lang_en;; *);;
 
 concept_eulerian_digraph <- rrel_key_sc_element:
 ...(*
-		<- sc_definition;;
+		<- definition;;
 		=> nrel_main_idtf: [Опр.(эйлеров орграф)] (* <- lang_ru;; *);;
 		<=nrel_using_constants:
 			{
-				concept_digraph;
-				concept_eulerian_contour;
-                concept_vertex
+				concept_directed_graph;
+				nrel_eulerian_cycle;
+                concept_node
 			};;
 		<= nrel_sc_text_translation: ...(*
 				-> [Эйлеров орграф — орграф, в котором есть эйлеров контур; для того чтобы орграф был эйлеровым необходимо и достаточно, чтобы в каждой вершине полустепень захода равнялась полустепени исхода.  ] (*<- lang_ru;;*);;
 			*);;
 *);;
 
-concept_digraph => nrel_inclusion:concept_eulerian_digraph;;
-
-concept_eulerian_digraph->rrel_example:...
-(*
-->eulerian_digraph_G;;
-*);;
+concept_directed_graph => nrel_inclusion:concept_eulerian_digraph;;

@@ -3,16 +3,21 @@ rrel_backward_arc => nrel_main_idtf: [дуга назад'](*<-lang_ru;;*);;
 rrel_backward_arc => nrel_idtf: [backward arc'](*<-lang_en;;*);;
 
 rrel_backward_arc <- rrel_key_sc_element:
-...(*	
-	=> nrel_main_idtf: [Опр.(дуга назад')] (* <- lang_ru;; *);;
+     ...
+     (*	
+        <-definition;;
+        => nrel_main_idtf: [Опр.(дуга назад')] (* <- lang_ru;; *);;
+        <= nrel_sc_text_translation: 
+        ...
+        (*
+        				-> [Дуга назад -  дуга аранжируемого графа, которая является F-обратной дугой для любой его аранжировки F.](*<- lang_ru;;*);;
+        *);;
+
 	<=nrel_using_constants:
 			{
 				concept_graph;
 				rrel_edge
 			};;
-	<- sc_definition;;
-	<= nrel_sc_text_translation: ...(*
-						-> [Дуга назад -  дуга аранжируемого графа, которая является F-обратной дугой для любой его аранжировки F.](*<- lang_ru;;*);;
-						*);;
+	
 
 	*);;
