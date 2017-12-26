@@ -1,8 +1,7 @@
 sc_node_not_relation -> concept_normalized_graph;;
 
-concept_normalized_graph => nrel_main_idtf:
-	[нормированный граф] (* <- lang_ru;; *);
-	[normalized graph] (* <- lang_en;; *);;
+concept_normalized_graph => nrel_main_idtf:[нормированный граф] (* <- lang_ru;; *);;
+concept_normalized_graph => nrel_idtf:[normalized graph] (* <- lang_en;; *);;
 
 concept_normalized_graph <- rrel_key_sc_element: 
         ... 

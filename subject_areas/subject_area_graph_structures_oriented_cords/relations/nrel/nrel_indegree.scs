@@ -1,11 +1,10 @@
 sc_node_norole_relation->nrel_indegree;;
 
-nrel_indegree=>nrel_main_idtf:
-	[полустепень захода*]	(*<-lang_ru;;*);
-	[indegree*]	(*<-lang_en;;*);;
+nrel_indegree=>nrel_main_idtf:[полустепень захода*](*<-lang_ru;;*);;
+nrel_indegree=>nrel_idtf:[indegree*](*<-lang_en;;*);;
 
 nrel_indegree <- binary_relation;;
-nrel_indegree => nrel_arity_of_relations: 2	(* <- number ;;*);;
+nrel_indegree => nrel_arity_of_relations: 2(* <- number ;;*);;
 
 nrel_indegree <- antireflexive_relation;;
 nrel_indegree <- antitransitive_relation;;
@@ -26,6 +25,12 @@ nrel_indegree <= nrel_definitional_domain:
 nrel_indegree <- rrel_key_sc_element: 
      ... 
 	(*
+	<= nrel_using_constants:{
+				concept_directed_graph;
+				concept_number;
+				concept_node;
+				concept_oredge
+				};;
 	=> nrel_main_idtf: [Определение: полустепень захода] (* <- lang_ru;; *);;
 	=> nrel_main_idtf: [Definition: indegree] (* <- lang_en;; *);;
 	<- definition;;
@@ -38,13 +43,6 @@ nrel_indegree <- rrel_key_sc_element:
 		*);;
 	<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
 	*);;
-
-nrel_indegree<= nrel_using_constants:{
-				concept_directed_graph;
-				concept_number;
-				concept_node;
-				concept_oredge
-				};;
 				
 nrel_indegree<- rrel_main_key_sc_element:
 		...

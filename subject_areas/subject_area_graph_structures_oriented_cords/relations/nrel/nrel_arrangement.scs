@@ -4,9 +4,9 @@ nrel_arrangement => nrel_idtf: [arrangement*](*<-lang_en;;*);;
 
 nrel_arrangement <- rrel_key_sc_element:
 ...(*	
-	<= {rrel_vertex;nrel_path;nrel_length_of_a_cycle};;
+	<= nrel_using_constants:{rrel_vertex;nrel_path;nrel_length_of_a_cycle};;
 	=> nrel_main_idtf: [Опр.(аранжировка*)] (* <- lang_ru;; *);;
-	<- sc_definition;;
+	<- definition;;
 	<= nrel_sc_text_translation: ...(*
 						-> [Аранжировка - нумерация вершин управляющего графа, обладающая тем свойством, что номера вершин любого простого пути из входа графа образуют монотонно возрастающую последовательность.](*<- lang_ru;;*);;
 						*);;
@@ -23,7 +23,7 @@ nrel_arrangement => nrel_second_domain: concept_number;;
 nrel_arrangement => nrel_definitional_domain: 
 	...
 	(*
-		<= nrel_association:
+		<= nrel_combination:
 				...(*
 					->concept_graph;;
 					->concept_number;;

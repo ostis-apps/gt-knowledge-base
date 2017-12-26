@@ -1,8 +1,7 @@
 sc_node_norole_relation->nrel_weakly_connected_component;;
 
-nrel_weakly_connected_component=>nrel_main_idtf:
-	[компонента слабой связности*]	(*<-lang_ru;;*);
-	[weakly connected component*]	(*<-lang_en;;*);;
+nrel_weakly_connected_component=>nrel_main_idtf:[компонента слабой связности*](*<-lang_ru;;*);;
+nrel_weakly_connected_component=>nrel_idtf:[weakly connected component*](*<-lang_en;;*);;
 
 nrel_weakly_connected_component => nrel_arity_of_relations: 2	(* <- number ;;*);;
 nrel_weakly_connected_component <- binary_relation;;
@@ -18,6 +17,14 @@ nrel_weakly_connected_component => nrel_second_domain: concept_directed_graph;;
 nrel_weakly_connected_component <- rrel_key_sc_element: 
      ... 
 	(*
+	<= nrel_using_constants:
+				{
+					concept_directed_graph;
+					concept_weakly_connected_digraph;
+					concept_node;
+					concept_oredge;
+					nrel_subgraph
+				};;
 	=> nrel_main_idtf: [Определение: компонента слабой связности] (* <- lang_ru;; *);;
 	=> nrel_main_idtf: [Definition: weakly connected component] (* <- lang_en;; *);;
 	<- definition;;
@@ -30,15 +37,6 @@ nrel_weakly_connected_component <- rrel_key_sc_element:
 		*);;
 	<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
 	*);;
-
-nrel_weakly_connected_component<= nrel_using_constants:
-				{
-					concept_directed_graph;
-					concept_weakly_connected_digraph;
-					concept_node;
-					concept_oredge;
-					nrel_subgraph
-				};;
 				
 nrel_weakly_connected_component<- rrel_main_key_sc_element:
 		...

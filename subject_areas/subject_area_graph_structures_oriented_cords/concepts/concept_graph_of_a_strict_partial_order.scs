@@ -4,13 +4,13 @@ concept_graph_of_a_strict_partial_order => nrel_idtf:[graph of a strict partial 
 
 concept_graph_of_a_strict_partial_order <- rrel_key_sc_element:
 ...(*
-		<- sc_definition;;
+		<- definition;;
 		=> nrel_main_idtf: [Опр.(граф строгого частичного упорядочения)] (* <- lang_ru;; *);;
 		<=nrel_using_constants:
 			{
 				concept_directed_graph;
-				rrel_edge;
-				rrel_vertex;
+				concept_oredge;
+				concept_node;
 				concept_acyclic_graph;
 				concept_transitive_digraph
 			};;
@@ -30,8 +30,3 @@ concept_graph_of_a_strict_partial_order <- rrel_key_sc_element:
 
 
 concept_graph => nrel_inclusion:concept_graph_of_a_strict_partial_order;;
-
-concept_graph_of_a_strict_partial_order->rrel_example:...
-(*
-->graph_of_a_strict_partial_order_G;;
-*);;

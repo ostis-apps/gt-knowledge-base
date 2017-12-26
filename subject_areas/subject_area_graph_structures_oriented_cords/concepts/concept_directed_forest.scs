@@ -1,12 +1,8 @@
-directed_forest
-<- sc_node_not_relation;
-=> nrel_main_idtf:
-	[ориентированный лес]
-	(* <- lang_ru;; *);
-	[directed forest]
-	(* <- lang_en;; *);
-<= nrel_inclusion: concept_forest;
-<- rrel_key_sc_element:
+sc_node_not_relation -> concept_directed_forest;;
+concept_directed_forest => nrel_main_idtf:[ориентированный лес](* <- lang_ru;; *);;
+concept_directed_forest => nrel_idtf:[directed forest](* <- lang_en;; *);;
+concept_directed_forest <= nrel_inclusion: concept_forest;;
+concept_directed_forest <- rrel_key_sc_element:
 	...  
 	(*
 		<- definition;;

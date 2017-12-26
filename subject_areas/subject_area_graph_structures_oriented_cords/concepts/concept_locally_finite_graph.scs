@@ -4,12 +4,12 @@ concept_locally_finite_graph => nrel_idtf:[locally finite graph](* <- lang_en;; 
 
 concept_locally_finite_graph <- rrel_key_sc_element:
 ...(*
-		<- sc_definition;;
+		<- definition;;
 		=> nrel_main_idtf: [Опр.(локально конечный граф)] (* <- lang_ru;; *);;
 		<=nrel_using_constants:
 			{
 				concept_directed_graph;
-				rrel_vertex;
+				concept_node;
                 nrel_indegree;
                 nrel_outdegree
 			};;
@@ -19,8 +19,3 @@ concept_locally_finite_graph <- rrel_key_sc_element:
 *);;
 
 concept_graph => nrel_inclusion:concept_locally_finite_graph;;
-
-concept_locally_finite_graph->rrel_example:...
-(*
-->locally_finite_graph_G;;
-*);;

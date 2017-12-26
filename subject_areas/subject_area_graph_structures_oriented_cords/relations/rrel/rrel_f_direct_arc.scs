@@ -10,7 +10,7 @@ rrel_f_direct_arc <- rrel_key_sc_element:
 				rrel_vertex;
 				rrel_edge
 			};;
-	<- sc_definition;;
+	<- definition;;
 	<= nrel_sc_text_translation: ...(*
 						-> [F-прямая дуга —  дуга, для которой в заданной нумерации F номер начальной вершины строго меньше номера конечной вршины.](*<- lang_ru;;*);;
 						*);;

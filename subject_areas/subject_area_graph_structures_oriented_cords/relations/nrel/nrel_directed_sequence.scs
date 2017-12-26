@@ -4,9 +4,9 @@ nrel_directed_sequence => nrel_idtf: [directed sequence*](*<-lang_en;;*);;
 
 nrel_directed_sequence <- rrel_key_sc_element:
 ...(*	
-	<= {rrel_vertex};;
+	<= nrel_using_constants:{rrel_vertex};;
 	=> nrel_main_idtf: [Опр.(ориентированный маршрут*)] (* <- lang_ru;; *);;
-	<- sc_definition;;
+	<- definition;;
 	<= nrel_sc_text_translation: ...(*
 						-> [Ориентированный маршрут - такая последовательность S = (v(0) , e(1) , v(1) , e(2) , ... , e(n) , v(n) его чередующихся вершин v(i) и дуг e(j), что e(i) = (v(i-1) , v(i)), 1 (leq) i (leq) n. Такой маршрут называется (v(0) , v(n))-маршрутом.  ](*<- lang_ru;;*);;
 						*);;
@@ -30,15 +30,7 @@ nrel_directed_sequence -> rrel_example: ( .A => .B );;
 
 nrel_directed_sequence => nrel_first_domain: concept_graph;;
 nrel_directed_sequence => nrel_second_domain: concept_graph;;
-nrel_directed_sequence => nrel_definitional_domain: 
-	...
-	(*
-		<= nrel_association:
-				...(*
-					->concept_graph;;
-					->concept_graph;;
-				*);;
-	*);;
+nrel_directed_sequence => nrel_definitional_domain: concept_graph;;
 	
 
 nrel_directed_sequence => nrel_arity_of_relations: 2(*<-concept_number;;*);;

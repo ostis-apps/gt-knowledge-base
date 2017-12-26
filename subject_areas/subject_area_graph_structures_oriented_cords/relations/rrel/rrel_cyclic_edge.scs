@@ -3,16 +3,19 @@ rrel_cyclic_edge => nrel_main_idtf: [ориентированно-цикличе
 rrel_cyclic_edge => nrel_idtf: [cyclic edge'](*<-lang_en;;*);;
 
 rrel_cyclic_edge <- rrel_key_sc_element:
-...(*	
-	=> nrel_main_idtf: [Опр.(ориентированно-циклическое ребро')] (* <- lang_ru;; *);;
+              ...(*	
+              <- definition;;
+  => nrel_main_idtf: [Опр.(ориентированно-циклическое ребро')] (* <-   lang_ru;; *);;
+	<= nrel_sc_text_translation: 
+        ...
+        (*
+			-> [Ориентированно-циклическое ребро —  дуга, принадлежащая какому-нибудь контуру.](*<- lang_ru;;*);;
+					*);;
 	<=nrel_using_constants:
 			{
 				nrel_contour;
 				rrel_edge
 			};;
-	<- sc_definition;;
-	<= nrel_sc_text_translation: ...(*
-						-> [Ориентированно-циклическое ребро —  дуга, принадлежащая какому-нибудь контуру.](*<- lang_ru;;*);;
-						*);;
+	
 
 	*);;

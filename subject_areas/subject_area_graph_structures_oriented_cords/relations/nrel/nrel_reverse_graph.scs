@@ -1,8 +1,7 @@
 sc_node_norole_relation->nrel_reverse_graph;;
 
-nrel_reverse_graph => nrel_main_idtf:
-	[обратный граф*](* <-lang_ru;; *);
-	[reverse graph*](* <-lang_en;; *);;
+nrel_reverse_graph => nrel_main_idtf:[обратный граф*](* <-lang_ru;; *);;
+nrel_reverse_graph => nrel_idtf:[reverse graph*](* <-lang_en;; *);;
 
 nrel_reverse_graph <- binary_relation;;
 nrel_reverse_graph => nrel_arity_of_relations: 2(* <- number ;;*);;
@@ -19,6 +18,12 @@ nrel_reverse_graph <- rrel_key_sc_element:
         ... 
 		(*
 		<- definition;;
+		<= nrel_using_constants:
+						{
+						concept_directed_graph;
+						concept_oredge
+						};;
+
 		=> nrel_main_idtf: [Определение: обратный граф] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Definition: reverse graph] (* <- lang_en;; *);;
 		<= nrel_sc_text_translation: ...
@@ -29,11 +34,6 @@ nrel_reverse_graph <- rrel_key_sc_element:
 		<= nrel_bibliographical_source: F_Harary_Graph_Theory;;
 *);;
 
-nrel_reverse_graph<= nrel_using_constants:
-						{
-						concept_directed_graph;
-						concept_oredge
-						};;
 
 nrel_reverse_graph <- rrel_main_key_sc_element:
 		...

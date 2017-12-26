@@ -4,13 +4,13 @@ concept_call_graph => nrel_idtf:[call graph](* <- lang_en;; *);;
 
 concept_call_graph <- rrel_key_sc_element:
 ...(*
-		<- sc_definition;;
+		<- definition;;
 		=> nrel_main_idtf: [Опр.(граф процедур)] (* <- lang_ru;; *);;
 		<=nrel_using_constants:
 			{
 				concept_directed_graph;
 				rrel_edge;
-				rrel_vertex
+				concept_node
 			};;
 		<= nrel_sc_text_translation: ...(*
 				-> [Граф процедур — орграф, вершины которого суть процедуры программы, а дуги отражают возможность прямого обращения из одной процедуры к другой. ](*<- lang_ru;;*);;
@@ -47,15 +47,10 @@ concept_call_graph <- rrel_key_sc_element:
 
 concept_graph => nrel_inclusion:concept_call_graph;;
 
-concept_call_graph->rrel_example:...
-(*
-->call_graph_G;;
-*);;
-
 concept_call_graph <- rrel_key_sc_element: 
 	...
 	(*
-		<- sc_illustration;;
+		<- illustration;;
 		<= nrel_sc_text_translation:
 		...
 			(*

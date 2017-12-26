@@ -1,11 +1,10 @@
 sc_node_norole_relation->nrel_local_sink;;
 
-nrel_local_sink=>nrel_main_idtf:
-	[локальный сток*]	(*<-lang_ru;;*);
-	[local sink*]	(*<-lang_en;;*);;
+nrel_local_sink=>nrel_main_idtf:[локальный сток*](*<-lang_ru;;*);;
+nrel_local_sink=>nrel_idtf:[local sink*](*<-lang_en;;*);;
 
 nrel_local_sink <- binary_relation;;
-nrel_local_sink => nrel_arity_of_relations: 2	(* <- number ;;*);;
+nrel_local_sink => nrel_arity_of_relations: 2(* <- number ;;*);;
 
 nrel_local_sink <- antireflexive_relation;;
 nrel_local_sink <- antitransitive_relation;;
@@ -26,6 +25,13 @@ nrel_local_sink <= nrel_definitional_domain:
 nrel_local_sink <- rrel_key_sc_element: 
      ... 
 	(*
+	<= nrel_using_constants:{
+				concept_directed_graph;
+				nrel_path_in_the_digraph;
+				concept_number;
+				concept_node;
+				concept_oredge
+				};;
 	=> nrel_main_idtf: [Определение: локальный сток] (* <- lang_ru;; *);;
 	=> nrel_main_idtf: [Definition: local sink] (* <- lang_en;; *);;
 	<- definition;;
@@ -38,14 +44,6 @@ nrel_local_sink <- rrel_key_sc_element:
 		*);;
 	<= nrel_bibliographical_sink: emelichev_melnikov_lekcii_po_tg;;
 	*);;
-
-nrel_local_sink<= nrel_using_constants:{
-				concept_directed_graph;
-				nrel_path_in_the_digraph;
-				concept_number;
-				concept_node;
-				concept_oredge
-				};;
 				
 nrel_local_sink<- rrel_main_key_sc_element:
 		...

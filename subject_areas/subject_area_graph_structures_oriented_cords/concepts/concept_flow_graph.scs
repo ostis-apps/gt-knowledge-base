@@ -4,13 +4,13 @@ concept_flow_graph => nrel_idtf:[flow graph](* <- lang_en;; *);;
 
 concept_flow_graph <- rrel_key_sc_element:
 ...(*
-		<- sc_definition;;
+		<- definition;;
 		=> nrel_main_idtf: [Опр.(управляющий граф)] (* <- lang_ru;; *);;
 		<=nrel_using_constants:
 			{
 				concept_directed_graph;
 				concept_multigraph;
-				rrel_vertex
+				concept_node
 			};;
 		<= nrel_sc_text_translation: ...(*
 				-> [Управляющий граф — основная модель программы, представляющая в виде орграфа поток управления (систему управляющих связей) в программе, в которой сохраняется только членение программы на операторы (команды, лучи), а также информация о тождественности операторов и возможных передачах управления между операторами. В общем случае У.г. - это помеченный упорядоченный мультиграф с выделенными начальной вершиной ( входом ) и непустым множеством конечных вершин ( выходов ). ](*<- lang_ru;;*);;
@@ -18,8 +18,3 @@ concept_flow_graph <- rrel_key_sc_element:
 *);;
 
 concept_directed_graph => nrel_inclusion:concept_flow_graph;;
-
-concept_flow_graph->rrel_example:...
-(*
-->flow_graph_G;;
-*);;

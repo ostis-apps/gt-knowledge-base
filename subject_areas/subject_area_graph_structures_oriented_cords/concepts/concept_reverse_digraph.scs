@@ -4,21 +4,15 @@ concept_reverse_digraph => nrel_idtf:[reverse digraph](* <- lang_en;; *);;
 
 concept_reverse_digraph <- rrel_key_sc_element:
 ...(*
-		<- sc_definition;;
-		=> nrel_main_idtf: [Опр.(обратный орграф)] (* <- lang_ru;; *);;
-		<=nrel_using_constants:
+		<- definition;;
+		<= nrel_using_constants:
 			{
 				concept_directed_graph;
-				rrel_edge
+				concept_oredge
 			};;
+		=> nrel_main_idtf: [Опр.(обратный орграф)] (* <- lang_ru;; *);;
 		<= nrel_sc_text_translation: ...(*
-				-> [Ообратный орграф —  орграф, получаемый из исходного заменой всех дуг противоположно ориентированными дугами. ](*<- lang_ru;;*);;
+				-> [Обратный орграф —  орграф, получаемый из исходного заменой всех дуг противоположно ориентированными дугами. ](*<- lang_ru;;*);;
 			*);;
 *);;
-
 concept_digraph => nrel_inclusion:concept_reverse_digraph;;
-
-concept_reverse_digraph->rrel_example:...
-(*
-->reverse_digraph_G;;
-*);;

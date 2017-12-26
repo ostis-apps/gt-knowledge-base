@@ -4,13 +4,13 @@ concept_G_1_finite_graph => nrel_idtf:[G(-1)-finite graph](* <- lang_en;; *);;
 
 concept_G_1_finite_graph <- rrel_key_sc_element:
 ...(*
-		<- sc_definition;;
+		<- definition;;
 		=> nrel_main_idtf: [Опр.(Г(-1)-конечный граф)] (* <- lang_ru;; *);;
 		<=nrel_using_constants:
 			{
 				concept_directed_graph;
 				rrel_edge;
-				rrel_vertex
+				concept_node
 			};;
 		<= nrel_sc_text_translation: ...(*
 				-> [Г(-1)-конечный граф — орграф, у которого во всякую вершину заходит конечное число дуг. ](*<- lang_ru;;*);;
@@ -19,7 +19,3 @@ concept_G_1_finite_graph <- rrel_key_sc_element:
 
 concept_graph => nrel_inclusion:concept_G_1_finite_graph;;
 
-concept_G_1_finite_graph->rrel_example:...
-(*
-->G_1_finite_graph_G;;
-*);;

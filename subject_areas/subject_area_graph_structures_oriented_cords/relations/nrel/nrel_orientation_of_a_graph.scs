@@ -24,7 +24,7 @@ nrel_orientation_of_a_graph => nrel_second_domain: concept_directed_graph;;
 nrel_orientation_of_a_graph => nrel_definitional_domain: 
 	...
 	(*
-		<= nrel_association:
+		<= nrel_combination:
 				...(*
 					->concept_graph;;
 					->concept_directed_graph;;

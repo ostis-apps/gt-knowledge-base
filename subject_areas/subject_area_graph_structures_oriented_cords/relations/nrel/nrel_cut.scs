@@ -1,8 +1,7 @@
 sc_node_norole_relation->nrel_cut;;
 
-nrel_cut => nrel_main_idtf:
-	[разрез*](* <-lang_ru;; *);
-	[cut*](* <-lang_en;; *);;
+nrel_cut => nrel_main_idtf:[разрез*](* <-lang_ru;; *);;
+nrel_cut => nrel_idtf:[cut*](* <-lang_en;; *);;
 
 nrel_cut <- binary_relation;;
 nrel_cut => nrel_arity_of_relations: 2(* <- number ;;*);;
@@ -26,6 +25,14 @@ nrel_cut <= nrel_definitional_domain:
 nrel_cut <- rrel_key_sc_element: 
         ... 
 		(*
+		<= nrel_using_constants:
+						{
+						concept_directed_graph;
+						concept_number;
+						nrel_flow;
+						nrel_sourse;
+						nrel_global_sink
+						};;
 		<- definition;;
 		=> nrel_main_idtf: [Определение: разрез] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Definition: cut] (* <- lang_en;; *);;
@@ -38,15 +45,6 @@ nrel_cut <- rrel_key_sc_element:
 		*);;
 		<= nrel_bibliographical_source: F_Harary_Graph_Theory;;
 *);;
-
-nrel_cut<= nrel_using_constants:
-						{
-						concept_directed_graph;
-						concept_number;
-						nrel_flow;
-						nrel_source;
-						nrel_sink
-						};;
 
 nrel_cut <- rrel_main_key_sc_element:
 		...

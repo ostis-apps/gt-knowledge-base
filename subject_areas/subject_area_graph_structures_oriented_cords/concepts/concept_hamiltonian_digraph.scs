@@ -1,10 +1,6 @@
-concept_hamiltonian_digraph
-<- sc_node_not_relation;
-=> nrel_main_idtf:
-	[Гамильтонов орграф]
-	(* <- lang_ru;; *);
-	[Hamiltonian directed graph]
-	(* <- lang_en;; *);
+sc_node_not_relation -> concept_hamiltonian_digraph;;
+concept_hamiltonian_digraph => nrel_main_idtf:[гамильтонов орграф](* <- lang_ru;; *);;
+concept_hamiltonian_digraph => nrel_idtf:[hamiltonian directed graph]	(* <- lang_en;; *);
 <= nrel_inclusion: digraph;
 <- rrel_key_sc_element:
 	...  
@@ -15,11 +11,11 @@ concept_hamiltonian_digraph
 					concept_directed_graph;
 					nrel_hamiltonian_cycle;
 					nrel_hamiltonian_path;
-					rrel_vertex
+					concept_node
                 	
                 };;
 		=> nrel_main_idtf: 
-			[Опр.(Гамильтонов орграф)]
+			[Опр.(гамильтонов орграф)]
 			(* <- lang_ru;; *);;	
 		<= nrel_sc_text_translation:
 			...
@@ -35,7 +31,7 @@ concept_hamiltonian_digraph
 	(*
 		<- statement;;
 		=> nrel_main_idtf:
-			[Утв.(Гамильтонов орграф, гамильтонов граф,граф )]
+			[Утв.(гамильтонов орграф, гамильтонов граф,граф )]
 			(* <- lang_ru;; *);;			
 		<= nrel_sc_text_translation:
 			...

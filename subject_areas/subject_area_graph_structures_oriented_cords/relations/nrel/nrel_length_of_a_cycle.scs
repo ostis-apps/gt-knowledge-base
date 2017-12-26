@@ -4,7 +4,7 @@ nrel_length_of_a_cycle => nrel_idtf: [length of a cycle*](*<-lang_en;;*);;
 
 nrel_length_of_a_cycle <- rrel_key_sc_element:
 ...(*	
-	<= {concept_number;concept_directed_graph;rrel_edge};;
+	<= nrel_using_constants:{concept_number;concept_directed_graph;rrel_edge};;
 	=> nrel_main_idtf: [Опр(длина контура*)] (* <- lang_ru;; *);;
 	<- sc_definition;;
 	<= nrel_sc_text_translation: ...(*
@@ -24,7 +24,7 @@ nrel_length_of_a_cycle => nrel_second_domain: concept_number;;
 nrel_length_of_a_cycle => nrel_definitional_domain: 
 	...
 	(*
-		<= nrel_association:
+		<= nrel_combination:
 				...(*
 					->concept_graph;;
 					->concept_number;;
