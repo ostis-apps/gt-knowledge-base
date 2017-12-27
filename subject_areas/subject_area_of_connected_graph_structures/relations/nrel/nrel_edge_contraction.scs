@@ -25,7 +25,6 @@ nrel_edge_contraction
 		*);;
 	*);
 
- => nrel_definitional_domain:concept_graph;
  => nrel_first_domain: concept_graph;
  => nrel_second_domain: concept_graph;;
 

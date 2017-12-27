@@ -21,7 +21,7 @@ concept_wheel <- rrel_key_sc_element:
 		... 
 		(*
 		-> rrel_example: 
-		[В теории графов колесом Wn называется граф с n вершинами (n ≥ 4), образованный соединением единственной вершины со всеми вершинами (n-1)-цикла.](* <- lang_ru;; *);;
+				[В теории графов колесом Wn называется граф с n вершинами (n ≥ 4), образованный соединением единственной вершины со всеми вершинами (n-1)-цикла.](* <- lang_ru;; *);;
 		-> rrel_example: 
                 [In graph theory, the wheel Wn is a graph with n vertices (n ≥ 4) formed by joining a single vertex with all vertices of the (n-1) -cycle.] (* <-lang_en;; *);;
 		*);;

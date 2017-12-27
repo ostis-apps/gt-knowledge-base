@@ -20,7 +20,7 @@ nrel_vertex_connectivity <- rrel_key_sc_element:
 		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
 *);;
 
-nrel_vertex_connectivity<= nrel_using_constants:
+nrel_vertex_connectivity <= nrel_using_constants:
 						{
 							concept_node;
 							concept_connected_graph

@@ -1,6 +1,6 @@
-sc_node_norole_relation ->nrel_peninsula;; 
-binary_relation -> nrel_peninsula;;
-oriented_relation ->nrel_peninsula;;
+nrel_peninsula <- sc_node_norole_relation ;; 
+nrel_peninsula <- binary_relation  ;;
+nrel_peninsula <- oriented_relation ;;
 
 nrel_peninsula
 => nrel_main_idtf:
