@@ -1,7 +1,8 @@
 sc_node_norole_relation->concept_critical_graph;;
 
 concept_critical_graph => nrel_main_idtf:
-	[критический граф](* <-lang_ru;; *);
+	[критический граф](* <-lang_ru;; *);;
+concept_critical_graph => nrel_idtf:
 	[critical graph](* <-lang_en;; *);;
 
 concept_critical_graph <- rrel_key_sc_element: 
@@ -22,7 +23,7 @@ concept_critical_graph <- rrel_key_sc_element:
 concept_critical_graph<= nrel_using_constants:
 						{
 						concept_graph;
-						concept_node
+						rrel_vertex
 						};;
 
 

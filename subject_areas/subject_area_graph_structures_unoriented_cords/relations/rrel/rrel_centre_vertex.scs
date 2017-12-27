@@ -1,7 +1,8 @@
 sc_node_role_relation -> rrel_centre_vertex;;
 
 rrel_centre_vertex => nrel_main_idtf:
-		[центральная вершина'](* <-lang_ru;; *);
+		[центральная вершина'](* <-lang_ru;; *);;
+rrel_centre_vertex => nrel_idtf:
 		[сenter vertex'](* <-lang_en;; *);;
 
 rrel_centre_vertex <- rrel_key_sc_element:

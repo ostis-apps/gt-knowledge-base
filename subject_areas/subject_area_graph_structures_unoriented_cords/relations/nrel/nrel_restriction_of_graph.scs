@@ -4,6 +4,7 @@ binary_relation -> nrel_restriction_of_graph;;
 nrel_restriction_of_graph
 => nrel_main_idtf:
 	[ ограничение графа* ] (* <-lang_ru;; *);
+=> nrel_idtf:
 	[ restriction of graph* ] (* <-lang_en;; *);
 
 <-rrel_key_sc_element:

@@ -4,6 +4,8 @@ nrel_dual_graph <- binary_relation;;
 nrel_dual_graph
 => nrel_main_idtf:
 	[ двойственный граф* ] (* <-lang_ru;; *);
+
+=> nrel_idtf:
 	[ dual graph* ] (* <-lang_en;; *);
 
 <-rrel_key_sc_element:

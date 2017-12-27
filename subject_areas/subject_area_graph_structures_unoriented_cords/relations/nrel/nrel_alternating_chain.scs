@@ -2,7 +2,8 @@ sc_node_norole_relation->nrel_alternating_chain;;
 binary_relation -> nrel_alternating_chain;;
 
 nrel_alternating_chain => nrel_main_idtf:
-	[ альтернирующая цепь* ] (* <-lang_ru;; *);
+	[ альтернирующая цепь* ] (* <-lang_ru;; *);;
+nrel_alternating_chain => nrel_idtf:
 	[ alternating chain* ] (* <-lang_en;; *);
 
 <-rrel_key_sc_element:
@@ -11,10 +12,9 @@ nrel_alternating_chain => nrel_main_idtf:
 	<-sc_definition;;
 	<= nrel_using_constants:
 	{
-		nrel_chain;
+		nrel_chain_in_graph;
 		rrel_edge;
-		nrel_vertex_adjacency;
-		subset
+		nrel_vertex_adjacency
 	};;
 	=> nrel_main_idtf: [Опр.(альтернирующая цепь*)] (* <- lang_ru;; *);;
 	<=nrel_sc_text_translation:

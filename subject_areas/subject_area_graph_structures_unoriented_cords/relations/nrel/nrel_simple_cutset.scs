@@ -4,6 +4,7 @@ binary_relation -> nrel_simple_cutset;;
 nrel_simple_cutset
 => nrel_main_idtf:
 	[ простой разрез* ] (* <-lang_ru;; *);
+=> nrel_idtf:
 	[ simple cutset* ] (* <-lang_en;; *);
 
 <-rrel_key_sc_element:
@@ -12,8 +13,7 @@ nrel_simple_cutset
 	<-sc_definition;;
 	<= nrel_using_constants:
 	{				
-		nrel_cut;
-		proper_subset	
+		nrel_cut	
 	};;
 	=> nrel_main_idtf: [Опр.(простой разрез*)] (* <- lang_ru;; *);;
 	<=nrel_sc_text_translation:

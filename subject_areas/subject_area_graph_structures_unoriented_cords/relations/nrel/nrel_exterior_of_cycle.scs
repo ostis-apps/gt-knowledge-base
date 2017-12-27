@@ -4,6 +4,7 @@ binary_relation -> nrel_exterior_of_cycle;;
 nrel_exterior_of_cycle
 => nrel_main_idtf:
 	[ внешность цикла* ] (* <-lang_ru;; *);
+=> nrel_idtf:
 	[ exterior of cycle* ] (* <-lang_en;; *);
 
 <-rrel_key_sc_element:

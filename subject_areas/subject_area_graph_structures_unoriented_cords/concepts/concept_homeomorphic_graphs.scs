@@ -3,6 +3,7 @@ sc_node_not_relation->concept_homeomorphic_graphs;;
 concept_homeomorphic_graphs
 => nrel_main_idtf:
 	[ гомеоморфные графы ] (* <-lang_ru;; *);
+=> nrel_idtf:
 	[ homeomorphic graphs ] (* <-lang_en;; *);
 
 <-rrel_key_sc_element:

@@ -3,6 +3,7 @@ sc_node_not_relation->concept_flat_graph;;
 concept_flat_graph
 => nrel_main_idtf:
 	[ плоский граф ] (* <-lang_ru;; *);
+=> nrel_idtf:
 	[ flat graph ] (* <-lang_en;; *);
 
 <-rrel_key_sc_element:

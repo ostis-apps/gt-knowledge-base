@@ -1,6 +1,7 @@
 sc_node_not_relation -> concept_tightened_graph;;
 concept_tightened_graph => nrel_main_idtf:
-	[cтягиваемый граф] (* <- lang_ru;; *);
+	[cтягиваемый граф] (* <- lang_ru;; *);;
+concept_tightened_graph => nrel_idtf:
 	[tightened graph] (* <- lang_en;; *);;
 	
 concept_tightened_graph <- rrel_key_sc_element: 
@@ -21,7 +22,7 @@ concept_tightened_graph <- rrel_key_sc_element:
 	*);;
 concept_tightened_graph<= nrel_using_constants:
 					{
-					concept_edge;
+					rrel_edge;
 					concept_graph
 					};;
 	

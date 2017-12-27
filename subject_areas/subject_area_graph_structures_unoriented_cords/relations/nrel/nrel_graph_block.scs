@@ -3,6 +3,9 @@ sc_node_norole_relation -> nrel_graph_block;;
 nrel_graph_block => nrel_main_idtf:
     [блок графа*]
     (* <- lang_ru;; *);;
+nrel_graph_block => nrel_idtf:
+    [graph block*]
+    (* <- lang_en;; *);;
 
 nrel_graph_block <- rrel_key_sc_element: 
         ... 

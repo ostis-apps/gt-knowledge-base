@@ -3,6 +3,7 @@ sc_node_not_relation->concept_ordinary_graph;;
 concept_ordinary_graph
 => nrel_main_idtf:
 	[ обыкновенный граф ] (* <-lang_ru;; *);
+=> nrel_idtf:
 	[ ordinary graph ] (* <-lang_en;; *);
 
 <-rrel_key_sc_element:

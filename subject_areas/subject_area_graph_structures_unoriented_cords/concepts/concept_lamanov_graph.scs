@@ -3,6 +3,7 @@ sc_node_not_relation->concept_lamanov_graph;;
 concept_lamanov_graph
 => nrel_main_idtf:
 	[ Ламанов граф ] (* <-lang_ru;; *);
+=> nrel_idtf:
 	[ Lamanov_graph ] (* <-lang_en;; *);
 
 <-rrel_key_sc_element:

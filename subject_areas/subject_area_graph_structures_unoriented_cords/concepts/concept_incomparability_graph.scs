@@ -1,7 +1,8 @@
 sc_node_not_relation-> concept_incomparability_graph;;
 
 concept_incomparability_graph => nrel_main_idtf:
-	[граф несравнимости](* <-lang_ru;; *);
+	[граф несравнимости](* <-lang_ru;; *);;
+concept_incomparability_graph => nrel_idtf:
 	[incomparability graph](* <-lang_en;; *);;
 
 concept_incomparability_graph <- rrel_key_sc_element: 
@@ -22,7 +23,7 @@ concept_incomparability_graph <- rrel_key_sc_element:
 concept_incomparability_graph <= nrel_using_constants:
 						{
 						concept_undirected_graph;
-						concept_edge
+						rrel_edge
 						};;
 
 

@@ -3,6 +3,7 @@ binary_relation -> nrel_unbounded_face;;
 
 nrel_unbounded_face => nrel_main_idtf:
 	[ бесконечная грань плоского графа* ] (* <-lang_ru;; *);
+=> nrel_idtf:
 	[ unbounded face* ] (* <-lang_en;; *);
 
 <-rrel_key_sc_element:

@@ -3,6 +3,7 @@ sc_node_not_relation->concept_tight_graph;;
 concept_tight_graph
 => nrel_main_idtf:
 	[ плотный граф ] (* <-lang_ru;; *);
+=> nrel_idtf:
 	[ tight graph ] (* <-lang_en;; *);
 
 <-rrel_key_sc_element:

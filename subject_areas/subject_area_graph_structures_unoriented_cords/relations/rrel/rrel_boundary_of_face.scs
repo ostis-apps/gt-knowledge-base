@@ -1,7 +1,8 @@
 sc_node_role_relation ->rrel_boundary_of_face;;
 
 rrel_boundary_of_face => nrel_main_idtf:
-		[граница грани'](* <-lang_ru;; *);
+		[граница грани'](* <-lang_ru;; *);;
+rrel_boundary_of_face => nrel_idtf:
 		[boundary of face'](* <-lang_en;; *);;
 
 rrel_boundary_of_face <- rrel_key_sc_element:
