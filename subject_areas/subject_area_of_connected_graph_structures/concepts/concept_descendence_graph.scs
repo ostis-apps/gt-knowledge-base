@@ -9,7 +9,7 @@ concept_descendence_graph <- rrel_key_sc_element:
 	=> nrel_main_idtf: [Определение: граф потомтства] (* <- lang_ru;; *);;
 	=> nrel_main_idtf: [Definition: descendence graph](* <- lang_en;; *);;	
 	<- sc_definition;; 
-       <= nrel_using_constants:
+       <= nrel_using_constants:			
 					{
 					concept_reproduction_graph;
 					concept_transitive_closure_of_a_graph

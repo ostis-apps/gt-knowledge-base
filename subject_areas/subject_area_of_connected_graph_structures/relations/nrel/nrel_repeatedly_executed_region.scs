@@ -1,0 +1,71 @@
+sc_node_norole_relation -> nrel_repeatedly_executed_region;;
+
+nrel_repeatedly_executed_region => nrel_main_idtf:
+    [участок повторяемости*]
+    (* <- lang_ru;; *);;
+
+nrel_repeatedly_executed_region => nrel_main_idtf:
+    [repeatedl executed region*]
+    (* <- lang_en;; *);;
+
+nrel_repeatedly_executed_region => nrel_first_domain: concept_graph;;
+nrel_repeatedly_executed_region => nrel_second_domain: concept_graph;;
+nrel_repeatedly_executed_region <= nrel_definitional_domain: concept_graph;;
+
+nrel_repeatedly_executed_region <- rrel_key_sc_element: 
+        ... 
+        (*
+            <- definition;;
+            => nrel_main_idtf:
+                [Опр.(участок повторяемости*)]
+                (* <- lang_ru;; *);;
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [Участок повторяемости - это конструкция, позволяющая на основе анализа уграфа эффективно выявлять
+                        циклическую структуру алгоритма и находить отношения частот выполнения между всеми подмножествами
+                        его элементов, которые не противоречат достоверным отношениям частот выполнения.]
+                       (* <- lang_ru;; *);;
+                *);;
+            <= nrel_using_constants:
+                            {
+                                concept_graph;
+                                concept_graph;
+                                concept_interval
+                            };;
+        *);;
+
+nrel_repeatedly_executed_region <- rrel_key_sc_element:
+        ...
+        (*
+            <- statement;;
+            <- statement_of_common_type;;
+            -> rrel_key_sc_element: concept_graph; chain;;
+            <- rrel_axiom:
+                subject_domain_of_graph_theory (*
+                    subject_domain;;
+                *)
+            => nrel_main_idtf:
+                [Утв.(участок повторяемости*; граф; цепь*)]
+                (* <- lang_ru;; *);;
+            
+            <= nrel_sc_text_translation:
+                ...
+                (*
+                    -> [Граф G содержит единственный участок повторяемости нулевого уровня, состоящий из всех простых цепочек V.]
+                       (*<- lang_ru;; *);;
+                *);;
+        *);;
+
+nrel_repeatedly_executed_region <- binary_relation;;
+nrel_repeatedly_executed_region <- antireflexive_relation;;
+nrel_repeatedly_executed_region <- transitive_relation;;
+nrel_repeatedly_executed_region <- symmetric_relation;;
+
+statement_of_common_type=>nrel_main_idtf:
+    [утверждение общего вида]
+    (*<-lang_ru;;*);;
+subject_domain_of_graph_theory=>nrel_main_idtf:
+    [Предметная область теории графов]
+    (*<-lang_ru;;*);;
+
