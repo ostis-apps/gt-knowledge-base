@@ -4,9 +4,9 @@ nrel_bases_of_a_digraph => nrel_idtf: [bases of a digraph*](*<-lang_en;;*);;
 
 nrel_bases_of_a_digraph <- rrel_key_sc_element:
 ...(*	
-	<= {concept_multigraph;concept_directed_graph;rrel_edge};;
+	<= nrel_using_constants:{concept_multigraph;concept_directed_graph;rrel_edge};;
 	=> nrel_main_idtf: [Опр(основание орграфа*)] (* <- lang_ru;; *);;
-	<- sc_definition;;
+	<- definition;;
 	<= nrel_sc_text_translation: ...(*
 						-> [Основание  орграфа -  мультиграф, получаемый из орграфа снятием ориентации с дуг.](*<- lang_ru;;*);;
 						*);;
@@ -24,7 +24,7 @@ nrel_bases_of_a_digraph => nrel_second_domain: concept_multigraph;;
 nrel_bases_of_a_digraph => nrel_definitional_domain: 
 	...
 	(*
-		<= nrel_association:
+		<= nrel_combination:
 				...(*
 					->concept_graph;;
 					->concept_multigraph;;

@@ -4,7 +4,7 @@ concept_DAG => nrel_idtf:[dag](* <- lang_en;; *);;
 
 concept_DAG <- rrel_key_sc_element:
 ...(*
-		<- sc_definition;;
+		<-definition;;
 		=> nrel_main_idtf: [Опр.(дэг)] (* <- lang_ru;; *);;
 		<=nrel_using_constants:
 			{
@@ -27,15 +27,10 @@ concept_DAG <- rrel_key_sc_element:
 
 concept_directed_graph => nrel_inclusion:concept_DAG;;
 
-concept_DAG->rrel_example:...
-(*
-->DAG_A;;
-*);;
-
 concept_DAG <- rrel_key_sc_element: 
 	...
 	(*
-		<- sc_illustration;;
+		<- illustration;;
 		<= nrel_sc_text_translation:
 		...
 			(*

@@ -4,9 +4,9 @@ nrel_shortest_path => nrel_idtf: [shortest path*](*<-lang_en;;*);;
 
 nrel_shortest_path <- rrel_key_sc_element:
 ...(*	
-	<= {rrel_vertex;nrel_path;nrel_length_of_a_cycle};;
+	<=nrel_using_constants: {rrel_vertex;nrel_path;nrel_length_of_a_cycle};;
 	=> nrel_main_idtf: [Опр.(кратчайший путь*)] (* <- lang_ru;; *);;
-	<- sc_definition;;
+	<- definition;;
 	<= nrel_sc_text_translation: ...(*
 						-> [Кратчайший путь -  для двух фиксированных вершин путь наименьшей длины, соединяющий указанные вершины.](*<- lang_ru;;*);;
 						*);;
@@ -16,7 +16,7 @@ nrel_shortest_path <- rrel_key_sc_element:
 nrel_shortest_path <- rrel_key_sc_element: 
 	...
 	(*
-		<- sc_illustration;;
+		<- illustration;;
 		<= nrel_sc_text_translation:
 		...
 			(*
@@ -36,7 +36,7 @@ nrel_shortest_path => nrel_second_domain: concept_graph;;
 nrel_shortest_path => nrel_definitional_domain: 
 	...
 	(*
-		<= nrel_association:
+		<= nrel_combination:
 				...(*
 					->concept_graph;;
 					->concept_graph;;

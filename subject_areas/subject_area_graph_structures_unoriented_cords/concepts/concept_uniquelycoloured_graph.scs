@@ -1,0 +1,73 @@
+sc_node_not_relation -> concept_uniquelycoloured_graph;;
+
+concept_uniquelycoloured_graph => nrel_main_idtf:[однозначно раскрашиваемый граф] (* <- lang_ru;; *);;
+concept_uniquelycoloured_graph => nrel_main_idtf:[uniquely coloured graph] (* <- lang_en;; *);;
+
+sc_node_not_relation -> statement_of_common_type;;
+statement_of_common_type => nrel_main_idtf:
+    [утверждение общего вида](* <- lang_ru;; *);
+	[statement_of_common_type](* <- lang_en;; *);;
+
+sb_d_of_graph_theory => nrel_main_idtf:
+    [Предметная область теории графов](* <- lang_ru;; *);
+	[Subject area of graph heory](* <- lang_en;; *);;
+
+sc_node_role_relation -> rrel_axiom;;
+rrel_axiom => nrel_main_idtf:
+    [аксиома'](* <- lang_ru;; *);
+	[axiom'](* <- lang_en;; *);;
+
+concept_uniquelycoloured_graph <- rrel_key_sc_element:
+          ... 
+         (*	
+         <= nrel_using_constants:
+         {
+		rrel_vertex;
+                nrel_chromatic_number
+	 };;	
+	 <-definition;;
+         =>nrel_main_idtf:[Опр.(однозначно раскрашиваемый граф)](*<-lang_ru;; *);;
+         =>nrel_main_idtf:[Def.(uniquelycoloured graph)](*<-lang_en;; *);; 
+         <=nrel_sc_text_translation:
+         ...
+         (*->
+          [однозначно раскрашиваемый граф-граф с  хроматическим числом,
+
+у которого каждая к-раскраска порождает одно и то же разбиение множества вершин на 
+
+одноцветные классы](*<-lang_ru;;*);;
+              *);;
+         *);;
+
+
+      concept_uniquelycoloured_graph <= nrel_inclusion:
+      concept_graph;;
+      concept_uniquelycoloured_graph => nrel_inclusion:
+      concept_k_d_tree;;
+
+concept_uniquelycoloured_graph <- rrel_key_sc_element:
+...
+(*
+ =>nrel_main_idtf:
+         [Утв.(однозначно раскрашиваемый граф*)](* <- lang_ru;; *);;         
+     <- sc_statement;;
+     <- statement_of_common_type;;
+     <- rrel_axiom: sb_d_of_graph_theory;;
+     <=nrel_sc_text_translation:
+         ...
+         (*
+         ->rrel_example: 
+         [Каждый однозначно k-раскрашиваемый граф (k-1)-связен](*<-lang_ru;;*);;
+      *);;
+*);;
+   
+
+      concept_uniquelycoloured_graph -> rrel_example:
+      ...
+      (*
+      ->rrel_vertex: .A;;
+      ->rrel_vertex: .B;;
+      ->rrel_edge:(.A<=>.B);;
+      =>nrel_chromatic_number:
+      [2](*<-concept_number;;*);;
+      *);;

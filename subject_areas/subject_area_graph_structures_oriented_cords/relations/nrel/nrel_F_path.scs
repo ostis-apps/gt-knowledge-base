@@ -4,9 +4,9 @@ nrel_F_path => nrel_idtf: [F-path*](*<-lang_en;;*);;
 
 nrel_F_path <- rrel_key_sc_element:
 ...(*	
-	<= {rrel_vertex;concept_directed_graph;nrel_path;rrel_f_direct_arc};;
+	<= nrel_using_constants:{rrel_vertex;concept_directed_graph;nrel_path;rrel_f_direct_arc};;
 	=> nrel_main_idtf: [Опр.(F-путь*)] (* <- lang_ru;; *);;
-	<- sc_definition;;
+	<- definition;;
 	<= nrel_sc_text_translation: ...(*
 						-> [F-путь -  для данной нумерации F вершин орграфа путь, не содержащий F-обратных дуг, т.е. такой путь, у которого F-номера вершин образуют монотонно возрастающую последовательность. Если существует F-путь от v к w, то говорят, вершина w F-достижима из вершины v.](*<- lang_ru;;*);;
 						*);;
@@ -21,16 +21,7 @@ nrel_F_path -> rrel_example: ( .A => .B );;
 
 nrel_F_path => nrel_first_domain: concept_graph;;
 nrel_F_path => nrel_second_domain: concept_graph;;
-nrel_F_path => nrel_definitional_domain: 
-	...
-	(*
-		<= nrel_association:
-				...(*
-					->concept_graph;;
-					->concept_graph;;
-				*);;
-	*);;
-
+nrel_F_path => nrel_definitional_domain: concept_graph;;
 
 nrel_F_path => nrel_arity_of_relations: 2(*<-concept_number;;*);;
 sc_node_norole_relation -> nrel_arity_of_relations;;

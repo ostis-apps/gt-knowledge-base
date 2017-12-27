@@ -1,8 +1,7 @@
 sc_node_norole_relation->nrel_value_of_flow;;
 
-nrel_value_of_flow => nrel_main_idtf:
-	[величина потока*](* <-lang_ru;; *);
-	[value of flow*](* <-lang_en;; *);;
+nrel_value_of_flow => nrel_main_idtf:[величина потока*](* <-lang_ru;; *);;
+nrel_value_of_flow => nrel_idtf:[value of flow*](* <-lang_en;; *);;
 
 nrel_value_of_flow <- binary_relation;;
 nrel_value_of_flow => nrel_arity_of_relations: 2(* <- number ;;*);;
@@ -27,6 +26,12 @@ nrel_value_of_flow <- rrel_key_sc_element:
         ... 
 		(*
 		<- definition;;
+		<= nrel_using_constants:
+						{
+						concept_directed_graph;
+						nrel_flow;
+						nrel_sourse
+						};;
 		=> nrel_main_idtf: [Определение: величина потока] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Definition: value of flow] (* <- lang_en;; *);;
 		<= nrel_sc_text_translation: ...
@@ -38,13 +43,6 @@ nrel_value_of_flow <- rrel_key_sc_element:
 		*);;
 		<= nrel_bibliographical_source: F_Harary_Graph_Theory;;
 *);;
-
-nrel_value_of_flow<= nrel_using_constants:
-						{
-						concept_directed_graph;
-						nrel_flow;
-						nrel_source
-						};;
 
 nrel_value_of_flow <- rrel_main_key_sc_element:
 		...

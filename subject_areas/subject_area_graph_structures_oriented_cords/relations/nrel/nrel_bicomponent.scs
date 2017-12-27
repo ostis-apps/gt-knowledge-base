@@ -1,8 +1,7 @@
 sc_node_norole_relation->nrel_bicomponent;;
 
-nrel_bicomponent=>nrel_main_idtf:
-	[бикомпонента*]	(*<-lang_ru;;*);
-	[bicomponent*]	(*<-lang_en;;*);;
+nrel_bicomponent=>nrel_main_idtf:[бикомпонента*](*<-lang_ru;;*);;
+nrel_bicomponent=>nrel_idtf:[bicomponent*](*<-lang_en;;*);;
 
 nrel_bicomponent => nrel_arity_of_relations: 2	(* <- number ;;*);;
 nrel_bicomponent <- binary_relation;;
@@ -18,6 +17,14 @@ nrel_bicomponent => nrel_second_domain: concept_directed_graph;;
 nrel_bicomponent <- rrel_key_sc_element: 
      ... 
 	(*
+	<= nrel_using_constants:
+				{
+					concept_directed_graph;
+					concept_node;
+					concept_oredge;
+					nrel_strongly_connected_component;
+					nrel_subgraph
+				};;
 	=> nrel_main_idtf: [Определение: бикомпонента] (* <- lang_ru;; *);;
 	=> nrel_main_idtf: [Definition: bicomponent] (* <- lang_en;; *);;
 	<- definition;;
@@ -30,15 +37,6 @@ nrel_bicomponent <- rrel_key_sc_element:
 		*);;
 	<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
 	*);;
-
-nrel_bicomponent<= nrel_using_constants:
-				{
-					concept_directed_graph;
-					concept_node;
-					concept_oredge;
-					nrel_strongly_connected_component;
-					nrel_subgraph
-				};;
 				
 nrel_bicomponent<- rrel_main_key_sc_element:
 		...

@@ -4,7 +4,7 @@ concept_directed_multigraph => nrel_idtf:[directed multigraph](* <- lang_en;; *)
 
 concept_directed_multigraph <- rrel_key_sc_element:
 ...(*
-		<- sc_definition;;
+		<- definition;;
 		=> nrel_main_idtf: [Опр.(ориентированный мультиграф)] (* <- lang_ru;; *);;
 		<=nrel_using_constants:
 			{
@@ -17,8 +17,3 @@ concept_directed_multigraph <- rrel_key_sc_element:
 *);;
 
 concept_digraph => nrel_inclusion:concept_directed_multigraph;;
-
-concept_directed_multigraph->rrel_example:...
-(*
-->directed_multigraph_G;;
-*);;

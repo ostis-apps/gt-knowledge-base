@@ -8,7 +8,7 @@ concept_directable_graph <- rrel_key_sc_element:
 		=> nrel_main_idtf: [Опр.(ориентируемый граф)] (* <- lang_ru;; *);;
 		<=nrel_using_constants:
 			{
-				concept_edge;
+				concept_arg;
 				concept_graph;
 				concept_strongly_connected_graph
 			};;
@@ -18,8 +18,3 @@ concept_directable_graph <- rrel_key_sc_element:
 *);;
 
 concept_graph => nrel_inclusion:concept_directable_graph;;
-
-concept_directable_graph->rrel_example:...
-(*
-->directable_graph_G;;
-*);;

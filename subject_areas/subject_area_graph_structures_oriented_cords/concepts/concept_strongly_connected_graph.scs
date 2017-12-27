@@ -1,25 +1,49 @@
 sc_node_not_relation -> concept_strongly_connected_graph;;
-concept_strongly_connected_graph => nrel_main_idtf:[сильно связный орграф](* <-lang_ru;; *);;
-concept_strongly_connected_graph => nrel_idtf:[strongly connected graph](* <- lang_en;; *);;
 
-concept_strongly_connected_graph <- rrel_key_sc_element:
-...(*
-		<- sc_definition;;
-		=> nrel_main_idtf: [Опр.(сильно связный орграф)] (* <- lang_ru;; *);;
-		<=nrel_using_constants:
-			{
-				concept_directed_graph;
-				rrel_vertex;
-				rrel_mutually_connected_vertices
-			};;
-		<= nrel_sc_text_translation: ...(*
-				-> [Сильно связный орграф — орграф, у которого любая пара вершин сильно связана.] (*<- lang_ru;;*);;
+concept_strongly_connected_graph => nrel_main_idtf:[сильно связный граф] (* <- lang_ru;; *);;
+	concept_strongly_connected_graph => nrel_idtf:[strongly connected graph] (* <- lang_en;; *);;
+
+concept_strongly_connected_graph <- rrel_key_sc_element: 
+        ... 
+            (*
+	<- definition;;
+	<= nrel_using_constants: {
+			concept_directed_graph;
+			concept_node;
+			concept_oredge;
+			nrel_path_in_graph			
+			};;		
+	=> nrel_main_idtf: [Определение: сильно связный граф] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Definition: strongly connected graph] (* <- lang_en;; *);;	
+	<= nrel_sc_text_translation: ... 
+	(*
+		-> rrel_example: [Сильно связный граф - орграф, в котором для любых вершин u и v существует путь из вершины u в v, так и из вершины v в u.] (* <- lang_ru;; *);;
+		-> rrel_example: [Strongly connected graph - orgraph that contains a directed path from u to v and a directed path from v to u ,for every pair of vertices u, v] (* <- lang_ru;; *);;
+		*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+*);;
+			
+concept_strongly_connected_graph <- rrel_key_sc_element: 
+        	... 
+		(*
+		<- statement;;
+		-> rrel_key_sc_element: concept_node; nrel_cycle;;		
+		=> nrel_main_idtf: [Утверждение: сильно связный граф] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Definition: strongly connected graph](* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Любые две вершины несовпадающие вершины сильно связного графа принадлежат циклическому маршруту.] (* <- lang_ru;; *);;
+                        -> rrel_example: 
+				[Bipartite graph is a graph that does not contain any odd-length cycles.] (* <- lang_en;; *);;
 			*);;
+        <= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+		*);;
+		
+concept_strongly_connected_graph <- rrel_key_sc_element: ... (*
+	<- illustration;;
+	<= nrel_sc_text_translation: ... (*
+		-> rrel_example: "file://contents/concept_strongly_connected_graph.png";;
+	*);;
 *);;
 
-concept_directed_graph => nrel_inclusion:concept_strongly_connected_graph;;
-
-concept_strongly_connected_graph->rrel_example:...
-(*
-->strongly_connected_graph_G;;
-*);;

@@ -1,19 +1,16 @@
-functional_directed_graph
-<- sc_node_not_relation;
-=> nrel_main_idtf:
-	[Функциональный орграф]
-	(* <- lang_ru;; *);
-	[Functional directed graph]
-	(* <- lang_en;; *);
-<= nrel_inclusion: concept_graph;
+sc_node_not_relation -> concept_functional_directed_graph;;
+concept_functional_directed_graph=> nrel_main_idtf:[функциональный орграф](* <- lang_ru;; *);;
+	concept_functional_directed_graph=> nrel_idtf:[functional directed graph]
+(* <- lang_en;; *);;
+concept_functional_directed_graph <= nrel_inclusion: concept_graph;
 <- rrel_key_sc_element:
 	...  
 	(*
 		<- definition;;
 		<= nrel_using_constants:
                 {
-					concept_vertex;
-					concept_digraph;
+					concept_node;
+					concept_directed_graph;
 					nrel_indegree                	
                 };;
 		=> nrel_main_idtf: 

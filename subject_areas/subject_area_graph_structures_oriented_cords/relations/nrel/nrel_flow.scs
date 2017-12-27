@@ -1,8 +1,7 @@
 sc_node_norole_relation->nrel_flow;;
 
-nrel_flow=>nrel_main_idtf:
-	[поток*](*<-lang_ru;;*);
-	[flow*]	(*<-lang_en;;*);;
+nrel_flow=>nrel_main_idtf:[поток*](*<-lang_ru;;*);;
+nrel_flow=>nrel_idtf:[flow*](*<-lang_en;;*);;
 
 nrel_flow => nrel_arity_of_relations: 2	(* <- number ;;*);;
 nrel_flow <- binary_relation;;
@@ -26,8 +25,15 @@ nrel_flow <= nrel_definitional_domain:
 nrel_flow <- rrel_key_sc_element: 
      ... 
 	(*
-	=> nrel_main_idtf: [Определение: поток] (* <- lang_ru;; *);;
-	=> nrel_main_idtf: [Definition: flow] (* <- lang_en;; *);;
+	<= nrel_using_constants:
+				{
+					concept_directed_graph;
+					concept_node;
+					concept_oredge;
+					concept_number
+				};;
+	=> nrel_main_idtf: [Определение: поток*] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Definition: flow*] (* <- lang_en;; *);;
 	<- definition;;
 	<= nrel_sc_text_translation: ...
 		(*
@@ -39,14 +45,6 @@ capacity constraints, skew symmetry, flow conservation.](*<- lang_en;;*);;
 		*);;
 	<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
 	*);;
-
-nrel_flow<= nrel_using_constants:
-				{
-					concept_directed_graph;
-					concept_node;
-					concept_oredge;
-					nrel_number
-				};;
 				
 nrel_flow<- rrel_main_key_sc_element:
 		...

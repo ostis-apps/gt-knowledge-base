@@ -4,14 +4,14 @@ concept_circuit_closed_graph => nrel_idtf:[circuit closed graph](* <- lang_en;; 
 
 concept_circuit_closed_graph <- rrel_key_sc_element:
 ...(*
-		<- sc_definition;;
+		<- definition;;
 		=> nrel_main_idtf: [Опр.(ориентированно-циклически замкнутый граф)] (* <- lang_ru;; *);;
 		<=nrel_using_constants:
 			{
 				concept_directed_graph;
 				nrel_subgraph;
                 nrel_contour;
-                rrel_vertex;
+                concept_node;
 				nrel_inclusion
 			};;
 		<= nrel_sc_text_translation: ...(*
@@ -20,8 +20,3 @@ concept_circuit_closed_graph <- rrel_key_sc_element:
 *);;
 
 concept_graph => nrel_inclusion:concept_circuit_closed_graph;;
-
-concept_circuit_closed_graph->rrel_example:...
-(*
-->circuit_closed_graph_G;;
-*);;

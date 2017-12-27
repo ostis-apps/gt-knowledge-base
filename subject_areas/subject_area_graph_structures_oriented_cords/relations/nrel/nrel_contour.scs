@@ -1,8 +1,7 @@
 sc_node_norole_relation->nrel_contour;;
 
-nrel_contour=>nrel_main_idtf:
-	[контур*]	(*<-lang_ru;;*);
-	[contour*]	(*<-lang_en;;*);;
+nrel_contour=>nrel_main_idtf:[контур*](*<-lang_ru;;*);;
+nrel_contour=>nrel_idtf:[contour*](*<-lang_en;;*);;
 
 nrel_contour => nrel_arity_of_relations: 2	(* <- number ;;*);;
 nrel_contour <- binary_relation;;
@@ -19,6 +18,12 @@ nrel_contour <- rrel_key_sc_element:
         ... 
             (*
 	<- definition;;
+	<= nrel_using_constants: {
+			concept_directed_graph;
+			nrel_path_in_the_digraph;
+			concept_node;
+			concept_oredge
+			};;
 	=> nrel_main_idtf: [Определение: контур] (* <- lang_ru;; *);;
 	=> nrel_main_idtf: [Definition: contour] (* <- lang_en;; *);;	
 	<= nrel_sc_text_translation: ... 
@@ -27,15 +32,7 @@ nrel_contour <- rrel_key_sc_element:
 		-> rrel_example: [Contour is a closed path.] (* <- lang_en;; *);;
 		*);;
 		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
-*);;
-
-nrel_contour<= nrel_using_constants: {
-			concept_directed_graph;
-			concept_path_in_the_digraph;
-			concept_node;
-			concept_oredge
-			};;		
-			
+*);;				
 				
 nrel_contour<- rrel_main_key_sc_element:
 		...
