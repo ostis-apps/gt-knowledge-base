@@ -8,7 +8,7 @@ concept_chorde <- rrel_key_sc_element:
 	(*
 	=> nrel_main_idtf: [Определение: хорда] (* <- lang_ru;; *);;
 	=> nrel_main_idtf: [Definition: chorde](* <- lang_en;; *);;	
-	<- definition;; 
+	<- sc_definition;; 
 	<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
 	<= nrel_sc_text_translation: 
 		... 
@@ -16,21 +16,37 @@ concept_chorde <- rrel_key_sc_element:
 		-> rrel_example: 
 		[Хорда - ребро  в хордальном графе, соединяющее две вершины, не смежные в цикле.](* <- lang_ru;; *);;
 		-> rrel_example: 
-                [The chorde is an edge in chordal graph, which connects two verteces, not adjanced in cycle.] (* <-lang_en;; *);;
+                [The chorde is an edge in chordal graph, that connects two verteces, not adjanced in cycle.] (* <-lang_en;; *);;
 		*);;
 	*);;
-concept_chorde<= nrel_using_constants:
+concept_chorde <= nrel_using_constants:
 					{
 					nrel_cycle;
 					concept_edge;
 					concept_node;
 					concept_chordal_graph
 					};;
+
+concept_chorde <- rrel_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: для существования хорды необходим цикл как минимум из четырех элементов] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: cycle, that contains at least four nodes, is necessary for existance of a chorde] (* <- lang_en;; *);;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Хорда может существовать только в цикле, имеющем четыре и более элементов.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Сhorde can exist only in cycle, that contains four and more elements.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+		*);;
 	
 concept_chorde <- rrel_key_sc_element: 
 	...
 	(*
-		<- illustration;;
+		<- sc_illustration;;
 		<= nrel_sc_text_translation:
 		...
 			(*

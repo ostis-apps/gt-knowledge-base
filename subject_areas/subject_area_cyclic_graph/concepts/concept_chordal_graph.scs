@@ -5,31 +5,48 @@ concept_chordal_graph => nrel_main_idtf:
 	
 concept_chordal_graph <- rrel_key_sc_element: 
 	...  
-	(*
+	(*	
+	<- sc_definition;;
 	=> nrel_main_idtf: [Определение: хордальный граф] (* <- lang_ru;; *);;
-	=> nrel_main_idtf: [Definition: chordal graph](* <- lang_en;; *);;	
-	<- definition;; 
+	=> nrel_main_idtf: [Definition: chordal graph](* <- lang_en;; *);; 
 	<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
 	<= nrel_sc_text_translation: 
 		... 
 		(*
 		-> rrel_example: 
-		[Граф называется хордальным, если каждый из его циклов, имеющий четыре и более дуг, имеет хорду, которая является ребром, соединяющим две вершины, не смежные в цикле.](* <- lang_ru;; *);;
+		[Граф называется хордальным, если каждый из его циклов, имеющий четыре и более ребер, имеет хорду, которая является ребром, соединяющим две вершины, не смежные в цикле.](* <- lang_ru;; *);;
 		-> rrel_example: 
-                [The graph is called chordal for every cycle in this graph there is a chord.] (* <-lang_en;; *);;
+                [The graph is called chordal, if every cycle in this graph, that contains four and more edges, has a chord, that links two noncontiguous nodes.] (* <-lang_en;; *);;
 		*);;
 	*);;
 concept_chordal_graph<= nrel_using_constants:
 					{
 					nrel_cycle;
-					concept_oredge;
+					concept_edge;
+					concept_node;
 					concept_chorde
 					};;
+
+concept_chordal_graph <- rrel_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: невозможность существования хордального графа не содержащего хорд] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: impossibility of existance of a chordal graph, that doesn't contain any chorde] (* <- lang_en;; *);;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Каждый хордальный граф имеет хотябы одну хорду.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Every chordal graph has at least one chorde.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+		*);;
 	
 concept_chordal_graph <- rrel_key_sc_element: 
 	...
 	(*
-		<- illustration;;
+		<- sc_illustration;;
 		<= nrel_sc_text_translation:
 		...
 			(*

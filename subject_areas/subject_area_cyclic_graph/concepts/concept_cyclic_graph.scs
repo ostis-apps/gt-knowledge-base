@@ -7,7 +7,7 @@ concept_cyclic_graph => nrel_main_idtf:
 concept_cyclic_graph <- rrel_key_sc_element: 
         ... 
 		(*
-		<- definition;;
+		<- sc_definition;;
 		=> nrel_main_idtf: [Определение: циклический граф] (* <- lang_ru;; *);;
 		=> nrel_main_idtf: [Definition: cyclic graph] (* <- lang_en;; *);;
 		<= nrel_sc_text_translation: ...
@@ -20,15 +20,31 @@ concept_cyclic_graph <- rrel_key_sc_element:
 		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
 *);;
 
-concept_cyclic_graph<= nrel_using_constants:
+concept_cyclic_graph <= nrel_using_constants:
 						{
 							nrel_cycle
 						};;
+
+concept_cyclic_graph <- rrel_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утверждение: невозможность существования циклического графа не содержащего цикла] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: impossibility of existance of a cyclic graph that doesn't contain any cycle] (* <- lang_en;; *);;
+		<- sc_statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Каждый циклический граф имеет хотябы один цикл.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Every cyclic graph has at least one cycle.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+		*);;
 			
 concept_cyclic_graph <- rrel_key_sc_element: 
 	...
 	(*
-		<- illustration;;
+		<- sc_illustration;;
 		<= nrel_sc_text_translation:
 		...
 			(*

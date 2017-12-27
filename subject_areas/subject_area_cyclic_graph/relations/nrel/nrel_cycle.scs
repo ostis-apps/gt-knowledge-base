@@ -1,42 +1,58 @@
-sc_node_norole_relation -> nrel_cycle;; 
-nrel_chain_in_graph=> nrel_inclusion: nrel_cycle;;
-sc_relation -> nrel_cycle ;;
-ternary_relation -> nrel_cycle;;
-oriented_relation -> nrel_cycle;;
+sc_node_norole_relation -> nrel_cycle;;
 
-nrel_cycle
-	=> nrel_main_idtf:
+nrel_cycle	=> nrel_main_idtf:
 	[ цикл в графе* ] (* <-lang_ru;; *);
-	[ cycle in the gpaph* ] (* <-lang_en;; *);
+	[ cycle in the graph* ] (* <-lang_en;; *);;
 
-=> nrel_arity_of_relations: 3 (* <- number ;;*);
-
-<-rrel_key_sc_element:
+nrel_cycle <- rrel_key_sc_element:
 	...
-	(*<-definition;;
+	(*
+	<-sc_definition;;
 	=> nrel_main_idtf: [Опр.(цикл в графе)] (* <- lang_ru;; *);;
-	<=nrel_sc_text_translation:
+	=> nrel_main_idtf: [Definition: cycle] (* <- lang_en;; *);;
+	<= nrel_sc_text_translation:
 		...
 		(*
 		-> rrel_example:[Цикл - цепь , в которой концевые вершины совпадают.] (*<-lang_ru;;*);;	
 		*);;
-	*);
-<= nrel_using_constants:
+	<= nrel_using_constants:
 		{
 			nrel_chain_in_graph;
 			rrel_vertex
-		};
+		};;
+	<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+	*);;
 
-=> nrel_definitional_domain:
+nrel_cycle <- rrel_key_sc_element:
+		...
+		(*		
+		<- sc_statement;;
+		=> nrel_main_idtf: [Утверждение: цикл циклического графа] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Statement: cycle of cyclic graph] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Как минимум один цикл необходим для существования циклического графа.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[At least one cycle is neccessary for graph to become a cyclic graph.](*<- lang_en;;*);;
+			*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+		*);;
+
+oriented_relation -> nrel_cycle;;
+ternary_relation -> nrel_cycle;;
+nrel_cycle => nrel_arity_of_relations: 3(* <- concept_number;; *);;
+nrel_cycle => nrel_first_domain:concept_graph;;
+nrel_cycle => nrel_second_domain:concept_graph;;
+nrel_cycle => nrel_third_domain:concept_set_of_correspondences;;
+
+nrel_cycle => nrel_definitional_domain:
 	...
 	(*
 	<= nrel_combination:
-		...
-		(*
-		->concept_graph;;
-		->set_of_correspondences;;
-		*);;
-	*);
-=> nrel_first_domain:concept_graph;
-=> nrel_second_domain:concept_graph;
-=> nrel_third_domain:set_of_correspondences;;
+		{
+		 concept_graph;
+		 concept_set_of_correspondences
+		};;
+	*);;
+
