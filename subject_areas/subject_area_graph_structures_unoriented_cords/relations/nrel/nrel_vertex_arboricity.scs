@@ -1,7 +1,8 @@
 sc_node_role_relation ->nrel_vertex_arboricity;;
 
 nrel_vertex_arboricity => nrel_main_idtf:
-		[вершинная древесность*](* <-lang_ru;; *);
+		[вершинная древесность*](* <-lang_ru;; *);;
+nrel_vertex_arboricity => nrel_idtf:
 		[vertex arboricity*](* <-lang_en;; *);;
 
 nrel_vertex_arboricity <- rrel_key_sc_element:
@@ -10,8 +11,8 @@ nrel_vertex_arboricity <- rrel_key_sc_element:
 		    <-sc_definition;;
 			<= nrel_using_constants:
 				{
-		                  concept_edge;
-		                  concept_node
+		                  rrel_edge;
+		                  rrel_vertex
 				};;
                     => nrel_main_idtf: [Опр.(вершинная древесность*)] (* <- lang_ru;; *);;		    
 		    <=nrel_sc_text_translation: ...

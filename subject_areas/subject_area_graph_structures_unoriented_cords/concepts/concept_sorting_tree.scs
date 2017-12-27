@@ -1,7 +1,8 @@
 sc_node_not_relation->concept_sorting_tree;;
 
 concept_sorting_tree => nrel_main_idtf:
-	[дерево сортировки](* <-lang_ru;; *);
+	[дерево сортировки](* <-lang_ru;; *);;
+concept_sorting_tree => nrel_idtf:
 	[sorting tree](* <-lang_en;; *);;
 
 concept_sorting_tree <- rrel_key_sc_element:... 

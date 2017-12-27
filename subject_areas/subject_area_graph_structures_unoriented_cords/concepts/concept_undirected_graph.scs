@@ -1,7 +1,8 @@
 sc_node_not_relation->concept_undirected_graph;;
 
 concept_undirected_graph => nrel_main_idtf:
-	[неориентированный граф](* <-lang_ru;; *);
+	[неориентированный граф](* <-lang_ru;; *);;
+concept_undirected_graph => nrel_idtf:
 	[undirected graph](* <-lang_en;; *);;
 
 concept_undirected_graph <- rrel_key_sc_element: 

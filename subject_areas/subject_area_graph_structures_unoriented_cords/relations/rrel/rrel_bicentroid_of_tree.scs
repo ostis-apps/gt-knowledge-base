@@ -1,7 +1,8 @@
 sc_node_role_relation ->rrel_bicentroid_of_tree;;
 
 rrel_bicentroid_of_tree => nrel_main_idtf:
-		[бицентроид дерева'](* <-lang_ru;; *);
+		[бицентроид дерева'](* <-lang_ru;; *);;
+rrel_bicentroid_of_tree => nrel_idtf:
 		[bicentroid of tree'](* <-lang_en;; *);;
 
 rrel_bicentroid_of_tree <- rrel_key_sc_element:
@@ -12,7 +13,7 @@ rrel_bicentroid_of_tree <- rrel_key_sc_element:
 			{
 		        	nrel_vertex_adjacency;
 				nrel_node_height;
-				rrel_centroid		                
+				rrel_centroid_vertex		                
 			};;
                     => nrel_main_idtf: [Опр.(бицентроид дерева)] (* <- lang_ru;; *);;		    
 		    <=nrel_sc_text_translation: ...

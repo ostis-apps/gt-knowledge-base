@@ -3,6 +3,7 @@ sc_node_not_relation->concept_outerplane_graph;;
 concept_outerplane_graph
 => nrel_main_idtf:
 	[ внешнеплоский граф ] (* <-lang_ru;; *);
+=> nrel_idtf:
 	[ outerplane graph ] (* <-lang_en;; *);
 
 <-rrel_key_sc_element:

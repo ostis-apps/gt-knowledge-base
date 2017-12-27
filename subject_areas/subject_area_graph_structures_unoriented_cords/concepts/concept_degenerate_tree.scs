@@ -1,7 +1,8 @@
 sc_node_not_relation->concept_degenerate_tree;;
 
 concept_degenerate_tree => nrel_main_idtf:
-	[вырожденное дерево](* <-lang_ru;; *);
+	[вырожденное дерево](* <-lang_ru;; *);;
+concept_degenerate_tree => nrel_idtf:
 	[degenerate tree](* <-lang_en;; *);;
 
 concept_degenerate_tree <- rrel_key_sc_element:... 

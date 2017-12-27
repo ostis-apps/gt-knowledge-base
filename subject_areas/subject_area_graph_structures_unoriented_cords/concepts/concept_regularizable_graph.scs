@@ -1,7 +1,8 @@
 sc_node_not_relation -> concept_regularizable_graph;;
 
 concept_regularizable_graph => nrel_main_idtf:
-	[регуляризуемый граф] (* <- lang_ru;; *);
+	[регуляризуемый граф] (* <- lang_ru;; *);;
+concept_regularizable_graph => nrel_idtf:
 	[regularizable graph] (* <- lang_en;; *);;
 	
 concept_regularizable_graph <- rrel_key_sc_element: 

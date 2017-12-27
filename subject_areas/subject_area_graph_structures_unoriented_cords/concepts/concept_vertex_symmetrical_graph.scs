@@ -1,7 +1,8 @@
 sc_node_not_relation->concept_vertex_symmetrical_graph;;
 
 concept_vertex_symmetrical_graph => nrel_main_idtf:
-	[вершинно-симметрический граф](* <-lang_ru;; *);
+	[вершинно-симметрический граф](* <-lang_ru;; *);;
+concept_vertex_symmetrical_graph => nrel_idtf:
 	[vertex symmetrical graph](* <-lang_en;; *);;
 
 concept_vertex_symmetrical_graph <- rrel_key_sc_element:... 
@@ -11,7 +12,7 @@ concept_vertex_symmetrical_graph <- rrel_key_sc_element:...
 			{
 				concept_graph;
 				rrel_vertex;
-				nrel_automorphism
+				nrel_automorphic
 			};;
 		=> nrel_main_idtf: [Опр.(вершинно-симметрический граф)] (* <- lang_ru;; *);;		
 		<= nrel_sc_text_translation: ...

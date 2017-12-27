@@ -4,6 +4,7 @@ binary_relation -> nrel_simple_circuit;;
 nrel_simple_circuit
 => nrel_main_idtf:
 	[ простой цикл* ] (* <-lang_ru;; *);
+=> nrel_idtf:
 	[ simple circuit* ] (* <-lang_en;; *);
 
 <-rrel_key_sc_element:

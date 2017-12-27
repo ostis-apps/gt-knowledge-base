@@ -3,6 +3,7 @@ sc_node_not_relation->concept_graph_cycle;;
 concept_graph_cycle
 => nrel_main_idtf:
 	[ граф-цикл ] (* <-lang_ru;; *);
+=> nrel_idtf:
 	[ graph-cycle ] (* <-lang_en;; *);
 
 

@@ -3,6 +3,7 @@ sc_node_not_relation->concept_rarefied_graph;;
 concept_rarefied_graph
 => nrel_main_idtf:
 	[ разреженный граф ] (* <-lang_ru;; *);
+=> nrel_idtf:
 	[ rarefied graph ] (* <-lang_en;; *);
 
 <-rrel_key_sc_element:

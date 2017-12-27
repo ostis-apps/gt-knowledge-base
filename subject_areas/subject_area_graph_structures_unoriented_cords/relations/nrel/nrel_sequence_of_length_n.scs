@@ -2,7 +2,8 @@ sc_node_norole_relation->nrel_sequence_of_length_n;;
 binary_relation -> nrel_sequence_of_length_n;;
 
 nrel_sequence_of_length_n => nrel_main_idtf:
-	[ маршрут длины n* ] (* <-lang_ru;; *);
+	[ маршрут длины n* ] (* <-lang_ru;; *);;
+nrel_sequence_of_length_n => nrel_idtf:
 	[ sequence of length n* ] (* <-lang_en;; *);
 
 <-rrel_key_sc_element:

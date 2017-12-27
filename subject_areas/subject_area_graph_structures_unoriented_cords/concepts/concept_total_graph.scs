@@ -1,7 +1,8 @@
 sc_node_not_relation -> concept_total_graph;;
 
 concept_total_graph => nrel_main_idtf:
-	[тотальный граф] (* <- lang_ru;; *);
+	[тотальный граф] (* <- lang_ru;; *);;
+concept_total_graph => nrel_idtf:
 	[total graph] (* <- lang_en;; *);;
 	
 concept_total_graph <- rrel_key_sc_element: 
@@ -14,7 +15,7 @@ concept_total_graph <- rrel_key_sc_element:
 	<= nrel_using_constants:
 	{
 		concept_graph;			
-		concept_node
+		rrel_vertex
 	};;
 	<= nrel_sc_text_translation: 
 		... 

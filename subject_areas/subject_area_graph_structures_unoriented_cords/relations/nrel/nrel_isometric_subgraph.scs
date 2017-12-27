@@ -5,6 +5,7 @@ non_oriented_relation ->nrel_isometric_subgraph;;
 nrel_isometric_subgraph
 => nrel_main_idtf:
 	[ изометрический подграф* ] (* <-lang_ru;; *);
+=> nrel_idtf:
 	[ isometric subgraph* ] (* <-lang_en;; *);
 
 <-rrel_key_sc_element:

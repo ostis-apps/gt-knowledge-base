@@ -4,6 +4,7 @@ binary_relation -> nrel_closure_of_graph;;
 nrel_closure_of_graph
 => nrel_main_idtf:
 	[ замыкание графа* ] (* <-lang_ru;; *);
+=> nrel_idtf:
 	[ closure of graph* ] (* <-lang_en;; *);
 
 <-rrel_key_sc_element:

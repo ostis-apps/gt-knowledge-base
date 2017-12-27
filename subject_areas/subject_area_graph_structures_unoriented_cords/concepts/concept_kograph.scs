@@ -1,7 +1,8 @@
 sc_node_not_relation-> concept_kograph;;
 
 concept_kograph => nrel_main_idtf:
-	[кограф](* <-lang_ru;; *);
+	[кограф](* <-lang_ru;; *);;
+concept_kograph => nrel_idtf:
 	[kograph](* <-lang_en;; *);;
 
 concept_kograph <- rrel_key_sc_element: 
@@ -22,7 +23,7 @@ concept_kograph <- rrel_key_sc_element:
 concept_kograph <= nrel_using_constants:
 						{
 						concept_graph;
-						concept_node
+						rrel_vertex
 
 						};;
 

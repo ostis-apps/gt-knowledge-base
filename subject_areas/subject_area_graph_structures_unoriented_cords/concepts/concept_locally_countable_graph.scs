@@ -3,6 +3,7 @@ sc_node_not_relation->concept_locally_countable_graph;;
 concept_locally_countable_graph
 => nrel_main_idtf:
 	[ локально счетный граф ] (* <-lang_ru;; *);
+=> nrel_idtf:
 	[ locally countable graph ] (* <-lang_en;; *);
 
 <-rrel_key_sc_element:

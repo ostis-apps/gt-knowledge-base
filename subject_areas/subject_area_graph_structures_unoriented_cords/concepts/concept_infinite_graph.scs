@@ -3,6 +3,7 @@ sc_node_not_relation->concept_infinite_graph;;
 concept_infinite_graph
 => nrel_main_idtf:
 	[ бесконечный граф ] (* <-lang_ru;; *);
+=> nrel_idtf:
 	[ infinite graph ] (* <-lang_en;; *);
 
 <-rrel_key_sc_element:

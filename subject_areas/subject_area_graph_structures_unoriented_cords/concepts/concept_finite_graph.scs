@@ -3,8 +3,8 @@ sc_node_not_relation->concept_finite_graph;;
 concept_finite_graph
 => nrel_main_idtf:
 	[ конечный граф ] (* <-lang_ru;; *);
+=> nrel_idtf:
 	[ finite graph ] (* <-lang_en;; *);
-
 
 <-rrel_key_sc_element:
 	...

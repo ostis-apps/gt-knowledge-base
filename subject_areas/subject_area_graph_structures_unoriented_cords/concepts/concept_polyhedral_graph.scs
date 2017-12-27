@@ -1,7 +1,8 @@
 sc_node_not_relation->concept_polyhedral_graph;;
 
 concept_polyhedral_graph => nrel_main_idtf:
-	[полиэдральный граф](* <-lang_ru;; *);
+	[полиэдральный граф](* <-lang_ru;; *);;
+concept_polyhedral_graph => nrel_idtf:
 	[polyhedral graph](* <-lang_en;; *);;
 
 concept_polyhedral_graph <- rrel_key_sc_element: 
@@ -23,8 +24,8 @@ concept_polyhedral_graph <- rrel_key_sc_element:
 concept_polyhedral_graph<= nrel_using_constants:
 						{
 						concept_undirected_graph;
-						concept_node;
-						concept_edge
+						rrel_vertex;
+						rrel_edge
 						};;
 
 

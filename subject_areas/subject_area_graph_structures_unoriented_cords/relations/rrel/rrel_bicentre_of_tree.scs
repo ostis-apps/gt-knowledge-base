@@ -1,7 +1,8 @@
 sc_node_role_relation ->rrel_bicentre_of_tree;;
 
 rrel_bicentre_of_tree => nrel_main_idtf:
-		[бицентр дерева'](* <-lang_ru;; *);
+		[бицентр дерева'](* <-lang_ru;; *);;
+rrel_bicentre_of_tree => nrel_idtf:
 		[icentre of tree'](* <-lang_en;; *);;
 
 rrel_bicentre_of_tree <- rrel_key_sc_element:

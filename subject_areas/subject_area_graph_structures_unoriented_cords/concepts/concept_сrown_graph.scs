@@ -1,6 +1,7 @@
 sc_node_norole_relation->concept_crown_graph;;
 concept_crown_graph => nrel_main_idtf:
-	[корона](* <-lang_ru;; *);
+	[корона](* <-lang_ru;; *);;
+concept_crown_graph => nrel_idtf:
 	[crown graph](* <-lang_en;; *);;
 
 concept_crown_graph <- rrel_key_sc_element: 
@@ -22,8 +23,8 @@ concept_crown_graph <= nrel_using_constants:
 						{
 						concept_undirected_graph;
 						concept_graph;
-						concept_node;
-						concept_edge
+						rrel_vertex;
+						rrel_edge
 						};;
 
 

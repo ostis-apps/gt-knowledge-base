@@ -3,6 +3,7 @@ sc_node_not_relation->concept_partial_graph;;
 concept_partial_graph
 => nrel_main_idtf:
 	[ частичный граф ] (* <-lang_ru;; *);
+=> nrel_idtf:
 	[ partial graph ] (* <-lang_en;; *);
 
 <-rrel_key_sc_element:
@@ -13,7 +14,6 @@ concept_partial_graph
 	{
 		nrel_subgraph;		
 		rrel_edge;
-		subset;
 		rrel_vertex		
 	};;
 	=> nrel_main_idtf: [Опр.(частичный граф)] (* <- lang_ru;; *);;

@@ -4,6 +4,7 @@ binary_relation -> nrel_maximal_strongly_singular_graph;;
 nrel_maximal_strongly_singular_graph
 => nrel_main_idtf:
 	[ максимальный сильно сингулярный граф* ] (* <-lang_ru;; *);
+=> nrel_idtf:
 	[ maximal strongly singular graph* ] (* <-lang_en;; *);
 
 <-rrel_key_sc_element:

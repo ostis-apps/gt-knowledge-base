@@ -2,7 +2,8 @@ sc_node_not_relation->nrel_abstract_dual_graph;;
 binary_relation -> nrel_abstract_dual_graph;;
 
 nrel_abstract_dual_graph => nrel_main_idtf:
-	[абстрактно двойственный граф*](* <-lang_ru;; *);
+	[абстрактно двойственный граф*](* <-lang_ru;; *);;
+nrel_abstract_dual_graph => nrel_idtf:
 	[abstract dual graph*](* <-lang_en;; *);;
 
 nrel_abstract_dual_graph <- rrel_key_sc_element:... 
@@ -13,8 +14,7 @@ nrel_abstract_dual_graph <- rrel_key_sc_element:...
 				concept_graph;
 				rrel_edge;
 				nrel_simple_cutset;
-				nrel_simple_circuit;
-				bijection
+				nrel_simple_circuit
 			};;
 		=> nrel_main_idtf: [Опр.(абстрактно двойственный граф*)] (* <- lang_ru;; *);;		
 		<= nrel_sc_text_translation: ...

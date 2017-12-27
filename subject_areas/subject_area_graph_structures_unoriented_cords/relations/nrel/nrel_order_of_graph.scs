@@ -4,6 +4,7 @@ binary_relation -> nrel_order_of_graph;;
 nrel_order_of_graph
 => nrel_main_idtf:
 	[ порядок графа* ] (* <-lang_ru;; *);
+=> nrel_idtf:
 	[ order of graph* ] (* <-lang_en;; *);
 
 <-rrel_key_sc_element:

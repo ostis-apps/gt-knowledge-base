@@ -3,6 +3,7 @@ sc_node_not_relation->concept_general_graph;;
 concept_general_graph
 => nrel_main_idtf:
 	[ общий граф ] (* <-lang_ru;; *);
+=> nrel_idtf:
 	[ general graph ] (* <-lang_en;; *);
 
 <-rrel_key_sc_element:
@@ -14,7 +15,7 @@ concept_general_graph
 			concept_graph;
 			rrel_edge;
 			rrel_loop;
-			nrel_multiplicity_of_element
+			nrel_multiplication_of_numbers
 		};;
 	=> nrel_main_idtf: [Опр.(общий граф)] (* <- lang_ru;; *);;
 	<=nrel_sc_text_translation:

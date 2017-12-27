@@ -1,7 +1,8 @@
 sc_node_role_relation -> rrel_fixed_vertex;;
 
 rrel_fixed_vertex => nrel_main_idtf:
-		[неподвижная вершина'](* <-lang_ru;; *);
+		[неподвижная вершина'](* <-lang_ru;; *);;
+rrel_fixed_vertex => nrel_idtf:
 		[fixed vertex'](* <-lang_en;; *);;
 
 rrel_fixed_vertex <- rrel_key_sc_element:
@@ -11,7 +12,7 @@ rrel_fixed_vertex <- rrel_key_sc_element:
 			<= nrel_using_constants:
 				{
 		                  rrel_vertex;
-				  nrel_automorphism
+				  nrel_automorphic
 				};;
                     => nrel_main_idtf: [Опр.(неподвижная вершина')] (* <- lang_ru;; *);;		    
 		    <=nrel_sc_text_translation: ...
