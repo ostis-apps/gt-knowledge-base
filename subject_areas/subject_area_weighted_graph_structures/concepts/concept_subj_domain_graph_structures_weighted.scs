@@ -45,13 +45,12 @@ concept_subj_domain_graph_structures_weighted
 	nrel_vertex_weight;
 	nrel_edge_weight;
 	nrel_chain_weight;
-	nrel_subgraph_weight;
 	nrel_cycle_weight;
 	nrel_path_weight;
 	nrel_tree_weight;
 	nrel_min_perfect_matching;
 	nrel_min_spanning_tree;
-	nrel_min_weight_cycle;
+	nrel_minimum_weight_cycle;
 	nrel_min_weight_eulerian_cycle;
 	nrel_min_weight_hamiltonian_cycle;
 	nrel_min_weight_path;
