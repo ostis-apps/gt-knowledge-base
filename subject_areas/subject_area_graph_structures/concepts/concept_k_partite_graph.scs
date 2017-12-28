@@ -24,7 +24,7 @@ concept_k_partite_graph <- rrel_key_sc_element:
 concept_k_partite_graph<= nrel_using_constants:
 						{
 						concept_node;
-						concept_edge;
+						concept_arg;
 						set
 						};;
 

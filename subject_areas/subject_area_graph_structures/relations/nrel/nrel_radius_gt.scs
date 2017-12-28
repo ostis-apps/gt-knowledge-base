@@ -21,7 +21,7 @@ nrel_radius_gt => nrel_second_domain:number;;
 nrel_radius_gt<= nrel_using_constants:
 			{
 				concept_node;
-				concept_eccentricity;
+				nrel_eccentricity;
 				concept_graph
 			};;
 nrel_radius_gt<- rrel_key_sc_element: 

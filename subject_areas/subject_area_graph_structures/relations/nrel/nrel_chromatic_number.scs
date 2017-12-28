@@ -22,7 +22,7 @@ nrel_chromatic_number <- rrel_key_sc_element:
 
 nrel_chromatic_number<= nrel_using_constants:
 						{
-							concept_edge;
+							concept_arg;
 							concept_node
 						};;
 
