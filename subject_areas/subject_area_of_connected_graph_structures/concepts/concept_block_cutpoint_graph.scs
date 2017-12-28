@@ -1,9 +1,9 @@
-sc_node_not_relation -> concept_bloc_cutpoint_graph;;
-concept_bloc_cutpoint_graph => nrel_main_idtf:
+sc_node_not_relation -> concept_block_cutpoint_graph;;
+concept_block_cutpoint_graph => nrel_main_idtf:
 	[граф блоков и точек сочленения] (* <- lang_ru;; *);
 	[block-cutpoint-graph] (* <- lang_en;; *);;
 	
-concept_bloc_cutpoint_graph <- rrel_key_sc_element: 
+concept_block_cutpoint_graph <- rrel_key_sc_element: 
 	...  
 	(*
 	=> nrel_main_idtf: [Определение: граф блоков и точек сочленения] (* <- lang_ru;; *);;
@@ -24,7 +24,7 @@ concept_bloc_cutpoint_graph <- rrel_key_sc_element:
 	*);;
 
 	
-concept_bloc_cutpoint_graph <- rrel_key_sc_element: 
+concept_block_cutpoint_graph <- rrel_key_sc_element: 
 	...
 	(*
 		<- sc_illustration;;
@@ -36,4 +36,4 @@ concept_bloc_cutpoint_graph <- rrel_key_sc_element:
 			*);;
 	*);;
 
-concept_graph => nrel_inclusion: concept_bloc_cutpoint_graph;;
+concept_graph => nrel_inclusion: concept_block_cutpoint_graph;;
