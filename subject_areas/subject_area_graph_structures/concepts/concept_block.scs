@@ -16,7 +16,7 @@ concept_block
 			...
 			(*
 				-> rrel_example:
-					[блок - это граф без шарниров.] (*<-lang_ru;;*);;
+					[Блок - это граф без шарниров.] (*<-lang_ru;;*);;
 				<= nrel_using_constants:
 					{
 						concept_graph;
@@ -35,11 +35,11 @@ concept_block
 			...
 			(*
 				-> rrel_example: [В блоке нет вершины, в результате удаления которой вместе со всеми инцидентными ей рёбрами количество компонент связности в данном блоке возрастает.] (*<-lang_ru;;*);;
-				<= nrel_using_constants:
+			*);;
+	*);;
+concept_block <= nrel_using_constants:
 					{
 						rrel_vertex;
 						nrel_connected_component;
 						rrel_edge
 					};;	
-			*);;
-	*);;

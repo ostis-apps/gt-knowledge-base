@@ -18,14 +18,14 @@ nrel_graph_automorphism
 		...
 		(*
 		-> rrel_example:
-		[В случае если биекция отображает граф сам на себя (графы G и H совпадают ) , то она называется автоморфизмом графов.] (*<-lang_ru;;*);;
+		[В случае если биекция отображает граф сам на себя (графы G и H совпадают ), она называется автоморфизмом графов.] (*<-lang_ru;;*);;
 		*);;
 	*);
 <= nrel_using_constants:
 		{
 		concept_graph;
-		nrel_bijection;
-		nrel_graph_isomorphism
+		bijection;
+		nrel_isomorphism
 		};
 
 => nrel_definitional_domain:

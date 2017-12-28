@@ -38,7 +38,7 @@ nrel_diametr_gt <- rrel_key_sc_element:
 nrel_diametr_gt <= nrel_using_constants:
 			{
 				rrel_vertex;
-				concept_eccentricity;
+				nrel_eccentricity;
 				concept_graph
 			};;
 

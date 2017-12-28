@@ -34,7 +34,7 @@ nrel_vertex_outcome_degree <- rrel_key_sc_element:
 		...
 		(*
 		-> rrel_example: 
-			[Степень исхода вершины - количество дуг , выходящих в вершину.](* <- lang_ru;; *);;
+			[Степень исхода вершины - количество дуг, выходящих в вершину.](* <- lang_ru;; *);;
 		*);;
 	*);; 
 nrel_vertex_outcome_degree<= nrel_using_constants:

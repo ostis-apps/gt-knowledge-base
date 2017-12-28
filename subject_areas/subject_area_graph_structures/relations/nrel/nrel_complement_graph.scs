@@ -25,7 +25,7 @@ nrel_complement_graph
 							{
 								concept_graph;
 								nrel_vertex_adjacency;
-								rrel_node
+								concept_node
 							};			
 
 => nrel_definitional_domain:concept_graph;

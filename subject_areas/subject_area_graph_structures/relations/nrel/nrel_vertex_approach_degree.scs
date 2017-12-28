@@ -36,7 +36,7 @@ nrel_vertex_approach_degree <- rrel_key_sc_element:
 		...
 		(*
 		-> rrel_example: 
-			[Степень захода вершины - количество дуг , входящих в вершину.]	(* <- lang_ru;; *);;
+			[Степень захода вершины - количество дуг, входящих в вершину.]	(* <- lang_ru;; *);;
 		*);;
 	*);; 
 nrel_vertex_approach_degree<= nrel_using_constants:

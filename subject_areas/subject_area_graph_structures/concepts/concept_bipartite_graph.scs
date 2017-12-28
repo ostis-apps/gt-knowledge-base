@@ -13,8 +13,8 @@ concept_bipartite_graph
 		...  
 		(*
 		<-definition;;
-		=> nrel_main_idtf: [Определение: двудольный граф] (* <- lang_ru;; *);;
-		=> nrel_main_idtf: [Definition: bipartite graph](* <- lang_en;; *);;		
+		=> nrel_main_idtf: [Опр. (двудольный граф)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Def. (bipartite graph)](* <- lang_en;; *);;		
 		<=nrel_sc_text_translation:
 			...
 			(*
@@ -28,7 +28,7 @@ concept_bipartite_graph
 		
 concept_bipartite_graph <= nrel_using_constants: {
 					concept_node;
-					concept_edge;
+					concept_arg;
 					set
 				};;
 

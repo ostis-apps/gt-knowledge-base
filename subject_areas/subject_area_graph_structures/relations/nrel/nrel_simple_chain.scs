@@ -13,7 +13,7 @@ nrel_simple_chain <- rrel_key_sc_element:
 		<= nrel_sc_text_translation: ...
 			(*
 			-> rrel_example: 
-				[Маршрут в котором все его вершины,кроме,возможно,крайних, различны.](*<- lang_ru;;*);;
+				[Маршрут, в котором все его вершины, кроме, возможно, крайних, различны.](*<- lang_ru;;*);;
 			-> rrel_example: 
 				[The route in which all the vertices except possibly the extreme, are different.](*<- lang_en;;*);;
 		*);;
@@ -41,3 +41,7 @@ nrel_simple_chain <- rrel_main_key_sc_element:
 			*);;
 		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
 		*);;
+
+nrel_simple_chain => nrel_first_domain: concept_graph;;
+nrel_simple_chain => nrel_second_domain: concept_graph;;
+nrel_simple_chain<= nrel_definitional_domain: concept_graph;;

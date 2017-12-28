@@ -15,10 +15,9 @@ rrel_median
 			-> rrel_example:
 			[Медиана — вершина графа, у которой сумма кратчайших расстояний от неё до вершин графа минимальная возможная.] (*<-lang_ru;;*);;
 		*);;
-
-		<= nrel_using_constants:
-			{
-				concept_graph;
-				rrel_vertex
-			};;	
 	*);;
+rrel_median <= nrel_using_constants:
+	{
+	concept_graph;
+	rrel_vertex
+	};;	

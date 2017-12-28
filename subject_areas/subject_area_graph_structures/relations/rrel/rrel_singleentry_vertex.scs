@@ -16,9 +16,10 @@ rrel_singleentry_vertex
 			[Одновходная вершина — вершина, через которую проходит любой путь извне подграфа в произвольную вершину подграфа.] (*<-lang_ru;;*);;
 		*);;
 
-		<= nrel_using_constants:
+			
+	*);;
+rrel_singleentry_vertex <= nrel_using_constants:
 			{
 				nrel_subgraph;
 				rrel_vertex
-			};;	
-	*);;
+			};;

@@ -21,7 +21,7 @@ nrel_vertex_degree <- rrel_key_sc_element:
 *);;
 nrel_vertex_degree<= nrel_using_constants:
 						{
-							concept_edge;
+							concept_arg;
 							concept_node
 						};;
 

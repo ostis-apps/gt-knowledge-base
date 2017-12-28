@@ -20,7 +20,7 @@ concept_bridge<-rrel_key_sc_element:
 
 concept_bridge <= nrel_using_constants:
 	{
-	concept_edge;
+	concept_arg;
 	nrel_connected_component
 	};;
 
