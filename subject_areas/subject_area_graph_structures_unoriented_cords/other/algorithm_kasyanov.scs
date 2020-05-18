@@ -1,24 +1,23 @@
-algorithm_kasyanov<- sc_node_not_relation;;
+sc_node_not_relation->kasyanov_algorithm;;
 
-algorithm_kasyanov => nrel_main_idtf:
-	[ алгоритм Касьянова ] (* <-lang_ru;; *);
-	[ algorithm Kasyanov ] (* <-lang_en;; *);
+kasyanov_algorithm	=> nrel_main_idtf: 
+		[алгоритм Касьянова] (* <-lang_ru;; *);
+		[Kasyanov algorithm] (* <-lang_en;; *);;
 
-<-rrel_key_sc_element:
-	...
-	(*
-	<-sc_definition;;
-	<= nrel_using_constants:
-			{
-				nrel_bicomponent;
-				concept_multigraph
-			};;	
-	=> nrel_main_idtf: [Опр.(алгоритм Касьянова)] (* <- lang_ru;; *);;
-	<=nrel_sc_text_translation:
+kasyanov_algorithm	<- rrel_key_sc_element:
+		...  
+		(*<-definition;;
+		=> nrel_main_idtf: [Опр.(алгоритм Касьянова)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:
 		...
-		(*
-		-> rrel_example:
-		[Адгоритм Касьянова - основанный на нумерациях линейный алгоритм отыскания бикомпонент в мультиграфе, предложенный В.Касьяновым в 1974 г.] (*<-lang_ru;;*);;			
+			(*
+			-> rrel_example: 
+				[Алгоритм Касьянова - основанный на нумерациях линейный алгоритм отыскания бикомпонент в мультиграфе] (*<-lang_ru;;*);;	
+			*);;
 		*);;
-	*);;
-
+kasyanov_algorithm<= nrel_using_constants:
+							{
+								concept_multigraph;
+								nrel_strongly_connected_component
+							};;
+kasyanov_algorithm<=nrel_inclusion:concept_graph_algorithm;;

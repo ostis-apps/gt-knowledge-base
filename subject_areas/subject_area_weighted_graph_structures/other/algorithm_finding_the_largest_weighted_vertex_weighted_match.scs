@@ -49,4 +49,5 @@ algorithm_finding_the_largest_weighted_vertex_weighted_match
                 "file://content_html/statement_for_finding_the_largest_weighted_vertex_weighted_match_algorithm_en.html"
 				(* <- lang_en;;	*);;
 			*);;
-	*);;
+	*);
+<=nrel_inclusion:concept_graph_algorithm;;

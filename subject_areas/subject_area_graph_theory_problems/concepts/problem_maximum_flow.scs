@@ -42,4 +42,24 @@ problem_maximum_flow
                 "file://content_html/statement_for_problem_maximum_flow_en.html"
 				(* <- lang_en;;	*);;
 			*);;
-	*);;
+	*);
+=> nrel_solution_method:
+	...
+	(*
+		=>nrel_main_idtf:
+			[Метод решения задачи о максимальном потоке с помощью алгоритма Диница]
+			(*<-lang_ru;;*);
+			[Solution method for maximum flow problem using Dinitsa's algorithm]
+			(*<-lang_en;;*);;
+
+		<=nrel_sc_text_translation:
+			...
+			(*
+			->rrel_example:
+				"file://content_html/maximum_flow_problem_solution_method_using_dinitsa_algorithm_ru.html"
+			(*<- lang_ru;;*);
+				"file://content_html/maximum_flow_problem_solution_method_using_dinitsa_algorithm_en.html"
+			(*<- lang_en;;*);;
+			*);;
+	*);
+<=nrel_inclusion:class_of_tasks;;

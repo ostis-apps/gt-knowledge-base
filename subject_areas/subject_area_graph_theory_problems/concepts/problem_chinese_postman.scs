@@ -44,4 +44,25 @@ problem_chinese_postman
 				(* <- lang_en;;	*);;
 			*);;		
 		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
-	*);;
+	*);
+
+=> nrel_solution_method:
+	...
+	(*
+		=>nrel_main_idtf:
+			[Метод неориетированного решения задачи о китайском почтальоне]
+			(*<-lang_ru;;*);
+			[Undirected solution method for chinese postman problem]
+			(*<-lang_en;;*);;
+		<=nrel_using_constants:nrel_eulerian_cycle;;
+		<=nrel_sc_text_translation:
+			...
+			(*
+			->rrel_example:
+				"file://content_html/chinese_postman_problem_solution_method_undirected_ru.html"
+			(*<- lang_ru;;*);
+				"file://content_html/chinese_postman_problem_solution_method_undirected_en.html"
+			(*<- lang_en;;*);;
+			*);;
+	*);
+<=nrel_inclusion:class_of_tasks;;

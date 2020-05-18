@@ -3,7 +3,7 @@ problem_of_shortest_path
 => nrel_main_idtf:
 	[Задача о кратчайшем пути в заданный пункт назначения]
 	(* <- lang_ru;; *);
-	[The problem of the shortest path to a given destination]
+	[the problem of the shortest path to a given destination]
 	(* <- lang_en;; *);
 <- rrel_key_sc_element:
 	...

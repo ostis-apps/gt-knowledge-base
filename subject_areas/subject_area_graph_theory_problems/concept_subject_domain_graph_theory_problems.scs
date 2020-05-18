@@ -1,0 +1,7 @@
+concept_subject_domain_graph_theory_problems
+<-sc_node_not_relation;
+=> nrel_main_idtf:
+	[Раздел. Прикладные задачи решаемые в теории графов](* <-lang_ru;; *);
+	[Section. Graph problems](* <-lang_en;; *);;
+
+

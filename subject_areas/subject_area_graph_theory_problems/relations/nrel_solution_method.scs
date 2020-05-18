@@ -1,0 +1,45 @@
+sc_node_norole_relation -> nrel_solution_method;;
+
+nrel_solution_method => nrel_main_idtf:
+    [метод решения*]
+    (* <- lang_ru;; *);
+    [solution method]
+    (* <- lang_en;; *);;
+
+
+nrel_solution_method <- rrel_key_sc_element: 
+        ... 
+        (*
+            <- definition;;
+            => nrel_main_idtf:
+                [Опр.(метод решения)]
+                (* <- lang_ru;; *);
+		[Def.(solution method)]
+                (* <- lang_en;; *);;
+
+  		=> nrel_using_constants:{
+                                class_of_tasks
+                            };;
+
+            <= nrel_sc_text_translation:
+                ...
+                (*-> rrel_example: 
+                    [Метод решения - последовательность действий, позволяющая решить данный класс задач, основанная на использовании определенного алгоритма.]
+                       (* <- lang_ru;; *);
+		    [Solution method - an ordered set of actions to solve class of problems, based on the using a specific algorithm.]
+			(*<- lang_en;;*);;
+                *);;
+          
+        *);;
+
+
+
+nrel_solution_method  <- binary_relation;;
+nrel_solution_method  => nrel_arity_of_relations: 2 (* <- number;; *);;
+nrel_solution_method  => nrel_first_domain: class_of_tasks;;
+nrel_solution_Method  <= nrel_definitional_domain: 
+                                {
+                    		class_of_tasks
+                                };;
+
+

@@ -18,4 +18,5 @@ fleury_algorithm <- rrel_key_sc_element:
 fleury_algorithm<= nrel_using_constants:
 		{
 		nrel_eulerian_circuit
-		};;	
+		};;
+fleury_algorithm<=nrel_inclusion:concept_graph_algorithm;;

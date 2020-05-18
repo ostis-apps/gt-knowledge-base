@@ -19,3 +19,4 @@ r_f_algorithm<= nrel_using_constants:
 			{
 			nrel_hamiltonian_circuit
 			};;
+r_f_algorithm<=nrel_inclusion:concept_graph_algorithm;;

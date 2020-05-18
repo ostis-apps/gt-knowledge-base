@@ -24,4 +24,5 @@ problem_finding_min_weight_path
 				(* <- lang_en;;	*);;
 			*);;		
 		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
-	*);;
+	*);
+<=nrel_inclusion:class_of_tasks;;
