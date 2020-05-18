@@ -1,7 +1,7 @@
 section_graph_theory_hierarchy 
 <- sc_node_not_relation;
 => nrel_main_idtf: 
-    [Раздел. Предметная область теории графов](* <- lang_ru;; *);
+    [База знаний теории графов](* <- lang_ru;; *);
 => nrel_main_idtf: 
     [Section. Graph Theory](* <- lang_en;; *);
 
@@ -11,7 +11,8 @@ section_graph_theory_hierarchy
 		concept_subj_domain_hypergraphs;
 		concept_subj_domain_pseudographs;
 		concept_subj_domain_multigraphs;
-		section_subject_domain_of_n_graph
+		section_subject_domain_of_n_graph;
+		concept_subject_domain_graph_theory_problems
 		};
 		
 => nrel_exercise: section_exercise_graph_theory;;

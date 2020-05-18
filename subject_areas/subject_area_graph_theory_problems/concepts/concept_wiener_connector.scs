@@ -1,0 +1,27 @@
+concept_wiener_connector
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[Винеровский каркас]
+	(* <- lang_ru;; *);
+	[Wiener connector]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...  
+	(*
+		<- definition;;
+		=> nrel_main_idtf: 
+			[Опр.(Винеровский каркас)]
+			(* <- lang_ru;; *);
+			[Def.(Wiener connector)]
+			(* <- lang_en;; *);;		
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content_html/definition_for_wiener_connector_ru.html"
+				(* <- lang_ru;;	*);			
+                "file://content_html/definition_for_wiener_connector_en.html"
+				(* <- lang_en;;	*);;
+			*);;		
+	*);;
+

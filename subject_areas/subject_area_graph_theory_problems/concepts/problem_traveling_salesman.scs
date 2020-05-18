@@ -67,4 +67,26 @@ problem_traveling_salesman
 				(* <- lang_en;;	*);;
 			*);;		
 		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
-	*);;
+	*);
+
+=> nrel_solution_method:
+	...
+	(*
+		=>nrel_main_idtf:
+			[Метод решения задачи коммивояжера с помощью алгоритма динамического программирования]
+			(*<-lang_ru;;*);
+			[Solution method for salesman problem using dynamic programming algorithm]
+			(*<-lang_en;;*);;
+
+		<=nrel_sc_text_translation:
+			...
+			(*
+			->rrel_example:
+				"file://content_html/salesman_problem_solution_method_using_dynamic_algorithm_ru.html"
+			(*<- lang_ru;;*);
+				"file://content_html/salesman_problem_solution_method_using_dynamic_algorithm_en.html"
+			(*<- lang_en;;*);;
+			*);;
+	*);
+
+<=nrel_inclusion:class_of_tasks;;

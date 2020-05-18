@@ -48,4 +48,5 @@ algorithm_raise_to_start
                 "file://content_html/statement_for_algorithm_raise_to_start_en.html"
 				(* <- lang_en;;	*);;
 			*);;
-	*);;
+	*);
+<=nrel_inclusion:concept_graph_algorithm;;

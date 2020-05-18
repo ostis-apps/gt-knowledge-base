@@ -52,4 +52,12 @@ algorithm_dijkstra
 				(* <- lang_en;;	*);;
 			*);;
 		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
-	*);;
+	*);
+
+		<= nrel_sc_text_translation:	
+			...
+			(*
+			-> 
+				"file://images/Dijkstra_algorithm.gif";;
+			*);
+<=nrel_inclusion:concept_graph_algorithm;;

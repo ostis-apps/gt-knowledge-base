@@ -1,0 +1,167 @@
+<p>Основная идея заключается в вычислении и запоминании пути от исходного города и до каждого из остальных городов, затем суммирования этой величины с путем из каждого из остальных городов до оставшихся городов и т. д. Преимущество данного метода <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle D}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>D</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle D}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/f34a0c600395e5d4345287e21fb26efd386990e6" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.924ex; height:2.176ex;" alt="D"></span> перед методом полного перебора <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle F}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <mi>F</mi>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle F}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/545fd099af8541605f7ee55f08225526be88ce57" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.338ex; width:1.741ex; height:2.176ex;" alt="F"></span> заключается в существенном сокращении полного объема вычислений <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle P_{D}=(6n-1)-n2^{n-1}+4n(n-1)2^{n-2},P_{F}=n!\approx n^{n}e^{-n}{\sqrt {2\pi n}},P_{D}\ll P_{F}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>P</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>D</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mo stretchy="false">(</mo>
+        <mn>6</mn>
+        <mi>n</mi>
+        <mo>−<!-- − --></mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <mo>−<!-- − --></mo>
+        <mi>n</mi>
+        <msup>
+          <mn>2</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>−<!-- − --></mo>
+            <mn>1</mn>
+          </mrow>
+        </msup>
+        <mo>+</mo>
+        <mn>4</mn>
+        <mi>n</mi>
+        <mo stretchy="false">(</mo>
+        <mi>n</mi>
+        <mo>−<!-- − --></mo>
+        <mn>1</mn>
+        <mo stretchy="false">)</mo>
+        <msup>
+          <mn>2</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+            <mo>−<!-- − --></mo>
+            <mn>2</mn>
+          </mrow>
+        </msup>
+        <mo>,</mo>
+        <msub>
+          <mi>P</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>F</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mi>n</mi>
+        <mo>!</mo>
+        <mo>≈<!-- ≈ --></mo>
+        <msup>
+          <mi>n</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <msup>
+          <mi>e</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mo>−<!-- − --></mo>
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <mrow class="MJX-TeXAtom-ORD">
+          <msqrt>
+            <mn>2</mn>
+            <mi>π<!-- π --></mi>
+            <mi>n</mi>
+          </msqrt>
+        </mrow>
+        <mo>,</mo>
+        <msub>
+          <mi>P</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>D</mi>
+          </mrow>
+        </msub>
+        <mo>≪<!-- ≪ --></mo>
+        <msub>
+          <mi>P</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>F</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle P_{D}=(6n-1)-n2^{n-1}+4n(n-1)2^{n-2},P_{F}=n!\approx n^{n}e^{-n}{\sqrt {2\pi n}},P_{D}\ll P_{F}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/128347b495f7ecc448f407afee99b9f632cea414" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -0.838ex; width:75.291ex; height:3.176ex;" alt="{\displaystyle P_{D}=(6n-1)-n2^{n-1}+4n(n-1)2^{n-2},P_{F}=n!\approx n^{n}e^{-n}{\sqrt {2\pi n}},P_{D}\ll P_{F}}"></span> за счет заметного увеличения объема памяти <span class="mwe-math-element"><span class="mwe-math-mathml-inline mwe-math-mathml-a11y" style="display: none;"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle Q_{D}\sim 2^{n}{\sqrt {\frac {2n}{\pi }}},Q_{F}=2,D_{D}\gg Q_{F}}">
+  <semantics>
+    <mrow class="MJX-TeXAtom-ORD">
+      <mstyle displaystyle="true" scriptlevel="0">
+        <msub>
+          <mi>Q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>D</mi>
+          </mrow>
+        </msub>
+        <mo>∼<!-- ∼ --></mo>
+        <msup>
+          <mn>2</mn>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>n</mi>
+          </mrow>
+        </msup>
+        <mrow class="MJX-TeXAtom-ORD">
+          <msqrt>
+            <mfrac>
+              <mrow>
+                <mn>2</mn>
+                <mi>n</mi>
+              </mrow>
+              <mi>π<!-- π --></mi>
+            </mfrac>
+          </msqrt>
+        </mrow>
+        <mo>,</mo>
+        <msub>
+          <mi>Q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>F</mi>
+          </mrow>
+        </msub>
+        <mo>=</mo>
+        <mn>2</mn>
+        <mo>,</mo>
+        <msub>
+          <mi>D</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>D</mi>
+          </mrow>
+        </msub>
+        <mo>≫<!-- ≫ --></mo>
+        <msub>
+          <mi>Q</mi>
+          <mrow class="MJX-TeXAtom-ORD">
+            <mi>F</mi>
+          </mrow>
+        </msub>
+      </mstyle>
+    </mrow>
+    <annotation encoding="application/x-tex">{\displaystyle Q_{D}\sim 2^{n}{\sqrt {\frac {2n}{\pi }}},Q_{F}=2,D_{D}\gg Q_{F}}</annotation>
+  </semantics>
+</math></span><img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/196610cb9e65e22493e31e3105c495a5e6d6fa7f" class="mwe-math-fallback-image-inline" aria-hidden="true" style="vertical-align: -2.338ex; width:34.691ex; height:6.176ex;" alt="{\displaystyle Q_{D}\sim 2^{n}{\sqrt {\frac {2n}{\pi }}},Q_{F}=2,D_{D}\gg Q_{F}}"></span>
+</p>

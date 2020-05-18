@@ -1,0 +1,89 @@
+problem_allocation
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[задача о назначениях]
+	(* <- lang_ru;; *);
+	[problem of allocation]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...  
+	(*
+		<- definition;;
+		=> nrel_main_idtf: 
+			[Опр.(задача о назначениях)]
+			(* <- lang_ru;; *);
+			[Def.(problem of allocation)]
+			(* <- lang_en;; *);;		
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content_html/definition_for_problem_allocation_ru.html"
+				(* <- lang_ru;;	*);			
+                "file://content_html/definition_for_problem_allocation_en.html"
+				(* <- lang_en;;	*);;
+			*);;		
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+	*);
+
+<- rrel_key_sc_element:
+	...  
+	(*
+		<- statement;;
+		=> nrel_main_idtf: 
+			[Утв.(Математическая постановка задачи о назначениях)]
+			(* <- lang_ru;; *);
+			[Stat.(Math setting of allocation problem)]
+			(* <- lang_en;; *);;		
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content_html/statement_for_problem_allocation_math_ru.html"
+				(* <- lang_ru;;	*);			
+                "file://content_html/statement_for_problem_allocation_math_en.html"
+				(* <- lang_en;;	*);;
+			*);;		
+	*);
+
+<- rrel_key_sc_element:
+	...  
+	(*
+		<- statement;;
+		=> nrel_main_idtf: 
+			[Утв.(Линейная и сбалансированная задача о назначениях)]
+			(* <- lang_ru;; *);
+			[Stat.(Linear balanced allocation problem)]
+			(* <- lang_en;; *);;		
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content_html/statement_for_problem_allocation_linear_ru.html"
+				(* <- lang_ru;;	*);			
+                "file://content_html/statement_for_problem_allocation_linear_en.html"
+				(* <- lang_en;;	*);;
+			*);;		
+	*);
+
+=> nrel_solution_method:
+	...
+	(*
+		=>nrel_main_idtf:
+			[Метод решения задачи о назначениях с помощью венгерского алгоритма]
+			(*<-lang_ru;;*);
+			[Solution method for allocation problem using hungarian algorithm]
+			(*<-lang_en;;*);;
+		
+		<=nrel_using_constants:algorithm_hungarian;;
+		<=nrel_sc_text_translation:
+			...
+			(*
+			->rrel_example:
+				"file://content_html/allocation_problem_solution_method_using_hungarian_algorithm_ru.html"
+			(*<- lang_ru;;*);
+				"file://content_html/allocation_problem_solution_method_using_hungarian_algorithm_en.html"
+			(*<- lang_en;;*);;
+			*);;
+	*);
+<=nrel_inclusion:class_of_tasks;;

@@ -56,4 +56,5 @@ algorithm_hungarian
 				(* <- lang_en;;	*);;
 			*);;		
 		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
-	*);;
+	*);
+<=nrel_inclusion:concept_graph_algorithm;;

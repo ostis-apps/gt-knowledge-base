@@ -1,7 +1,7 @@
 ant_algorithm
 <- sc_node_not_relation;
 => nrel_main_idtf:
-	[алгоритм Эдмондса — Карпа]
+	[Муравьиный алгоритм]
 	(* <- lang_ru;; *);
 	[ant algorithm]
 	(* <- lang_en;; *);
@@ -51,4 +51,26 @@ ant_algorithm
 				(* <- lang_en;;	*);;
 			*);;
 		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
+	*);
+
+<- rrel_key_sc_element:
+	...
+	(*
+		<- statement;;
+		=> nrel_main_idtf:
+			[Утв.(Вариации муравьиный алгоритм)]
+			(* <- lang_ru;; *);
+			[Stat.(ant algorithm variations)]
+			(* <- lang_en;; *);;
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example:
+				"file://content_html/variations_of_ant_algorithm_ru.html"
+				(* <- lang_ru;;	*);
+                "file://content_html/variations_of_ant_algorithm_en.html"
+				(* <- lang_en;;	*);;
+			*);;
+		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
 	*);;
+

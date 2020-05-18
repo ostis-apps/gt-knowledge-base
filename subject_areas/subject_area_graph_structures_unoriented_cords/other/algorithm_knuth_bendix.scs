@@ -15,5 +15,6 @@ algorithm_knuth_bendix => nrel_main_idtf:
 		-> rrel_example:
 		[Адгоритм Кнута-Бендикса - алгоритм построения полной системы переписывания термов.] (*<-lang_ru;;*);;			
 		*);;
-	*);;
+	*);
+<=nrel_inclusion:concept_graph_algorithm;;
 

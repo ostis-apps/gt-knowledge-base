@@ -1,0 +1,65 @@
+problem_min_wiener_connector
+<- sc_node_not_relation;
+=> nrel_main_idtf:
+	[задача о минимальном винеровском каркасе]
+	(* <- lang_ru;; *);
+	[minimum wiener connector problem]
+	(* <- lang_en;; *);
+<- rrel_key_sc_element:
+	...  
+	(*
+		<- definition;;
+		=> nrel_main_idtf: 
+			[Опр.(задача о минимальном винеровском каркасе)]
+			(* <- lang_ru;; *);
+			[Def.(minimum wiener connector problem)]
+			(* <- lang_en;; *);;		
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content_html/definition_for_min_wiener_connector_problem_ru.html"
+				(* <- lang_ru;;	*);			
+                "file://content_html/definition_for_min_wiener_connector_problem_en.html"
+				(* <- lang_en;;	*);;
+			*);;		
+	*);
+<- rrel_key_sc_element:
+	...  
+	(*
+		<- statement;;
+		=> nrel_main_idtf: 
+			[Утв.(Постановка задачи о минимальном винеровском каркасе)]
+			(* <- lang_ru;; *);
+			[Stat.(Math setting of minimum wiener connector problem)]
+			(* <- lang_en;; *);;		
+		<= nrel_sc_text_translation:
+			...
+			(*
+			-> rrel_example: 
+				"file://content_html/statement_for_min_wiener_connector_problem_ru.html"
+				(* <- lang_ru;;	*);			
+                "file://content_html/statement_for_min_wiener_connector_problem_en.html"
+				(* <- lang_en;;	*);;
+			*);;		
+	*);
+=> nrel_solution_method:
+	...
+	(*
+		=>nrel_main_idtf:
+			[Метод решения задачи о минимальном винеровском каркасе сведением ее к задаче поиска дерева Штейнера]
+			(*<-lang_ru;;*);
+			[Solution method for minimum wiener connector problem reducing it to finding Steiner's tree]
+			(*<-lang_en;;*);;
+
+		<=nrel_sc_text_translation:
+			...
+			(*
+			->rrel_example:
+				"file://content_html/solution_method_for_minimum_wiener_connector_problem_using_steiner_ru.html"
+			(*<- lang_ru;;*);
+				"file://content_html/solution_method_for_minimum_wiener_connector_problem_using_steiner_en.html"
+			(*<- lang_en;;*);;
+			*);;
+	*);
+<=nrel_inclusion:class_of_tasks;;
