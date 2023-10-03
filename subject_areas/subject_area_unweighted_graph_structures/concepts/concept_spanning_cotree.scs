@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_spanning_cotree;;
+sc_node -> concept_spanning_cotree;;
 
 concept_spanning_cotree => nrel_main_idtf:
     [коостов]

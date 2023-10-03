@@ -1,4 +1,4 @@
-sc_node_norole_relation->concept_crown_graph;;
+sc_node_class->concept_crown_graph;;
 concept_crown_graph => nrel_main_idtf:
 	[корона](* <-lang_ru;; *);;
 concept_crown_graph => nrel_idtf:

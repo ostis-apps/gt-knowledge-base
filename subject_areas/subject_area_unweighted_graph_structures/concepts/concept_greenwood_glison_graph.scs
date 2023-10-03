@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_greenwood_glison_graph;;
+sc_node -> concept_greenwood_glison_graph;;
 
 concept_greenwood_glison_graph => nrel_main_idtf:
     [граф Гринвуда-Глисона]

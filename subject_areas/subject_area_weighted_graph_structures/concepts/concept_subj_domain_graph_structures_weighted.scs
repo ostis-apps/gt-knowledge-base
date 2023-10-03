@@ -1,5 +1,5 @@
 concept_subj_domain_graph_structures_weighted
-<- sc_node_struct;
+<- sc_node_class;
 => nrel_main_idtf:
 	[Предметная область взвешенных графовых структур]
 	(* <- lang_ru;; *);

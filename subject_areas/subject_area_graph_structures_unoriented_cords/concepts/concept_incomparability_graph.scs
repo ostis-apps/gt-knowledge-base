@@ -1,4 +1,4 @@
-sc_node_not_relation-> concept_incomparability_graph;;
+sc_node-> concept_incomparability_graph;;
 
 concept_incomparability_graph => nrel_main_idtf:
 	[граф несравнимости](* <-lang_ru;; *);;

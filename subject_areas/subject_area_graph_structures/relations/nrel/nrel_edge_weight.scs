@@ -1,4 +1,4 @@
-sc_node_not_relation->nrel_edge_weight;;
+sc_node->nrel_edge_weight;;
 
 nrel_edge_weight => nrel_main_idtf:
 	[вес ребра*](* <-lang_ru;; *);

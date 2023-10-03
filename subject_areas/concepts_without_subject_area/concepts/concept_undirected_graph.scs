@@ -1,4 +1,4 @@
-sc_node_not_relation->concept_undirected_graph;;
+sc_node->concept_undirected_graph;;
 
 concept_undirected_graph => nrel_main_idtf:
 	[неориентированный граф](* <-lang_ru;; *);

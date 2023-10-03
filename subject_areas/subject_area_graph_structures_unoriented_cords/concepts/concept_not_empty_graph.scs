@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_not_empty_graph;;
+sc_node -> concept_not_empty_graph;;
 concept_not_empty_graph => nrel_main_idtf:
 	[непустой граф] (* <- lang_ru;; *);;
 concept_not_empty_graph => nrel_idtf:

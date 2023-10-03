@@ -1,5 +1,5 @@
 algorithm_for_pushing_the_pref
-<- sc_node_not_relation;
+<- sc_node;
 => nrel_main_idtf:
 	[алгоритм проталкивания предпотока]
 	(* <- lang_ru;; *);

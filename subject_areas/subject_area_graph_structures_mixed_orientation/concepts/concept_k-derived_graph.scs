@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_k_derived_graph;;
+sc_node -> concept_k_derived_graph;;
 concept_k_derived_graph => nrel_main_idtf:[k-производный граф](* <-lang_ru;; *);;
 concept_k_derived_graph => nrel_idtf:[k-derived graph](* <- lang_en;; *);;
 
@@ -13,7 +13,7 @@ concept_k_derived_graph <- rrel_key_sc_element:
 				rrel_vertex
 			};;
 		<= nrel_sc_text_translation: ...(*
-				-> rrel_example: [k-Производный граф - уграф G[k], совпадающий с исходным уграфом G при k=0 либо являющийся производным от G[k-1] при k > 0. ](*<- lang_ru;;*);;
+				-> rrel_example: [k-Производный граф - уграф G\[k\], совпадающий с исходным уграфом G при k=0 либо являющийся производным от G\[k-1\] при k > 0. ](*<- lang_ru;;*);;
 			*);;
 *);;
 

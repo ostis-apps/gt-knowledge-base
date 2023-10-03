@@ -1,4 +1,4 @@
-sc_node_not_relation->nrel_brother_of_a_vertex;;
+sc_node->nrel_brother_of_a_vertex;;
 
 nrel_brother_of_a_vertex => nrel_main_idtf:
 	[брат вершины*](* <-lang_ru;; *);

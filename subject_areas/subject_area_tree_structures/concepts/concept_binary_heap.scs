@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_binary_heap;;
+sc_node -> concept_binary_heap;;
 
 concept_binary_heap => nrel_main_idtf:
 	[двоичная куча](* <-lang_ru;; *);

@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_flow_network;;
+sc_node -> concept_flow_network;;
 
 concept_flow_network => nrel_main_idtf:[транспортная сеть] (* <- lang_ru;; *);;
 	concept_flow_network => nrel_idtf:[flow network] (* <- lang_en;; *);;

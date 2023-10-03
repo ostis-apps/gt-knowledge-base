@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_locally_finite_graph;;
+sc_node -> concept_locally_finite_graph;;
 concept_locally_finite_graph => nrel_main_idtf:[локально конечный граф](* <-lang_ru;; *);;
 concept_locally_finite_graph => nrel_idtf:[locally finite graph](* <- lang_en;; *);;
 

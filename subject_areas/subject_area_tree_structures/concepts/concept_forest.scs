@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_forest;;
+sc_node -> concept_forest;;
 
 concept_forest => nrel_main_idtf:
 	[лес](* <-lang_ru;; *);

@@ -1,5 +1,5 @@
 algorithm_ford_bellman
-<- sc_node_not_relation;
+<- sc_node;
 => nrel_main_idtf:
 	[алгоритм Форда-Беллмана]
 	(* <- lang_ru;; *);

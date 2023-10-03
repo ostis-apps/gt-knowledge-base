@@ -1,5 +1,5 @@
 problem_maximum_flow
-<- sc_node_not_relation;
+<- sc_node;
 => nrel_main_idtf:
 	[задача о максимальном потоке]
 	(* <- lang_ru;; *);

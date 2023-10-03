@@ -1,5 +1,5 @@
 problem_chinese_postman
-<- sc_node_not_relation;
+<- sc_node;
 => nrel_main_idtf:
 	[задача китайского почтальона]
 	(* <- lang_ru;; *);

@@ -1,5 +1,5 @@
 nrel_similar_verticies
-	<- sc_relation;
+	<- sc_node_norole_relation;
 	<- binary_relation;
 	<- non_oriented_relation;
 

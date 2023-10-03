@@ -1,5 +1,5 @@
 algorithm_ford_falkerson
-<- sc_node_not_relation;
+<- sc_node;
 => nrel_main_idtf:
 	[алгоритм Форда-Фалкерсона]
 	(* <- lang_ru;; *);

@@ -1,5 +1,5 @@
 algorithm_finding_the_largest_weighted_vertex_weighted_match
-<- sc_node_not_relation;
+<- sc_node;
 => nrel_main_idtf:
 	[алгоритм нахождения наибольшего по весу вершинно-взвешаного паросочетания]
 	(* <- lang_ru;; *);

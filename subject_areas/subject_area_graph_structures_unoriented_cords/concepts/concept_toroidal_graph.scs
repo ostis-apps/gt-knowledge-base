@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_toroidal_graph;;
+sc_node -> concept_toroidal_graph;;
 concept_toroidal_graph => nrel_main_idtf:
 	[тороидальный граф] (* <- lang_ru;; *);;
 concept_toroidal_graph => nrel_idtf:

@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_strongly_connected_graph;;
+sc_node -> concept_strongly_connected_graph;;
 
 concept_strongly_connected_graph => nrel_main_idtf:[сильно связный граф] (* <- lang_ru;; *);;
 	concept_strongly_connected_graph => nrel_idtf:[strongly connected graph] (* <- lang_en;; *);;

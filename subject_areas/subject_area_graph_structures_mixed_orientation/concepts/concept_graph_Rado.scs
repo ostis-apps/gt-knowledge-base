@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_graph_Rado;;
+sc_node -> concept_graph_Rado;;
 concept_graph_Rado => nrel_main_idtf:[граф Радо](* <-lang_ru;; *);;
 concept_graph_Rado => nrel_idtf:[graph Rado](* <- lang_en;; *);;
 

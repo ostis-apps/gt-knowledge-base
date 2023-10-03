@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_total_graph;;
+sc_node -> concept_total_graph;;
 concept_total_graph => nrel_main_idtf:
 	[Тотальный граф] (* <- lang_ru;;*);
 	[Total graph] (* <- lang_en;;*);;

@@ -1,5 +1,5 @@
 algorithm_hungarian
-<- sc_node_not_relation;
+<- sc_node;
 => nrel_main_idtf:
 	[венгерский алгоритм]
 	(* <- lang_ru;; *);

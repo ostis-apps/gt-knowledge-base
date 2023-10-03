@@ -1,4 +1,4 @@
-sc_node_not_relation->concept_graph_without_edges;;
+sc_node->concept_graph_without_edges;;
 
 concept_graph_without_edges => nrel_main_idtf:
 	[ безреберный граф ] (* <-lang_ru;; *);

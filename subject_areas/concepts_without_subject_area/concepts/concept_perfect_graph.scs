@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_perfect_graph;;
+sc_node -> concept_perfect_graph;;
 concept_perfect_graph => nrel_main_idtf:
 	[Совершенный граф] (* <- lang_ru;;*);
 	[Perfect graph] (* <- lang_en;;*);;

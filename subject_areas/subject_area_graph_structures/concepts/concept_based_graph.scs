@@ -1,4 +1,4 @@
-sc_node_not_relation->concept_based_graph;;
+sc_node->concept_based_graph;;
 
 concept_based_graph => nrel_main_idtf:
 	[базируемый граф](* <-lang_ru;; *);

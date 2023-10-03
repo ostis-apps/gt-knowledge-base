@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_input_tree;;
+sc_node -> concept_input_tree;;
 concept_input_tree => nrel_main_idtf:
 	[входящее дерево] (* <- lang_ru;; *);
 	[input tree] (* <- lang_en;; *);;

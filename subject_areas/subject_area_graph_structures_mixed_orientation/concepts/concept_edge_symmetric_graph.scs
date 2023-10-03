@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_edge_symmetric_graph;;
+sc_node -> concept_edge_symmetric_graph;;
 concept_edge_symmetric_graph => nrel_main_idtf:[реберно-симметрический граф](* <-lang_ru;; *);;
 concept_edge_symmetric_graph => nrel_idtf:[edge symmetric graph](* <- lang_en;; *);;
 

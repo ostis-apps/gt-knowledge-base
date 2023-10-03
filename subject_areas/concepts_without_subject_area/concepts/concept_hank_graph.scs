@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_hank_graph;;
+sc_node -> concept_hank_graph;;
 
 concept_hank_graph => nrel_main_idtf: 
 		[моток] (* <-lang_ru;; *);

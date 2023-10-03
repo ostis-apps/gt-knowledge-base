@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_reflexive_graph;;
+sc_node -> concept_reflexive_graph;;
 
 concept_reflexive_graph => nrel_main_idtf:
 	[рефлексивный граф]	(* <- lang_ru;;	*);

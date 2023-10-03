@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_levi_graph;;
+sc_node -> concept_levi_graph;;
 concept_levi_graph => nrel_main_idtf:[граф Леви](* <-lang_ru;; *);;
 concept_levi_graph => nrel_idtf:[Levi graph](* <- lang_en;; *);;
 

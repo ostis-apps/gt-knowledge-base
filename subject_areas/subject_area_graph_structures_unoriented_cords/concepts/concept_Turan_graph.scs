@@ -1,4 +1,4 @@
-sc_node_not_relation->concept_Turan_graph;;
+sc_node->concept_Turan_graph;;
 
 concept_Turan_graph => nrel_main_idtf:
 	[граф Турана](* <-lang_ru;; *);;

@@ -1,4 +1,4 @@
-sc_node_not_relation->concept_free_graph;;
+sc_node->concept_free_graph;;
 
 concept_free_graph => nrel_main_idtf:
 	[бесконтурный граф](* <-lang_ru;; *);

@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_chorde;;
+sc_node -> concept_chorde;;
 concept_chorde => nrel_main_idtf:
 	[хорда] (* <- lang_ru;; *);
 	[chorde] (* <- lang_en;; *);;

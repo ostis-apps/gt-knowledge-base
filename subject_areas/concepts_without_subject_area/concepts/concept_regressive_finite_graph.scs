@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_regressive_finite_graph;;
+sc_node -> concept_regressive_finite_graph;;
 concept_regressive_finite_graph => nrel_main_idtf:
 	[регрессивно конечный граф] (* <- lang_ru;; *);
 	[regressive finite graph] (* <- lang_en;; *);;

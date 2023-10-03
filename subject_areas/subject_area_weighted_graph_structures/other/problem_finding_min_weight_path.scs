@@ -1,5 +1,5 @@
 problem_finding_min_weight_path
-<- sc_node_not_relation;
+<- sc_node;
 => nrel_main_idtf:
 	[задача нахождения пути минимального веса]
 	(* <- lang_ru;; *);

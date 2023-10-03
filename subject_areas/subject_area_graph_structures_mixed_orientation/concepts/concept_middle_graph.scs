@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_middle_graph;;
+sc_node -> concept_middle_graph;;
 concept_middle_graph => nrel_main_idtf:[срединный граф](* <-lang_ru;; *);;
 concept_middle_graph => nrel_idtf:[middle graph](* <- lang_en;; *);;
 

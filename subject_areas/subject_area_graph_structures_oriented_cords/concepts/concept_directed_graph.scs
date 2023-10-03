@@ -1,4 +1,4 @@
-sc_node_not_relation->concept_directed_graph;;
+sc_node->concept_directed_graph;;
 
 concept_directed_graph => nrel_main_idtf:[ориентированный граф](* <-lang_ru;; *);;
 	concept_directed_graph => nrel_idtf:[directed graph](* <-lang_en;; *);;

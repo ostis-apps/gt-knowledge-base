@@ -1,4 +1,4 @@
-sc_node_not_relation->nrel_vertex_degree;;
+sc_node->nrel_vertex_degree;;
 
 nrel_vertex_degree => nrel_main_idtf:
 	[степень вершины](* <-lang_ru;; *);

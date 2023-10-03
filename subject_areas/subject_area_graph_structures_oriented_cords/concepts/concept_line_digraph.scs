@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_line_digraph;;
+sc_node -> concept_line_digraph;;
 
 concept_line_digraph => nrel_main_idtf:	[реберный орграф] (* <- lang_ru;; *);;
 concept_line_digraph => nrel_idtf:[line digraph] (* <- lang_en;; *);;

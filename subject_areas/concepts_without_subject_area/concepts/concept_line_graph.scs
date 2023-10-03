@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_line_graph;;
+sc_node -> concept_line_graph;;
 concept_line_graph => nrel_main_idtf:
 	[реберный граф] (* <- lang_ru;; *);
 	[line graph] (* <- lang_en;; *);;

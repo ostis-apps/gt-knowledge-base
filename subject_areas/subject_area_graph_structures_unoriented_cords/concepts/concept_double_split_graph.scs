@@ -1,4 +1,4 @@
-sc_node_not_relation-> concept_double_split_graph;;
+sc_node-> concept_double_split_graph;;
 
 concept_double_split_graph => nrel_main_idtf:
 	[двойной расщепляемый граф](* <-lang_ru;; *);;

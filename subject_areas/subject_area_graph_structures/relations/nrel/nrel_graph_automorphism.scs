@@ -1,6 +1,6 @@
 sc_node_norole_relation->nrel_graph_automorphism;;
 
-sc_relation -> nrel_graph_automorphism;;
+sc_node_norole_relation -> nrel_graph_automorphism;;
 non_oriented_relation ->nrel_graph_automorphism;;
 trnary_relation -> nrel_graph_automorphism;;
 

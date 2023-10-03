@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_collapsible_graph;;
+sc_node -> concept_collapsible_graph;;
 concept_collapsible_graph => nrel_main_idtf:[разборный граф](* <-lang_ru;; *);;
 concept_collapsible_graph => nrel_idtf: [collapsible graph](* <- lang_en;; *);;
 

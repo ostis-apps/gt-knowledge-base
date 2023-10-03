@@ -1,4 +1,4 @@
-sc_node_not_relation->concept_infinite_graph;;
+sc_node->concept_infinite_graph;;
 
 concept_infinite_graph
 => nrel_main_idtf:

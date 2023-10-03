@@ -11,7 +11,7 @@ nrel_linear_subgraph_of_a_directed_graph <- antisymmetric_relation;;
 nrel_linear_subgraph_of_a_directed_graph <- transitive_relation;;
 nrel_linear_subgraph_of_a_directed_graph <- oriented_relation;;
 
-sc_node_not_relation -> statement_of_common_type;;
+sc_node -> statement_of_common_type;;
 statement_of_common_type => nrel_main_idtf:
     [утверждение общего типа](* <- lang_ru;; *);
 	[statement_of_common_type](* <- lang_en;; *);;
