@@ -26,9 +26,15 @@ ant_algorithm
 			(*
 			-> rrel_example:
 				"file://content_html/definition_for_ant_algorithm_ru.html"
-				(* <- lang_ru;;	*);
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);
                 "file://content_html/definition_for_ant_algorithm_en.html"
-				(* <- lang_en;;	*);;
+(*
+	<- lang_en;;
+	=> nrel_format: format_html;;
+*);;
 			*);;
 		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
 	*);
@@ -46,9 +52,15 @@ ant_algorithm
 			(*
 			-> rrel_example:
 				"file://content_html/statement_for_ant_algorithm_ru.html"
-				(* <- lang_ru;;	*);
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);
                 "file://content_html/statement_for_ant_algorithm_en.html"
-				(* <- lang_en;;	*);;
+(*
+	<- lang_en;;
+	=> nrel_format: format_html;;
+*);;
 			*);;
 		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
 	*);;

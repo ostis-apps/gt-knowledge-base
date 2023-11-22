@@ -27,7 +27,9 @@ concept_graph_of_the_dodecahedron <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://pic/concept_graph_of_the_dodecahedron.png";;
+				"file://pic/concept_graph_of_the_dodecahedron.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;
 

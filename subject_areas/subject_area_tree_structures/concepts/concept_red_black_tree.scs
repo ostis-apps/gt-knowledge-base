@@ -66,6 +66,8 @@ concept_red_black_tree <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/concept_red_black_tree.png";;
+				"file://contents/concept_red_black_tree.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;

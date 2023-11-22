@@ -44,7 +44,9 @@ concept_pappus_graph => nrel_idtf:
 		...
 		(*
 			-> rrel_example:
-			"file://picture/concept_pappus_graph.png";;
+			"file://picture/concept_pappus_graph.png"
+(*=> nrel_format:format_png;;
+*);;
 		*);;
 	*);;
 

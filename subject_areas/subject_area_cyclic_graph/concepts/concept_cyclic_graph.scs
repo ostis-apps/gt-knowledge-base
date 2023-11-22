@@ -49,6 +49,8 @@ concept_cyclic_graph <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/concept_cyclic_graph.png";;
+				"file://contents/concept_cyclic_graph.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;

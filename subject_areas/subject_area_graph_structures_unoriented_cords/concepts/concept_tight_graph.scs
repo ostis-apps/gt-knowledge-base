@@ -32,7 +32,9 @@ concept_tight_graph
 		...
 			(*
 			-> rrel_example:
-				"file://picture/concept_tight_graph.png";;
+				"file://picture/concept_tight_graph.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;
 

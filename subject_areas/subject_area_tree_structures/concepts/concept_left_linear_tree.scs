@@ -33,6 +33,8 @@ concept_left_linear_tree <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/concept_left_linear_tree.jpg";;
+				"file://contents/concept_left_linear_tree.jpg"
+(*=> nrel_format:format_jpg;;
+*);;
 			*);;
 	*);;

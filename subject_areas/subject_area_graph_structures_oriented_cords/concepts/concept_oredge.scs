@@ -48,6 +48,8 @@ concept_oredge <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/oredge.png";;
+				"file://contents/oredge.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;

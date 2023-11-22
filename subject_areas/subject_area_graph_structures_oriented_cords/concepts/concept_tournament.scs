@@ -41,6 +41,8 @@ concept_tournament <- rrel_key_sc_element:
 concept_tournament <- rrel_key_sc_element: ... (*
 	<- illustration;;
 	<= nrel_sc_text_translation: ... (*
-		-> rrel_example: "file://contents/tournament.png";;
+		-> rrel_example: "file://contents/tournament.png"
+(*=> nrel_format:format_png;;
+*);;
 	*);;
 *);;

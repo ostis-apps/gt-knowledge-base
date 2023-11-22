@@ -58,7 +58,9 @@ concept_apollonian_network <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://pic/concept_apollonian_network.png";;
+				"file://pic/concept_apollonian_network.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;
 

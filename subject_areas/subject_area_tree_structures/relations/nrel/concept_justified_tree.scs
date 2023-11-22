@@ -31,7 +31,9 @@ concept_justified_tree <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/concept_justified_tree.jpg";;
+				"file://contents/concept_justified_tree.jpg"
+(*=> nrel_format:format_jpg;;
+*);;
 			*);;
 	*);;
 

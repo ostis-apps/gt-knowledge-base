@@ -66,7 +66,9 @@ nrel_minor_of_graph <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://picture/minor_of_graph_example.png";;
+				"file://picture/minor_of_graph_example.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;
 

@@ -64,6 +64,8 @@ nrel_edge_weight <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/nrel_edge_weight.png";;
+				"file://contents/nrel_edge_weight.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;

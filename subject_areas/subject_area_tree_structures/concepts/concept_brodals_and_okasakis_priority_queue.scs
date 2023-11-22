@@ -33,6 +33,8 @@ concept_brodals_and_okasakis_priority_queue <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/concept_brodals_and_okasakis_priority_queue.png";;
+				"file://contents/concept_brodals_and_okasakis_priority_queue.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;

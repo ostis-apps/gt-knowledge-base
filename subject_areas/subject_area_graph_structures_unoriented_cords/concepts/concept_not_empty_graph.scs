@@ -34,7 +34,9 @@ concept_not_empty_graph <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/concept_not_empty_graph.png";;
+				"file://contents/concept_not_empty_graph.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;
 

@@ -45,6 +45,8 @@ concept_primitive_digraph <- rrel_key_sc_element:
 concept_primitive_digraph <- rrel_key_sc_element: ... (*
 	<- illustration;;
 	<= nrel_sc_text_translation: ... (*
-		-> rrel_example: "file://contents/primitive_digraph.png";;
+		-> rrel_example: "file://contents/primitive_digraph.png"
+(*=> nrel_format:format_png;;
+*);;
 	*);;
 *);;

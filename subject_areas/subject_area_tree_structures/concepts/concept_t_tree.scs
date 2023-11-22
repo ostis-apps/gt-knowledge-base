@@ -34,6 +34,8 @@ concept_t_tree <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/concept_t_tree.jpg";;
+				"file://contents/concept_t_tree.jpg"
+(*=> nrel_format:format_jpg;;
+*);;
 			*);;
 	*);;

@@ -38,7 +38,9 @@ concept_planar_triangulation <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://pic/concept_planar_triangulation.png";;
+				"file://pic/concept_planar_triangulation.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;
 

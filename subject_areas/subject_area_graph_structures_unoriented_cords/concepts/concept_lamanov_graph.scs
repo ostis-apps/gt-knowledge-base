@@ -58,7 +58,9 @@ concept_lamanov_graph
 		...
 			(*
 			-> rrel_example:
-				"file://picture/concept_lamanov_graph.png";;
+				"file://picture/concept_lamanov_graph.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;
 

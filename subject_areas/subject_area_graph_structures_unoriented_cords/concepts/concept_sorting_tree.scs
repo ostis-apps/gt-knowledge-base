@@ -30,7 +30,9 @@ concept_sorting_tree <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://picture/concept_sorting_tree.png";;
+				"file://picture/concept_sorting_tree.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;
 

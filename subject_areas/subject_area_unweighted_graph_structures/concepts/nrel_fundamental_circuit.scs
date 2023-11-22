@@ -53,6 +53,8 @@ nrel_fundamental_circuit <- rrel_key_sc_element:
                     ...
                     (*
                         -> rrel_example:
-                        "file://contents/nrel_fundamental_circuit.png";;
+                        "file://contents/nrel_fundamental_circuit.png"
+(*=> nrel_format:format_png;;
+*);;
                     *);;
         *);;

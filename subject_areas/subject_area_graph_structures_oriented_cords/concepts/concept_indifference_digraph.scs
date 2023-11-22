@@ -66,6 +66,8 @@ concept_indifference_digraph <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/indifference_digraph.png";;
+				"file://contents/indifference_digraph.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;

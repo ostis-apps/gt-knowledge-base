@@ -55,6 +55,8 @@ concept_trie <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/concept_trie.png";;
+				"file://contents/concept_trie.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;

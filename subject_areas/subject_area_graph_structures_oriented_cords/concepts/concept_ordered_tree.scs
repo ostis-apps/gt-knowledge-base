@@ -28,7 +28,9 @@ concept_ordered_tree <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/ordered_tree.png";;
+				"file://contents/ordered_tree.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;
 concept_directed_tree => nrel_inclusion: concept_ordered_tree;;

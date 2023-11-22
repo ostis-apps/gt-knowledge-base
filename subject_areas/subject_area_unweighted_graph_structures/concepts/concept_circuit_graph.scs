@@ -53,6 +53,8 @@ concept_circuit_graph <- rrel_key_sc_element:
                     ...
                     (*
                         -> rrel_example:
-                        "file://contents/concept_circulant_graph.png";;
+                        "file://contents/concept_circulant_graph.png"
+(*=> nrel_format:format_png;;
+*);;
                     *);;
         *);;

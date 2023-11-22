@@ -41,6 +41,8 @@ concept_flow_network <- rrel_key_sc_element:
 concept_flow_network <- rrel_key_sc_element: ... (*
 	<- illustration;;
 	<= nrel_sc_text_translation: ... (*
-		-> rrel_example: "file://contents/flow_network.png";;
+		-> rrel_example: "file://contents/flow_network.png"
+(*=> nrel_format:format_png;;
+*);;
 	*);;
 *);;

@@ -68,6 +68,8 @@ concept_quadtree <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/concept_quadtree.png";;
+				"file://contents/concept_quadtree.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;

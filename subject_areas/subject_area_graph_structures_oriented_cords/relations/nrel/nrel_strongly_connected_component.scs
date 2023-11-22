@@ -59,6 +59,8 @@ nrel_strongly_connected_component <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/strongly_connected_component.png";;
+				"file://contents/strongly_connected_component.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;

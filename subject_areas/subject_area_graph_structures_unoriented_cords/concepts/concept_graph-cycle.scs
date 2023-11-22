@@ -82,7 +82,9 @@ concept_graph_cycle
 		...
 			(*
 			-> rrel_example:
-				"file://picture/concept_graph_cycle.png";;
+				"file://picture/concept_graph_cycle.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;
 

@@ -82,7 +82,9 @@ concept_graph_Halina
 		...
 			(*
 			-> rrel_example:
-				"file://picture/concept_graph_Halina.png";;
+				"file://picture/concept_graph_Halina.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;
 

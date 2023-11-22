@@ -57,7 +57,9 @@ concept_outerplanar_graph
 		...
 			(*
 			-> rrel_example:
-				"file://picture/concept_outerplanar_graph.png";;
+				"file://picture/concept_outerplanar_graph.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;
 

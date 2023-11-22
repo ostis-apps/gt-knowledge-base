@@ -53,7 +53,9 @@ concept_bifurcant <- rrel_key_sc_element:
                     ...
                     (*
                         -> rrel_example:
-                        "file://contents/concept_bifurcant.jpg";;
+                        "file://contents/concept_bifurcant.jpg"
+(*=> nrel_format:format_jpg;;
+*);;
                     *);;
         *);;
 */

@@ -30,7 +30,9 @@ concept_regularizable_graph <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://picture/concept_regularizable_graph.jpg";;
+				"file://picture/concept_regularizable_graph.jpg"
+(*=> nrel_format:format_jpg;;
+*);;
 			*);;
 	*);;
 

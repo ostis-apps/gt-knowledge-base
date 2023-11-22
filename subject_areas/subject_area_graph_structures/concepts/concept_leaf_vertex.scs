@@ -28,7 +28,9 @@ concept_leaf_vertex <- rrel_key_sc_element:
 	...
 		(*
 		-> rrel_example:
-			"file://contents/concept_leaf_vertex.png";;
+			"file://contents/concept_leaf_vertex.png"
+(*=> nrel_format:format_png;;
+*);;
 		*);;
 	*);;
 

@@ -70,6 +70,8 @@ concept_fenwick_tree <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/concept_fenwick_tree.png";;
+				"file://contents/concept_fenwick_tree.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;

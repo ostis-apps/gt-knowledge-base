@@ -50,6 +50,8 @@ concept_leftist_heap <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/concept_leftist_heap.jpg";;
+				"file://contents/concept_leftist_heap.jpg"
+(*=> nrel_format:format_jpg;;
+*);;
 			*);;
 	*);;

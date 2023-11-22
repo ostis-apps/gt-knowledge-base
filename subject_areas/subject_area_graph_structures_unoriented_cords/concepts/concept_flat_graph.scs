@@ -45,7 +45,9 @@ concept_flat_graph
 		...
 			(*
 			-> rrel_example:
-				"file://picture/concept_flat_graph.png";;
+				"file://picture/concept_flat_graph.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;
 

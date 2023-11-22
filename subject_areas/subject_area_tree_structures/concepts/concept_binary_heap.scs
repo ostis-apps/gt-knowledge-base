@@ -75,6 +75,8 @@ concept_binary_heap <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/concept_binary_heap.png";;
+				"file://contents/concept_binary_heap.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;

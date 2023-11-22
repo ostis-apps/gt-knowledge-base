@@ -51,6 +51,8 @@ concept_chorde <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/concept_chordal_graph.png";;
+				"file://contents/concept_chordal_graph.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;

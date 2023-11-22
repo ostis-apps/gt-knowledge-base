@@ -40,6 +40,8 @@ nrel_annular_sum_of_graphs
 		...
 			(*
 			-> rrel_example:
-			"file://contents/nrel_annular_sum_of_graphs.png";;
+			"file://contents/nrel_annular_sum_of_graphs.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;

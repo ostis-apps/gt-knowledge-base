@@ -43,6 +43,8 @@ concept_strongly_connected_graph <- rrel_key_sc_element:
 concept_strongly_connected_graph <- rrel_key_sc_element: ... (*
 	<- illustration;;
 	<= nrel_sc_text_translation: ... (*
-		-> rrel_example: "file://contents/concept_strongly_connected_graph.png";;
+		-> rrel_example: "file://contents/concept_strongly_connected_graph.png"
+(*=> nrel_format:format_png;;
+*);;
 	*);;
 *);;

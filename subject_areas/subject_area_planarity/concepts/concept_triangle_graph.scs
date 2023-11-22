@@ -49,7 +49,9 @@ concept_triangle_graph <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/concept_triangle_graph.png";;
+				"file://contents/concept_triangle_graph.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;
 concept_graph => nrel_inclusion: concept_triangle_graph;;

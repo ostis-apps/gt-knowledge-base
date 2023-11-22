@@ -37,7 +37,9 @@ concept_labeled_graph
 		...
 			(*
 			-> rrel_example:
-				"file://contents/concept_labeled_graph.jpg";;
+				"file://contents/concept_labeled_graph.jpg"
+(*=> nrel_format:format_jpg;;
+*);;
 			*);;
 	*);;
 

@@ -32,9 +32,15 @@ nrel_cycle_weight
 			(*
 			-> rrel_example: 
 				"file://content_html/definition_for_nrel_cycle_weight_ru.html"
-				(* <- lang_ru;;	*);
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);
                 "file://content_html/definition_for_nrel_cycle_weight_en.html"
-				(* <- lang_en;;	*);;
+(*
+	<- lang_en;;
+	=> nrel_format: format_html;;
+*);;
 			*);;		
 		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
 	*);
@@ -57,6 +63,8 @@ nrel_cycle_weight
 			...
 			(*
 			-> rrel_example:
-				"file://content_img/nrel_cycle_weight.png";;
+				"file://content_img/nrel_cycle_weight.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;

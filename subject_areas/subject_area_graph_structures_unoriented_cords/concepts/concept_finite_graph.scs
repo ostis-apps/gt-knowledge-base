@@ -32,7 +32,9 @@ concept_finite_graph
 		...
 			(*
 			-> rrel_example:
-				"file://picture/concept_finite_graph.jpg";;
+				"file://picture/concept_finite_graph.jpg"
+(*=> nrel_format:format_jpg;;
+*);;
 			*);;
 	*);;
 

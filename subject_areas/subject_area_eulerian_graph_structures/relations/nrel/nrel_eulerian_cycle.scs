@@ -50,6 +50,8 @@ nrel_eulerian_cycle <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/nrel_eulerian_cycle.png";;
+				"file://contents/nrel_eulerian_cycle.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;

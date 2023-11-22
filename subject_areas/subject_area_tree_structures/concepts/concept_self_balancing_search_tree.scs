@@ -37,6 +37,8 @@ concept_self_balancing_search_tree <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/concept_self_balancing_search_tree.jpg";;
+				"file://contents/concept_self_balancing_search_tree.jpg"
+(*=> nrel_format:format_jpg;;
+*);;
 			*);;
 	*);;

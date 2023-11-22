@@ -47,7 +47,9 @@ concept_graph_Rado <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://pic/concept_graph_Rado.png";;
+				"file://pic/concept_graph_Rado.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;
 

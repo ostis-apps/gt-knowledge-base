@@ -37,7 +37,9 @@ concept_bipancyclic_graph <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://pic/bipancyclic_graph.png";;
+				"file://pic/bipancyclic_graph.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;
 

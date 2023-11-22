@@ -62,6 +62,8 @@ nrel_bicomponent <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/bicomponent.png";;
+				"file://contents/bicomponent.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;

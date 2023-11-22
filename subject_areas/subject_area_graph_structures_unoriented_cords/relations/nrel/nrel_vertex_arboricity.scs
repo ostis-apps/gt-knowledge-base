@@ -30,7 +30,9 @@ rrel_vertex_arboricity <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://picture/nrel_vertex_arboricity.png";;
+				"file://picture/nrel_vertex_arboricity.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;
 

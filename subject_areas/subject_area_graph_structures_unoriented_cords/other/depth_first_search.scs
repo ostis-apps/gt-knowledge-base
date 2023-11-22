@@ -31,7 +31,9 @@ depth_first_search => nrel_main_idtf:
 		...
 			(*
 			-> rrel_example:
-				"file://picture/depth_first_search.png";;
+				"file://picture/depth_first_search.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;
 

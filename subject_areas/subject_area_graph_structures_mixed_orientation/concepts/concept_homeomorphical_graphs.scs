@@ -45,7 +45,9 @@ concept_homeomorphical_graphs <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://pic/concept_homeomorphical_graphs.png";;
+				"file://pic/concept_homeomorphical_graphs.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;
 

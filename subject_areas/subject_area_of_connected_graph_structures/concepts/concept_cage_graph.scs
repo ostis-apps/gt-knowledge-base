@@ -35,7 +35,9 @@ concept_cage_graph <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/concept_cage.png";;
+				"file://contents/concept_cage.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;
 

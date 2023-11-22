@@ -42,6 +42,8 @@ concept_residual_network <- rrel_key_sc_element:
 concept_residual_network <- rrel_key_sc_element: ... (*
 	<- illustration;;
 	<= nrel_sc_text_translation: ... (*
-		-> rrel_example: "file://contents/residual_network.png";;
+		-> rrel_example: "file://contents/residual_network.png"
+(*=> nrel_format:format_png;;
+*);;
 	*);;
 *);;

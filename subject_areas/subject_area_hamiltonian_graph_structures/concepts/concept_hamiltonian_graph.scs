@@ -44,7 +44,9 @@ concept_hamiltonian_graph
 ...
 (*
 -> rrel_example:
-"file://contents/concept_hamiltonian_graph.png";;
+"file://contents/concept_hamiltonian_graph.png"
+(*=> nrel_format:format_png;;
+*);;
 *);;
 *);;
 
