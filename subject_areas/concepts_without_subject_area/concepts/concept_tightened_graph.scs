@@ -1,4 +1,4 @@
-sc_node -> concept_tightened_graph;;
+sc_node_not_relation -> concept_tightened_graph;;
 concept_tightened_graph => nrel_main_idtf:
 	[Стягиваемый граф] (* <- lang_ru;;*);
 	[Tightened graph] (* <- lang_en;;*);;

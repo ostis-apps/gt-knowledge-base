@@ -1,4 +1,4 @@
-sc_node -> concept_graph_of_Hamming;;
+sc_node_not_relation -> concept_graph_of_Hamming;;
 concept_graph_of_Hamming => nrel_main_idtf:[граф Хэмминга](* <-lang_ru;; *);;
 concept_graph_of_Hamming => nrel_idtf:[graph of Hamming](* <- lang_en;; *);;
 

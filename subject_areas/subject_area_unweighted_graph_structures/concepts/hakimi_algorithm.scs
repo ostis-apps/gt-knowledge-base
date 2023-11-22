@@ -1,4 +1,4 @@
-sc_node -> hakimi_algorithm;;
+sc_node_not_relation -> hakimi_algorithm;;
 
 hakimi_algorithm => nrel_main_idtf:
     [алгоритм Хакими]

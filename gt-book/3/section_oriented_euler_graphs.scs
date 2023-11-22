@@ -14,18 +14,12 @@ section_oriented_euler_graphs
 		(*
 		-> rrel_example:
 			"file://html/3.3_eng.html"
-(*
-	<- lang_en;;
-	=> nrel_format: format_html;;
-*);;
+			(* <- lang_en;; *);;
 		*);
 		...
 		(*
 		-> rrel_example:
 			"file://html/3.3.html"
-(*
-	<- lang_ru;;
-	=> nrel_format: format_html;;
-*);;
+			(* <- lang_ru;; *);;
 		*);;
 

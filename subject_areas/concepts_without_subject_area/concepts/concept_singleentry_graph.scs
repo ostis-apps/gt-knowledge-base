@@ -1,4 +1,4 @@
-sc_node -> concept_singleentry_graph;;
+sc_node_not_relation -> concept_singleentry_graph;;
 
 concept_singleentry_graph => nrel_main_idtf: 
 		[одновходный граф] (* <-lang_ru;; *);

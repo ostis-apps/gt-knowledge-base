@@ -1,4 +1,4 @@
-sc_node -> concept_weak_orgraph;;
+sc_node_not_relation -> concept_weak_orgraph;;
 concept_weak_orgraph => nrel_main_idtf:
 	[Слабый орграф] (* <- lang_ru;;*);
 	[Weak orgraph] (* <- lang_en;;*);;

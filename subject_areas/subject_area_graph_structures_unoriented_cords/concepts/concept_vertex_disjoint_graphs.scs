@@ -1,4 +1,4 @@
-sc_node->concept_vertex_disjoint_graphs;;
+sc_node_not_relation->concept_vertex_disjoint_graphs;;
 
 concept_vertex_disjoint_graphs => nrel_main_idtf:
 	[вершинно-непересекающиеся графы](* <-lang_ru;; *);;

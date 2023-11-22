@@ -1,4 +1,4 @@
-sc_node ->concept_bridge;;
+sc_node_not_relation ->concept_bridge;;
 
 concept_bridge
 => nrel_main_idtf:

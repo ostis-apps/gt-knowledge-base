@@ -1,4 +1,4 @@
-sc_node -> concept_semihamiltonian_graph;;
+sc_node_not_relation -> concept_semihamiltonian_graph;;
 concept_semihamiltonian_graph => nrel_main_idtf:[полугамильтонов граф](* <-lang_ru;; *);;
 concept_semihamiltonian_graph => nrel_idtf:[semihamiltonian graph](* <- lang_en;; *);;
 

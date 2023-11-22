@@ -1,4 +1,4 @@
-sc_node -> concept_nstar_graph;;
+sc_node_not_relation -> concept_nstar_graph;;
 
 concept_nstar_graph => nrel_main_idtf: 
 		[n-звездный граф] (* <-lang_ru;; *);

@@ -14,18 +14,12 @@ section_planar_graphs
 		(*
 		-> rrel_example:
 			"file://html/5.1_eng.html"
-(*
-	<- lang_en;;
-	=> nrel_format: format_html;;
-*);;
+			(* <- lang_en;; *);;
 		*);
 		...
 		(*
 		-> rrel_example:
 			"file://html/5.1.html"
-(*
-	<- lang_ru;;
-	=> nrel_format: format_html;;
-*);;
+			(* <- lang_ru;; *);;
 		*);;
 

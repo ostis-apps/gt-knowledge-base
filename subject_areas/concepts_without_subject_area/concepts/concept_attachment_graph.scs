@@ -1,4 +1,4 @@
-sc_node -> concept_attachment_graph;;
+sc_node_not_relation -> concept_attachment_graph;;
 concept_attachment_graph => nrel_main_idtf:
 	[Соединяющий граф] (* <- lang_ru;;*);
 	[Attachment graph] (* <- lang_en;;*);;

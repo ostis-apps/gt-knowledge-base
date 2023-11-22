@@ -1,4 +1,4 @@
-sc_node->concept_rarefied_graph;;
+sc_node_not_relation->concept_rarefied_graph;;
 
 concept_rarefied_graph
 => nrel_main_idtf:

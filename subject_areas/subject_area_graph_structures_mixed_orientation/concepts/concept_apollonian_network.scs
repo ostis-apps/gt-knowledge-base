@@ -1,4 +1,4 @@
-sc_node -> concept_apollonian_network;;
+sc_node_not_relation -> concept_apollonian_network;;
 concept_apollonian_network => nrel_main_idtf:[граф Аполлония](* <-lang_ru;; *);;
 concept_apollonian_network => nrel_idtf: [Apollonian network](* <- lang_en;; *);;
 

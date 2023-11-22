@@ -1,4 +1,4 @@
-sc_node -> concept_mixed_graph;;
+sc_node_not_relation -> concept_mixed_graph;;
 concept_mixed_graph => nrel_main_idtf:[смешанный граф](* <-lang_ru;; *);;
 concept_mixed_graph => nrel_idtf:[mixed graph](* <- lang_en;; *);;
 

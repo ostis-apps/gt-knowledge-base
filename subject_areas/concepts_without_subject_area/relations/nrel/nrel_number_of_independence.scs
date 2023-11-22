@@ -1,5 +1,5 @@
 sc_node_norole_relation ->nrel_number_of_independence;;
-sc_node_norole_relation -> nrel_number_of_independence;;
+sc_relation -> nrel_number_of_independence;;
 binary_relation -> nrel_number_of_independence;;
 oriented_relation -> nrel_number_of_independence;;
 

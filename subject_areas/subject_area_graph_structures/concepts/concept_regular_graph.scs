@@ -1,4 +1,4 @@
-sc_node -> concept_regular_graph;;
+sc_node_not_relation -> concept_regular_graph;;
 concept_regular_graph => nrel_main_idtf:
 	[регулярный граф] (* <- lang_ru;; *);
 	[regular graph] (* <- lang_en;; *);;

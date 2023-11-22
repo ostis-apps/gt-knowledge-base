@@ -1,4 +1,4 @@
-sc_node -> concept_brother_tree;;
+sc_node_not_relation -> concept_brother_tree;;
 concept_brother_tree => nrel_main_idtf:
 	[братское дерево] (* <- lang_ru;; *);
 	[brother tree] (* <- lang_en;; *);;

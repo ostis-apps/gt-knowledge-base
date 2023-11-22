@@ -1,4 +1,4 @@
-algorithm_knuth_bendix<- sc_node;;
+algorithm_knuth_bendix<- sc_node_not_relation;;
 
 algorithm_knuth_bendix => nrel_main_idtf:
 	[ алгоритм Кнута-Бендикса ] (* <-lang_ru;; *);

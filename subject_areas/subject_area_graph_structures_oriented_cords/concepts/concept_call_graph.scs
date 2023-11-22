@@ -1,4 +1,4 @@
-sc_node -> concept_call_graph;;
+sc_node_not_relation -> concept_call_graph;;
 concept_call_graph => nrel_main_idtf:[граф процедур](* <-lang_ru;; *);;
 concept_call_graph => nrel_idtf:[call graph](* <- lang_en;; *);;
 

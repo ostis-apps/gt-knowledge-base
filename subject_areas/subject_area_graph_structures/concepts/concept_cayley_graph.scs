@@ -1,4 +1,4 @@
-sc_node -> concept_cayley_graph;;
+sc_node_not_relation -> concept_cayley_graph;;
 
 concept_cayley_graph => nrel_main_idtf:
 	[граф Кэли]

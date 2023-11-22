@@ -1,4 +1,4 @@
-sc_node -> concept_cartesian_tree;;
+sc_node_not_relation -> concept_cartesian_tree;;
 
 concept_cartesian_tree => nrel_main_idtf:
 	[декартово дерево](* <-lang_ru;; *);

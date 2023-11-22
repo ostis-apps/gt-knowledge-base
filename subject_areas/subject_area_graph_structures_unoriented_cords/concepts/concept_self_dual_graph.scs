@@ -1,4 +1,4 @@
-sc_node->concept_self_dual_graph;;
+sc_node_not_relation->concept_self_dual_graph;;
 
 concept_self_dual_graph => nrel_main_idtf:
 	[самодвойственный граф](* <-lang_ru;; *);;

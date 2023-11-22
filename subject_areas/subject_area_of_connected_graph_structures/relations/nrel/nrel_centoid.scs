@@ -1,4 +1,4 @@
-sc_node->nrel_centroid;;
+sc_node_not_relation->nrel_centroid;;
 
 nrel_centroid => nrel_main_idtf:
 	[центроид*](* <-lang_ru;; *);

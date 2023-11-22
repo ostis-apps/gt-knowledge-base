@@ -1,4 +1,4 @@
-sc_node -> concept_biblock;;
+sc_node_not_relation -> concept_biblock;;
 
 concept_biblock => nrel_main_idtf:
     [библок]

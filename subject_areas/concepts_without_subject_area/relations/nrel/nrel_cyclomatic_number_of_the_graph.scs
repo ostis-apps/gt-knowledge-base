@@ -1,4 +1,4 @@
-sc_node -> nrel_cyclomatic_number_of_the_graph;;
+sc_node_not_relation -> nrel_cyclomatic_number_of_the_graph;;
 
 nrel_cyclomatic_number_of_the_graph
 	=> nrel_main_idtf: 

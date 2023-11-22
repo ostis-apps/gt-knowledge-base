@@ -1,4 +1,4 @@
-sc_node -> concept_null_graph;;
+sc_node_not_relation -> concept_null_graph;;
 
 concept_null_graph => nrel_main_idtf:
 	[нуль-граф](* <- lang_ru;;*);

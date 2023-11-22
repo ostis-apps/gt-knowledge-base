@@ -1,4 +1,4 @@
-sc_node -> concept_shennon_graph;;
+sc_node_not_relation -> concept_shennon_graph;;
 
 concept_shennon_graph => nrel_main_idtf:
     [граф Шеннона]

@@ -1,4 +1,4 @@
-sc_node -> concept_diamond_free_graph;;
+sc_node_not_relation -> concept_diamond_free_graph;;
 
 concept_diamond_free_graph => nrel_main_idtf:
     [алмазо-свободный граф]

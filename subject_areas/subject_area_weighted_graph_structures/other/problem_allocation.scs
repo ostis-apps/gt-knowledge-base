@@ -1,5 +1,5 @@
 problem_allocation
-<- sc_node;
+<- sc_node_not_relation;
 => nrel_main_idtf:
 	[задача о назначениях]
 	(* <- lang_ru;; *);
@@ -19,15 +19,9 @@ problem_allocation
 			(*
 			-> rrel_example: 
 				"file://content_html/definition_for_problem_allocation_ru.html"
-(*
-	<- lang_ru;;
-	=> nrel_format: format_html;;
-*);			
+				(* <- lang_ru;;	*);			
                 "file://content_html/definition_for_problem_allocation_en.html"
-(*
-	<- lang_en;;
-	=> nrel_format: format_html;;
-*);;
+				(* <- lang_en;;	*);;
 			*);;		
 		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
 	*);;

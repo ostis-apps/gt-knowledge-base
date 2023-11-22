@@ -1,4 +1,4 @@
-sc_node -> concept_goldner_harary_graph;;
+sc_node_not_relation -> concept_goldner_harary_graph;;
 concept_goldner_harary_graph => nrel_main_idtf:[граф Голднера–Харари](* <-lang_ru;; *);;
 concept_goldner_harary_graph => nrel_idtf: [Goldner–Harary graph](* <- lang_en;; *);;
 

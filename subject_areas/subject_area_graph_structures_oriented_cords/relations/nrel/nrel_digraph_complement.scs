@@ -1,5 +1,5 @@
 sc_node_norole_relation ->nrel_digraph_complement;;
-sc_node_norole_relation -> nrel_digraph_complement;;
+sc_relation -> nrel_digraph_complement;;
 binary_relation -> nrel_digraph_complement;;
 non_oriented_relation -> nrel_digraph_complement;;
 

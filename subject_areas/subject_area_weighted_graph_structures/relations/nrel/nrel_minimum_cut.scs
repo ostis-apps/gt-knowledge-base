@@ -24,15 +24,9 @@ nrel_minimum_cut
 			(*
 				-> rrel_example:
 					"file://content_html/definition_for_nrel_minimum_cut_ru.html"
-(*
-	<- lang_ru;;
-	=> nrel_format: format_html;;
-*);
+					(* <- lang_ru;; *);
 					"file://content_html/definition_for_nrel_minimum_cut_en.html"
-(*
-	<- lang_en;;
-	=> nrel_format: format_html;;
-*);;
+					(* <- lang_en;; *);;
 			*);;
 	*);
 <- rrel_key_sc_element:
@@ -49,15 +43,9 @@ nrel_minimum_cut
 			(*
 			-> rrel_example:
 				"file://content_html/statement_for_nrel_minimum_cut_ru.html"
-(*
-	<- lang_ru;;
-	=> nrel_format: format_html;;
-*);
+				(* <- lang_ru;;	*);
                 "file://content_html/statement_for_nrel_minimum_cut_en.html"
-(*
-	<- lang_en;;
-	=> nrel_format: format_html;;
-*);;
+				(* <- lang_en;;	*);;
 			*);;
 		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
 	*);

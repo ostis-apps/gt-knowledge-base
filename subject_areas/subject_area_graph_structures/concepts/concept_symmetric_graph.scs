@@ -1,4 +1,4 @@
-sc_node ->concept_symmetric_graph;;
+sc_node_not_relation ->concept_symmetric_graph;;
 concept_symmetric_graph => nrel_main_idtf:
 	[симметричный граф](* <-lang_ru;; *);
 	[symmetric graph](* <-lang_en;; *);;

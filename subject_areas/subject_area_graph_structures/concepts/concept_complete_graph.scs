@@ -1,4 +1,4 @@
-sc_node->concept_complete_graph;;
+sc_node_not_relation->concept_complete_graph;;
 
 concept_complete_graph => nrel_main_idtf:
 [полный граф](* <-lang_ru;; *);

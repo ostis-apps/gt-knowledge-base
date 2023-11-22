@@ -1,4 +1,4 @@
-sc_node->concept_network;;
+sc_node_not_relation->concept_network;;
 
 concept_network	=> nrel_main_idtf: 
 		[сеть] (* <-lang_ru;; *);

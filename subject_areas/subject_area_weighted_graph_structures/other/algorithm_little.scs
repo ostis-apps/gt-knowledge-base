@@ -1,5 +1,5 @@
 algorithm_little
-<- sc_node;
+<- sc_node_not_relation;
 => nrel_main_idtf:
 	[алгоритм Литтла]
 	(* <- lang_ru;; *);
@@ -27,15 +27,9 @@ algorithm_little
 			(*
 			-> rrel_example: 
 				"file://content_html/definition_for_littles_algorithm_ru.html"
-(*
-	<- lang_ru;;
-	=> nrel_format: format_html;;
-*);			
+				(* <- lang_ru;;	*);			
                 "file://content_html/definition_for_littles_algorithm_en.html"
-(*
-	<- lang_en;;
-	=> nrel_format: format_html;;
-*);;
+				(* <- lang_en;;	*);;
 			*);;		
 		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
 	*);
@@ -53,15 +47,9 @@ algorithm_little
 			(*
 			-> rrel_example:
 				"file://content_html/statement_for_littles_algorithm_ru.html"
-(*
-	<- lang_ru;;
-	=> nrel_format: format_html;;
-*);
+				(* <- lang_ru;;	*);
                 "file://content_html/statement_for_littles_algorithm_en.html"
-(*
-	<- lang_en;;
-	=> nrel_format: format_html;;
-*);;
+				(* <- lang_en;;	*);;
 			*);;
 		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
 	*);
@@ -79,15 +67,9 @@ algorithm_little
 			(*
 			-> rrel_example:
 				"file://content_html/statement_for_essence_of_littles_algorithm_ru.html"
-(*
-	<- lang_ru;;
-	=> nrel_format: format_html;;
-*);
+				(* <- lang_ru;;	*);
                 "file://content_html/statement_for_essence_of_littles_algorithm_en.html"
-(*
-	<- lang_en;;
-	=> nrel_format: format_html;;
-*);;
+				(* <- lang_en;;	*);;
 			*);;
 		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
 	*);;

@@ -1,5 +1,5 @@
 problem_maximum_flow
-<- sc_node;
+<- sc_node_not_relation;
 => nrel_main_idtf:
 	[задача о максимальном потоке]
 	(* <- lang_ru;; *);
@@ -19,15 +19,9 @@ problem_maximum_flow
 			(*
 			-> rrel_example:
 				"file://content_html/definition_for_problem_maximum_flow_ru.html"
-(*
-	<- lang_ru;;
-	=> nrel_format: format_html;;
-*);
+				(* <- lang_ru;;	*);
                 "file://content_html/definition_for_problem_maximum_flow_en.html"
-(*
-	<- lang_en;;
-	=> nrel_format: format_html;;
-*);;
+				(* <- lang_en;;	*);;
 			*);;
 	*);
 <- rrel_key_sc_element:
@@ -44,14 +38,8 @@ problem_maximum_flow
 			(*
 			-> rrel_example:
 				"file://content_html/statement_for_problem_maximum_flow_ru.html"
-(*
-	<- lang_ru;;
-	=> nrel_format: format_html;;
-*);
+				(* <- lang_ru;;	*);
                 "file://content_html/statement_for_problem_maximum_flow_en.html"
-(*
-	<- lang_en;;
-	=> nrel_format: format_html;;
-*);;
+				(* <- lang_en;;	*);;
 			*);;
 	*);;

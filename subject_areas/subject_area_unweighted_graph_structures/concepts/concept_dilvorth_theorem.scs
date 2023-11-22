@@ -1,4 +1,4 @@
-sc_node -> concept_dilvorth_theorem;;
+sc_node_not_relation -> concept_dilvorth_theorem;;
 
 concept_dilvorth_theorem => nrel_main_idtf:
     [теорема Дилворта]

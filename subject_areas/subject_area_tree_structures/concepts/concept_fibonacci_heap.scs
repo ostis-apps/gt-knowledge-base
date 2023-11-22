@@ -1,4 +1,4 @@
-sc_node -> concept_fibonacci_heap;;
+sc_node_not_relation -> concept_fibonacci_heap;;
 
 concept_fibonacci_heap => nrel_main_idtf:
 	[фибоначчиева куча](* <-lang_ru;; *);

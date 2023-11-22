@@ -14,18 +14,12 @@ section_trees
 		(*
 		-> rrel_example:
 			"file://html/4.2_eng.html"
-(*
-	<- lang_en;;
-	=> nrel_format: format_html;;
-*);;
+			(* <- lang_en;; *);;
 		*);
 		...
 		(*
 		-> rrel_example:
 			"file://html/4.2.html"
-(*
-	<- lang_ru;;
-	=> nrel_format: format_html;;
-*);;
+			(* <- lang_ru;; *);;
 		*);;
 

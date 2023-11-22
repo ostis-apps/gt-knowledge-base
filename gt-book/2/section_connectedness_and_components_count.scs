@@ -13,18 +13,12 @@ section_connectedness_and_components_count
 		(*
 		-> rrel_example:
 			"file://html/2.5_eng.html"
-(*
-	<- lang_en;;
-	=> nrel_format: format_html;;
-*);;
+			(* <- lang_en;; *);;
 		*);
 		...
 		(*
 		-> rrel_example:
 			"file://html/2.5.html"
-(*
-	<- lang_ru;;
-	=> nrel_format: format_html;;
-*);;
+			(* <- lang_ru;; *);;
 		*);;
 

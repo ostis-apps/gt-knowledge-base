@@ -1,4 +1,4 @@
-sc_node -> concept_theta_graph;;
+sc_node_not_relation -> concept_theta_graph;;
 concept_theta_graph => nrel_main_idtf:
 	[тэта-граф] (* <- lang_ru;; *);
 	[theta graph] (* <- lang_en;; *);;

@@ -1,4 +1,4 @@
-sc_node -> concept_symmetric_digraph;;
+sc_node_not_relation -> concept_symmetric_digraph;;
 
 concept_symmetric_directed_graph => nrel_main_idtf:[симметричный орграф](* <-lang_ru;; *);;
 concept_symmetric_directed_graph => nrel_idtf:[symmetric directed graph](* <- lang_en;; *);;

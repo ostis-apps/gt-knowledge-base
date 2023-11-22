@@ -1,4 +1,4 @@
-sc_node-> concept_subj_domain_k_partite;;
+sc_node_not_relation-> concept_subj_domain_k_partite;;
 subject_domain -> concept_subj_domain_k_partite;;
 
 concept_subj_domain_k_partite => nrel_main_idtf:

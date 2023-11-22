@@ -1,4 +1,4 @@
-sc_node -> concept_normalized_graph;;
+sc_node_not_relation -> concept_normalized_graph;;
 
 concept_normalized_graph => nrel_main_idtf:[нормированный граф] (* <- lang_ru;; *);;
 concept_normalized_graph => nrel_idtf:[normalized graph] (* <- lang_en;; *);;

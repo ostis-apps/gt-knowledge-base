@@ -1,4 +1,4 @@
-sc_node -> concept_justified_tree;;
+sc_node_not_relation -> concept_justified_tree;;
 concept_justified_tree => nrel_main_idtf:
 	[выровненное дерево] (* <- lang_ru;; *);
 	[justified tree] (* <- lang_en;; *);;

@@ -1,5 +1,5 @@
 concept_colour_graph_of_a_group
-	<- sc_node;
+	<- sc_node_not_relation;
 
 	=> nrel_main_idtf: [цветной граф группы] (* <- lang_ru;; *);
 	=> nrel_main_idtf: [colour graph of a group] (* <- lang_en;; *);

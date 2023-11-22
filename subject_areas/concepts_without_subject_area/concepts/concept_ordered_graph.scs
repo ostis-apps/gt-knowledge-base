@@ -1,4 +1,4 @@
-sc_node->concept_ordered_graph;;
+sc_node_not_relation->concept_ordered_graph;;
 
 concept_ordered_graph	=> nrel_main_idtf: 
 		[упорядоченный орграф] (* <-lang_ru;; *);

@@ -1,4 +1,4 @@
-sc_node -> concept_cogwheel;;
+sc_node_not_relation -> concept_cogwheel;;
 concept_cogwheel
 
 	=> nrel_main_idtf: 

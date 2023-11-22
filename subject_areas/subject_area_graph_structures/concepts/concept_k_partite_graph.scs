@@ -1,4 +1,4 @@
-sc_node->concept_k_partite_graph;;
+sc_node_not_relation->concept_k_partite_graph;;
 
 concept_k_partite_graph	=> nrel_main_idtf: 
 		[к-дольный граф] (* <-lang_ru;; *);

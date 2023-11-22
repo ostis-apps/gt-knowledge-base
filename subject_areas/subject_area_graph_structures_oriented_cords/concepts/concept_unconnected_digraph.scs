@@ -1,4 +1,4 @@
-sc_node -> concept_unconnected_digraph;;
+sc_node_not_relation -> concept_unconnected_digraph;;
 
 concept_unconnected_digraph => nrel_main_idtf:[несвязный орграф] (* <- lang_ru;; *);;
 	concept_unconnected_digraph => nrel_idtf:[unconnected digraph] (* <- lang_en;; *);;

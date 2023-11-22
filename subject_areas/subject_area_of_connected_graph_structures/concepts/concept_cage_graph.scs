@@ -1,4 +1,4 @@
-sc_node -> concept_cage_graph;;
+sc_node_not_relation -> concept_cage_graph;;
 concept_cage_graph => nrel_main_idtf:
 	[клетка] (* <- lang_ru;; *);
 	[cage] (* <- lang_en;; *);;

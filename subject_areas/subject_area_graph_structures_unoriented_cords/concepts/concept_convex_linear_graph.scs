@@ -1,4 +1,4 @@
-sc_node->concept_convex_linear_graph;;
+sc_node_not_relation->concept_convex_linear_graph;;
 
 concept_convex_linear_graph => nrel_main_idtf:
 	[выпуклый прямолинейный граф](* <-lang_ru;; *);;

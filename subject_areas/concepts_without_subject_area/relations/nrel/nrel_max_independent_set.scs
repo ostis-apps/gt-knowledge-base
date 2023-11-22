@@ -1,5 +1,5 @@
 sc_node_norole_relation ->nrel_max_independent_set;;
-sc_node_norole_relation -> nrel_max_independent_set;;
+sc_relation -> nrel_max_independent_set;;
 binary_relation -> nrel_max_independent_set;;
 oriented_relation -> nrel_max_independent_set;;
 

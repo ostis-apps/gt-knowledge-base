@@ -1,4 +1,4 @@
-sc_node -> concept_desargues_graph;;
+sc_node_not_relation -> concept_desargues_graph;;
 
 concept_desargues_graph => nrel_main_idtf:
     [граф Дезарга]

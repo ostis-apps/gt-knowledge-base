@@ -1,4 +1,4 @@
-sc_node -> concept_caterpillar;;
+sc_node_not_relation -> concept_caterpillar;;
 
 concept_caterpillar => nrel_main_idtf:
     [гусеница]

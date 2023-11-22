@@ -1,4 +1,4 @@
-sc_node->r_f_algorithm;;
+sc_node_not_relation->r_f_algorithm;;
 
 r_f_algorithm => nrel_main_idtf: 
 		[алгоритм Робертса-Флореса] (* <-lang_ru;; *);

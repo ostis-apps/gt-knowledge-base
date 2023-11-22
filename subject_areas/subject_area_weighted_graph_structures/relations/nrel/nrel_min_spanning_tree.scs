@@ -31,15 +31,9 @@ nrel_min_spanning_tree
 			(*
 			-> rrel_example: 
 				"file://content_html/definition_for_nrel_min_spanning_tree_ru.html"
-(*
-	<- lang_ru;;
-	=> nrel_format: format_html;;
-*);
+				(* <- lang_ru;;	*);
                 "file://content_html/definition_for_nrel_min_spanning_tree_en.html"
-(*
-	<- lang_en;;
-	=> nrel_format: format_html;;
-*);;
+				(* <- lang_en;;	*);;
 			*);;		
 		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
 	*);
@@ -68,15 +62,9 @@ nrel_min_spanning_tree
         			(*
         			-> rrel_example:
         				"file://content_html/statement_for_minimum_spanning_tree_ru.html"
-(*
-	<- lang_ru;;
-	=> nrel_format: format_html;;
-*);
+        				(* <- lang_ru;;	*);
                         "file://content_html/statement_for_minimum_spanning_tree_en.html"
-(*
-	<- lang_en;;
-	=> nrel_format: format_html;;
-*);;
+        				(* <- lang_en;;	*);;
         			*);;
         		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
 	*);;

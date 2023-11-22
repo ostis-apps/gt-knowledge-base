@@ -1,4 +1,4 @@
-sc_node -> concept_irreducible_graph;;
+sc_node_not_relation -> concept_irreducible_graph;;
 
 concept_irreducible_graph => nrel_main_idtf: 
 		[несводимый граф] (* <-lang_ru;; *);

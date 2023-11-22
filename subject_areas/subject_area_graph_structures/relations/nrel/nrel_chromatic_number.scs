@@ -1,4 +1,4 @@
-sc_node->nrel_chromatic_number;;
+sc_node_not_relation->nrel_chromatic_number;;
 
 nrel_chromatic_number => nrel_main_idtf:
 	[хроматическое число](* <-lang_ru;; *);

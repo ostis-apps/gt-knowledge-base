@@ -1,4 +1,4 @@
-sc_node -> concept_threshold_graph;;
+sc_node_not_relation -> concept_threshold_graph;;
 concept_threshold_graph => nrel_main_idtf:[пороговый граф](* <-lang_ru;; *);;
 concept_threshold_graph => nrel_idtf:[threshold graph](* <- lang_en;; *);;
 

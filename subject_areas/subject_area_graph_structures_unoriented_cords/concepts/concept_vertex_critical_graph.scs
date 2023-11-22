@@ -1,4 +1,4 @@
-sc_node->concept_vertex_critical_graph;;
+sc_node_not_relation->concept_vertex_critical_graph;;
 
 concept_vertex_critical_graph => nrel_main_idtf:
 	[вершинно-критический граф](* <-lang_ru;; *);;

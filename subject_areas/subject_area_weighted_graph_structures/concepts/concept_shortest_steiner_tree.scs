@@ -1,5 +1,5 @@
 concept_shortest_steiner_tree
-<- sc_node;
+<- sc_node_not_relation;
 => nrel_main_idtf:
 	[кратчайшее дерево Штейнера]
 	(* <- lang_ru;; *);
@@ -25,15 +25,9 @@ concept_shortest_steiner_tree
 			(*
 			-> rrel_example: 
 				"file://content_html/definition_for_concept_shortest_steiner_tree_ru.html"
-(*
-	<- lang_ru;;
-	=> nrel_format: format_html;;
-*);
+				(* <- lang_ru;;	*);
                 "file://content_html/definition_for_concept_shortest_steiner_tree_en.html"
-(*
-	<- lang_en;;
-	=> nrel_format: format_html;;
-*);;
+				(* <- lang_en;;	*);;
 			*);;		
 		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
 	*);

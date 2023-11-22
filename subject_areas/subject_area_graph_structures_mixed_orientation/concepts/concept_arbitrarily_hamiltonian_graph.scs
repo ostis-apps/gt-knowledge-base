@@ -1,4 +1,4 @@
-sc_node -> concept_arbitrarily_hamiltonian_graph;;
+sc_node_not_relation -> concept_arbitrarily_hamiltonian_graph;;
 concept_arbitrarily_hamiltonian_graph => nrel_main_idtf:[произвольно гамильтонов граф](* <-lang_ru;; *);;
 concept_arbitrarily_hamiltonian_graph => nrel_idtf:[arbitrarily hamiltonian graph](* <- lang_en;; *);;
 

@@ -1,4 +1,4 @@
-sc_node_class->concept_critical_graph;;
+sc_node_norole_relation->concept_critical_graph;;
 
 concept_critical_graph => nrel_main_idtf:
 	[критический граф](* <-lang_ru;; *);;

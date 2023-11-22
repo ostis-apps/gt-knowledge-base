@@ -1,4 +1,4 @@
-sc_node -> concept_covering_graph;;
+sc_node_not_relation -> concept_covering_graph;;
 concept_covering_graph => nrel_main_idtf:[покрывающий граф](* <-lang_ru;; *);;
 concept_covering_graph => nrel_idtf:[covering graph](* <- lang_en;; *);;
 

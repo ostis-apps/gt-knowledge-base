@@ -1,4 +1,4 @@
-sc_node -> concept_G_1_finite_graph;;
+sc_node_not_relation -> concept_G_1_finite_graph;;
 concept_G_1_finite_graph => nrel_main_idtf:[Г(-1)-конечный граф](* <-lang_ru;; *);;
 concept_G_1_finite_graph => nrel_idtf:[G(-1)-finite graph](* <- lang_en;; *);;
 

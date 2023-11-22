@@ -1,4 +1,4 @@
-sc_node -> concept_contrafunctional_graph;;
+sc_node_not_relation -> concept_contrafunctional_graph;;
 
 concept_contrafunctional_graph => nrel_main_idtf:[Орграф контрафункциональный](* <- lang_ru;; *);;
 concept_contrafunctional_graph => nrel_main_idtf:[Contrafunctional graph]

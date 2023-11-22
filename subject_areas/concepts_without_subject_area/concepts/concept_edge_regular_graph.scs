@@ -1,4 +1,4 @@
-sc_node -> concept_edge_regular_graph;;
+sc_node_not_relation -> concept_edge_regular_graph;;
 concept_edge_regular_graph => nrel_main_idtf:
 	[Реберно регулярный граф] (* <- lang_ru;;*);
 	[Edge regular graph] (* <- lang_en;;*);;

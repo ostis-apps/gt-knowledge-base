@@ -1,4 +1,4 @@
-sc_node -> concept_wheel;;
+sc_node_not_relation -> concept_wheel;;
 concept_wheel => nrel_main_idtf:
 	[колесо] (* <- lang_ru;; *);
 	[wheel] (* <- lang_en;; *);;

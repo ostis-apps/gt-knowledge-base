@@ -1,4 +1,4 @@
-sc_node -> concept_locally_restricted_graph;;
+sc_node_not_relation -> concept_locally_restricted_graph;;
 
 concept_locally_restricted_graph => nrel_main_idtf:
     [локально ограниченный граф]

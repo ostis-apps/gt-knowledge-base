@@ -1,5 +1,5 @@
 concept_binary_tree
-	<- sc_node;
+	<- sc_node_not_relation;
 
 	=> nrel_main_idtf: [бинарное дерево] (* <- lang_ru;; *);
 	=> nrel_main_idtf: [binary tree] (* <- lang_en;; *);

@@ -1,4 +1,4 @@
-sc_node->nrel_edge_connectivity;;
+sc_node_not_relation->nrel_edge_connectivity;;
 
 nrel_edge_connectivity => nrel_main_idtf:
 	[реберная связность*](* <-lang_ru;; *);

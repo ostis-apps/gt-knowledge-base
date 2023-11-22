@@ -1,4 +1,4 @@
-sc_node-> concept_subj_domain_hamiltonian_graph;;
+sc_node_not_relation-> concept_subj_domain_hamiltonian_graph;;
 subject_domain -> concept_subj_domain_hamiltonian_graph;;
 
 concept_subj_domain_hamiltonian_graph => nrel_main_idtf:

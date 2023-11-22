@@ -1,4 +1,4 @@
-sc_node -> concept_uniform_graph;;
+sc_node_not_relation -> concept_uniform_graph;;
 concept_uniform_graph => nrel_main_idtf:
 	[Однородный граф] (* <- lang_ru;;*);
 	[uniform_graph] (* <- lang_en;;*);;

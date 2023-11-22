@@ -1,4 +1,4 @@
-sc_node -> concept_pseudosymmetric_digraph;;
+sc_node_not_relation -> concept_pseudosymmetric_digraph;;
 concept_pseudosymmetric_digraph => nrel_main_idtf:
 	[Pseudosymmetric digraph] (* <- lang_ru;;*);
 	[Semieuler graph] (* <- lang_en;;*);;

@@ -1,4 +1,4 @@
-sc_node -> concept_graphoid;;
+sc_node_not_relation -> concept_graphoid;;
 
 concept_graphoid => nrel_main_idtf:
     [графоид]

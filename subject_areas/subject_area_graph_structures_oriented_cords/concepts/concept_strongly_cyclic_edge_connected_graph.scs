@@ -1,4 +1,4 @@
-sc_node -> concept_strongly_cyclic_edge_connected_graph;;
+sc_node_not_relation -> concept_strongly_cyclic_edge_connected_graph;;
 concept_strongly_cyclic_edge_connected_graph => nrel_main_idtf:[сильно ориентированно-циклически-реберно связный граф](* <-lang_ru;; *);;
 concept_strongly_cyclic_edge_connected_graph => nrel_idtf:[strongly cyclic edge connected graph](* <- lang_en;; *);;
 

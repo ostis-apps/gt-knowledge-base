@@ -1,4 +1,4 @@
-sc_node->concept_geometrical_graph;;
+sc_node_not_relation->concept_geometrical_graph;;
 
 concept_geometrical_graph=> nrel_main_idtf: 
 		[геометрический граф] (* <-lang_ru;; *);

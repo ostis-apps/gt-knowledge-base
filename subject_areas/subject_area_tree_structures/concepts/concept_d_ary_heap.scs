@@ -1,4 +1,4 @@
-sc_node -> concept_d_ary_heap;;
+sc_node_not_relation -> concept_d_ary_heap;;
 
 concept_d_ary_heap => nrel_main_idtf:
 	[d-арная куча](* <-lang_ru;; *);

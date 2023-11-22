@@ -1,4 +1,4 @@
-sc_node -> concept_non_separable_graph;;
+sc_node_not_relation -> concept_non_separable_graph;;
 concept_non_separable_graph => nrel_main_idtf:[неразделимый граф](* <-lang_ru;; *);;
 concept_non_separable_graph => nrel_idtf:[non-separable graph](* <- lang_en;; *);;
 

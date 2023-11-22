@@ -1,4 +1,4 @@
-sc_node -> concept_strongly_connected_digraph;;
+sc_node_not_relation -> concept_strongly_connected_digraph;;
 
 concept_strongly_connected_digraph => nrel_main_idtf:[сильно связный орграф] (* <- lang_ru;; *);;
 concept_strongly_connected_digraph => nrel_idtf:[strongly connected digraph] (* <- lang_en;; *);;

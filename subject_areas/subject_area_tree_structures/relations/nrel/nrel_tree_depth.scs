@@ -1,4 +1,4 @@
-sc_node -> nrel_tree_depth;;
+sc_node_not_relation -> nrel_tree_depth;;
 nrel_tree_depth => nrel_main_idtf:
 	[глубина дерева*] (* <- lang_ru;; *);
 	[tree depth*] (* <- lang_en;; *);;

@@ -1,4 +1,4 @@
-sc_node -> concept_countable_graph;;
+sc_node_not_relation -> concept_countable_graph;;
 concept_countable_graph => nrel_main_idtf:
 	[Счетный граф] (* <- lang_ru;;*);
 	[Countable graph] (* <- lang_en;;*);;

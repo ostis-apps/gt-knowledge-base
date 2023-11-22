@@ -1,4 +1,4 @@
-sc_node->warshall_algorithm;;
+sc_node_not_relation->warshall_algorithm;;
 
 warshall_algorithm => nrel_main_idtf: 
 		[алгоритм Уоршалла] (* <-lang_ru;; *);

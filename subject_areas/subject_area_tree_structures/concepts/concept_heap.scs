@@ -1,4 +1,4 @@
-sc_node -> concept_heap;;
+sc_node_not_relation -> concept_heap;;
 
 concept_heap => nrel_main_idtf:
 	[куча](* <-lang_ru;; *);

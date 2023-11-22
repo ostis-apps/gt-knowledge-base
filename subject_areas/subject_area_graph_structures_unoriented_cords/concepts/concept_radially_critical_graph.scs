@@ -1,4 +1,4 @@
-sc_node -> concept_radially_critical_graph;;
+sc_node_not_relation -> concept_radially_critical_graph;;
 concept_radially_critical_graph => nrel_main_idtf:
 	[радиально-критический граф] (* <- lang_ru;; *);;
 concept_radially_critical_graph => nrel_idtf:

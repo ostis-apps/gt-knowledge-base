@@ -1,4 +1,4 @@
-sc_node -> concept_weakly_connected_digraph;;
+sc_node_not_relation -> concept_weakly_connected_digraph;;
 
 concept_weakly_connected_digraph => nrel_main_idtf:[слабо связный орграф] (* <- lang_ru;; *);;
 concept_weakly_connected_digraph => nrel_idtf:[weakly connected digraph] (* <- lang_en;; *);;

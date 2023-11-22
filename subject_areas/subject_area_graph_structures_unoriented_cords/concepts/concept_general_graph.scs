@@ -1,4 +1,4 @@
-sc_node->concept_general_graph;;
+sc_node_not_relation->concept_general_graph;;
 
 concept_general_graph
 => nrel_main_idtf:

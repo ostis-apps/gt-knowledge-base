@@ -1,5 +1,5 @@
 algorithm_search_A_star
-<- sc_node;
+<- sc_node_not_relation;
 => nrel_main_idtf:
 	[алгоритм поиска A*]
 	(* <- lang_ru;; *);
@@ -26,15 +26,9 @@ algorithm_search_A_star
 			(*
 			-> rrel_example:
 				"file://content_html/definition_for_algorithm_search_A_star_ru.html"
-(*
-	<- lang_ru;;
-	=> nrel_format: format_html;;
-*);
+				(* <- lang_ru;;	*);
                 "file://content_html/definition_for_algorithm_search_A_star_en.html"
-(*
-	<- lang_en;;
-	=> nrel_format: format_html;;
-*);;
+				(* <- lang_en;;	*);;
 			*);;
 		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
 	*);
@@ -52,15 +46,9 @@ algorithm_search_A_star
 			(*
 			-> rrel_example:
 				"file://content_html/statement_for_algorithm_search_A_star_ru.html"
-(*
-	<- lang_ru;;
-	=> nrel_format: format_html;;
-*);
+				(* <- lang_ru;;	*);
                 "file://content_html/statement_for_algorithm_search_A_star_en.html"
-(*
-	<- lang_en;;
-	=> nrel_format: format_html;;
-*);;
+				(* <- lang_en;;	*);;
 			*);;
 		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
 	*);;

@@ -1,4 +1,4 @@
-sc_node_role_relation->rrel_peripheral_vertex;;
+sc_node_not_relation->rrel_peripheral_vertex;;
 
 rrel_peripheral_vertex	=> nrel_main_idtf: 
 		[периферийная вершина'] (* <-lang_ru;; *);;

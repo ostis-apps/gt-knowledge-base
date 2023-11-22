@@ -1,5 +1,5 @@
 concept_free_tree
-	<- sc_node;
+	<- sc_node_not_relation;
 
 	=> nrel_main_idtf: [свободное дерево] (* <- lang_ru;; *);
 	=> nrel_main_idtf: [free tree] (* <- lang_en;; *);

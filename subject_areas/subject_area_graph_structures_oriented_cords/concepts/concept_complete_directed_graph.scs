@@ -1,4 +1,4 @@
-sc_node -> concept_complete_directed_graph;;
+sc_node_not_relation -> concept_complete_directed_graph;;
 concept_complete_directed_graph => nrel_main_idtf:[полный орграф](* <-lang_ru;; *);;
 concept_complete_directed_graph => nrel_idtf:[complete directed graph](* <- lang_en;; *);;
 

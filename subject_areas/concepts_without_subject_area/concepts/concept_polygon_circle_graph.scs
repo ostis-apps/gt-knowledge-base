@@ -1,4 +1,4 @@
-sc_node -> concept_polygon_circle_graph;;
+sc_node_not_relation -> concept_polygon_circle_graph;;
 concept_polygon_circle_graph => nrel_main_idtf:
 	[граф многоугольников на окружности] (* <- lang_ru;; *);
 	[a polygon-circle graph] (* <- lang_en;; *);;

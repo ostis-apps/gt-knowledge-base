@@ -1,4 +1,4 @@
-sc_node -> concept_leaf_vertex;;
+sc_node_not_relation -> concept_leaf_vertex;;
 
 concept_leaf_vertex => nrel_main_idtf:
 		[leaf vertex] (* <-lang_en;; *);

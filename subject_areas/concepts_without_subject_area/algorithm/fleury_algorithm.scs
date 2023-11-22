@@ -1,4 +1,4 @@
-sc_node->fleury_algorithm;;
+sc_node_not_relation->fleury_algorithm;;
 
 fleury_algorithm => nrel_main_idtf: 
 		[алгоритм Флери] (* <-lang_ru;; *);

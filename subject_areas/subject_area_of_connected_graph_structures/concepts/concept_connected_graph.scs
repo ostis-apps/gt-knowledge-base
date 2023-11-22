@@ -1,4 +1,4 @@
-sc_node->concept_connected_graph;;
+sc_node_not_relation->concept_connected_graph;;
 
 concept_connected_graph => nrel_main_idtf:
 	[связный граф](* <-lang_ru;; *);

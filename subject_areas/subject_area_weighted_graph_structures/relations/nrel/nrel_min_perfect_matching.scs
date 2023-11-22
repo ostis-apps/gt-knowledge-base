@@ -27,15 +27,9 @@ nrel_min_perfect_matching
 			(*
 			-> rrel_example: 
 				"file://content_html/definition_for_nrel_min_perfect_matching_ru.html"
-(*
-	<- lang_ru;;
-	=> nrel_format: format_html;;
-*);
+				(* <- lang_ru;;	*);
                 "file://content_html/definition_for_nrel_min_perfect_matching_en.html"
-(*
-	<- lang_en;;
-	=> nrel_format: format_html;;
-*);;
+				(* <- lang_en;;	*);;
 			*);;		
 		<= nrel_bibliographical_source: emelichev_melnikov_lekcii_po_tg;;
 	*);

@@ -1,4 +1,4 @@
-sc_node -> concept_tournament;;
+sc_node_not_relation -> concept_tournament;;
 
 concept_tournament => nrel_main_idtf:
 	[турнир]

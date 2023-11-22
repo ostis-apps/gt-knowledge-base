@@ -1,4 +1,4 @@
-sc_node -> concept_bifurcant;;
+sc_node_not_relation -> concept_bifurcant;;
 
 concept_bifurcant => nrel_main_idtf:
     [бифуркант]

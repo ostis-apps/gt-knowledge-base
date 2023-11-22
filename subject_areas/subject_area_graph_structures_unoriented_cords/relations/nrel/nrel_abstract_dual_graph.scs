@@ -1,4 +1,4 @@
-sc_node->nrel_abstract_dual_graph;;
+sc_node_not_relation->nrel_abstract_dual_graph;;
 binary_relation -> nrel_abstract_dual_graph;;
 
 nrel_abstract_dual_graph => nrel_main_idtf:

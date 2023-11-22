@@ -1,5 +1,5 @@
 concept_bicentre_tree
-	<- sc_node;
+	<- sc_node_not_relation;
 
 	=> nrel_main_idtf: [бицентральное дерево] (* <- lang_ru;; *);
 	=> nrel_main_idtf: [bicentre tree] (* <- lang_en;; *);

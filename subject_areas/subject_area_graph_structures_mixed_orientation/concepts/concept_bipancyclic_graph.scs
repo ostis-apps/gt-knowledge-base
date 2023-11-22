@@ -1,4 +1,4 @@
-sc_node -> concept_bipancyclic_graph;;
+sc_node_not_relation -> concept_bipancyclic_graph;;
 concept_bipancyclic_graph => nrel_main_idtf:[бипанциклический граф](* <-lang_ru;; *);;
 concept_bipancyclic_graph => nrel_idtf:[bipancyclic graph](* <- lang_en;; *);;
 

@@ -1,4 +1,4 @@
-sc_node -> concept_semieuler_graph;;
+sc_node_not_relation -> concept_semieuler_graph;;
 concept_semieuler_graph => nrel_main_idtf:
 	[Полуэйлеров граф] (* <- lang_ru;;*);
 	[Semieuler graph] (* <- lang_en;;*);;

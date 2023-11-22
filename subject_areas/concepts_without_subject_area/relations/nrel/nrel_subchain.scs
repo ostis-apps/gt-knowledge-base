@@ -1,5 +1,5 @@
 nrel_subchain
-	<- sc_node_norole_relation;
+	<- sc_relation;
 	<- binary_relation;
 	<- oriented_relation;
 

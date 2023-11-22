@@ -1,4 +1,4 @@
-sc_node->concept_outerplanar_graph;;
+sc_node_not_relation->concept_outerplanar_graph;;
 
 concept_outerplanar_graph
 => nrel_main_idtf:

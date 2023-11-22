@@ -1,4 +1,4 @@
-sc_node-> concept_balanced_signed_graph;;
+sc_node_not_relation-> concept_balanced_signed_graph;;
 
 concept_balanced_signed_graph => nrel_main_idtf:
 	[cбалансированный граф](* <-lang_ru;; *);

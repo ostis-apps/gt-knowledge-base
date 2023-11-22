@@ -1,4 +1,4 @@
-sc_node -> rrel_center_of_graph;;
+sc_node_not_relation -> rrel_center_of_graph;;
 
 rrel_center_of_graph => nrel_main_idtf:
 	[центр графа']

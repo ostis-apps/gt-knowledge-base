@@ -1,4 +1,4 @@
-sc_node-> concept_subj_domain_graph_structures_not_weighted;;
+sc_node_not_relation-> concept_subj_domain_graph_structures_not_weighted;;
 subject_domain -> concept_subj_domain_graph_structures_not_weighted;;
 
 concept_subj_domain_graph_structures_not_weighted => nrel_main_idtf:

@@ -1,4 +1,4 @@
-sc_node -> concept_transitive_graph;;
+sc_node_not_relation -> concept_transitive_graph;;
 
 concept_transitive_graph => nrel_main_idtf:
 	[транзитивный граф]

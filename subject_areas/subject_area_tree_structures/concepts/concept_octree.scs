@@ -1,4 +1,4 @@
-sc_node -> concept_octree;;
+sc_node_not_relation -> concept_octree;;
 
 concept_octree => nrel_main_idtf:
 	[октодерево](* <-lang_ru;; *);

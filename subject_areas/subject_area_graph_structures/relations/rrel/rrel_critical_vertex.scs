@@ -1,4 +1,4 @@
-sc_node->rrel_critical_vertex;;
+sc_node_not_relation->rrel_critical_vertex;;
 
 rrel_critical_vertex	=> nrel_main_idtf: 
 		[критическая вершина] (* <-lang_ru;; *);

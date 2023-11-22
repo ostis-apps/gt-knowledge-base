@@ -1,4 +1,4 @@
-sc_node -> concept_self_opposite_directed_graph;;
+sc_node_not_relation -> concept_self_opposite_directed_graph;;
 concept_self_opposite_directed_graph => nrel_main_idtf:[самообратный орграф](* <-lang_ru;; *);;
 concept_self_opposite_directed_graph => nrel_idtf:[self-opposite directed graph](* <- lang_en;; *);;
 
