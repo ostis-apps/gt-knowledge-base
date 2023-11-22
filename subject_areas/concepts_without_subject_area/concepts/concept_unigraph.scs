@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_unigraph;;
+sc_node -> concept_unigraph;;
 concept_unigraph => nrel_main_idtf:
 	[Униграф] (* <- lang_ru;;*);
 	[Unigraph] (* <- lang_en;;*);;

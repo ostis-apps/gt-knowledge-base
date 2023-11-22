@@ -10,5 +10,8 @@ section_graph_exercise_part2_task2
 		(*
 		-> rrel_example:
 			"file://html/2.2.html"
-			(* <- lang_ru;; *);;
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;

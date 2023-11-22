@@ -1,5 +1,5 @@
 sc_node_norole_relation ->nrel_matrix_height;;
-sc_relation -> nrel_matrix_height;;
+sc_node_norole_relation -> nrel_matrix_height;;
 binary_relation -> nrel_matrix_height;;
 oriented_relation ->nrel_matrix_height;;
 

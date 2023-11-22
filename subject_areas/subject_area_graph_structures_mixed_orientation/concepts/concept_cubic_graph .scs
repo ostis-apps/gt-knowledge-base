@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_cubic_graph;;
+sc_node -> concept_cubic_graph;;
 concept_cubic_graph => nrel_main_idtf:[кубический граф](* <-lang_ru;; *);;
 concept_cubic_graph => nrel_idtf:[cubic graph](* <- lang_en;; *);;
 

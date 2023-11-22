@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_quadtree;;
+sc_node -> concept_quadtree;;
 
 concept_quadtree => nrel_main_idtf:
 	[дерево квадрантов](* <-lang_ru;; *);

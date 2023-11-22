@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_graph_of_the_dodecahedron;;
+sc_node -> concept_graph_of_the_dodecahedron;;
 concept_graph_of_the_dodecahedron => nrel_main_idtf:[граф додекаэдра](* <-lang_ru;; *);;
 concept_graph_of_the_dodecahedron => nrel_idtf: [graph of the dodecahedron](* <- lang_en;; *);;
 

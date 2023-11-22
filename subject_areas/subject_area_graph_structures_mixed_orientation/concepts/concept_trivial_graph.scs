@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_trivial_graph;;
+sc_node -> concept_trivial_graph;;
 concept_trivial_graph => nrel_main_idtf:[тривиальный граф](* <-lang_ru;; *);;
 concept_trivial_graph => nrel_idtf:[trivial graph](* <- lang_en;; *);;
 

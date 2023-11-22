@@ -1,5 +1,5 @@
 sc_node_norole_relation ->nrel_graph_intersection;;
-sc_relation -> nrel_graph_intersection;;
+sc_node_norole_relation -> nrel_graph_intersection;;
 ternary_relation -> nrel_graph_intersection;;
 oriented_relation -> nrel_graph_intersection;;
 

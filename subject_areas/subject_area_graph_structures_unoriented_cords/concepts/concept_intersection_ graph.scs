@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_intersection_graph;;
+sc_node -> concept_intersection_graph;;
 concept_intersection_graph => nrel_main_idtf:
 	[граф пересечений] (* <- lang_ru;; *);;
 concept_intersection_graph => nrel_idtf:

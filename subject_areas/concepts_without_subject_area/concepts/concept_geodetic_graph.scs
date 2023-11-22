@@ -1,4 +1,4 @@
-sc_node_not_relation->concept_geodetic_graph;;
+sc_node->concept_geodetic_graph;;
 
 concept_geodetic_graph	=> nrel_main_idtf: 
 		[геодезический граф] (* <-lang_ru;; *);

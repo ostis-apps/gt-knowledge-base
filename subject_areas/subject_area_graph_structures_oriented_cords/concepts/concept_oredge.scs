@@ -1,4 +1,4 @@
-sc_node_not_relation->concept_oredge;;
+sc_node->concept_oredge;;
 
 concept_oredge => nrel_main_idtf:[дуга](* <-lang_ru;; *);;
 concept_oredge => nrel_idtf:[oredge](* <-lang_en;; *);;

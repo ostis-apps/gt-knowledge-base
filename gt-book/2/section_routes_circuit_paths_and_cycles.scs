@@ -13,12 +13,18 @@ section_routes_circuit_paths_and_cycles
 		(*
 		-> rrel_example:
 			"file://html/2.4_eng.html"
-			(* <- lang_en;; *);;
+(*
+	<- lang_en;;
+	=> nrel_format: format_html;;
+*);;
 		*);
 		...
 		(*
 		-> rrel_example:
 			"file://html/2.4.html"
-			(* <- lang_ru;; *);;
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;
 

@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_transition_graph;;
+sc_node -> concept_transition_graph;;
 concept_transition_graph => nrel_main_idtf:[граф переходов](* <-lang_ru;; *);;
 concept_transition_graph => nrel_idtf: [transition graph](* <- lang_en;; *);;
 

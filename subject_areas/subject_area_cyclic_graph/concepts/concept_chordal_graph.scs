@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_chordal_graph;;
+sc_node -> concept_chordal_graph;;
 concept_chordal_graph => nrel_main_idtf:
 	[хордальный граф] (* <- lang_ru;; *);
 	[chordal graph] (* <- lang_en;; *);;

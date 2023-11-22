@@ -1,4 +1,4 @@
-sc_node_not_relation->concept_tight_graph;;
+sc_node->concept_tight_graph;;
 
 concept_tight_graph
 => nrel_main_idtf:

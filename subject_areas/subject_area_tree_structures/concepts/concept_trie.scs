@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_trie;;
+sc_node -> concept_trie;;
 
 concept_trie => nrel_main_idtf:
 	[префиксное дерево](* <-lang_ru;; *);

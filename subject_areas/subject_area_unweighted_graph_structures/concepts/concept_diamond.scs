@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_diamond;;
+sc_node -> concept_diamond;;
 
 concept_diamond => nrel_main_idtf:
     [алмаз]

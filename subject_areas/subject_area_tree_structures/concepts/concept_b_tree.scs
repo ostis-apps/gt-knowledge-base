@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_b_tree;;
+sc_node -> concept_b_tree;;
 
 concept_b_tree => nrel_main_idtf:
 	[B-дерево](* <-lang_ru;; *);

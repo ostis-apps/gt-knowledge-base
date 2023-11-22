@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_isolated_vertex;;
+sc_node -> concept_isolated_vertex;;
 concept_isolated_vertex => nrel_main_idtf:
 	[изолированная вершина] (* <- lang_ru;; *);
 	[isolated vertex] (* <- lang_en;; *);;

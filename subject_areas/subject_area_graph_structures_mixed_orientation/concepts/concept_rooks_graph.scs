@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_rooks_graph;;
+sc_node -> concept_rooks_graph;;
 concept_rooks_graph => nrel_main_idtf:[ладейный граф](* <-lang_ru;; *);;
 concept_rooks_graph => nrel_idtf:[rook's graph](* <- lang_en;; *);;
 

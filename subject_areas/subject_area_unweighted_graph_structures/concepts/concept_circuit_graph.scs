@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_circuit_graph;;
+sc_node -> concept_circuit_graph;;
 
 concept_circuit_graph => nrel_main_idtf:
     [циркулянтный граф]

@@ -1,4 +1,4 @@
-sc_node_not_relation->concept_set_vertex;;
+sc_node->concept_set_vertex;;
 
 concept_set_vertex => nrel_main_idtf:
 	[множество вершин](* <-lang_ru;; *);;

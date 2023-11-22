@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_cyclic_graph;;
+sc_node -> concept_cyclic_graph;;
 
 concept_cyclic_graph => nrel_main_idtf:
 	[циклический граф](* <-lang_ru;; *);

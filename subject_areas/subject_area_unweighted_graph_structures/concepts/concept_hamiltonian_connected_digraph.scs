@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_hamiltonian_connected_digraph;;
+sc_node -> concept_hamiltonian_connected_digraph;;
 
 concept_hamiltonian_connected_digraph => nrel_main_idtf:
     [гамильтоново-связный орграф]

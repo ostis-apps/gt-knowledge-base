@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_knot_graph;;
+sc_node -> concept_knot_graph;;
 concept_knot_graph => nrel_main_idtf:
 	[Узловой граф] (* <- lang_ru;;*);
 	[Knot graph] (* <- lang_en;;*);;

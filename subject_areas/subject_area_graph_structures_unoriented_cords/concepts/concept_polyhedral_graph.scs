@@ -1,4 +1,4 @@
-sc_node_not_relation->concept_polyhedral_graph;;
+sc_node->concept_polyhedral_graph;;
 
 concept_polyhedral_graph => nrel_main_idtf:
 	[полиэдральный граф](* <-lang_ru;; *);;

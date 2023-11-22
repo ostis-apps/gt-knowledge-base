@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_functional_directed_graph;;
+sc_node -> concept_functional_directed_graph;;
 concept_functional_directed_graph=> nrel_main_idtf:[функциональный орграф](* <- lang_ru;; *);;
 	concept_functional_directed_graph=> nrel_idtf:[functional directed graph]
 (* <- lang_en;; *);;
