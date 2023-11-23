@@ -36,9 +36,7 @@ concept_based_graph <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/concept_based_graph.png"
-(*=> nrel_format:format_png;;
-*);;
+				"file://contents/concept_based_graph.png"(*=> nrel_format:format_png;;*);;
 			*);;
 	*);;
 
