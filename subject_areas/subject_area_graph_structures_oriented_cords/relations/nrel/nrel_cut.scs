@@ -70,7 +70,9 @@ nrel_cut <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/cut.png";;
+				"file://contents/cut.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;
 

@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_reproduction_graph;;
+sc_node -> concept_reproduction_graph;;
 concept_reproduction_graph => nrel_main_idtf:
 	[граф воспроизведения] (* <- lang_ru;; *);
 	[reproduction graph] (* <- lang_en;; *);;

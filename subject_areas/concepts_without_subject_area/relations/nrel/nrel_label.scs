@@ -1,6 +1,6 @@
 sc_node_norole_relation ->nrel_label;;
 
-sc_relation -> nrel_label;;
+sc_node_norole_relation -> nrel_label;;
 
 binary_relation -> nrel_label;;
 

@@ -1,10 +1,10 @@
-sc_node_not_relation -> nrel_subtree;;
+sc_node -> nrel_subtree;;
 
 nrel_subtree => nrel_main_idtf:
 	[поддерево*](* <- lang_ru;; *);
 	[subtree*](* <- lang_en;;	*);;
 
-sc_relation -> nrel_subtree;;
+sc_node_norole_relation -> nrel_subtree;;
 binary_relation -> nrel_subtree;;
 oriented_relation ->nrel_subtree;;
 

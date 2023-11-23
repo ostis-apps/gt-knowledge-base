@@ -1,4 +1,4 @@
-sc_node_not_relation->concept_subj_domain_graph_structures;;
+sc_node_struct->concept_subj_domain_graph_structures;;
 subject_domain ->concept_subj_domain_graph_structures;;
 concept_subj_domain_graph_structures => nrel_main_idtf:
 	[Раздел. Предметная область графовых структур](* <-lang_ru;; *);
@@ -6,12 +6,12 @@ concept_subj_domain_graph_structures => nrel_main_idtf:
 
 
 	
-sc_node_not_relation -> concept_subj_domain_graph_structures_connected;;
+sc_node -> concept_subj_domain_graph_structures_connected;;
 subject_domain -> concept_subj_domain_graph_structures_connected;;
 concept_subj_domain_graph_structures_connected => nrel_main_idtf:
 	[Раздел. Предметная область связных графовых структур](* <-lang_ru;; *);
 	[subject domain of the connected graph structures](* <-lang_en;; *);;
-sc_node_not_relation -> concept_subj_domain_graph_structures_disconnected;;
+sc_node -> concept_subj_domain_graph_structures_disconnected;;
 subject_domain -> concept_subj_domain_graph_structures_disconnected;;
 concept_subj_domain_graph_structures_disconnected => nrel_main_idtf:
 	[Раздел. Предметная область несвязных графовых структур](* <-lang_ru;; *);
@@ -24,17 +24,17 @@ concept_subj_domain_graph_structures <= nrel_subdividing:
 
 
 
-sc_node_not_relation -> concept_subj_domain_graph_structures_oriented_cords;;
+sc_node -> concept_subj_domain_graph_structures_oriented_cords;;
 subject_domain -> concept_subj_domain_graph_structures_oriented_cords;;
 concept_subj_domain_graph_structures_oriented_cords => nrel_main_idtf:
 	[Раздел. Предметная область графовых структур с ориентированными связками](* <-lang_ru;; *);
 	[subject domain of graph structures with oriented cords](* <-lang_en;; *);;
-sc_node_not_relation -> concept_subj_domain_graph_structures_not_oriented_cords;;
+sc_node -> concept_subj_domain_graph_structures_not_oriented_cords;;
 subject_domain -> concept_subj_domain_graph_structures_not_oriented_cords;;
 concept_subj_domain_graph_structures_not_oriented_cords => nrel_main_idtf:
 	[Раздел. Предметная область графовых структур с неориентированными связками](* <-lang_ru;; *);
 	[subject domain of graph structures with not oriented cords](* <-lang_en;; *);;
-sc_node_not_relation -> concept_subj_domain_graph_structures_mix;;
+sc_node -> concept_subj_domain_graph_structures_mix;;
 subject_domain -> concept_subj_domain_graph_structures_mix;;
 concept_subj_domain_graph_structures_mix => nrel_main_idtf:
 	[Раздел. предметная область графовых структур смешанной ориентированности](* <-lang_ru;; *);
@@ -48,17 +48,17 @@ concept_subj_domain_graph_structures <= nrel_subdividing:
 
 
 
-sc_node_not_relation->concept_subj_domain_hypergraphs;;
+sc_node->concept_subj_domain_hypergraphs;;
 subject_domain ->concept_subj_domain_hypergraphs;;
 concept_subj_domain_hypergraphs => nrel_main_idtf:
 	[Раздел. Предметная область гиперграфов](* <-lang_ru;; *);
 	[subject domain of hypergraphs](* <-lang_en;; *);;
-sc_node_not_relation->concept_subj_domain_pseudographs;;
+sc_node->concept_subj_domain_pseudographs;;
 subject_domain ->concept_subj_domain_pseudographs;;
 concept_subj_domain_pseudographs => nrel_main_idtf:
 	[Раздел. Предметная область псевдографов](* <-lang_ru;; *);
 	[subject domain of pseudographs](* <-lang_en;; *);;
-sc_node_not_relation->concept_subj_domain_multigraphs;;
+sc_node->concept_subj_domain_multigraphs;;
 subject_domain ->concept_subj_domain_multigraphs;;
 concept_subj_domain_multigraphs => nrel_main_idtf:
 	[Раздел. Предметная область мультиграфов](* <-lang_ru;; *);
@@ -69,7 +69,7 @@ concept_subj_domain_pseudographs => nrel_inclusion: concept_subj_domain_multigra
 
 
 //не до конца
-sc_node_not_relation -> concept_subj_domain_graph_structures_weighted;;
+sc_node -> concept_subj_domain_graph_structures_weighted;;
 subject_domain -> concept_subj_domain_graph_structures_weighted;;
 concept_subj_domain_graph_structures_weighted => nrel_main_idtf:
 	[Раздел. Предметная область взвешанных графовых структур](* <-lang_ru;; *);
@@ -83,12 +83,12 @@ concept_subj_domain_graph_structures <= nrel_subdividing:
 
 
 	
-sc_node_not_relation -> concept_subj_domain_graph_structures_acyclic;;
+sc_node -> concept_subj_domain_graph_structures_acyclic;;
 subject_domain -> concept_subj_domain_graph_structures_acyclic;;
 concept_subj_domain_graph_structures_acyclic => nrel_main_idtf:
 	[Раздел. Предметная область ациклических графовых структур](* <-lang_ru;; *);
 	[subject domain of the acyclic graph structures](* <-lang_en;; *);;
-sc_node_not_relation -> concept_subj_domain_graph_structures_cyclic;;
+sc_node -> concept_subj_domain_graph_structures_cyclic;;
 subject_domain -> concept_subj_domain_graph_structures_cyclic;;
 concept_subj_domain_graph_structures_cyclic => nrel_main_idtf:
 	[Раздел. Предметная область циклических графовых структур](* <-lang_ru;; *);
@@ -101,7 +101,7 @@ concept_subj_domain_graph_structures_connected <= nrel_subdividing:
 
 
 
-sc_node_not_relation -> concept_subj_domain_graph_structures_tree;;
+sc_node -> concept_subj_domain_graph_structures_tree;;
 subject_domain -> concept_subj_domain_graph_structures_tree;;
 concept_subj_domain_graph_structures_tree => nrel_main_idtf:
 	[Раздел. Предметная область древовидных графовых структур](* <-lang_ru;; *);
@@ -110,12 +110,12 @@ concept_subj_domain_graph_structures_acyclic => nrel_inclusion: concept_subj_dom
 
 
 
-sc_node_not_relation -> concept_subj_domain_graph_structures_planarity;;
+sc_node -> concept_subj_domain_graph_structures_planarity;;
 subject_domain -> concept_subj_domain_graph_structures_planarity;;
 concept_subj_domain_graph_structures_planarity => nrel_main_idtf:
 	[Раздел. Предметная область планарных графовых структур](* <-lang_ru;; *);
 	[subject domain of the planar graph structures](* <-lang_en;; *);;
-sc_node_not_relation -> concept_subj_domain_graph_structures_unplanarity;;
+sc_node -> concept_subj_domain_graph_structures_unplanarity;;
 subject_domain -> concept_subj_domain_graph_structures_unplanarity;;
 concept_subj_domain_graph_structures_unplanarity => nrel_main_idtf:
 	[Раздел. Предметная область непланарных графовых структур](* <-lang_ru;; *);

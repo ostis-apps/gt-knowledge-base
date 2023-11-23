@@ -1,5 +1,4 @@
 rrel_binary_vertex
-	<- sc_relation;
 	<- sc_node_role_relation;
 	<- oriented_relation;
 

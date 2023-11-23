@@ -1,4 +1,4 @@
-sc_node_not_relation->concept_flat_graph;;
+sc_node->concept_flat_graph;;
 
 concept_flat_graph
 => nrel_main_idtf:
@@ -45,7 +45,9 @@ concept_flat_graph
 		...
 			(*
 			-> rrel_example:
-				"file://picture/concept_flat_graph.png";;
+				"file://picture/concept_flat_graph.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;
 

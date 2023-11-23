@@ -1,4 +1,4 @@
-sc_node_not_relation->nrel_simple_chain;;
+sc_node->nrel_simple_chain;;
 
 nrel_simple_chain => nrel_main_idtf:
 	[элементарная цепь](* <-lang_ru;; *);

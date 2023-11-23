@@ -1,4 +1,4 @@
-algorithm_kasyanov<- sc_node_not_relation;;
+algorithm_kasyanov<- sc_node;;
 
 algorithm_kasyanov => nrel_main_idtf:
 	[ алгоритм Касьянова ] (* <-lang_ru;; *);

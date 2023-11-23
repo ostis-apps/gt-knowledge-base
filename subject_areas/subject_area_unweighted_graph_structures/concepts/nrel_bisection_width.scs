@@ -15,7 +15,7 @@ nrel_bisection_width <- rrel_key_sc_element:
                 ...
                 (*
                     -> [Шириной бисекции графа G называется величина
-                        min{L} |C(G,L, {|V|\2})|.]
+                        min{L} |C(G,L, {|V|\\2})|.]
                        (* <- lang_ru;; *);;
                 *);;
             <= nrel_using_constants:

@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_rectangular_graph;;
+sc_node -> concept_rectangular_graph;;
 
 concept_rectangular_graph => nrel_main_idtf:
 	[прямоугольный граф](* <- lang_ru;;*);

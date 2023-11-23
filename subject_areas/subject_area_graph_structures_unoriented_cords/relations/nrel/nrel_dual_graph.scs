@@ -85,7 +85,9 @@ nrel_dual_graph
 		...
 			(*
 			-> rrel_example:
-				"file://picture/nrel_dual_graph.png";;
+				"file://picture/nrel_dual_graph.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);
 

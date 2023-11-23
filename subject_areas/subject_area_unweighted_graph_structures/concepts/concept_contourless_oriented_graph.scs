@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_contourless_oriented_graph;;
+sc_node -> concept_contourless_oriented_graph;;
 
 concept_contourless_oriented_graph => nrel_main_idtf:
     [бесконтурный орграф]

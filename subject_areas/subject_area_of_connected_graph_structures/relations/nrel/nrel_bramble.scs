@@ -67,6 +67,8 @@ nrel_bramble <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-			"file://contents/nrel_bramble.png";;
+			"file://contents/nrel_bramble.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;

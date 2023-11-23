@@ -1,4 +1,4 @@
-sc_node_not_relation->concept_label;;
+sc_node->concept_label;;
 
 concept_label	=> nrel_main_idtf: 
 		[метка] (* <-lang_ru;; *);
@@ -30,6 +30,8 @@ concept_label <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/concept_label.jpg";;
+				"file://contents/concept_label.jpg"
+(*=> nrel_format:format_jpg;;
+*);;
 			*);;
 	*);;

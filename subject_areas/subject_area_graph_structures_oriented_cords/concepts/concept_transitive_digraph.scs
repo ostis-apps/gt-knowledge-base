@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_transitive_directed_graph;;
+sc_node -> concept_transitive_directed_graph;;
 concept_transitive_directed_graph => nrel_main_idtf:[транзитивный орграф](* <-lang_ru;; *);;
 concept_transitive_directed_graph => nrel_idtf:[transitive directed graph](* <- lang_en;; *);;
 

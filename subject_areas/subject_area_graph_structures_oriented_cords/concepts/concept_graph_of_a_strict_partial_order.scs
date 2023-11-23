@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_graph_of_a_strict_partial_order;;
+sc_node -> concept_graph_of_a_strict_partial_order;;
 concept_graph_of_a_strict_partial_order => nrel_main_idtf:[граф строгого частичного упорядочения](* <-lang_ru;; *);;
 concept_graph_of_a_strict_partial_order => nrel_idtf:[graph of a strict partial order](* <- lang_en;; *);;
 

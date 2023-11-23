@@ -46,7 +46,9 @@ nrel_acyclic_coloring <- rrel_key_sc_element:
                     ...
                     (*
                         -> rrel_example:
-                        "file://contents/nrel_acyclic_coloring.png";;
+                        "file://contents/nrel_acyclic_coloring.png"
+(*=> nrel_format:format_png;;
+*);;
                     *);;
         *);;
 

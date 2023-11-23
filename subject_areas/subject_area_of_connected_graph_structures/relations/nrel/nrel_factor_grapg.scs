@@ -1,4 +1,4 @@
-sc_node_not_relation -> nrel_factor_graph;;
+sc_node -> nrel_factor_graph;;
 nrel_factor_graph => nrel_main_idtf:
 	[фактор-граф*] (* <- lang_ru;; *);
 	[factor-graph*] (* <- lang_en;; *);;

@@ -1,5 +1,5 @@
 sc_node_norole_relation ->nrel_annular_sum_of_graphs;;
-sc_relation -> nrel_annular_sum_of_graphs;;
+sc_node_norole_relation -> nrel_annular_sum_of_graphs;;
 quasybinary_relation -> nrel_annular_sum_of_graphs;;
 oriented_relation -> nrel_annular_sum_of_graphs;;
 
@@ -40,6 +40,8 @@ nrel_annular_sum_of_graphs
 		...
 			(*
 			-> rrel_example:
-			"file://contents/nrel_annular_sum_of_graphs.png";;
+			"file://contents/nrel_annular_sum_of_graphs.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;

@@ -7,11 +7,19 @@ section_graph_exercise_2_4_1
 <= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example: "file://htmls/section_graph_exercise1.html" (* <-lang_ru;; *);;
+		-> rrel_example: "file://htmls/section_graph_exercise1.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);
 		...
 		(*
-		-> rrel_example: "file://htmls/section_graph_exercise1_en.html" (* <-lang_en;; *);; 
+		-> rrel_example: "file://htmls/section_graph_exercise1_en.html"
+(*
+	<- lang_en;;
+	=> nrel_format: format_html;;
+*);; 
 		*);
 <-rrel_key_sc_element: nrel_chain;
 =>graph_exercise_2_4_1_answer;;

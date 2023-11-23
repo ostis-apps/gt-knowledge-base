@@ -1,4 +1,4 @@
-sc_node_not_relation->concept_hamming_graph;;
+sc_node->concept_hamming_graph;;
 
 concept_hamming_graph => nrel_main_idtf:
 	[граф Хэмминга](* <-lang_ru;; *);;

@@ -70,6 +70,8 @@ nrel_flow <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/flow.png";;
+				"file://contents/flow.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;

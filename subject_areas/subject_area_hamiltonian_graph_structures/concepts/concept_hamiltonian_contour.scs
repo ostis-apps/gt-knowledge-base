@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_hamiltonian_contour;;
+sc_node -> concept_hamiltonian_contour;;
 concept_hamiltonian_contour
 
 	=> nrel_main_idtf: 

@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_contrafunctional_digraph;;
+sc_node -> concept_contrafunctional_digraph;;
 
 concept_contrafunctional_digraph => nrel_main_idtf:[контрафункциональный орграф] (* <- lang_ru;; *);;
 concept_contrafunctional_digraph => nrel_idtf:[contrafunctional digraph] (* <- lang_en;; *);;

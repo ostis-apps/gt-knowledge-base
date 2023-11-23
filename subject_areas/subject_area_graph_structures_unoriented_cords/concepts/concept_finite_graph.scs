@@ -1,4 +1,4 @@
-sc_node_not_relation->concept_finite_graph;;
+sc_node->concept_finite_graph;;
 
 concept_finite_graph
 => nrel_main_idtf:
@@ -32,7 +32,9 @@ concept_finite_graph
 		...
 			(*
 			-> rrel_example:
-				"file://picture/concept_finite_graph.jpg";;
+				"file://picture/concept_finite_graph.jpg"
+(*=> nrel_format:format_jpg;;
+*);;
 			*);;
 	*);;
 

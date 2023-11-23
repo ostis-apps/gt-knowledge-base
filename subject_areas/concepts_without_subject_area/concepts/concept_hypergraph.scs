@@ -1,4 +1,4 @@
-sc_node_not_relation->concept_hypergraph;;
+sc_node->concept_hypergraph;;
 
 concept_hypergraph	=> nrel_main_idtf: 
 		[гиперграф] (* <-lang_ru;; *);

@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_descendence_graph;;
+sc_node -> concept_descendence_graph;;
 concept_descendence_graph => nrel_main_idtf:
 	[граф потомтства] (* <- lang_ru;; *);
 	[descendence graph] (* <- lang_en;; *);;

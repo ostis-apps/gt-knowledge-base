@@ -1,4 +1,4 @@
-sc_node_not_relation->concept_directed_forest;;
+sc_node->concept_directed_forest;;
 
 concept_directed_forest	=> nrel_main_idtf: 
 		[ориентированный лес] (* <-lang_ru;; *);

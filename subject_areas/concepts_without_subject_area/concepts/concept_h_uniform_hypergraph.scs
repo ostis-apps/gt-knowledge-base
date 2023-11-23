@@ -1,4 +1,4 @@
-sc_node_not_relation->concept_h_uniform_hypergraph;;
+sc_node->concept_h_uniform_hypergraph;;
 
 concept_h_uniform_hypergraph	=> nrel_main_idtf: 
 		[h-униформный гиперграф] (* <-lang_ru;; *);

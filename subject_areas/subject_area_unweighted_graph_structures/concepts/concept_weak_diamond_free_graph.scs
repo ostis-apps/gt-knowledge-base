@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_weak_diamond_free_graph;;
+sc_node -> concept_weak_diamond_free_graph;;
 
 concept_weak_diamond_free_graph => nrel_main_idtf:
     [слабо алмазо-свободный граф]

@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_g_restricted_graph;;
+sc_node -> concept_g_restricted_graph;;
 
 concept_g_restricted_graph => nrel_main_idtf:
     [Г-ограниченный граф]

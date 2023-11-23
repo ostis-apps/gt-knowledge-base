@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_petersen_graph;;
+sc_node -> concept_petersen_graph;;
 
 concept_petersen_graph => nrel_main_idtf: 
 		[граф Петерсена] (* <-lang_ru;; *);
@@ -50,6 +50,8 @@ concept_petersen_graph <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/concept_petersen_graph.png";;
+				"file://contents/concept_petersen_graph.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;

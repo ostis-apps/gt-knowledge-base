@@ -27,6 +27,8 @@ rrel_forward_arc <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/rrel_forward_arc.png";;
+				"file://contents/rrel_forward_arc.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;

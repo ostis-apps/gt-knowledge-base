@@ -12,12 +12,18 @@ section_definitions_and_examples
 		(*
 		-> rrel_example:
 			"file://html/1.1_eng.html"
-			(* <- lang_en;; *);;
+(*
+	<- lang_en;;
+	=> nrel_format: format_html;;
+*);;
 		*);
 		...
 		(*
 		-> rrel_example:
 			"file://html/1.1.html"
-			(* <- lang_ru;; *);;
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;
 

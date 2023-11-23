@@ -1,5 +1,5 @@
 nrel_cartesian_product_of_graphs
-	<- sc_relation;
+	<- sc_node_norole_relation;
 	<- thenary_relation;
 	<- oriented_relation;
 

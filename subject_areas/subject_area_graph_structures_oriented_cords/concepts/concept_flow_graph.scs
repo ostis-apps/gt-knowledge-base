@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_flow_graph;;
+sc_node -> concept_flow_graph;;
 concept_flow_graph => nrel_main_idtf:[управляющий граф](* <-lang_ru;; *);;
 concept_flow_graph => nrel_idtf:[flow graph](* <- lang_en;; *);;
 

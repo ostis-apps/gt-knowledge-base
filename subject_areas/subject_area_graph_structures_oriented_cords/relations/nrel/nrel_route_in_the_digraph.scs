@@ -59,7 +59,9 @@ nrel_route_in_the_digraph <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/route_in_the_digraph.png";;
+				"file://contents/route_in_the_digraph.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;
 

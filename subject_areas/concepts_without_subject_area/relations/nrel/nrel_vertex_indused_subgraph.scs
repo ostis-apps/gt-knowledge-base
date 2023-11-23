@@ -43,7 +43,9 @@ nrel_vertex_induced_subgraph <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/nrel_vertex_induced_subgraph.png";;
+				"file://contents/nrel_vertex_induced_subgraph.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;
 

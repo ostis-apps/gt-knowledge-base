@@ -1,4 +1,4 @@
-sc_node_not_relation->concept_homeomorphic_graphs;;
+sc_node->concept_homeomorphic_graphs;;
 
 concept_homeomorphic_graphs
 => nrel_main_idtf:

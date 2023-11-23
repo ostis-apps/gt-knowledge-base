@@ -1,4 +1,4 @@
-sc_node_not_relation->nrel_set_of_subgraphs;;
+sc_node->nrel_set_of_subgraphs;;
 
 nrel_set_of_subgraphs => nrel_main_idtf:
 	[семейство подграфов*](* <-lang_ru;; *);

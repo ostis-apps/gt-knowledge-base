@@ -1,4 +1,4 @@
-algorithm_paterson_wegman <- sc_node_not_relation;;
+algorithm_paterson_wegman <- sc_node;;
 
 algorithm_paterson_wegman => nrel_main_idtf:
 	[ алгоритм Патерсона-Вегмана ] (* <-lang_ru;; *);

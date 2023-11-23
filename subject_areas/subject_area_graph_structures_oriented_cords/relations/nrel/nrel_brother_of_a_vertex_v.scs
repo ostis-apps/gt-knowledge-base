@@ -30,7 +30,9 @@ nrel_brother_of_a_vertex_v <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/nrel_brother_of_a_vertex_v.png";;
+				"file://contents/nrel_brother_of_a_vertex_v.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;	
 

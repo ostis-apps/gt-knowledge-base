@@ -60,6 +60,8 @@ rrel_bivertex <- rrel_key_sc_element:
                     ...
                     (*
                         -> rrel_example:
-                        "file://contents/rrel_bivertex.png";;
+                        "file://contents/rrel_bivertex.png"
+(*=> nrel_format:format_png;;
+*);;
                     *);;
         *);;

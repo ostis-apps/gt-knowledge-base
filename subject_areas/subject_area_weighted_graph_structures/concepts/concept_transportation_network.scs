@@ -1,5 +1,5 @@
 concept_transportation_network
-<- sc_node_not_relation;
+<- sc_node;
 => nrel_main_idtf:
 	[транспортная сеть]
 	(* <- lang_ru;; *);
@@ -26,9 +26,15 @@ concept_transportation_network
 			(*
 			-> rrel_example:
 				"file://content_html/definition_for_concept_transportation_network_ru.html"
-				(* <- lang_ru;;	*);
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);
                 "file://content_html/definition_for_concept_transportation_network_en.html"
-				(* <- lang_en;;	*);;
+(*
+	<- lang_en;;
+	=> nrel_format: format_html;;
+*);;
 			*);;
 	*);
 <= nrel_inclusion: concept_directable_graph;
@@ -46,8 +52,14 @@ concept_transportation_network
 			(*
 			-> rrel_example:
 				"file://content_html/statement_for_concept_transportation_network_ru.html"
-				(* <- lang_ru;;	*);
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);
                 "file://content_html/statement_for_concept_transportation_network_en.html"
-				(* <- lang_en;;	*);;
+(*
+	<- lang_en;;
+	=> nrel_format: format_html;;
+*);;
 			*);;
 	*);;

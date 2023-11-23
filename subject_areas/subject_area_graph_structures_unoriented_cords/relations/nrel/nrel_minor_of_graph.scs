@@ -9,7 +9,7 @@ nrel_minor_of_graph => nrel_main_idtf:
 nrel_minor_of_graph => nrel_idtf:
 	[ minor of graph* ] (* <-lang_en;; *);;
 
-sc_node_not_relation -> statement_of_common_type;;
+sc_node -> statement_of_common_type;;
 statement_of_common_type => nrel_main_idtf:
     [утверждение общего типа](* <- lang_ru;; *);
 	[statement_of_common_type](* <- lang_en;; *);;
@@ -66,7 +66,9 @@ nrel_minor_of_graph <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://picture/minor_of_graph_example.png";;
+				"file://picture/minor_of_graph_example.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;
 

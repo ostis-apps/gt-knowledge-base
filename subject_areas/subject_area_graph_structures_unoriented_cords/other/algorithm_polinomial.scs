@@ -1,4 +1,4 @@
-algorithm_polinomial <- sc_node_not_relation;;
+algorithm_polinomial <- sc_node;;
 
 algorithm_polinomial => nrel_main_idtf:
 	[ полиномиальный алгоритм ] (* <-lang_ru;; *);

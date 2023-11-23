@@ -1,4 +1,4 @@
-sc_node_not_relation->rrel_pole;;
+sc_node->rrel_pole;;
 
 rrel_pole	=> nrel_main_idtf: 
 		[полюс] (* <-lang_ru;; *);

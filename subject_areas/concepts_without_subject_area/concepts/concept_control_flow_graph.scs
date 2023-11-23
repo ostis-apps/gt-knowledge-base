@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_control_flow_graph;;
+sc_node -> concept_control_flow_graph;;
 concept_control_flow_graph => nrel_main_idtf:
 	[Управляющий граф] (* <- lang_ru;;*);
 	[Control flow graph] (* <- lang_en;;*);;
