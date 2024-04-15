@@ -43,6 +43,7 @@ concept_directed_tree <- rrel_key_sc_element:
 concept_directed_tree <- rrel_key_sc_element: ... (*
 	<- illustration;;
 	<= nrel_sc_text_translation: ... (*
-		-> rrel_example: "file://contents/directed_tree.gif";;
+		-> rrel_example: "file://contents/directed_tree.gif"(*=> nrel_format:format_png;;
+*);;
 	*);;
 *);;

@@ -80,7 +80,8 @@ concept_totally_disconnected_graph
 ...
 (*
 -> rrel_example:
-"file://contents/concept_totally_disconnected_graph.gif";;
+"file://contents/concept_totally_disconnected_graph.gif"(*=> nrel_format:format_png;;
+*);;
 *);;
 *);;
 

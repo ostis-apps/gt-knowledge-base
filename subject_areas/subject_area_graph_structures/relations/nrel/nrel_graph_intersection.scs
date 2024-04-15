@@ -41,6 +41,7 @@ nrel_graph_intersection
 		...
 			(*
 			-> rrel_example:
-			"file://contents/nrel_graph_intersection.gif";;
+			"file://contents/nrel_graph_intersection.gif"(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;

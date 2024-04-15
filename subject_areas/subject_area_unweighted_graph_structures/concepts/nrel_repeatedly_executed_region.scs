@@ -54,6 +54,7 @@ nrel_repeatedly_executed_region <- rrel_key_sc_element:
                     ...
                     (*
                         -> rrel_example:
-                        "file://contents/nrel_repeatedly_executed_region.gif";;
+                        "file://contents/nrel_repeatedly_executed_region.gif"(*=> nrel_format:format_png;;
+*);;
                     *);;
         *);;

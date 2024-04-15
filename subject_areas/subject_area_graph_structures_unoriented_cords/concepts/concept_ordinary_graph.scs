@@ -44,7 +44,8 @@ concept_ordinary_graph
 		...
 			(*
 			-> rrel_example:
-				"file://picture/concept_ordinary_graph.gif";;
+				"file://picture/concept_ordinary_graph.gif"(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;
 

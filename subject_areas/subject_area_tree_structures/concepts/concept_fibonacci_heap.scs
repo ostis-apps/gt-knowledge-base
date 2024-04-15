@@ -68,6 +68,7 @@ concept_fibonacci_heap <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/concept_fibonacci_heap.gif";;
+				"file://contents/concept_fibonacci_heap.gif"(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;

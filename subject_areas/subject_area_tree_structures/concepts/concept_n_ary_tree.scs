@@ -57,6 +57,7 @@ concept_n_ary_tree <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/concept_n_ary_tree.gif";;
+				"file://contents/concept_n_ary_tree.gif"(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;

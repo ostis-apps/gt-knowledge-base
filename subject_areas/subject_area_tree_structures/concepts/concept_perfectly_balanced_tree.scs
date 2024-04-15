@@ -50,6 +50,7 @@ concept_perfectly_balanced_tree <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/concept_perfectly_balanced_tree.gif";;
+				"file://contents/concept_perfectly_balanced_tree.gif"(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;

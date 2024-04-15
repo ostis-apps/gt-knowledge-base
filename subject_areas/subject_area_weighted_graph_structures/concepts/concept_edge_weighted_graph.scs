@@ -45,6 +45,7 @@ concept_edge_weighted_graph
 			...
 			(*
 			-> rrel_example:
-				"file://content_img/concept_edge_weighted_graph.gif";;
+				"file://content_img/concept_edge_weighted_graph.gif"(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;

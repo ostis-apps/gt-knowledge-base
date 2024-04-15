@@ -32,6 +32,7 @@ concept_planar_graph <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/planar_graph.gif";;
+				"file://contents/planar_graph.gif"(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;

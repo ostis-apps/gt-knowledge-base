@@ -71,6 +71,7 @@ nrel_local_sink <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/local_sink.gif";;
+				"file://contents/local_sink.gif"(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;

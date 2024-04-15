@@ -36,6 +36,7 @@ nrel_matching <- rrel_key_sc_element:
 			...
 			(*
 			-> rrel_example:
-				"file://contents/nrel_matching.gif";;
+				"file://contents/nrel_matching.gif"(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;

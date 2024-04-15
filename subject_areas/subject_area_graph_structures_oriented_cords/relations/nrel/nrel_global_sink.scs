@@ -71,6 +71,7 @@ nrel_global_sink <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/global_sink.gif";;
+				"file://contents/global_sink.gif"(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;

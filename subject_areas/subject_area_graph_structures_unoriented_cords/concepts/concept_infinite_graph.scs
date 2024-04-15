@@ -33,7 +33,8 @@ concept_infinite_graph
 		...
 			(*
 			-> rrel_example:
-				"file://picture/concept_infinite_graph.gif";;
+				"file://picture/concept_infinite_graph.gif"(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;
 

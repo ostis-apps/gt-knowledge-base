@@ -33,6 +33,9 @@ concept_hypergraph <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/concept_hypergraph.gif";;
+				"file://contents/concept_hypergraph.gif"(*=> nrel_format:format_png;;
+*);;
+				
 			*);;
+			
 	*);;

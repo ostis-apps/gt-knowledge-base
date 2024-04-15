@@ -45,6 +45,7 @@ lavrov_scheme <- rrel_key_sc_element:
                     ...
                     (*
                         -> rrel_example:
-                        "file://contents/lavrov_scheme.gif";;
+                        "file://contents/lavrov_scheme.gif"(*=> nrel_format:format_png;;
+*);;
                     *);;
         *);;

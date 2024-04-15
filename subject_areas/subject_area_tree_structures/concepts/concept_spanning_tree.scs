@@ -90,6 +90,7 @@ concept_spanning_tree <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/concept_spanning_tree.gif";;
+				"file://contents/concept_spanning_tree.gif"(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;
