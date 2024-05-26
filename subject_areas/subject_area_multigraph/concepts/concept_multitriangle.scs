@@ -1,0 +1,65 @@
+sc_node -> concept_multitriangle;;
+concept_multitriangle => nrel_main_idtf:
+	[мультитреугольник] (* <- lang_ru;; *);
+	[multitriangle] (* <- lang_en;; *);;
+	
+concept_multitriangle <- rrel_key_sc_element: 
+	...  
+	(*
+	=> nrel_main_idtf: [Опр.(мультитреугольник)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Def.(multitriangle)](* <- lang_en;; *);;	
+	<- definition;; 
+	<= nrel_sc_text_translation: 
+		... 
+		(*
+		-> rrel_example: 
+		[Мультитреугольником mK3 называется любой мультиграф, у которого базисный граф есть K3(где 3 - это количество рёбер в базисном графе).](* <- lang_ru;; *);;
+		-> rrel_example: 
+                [An mK3 multitriangle is any multigraph whose basis graph is K3 (where 3 is the number of edges in the basis graph).] (* <-lang_en;; *);;
+		*);;
+	*);;
+concept_multitriangle<= nrel_using_constants:
+					{
+					concept_node;
+					concept_arg;
+					nrel_multiple_edge;
+					nrel_basis_graph_of_multigraph
+					};;
+					
+concept_multitriangle <- rrel_main_key_sc_element:
+...
+(*
+=> nrel_main_idtf: [Утв.(о количестве рёбер у базисного графа мультитреугольника)] (* <- lang_ru;; *);;
+=> nrel_main_idtf: [Stat.(about amount of vertices in basis graph of a multitriangle)] (* <- lang_en;; *);;
+<- statement;;
+<= nrel_using_constants:
+{
+nrel_basis_graph_of_multigraph
+};;
+<= nrel_sc_text_translation: ...
+(*
+-> rrel_example: 
+[Количество рёбер базисного графа мультитреугольника равно 3.](*<- lang_ru;;*);;
+-> rrel_example: 
+[The number of edges in the basis graph of a multitriangle is 3.](*<- lang_en;;*);;
+*);;
+*);;
+
+					
+concept_multitriangle <- rrel_key_sc_element: 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_multitriangle.jpg"
+(*=> nrel_format:format_jpg;;
+*);;
+			*);;
+	*);;
+concept_multi_graph => nrel_inclusion: concept_multitriangle;;
+concept_pseudo_graph => nrel_inclusion: concept_multitriangle;;
+
+

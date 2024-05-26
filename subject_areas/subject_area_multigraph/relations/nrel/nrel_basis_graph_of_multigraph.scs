@@ -1,0 +1,31 @@
+sc_node -> nrel_basis_graph_of_multigraph;;
+
+nrel_basis_graph_of_multigraph => nrel_main_idtf:
+	[ Базисный граф мультиграфа* ](* <-lang_ru;; *);
+	[ Basis graph of a multigraph* ](* <-lang_en;; *);;
+	
+nrel_basis_graph_of_multigraph <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- definition;;
+		=> nrel_main_idtf: [Опр.(Базисный граф мультиграфа)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Def.(Basis graph of a multigraph)] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Базисным графом U(G) мультиграфа G называется граф с множеством вершин VG, в котором две вершины смежны тогда и только тогда, когда они смежны в G.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[The basis graph U(G) of a multigraph G is a graph with a set of vertices VG, in which two vertices are adjacent only if they are adjacent in G.](*<- lang_en;;*);;
+		*);;
+*);;
+nrel_basis_graph_of_multigraph<= nrel_using_constants:
+						{
+							concept_node
+						};;
+
+nrel_basis_graph_of_multigraph <- binary_relation;;
+nrel_basis_graph_of_multigraph => nrel_arity_of_relations: 2(* <- number ;;*);;
+nrel_basis_graph_of_multigraph => nrel_first_domain: concept_multi_graph;;
+nrel_basis_graph_of_multigraph => nrel_second_domain: concept_multi_graph;;
+						
+

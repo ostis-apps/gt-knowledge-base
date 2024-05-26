@@ -1,0 +1,49 @@
+sc_node -> concept_adjoint_multigraph;;
+concept_adjoint_multigraph => nrel_main_idtf:
+	[рёберный мультиграф] (* <- lang_ru;; *);
+	[adjoint multigraph] (* <- lang_en;; *);;
+	
+concept_adjoint_multigraph <- rrel_key_sc_element: 
+	...  
+	(*
+	=> nrel_main_idtf: [Опр.(рёберный мультиграф)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Def.(adjoint multigraph)](* <- lang_en;; *);;	
+	<- definition;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+		[Мультиграф G называется рёберным мультиграфом тогда и только тогда, когда ни один из мультиграфов, имеющих 2 вершины и k кратных рёбер(k > 2), не является порождённым подграфом мультиграфа G.](* <- lang_ru;; *);;
+		-> rrel_example: 
+                [A multigraph G is called an edge multigraph if and only if none of the multigraphs having 2 vertices and k multiple edges (k > 2) is a generated subgraph of the multigraph G.] (* <-lang_en;; *);;
+		*);;
+	*);;
+concept_adjoint_multigraph<= nrel_using_constants:
+        {
+                concept_arg;
+		concept_node;
+		nrel_multiple_edge;
+		nrel_induced_subgraph;
+		concept_adjoint_graph
+        };;
+
+					
+		
+					
+concept_adjoint_multigraph <- rrel_key_sc_element: 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_adjoint_multigraph.jpg"
+(*=> nrel_format:format_jpg;;
+*);;
+			*);;
+	*);;
+concept_multi_graph => nrel_inclusion: concept_adjoint_multigraph;;
+concept_pseudo_graph => nrel_inclusion: concept_adjoint_multigraph;;
+
+

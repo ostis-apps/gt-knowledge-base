@@ -1,0 +1,33 @@
+sc_node -> nrel_multiplicity_of_multigraph;;
+
+nrel_multiplicity_of_multigraph => nrel_main_idtf:
+	[ Кратность мультиграфа* ](* <-lang_ru;; *);
+	[ Multiplicity of multigraph* ](* <-lang_en;; *);;
+	
+nrel_multiplicity_of_multigraph <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- definition;;
+		=> nrel_main_idtf: [Опр.(Кратность мультиграфа)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Def.(Multiplicity of multigraph)] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Кратностью мультиграфа называется максимальная кратность его (кратных)рёбер.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Multiplicity of a multigraph is a maximum multiplicity of it's vertices.](*<- lang_en;;*);;
+		*);;
+*);;
+nrel_multiplicity_of_multigraph<= nrel_using_constants:
+						{
+							concept_arg;
+							nrel_multiple_edge;
+							nrel_vertex_degree
+						};;
+						
+nrel_multiplicity_of_multigraph <- binary_relation;;
+nrel_multiplicity_of_multigraph => nrel_arity_of_relations: 2(* <- number ;;*);;
+nrel_multiplicity_of_multigraph => nrel_first_domain: concept_multi_graph;;
+nrel_multiplicity_of_multigraph => nrel_second_domain: nrel_vertex_degree;;
+						
+

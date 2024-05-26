@@ -1,0 +1,59 @@
+sc_node -> nrel_multiple_edge;;
+
+nrel_multiple_edge => nrel_main_idtf:
+	[ Кратные рёбра* ](* <-lang_ru;; *);
+	[ Multiple edges* ](* <-lang_en;; *);;
+	
+nrel_multiple_edge <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- definition;;
+		=> nrel_main_idtf: [Опр.(Кратные рёбра)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Def.(Multiple edges)] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Рёбра называются кратными в случае, если их концевые вершины совпадают.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Edges are called multiple if their end vertices coincide.](*<- lang_en;;*);;
+		*);;
+*);;
+nrel_multiple_edge<= nrel_using_constants:
+						{
+							concept_arg
+						};;
+						
+nrel_multiple_edge <- rrel_main_key_sc_element:
+...
+(*
+=> nrel_main_idtf: [Утв.(применение кратных рёбер)] (* <- lang_ru;; *);;
+=> nrel_main_idtf: [Stat.(use of multiple edges)] (* <- lang_en;; *);;
+<- statement;;
+<= nrel_sc_text_translation: ...
+(*
+-> rrel_example: 
+[Кратные рёбра используются при рассмотрении цепей с точки зрения графов.Они также составляют ядро дифференцирующих свойств многомерных цепей.](*<- lang_ru;;*);;
+-> rrel_example: 
+[Multiple edges are used when considering chains from the point of view of graphs. They also form the core of the differentiating properties of multidimensional chains.](*<- lang_en;;*);;
+*);;
+*);;
+						
+nrel_multiple_edge <- rrel_key_sc_element: 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/nrel_multiple_edge.jpg"
+(*=> nrel_format:format_jpg;;
+*);;
+			*);;
+	*);;
+	
+nrel_multiple_edge <- binary_relation;;
+nrel_multiple_edge => nrel_arity_of_relations: 2(* <- number ;;*);;
+nrel_multiple_edge => nrel_first_domain: concept_multi_graph;;
+nrel_multiple_edge => nrel_second_domain: concept_arg;;
+

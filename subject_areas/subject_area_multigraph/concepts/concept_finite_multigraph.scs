@@ -1,0 +1,46 @@
+sc_node -> concept_finite_multigraph;;
+concept_finite_multigraph => nrel_main_idtf:
+	[Конечный мультиграф] (* <- lang_ru;; *);
+	[Finite multigraph] (* <- lang_en;; *);;
+	
+concept_finite_multigraph <- rrel_key_sc_element: 
+	...  
+	(*
+	=> nrel_main_idtf: [Опр.(конечный мультиграф)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Def.(finite multigraph)](* <- lang_en;; *);;	
+	<- definition;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+		[Конечный мультиграф — это тройка G= (V,E,r), где Vi — конечное множество вершин, E — конечное множество ребер, а r:E→V×Vi — отображение, которое присваивает каждому ребру неупорядоченную пару конечных вершин.](* <- lang_ru;; *);;
+		-> rrel_example: 
+                [A ﬁnite multigraph is a triple G= (V,E,r) where Vis a ﬁniteset of vertices,E is a ﬁnite set of edges, and r:E→V×Vis a map which assigns to each edge an unordered pair of endpoint vertices.] (* <-lang_en;; *);;
+		*);;
+	*);;
+concept_finite_multigraph<= nrel_using_constants:
+        {
+                concept_arg;
+		concept_node;
+		concept_map
+        };;
+
+					
+					
+concept_finite_multigraph <- rrel_key_sc_element: 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_finite_multigraph.jpg"
+(*=> nrel_format:format_jpg;;
+*);;
+			*);;
+	*);;
+concept_multi_graph => nrel_inclusion: concept_finite_multigraph;;
+concept_pseudo_graph => nrel_inclusion: concept_finite_multigraph;;
+
+

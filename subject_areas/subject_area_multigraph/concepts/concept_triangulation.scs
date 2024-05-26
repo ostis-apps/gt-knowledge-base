@@ -1,0 +1,65 @@
+sc_node -> concept_triangulation;;
+concept_triangulation => nrel_main_idtf:
+	[Триангуляция] (* <- lang_ru;; *);
+	[Triangulation] (* <- lang_en;; *);;
+	
+concept_triangulation <- rrel_key_sc_element: 
+	...  
+	(*
+	=> nrel_main_idtf: [Опр.(триангуляция)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Def.(triangulation)](* <- lang_en;; *);;	
+	<- definition;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+		[Триангуляцией называется такой плоский мультиграф G (имеющий больше двух рёбер), что каждая грань G ограничена треугольником G.](* <- lang_ru;; *);;
+		-> rrel_example: 
+                [A triangulation is a plane multigraph G (on > 2 vertices) such that each face of G is bounded by a triangle of G.] (* <-lang_en;; *);;
+		*);;
+	*);;
+concept_triangulation<= nrel_using_constants:
+        {
+                concept_arg;
+		concept_node;
+		nrel_face
+        };;
+        
+concept_triangulation <- rrel_main_key_sc_element:
+...
+(*
+=> nrel_main_idtf: [Утв.(о количестве вершин в триангуляции)] (* <- lang_ru;; *);;
+=> nrel_main_idtf: [Stat.(about number of edges in triangulation)] (* <- lang_en;; *);;
+<- statement;;
+<= nrel_using_constants:
+{
+concept_forest
+};;
+<= nrel_sc_text_translation: ...
+(*
+-> rrel_example: 
+[Полигональная плоская триангуляция G, имеющая n рёбер, имеет 3n - 6 вершин.](*<- lang_ru;;*);;
+-> rrel_example: 
+[A poligonal plane triangulation G on n vertices has 3n - 6 edges.](*<- lang_en;;*);;
+*);;
+*);;	
+
+
+					
+					
+concept_triangulation <- rrel_key_sc_element: 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_triangulation.jpg"
+(*=> nrel_format:format_jpg;;
+*);;
+			*);;
+	*);;
+concept_plane_multigraph => nrel_inclusion: concept_triangulation;;
+
+

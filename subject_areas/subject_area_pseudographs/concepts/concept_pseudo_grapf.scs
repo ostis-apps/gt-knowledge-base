@@ -1,0 +1,76 @@
+sc_node -> concept_pseudo_graph;;
+concept_pseudo_graph => nrel_main_idtf:
+	[псевдограф] (* <- lang_ru;; *);
+	[pseudograph] (* <- lang_en;; *);;
+	
+concept_pseudo_graph <- rrel_key_sc_element: 
+	...  
+	(*
+	=> nrel_main_idtf: [Определение: псевдограф] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Definition: pseudograph](* <- lang_en;; *);;	
+	<- definition;; 
+	<= nrel_sc_text_translation: 
+		... 
+		(*
+		-> rrel_example: 
+		[Псевдографом называется граф, который допускает наличие и кратных рёбер, и петель.](* <- lang_ru;; *);;
+		-> rrel_example: 
+                [A pseudograph is a graph that admits the presence of both multiple edges and loops.] (* <-lang_en;; *);;
+		*);;
+	*);;
+concept_pseudo_graph<= nrel_using_constants:
+					{
+					concept_node;
+					concept_edge;
+					nrel_multiple_edge;
+					rrel_loop;
+					nrel_non_boolean_adjacency_matrix
+					};;
+
+concept_pseudo_graph <- rrel_main_key_sc_element:
+...
+(*
+=> nrel_main_idtf: [Утверждение: свойства псевдографа] (* <- lang_ru;; *);;
+=> nrel_main_idtf: [Statement: properties of the pseudograph] (* <- lang_en;; *);;
+<- statement;;
+<= nrel_sc_text_translation: ...
+(*
+-> rrel_example: 
+[В псевдографе присутствуют и кратные рёбра, и петли.](*<- lang_ru;;*);;
+-> rrel_example: 
+[A pseudograph contains both multiple edges and loops.](*<- lang_en;;*);;
+*);;
+*);;
+
+concept_pseudo_graph <- rrel_main_key_sc_element:
+...
+(*
+=> nrel_main_idtf: [Утверждение: о способе представления псевдографа] (* <- lang_ru;; *);;
+=> nrel_main_idtf: [Statement: about the method of representing a pseudograph] (* <- lang_en;; *);;
+<- statement;;
+<= nrel_sc_text_translation: ...
+(*
+-> rrel_example: 
+[Псевдограф может быть представлен с помощью небулевой матрицы смежности.](*<- lang_ru;;*);;
+-> rrel_example: 
+[A pseudograph can be represented using a non-Boolean adjacency matrix.](*<- lang_en;;*);;
+*);;
+*);;
+					
+concept_pseudo_graph <- rrel_key_sc_element: 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_pseudo_graph.jpg"
+(*=> nrel_format:format_jpg;;
+*);;
+			*);;
+	*);;
+
+concept_graph => nrel_inclusion: concept_pseudo_graph;;
+
+

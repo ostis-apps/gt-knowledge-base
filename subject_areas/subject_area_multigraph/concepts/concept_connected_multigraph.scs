@@ -1,0 +1,106 @@
+sc_node -> concept_connected_multigraph;;
+concept_connected_multigraph => nrel_main_idtf:
+	[Связный мультиграф] (* <- lang_ru;; *);
+	[Connected multigraph] (* <- lang_en;; *);;
+	
+concept_connected_multigraph <- rrel_key_sc_element: 
+	...  
+	(*
+	=> nrel_main_idtf: [Опр.(связный мультиграф)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Def.(connected multigraph)](* <- lang_en;; *);;	
+	<- definition;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+		[Связным мультиграфом называется такой мультиграф, в котором из любой вершины можно попасть в любую другую вершину.](* <- lang_ru;; *);;
+		-> rrel_example: 
+                [A connected multigraph is a multigraph in which from any vertex you can get to any other vertex.] (* <-lang_en;; *);;
+		*);;
+	*);;
+concept_connected_multigraph<= nrel_using_constants:
+        {
+                concept_arg;
+		concept_node
+        };;
+        
+concept_connected_multigraph <- rrel_main_key_sc_element:
+...
+(*
+=> nrel_main_idtf: [Утв.(Теорема Эйлера)] (* <- lang_ru;; *);;
+=> nrel_main_idtf: [Stat.(Eiler's theoreme)] (* <- lang_en;; *);;
+<- statement;;
+<= nrel_using_constants:
+{
+concept_eulerian_multigraph;
+nrel_vertex_degree;
+nrel_cycle
+};;
+<= nrel_sc_text_translation: ...
+(*
+-> rrel_example: 
+[Пусть G - связный мультиграф. Тогда верно следующее: G - эйлеров мультиграф, каждая вершина G имеет чётную степень, набор рёбер G может быть разбит на циклы.](*<- lang_ru;;*);;
+-> rrel_example: 
+[Let G be a connected multigraph. Then the following is true: G is an Eulerian multigraph, each vertex of G has an even degree, the edge set of G can be partitioned into cycles.](*<- lang_en;;*);;
+*);;
+*);;
+
+concept_connected_multigraph <- rrel_main_key_sc_element:
+...
+(*
+=> nrel_main_idtf: [Утв.(об условии наличия в связном мультиграфе Эйлерового цикла)] (* <- lang_ru;; *);;
+=> nrel_main_idtf: [Stat.(on the condition of the presence of an Euler cycle in a connected multigraph)] (* <- lang_en;; *);;
+<- statement;;
+<= nrel_using_constants:
+{
+nrel_eulerian_cycle
+};;
+<= nrel_sc_text_translation: ...
+(*
+-> rrel_example: 
+[Пусть G — связный мультиграф с ровно 2k вершинами 
+нечетной степени. Тогда G содержит эйлеров цикл тогда и только тогда, когда k = 0 или k = 1.](*<- lang_ru;;*);;
+-> rrel_example: 
+[Let G be a connected multigraph with exactly 2k vertices of 
+odd degree. Then G contains an Eulerian trail if and only if k = 0 or k = 1.](*<- lang_en;;*);;
+*);;
+*);;	
+
+concept_connected_multigraph <- rrel_main_key_sc_element:
+...
+(*
+=> nrel_main_idtf: [Утв.(о множестве рёбер цикла в связном мультиграфе)] (* <- lang_ru;; *);;
+=> nrel_main_idtf: [Stat.(about the edge set of a cycle in a connected multigraph)] (* <- lang_en;; *);;
+<- statement;;
+<= nrel_using_constants:
+{
+concept_plane_multigraph;
+nrel_cycle;
+nrel_minimum_cut
+};;
+<= nrel_sc_text_translation: ...
+(*
+-> rrel_example: 
+[Для любого связного плоского мультиграфа G множество ребер E ⊆ E(G) является множеством ребер цикла в G тогда и только тогда, когда E* := {e* | e ∈ E} — минимальный разрез в G*.](*<- lang_ru;;*);;
+-> rrel_example: 
+[For any connected plane multigraph G, an edge set  E ⊆ E(G) is the edge set of a cycle in G if and only if E* := {e* | e ∈ E} is a minimal cut in G*.](*<- lang_en;;*);;
+*);;
+*);;				
+					
+concept_connected_multigraph <- rrel_key_sc_element: 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_connected_multigraph.jpg"
+(*=> nrel_format:format_jpg;;
+*);;
+			*);;
+	*);;
+concept_multi_graph => nrel_inclusion: concept_connected_multigraph;;
+concept_pseudo_graph => nrel_inclusion: concept_connected_multigraph;;
+
+

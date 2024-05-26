@@ -1,0 +1,65 @@
+sc_node -> concept_polygonal_plane_multigraph;;
+concept_polygonal_plane_multigraph => nrel_main_idtf:
+	[Полигональный плоский мультиграф] (* <- lang_ru;; *);
+	[Polygonal plane multigraph] (* <- lang_en;; *);;
+	
+concept_polygonal_plane_multigraph <- rrel_key_sc_element: 
+	...  
+	(*
+	=> nrel_main_idtf: [Опр.(полигональный плоский мультиграф)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Def.(polygonal plane multigraph)](* <- lang_en;; *);;	
+	<- definition;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+		[Полигональным плоским мультиграфом (или полигональным рисунком G) называется такой плоский мультиграф, у которого все рёбра являются ломаными.](* <- lang_ru;; *);;
+		-> rrel_example: 
+                [A polygonal plane multigraph G (or a polygonal drawing of G) is a plane multigraph G such that all it's edges are polygonal arcs.] (* <-lang_en;; *);;
+		*);;
+	*);;
+concept_polygonal_plane_multigraph<= nrel_using_constants:
+        {
+                concept_arg;
+		concept_node;
+		nrel_polygonal_arc
+        };;
+        
+concept_polygonal_plane_multigraph <- rrel_main_key_sc_element:
+...
+(*
+=> nrel_main_idtf: [Утв.(о существовании полигональных рисунков для плоских мультиграфов)] (* <- lang_ru;; *);;
+=> nrel_main_idtf: [Stat.(about existence of polygonal drawings for plane multigraphs)] (* <- lang_en;; *);;
+<- statement;;
+<= nrel_using_constants:
+{
+concept_forest
+};;
+<= nrel_sc_text_translation: ...
+(*
+-> rrel_example: 
+[Для каждого плоского мультиграфа G существует эквивалентный ему полигональный рисунок.](*<- lang_ru;;*);;
+-> rrel_example: 
+[For every plane multigraph G, there exists an equivalent plane polygonal drawing of G.](*<- lang_en;;*);;
+*);;
+*);;	
+
+
+					
+					
+concept_polygonal_plane_multigraph <- rrel_key_sc_element: 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_polygonal_plane_multigraph.jpg"
+(*=> nrel_format:format_jpg;;
+*);;
+			*);;
+	*);;
+concept_plane_multigraph => nrel_inclusion: concept_polygonal_plane_multigraph;;
+
+
