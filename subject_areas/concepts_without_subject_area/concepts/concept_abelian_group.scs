@@ -1,0 +1,38 @@
+sc_node -> concept_abelian_group;;
+concept_abelian_group => nrel_main_idtf:
+	[Абелева группа] (* <- lang_ru;; *);
+	[Abelian group] (* <- lang_en;; *);;
+	
+concept_abelian_group <- rrel_key_sc_element: 
+	...  
+	(*
+	=> nrel_main_idtf: [Опр.(абелева группа)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Def.(abelian group)](* <- lang_en;; *);;	
+	<- definition;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+		[Группа (G, *) абелева, если a * b = b * a для любых двух элементов a, b ∈ G.](* <- lang_ru;; *);;
+		-> rrel_example: 
+                [A group (G, *) is Abelian if a * b = b * a for any two elements a, b ∈ G.] (* <-lang_en;; *);;
+		*);;
+	*);;
+					
+					
+concept_abelian_group <- rrel_key_sc_element: 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_abelian_group.jpg"
+(*=> nrel_format:format_jpg;;
+*);;
+			*);;
+	*);;
+
+
+

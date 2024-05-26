@@ -1,0 +1,68 @@
+sc_node -> concept_unoriented_multi_graph;;
+concept_unoriented_multi_graph => nrel_main_idtf:
+	[неориентированный мультиграф] (* <- lang_ru;; *);
+	[unoriented multigraph] (* <- lang_en;; *);;
+	
+concept_unoriented_multi_graph <- rrel_key_sc_element: 
+	...  
+	(*
+	=> nrel_main_idtf: [Опр.(неориентированный мультиграф)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Def.(unoriented multigraph)](* <- lang_en;; *);;	
+	<- definition;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+		[Неориентированным мультиграфом называется такой мультиграф, вершины которого связаны рёбрами, не имеющими направления.](* <- lang_ru;; *);;
+		-> rrel_example: 
+                [An unoriented multigraph is a multigraph, where vertices are connected by non-directional edges).] (* <-lang_en;; *);;
+		*);;
+	*);;
+concept_oriented_multi_graph<= nrel_using_constants:
+        {
+                concept_arg;
+		concept_node;
+		nrel_multiple_edge;
+		nrel_non_boolean_adjacency_matrix
+        };;
+
+					
+concept_unoriented_multi_graph <- rrel_main_key_sc_element:
+...
+(*
+=> nrel_main_idtf: [Утв.(о дугах в неориентированном мультиграфе)] (* <- lang_ru;; *);;
+=> nrel_main_idtf: [Stat.(about arcs in the unoriented multigraph)] (* <- lang_en;; *);;
+<- statement;;
+<= nrel_using_constants:
+{
+nrel_multiple_arc;
+concept_oredge
+};;
+<= nrel_sc_text_translation: ...
+(*
+-> rrel_example: 
+[В неориентированном мультиграфе не допускается наличие дуг.](*<- lang_ru;;*);;
+-> rrel_example: 
+[Arcs are not allowed in an unoriented multigraph.](*<- lang_en;;*);;
+*);;
+*);;
+
+		
+					
+concept_unoriented_multi_graph <- rrel_key_sc_element: 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_unoriented_multi_graph.jpg"
+(*=> nrel_format:format_jpg;;
+*);;
+			*);;
+	*);;
+concept_multi_graph => nrel_inclusion: concept_unoriented_multi_graph;;
+concept_pseudo_graph => nrel_inclusion: concept_unoriented_multi_graph;;
+
+

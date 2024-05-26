@@ -1,0 +1,44 @@
+sc_node -> concept_adjoint_graph;;
+concept_adjoint_graph => nrel_main_idtf:
+	[рёберный граф] (* <- lang_ru;; *);
+	[adjoint graph] (* <- lang_en;; *);;
+	
+concept_adjoint_graph <- rrel_key_sc_element: 
+	...  
+	(*
+	=> nrel_main_idtf: [Опр.(рёберный граф)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Def.(adjoint graph)](* <- lang_en;; *);;	
+	<- definition;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+		[Рёберным графом для графа G с p вершинами и q рёбрами называется граф с множеством вершин E, в котором две вершины соединены ребром тогда и только тогда, когда соответствующие рёбра смежны в G.](* <- lang_ru;; *);;
+		-> rrel_example: 
+                [An edge graph for a graph G with p vertices and q edges is a graph with a set of vertices E in which two vertices are connected by an edge if and only if the corresponding edges are adjacent in G.] (* <-lang_en;; *);;
+		*);;
+	*);;
+concept_adjoint_graph<= nrel_using_constants:
+        {
+                concept_arg;
+		concept_node
+        };;
+
+		
+					
+concept_adjoint_graph <- rrel_key_sc_element: 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_adjoint_graph.jpg"
+(*=> nrel_format:format_jpg;;
+*);;
+			*);;
+	*);;
+concept_graph => nrel_inclusion: concept_adjoint_graph;;
+
+

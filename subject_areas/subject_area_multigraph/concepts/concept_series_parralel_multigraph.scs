@@ -1,0 +1,68 @@
+sc_node -> concept_series_parralel_multigraph;;
+concept_series_parralel_multigraph => nrel_main_idtf:
+	[Последовательно-парралельный мультиграф] (* <- lang_ru;; *);
+	[Series-parralel multigraph] (* <- lang_en;; *);;
+	
+concept_series_parralel_multigraph <- rrel_key_sc_element: 
+	...  
+	(*
+	=> nrel_main_idtf: [Опр.(Последовательно-парралельный мультиграф)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Def.(Series-parralel multigraph)](* <- lang_en;; *);;	
+	<- definition;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+		[Пусть G — мультиграф. G является последовательно-параллельным, если его 2-связные компоненты можно свести к петле с помощью операций S и P.](* <- lang_ru;; *);;
+		-> rrel_example: 
+                [Let G be a multigraph. G is series-parallel if it's 2-connected components can be reduced to a loop with S and P operations.] (* <-lang_en;; *);;
+		*);;
+	*);;
+concept_series_parralel_multigraph<= nrel_using_constants:
+        {
+                concept_arg;
+		concept_node;
+		rrel_loop;
+		nrel_connected_component
+        };;
+
+concept_series_parralel_multigraph <- rrel_main_key_sc_element:
+...
+(*
+=> nrel_main_idtf: [Утв.(о связи между последовательно-парралельным и планарным двойственным мультиграфом)] (* <- lang_ru;; *);;
+=> nrel_main_idtf: [Stat.(about connection between series-parralel and planar dual multigraph)] (* <- lang_en;; *);;
+<- statement;;
+<= nrel_using_constants:
+{
+concept_arg;
+concept_planar_multigraph;
+concept_dual_multigraph
+};;
+<= nrel_sc_text_translation: ...
+(*
+-> rrel_example: 
+[Если нарисовать на плоскости последовательно-параллельный мультиграф с дополнительным ребром, соединяющим два его конца, то его планарный двойственный мультиграф также будет рисунком того же типа, повернутым боком.](*<- lang_ru;;*);;
+-> rrel_example: 
+[If you draw a series-parallel multigraph in the plane, with an extra edge connecting its two terminals, then its planar dual is also a drawing of the same type, turned sideways.](*<- lang_en;;*);;
+*);;
+*);;
+					
+		
+					
+concept_series_parralel_multigraph <- rrel_key_sc_element: 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_series_parralel_multigraph.jpg"
+(*=> nrel_format:format_jpg;;
+*);;
+			*);;
+	*);;
+concept_multi_graph => nrel_inclusion: concept_series_parralel_multigraph;;
+concept_pseudo_graph => nrel_inclusion: concept_series_parralel_multigraph;;
+
+

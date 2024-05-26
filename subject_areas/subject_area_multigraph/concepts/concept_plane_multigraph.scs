@@ -1,0 +1,103 @@
+sc_node -> concept_plane_multigraph;;
+concept_plane_multigraph => nrel_main_idtf:
+	[Плоский мультиграф] (* <- lang_ru;; *);
+	[Plain multigraph] (* <- lang_en;; *);;
+	
+concept_plane_multigraph <- rrel_key_sc_element: 
+	...  
+	(*
+	=> nrel_main_idtf: [Опр.(плоский мультиграф)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Def.(plain multigraph)](* <- lang_en;; *);;	
+	<- definition;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+		[Плоский мультиграф — это пара G = (V, E) конечных множеств, удовлетворяющих следующим условиям: V ⊆ R x R, каждое ребро представляет собой либо дугу между двумя вершинами, либо многоугольник, содержащий ровно одну вершину, не считая собственной конечной точки( s), ребро не содержит ни вершин, ни точек любого другого ребра.](* <- lang_ru;; *);;
+		-> rrel_example: 
+                [A plane multigraph is a pair G = (V, E) of finite sets satisfying the folowing conditions: V ⊆ R x R , every edge is either an arc between two vertices or a polygon containing exactly one vertex, apart from it's own endpoint(s), an edge contains no vertex and no point of any other edge.] (* <-lang_en;; *);;
+		*);;
+	*);;
+concept_plane_multigraph<= nrel_using_constants:
+        {
+                concept_arg;
+		concept_node;
+		concept_polygon_circle_graph
+        };;
+        
+concept_plane_multigraph <- rrel_main_key_sc_element:
+...
+(*
+=> nrel_main_idtf: [Утв.(о лесах в мультиграфе)] (* <- lang_ru;; *);;
+=> nrel_main_idtf: [Stat.(about forests in multigraph)] (* <- lang_en;; *);;
+<- statement;;
+<= nrel_using_constants:
+{
+concept_forest
+};;
+<= nrel_sc_text_translation: ...
+(*
+-> rrel_example: 
+[Мультиграф G = (V,E) можно разбить не более чем на k лесов тогда и только тогда, когда G(U) <= k(|U| - 1) для любого непустого множества U ⊆ V.](*<- lang_ru;;*);;
+-> rrel_example: 
+[A multigraph G = (V,E) can be partitioned into at most k forests if and only if G(U) <= k(|U| - 1) for every non-empty set U ⊆ V.](*<- lang_en;;*);;
+*);;
+*);;	
+
+concept_plane_multigraph <- rrel_main_key_sc_element:
+...
+(*
+=> nrel_main_idtf: [Утв.(об эквивалентности плоских мультиграфов)] (* <- lang_ru;; *);;
+=> nrel_main_idtf: [Stat.(about equivalence of plain multigraphs)] (* <- lang_en;; *);;
+<- statement;;
+<= nrel_using_constants:
+{
+nrel_rotation_system;
+nrel_mirror_image
+};;
+<= nrel_sc_text_translation: ...
+(*
+-> rrel_example: 
+[Будем говорить, что два изоморфных плоских мультиграфа G и H эквивалентные рисунки, если существует изоморфизм из G в H, сохраняющий их вращение системы, с точностью до возможного зеркального отображения.](*<- lang_ru;;*);;
+-> rrel_example: 
+[We say that two isomorphic plane multigraphs G and H are equivalent drawings if there exists an isomorphism from G to H which preserves their rotation systems, up to a possible mirror image.](*<- lang_en;;*);;
+*);;
+*);;	
+
+concept_plane_multigraph <- rrel_main_key_sc_element:
+...
+(*
+=> nrel_main_idtf: [Утв.(об связи эквивалентности плоских мультиграфов и лицевых обходов)] (* <- lang_ru;; *);;
+=> nrel_main_idtf: [Stat.(about connection between equivalence of plain multigraphs and facial walks)] (* <- lang_en;; *);;
+<- statement;;
+<= nrel_using_constants:
+{
+nrel_rotation_system;
+nrel_facial_walk
+};;
+<= nrel_sc_text_translation: ...
+(*
+-> rrel_example: 
+[Два изоморфных плоских мультиграфа G1 и G2 являются эквивалентными рисунками тогда и только тогда, когда существует изоморфизм между G1 и G2, который сохраняет все их лицевые обходы.](*<- lang_ru;;*);;
+-> rrel_example: 
+[Two isomorphic plane multigraphs G1 and G2 are equivalent drawings if, and only if, there exists an isomorphism between G1 and G2 which preserves all their facial walks.](*<- lang_en;;*);;
+*);;
+*);;					
+					
+concept_plane_multigraph <- rrel_key_sc_element: 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_plane_multigraph.jpg"
+(*=> nrel_format:format_jpg;;
+*);;
+			*);;
+	*);;
+concept_multi_graph => nrel_inclusion: concept_plane_multigraph;;
+concept_pseudo_graph => nrel_inclusion: concept_plane_multigraph;;
+
+

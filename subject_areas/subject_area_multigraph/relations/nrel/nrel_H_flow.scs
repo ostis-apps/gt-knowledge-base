@@ -1,0 +1,32 @@
+sc_node->nrel_H_flow;;
+
+nrel_H_flow => nrel_main_idtf:
+	[H-поток*](* <-lang_ru;; *);
+	[H-flow*](* <-lang_en;; *);;
+
+nrel_H_flow <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- definition;;
+		=> nrel_main_idtf: [Опр.(H-поток)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Def.(H-flow)] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Пусть G = (V, E) - мультиграф, а H - абелева группа. Функция f: E -> H нигде не обнуляется, если f(e) != 0 для всех e ∈ E. H - циркуляция, которая нигде не обнуляется, называется H - потоком.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Let G = (V, E) be a multigraph and H an Abelian group. The function f: E -> H does not vanish anywhere if f(e) != 0 for all e ∈ E. An H circulation that does not vanish anywhere is called an H flow.](*<- lang_en;;*);;
+		*);;
+*);;
+nrel_H_flow<= nrel_using_constants:
+						{
+							nrel_circulation;
+							concept_abelian_group
+						};;
+						
+nrel_H_flow <- binary_relation;;
+nrel_H_flow => nrel_arity_of_relations: 2(* <- number ;;*);;
+nrel_H_flow => nrel_first_domain: concept_multi_graph;;
+nrel_H_flow => nrel_second_domain: nrel_circulation;;
+
+

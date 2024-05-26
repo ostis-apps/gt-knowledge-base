@@ -1,0 +1,57 @@
+sc_node_norole_relation ->nrel_non_boolean_adjacency_matrix;;
+sc_node_norole_relation -> nrel_non_boolean_adjacency_matrix;;
+ternary_relation -> nrel_non_boolean_adjacency_matrix;;
+oriented_relation -> nrel_non_boolean_adjacency_matrix;;
+
+nrel_non_boolean_adjacency_matrix
+	=> nrel_main_idtf: 
+		[ Небулевая матрица смежности* ] (* <-lang_ru;; *);
+		[ Non-boolean adjacency matrix* ] (* <-lang_en;; *);
+
+=> nrel_arity_of_relations: 3 (* <- number ;;*);
+<-rrel_key_sc_element:
+		...  
+		(*<-definition;;
+		=> nrel_main_idtf: [Опр.(Небулевая матрица смежности)] (* <- lang_ru;; *);;
+		<=nrel_sc_text_translation:
+		...
+			(*
+				-> rrel_example: 
+				[Небулевая матрица смежности графа — это матрица, значения элементов которой характеризуются смежностью вершин графа. При этом в качестве элемента матрицы для смежных вершин задаётся число рёбер, которыми они связаны.] (*<-lang_ru;;*);;
+			*);;
+		*);
+
+<= nrel_using_constants:
+							{
+								concept_graph;
+								nrel_vertex_adjacency;
+								nrel_adjacency_matrix
+							};	
+			
+<-rrel_key_sc_element: ...
+	(*
+		=>nrel_main_idtf:[Утв.(свойства небулевой матрицы смежности) ](*<-lang_ru;;*);;
+		<- statement;;	
+		<=nrel_sc_text_translation:
+		...
+			(*
+				-> rrel_example: [Небулевая матрица смежности - основной способ матричного представления псевдографов и мультиграфов.] (*<-lang_ru;;*);;	
+			*);;
+		*);			
+
+=> nrel_definitional_domain:
+...
+(*
+				<= nrel_combination:
+					...
+						(*
+								->concept_graph;;
+								->concept_matrix;;
+								->set_of_correspondences;;
+							*);;
+*);
+ => nrel_first_domain: concept_graph;
+
+ => nrel_second_domain: concept_matrix;
+
+=> nrel_third_domain: set_of_correspondences;;

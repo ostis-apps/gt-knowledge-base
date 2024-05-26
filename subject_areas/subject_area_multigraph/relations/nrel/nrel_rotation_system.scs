@@ -1,0 +1,27 @@
+sc_node -> nrel_rotation_system;;
+
+nrel_rotation_system => nrel_main_idtf:
+	[ Система вращения* ](* <-lang_ru;; *);
+	[ Rotation system* ](* <-lang_en;; *);;
+	
+nrel_rotation_system <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- definition;;
+		=> nrel_main_idtf: [Опр.(Система вращения)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Def.(Rotation system)] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Для плоского мультиграфа G пусть П(G) = {p(v) : v ∈ V(G)} — набор перестановок, такой, что p(v) — циклический порядок против часовой стрелки множества E(v) в чертежа G. Множество перестановок П называется системой вращения чертежа G.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[For a plane multigraph G, let П(G) = {p(v) : v ∈ V(G)} be a set of permutations, such that p(v) is the counterclockwise cyclic order of the set E(v) in the drawing G. The set of permutations П is calles the rotation system of the drawing G.](*<- lang_en;;*);;
+		*);;
+*);;
+nrel_rotation_system<= nrel_using_constants:
+						{
+							concept_arg
+						};;
+						
+
+

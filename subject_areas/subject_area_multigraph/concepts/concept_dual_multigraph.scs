@@ -1,0 +1,45 @@
+sc_node -> concept_dual_multigraph;;
+concept_dual_multigraph => nrel_main_idtf:
+	[Двойственный мультиграф] (* <- lang_ru;; *);
+	[Dual multigraph] (* <- lang_en;; *);;
+	
+concept_dual_multigraph <- rrel_key_sc_element: 
+	...  
+	(*
+	=> nrel_main_idtf: [Опр.(двойственный мультиграф)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Def.(dual multigraph)](* <- lang_en;; *);;	
+	<- definition;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+		[Двойственный мультиграф плоскому мультиграфу G = (V, E, ε) — мультиграф H = (F, E, φ) такой, что: F — множество граней G, φ — отношение инцидентности, сопоставляющее (в H) каждому ребру e ∈ E две грани графа G, которые имеют e на границе в G.](* <- lang_ru;; *);;
+		-> rrel_example: 
+                [The dual multigraph of a plane multigraph G = (V, E, ε) is a multigraph H = (F, E, φ) such that: F is the set of the faces of G, φ is an incidence relation assigning (in H) to each edge e ∈ E the two faces of G which have e on their boundary in G.] (* <-lang_en;; *);;
+		*);;
+	*);;
+concept_dual_multigraph<= nrel_using_constants:
+        {
+                concept_arg;
+		concept_node;
+		nrel_face
+        };;
+
+					
+					
+concept_dual_multigraph <- rrel_key_sc_element: 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_dual_multigraph.jpg"
+(*=> nrel_format:format_jpg;;
+*);;
+			*);;
+	*);;
+concept_plane_multigraph => nrel_inclusion: concept_dual_multigraph;;
+
+

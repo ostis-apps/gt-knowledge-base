@@ -1,0 +1,66 @@
+sc_node -> concept_hanging_multitriangle;;
+concept_hanging_multitriangle => nrel_main_idtf:
+	[висячий мультитреугольник] (* <- lang_ru;; *);
+	[hanging multitriangle] (* <- lang_en;; *);;
+	
+concept_hanging_multitriangle <- rrel_key_sc_element: 
+	...  
+	(*
+	=> nrel_main_idtf: [Опр.(висячий мультитреугольник)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Def.(hanging multitriangle)](* <- lang_en;; *);;	
+	<- definition;; 
+	<= nrel_sc_text_translation: 
+		... 
+		(*
+		-> rrel_example: 
+		[Порождённый подграф H = K3 мультиграфа G называется висячим мультитреугольником с корнем v ∈ VH,если степени вершин x, входящих одновременно и во множество вершин подграфа H, и во множество вершин мультиграфа G, равны, а степень вершины v, входящей во множество вершин подграфа, меньше, чем степень вершины v, входящей во множество вершин мультиграфа G.](* <- lang_ru;; *);;
+		-> rrel_example: 
+                [The induced subgraph H = K3 of a multigraph G is called a hanging multitriangle with root v ∈ VH if the degrees of vertices x included simultaneously in both the set of vertices of the subgraph H and the set of vertices of the multigraph G are equal, and the degree of the vertex v included into the set of vertices of the subgraph is less than the degree of the vertex v included in the set of vertices of the multigraph G..] (* <-lang_en;; *);;
+		*);;
+	*);;
+concept_hanging_multitriangle<= nrel_using_constants:
+					{
+					concept_node;
+					concept_arg;
+					nrel_multiple_edge;
+					nrel_vertex_degree;
+					rrel_root_vertex;
+					nrel_induced_subgraph
+					};;
+					
+concept_hanging_multitriangle <- rrel_main_key_sc_element:
+...
+(*
+=> nrel_main_idtf: [Утв.(о степенях вершин мультиграфа и его подграфа, являющегося висячим мультитреугольником)] (* <- lang_ru;; *);;
+=> nrel_main_idtf: [Stat.(about the degrees of the vertices of a multigraph and its subgraph, which is a hanging multitriangle)] (* <- lang_en;; *);;
+<- statement;;
+<= nrel_using_constants:
+{
+nrel_vertex_degree
+};;
+<= nrel_sc_text_translation: ...
+(*
+-> rrel_example: 
+[Степени одноименных вершин, не являющихся корневой вершиной, мультиграфа и его подграфа, являющегося висячим мультитреугольником, равны.](*<- lang_ru;;*);;
+-> rrel_example: 
+[The degrees of the vertices of the same name, which are not the root vertex, of a multigraph and its subgraph, which is a hanging multitriangle, are equal.](*<- lang_en;;*);;
+*);;
+*);;
+
+					
+concept_hanging_multitriangle <- rrel_key_sc_element: 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_hanging_multitriangle.jpg"
+(*=> nrel_format:format_jpg;;
+*);;
+			*);;
+	*);;
+concept_multitriangle => nrel_inclusion: concept_hanging_multitriangle;;
+
+

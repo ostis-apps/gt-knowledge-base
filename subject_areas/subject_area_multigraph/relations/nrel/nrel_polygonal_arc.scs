@@ -1,0 +1,42 @@
+sc_node -> nrel_polygonal_arc;;
+
+nrel_polygonal_arc => nrel_main_idtf:
+	[ ломаная* ](* <-lang_ru;; *);
+	[ Polygonal arc* ](* <-lang_en;; *);;
+	
+nrel_polygonal_arc <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- definition;;
+		=> nrel_main_idtf: [Опр.(ломаная)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Def.(polygonal arc)] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[ломаной называется конечная последовательность (p0, p1,...,pk) ⊆ R2 точек в плоскости вместе с k отрезками прямой p0p1, p1p2, . . . , pk−1pk такие, что никакие два из них не пересекаются (кроме общих концов).](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[A polygonal arc is a finite sequence (p0, p1, . . . , pk) ⊆ R2 of points in the plane, together with the k straight line segments p0p1, p1p2, . . . , pk−1pk such that no two of them intersect (except at common ends).](*<- lang_en;;*);;
+		*);;
+*);;
+nrel_polygonal_arc<= nrel_using_constants:
+						{
+							concept_arg;
+							concept_node
+						};;
+						
+nrel_polygonal_arc <- rrel_key_sc_element: 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/nrel_polygonal_arc.jpg"
+(*=> nrel_format:format_jpg;;
+*);;
+			*);;
+	*);;
+						
+
+
