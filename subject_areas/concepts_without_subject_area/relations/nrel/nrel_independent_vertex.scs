@@ -1,5 +1,5 @@
 sc_node_norole_relation ->nrel_independent_vertex;;
-sc_relation -> nrel_independent_vertex;;
+sc_node_norole_relation -> nrel_independent_vertex;;
 ternary_relation -> nrel_independent_vertex;;
 oriented_relation ->nrel_independent_vertex;;
 

@@ -1,4 +1,4 @@
-sc_node_not_relation->concept_matrix;;
+sc_node->concept_matrix;;
 
 concept_matrix	=> nrel_main_idtf: 
 		[матрица] (* <-lang_ru;; *);

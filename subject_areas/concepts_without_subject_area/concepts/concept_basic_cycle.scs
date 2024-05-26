@@ -1,5 +1,5 @@
 concept_basic_cycle
-	<- sc_node_not_relation;
+	<- sc_node;
 
 	=> nrel_main_idtf: [базисный цикл] (* <- lang_ru;; *);
 	=> nrel_main_idtf: [basic cycle] (* <- lang_en;; *);

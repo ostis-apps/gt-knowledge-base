@@ -1,4 +1,4 @@
-sc_node_not_relation->concept_geometry_point;;
+sc_node->concept_geometry_point;;
 
 concept_geometry_point => nrel_main_idtf:
 	[геометрическая точка](* <-lang_ru;; *);
@@ -47,7 +47,9 @@ concept_geometry_point <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/concept_geometry_point.png";;
+				"file://contents/concept_geometry_point.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;
 

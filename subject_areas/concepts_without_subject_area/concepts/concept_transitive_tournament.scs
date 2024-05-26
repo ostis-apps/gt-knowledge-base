@@ -1,4 +1,4 @@
-sc_node_not_relation -> concept_transitive_tournament;;
+sc_node -> concept_transitive_tournament;;
 
 concept_transitive_tournament => nrel_main_idtf:
 	[транзитивный турнир] (* <- lang_ru;;	*);
