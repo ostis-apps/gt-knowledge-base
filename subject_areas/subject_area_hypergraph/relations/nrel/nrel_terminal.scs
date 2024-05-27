@@ -1,0 +1,36 @@
+sc_node -> nrel_terminal;;
+
+nrel_terminal => nrel_main_idtf:
+	[терминал*](* <-lang_ru;; *);
+	[terminal*](* <-lang_en;; *);;
+
+nrel_terminal <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- definition;;
+		=> nrel_main_idtf: [Опр.(терминал)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Def.(terminal)] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Терминал в рекурсивном гиперграфе — это элемент, который не является гиперграфом и не содержит в себе других элементов гиперграфа. 
+				Это может быть вершина или гиперребро, которые являются конечными и не поддаются дальнейшему разложению на другие гиперграфы. 
+				Терминалы играют роль "листьев" в дереве рекурсивных структур, обозначая конечные точки рекурсивного разложения.
+				Для более детального понимания, рекурсивный гиперграф можно представить как дерево, где терминалы соответствуют 
+				листьям этого дерева, а нелистовые узлы могут быть представлены как гиперграфы.]
+				(*<- lang_ru;;*);;
+			-> rrel_example: 
+				[A terminal in a recursive hypergraph is an element that is not a hypergraph and does not contain other elements of the hypergraph. 
+				It can be a vertex or a hyperedge, which are finite and cannot be further decomposed into other hypergraphs. 
+				Terminals play the role of “leaves” in the tree of recursive structures, denoting the endpoints of the recursive decomposition.
+				For a more detailed understanding, a recursive hypergraph can be represented as a tree, where terminals correspond 
+				to the leaves of this tree, and non-leaf nodes can be represented as hypergraphs.]
+				(*<- lang_en;;*);;
+		*);;
+*);;
+
+nrel_terminal <= nrel_using_constants:
+						{
+							concept_edge;
+							concept_vertex
+						};;
