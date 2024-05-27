@@ -1,0 +1,43 @@
+sc_node -> concept_k_hypergraph;;
+
+concept_k_hypergraph => nrel_main_idtf:
+	[k-гиперграф](* <-lang_ru;; *);
+	[k-hypergraph](* <-lang_en;; *);;
+
+concept_k_hypergraph <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- definition;;
+		=> nrel_main_idtf: [Опр.(k-гиперграф)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Def.(k-hypergraph)] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation:
+		        ...
+			(*
+			-> rrel_example: 
+				[K-гиперграф — обобщение графа, в котором каждым ребром могут соединяться не только две вершины, но и любые подмножества множества вершин. Каждое ребро в k-иперграфе содержит ровно k вершин.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[K-hypergraph — a generalization of a graph in which each edge can connect not only two vertices, but also any subset of the set of vertices. Each edge in a k-ipergraph contains exactly k vertices.](*<- lang_en;;*);;
+		*);;
+*);;
+
+concept_k_hypergraph <= nrel_using_constants:
+						{
+							concept_graph;
+							nrel_hyperedge;
+							nrel_hypervertex
+						};;
+
+concept_k_hypergraph <- rrel_key_sc_element: 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_k_hypergraph.png"
+(*=> nrel_format:format_jpg;;
+*);;
+			*);;
+	*);;
+concept_hypergraph => nrel_inclusion: concept_k_hypergraph;;

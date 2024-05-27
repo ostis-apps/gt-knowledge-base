@@ -1,0 +1,44 @@
+sc_node -> concept_evolutionary_hypergraph;;
+
+concept_evolutionary_hypergraph => nrel_main_idtf:
+	[эволюционный гиперграф](* <-lang_ru;; *);
+	[evolutionary hypergraph](* <-lang_en;; *);;
+
+concept_evolutionary_hypergraph <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- definition;;
+		=> nrel_main_idtf: [Опр.(эволюционный гиперграф)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Def.(evolutionary hypergraph)] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation:
+		        ...
+			(*
+			-> rrel_example: 
+				[Эволюционный гиперграф - гиперграф, структура которого эволюционирует по определенным правилам или алгоритмам, полезные для моделирования динамических систем.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Evolutionary hypergraph - hypergraph whose structure evolves according to certain rules or algorithms, useful for modeling dynamic systems.](*<- lang_en;;*);;
+		*);;
+*);;
+
+concept_evolutionary_hypergraph <= nrel_using_constants:
+						{
+							concept_graph;
+							nrel_hyperedge;
+							nrel_hypervertex
+						};;
+
+concept_evolutionary_hypergraph <- rrel_key_sc_element:
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_evolutionary_hypergraph.png"
+(*=> nrel_format:format_jpg;;
+*);;
+			*);;
+	*);;
+
+concept_hypergraph => nrel_inclusion: concept_evolutionary_hypergraph;;

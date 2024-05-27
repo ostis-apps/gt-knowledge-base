@@ -1,0 +1,44 @@
+sc_node -> concept_random_hypergraph;;
+
+concept_random_hypergraph => nrel_main_idtf:
+	[случайный гиперграф](* <-lang_ru;; *);
+	[random hypergraph](* <-lang_en;; *);;
+
+concept_random_hypergraph <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- definition;;
+		=> nrel_main_idtf: [Опр.(случайный гиперграф)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Def.(random hypergraph)] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation:
+		        ...
+			(*
+			-> rrel_example: 
+				[Случайный гиперграф — гиперграф, в котором вершины и гиперребра выбираются случайным образом, используются в теории вероятностей и статистике.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Random hypergraph — hypergraph in which vertices and hyper edges are chosen randomly, used in probability theory and statistics.](*<- lang_en;;*);;
+		*);;
+*);;
+
+concept_random_hypergraph <= nrel_using_constants:
+						{
+							concept_graph;
+							nrel_hyperedge;
+							nrel_hypervertex
+						};;
+
+concept_random_hypergraph <- rrel_key_sc_element:
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_random_hypergraph.png"
+(*=> nrel_format:format_jpg;;
+*);;
+			*);;
+	*);;
+
+concept_hypergraph => nrel_inclusion: concept_random_hypergraph;;

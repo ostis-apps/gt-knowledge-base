@@ -1,0 +1,44 @@
+sc_node -> concept_dynamic_weighted_hypergraph;;
+
+concept_dynamic_weighted_hypergraph => nrel_main_idtf:
+	[гиперграф с динамическим весом](* <-lang_ru;; *);
+	[dynamic weighted hypergraph](* <-lang_en;; *);;
+
+concept_dynamic_weighted_hypergraph <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- definition;;
+		=> nrel_main_idtf: [Опр.(гиперграф с динамическим весом)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Def.(dynamic weighted hypergraph)] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation:
+		        ...
+			(*
+			-> rrel_example: 
+				[Гиперграф с динамическим весом - взвешенный гиперграф, где веса гиперребер могут изменяться во времени в зависимости от определенных условий или событий.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Dynamic weighted hypergraph - weighted hypergraph where the weights of hyperredundant hypergraphs can change over time depending on certain conditions or events.](*<- lang_en;;*);;
+		*);;
+*);;
+
+concept_dynamic_weighted_hypergraph <= nrel_using_constants:
+						{
+							concept_graph;
+							nrel_hyperedge;
+							nrel_hypervertex
+						};;
+
+concept_dynamic_weighted_hypergraph <- rrel_key_sc_element:
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_dynamic_weighted_hypergraph.png"
+(*=> nrel_format:format_jpg;;
+*);;
+			*);;
+	*);;
+
+concept_hypergraph => nrel_inclusion: concept_dynamic_weighted_hypergraph;;

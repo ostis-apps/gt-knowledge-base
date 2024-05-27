@@ -1,0 +1,44 @@
+sc_node -> concept_contextual_hypergraph;;
+
+concept_contextual_hypergraph => nrel_main_idtf:
+	[контекстуальный гиперграф](* <-lang_ru;; *);
+	[contextual hypergraph](* <-lang_en;; *);;
+
+concept_contextual_hypergraph <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- definition;;
+		=> nrel_main_idtf: [Опр.(контекстуальный гиперграф)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Def.contextual hypergraph)] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation:
+		        ...
+			(*
+			-> rrel_example: 
+				[Контекстуальный гиперграф - гиперграф, в котором гиперребра зависят от контекста, что полезно в анализе текстов и семантических сетей.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Contextual hypergraph - hypergraph in which hypergraphs are context dependent, which is useful in analyzing texts and semantic networks.](*<- lang_en;;*);;
+		*);;
+*);;
+
+concept_contextual_hypergraph <= nrel_using_constants:
+						{
+							concept_graph;
+							nrel_hyperedge;
+							nrel_hypervertex
+						};;
+
+concept_contextual_hypergraph <- rrel_key_sc_element:
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_contextual_hypergraph.png"
+(*=> nrel_format:format_jpg;;
+*);;
+			*);;
+	*);;
+
+concept_hypergraph => nrel_inclusion: concept_contextual_hypergraph;;

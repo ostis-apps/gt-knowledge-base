@@ -1,0 +1,45 @@
+sc_node -> concept_dispersed_hypergraph;;
+
+concept_dispersed_hypergraph => nrel_main_idtf:
+	[дисперсный гиперграф](* <-lang_ru;; *);
+	[dispersed hypergraph](* <-lang_en;; *);;
+
+concept_dispersed_hypergraph <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- definition;;
+		=> nrel_main_idtf: [Опр.(дисперсный гиперграф)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Def.(dispersed hypergraph)] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation:
+		        ...
+			(*
+			-> rrel_example: 
+				[Дисперсный гиперграф - гиперграф, где гиперребра содержат случайно выбранные вершины, применяется в вероятностных моделях и теории случайных графов.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Dispersed hypergraph - hypergraph where hyper edges contain randomly selected vertices, used in probabilistic models and random graph theory.](*<- lang_en;;*);;
+		*);;
+*);;
+
+concept_dispersed_hypergraph <= nrel_using_constants:
+						{
+							concept_graph;
+							nrel_hyperedge;
+							nrel_hypervertex
+						};;
+
+concept_dispersed_hypergraph <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утв.(on the distribution of a hypergraph in a dispersed hypergraph)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Stat.(a necessary condition for an algebraic hypergraph to be dense)] (* <- lang_en;; *);;
+		<- statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[В дисперсном гиперграфе гиперграфы распределены так, что ни один из двух гиперграфов не имеет значительного числа общих вершин. Это свойство обеспечивает низкий уровень перекрытия вершин между гиперграфами, что может быть особенно полезно в приложениях, где требуется минимальное вмешательство или зависимость между группами вершин.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[ In a dispersed hypergraph, the hypergraphs are distributed such that no two hypergraphs share a significant number of common vertices. This property ensures a low level of vertex overlap between hypergraphs, which can be particularly useful in applications that require minimal interference or dependency between groups of vertices.](*<- lang_en;;*);;
+			*);;
+		*);;
+
+concept_hypergraph => nrel_inclusion: concept_dispersed_hypergraph;;

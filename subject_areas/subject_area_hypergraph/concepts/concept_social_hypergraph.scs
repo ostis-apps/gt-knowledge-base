@@ -1,0 +1,44 @@
+sc_node -> concept_social_hypergraph;;
+
+concept_social_hypergraph => nrel_main_idtf:
+	[социальный гиперграф](* <-lang_ru;; *);
+	[social hypergraph](* <-lang_en;; *);;
+
+concept_social_hypergraph <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- definition;;
+		=> nrel_main_idtf: [Опр.(социальный гиперграф)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Def.(social hypergraph)] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation:
+		        ...
+			(*
+			-> rrel_example: 
+				[Социальный гиперграф - гиперграф, используемый для моделирования социальных сетей, где гиперребра могут представлять группы людей с общими интересами или связями.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Social hypergraph - hypergraph used to model social networks, where hypergraphs can represent groups of people with common interests or connections.](*<- lang_en;;*);;
+		*);;
+*);;
+
+concept_social_hypergraph <= nrel_using_constants:
+						{
+							concept_graph;
+							nrel_hyperedge;
+							nrel_hypervertex
+						};;
+
+concept_social_hypergraph <- rrel_key_sc_element:
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_social_hypergraph.png"
+(*=> nrel_format:format_jpg;;
+*);;
+			*);;
+	*);;
+
+concept_hypergraph => nrel_inclusion: concept_social_hypergraph;;

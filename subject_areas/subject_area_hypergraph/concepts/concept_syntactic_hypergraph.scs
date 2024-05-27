@@ -1,0 +1,30 @@
+sc_node -> concept_syntactic_hypergraph;;
+
+concept_syntactic_hypergraph => nrel_main_idtf:
+	[синтаксический гиперграф](* <-lang_ru;; *);
+	[syntactic hypergraph](* <-lang_en;; *);;
+
+concept_syntactic_hypergraph <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- definition;;
+		=> nrel_main_idtf: [Опр.(синтаксический гиперграф)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Def.(syntactic hypergraph)] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation:
+		        ...
+			(*
+			-> rrel_example: 
+				[Синтаксический гиперграф - гиперграф, применяемый для анализа иерархических структур в языках программирования и естественных языках, моделируя синтаксические связи.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Syntactic hypergraph - hypergraph used to analyze hierarchical structures in programming languages and natural languages by modeling syntactic relationships.](*<- lang_en;;*);;
+		*);;
+*);;
+
+concept_syntactic_hypergraph <= nrel_using_constants:
+						{
+							concept_graph;
+							nrel_hyperedge;
+							nrel_hypervertex
+						};;
+
+concept_hypergraph => nrel_inclusion: concept_syntactic_hypergraph;;

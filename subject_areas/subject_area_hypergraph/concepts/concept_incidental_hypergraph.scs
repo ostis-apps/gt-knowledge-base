@@ -1,0 +1,30 @@
+sc_node -> concept_incidental_hypergraph;;
+
+concept_incidental_hypergraph => nrel_main_idtf:
+	[ицидентный гиперграф](* <-lang_ru;; *);
+	[incidental hypergraph](* <-lang_en;; *);;
+
+concept_incidental_hypergraph <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- definition;;
+		=> nrel_main_idtf: [Опр.(инцидентный гиперграф)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Def.(incidental hypergraph)] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation:
+		        ...
+			(*
+			-> rrel_example: 
+				[Инцидентный гиперграф - гиперграф, который представляет инцидентные отношения между элементами двух разных множеств, такие как вершины и ребра в двудольных графах.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Incidental hypergraph - hypergraph that represent incident relations between elements of two different sets, such as vertices and edges in bipartite graphs.](*<- lang_en;;*);;
+		*);;
+*);;
+
+concept_incidental_hypergraph <= nrel_using_constants:
+						{
+							concept_graph;
+							nrel_hyperedge;
+							nrel_hypervertex
+						};;
+
+concept_hypergraph => nrel_inclusion: concept_incidental_hypergraph;;

@@ -1,0 +1,43 @@
+sc_node -> concept_colored_hypergraph;;
+
+concept_colored_hypergraph => nrel_main_idtf:
+	[цветной гиперграф](* <-lang_ru;; *);
+	[colored hypergraph](* <-lang_en;; *);;
+
+concept_colored_hypergraph <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- definition;;
+		=> nrel_main_idtf: [Опр.(цветной гиперграф)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Def.(colored hypergraph)] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation:
+		        ...
+			(*
+			-> rrel_example: 
+				[Цветной гиперграф — это гиперграф, в котором гиперребра или вершины имеют ассоциированные цвета. Эти цвета помогают моделировать дополнительные характеристики или ограничения в задачах, таких как раскраска гиперграфов, оптимизация, и комбинаторные задачи. В раскраске гиперграфов, например, задача состоит в том, чтобы раскрасить вершины так, чтобы каждое гиперребро содержало вершины разных цветов, минимизируя количество использованных цветов.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Colored hypergraph — a hypergraph in which hyper edges or vertices have associated colors. These colors help model additional characteristics or constraints in problems such as hypergraph coloring, optimization, and combinatorial problems. In hypergraph coloring, for example, the problem is to color vertices so that each hypergraph contains vertices of different colors, minimizing the number of colors used.](*<- lang_en;;*);;
+		*);;
+*);;
+
+concept_colored_hypergraph <= nrel_using_constants:
+						{
+							concept_graph;
+							nrel_hyperedge;
+							nrel_hypervertex
+						};;
+
+concept_colored_hypergraph <- rrel_key_sc_element: 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_colored_hypergraph.png"
+(*=> nrel_format:format_jpg;;
+*);;
+			*);;
+	*);;
+concept_hypergraph => nrel_inclusion: concept_colored_hypergraph;;

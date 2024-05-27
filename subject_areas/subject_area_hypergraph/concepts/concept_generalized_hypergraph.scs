@@ -1,0 +1,44 @@
+sc_node -> concept_generalized_hypergraph;;
+
+concept_generalized_hypergraph => nrel_main_idtf:
+	[обобщенный гиперграф](* <-lang_ru;; *);
+	[generalized hypergraph](* <-lang_en;; *);;
+
+concept_generalized_hypergraph <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- definition;;
+		=> nrel_main_idtf: [Опр.(обобщенный гиперграф)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Def.(generalized hypergraph)] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation:
+		        ...
+			(*
+			-> rrel_example: 
+				[Обобщенный гиперграф - гиперграф, в котором гиперребра могут соединять множество вершин различных типов.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Generalized hypergraph - a hypergraph in which hyper edges can connect many vertices of different types.](*<- lang_en;;*);;
+		*);;
+*);;
+
+concept_generalized_hypergraph <= nrel_using_constants:
+						{
+							concept_graph;
+							nrel_hyperedge;
+							nrel_hypervertex
+						};;
+
+concept_generalized_hypergraph <- rrel_key_sc_element:
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_generalized_hypergraph.png"
+(*=> nrel_format:format_jpg;;
+*);;
+			*);;
+	*);;
+
+concept_hypergraph => nrel_inclusion: concept_generalized_hypergraph;;

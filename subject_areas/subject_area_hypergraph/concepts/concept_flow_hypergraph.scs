@@ -1,0 +1,43 @@
+sc_node -> concept_flow_hypergraph;;
+
+concept_flow_hypergraph => nrel_main_idtf:
+	[потоковый гиперграф](* <-lang_ru;; *);
+	[flow hypergraph](* <-lang_en;; *);;
+
+concept_flow_hypergraph <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- definition;;
+		=> nrel_main_idtf: [Опр.(потоковый гиперграф)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Def.(flow hypergraph)] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation:
+		        ...
+			(*
+			-> rrel_example: 
+				[Потоковый гиперграф - гиперграф, моделирующий потоки информации или материалов через множество точек, полезен в сетях распределения и логистике.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Flow hypergraph - hypergraph that model the flow of information or materials through a set of points, useful in distribution networks and logistics.](*<- lang_en;;*);;
+		*);;
+*);;
+
+concept_flow_hypergraph <= nrel_using_constants:
+						{
+							concept_graph;
+							nrel_hyperedge;
+							nrel_hypervertex
+						};;
+concept_flow_hypergraph <- rrel_key_sc_element:
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_flow_hypergraph.png"
+(*=> nrel_format:format_jpg;;
+*);;
+			*);;
+	*);;
+
+concept_hypergraph => nrel_inclusion: concept_flow_hypergraph;;

@@ -1,0 +1,59 @@
+sc_node -> concept_biological_hypergraph;;
+
+concept_biological_hypergraph => nrel_main_idtf:
+	[биологический гиперграф](* <-lang_ru;; *);
+	[biological hypergraph](* <-lang_en;; *);;
+
+concept_biological_hypergraph <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- definition;;
+		=> nrel_main_idtf: [Опр.(биологический гиперграф)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Def.(biological hypergraph)] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation:
+		        ...
+			(*
+			-> rrel_example: 
+				[Биологический гиперграф - гиперграф, используемый для моделирования сложных биологических систем, таких как взаимодействия между множеством генов или белков.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Biological hypergraph - hypergraph used to model complex biological systems, such as interactions between multiple genes or proteins.](*<- lang_en;;*);;
+		*);;
+*);;
+
+concept_biological_hypergraph <= nrel_using_constants:
+						{
+							concept_graph;
+							nrel_hyperedge;
+							nrel_hypervertex
+						};;
+
+concept_biological_hypergraph <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утве.(об гиперграфовом представлении биологических сетей)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Stat.(on the hypergraph representation of biological networks)] (* <- lang_en;; *);;
+		<- statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Гиперграфовое представление биологических сетей может отражать взаимодействия более высокого порядка, которые традиционные графовые модели могут упустить. Например, при моделировании дрожжевого протеома, где белки являются вершинами, а комплексы - гиперграфами, было продемонстрировано, что структура гиперграфа раскрывает больше информации о ядре протеома и роли конкретных белков, чем стандартная графовая модель.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[A hypergraph representation of biological networks can capture higher-order interactions that traditional graph models may miss. For instance, in modeling the yeast proteome, where proteins are vertices and complexes are hyperedges, it has been demonstrated that the hypergraph structure reveals more about the core proteome and the roles of specific proteins than a standard graph model would.](*<- lang_en;;*);;
+			*);;
+		*);;
+
+concept_biological_hypergraph <- rrel_key_sc_element:
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_biological_hypergraph.png"
+(*=> nrel_format:format_jpg;;
+*);;
+			*);;
+	*);;
+
+concept_hypergraph => nrel_inclusion: concept_biological_hypergraph;;

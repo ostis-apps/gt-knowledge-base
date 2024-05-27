@@ -1,0 +1,45 @@
+sc_node -> concept_energy_hypergraph;;
+
+concept_energy_hypergraph => nrel_main_idtf:
+	[энергетический гиперграф](* <-lang_ru;; *);
+	[energy hypergraph](* <-lang_en;; *);;
+
+concept_energy_hypergraph <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- definition;;
+		=> nrel_main_idtf: [Опр.(энергетический гиперграф)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Def.(energy hypergraph)] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation:
+		        ...
+			(*
+			-> rrel_example: 
+				[Энергетический гиперграф - гиперграф, применяемый для анализа энергетических систем, где гиперребра могут представлять сложные энергетические взаимодействия между компонентами системы.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Energy hypergraph - hypergraph used to analyze energy systems, where hypercuts can represent complex energy interactions between system components.](*<- lang_en;;*);;
+		*);;
+*);;
+
+concept_energy_hypergraph <= nrel_using_constants:
+						{
+							concept_graph;
+							nrel_hyperedge;
+							nrel_hypervertex
+						};;
+
+concept_energy_hypergraph <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утв.(о спектральном свойстве енергетического гиперграфа)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Stat.(on the spectral property of the energy hypergraph)] (* <- lang_en;; *);;
+		<- statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Энергия гиперграфа определяется как сумма абсолютных значений собственных значений его матрицы смежности. Эта спектральная мера отражает сложность и связность гиперграфа, причем более высокая энергия указывает на более взаимосвязанную или сложную структуру.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[The energy of a hypergraph is defined as the sum of the absolute values of the eigenvalues of its adjacency matrix. This spectral measure reflects the complexity and connectivity of the hypergraph, with higher energy indicating a more interconnected or complex structure.](*<- lang_en;;*);;
+			*);;
+		*);;
+
+concept_hypergraph => nrel_inclusion: concept_energy_hypergraph;;
