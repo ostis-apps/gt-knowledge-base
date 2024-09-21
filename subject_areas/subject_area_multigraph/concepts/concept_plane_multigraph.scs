@@ -1,4 +1,5 @@
-sc_node -> concept_plane_multigraph;;
+sc_node_class
+    -> concept_plane_multigraph;;
 concept_plane_multigraph => nrel_main_idtf:
 	[Плоский мультиграф] (* <- lang_ru;; *);
 	[Plain multigraph] (* <- lang_en;; *);;

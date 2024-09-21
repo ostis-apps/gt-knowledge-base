@@ -1,4 +1,5 @@
-sc_node -> concept_unoriented_multi_graph;;
+sc_node_class
+    -> concept_unoriented_multi_graph;;
 concept_unoriented_multi_graph => nrel_main_idtf:
 	[неориентированный мультиграф] (* <- lang_ru;; *);
 	[unoriented multigraph] (* <- lang_en;; *);;

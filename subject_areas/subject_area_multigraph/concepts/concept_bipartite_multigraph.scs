@@ -1,4 +1,5 @@
-sc_node -> concept_bipartite_multigraph;;
+sc_node_class
+    -> concept_bipartite_multigraph;;
 concept_bipartite_multigraph => nrel_main_idtf:
 	[Двудольный мультиграф] (* <- lang_ru;; *);
 	[Bipartite multigraph] (* <- lang_en;; *);;

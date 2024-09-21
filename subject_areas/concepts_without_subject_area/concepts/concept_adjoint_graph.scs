@@ -1,4 +1,5 @@
-sc_node -> concept_adjoint_graph;;
+sc_node_class
+    -> concept_adjoint_graph;;
 concept_adjoint_graph => nrel_main_idtf:
 	[рёберный граф] (* <- lang_ru;; *);
 	[adjoint graph] (* <- lang_en;; *);;

@@ -1,4 +1,5 @@
-sc_node -> concept_multistar;;
+sc_node_class
+    -> concept_multistar;;
 concept_multistar => nrel_main_idtf:
 	[мультизвезда] (* <- lang_ru;; *);
 	[multistar] (* <- lang_en;; *);;

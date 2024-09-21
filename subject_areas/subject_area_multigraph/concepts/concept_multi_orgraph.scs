@@ -1,4 +1,5 @@
-sc_node -> concept_multi_orgraph;;
+sc_node_class
+    -> concept_multi_orgraph;;
 concept_multi_orgraph => nrel_main_idtf:
 	[мультиорграф] (* <- lang_ru;; *);
 	[multigraph] (* <- lang_en;; *);;

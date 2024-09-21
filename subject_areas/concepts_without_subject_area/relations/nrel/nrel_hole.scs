@@ -1,4 +1,5 @@
-sc_node -> nrel_hole;;
+sc_node_norole_relation
+    -> nrel_hole;;
 
 nrel_hole => nrel_main_idtf:
 	[ Дыра* ](* <-lang_ru;; *);

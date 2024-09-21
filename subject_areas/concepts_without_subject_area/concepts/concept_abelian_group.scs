@@ -1,4 +1,5 @@
-sc_node -> concept_abelian_group;;
+sc_node_class
+    -> concept_abelian_group;;
 concept_abelian_group => nrel_main_idtf:
 	[Абелева группа] (* <- lang_ru;; *);
 	[Abelian group] (* <- lang_en;; *);;

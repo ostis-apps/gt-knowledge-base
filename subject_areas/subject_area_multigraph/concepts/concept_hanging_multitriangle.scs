@@ -1,4 +1,5 @@
-sc_node -> concept_hanging_multitriangle;;
+sc_node_class
+    -> concept_hanging_multitriangle;;
 concept_hanging_multitriangle => nrel_main_idtf:
 	[висячий мультитреугольник] (* <- lang_ru;; *);
 	[hanging multitriangle] (* <- lang_en;; *);;

@@ -1,4 +1,5 @@
-sc_node->nrel_H_flow;;
+sc_node_norole_relation
+    -> nrel_H_flow;;
 
 nrel_H_flow => nrel_main_idtf:
 	[H-поток*](* <-lang_ru;; *);

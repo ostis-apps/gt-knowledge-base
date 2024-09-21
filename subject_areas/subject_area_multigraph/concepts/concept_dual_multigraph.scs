@@ -1,4 +1,5 @@
-sc_node -> concept_dual_multigraph;;
+sc_node_class
+    -> concept_dual_multigraph;;
 concept_dual_multigraph => nrel_main_idtf:
 	[Двойственный мультиграф] (* <- lang_ru;; *);
 	[Dual multigraph] (* <- lang_en;; *);;

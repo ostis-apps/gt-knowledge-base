@@ -1,4 +1,5 @@
-sc_node -> concept_dipole;;
+sc_node_class
+    -> concept_dipole;;
 concept_dipole => nrel_main_idtf:
 	[диполь] (* <- lang_ru;; *);
 	[dipole] (* <- lang_en;; *);;

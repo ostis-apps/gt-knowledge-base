@@ -1,4 +1,5 @@
-sc_node -> concept_multitriangle;;
+sc_node_class
+    -> concept_multitriangle;;
 concept_multitriangle => nrel_main_idtf:
 	[мультитреугольник] (* <- lang_ru;; *);
 	[multitriangle] (* <- lang_en;; *);;

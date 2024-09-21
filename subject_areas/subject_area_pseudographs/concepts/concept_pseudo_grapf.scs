@@ -1,4 +1,5 @@
-sc_node -> concept_pseudo_graph;;
+sc_node_class
+    -> concept_pseudo_graph;;
 concept_pseudo_graph => nrel_main_idtf:
 	[псевдограф] (* <- lang_ru;; *);
 	[pseudograph] (* <- lang_en;; *);;

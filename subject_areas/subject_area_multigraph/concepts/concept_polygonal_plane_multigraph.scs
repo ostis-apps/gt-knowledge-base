@@ -1,4 +1,5 @@
-sc_node -> concept_polygonal_plane_multigraph;;
+sc_node_class
+    -> concept_polygonal_plane_multigraph;;
 concept_polygonal_plane_multigraph => nrel_main_idtf:
 	[Полигональный плоский мультиграф] (* <- lang_ru;; *);
 	[Polygonal plane multigraph] (* <- lang_en;; *);;

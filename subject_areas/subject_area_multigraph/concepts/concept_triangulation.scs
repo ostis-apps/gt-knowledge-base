@@ -1,4 +1,5 @@
-sc_node -> concept_triangulation;;
+sc_node_class
+    -> concept_triangulation;;
 concept_triangulation => nrel_main_idtf:
 	[Триангуляция] (* <- lang_ru;; *);
 	[Triangulation] (* <- lang_en;; *);;

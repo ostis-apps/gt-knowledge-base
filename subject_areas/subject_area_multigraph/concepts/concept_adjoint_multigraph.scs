@@ -1,4 +1,5 @@
-sc_node -> concept_adjoint_multigraph;;
+sc_node_class
+    -> concept_adjoint_multigraph;;
 concept_adjoint_multigraph => nrel_main_idtf:
 	[рёберный мультиграф] (* <- lang_ru;; *);
 	[adjoint multigraph] (* <- lang_en;; *);;

@@ -1,4 +1,5 @@
-sc_node -> concept_maximally_plane_multigraph;;
+sc_node_class
+    -> concept_maximally_plane_multigraph;;
 concept_maximally_plane_multigraph => nrel_main_idtf:
 	[Максимальный плоский мультиграф] (* <- lang_ru;; *);
 	[maximally plain multigraph] (* <- lang_en;; *);;

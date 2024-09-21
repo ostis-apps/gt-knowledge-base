@@ -1,4 +1,5 @@
-sc_node -> concept_hanging_multistar;;
+sc_node_class
+    -> concept_hanging_multistar;;
 concept_hanging_multistar => nrel_main_idtf:
 	[висячая мультизвезда] (* <- lang_ru;; *);
 	[hanging multistar] (* <- lang_en;; *);;

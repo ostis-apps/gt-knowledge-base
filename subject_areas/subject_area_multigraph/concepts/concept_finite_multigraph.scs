@@ -1,4 +1,5 @@
-sc_node -> concept_finite_multigraph;;
+sc_node_class
+    -> concept_finite_multigraph;;
 concept_finite_multigraph => nrel_main_idtf:
 	[Конечный мультиграф] (* <- lang_ru;; *);
 	[Finite multigraph] (* <- lang_en;; *);;
