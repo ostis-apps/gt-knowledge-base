@@ -1,0 +1,48 @@
+sc_node_norole_relation
+    -> nrel_chromatic_component;;
+
+nrel_chromatic_component => nrel_main_idtf:
+	[ Хроматическая компонента* ](* <-lang_ru;; *);
+	[ Chromatic component* ](* <-lang_en;; *);;
+	
+nrel_chromatic_component <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- definition;;
+		=> nrel_main_idtf: [Опр.(хроматическая компонента)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Def.(chromatic component)] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[При правильной раскраске ребер f группы G пусть X — любое подмножество цветов и представьте, что вы удаляете края из G, оставляя только те, чьи цвета находятся в X. Из вершины v, рассмотрим множество всех вершин и ребер в результирующем мультиграфе, к которому можно добраться через простой путь. Подграф G, состоящий из этих вершин и ребер, называется X-хроматической компонентой G под f.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Under a proper edge coloring f of G, let X be anysubset of the colors and imagine removing edges from G, keeping only those whose colors are in X. From a given vertex v, consider the set of all vertices and edges in the resulting multigraph that can be reached via a simple path. The subgraph of G consisting of these vertices and edges is called an X-chromatic component of G under f.](*<- lang_en;;*);;
+		*);;
+*);;
+nrel_chromatic_component<= nrel_using_constants:
+						{
+							concept_arg;
+							nrel_vertex_coloring
+						};;
+						
+nrel_chromatic_component <- rrel_key_sc_element: 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/nrel_chromatic_component.jpg"
+(*=> nrel_format:format_jpg;;
+*);;
+			*);;
+	*);;
+	
+nrel_chromatic_component <- binary_relation;;
+nrel_chromatic_component => nrel_arity_of_relations: 2(* <- number ;;*);;
+nrel_chromatic_component => nrel_first_domain: concept_multi_graph;;
+nrel_chromatic_component => nrel_second_domain: concept_multi_graph;;
+						
+
+

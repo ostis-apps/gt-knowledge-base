@@ -1,0 +1,69 @@
+sc_node_class
+    -> concept_multi_orgraph;;
+concept_multi_orgraph => nrel_main_idtf:
+	[мультиорграф] (* <- lang_ru;; *);
+	[multigraph] (* <- lang_en;; *);;
+	
+concept_multi_orgraph <- rrel_key_sc_element: 
+	...  
+	(*
+	=> nrel_main_idtf: [Опр.(мультиорграф)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Def.(multiorgraph)](* <- lang_en;; *);;	
+	<- definition;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+		[Мультиорграфом называется такой мультиграф, который допускает наличие кратных дуг и каждая из них имеет собственную идентификацию.](* <- lang_ru;; *);;
+		-> rrel_example: 
+                [A multiorgraph is a multigraph, which allows multiple arcs, and they have own identification.] (* <-lang_en;; *);;
+		*);;
+	*);;
+concept_multi_orgraph<= nrel_using_constants:
+					{
+					concept_arg;
+		                        concept_node;
+		                        nrel_multiple_edge;
+		                        nrel_non_boolean_adjacency_matrix;
+					nrel_multiple_arc
+					};;
+					
+concept_multi_orgraph <- rrel_main_key_sc_element:
+...
+(*
+=> nrel_main_idtf: [Утв.(о кратных дугах в ориентированном мультиграфе)] (* <- lang_ru;; *);;
+=> nrel_main_idtf: [Stat.(about multiple arcs in the oriented multigraph)] (* <- lang_en;; *);;
+<- statement;;
+<= nrel_using_constants:
+{
+nrel_multiple_arc
+};;
+<= nrel_sc_text_translation: ...
+(*
+-> rrel_example: 
+[В мультиорграфе рёбра, соединяющие одинаковые вершины, считаются равноправными. Отличить их друг от друга можно путём задания для каждой из них собственной идентификации.](*<- lang_ru;;*);;
+-> rrel_example: 
+[In a multiorgraf edges connecting identical vertices are considered equal. It is possible to distinguish them by assigning each one it's own identification.](*<- lang_en;;*);;
+*);;
+*);;
+
+		
+					
+concept_multi_orgraph <- rrel_key_sc_element: 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_multi_orgraph.jpg"
+(*=> nrel_format:format_jpg;;
+*);;
+			*);;
+	*);;
+concept_oriented_multi_graph => nrel_inclusion: concept_multi_orgraph;;
+concept_multi_graph => nrel_inclusion: concept_multi_orgraph;;
+concept_pseudo_graph => nrel_inclusion: concept_multi_orgraph;;
+
+

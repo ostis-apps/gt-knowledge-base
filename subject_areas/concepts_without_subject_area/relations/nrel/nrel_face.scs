@@ -1,10 +1,9 @@
-sc_node_norole_relation->nrel_face;;
+sc_node_norole_relation
+    -> nrel_face;;
 
-nrel_face=>nrel_main_idtf:
-	[грань*]
-		(*<-lang_ru;;*);
-	[face*]
-		(*<-lang_en;;*);;
+nrel_face => nrel_main_idtf:
+	[ Грань* ](* <-lang_ru;; *);
+	[ Face* ](* <-lang_en;; *);;
 
 nrel_face => nrel_arity_of_relations: 2
 	(* <- number ;;*);;
@@ -15,23 +14,23 @@ nrel_face <- transitive_relation;;
 
 nrel_face => nrel_definitional_domain: concept_graph;;
 nrel_face => nrel_first_domain: concept_graph;;
-nrel_face => nrel_second_domain: concept_graph;; 
+nrel_face => nrel_second_domain: concept_graph;;
 
 nrel_face <- rrel_key_sc_element: 
-     ... 
-	(*
-	=> nrel_main_idtf: [Опр.(Грань графа)] (* <- lang_ru;; *);;
-	<- definition;;
-	<= nrel_sc_text_translation: ...
+        ... 
 		(*
-		-> rrel_example: 
-			[Грань графа — область, ограниченная рёбрами в плоском графе и не содержащая внутри себя вершин и рёбер графа.]
-				(* <- lang_ru;; *);;
-		<= nrel_using_constants:
-				{
-					rrel_vertex;
-					rrel_edge;
-					concept_planar_graph
-				};;
+		<- definition;;
+		=> nrel_main_idtf: [Опр.(Грань)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Def.(Face)] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Пусть G — плоский мультиграф. Дугообразно соединенные области плоскости (включая внешнюю), разделенные чертежом G, называются гранями G.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Let G be a plane multigraph. The arcwise connected regions of the plane (including the outer one), separated by the drawing G are called the faces of G.](*<- lang_en;;*);;
 		*);;
-	*);;
+*);;
+nrel_face<= nrel_using_constants:
+						{
+							concept_arg
+						};;

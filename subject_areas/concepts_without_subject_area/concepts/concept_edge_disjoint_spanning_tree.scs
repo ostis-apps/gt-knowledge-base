@@ -1,0 +1,39 @@
+sc_node_class
+    -> concept_edge_disjoint_spanning_tree;;
+
+concept_edge_disjoint_spanning_tree => nrel_main_idtf:
+	[остовное дерево с непересекающимися рёбрами](* <-lang_ru;; *);
+	[edge-disjoint spanning tree](* <-lang_en;; *);;
+
+concept_edge_disjoint_spanning_tree <- rrel_key_sc_element: 
+		... 
+		(*
+		<- definition;;
+		=> nrel_main_idtf: [Опр.(остовное дерево с непересекающимися рёбрами)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Def.(edge-disjoint spanning tree)] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...	
+			(*
+			-> rrel_example: 
+				[Остовные деревья с непересекающимися рёбрами - остовные деревья, не имеющие никаких общих рёбер.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Edge-disjoint spanning trees are spanning trees, that don't have any edges in common.](*<- lang_en;;*);;
+			*);;
+		*);;
+
+concept_edge_disjoint_spanning_tree <= nrel_using_constants: 
+						{
+						concept_edge; 
+						concept_spanning_tree
+						};;
+
+concept_edge_disjoint_spanning_tree <- rrel_key_sc_element: 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_edge_disjoint_spanning_tree.gif";;
+			*);;
+	*);;

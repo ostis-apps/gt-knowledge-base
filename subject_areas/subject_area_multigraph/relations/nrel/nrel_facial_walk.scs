@@ -1,0 +1,43 @@
+sc_node_norole_relation
+    -> nrel_facial_walk;;
+
+nrel_facial_walk => nrel_main_idtf:
+	[ Лицевой обход* ](* <-lang_ru;; *);
+	[ Facial walk* ](* <-lang_en;; *);;
+	
+nrel_facial_walk <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- definition;;
+		=> nrel_main_idtf: [Опр.(Лицевой обход)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Def.(Facial walk)] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Граница каждой грани G образует замкнутый обход в плоском графе G, который называется лицевым обходом рассматриваемой грани . Продолжительность этой прогулки называется размером грани.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[The boundary (or frontier) of each face of G forms a closed walk in the plane multigraph G which is called the facial walk (of the considered face). The length of this walk is called the size of the face.](*<- lang_en;;*);;
+		*);;
+*);;
+nrel_facial_walk<= nrel_using_constants:
+						{
+							concept_arg;
+							nrel_face
+						};;
+						
+nrel_facial_walk <- rrel_key_sc_element: 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/nrel_facial_walk.jpg"
+(*=> nrel_format:format_jpg;;
+*);;
+			*);;
+	*);;
+						
+
+

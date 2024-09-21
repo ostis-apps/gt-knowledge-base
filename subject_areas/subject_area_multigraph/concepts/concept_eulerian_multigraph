@@ -1,0 +1,48 @@
+sc_node_class
+    -> concept_eulerian_multigraph;;
+concept_eulerian_multi_graph => nrel_main_idtf:
+	[Эйлеров мультиграф] (* <- lang_ru;; *);
+	[Eulerian multigraph] (* <- lang_en;; *);;
+	
+concept_eulerian_multigraph <- rrel_key_sc_element: 
+	...  
+	(*
+	=> nrel_main_idtf: [Опр.(эйлеров мультиграф)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Def.(eulerian multigraph)](* <- lang_en;; *);;	
+	<- definition;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+		[Эйлеровым мультиграфом называется такой мультираф, который содержит Эйлеров цикл.](* <- lang_ru;; *);;
+		-> rrel_example: 
+                [An Eulerian multigraph is a multigraph that contains an Eulerian cycle.] (* <-lang_en;; *);;
+		*);;
+	*);;
+concept_eulerian_multigraph<= nrel_using_constants:
+        {
+                concept_arg;
+		concept_node;
+		nrel_multiple_edge;
+		nrel_eulerian_cycle
+        };;
+
+					
+					
+concept_eulerian_multigraph <- rrel_key_sc_element: 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_eulerian_multigraph.jpg"
+(*=> nrel_format:format_jpg;;
+*);;
+			*);;
+	*);;
+concept_multi_graph => nrel_inclusion: concept_eulerian_multigraph;;
+concept_pseudo_graph => nrel_inclusion: concept_eulerian_multigraph;;
+
+

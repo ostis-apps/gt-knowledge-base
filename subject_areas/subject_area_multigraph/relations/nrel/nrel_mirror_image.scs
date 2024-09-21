@@ -1,0 +1,47 @@
+sc_node_norole_relation
+    -> nrel_mirror_image;;
+
+nrel_mirror_image => nrel_main_idtf:
+	[ Зеркальное изображение* ](* <-lang_ru;; *);
+	[ Mirror image* ](* <-lang_en;; *);;
+	
+nrel_mirror_image <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- definition;;
+		=> nrel_main_idtf: [Опр.(Зеркальное изображение)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Def.(Mirror image)] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Зеркальным изображением плоского мультиграфа G называется такой плоский мультиграф H, который, если его отобразить зеркально, абсолютно идентичен мультиграфу H.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[A mirror image of a planar multigraph G is a planar multigraph H that, if mirrored, is absolutely identical to the multigraph H.](*<- lang_en;;*);;
+		*);;
+*);;
+nrel_mirror_image<= nrel_using_constants:
+						{
+							concept_arg
+						};;
+						
+nrel_mirror_image <- rrel_key_sc_element: 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/nrel_mirror_image.jpg"
+(*=> nrel_format:format_jpg;;
+*);;
+			*);;
+	*);;
+	
+nrel_mirror_image <- binary_relation;;
+nrel_mirror_image => nrel_arity_of_relations: 2(* <- number ;;*);;
+nrel_mirror_image => nrel_first_domain: concept_plane_multigraph;;
+nrel_mirror_image => nrel_second_domain: concept_plane_multigraph;;
+						
+
+

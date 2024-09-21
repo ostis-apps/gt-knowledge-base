@@ -1,0 +1,97 @@
+sc_node_class
+    -> concept_multistar;;
+concept_multistar => nrel_main_idtf:
+	[мультизвезда] (* <- lang_ru;; *);
+	[multistar] (* <- lang_en;; *);;
+	
+concept_multistar <- rrel_key_sc_element: 
+	...  
+	(*
+	=> nrel_main_idtf: [Опр.(мультизвезда)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Def.(multistar)](* <- lang_en;; *);;	
+	<- definition;; 
+	<= nrel_sc_text_translation: 
+		... 
+		(*
+		-> rrel_example: 
+		[Мультизвездой Sm называется любой мультиграф, у которого число рёбер равно m(причём m > 0), и базисный граф которого является звездой.](* <- lang_ru;; *);;
+		-> rrel_example: 
+                [A multistar Sm is any multigraph, whose number of edges is equal to m(with m > 0), and whose basis graph is a star.] (* <-lang_en;; *);;
+		*);;
+	*);;
+concept_multistar<= nrel_using_constants:
+					{
+					concept_node;
+					concept_arg;
+					nrel_multiple_edge;
+					nrel_basis_graph_of_multigraph;
+					concept_star_graph
+					};;
+					
+concept_multistar <- rrel_main_key_sc_element:
+...
+(*
+=> nrel_main_idtf: [Утв.(о центре мультизвезды)] (* <- lang_ru;; *);;
+=> nrel_main_idtf: [Stat.(about center of a multistar)] (* <- lang_en;; *);;
+<- statement;;
+<= nrel_using_constants:
+{
+nrel_vertex_degree
+};;
+<= nrel_sc_text_translation: ...
+(*
+-> rrel_example: 
+[Центром мультизвезды Sm называется вершина, имеющая степень m.](*<- lang_ru;;*);;
+-> rrel_example: 
+[The center of a multistar is a vertex with degree m](*<- lang_en;;*);;
+*);;
+*);;
+
+concept_multistar <- rrel_main_key_sc_element:
+...
+(*
+=> nrel_main_idtf: [Утв.(о концевых вершинах в мультизвезде)] (* <- lang_ru;; *);;
+=> nrel_main_idtf: [Stat.(about terminal vertices in a multistar)] (* <- lang_en;; *);;
+<- statement;;
+<= nrel_sc_text_translation: ...
+(*
+-> rrel_example: 
+[Вершины, отличные от центра звезды, называются концевыми.](*<- lang_ru;;*);;
+-> rrel_example: 
+[Vertices different from the center of the star are called terminal.](*<- lang_en;;*);;
+*);;
+*);;
+
+concept_multistar <- rrel_main_key_sc_element:
+...
+(*
+=> nrel_main_idtf: [Утв.(о порядке мультизвезды)] (* <- lang_ru;; *);;
+=> nrel_main_idtf: [Stat.(about order of a multistar)] (* <- lang_en;; *);;
+<- statement;;
+<= nrel_sc_text_translation: ...
+(*
+-> rrel_example: 
+[Порядком мультизвезды Sm является число m, которая отражает количество рёбер данной мультизвезды(причём m > 0).](*<- lang_ru;;*);;
+-> rrel_example: 
+[The order of a multistar Sm is the number m, which reflects the number of edges of this multistar (with m > 0).](*<- lang_en;;*);;
+*);;
+*);;
+
+					
+concept_multistar <- rrel_key_sc_element: 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_multistar.jpg"
+(*=> nrel_format:format_jpg;;
+*);;
+			*);;
+	*);;
+concept_multi_graph => nrel_inclusion: concept_multistar;;
+concept_pseudo_graph => nrel_inclusion: concept_multistar;;
+
+

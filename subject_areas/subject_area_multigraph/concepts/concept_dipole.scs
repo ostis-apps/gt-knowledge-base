@@ -1,0 +1,85 @@
+sc_node_class
+    -> concept_dipole;;
+concept_dipole => nrel_main_idtf:
+	[диполь] (* <- lang_ru;; *);
+	[dipole] (* <- lang_en;; *);;
+	
+concept_dipole <- rrel_key_sc_element: 
+	...  
+	(*
+	=> nrel_main_idtf: [Опр.(диполь)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Def.(dipole)](* <- lang_en;; *);;	
+	<- definition;; 
+	<= nrel_sc_text_translation: 
+		... 
+		(*
+		-> rrel_example: 
+		[Диполем называется мультиграф, состоящий из двух вершин, связанным некоторым количеством парралельных(кратных)рёбер.](* <- lang_ru;; *);;
+		-> rrel_example: 
+                [A dipole is a multigraph consisting of two vertices connected by a certain number of parallel (multiple) edges.] (* <-lang_en;; *);;
+		*);;
+	*);;
+concept_dipole<= nrel_using_constants:
+					{
+					concept_node;
+					concept_arg;
+					nrel_multiple_edge
+					};;
+					
+concept_dipole <- rrel_main_key_sc_element:
+...
+(*
+=> nrel_main_idtf: [Утв.(о порядке диполя)] (* <- lang_ru;; *);;
+=> nrel_main_idtf: [Stat.(about size of dipole)] (* <- lang_en;; *);;
+<- statement;;
+<= nrel_using_constants:
+{
+nrel_multiple_edge
+};;
+<= nrel_sc_text_translation: ...
+(*
+-> rrel_example: 
+[Диполь, содержащий n кратных рёбер, которые соединяют 2 его вершины, называется диполем порядка n и обозначается, как Dn.](*<- lang_ru;;*);;
+-> rrel_example: 
+[A dipole containing n multiple edges that connect 2 of its vertices is called n-sized dipole, and denoted by Dn.](*<- lang_en;;*);;
+*);;
+*);;
+
+concept_dipole <- rrel_main_key_sc_element:
+...
+(*
+=> nrel_main_idtf: [Утв.(о хроматическом числе диполя)] (* <- lang_ru;; *);;
+=> nrel_main_idtf: [Stat.(about chromatic index of a dipole)] (* <- lang_en;; *);;
+<- statement;;
+<= nrel_using_constants:
+{
+nrel_multiple_edge;
+nrel_chromatic_number
+};;
+<= nrel_sc_text_translation: ...
+(*
+-> rrel_example: 
+[Хроматическое число диполя, содержащего n кратных рёбер, соединяющих 2 его вершины, также равно n.](*<- lang_ru;;*);;
+-> rrel_example: 
+[The chromatic number of a dipole containing n multiple edges connecting its 2 vertices is also n.](*<- lang_en;;*);;
+*);;
+*);;
+
+					
+concept_dipole <- rrel_key_sc_element: 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_dipole.jpg"
+(*=> nrel_format:format_jpg;;
+*);;
+			*);;
+	*);;
+concept_multi_graph => nrel_inclusion: concept_dipole;;
+concept_pseudo_graph => nrel_inclusion: concept_dipole;;
+
+

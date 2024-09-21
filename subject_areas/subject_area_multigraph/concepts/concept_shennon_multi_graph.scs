@@ -1,0 +1,68 @@
+sc_node_class
+    -> concept_shennon_multi_graph;;
+concept_shennon_multi_graph => nrel_main_idtf:
+	[мультиграф Шеннона] (* <- lang_ru;; *);
+	[Shennon's multigraph] (* <- lang_en;; *);;
+	
+concept_shennon_multi_graph <- rrel_key_sc_element: 
+	...  
+	(*
+	=> nrel_main_idtf: [Опр.(мультиграф Шеннона)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Def.(Shennon's multigraph)](* <- lang_en;; *);;	
+	<- definition;; 
+	<= nrel_sc_text_translation: 
+		... 
+		(*
+		-> rrel_example: 
+		[Мультиграфом Шеннона называется такой мультиграф, который имеет ровно 3 вершины и выполняется одно из следующих условий: все три вершины соединены одним и тем же числом рёбер или все три вершины соединены одним и тем же числом рёбер, но добавлено ещё одно дополнительное ребро.](* <- lang_ru;; *);;
+		-> rrel_example: 
+                [A Shennon multigraph is a multigraph that has exactly 3 vertices and one of the following conditions holds: all three vertices are connected by the same number of edges, or all three vertices are connected by the same number of edges, but one additional edge is added.] (* <-lang_en;; *);;
+		*);;
+	*);;
+concept_shennon_multi_graph<= nrel_using_constants:
+					{
+					concept_arg;
+					concept_node;
+					nrel_multiple_edge;
+					nrel_non_boolean_adjacency_matrix
+					};;
+					
+concept_shennon_multi_graph <- rrel_main_key_sc_element:
+...
+(*
+=> nrel_main_idtf: [Утв.(применение мультиграфов Шеннона)] (* <- lang_ru;; *);;
+=> nrel_main_idtf: [Stat.(use of Shennon's multigraphs)] (* <- lang_en;; *);;
+<- statement;;
+<= nrel_using_constants:
+{
+nrel_vertex_coloring
+};;
+<= nrel_sc_text_translation: ...
+(*
+-> rrel_example: 
+[Мультиграфы Шеннона используются при исследовании рёберной раскраски.](*<- lang_ru;;*);;
+-> rrel_example: 
+[Shennon's multigraphs are used to research edge coloring.](*<- lang_en;;*);;
+*);;
+*);;
+
+		
+					
+concept_shennon_multi_graph <- rrel_key_sc_element: 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_shennon_multi_graph.jpg"
+(*=> nrel_format:format_jpg;;
+*);;
+			*);;
+	*);;
+concept_multi_graph => nrel_inclusion: concept_shennon_multi_graph;;
+concept_pseudo_graph => nrel_inclusion: concept_shennon_multi_graph;;
+
+
+

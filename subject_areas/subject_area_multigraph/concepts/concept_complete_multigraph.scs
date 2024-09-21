@@ -1,0 +1,42 @@
+sc_node_class
+    -> concept_complete_multigraph;;
+
+concept_complete_multigraph => nrel_main_idtf:
+[полный мультиграф](* <-lang_ru;; *);
+[сomplete multigraph](* <-lang_en;; *);;
+
+concept_complete_multigraph <- rrel_key_sc_element: 
+... 
+(*
+<- definition;;
+=> nrel_main_idtf: [Опр.(полный мультиграф)] (* <- lang_ru;; *);;
+=> nrel_main_idtf: [Def.(complete multigraph)] (* <- lang_en;; *);;
+<= nrel_sc_text_translation: ...
+(*
+-> rrel_example: 
+[Полный мультиграф hK - это полный граф K, в котором каждое ребро встречается h раз.](*<- lang_ru;;*);;
+-> rrel_example: 
+[Complete multigraph hK is a complete graph K, in which every edge is taken h times.](*<- lang_en;;*);;
+*);;
+*);;
+
+concept_complete_multigraph<= nrel_using_constants:
+{
+concept_arg;
+concept_node;
+concept_complete_graph
+};;
+
+concept_complete_multigraph <- rrel_key_sc_element: 
+...
+(*
+<- illustration;;
+<= nrel_sc_text_translation:
+...
+(*
+-> rrel_example:
+"file://contents/concept_complete_multigraph.png"
+(*=> nrel_format:format_png;;
+*);;
+*);;
+*);;

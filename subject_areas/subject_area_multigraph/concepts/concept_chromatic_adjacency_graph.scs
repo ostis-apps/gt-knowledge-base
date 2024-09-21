@@ -1,0 +1,64 @@
+sc_node_class
+    -> concept_chromatic_adjacency_graph;;
+concept_chromatic_adjacency_graph => nrel_main_idtf:
+	[Хроматический смежный граф] (* <- lang_ru;; *);
+	[Chromatic adjacency graph] (* <- lang_en;; *);;
+	
+concept_chromatic_adjacency_graph <- rrel_key_sc_element: 
+	...  
+	(*
+	=> nrel_main_idtf: [Опр.(хроматический смежный граф)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Def.(chromatic adjacency graph)](* <- lang_en;; *);;	
+	<- definition;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+		[хроматическим смежным графом G называется пара (V, E) , где V - множество хроматичесих вершин, а E - множество хроматических рёбер.](* <- lang_ru;; *);;
+		-> rrel_example: 
+                [A chromatic adjacent graph G is a pair (V, E), where V is the set of chromatic vertices and E is the set of chromatic edges.] (* <-lang_en;; *);;
+		*);;
+	*);;
+concept_chromatic_adjacency_graph<= nrel_using_constants:
+        {
+                rrel_chromatic_edge;
+                rrel_chromatic_vertex
+        };;
+        
+concept_chromatic_adjacency_graph <- rrel_main_key_sc_element:
+...
+(*
+=> nrel_main_idtf: [Утв.(о хроматических смежных дырах в мультиграфе)] (* <- lang_ru;; *);;
+=> nrel_main_idtf: [Stat.(about chromatic adjacency holes in a multigraph)] (* <- lang_en;; *);;
+<- statement;;
+<= nrel_using_constants:
+{
+nrel_hole;
+nrel_chromatic_edge
+};;
+<= nrel_sc_text_translation: ...
+(*
+-> rrel_example: 
+[Две дыры a=<v, x> и b=<u, y> называются хроматическими смежными в случае, если они являются концами общего хроматического ребра.](*<- lang_ru;;*);;
+-> rrel_example: 
+[Two holes, a=<v, x> and b=<u, y>, are said to be chromatically adjacent if they are endpoints of a common chromatic edge.](*<- lang_en;;*);;
+*);;
+*);;	
+
+			
+concept_chromatic_adjacency_graph <- rrel_key_sc_element: 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_chromatic_adjacency_graph.jpg"
+(*=> nrel_format:format_jpg;;
+*);;
+			*);;
+	*);;
+concept_multigraph => nrel_inclusion: concept_chromatic_adjacency_graph;;
+
+

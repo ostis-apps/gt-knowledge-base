@@ -1,0 +1,67 @@
+sc_node_class
+    -> concept_bipartite_multigraph;;
+concept_bipartite_multigraph => nrel_main_idtf:
+	[Двудольный мультиграф] (* <- lang_ru;; *);
+	[Bipartite multigraph] (* <- lang_en;; *);;
+	
+concept_bipartite_multigraph <- rrel_key_sc_element: 
+	...  
+	(*
+	=> nrel_main_idtf: [Опр.(двудольный мультиграф)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Def.(bipartite multigraph)](* <- lang_en;; *);;	
+	<- definition;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+		[Двудольное покрытие мультиграфа G — это совокупность двудольных графов, в которой каждое ребро G принадлежит хотя бы одному из них.](* <- lang_ru;; *);;
+		-> rrel_example: 
+                [A bipartite covering of a multigraph G is a collection of bipartite graphs, so that each edge of G belongs to at least one of them.] (* <-lang_en;; *);;
+		*);;
+	*);;
+concept_bipartite_multigraph<= nrel_using_constants:
+        {
+                concept_arg;
+		concept_node;
+		nrel_multiple_edge;
+		concept_bipartite_graph
+        };;
+
+concept_bipartite_multigraph <- rrel_main_key_sc_element:
+...
+(*
+=> nrel_main_idtf: [Утв.(о размере двудольного покрытия мультиграфа)] (* <- lang_ru;; *);;
+=> nrel_main_idtf: [Stat.(about capacity of bipartite covering)] (* <- lang_en;; *);;
+<- statement;;
+<= nrel_using_constants:
+{
+concept_node;
+concept_bipartite_graph
+};;
+<= nrel_sc_text_translation: ...
+(*
+-> rrel_example: 
+[Размер двудольного покрытия мультиграфа G - это количсество вершин его двудольных графов.](*<- lang_ru;;*);;
+-> rrel_example: 
+[The capacity of the bipartite covering is the sum of the numbers of vertices of these bipartite graphs.](*<- lang_en;;*);;
+*);;
+*);;
+
+										
+concept_bipartite_multigraph <- rrel_key_sc_element: 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_bipartite_multigraph.jpg"
+(*=> nrel_format:format_jpg;;
+*);;
+			*);;
+	*);;
+concept_multi_graph => nrel_inclusion: concept_bipartite_multigraph;;
+concept_pseudo_graph => nrel_inclusion: concept_bipartite_multigraph;;
+
+

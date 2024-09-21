@@ -1,0 +1,33 @@
+sc_node_norole_relation
+    -> nrel_morphism;;
+
+nrel_morphism => nrel_main_idtf:
+	[ Морфизм* ](* <-lang_ru;; *);
+	[ Morphism* ](* <-lang_en;; *);;
+	
+nrel_morphism <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- definition;;
+		=> nrel_main_idtf: [Опр.(Морфизм)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Def.(Morphism)] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Морфизм мультиграфа G= (VG,EG,rG) в мультиграф H= (VH,EH,rH) — это пара отображений fV:VG→VH и fE:EG→EH такая, что для любого ребра a ∈ EG с rG(a)=(x,y) имеем rH(fE(a)) = (fV(x),fV(y)).](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[A morphism from a multigraph G= (VG,EG,rG) to a multigraph H= (VH,EH,rH)is a pair of maps fV:VG→VH and fE:EG→EH such that for any edge a ∈ EG with rG(a)=(x,y) we have rH(fE(a)) = (fV(x),fV(y)).](*<- lang_en;;*);;
+		*);;
+*);;
+nrel_morphism<= nrel_using_constants:
+						{
+							concept_arg;
+							nrel_mapping
+						};;
+						
+nrel_morphism <- binary_relation;;
+nrel_morphism => nrel_arity_of_relations: 2(* <- number ;;*);;
+nrel_morphism => nrel_first_domain: concept_multi_graph;;
+nrel_morphism => nrel_second_domain: concept_map;;
+
+

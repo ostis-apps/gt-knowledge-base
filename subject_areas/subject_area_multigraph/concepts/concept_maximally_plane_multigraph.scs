@@ -1,0 +1,44 @@
+sc_node_class
+    -> concept_maximally_plane_multigraph;;
+concept_maximally_plane_multigraph => nrel_main_idtf:
+	[Максимальный плоский мультиграф] (* <- lang_ru;; *);
+	[maximally plain multigraph] (* <- lang_en;; *);;
+	
+concept_maximally_plane_multigraph <- rrel_key_sc_element: 
+	...  
+	(*
+	=> nrel_main_idtf: [Опр.(максимальный плоский мультиграф)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Def.(maximally plain multigraph)](* <- lang_en;; *);;	
+	<- definition;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+		[Простой плоский граф G, имеющий v > 2 рёбер, является максимально плоским, если невозможно добавить к нему ребро e такое, чтобы создать больший простой плоский граф G + e, тогда и только тогда, когда G - триангуляция.](* <- lang_ru;; *);;
+		-> rrel_example: 
+                [A simple plane graph G on ≥ 3 vertices is maximally plane, i.e., noedge e can be added to G to make a larger simple plane graph G + e if, and only if, G is a triangulation.] (* <-lang_en;; *);;
+		*);;
+	*);;
+concept_maximally_plane_multigraph<= nrel_using_constants:
+        {
+                concept_arg;
+		concept_node;
+		concept_triangulation
+        };;					
+					
+concept_maximally_plane_multigraph <- rrel_key_sc_element: 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_maximally_plane_multigraph.jpg"
+(*=> nrel_format:format_jpg;;
+*);;
+			*);;
+	*);;
+concept_plane_multigraph => nrel_inclusion: concept_maximally_plane_multigraph;;
+
+

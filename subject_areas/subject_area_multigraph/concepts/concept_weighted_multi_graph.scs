@@ -1,0 +1,69 @@
+sc_node_class
+    -> concept_weighted_multi_graph;;
+concept_weighted_multi_graph => nrel_main_idtf:
+	[Помеченный мультиграф] (* <- lang_ru;; *);
+	[Weighted multigraph] (* <- lang_en;; *);;
+	
+concept_weighted_multi_graph <- rrel_key_sc_element: 
+	...  
+	(*
+	=> nrel_main_idtf: [Опр.(помеченный мультиграф)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Def.(weighted multigraph)](* <- lang_en;; *);;	
+	<- definition;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+		[Помеченным мультиграфом называется такой мультиграф, который имеет метки и на рёбрах, и на вершинах.](* <- lang_ru;; *);;
+		-> rrel_example: 
+                [A Weighted multigraph is a multigraph, in which every vertex and edge has weight.] (* <-lang_en;; *);;
+		*);;
+	*);;
+concept_weighted_multi_graph<= nrel_using_constants:
+					{
+					concept_arg;
+		                        concept_node;
+		                        nrel_multiple_edge;
+		                        nrel_non_boolean_adjacency_matrix;
+					nrel_edge_weight;
+					concept_labeled_graph
+					};;
+					
+concept_weighted_multi_graph <- rrel_main_key_sc_element:
+...
+(*
+=> nrel_main_idtf: [Утв.(о метках в помеченном мультиграфе)] (* <- lang_ru;; *);;
+=> nrel_main_idtf: [Stat.(about weights in weighted multigraph)] (* <- lang_en;; *);;
+<- statement;;
+<= nrel_using_constants:
+{
+nrel_label
+};;
+<= nrel_sc_text_translation: ...
+(*
+-> rrel_example: 
+[В помеченном мультиграфе вес каждого ребра и каждой вершины должен быть различен.](*<- lang_ru;;*);;
+-> rrel_example: 
+[In weighted multigraph, every edge and vertex must has different weight.](*<- lang_en;;*);;
+*);;
+*);;
+
+		
+					
+concept_weighted_multi_graph <- rrel_key_sc_element: 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_weighted_multi_graph.jpg"
+(*=> nrel_format:format_jpg;;
+*);;
+			*);;
+	*);;
+concept_multi_graph => nrel_inclusion: concept_weighted_multi_graph;;
+concept_pseudo_graph => nrel_inclusion: concept_weighted_multi_graph;;
+
+

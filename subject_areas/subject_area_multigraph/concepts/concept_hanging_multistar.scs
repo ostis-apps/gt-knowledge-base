@@ -1,0 +1,48 @@
+sc_node_class
+    -> concept_hanging_multistar;;
+concept_hanging_multistar => nrel_main_idtf:
+	[висячая мультизвезда] (* <- lang_ru;; *);
+	[hanging multistar] (* <- lang_en;; *);;
+	
+concept_hanging_multistar <- rrel_key_sc_element: 
+	...  
+	(*
+	=> nrel_main_idtf: [Опр.(висячая мультизвезда)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Def.(hanging multistar)](* <- lang_en;; *);;	
+	<- definition;; 
+	<= nrel_sc_text_translation: 
+		... 
+		(*
+		-> rrel_example: 
+		[Порождённый подграф H = Sm мультиграфа G называется висячей мультизвездой, если степень любой вершины u ∈ H, равна степени одноименной вершины u ∈ G для любой концевой вершины u ∈ VH .](* <- lang_ru;; *);;
+		-> rrel_example: 
+                [A generated subgraph H = Sm of a multigraph G is called a hanging multistar if the degree of any vertex u ∈ H is equal to the degree of the vertex u ∈ G for any temporal u ∈ VH.] (* <-lang_en;; *);;
+		*);;
+	*);;
+concept_hanging_multistar<= nrel_using_constants:
+					{
+					concept_node;
+					concept_arg;
+					nrel_multiple_edge;
+					nrel_vertex_degree;
+					nrel_induced_subgraph;
+					concept_multistar
+					};;
+					
+		
+concept_hanging_multistar <- rrel_key_sc_element: 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_hanging_multistar.jpg"
+(*=> nrel_format:format_jpg;;
+*);;
+			*);;
+	*);;
+concept_multistar => nrel_inclusion: concept_hanging_multistar;;
+
+

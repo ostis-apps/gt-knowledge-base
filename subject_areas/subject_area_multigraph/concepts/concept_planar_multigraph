@@ -1,0 +1,64 @@
+sc_node_class
+    -> concept_planar_multigraph;;
+concept_planar_multigraph => nrel_main_idtf:
+	[Планарный мультиграф] (* <- lang_ru;; *);
+	[Planar multigraph] (* <- lang_en;; *);;
+	
+concept_planar_multigraph <- rrel_key_sc_element: 
+	...  
+	(*
+	=> nrel_main_idtf: [Опр.(планарный мультиграф)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Def.(planar multigraph)](* <- lang_en;; *);;	
+	<- definition;; 
+	<= nrel_sc_text_translation: 
+		...
+		(*
+		-> rrel_example: 
+		[Мультиграф G называется планарным, когда он изоморфен некоторому плоскому мультиграфу H.](* <- lang_ru;; *);;
+		-> rrel_example: 
+                [A multigraph G is planar if G is isomorphic to some plane multigraph H.] (* <-lang_en;; *);;
+		*);;
+	*);;
+concept_planar_multigraph<= nrel_using_constants:
+        {
+                concept_arg;
+		concept_node;
+		concept_plane_multigraph
+        };;
+        
+concept_planar_multigraph <- rrel_main_key_sc_element:
+...
+(*
+=> nrel_main_idtf: [Утв.(о связи между планарным и плоским мультиграфами)] (* <- lang_ru;; *);;
+=> nrel_main_idtf: [Stat.(about connection between planar and plane multigraphs)] (* <- lang_en;; *);;
+<- statement;;
+<= nrel_using_constants:
+{
+concept_plane_multigraph
+};;
+<= nrel_sc_text_translation: ...
+(*
+-> rrel_example: 
+[Планарный мультиграф - абстрактное понятие, а плоский мультиграф - его графическое изображение. Плоский мультиграф можно интерпретировать как плоское изображение планарного мультиграфа.](*<- lang_ru;;*);;
+-> rrel_example: 
+[A planar multigraph is an abstract concept, and a planar multigraph is it's graphical representation. A planar multigraph can be interpreted as a plane drawing of a planar multigraph.](*<- lang_en;;*);;
+*);;
+*);;				
+					
+concept_planar_multigraph <- rrel_key_sc_element: 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_planar_multigraph.jpg"
+(*=> nrel_format:format_jpg;;
+*);;
+			*);;
+	*);;
+concept_multi_graph => nrel_inclusion: concept_planar_multigraph;;
+concept_pseudo_graph => nrel_inclusion: concept_planar_multigraph;;
+
+

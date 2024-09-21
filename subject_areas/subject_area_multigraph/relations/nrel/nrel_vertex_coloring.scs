@@ -1,0 +1,59 @@
+sc_node_norole_relation
+    -> nrel_vertex_coloring;;
+
+nrel_vertex_coloring => nrel_main_idtf:
+	[ Рёберная раскраска* ](* <-lang_ru;; *);
+	[ Vertex coloring* ](* <-lang_en;; *);;
+	
+nrel_vertex_coloring <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- definition;;
+		=> nrel_main_idtf: [Опр.(Рёберная раскраска)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Def.(Vertex coloring)] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Рёберная раскраска графа - назначение цветов рёбрам графа таким образом, что никакие два смежных ребра не имеют один и тот же цвет.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Vertex coloring of a graph - assigning colors to the edges of a graph such that there are no two adjacent edges with the same color.](*<- lang_en;;*);;
+		*);;
+*);;
+nrel_vertex_coloring<= nrel_using_constants:
+						{
+							concept_arg
+						};;
+			
+nrel_vertex_coloring <- rrel_main_key_sc_element:
+...
+(*
+=> nrel_main_idtf: [Утв.(о связи между рёберной раскраской и хроматическим числом)] (* <- lang_ru;; *);;
+=> nrel_main_idtf: [Stat.(about connection between vertex coloring and chromatic number)] (* <- lang_en;; *);;
+<- statement;;
+<= nrel_using_constants:
+{
+nrel_chromatic_number
+};;
+<= nrel_sc_text_translation: ...
+(*
+-> rrel_example: 
+[Минимальное требуемое число цветов для раскраски представляет собой его хроматический индекс.](*<- lang_ru;;*);;
+-> rrel_example: 
+[The minimum required number of colors to color the edges of a graph is called the chromatic index.](*<- lang_en;;*);;
+*);;
+*);;
+						
+nrel_vertex_coloring <- rrel_key_sc_element: 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/nrel_vertex_coloring.jpg"
+(*=> nrel_format:format_jpg;;
+*);;
+			*);;
+	*);;
+

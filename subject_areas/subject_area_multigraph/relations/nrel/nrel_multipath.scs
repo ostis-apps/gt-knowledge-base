@@ -1,0 +1,33 @@
+sc_node_norole_relation
+    -> nrel_multipath;;
+
+nrel_multipath => nrel_main_idtf:
+	[ Мультипуть* ](* <-lang_ru;; *);
+	[ Multipath* ](* <-lang_en;; *);;
+	
+nrel_multipath <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- definition;;
+		=> nrel_main_idtf: [Опр.(Мультипуть)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Def.(Multipath)] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Мультипуть — это мультиграф, полученный из пути заменой некоторых его ребер на двойные ребра.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[A multipath is a multigraph obtained from a path by replacing some of it's edges by double edges.](*<- lang_en;;*);;
+		*);;
+*);;
+nrel_multipath<= nrel_using_constants:
+						{
+							nrel_path;
+							concept_arg
+						};;
+
+nrel_multipath <- binary_relation;;
+nrel_multipath => nrel_arity_of_relations: 2(* <- number ;;*);;
+nrel_multipath => nrel_first_domain: nrel_path;;
+nrel_multipath => nrel_second_domain: concept_multi_graph;;
+						
+

@@ -1,0 +1,45 @@
+sc_node_norole_relation
+    -> nrel_multiple_arc;;
+
+nrel_multiple_arc => nrel_main_idtf:
+	[ Кратные дуги* ](* <-lang_ru;; *);
+	[ Multiple arcs* ](* <-lang_en;; *);;
+	
+nrel_multiple_arc <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- definition;;
+		=> nrel_main_idtf: [Опр.(Кратные дуги)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Def.(Multiple arcs)] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Дуги называются кратными в случае, если их концевые вершины совпадают.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Arcs are called multiple if their end vertices coincide.](*<- lang_en;;*);;
+		*);;
+*);;
+nrel_multiple_arc<= nrel_using_constants:
+						{
+							concept_arg;
+							concept_oredge
+						};;
+						
+nrel_multiple_arc <- rrel_key_sc_element: 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/nrel_multiple_arc.jpg"
+(*=> nrel_format:format_jpg;;
+*);;
+			*);;
+	*);;
+
+nrel_multiple_arc <- binary_relation;;
+nrel_multiple_arc => nrel_arity_of_relations: 2(* <- number ;;*);;
+nrel_multiple_arc => nrel_first_domain: concept_multi_graph;;
+nrel_multiple_arc => nrel_second_domain: concept_oredge;;

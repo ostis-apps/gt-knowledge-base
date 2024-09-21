@@ -1,0 +1,32 @@
+sc_node_norole_relation
+    -> nrel_mapping;;
+
+nrel_mapping => nrel_main_idtf:
+	[Отображение*](* <-lang_ru;; *);
+	[Mapping*](* <-lang_en;; *);;
+
+nrel_mapping <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- definition;;
+		=> nrel_main_idtf: [Опр.(отображение)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Def.(mapping)] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Отображением называется такой способ задания графа, который, для неориентированного графа, задаёт такой эквивалентный ориентированный граф, который получается из исходного графа заменой неориентированного ребра двумя противоположно направленными дугами, содержащими те же самые вершины.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[TA mapping is a way of specifying a graph that, for an undirected graph, produces an equivalent directed graph that is obtained from the original graph by replacing the undirected edge with two oppositely directed arcs, concentrating the same vertices.](*<- lang_en;;*);;
+		*);;
+*);;
+nrel_mapping<= nrel_using_constants:
+						{
+							concept_arg;
+							concept_node
+						};;
+
+nrel_mapping <- binary_relation;;
+nrel_mapping => nrel_arity_of_relations: 2(* <- number ;;*);;
+nrel_mapping => nrel_first_domain: concept_unoriented_multi_graph;;
+nrel_mapping => nrel_second_domain: concept_oriented_multi_graph;;
+

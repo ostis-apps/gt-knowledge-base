@@ -1,0 +1,218 @@
+sc_node_class
+    -> concept_multi_graph;;
+concept_multi_graph => nrel_main_idtf:
+	[мультиграф] (* <- lang_ru;; *);
+	[multigraph] (* <- lang_en;; *);;
+	
+concept_multi_graph <- rrel_key_sc_element: 
+	...  
+	(*
+	=> nrel_main_idtf: [Опр.(мультиграф)] (* <- lang_ru;; *);;
+	=> nrel_main_idtf: [Def.(multigraph)](* <- lang_en;; *);;	
+	<- definition;; 
+	<= nrel_sc_text_translation: 
+		... 
+		(*
+		-> rrel_example: 
+		[Мультиграфом называется обобщение понятия графа, в котором две вершины могут быть связаны более, чем одним ребром(допускает наличие кратных рёбер).](* <- lang_ru;; *);;
+		-> rrel_example: 
+                [A multigraph is a generalization of the concept of a graph in which two vertices can be connected by more than one edge(can be aliqout edges).] (* <-lang_en;; *);;
+		*);;
+	*);;
+concept_multi_graph<= nrel_using_constants:
+					{
+					concept_node;
+					concept_arg;
+					nrel_multiple_edge
+					};;
+					
+concept_multi_graph <- rrel_main_key_sc_element:
+...
+(*
+=> nrel_main_idtf: [Утв.(свойства мультиграфа)] (* <- lang_ru;; *);;
+=> nrel_main_idtf: [Stat.(properties of the multigraph)] (* <- lang_en;; *);;
+<- statement;;
+<= nrel_sc_text_translation: ...
+(*
+-> rrel_example: 
+[В мультиграфе любые две вершины могут быть связаны любым количеством рёбер.](*<- lang_ru;;*);;
+-> rrel_example: 
+[In a multigraph, any two vertices can be connected by any number of edges.](*<- lang_en;;*);;
+*);;
+*);;
+
+concept_multi_graph <- rrel_main_key_sc_element:
+...
+(*
+=> nrel_main_idtf: [Утв.(о кратных рёбрах в мультиграфе)] (* <- lang_ru;; *);;
+=> nrel_main_idtf: [Stat.(about multiple edges in a multigraph)] (* <- lang_en;; *);;
+<- statement;;
+<= nrel_using_constants:
+{
+nrel_multiple_edge;
+nrel_multiplicity_of_multigraph
+};;
+<= nrel_sc_text_translation: ...
+(*
+-> rrel_example: 
+[Мультиграф допускает наличие кратных рёбер.](*<- lang_ru;;*);;
+-> rrel_example: 
+[The multigraph allows aliquot edges.](*<- lang_en;;*);;
+*);;
+*);;
+
+concept_multi_graph <- rrel_main_key_sc_element:
+...
+(*
+=> nrel_main_idtf: [Утв.(о петлях в мультиграфе)] (* <- lang_ru;; *);;
+=> nrel_main_idtf: [Statement: about loops in a multigraph] (* <- lang_en;; *);;
+<- statement;;
+<= nrel_using_constants:
+{
+rrel_loop
+};;
+<= nrel_sc_text_translation: ...
+(*
+-> rrel_example: 
+[Мультиграф не допускает наличие петель.](*<- lang_ru;;*);;
+-> rrel_example: 
+[The multigraph does not allow loops.](*<- lang_en;;*);;
+*);;
+*);;
+
+concept_multi_graph <- rrel_main_key_sc_element:
+...
+(*
+=> nrel_main_idtf: [Утв.(о способе представления мультиграфа)] (* <- lang_ru;; *);;
+=> nrel_main_idtf: [Statement: about the method of representing a multigraph] (* <- lang_en;; *);;
+<- statement;;
+<= nrel_using_constants:
+{
+nrel_non_boolean_adjacency_matrix
+};;
+<= nrel_sc_text_translation: ...
+(*
+-> rrel_example: 
+[Мультиграф может быть представлен  с помощью небулевой матрицы смежности.](*<- lang_ru;;*);;
+-> rrel_example: 
+[A multigraph can be represented using a non-Boolean adjacency matrix.](*<- lang_en;;*);;
+*);;
+*);;
+
+concept_multi_graph <- rrel_main_key_sc_element:
+...
+(*
+=> nrel_main_idtf: [Утв.(Лемма о вершинах чётной степени и циклах)] (* <- lang_ru;; *);;
+=> nrel_main_idtf: [Statement: Lemma on vertices of even degree and cycles] (* <- lang_en;; *);;
+<- statement;;
+<= nrel_using_constants:
+{
+nrel_cycle;
+nrel_vertex_degree
+};;
+<= nrel_sc_text_translation: ...
+(*
+-> rrel_example: 
+[Если G(V,E) - мультиграф с непустым множеством рёбер E != ∅ и deg(v) - чётное число для всех v ∈ V, то мультиграф G содержит цикл.](*<- lang_ru;;*);;
+-> rrel_example: 
+[If G(V, E) is a multigraph witha nonempty edge set E != ∅ and the property that deg(v) is an even number for all
+v ∈ V , then G contains a cycle.](*<- lang_en;;*);;
+*);;
+*);;
+
+concept_multi_graph <- rrel_main_key_sc_element:
+...
+(*
+=> nrel_main_idtf: [Утв.(Теорема Шеннона)] (* <- lang_ru;; *);;
+=> nrel_main_idtf: [Statement: Shennon's theoreme] (* <- lang_en;; *);;
+<- statement;;
+<= nrel_using_constants:
+{
+nrel_vertex_coloring;
+nrel_maximum_vertex_degree
+};;
+<= nrel_sc_text_translation: ...
+(*
+-> rrel_example: 
+[Любой мультиграф с максимальной степенью k имеет рёберную раскраску, использующую максимум 3*k/2 цветов.](*<- lang_ru;;*);;
+-> rrel_example: 
+[Any multigraph with maximum degree k has an edge coloring using at most 3*k/2 colors.](*<- lang_en;;*);;
+*);;
+*);;
+
+concept_multi_graph <- rrel_main_key_sc_element:
+...
+(*
+=> nrel_main_idtf: [Утв.(об остовных деревьях с непересекающимися рёбрами в мультиграфах)] (* <- lang_ru;; *);;
+=> nrel_main_idtf: [Statement: about spanning trees with disjoint edges in multigraphs] (* <- lang_en;; *);;
+<- statement;;
+<= nrel_using_constants:
+{
+concept_edge_disjoint_spanning_tree
+};;
+<= nrel_sc_text_translation: ...
+(*
+-> rrel_example: 
+[Любой 2k-связный мультиграф G имеет k непересекающихся по ребрам остовных деревьев.](*<- lang_ru;;*);;
+-> rrel_example: 
+[Every 2k-edge-connected multigraph G has k edge-disjoint spanning trees.](*<- lang_en;;*);;
+*);;
+*);;
+
+concept_multi_graph <- rrel_main_key_sc_element:
+...
+(*
+=> nrel_main_idtf: [Утв.(о лесах в мультиграфе)] (* <- lang_ru;; *);;
+=> nrel_main_idtf: [Statement: about forests in multigraph] (* <- lang_en;; *);;
+<- statement;;
+<= nrel_using_constants:
+{
+concept_forest
+};;
+<= nrel_sc_text_translation: ...
+(*
+-> rrel_example: 
+[Мультиграф G = (V,E) можно разбить не более чем на k лесов тогда и только тогда, когда G(U) <= k(|U| - 1) для любого непустого множества U ⊆ V.](*<- lang_ru;;*);;
+-> rrel_example: 
+[A multigraph G = (V,E) can be partitioned into at most k forests if and only if G(U) <= k(|U| - 1) for every non-empty set U ⊆ V.](*<- lang_en;;*);;
+*);;
+*);;
+
+concept_multi_graph <- rrel_main_key_sc_element:
+...
+(*
+=> nrel_main_idtf: [Утв.(об H - потоке в мультиграфе)] (* <- lang_ru;; *);;
+=> nrel_main_idtf: [Statement: about H - flow in a multihgraph] (* <- lang_en;; *);;
+<- statement;;
+<= nrel_using_constants:
+{
+nrel_H_flow;
+concept_bridge
+};;
+<= nrel_sc_text_translation: ...
+(*
+-> rrel_example: 
+[Если мультиграф содержит H - поток, он не может содержать мост.](*<- lang_ru;;*);;
+-> rrel_example: 
+[A multigraph with a H - flow can't have a bridge.](*<- lang_en;;*);;
+*);;
+*);;
+		
+					
+concept_multi_graph <- rrel_key_sc_element: 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_multi_graph.jpg"
+(*=> nrel_format:format_jpg;;
+*);;
+			*);;
+	*);;
+concept_pseudo_graph => nrel_inclusion: concept_multi_graph;;
+concept_graph => nrel_inclusion: concept_multi_graph;;
+
+
