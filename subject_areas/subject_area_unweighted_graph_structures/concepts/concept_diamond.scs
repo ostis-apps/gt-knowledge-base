@@ -1,4 +1,5 @@
-sc_node_not_relation -> concept_diamond;;
+sc_node_class
+    -> concept_diamond;;
 
 concept_diamond => nrel_main_idtf:
     [алмаз]
@@ -50,6 +51,8 @@ concept_diamond <- rrel_key_sc_element:
                     ...
                     (*
                         -> rrel_example:
-                        "file://contents/concept_diamond.png";;
+                        "file://contents/concept_diamond.png"
+(*=> nrel_format:format_png;;
+*);;
                     *);;
         *);;

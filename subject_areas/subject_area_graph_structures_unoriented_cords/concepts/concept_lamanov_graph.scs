@@ -1,4 +1,5 @@
-sc_node_not_relation->concept_lamanov_graph;;
+sc_node_class
+    -> concept_lamanov_graph;;
 
 concept_lamanov_graph
 => nrel_main_idtf:
@@ -58,7 +59,9 @@ concept_lamanov_graph
 		...
 			(*
 			-> rrel_example:
-				"file://picture/concept_lamanov_graph.png";;
+				"file://picture/concept_lamanov_graph.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;
 

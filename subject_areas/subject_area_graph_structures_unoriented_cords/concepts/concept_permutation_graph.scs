@@ -1,4 +1,5 @@
-sc_node_not_relation-> concept_permutation_graph;;
+sc_node_class
+    -> concept_permutation_graph;;
 
 concept_permutation_graph => nrel_main_idtf:
 	[граф перестановки](* <-lang_ru;; *);;
@@ -54,7 +55,9 @@ concept_permutation_graph <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/concept_permutation_graph.png";;
+				"file://contents/concept_permutation_graph.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;
 

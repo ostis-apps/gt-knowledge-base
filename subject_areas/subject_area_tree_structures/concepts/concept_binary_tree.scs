@@ -1,5 +1,5 @@
 concept_binary_tree
-	<- sc_node_not_relation;
+<- sc_node_class;
 
 	=> nrel_main_idtf: [бинарное дерево] (* <- lang_ru;; *);
 	=> nrel_main_idtf: [binary tree] (* <- lang_en;; *);
@@ -25,6 +25,7 @@ concept_binary_tree <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/concept_binary_tree.gif";;
+				"file://contents/concept_binary_tree.gif"(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;

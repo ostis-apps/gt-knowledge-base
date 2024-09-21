@@ -1,4 +1,5 @@
-sc_node_not_relation -> concept_symmetric_digraph;;
+sc_node_class
+    -> concept_symmetric_digraph;;
 
 concept_symmetric_directed_graph => nrel_main_idtf:[симметричный орграф](* <-lang_ru;; *);;
 concept_symmetric_directed_graph => nrel_idtf:[symmetric directed graph](* <- lang_en;; *);;
@@ -24,6 +25,8 @@ concept_symmetric_digraph <- rrel_key_sc_element:
 concept_symmetric_digraph <- rrel_key_sc_element: ... (*
 	<- illustration;;
 	<= nrel_sc_text_translation: ... (*
-		-> rrel_example: "file://contents/symmetric_digraph.png";;
+		-> rrel_example: "file://contents/symmetric_digraph.png"
+(*=> nrel_format:format_png;;
+*);;
 	*);;
 *);;

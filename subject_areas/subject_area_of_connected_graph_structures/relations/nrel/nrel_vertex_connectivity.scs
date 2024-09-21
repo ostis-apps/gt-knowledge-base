@@ -1,4 +1,5 @@
-sc_node_not_relation->nrel_vertex_connectivity;;
+sc_node_norole_relation
+    -> nrel_vertex_connectivity;;
 
 nrel_vertex_connectivity => nrel_main_idtf:
 	[вершинная связность*](* <-lang_ru;; *);

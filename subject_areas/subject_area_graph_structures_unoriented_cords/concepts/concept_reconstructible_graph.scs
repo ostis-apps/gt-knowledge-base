@@ -1,4 +1,5 @@
-sc_node_not_relation -> concept_reconstructible_graph;;
+sc_node_class
+    -> concept_reconstructible_graph;;
 
 concept_reconstructible_graph => nrel_main_idtf:
 	[реконструируемый граф] (* <- lang_ru;; *);;

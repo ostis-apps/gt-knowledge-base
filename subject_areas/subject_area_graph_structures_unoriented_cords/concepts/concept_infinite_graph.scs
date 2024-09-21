@@ -1,4 +1,5 @@
-sc_node_not_relation->concept_infinite_graph;;
+sc_node_class
+    -> concept_infinite_graph;;
 
 concept_infinite_graph
 => nrel_main_idtf:
@@ -33,7 +34,8 @@ concept_infinite_graph
 		...
 			(*
 			-> rrel_example:
-				"file://picture/concept_infinite_graph.gif";;
+				"file://picture/concept_infinite_graph.gif"(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;
 

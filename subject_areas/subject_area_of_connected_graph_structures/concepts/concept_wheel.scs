@@ -1,4 +1,5 @@
-sc_node_not_relation -> concept_wheel;;
+sc_node_class
+    -> concept_wheel;;
 concept_wheel => nrel_main_idtf:
 	[колесо] (* <- lang_ru;; *);
 	[wheel] (* <- lang_en;; *);;
@@ -35,7 +36,9 @@ concept_wheel <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/concept_wheel.png";;
+				"file://contents/concept_wheel.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;
 

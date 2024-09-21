@@ -1,4 +1,5 @@
-sc_node_not_relation->concept_graph_Halina;;
+sc_node_class
+    -> concept_graph_Halina;;
 
 concept_graph_Halina
 => nrel_main_idtf:
@@ -82,7 +83,9 @@ concept_graph_Halina
 		...
 			(*
 			-> rrel_example:
-				"file://picture/concept_graph_Halina.png";;
+				"file://picture/concept_graph_Halina.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;
 

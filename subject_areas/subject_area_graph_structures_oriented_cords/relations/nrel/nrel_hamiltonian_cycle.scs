@@ -22,7 +22,8 @@ nrel_hamiltonian_cycle <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/nrel_hamiltonian_cycle.gif";;
+				"file://contents/nrel_hamiltonian_cycle.gif"(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;
 

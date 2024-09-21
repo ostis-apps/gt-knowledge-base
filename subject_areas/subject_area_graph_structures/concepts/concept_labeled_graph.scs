@@ -1,4 +1,5 @@
-sc_node_not_relation->concept_labeled_graph;;
+sc_node_class
+    -> concept_labeled_graph;;
 
 concept_labeled_graph	
 => nrel_main_idtf: 
@@ -37,7 +38,9 @@ concept_labeled_graph
 		...
 			(*
 			-> rrel_example:
-				"file://contents/concept_labeled_graph.jpg";;
+				"file://contents/concept_labeled_graph.jpg"
+(*=> nrel_format:format_jpg;;
+*);;
 			*);;
 	*);;
 

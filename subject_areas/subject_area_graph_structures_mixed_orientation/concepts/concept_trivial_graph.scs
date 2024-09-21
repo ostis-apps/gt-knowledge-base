@@ -1,4 +1,5 @@
-sc_node_not_relation -> concept_trivial_graph;;
+sc_node_class
+    -> concept_trivial_graph;;
 concept_trivial_graph => nrel_main_idtf:[тривиальный граф](* <-lang_ru;; *);;
 concept_trivial_graph => nrel_idtf:[trivial graph](* <- lang_en;; *);;
 
@@ -38,7 +39,9 @@ concept_trivial_graph <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://pic/trivial_graph.png";;
+				"file://pic/trivial_graph.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;
 

@@ -1,4 +1,5 @@
-sc_node_not_relation -> concept_separable_graph;;
+sc_node_class
+    -> concept_separable_graph;;
 concept_separable_graph => nrel_main_idtf:
 	[разделимый граф] (* <- lang_ru;; *);;
 concept_separable_graph => nrel_idtf:
@@ -34,7 +35,9 @@ concept_separable_graph <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/concept_separable_graph.jpg";;
+				"file://contents/concept_separable_graph.jpg"
+(*=> nrel_format:format_jpg;;
+*);;
 			*);;
 	*);;
 

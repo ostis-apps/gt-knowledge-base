@@ -1,4 +1,5 @@
-sc_node_not_relation->concept_graph_cycle;;
+sc_node_class
+    -> concept_graph_cycle;;
 
 concept_graph_cycle
 => nrel_main_idtf:
@@ -82,7 +83,9 @@ concept_graph_cycle
 		...
 			(*
 			-> rrel_example:
-				"file://picture/concept_graph_cycle.png";;
+				"file://picture/concept_graph_cycle.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;
 

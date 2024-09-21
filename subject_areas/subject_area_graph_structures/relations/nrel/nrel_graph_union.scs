@@ -1,5 +1,5 @@
 sc_node_norole_relation ->nrel_graph_union;;
-sc_relation -> nrel_graph_union;;
+sc_node_norole_relation -> nrel_graph_union;;
 ternary_relation -> nrel_graph_union;;
 oriented_relation -> nrel_graph_union;;
 

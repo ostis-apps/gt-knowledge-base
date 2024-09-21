@@ -1,4 +1,5 @@
-sc_node_not_relation -> concept_weakly_connected_digraph;;
+sc_node_class
+    -> concept_weakly_connected_digraph;;
 
 concept_weakly_connected_digraph => nrel_main_idtf:[слабо связный орграф] (* <- lang_ru;; *);;
 concept_weakly_connected_digraph => nrel_idtf:[weakly connected digraph] (* <- lang_en;; *);;
@@ -44,6 +45,8 @@ concept_weakly_connected_digraph <- rrel_key_sc_element:
 concept_weakly_connected_digraph <- rrel_key_sc_element: ... (*
 	<- illustration;;
 	<= nrel_sc_text_translation: ... (*
-		-> rrel_example: "file://contents/weakly_connected_digraph.png";;
+		-> rrel_example: "file://contents/weakly_connected_digraph.png"
+(*=> nrel_format:format_png;;
+*);;
 	*);;
 *);;

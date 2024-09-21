@@ -1,4 +1,5 @@
-sc_node_not_relation->concept_noneparable_graph;;
+sc_node_class
+    -> concept_noneparable_graph;;
 
 concept_noneparable_graph => nrel_main_idtf:
 	[неразделимый граф](* <-lang_ru;; *);

@@ -33,7 +33,9 @@ nrel_alternating_chain => nrel_idtf:
 		...
 			(*
 			-> rrel_example:
-				"file://picture/nrel_alternating_chain.png";;
+				"file://picture/nrel_alternating_chain.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);
 

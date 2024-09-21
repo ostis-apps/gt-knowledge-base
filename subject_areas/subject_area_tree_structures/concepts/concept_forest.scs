@@ -1,4 +1,5 @@
-sc_node_not_relation -> concept_forest;;
+sc_node_class
+    -> concept_forest;;
 
 concept_forest => nrel_main_idtf:
 	[лес](* <-lang_ru;; *);
@@ -34,6 +35,8 @@ concept_forest <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/concept_forest.png";;
+				"file://contents/concept_forest.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;

@@ -1,4 +1,5 @@
-sc_node_not_relation -> concept_radially_critical_graph;;
+sc_node_class
+    -> concept_radially_critical_graph;;
 concept_radially_critical_graph => nrel_main_idtf:
 	[радиально-критический граф] (* <- lang_ru;; *);;
 concept_radially_critical_graph => nrel_idtf:
@@ -35,7 +36,9 @@ concept_radially_critical_graph <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/concept_radially_critical_graph.jpg";;
+				"file://contents/concept_radially_critical_graph.jpg"
+(*=> nrel_format:format_jpg;;
+*);;
 			*);;
 	*);;
 

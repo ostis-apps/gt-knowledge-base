@@ -1,4 +1,5 @@
-sc_node_not_relation -> concept_unplanar_graph;;
+sc_node_class
+    -> concept_unplanar_graph;;
 
 concept_unplanar_graph => nrel_main_idtf:
 	[непланарный граф](* <-lang_ru;; *);
@@ -31,7 +32,8 @@ concept_unplanar_graph <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/concept_unplanar_graph.gif";;
+				"file://contents/concept_unplanar_graph.gif"(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;
 	

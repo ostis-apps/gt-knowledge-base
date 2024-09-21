@@ -68,7 +68,9 @@ nrel_value_of_flow <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/value_of_flow.png";;
+				"file://contents/value_of_flow.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;
 

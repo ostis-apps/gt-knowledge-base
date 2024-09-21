@@ -1,4 +1,5 @@
-sc_node_not_relation -> concept_compound_graph;;
+sc_node_class
+    -> concept_compound_graph;;
 concept_compound_graph => nrel_main_idtf:[составной граф](* <-lang_ru;; *);;
 concept_compound_graph => nrel_idtf:[compound graph](* <- lang_en;; *);;
 
@@ -48,7 +49,9 @@ concept_compound_graph <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://pic/concept_compound_graph.png";;
+				"file://pic/concept_compound_graph.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;
 

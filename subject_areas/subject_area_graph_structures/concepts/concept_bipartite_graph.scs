@@ -1,4 +1,5 @@
-sc_node_not_relation ->concept_bipartite_graph;;
+sc_node_class
+    -> concept_bipartite_graph;;
 concept_bipartite_graph
 => nrel_main_idtf: 
 	[двудольный граф] (* <-lang_ru;; *);
@@ -56,7 +57,9 @@ concept_bipartite_graph <- rrel_key_sc_element:
 		<= nrel_sc_text_translation: ...
 			(*
 			-> rrel_example:
-				"file://contents/concept_bipartite_graph.png";;
+				"file://contents/concept_bipartite_graph.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 		
 		*);;

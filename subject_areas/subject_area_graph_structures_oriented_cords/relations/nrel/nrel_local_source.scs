@@ -71,6 +71,7 @@ nrel_local_source <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/local_source.gif";;
+				"file://contents/local_source.gif"(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;

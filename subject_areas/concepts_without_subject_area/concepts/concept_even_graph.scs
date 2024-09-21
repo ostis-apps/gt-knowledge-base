@@ -1,4 +1,5 @@
-sc_node_not_relation -> concept_even_graph;;
+sc_node_class
+    -> concept_even_graph;;
 concept_even_graph
 
 	=> nrel_main_idtf: 

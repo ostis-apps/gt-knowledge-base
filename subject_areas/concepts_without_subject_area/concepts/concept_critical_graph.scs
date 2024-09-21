@@ -1,4 +1,5 @@
-sc_node_not_relation->concept_critical_graph;;
+sc_node_class
+    -> concept_critical_graph;;
 
 concept_critical_graph	=> nrel_main_idtf: 
 		[критический граф] (* <-lang_ru;; *);
@@ -30,7 +31,9 @@ concept_critical_graph <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/concept_critical_graph.jpg";;
+				"file://contents/concept_critical_graph.jpg"
+(*=> nrel_format:format_jpg;;
+*);;
 			*);;
 	*);;
 concept_graph => nrel_inclusion: concept_critical_graph;;

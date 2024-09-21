@@ -1,4 +1,5 @@
-sc_node_not_relation->concept_tight_graph;;
+sc_node_class
+    -> concept_tight_graph;;
 
 concept_tight_graph
 => nrel_main_idtf:
@@ -32,7 +33,9 @@ concept_tight_graph
 		...
 			(*
 			-> rrel_example:
-				"file://picture/concept_tight_graph.png";;
+				"file://picture/concept_tight_graph.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;
 

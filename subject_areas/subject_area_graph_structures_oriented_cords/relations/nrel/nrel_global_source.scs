@@ -71,6 +71,7 @@ nrel_global_source <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/global_source.gif";;
+				"file://contents/global_source.gif"(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;

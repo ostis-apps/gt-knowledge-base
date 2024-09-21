@@ -1,4 +1,5 @@
-sc_node_not_relation->nrel_edge_weight;;
+sc_node_norole_relation
+    -> nrel_edge_weight;;
 
 nrel_edge_weight => nrel_main_idtf:
 	[вес ребра*](* <-lang_ru;; *);
@@ -64,6 +65,8 @@ nrel_edge_weight <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/nrel_edge_weight.png";;
+				"file://contents/nrel_edge_weight.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;

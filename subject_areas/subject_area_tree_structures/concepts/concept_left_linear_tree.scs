@@ -1,4 +1,5 @@
-sc_node_not_relation -> concept_left_linear_tree;;
+sc_node_class
+    -> concept_left_linear_tree;;
 
 concept_left_linear_tree => nrel_main_idtf:
 	[левостороннее дерево](* <-lang_ru;; *);
@@ -33,6 +34,8 @@ concept_left_linear_tree <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/concept_left_linear_tree.jpg";;
+				"file://contents/concept_left_linear_tree.jpg"
+(*=> nrel_format:format_jpg;;
+*);;
 			*);;
 	*);;

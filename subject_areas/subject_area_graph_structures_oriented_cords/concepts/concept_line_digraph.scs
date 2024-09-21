@@ -1,4 +1,5 @@
-sc_node_not_relation -> concept_line_digraph;;
+sc_node_class
+    -> concept_line_digraph;;
 
 concept_line_digraph => nrel_main_idtf:	[реберный орграф] (* <- lang_ru;; *);;
 concept_line_digraph => nrel_idtf:[line digraph] (* <- lang_en;; *);;
@@ -25,6 +26,8 @@ concept_line_digraph <- rrel_key_sc_element:
 concept_line_digraph <- rrel_key_sc_element: ... (*
 	<- illustration;;
 	<= nrel_sc_text_translation: ... (*
-		-> rrel_example: "file://contents/line_digraph.png";;
+		-> rrel_example: "file://contents/line_digraph.png"
+(*=> nrel_format:format_png;;
+*);;
 	*);;
 *);;

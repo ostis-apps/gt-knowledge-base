@@ -1,5 +1,5 @@
 concept_radially_critical_graph
-	<- sc_node_not_relation;
+<- sc_node_class;
 
 	=> nrel_main_idtf: [радиально-критический граф] (* <- lang_ru;; *);
 	=> nrel_main_idtf: [radially critical graph] (* <- lang_en;; *);

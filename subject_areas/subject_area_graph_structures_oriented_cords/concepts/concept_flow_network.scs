@@ -1,4 +1,5 @@
-sc_node_not_relation -> concept_flow_network;;
+sc_node_class
+    -> concept_flow_network;;
 
 concept_flow_network => nrel_main_idtf:[транспортная сеть] (* <- lang_ru;; *);;
 	concept_flow_network => nrel_idtf:[flow network] (* <- lang_en;; *);;
@@ -41,6 +42,8 @@ concept_flow_network <- rrel_key_sc_element:
 concept_flow_network <- rrel_key_sc_element: ... (*
 	<- illustration;;
 	<= nrel_sc_text_translation: ... (*
-		-> rrel_example: "file://contents/flow_network.png";;
+		-> rrel_example: "file://contents/flow_network.png"
+(*=> nrel_format:format_png;;
+*);;
 	*);;
 *);;

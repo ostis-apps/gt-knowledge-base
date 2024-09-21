@@ -71,7 +71,9 @@ nrel_maximum_cut <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/maximum_cut.png";;
+				"file://contents/maximum_cut.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;
 

@@ -1,4 +1,5 @@
-sc_node_not_relation -> concept_arrangeable_graph;;
+sc_node_class
+    -> concept_arrangeable_graph;;
 
 concept_arrangeable_graph => nrel_main_idtf:[аранжируемый граф](* <-lang_ru;; *);;
 concept_arrangeable_graph => nrel_idtf:[arrangeable graph](* <- lang_en;; *);;
@@ -38,6 +39,8 @@ concept_arrangeable_graph <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/concept_arrangeable_graph.png";;
+				"file://contents/concept_arrangeable_graph.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;

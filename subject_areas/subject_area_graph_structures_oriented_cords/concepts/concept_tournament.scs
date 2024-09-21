@@ -1,4 +1,5 @@
-sc_node_not_relation -> concept_tournament;;
+sc_node_class
+    -> concept_tournament;;
 
 concept_tournament => nrel_main_idtf:[турнир] (* <- lang_ru;; *);;
 concept_tournament => nrel_idtf:[toutnament] (* <- lang_en;; *);;
@@ -41,6 +42,8 @@ concept_tournament <- rrel_key_sc_element:
 concept_tournament <- rrel_key_sc_element: ... (*
 	<- illustration;;
 	<= nrel_sc_text_translation: ... (*
-		-> rrel_example: "file://contents/tournament.png";;
+		-> rrel_example: "file://contents/tournament.png"
+(*=> nrel_format:format_png;;
+*);;
 	*);;
 *);;

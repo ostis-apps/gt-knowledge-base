@@ -1,4 +1,5 @@
-sc_node_not_relation -> concept_self_balancing_search_tree;;
+sc_node_class
+    -> concept_self_balancing_search_tree;;
 
 concept_self_balancing_search_tree => nrel_main_idtf:
 	[самоболансирующееся дерево поиска](* <-lang_ru;; *);
@@ -37,6 +38,8 @@ concept_self_balancing_search_tree <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/concept_self_balancing_search_tree.jpg";;
+				"file://contents/concept_self_balancing_search_tree.jpg"
+(*=> nrel_format:format_jpg;;
+*);;
 			*);;
 	*);;

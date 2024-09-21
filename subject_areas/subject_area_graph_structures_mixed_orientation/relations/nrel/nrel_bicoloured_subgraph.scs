@@ -55,7 +55,9 @@ nrel_bicoloured_subgraph <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://pics/nrel_bicoloured_subgraph.png";;
+				"file://pics/nrel_bicoloured_subgraph.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;
 

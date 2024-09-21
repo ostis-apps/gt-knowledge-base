@@ -1,4 +1,5 @@
-sc_node_not_relation -> concept_d_ary_heap;;
+sc_node_class
+    -> concept_d_ary_heap;;
 
 concept_d_ary_heap => nrel_main_idtf:
 	[d-арная куча](* <-lang_ru;; *);
@@ -33,6 +34,7 @@ concept_d_ary_heap <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/concept_d_ary_heap.gif";;
+				"file://contents/concept_d_ary_heap.gif"(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;

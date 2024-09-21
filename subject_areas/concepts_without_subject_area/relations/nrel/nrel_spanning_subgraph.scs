@@ -1,11 +1,12 @@
-sc_node_not_relation -> nrel_spanning_subtree;;
+sc_node_norole_relation
+    -> nrel_spanning_subtree;;
 nrel_spanning_subtree => nrel_main_idtf:
 	[остовный подграф*]
 	(* <- lang_ru;; *);
 	[spanning subtree*]
 	(* <- lang_en;;	*);;
 
-sc_relation -> nrel_spanning_subtree;;
+sc_node_norole_relation -> nrel_spanning_subtree;;
 binary_relation -> nrel_spanning_subtree;;
 oriented_relation ->nrel_spanning_subtree;;
 nrel_spanning_subtree	<- rrel_key_sc_element:

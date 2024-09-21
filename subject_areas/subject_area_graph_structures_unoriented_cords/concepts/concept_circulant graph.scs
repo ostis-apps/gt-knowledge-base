@@ -1,4 +1,5 @@
-sc_node_not_relation-> concept_circulant_graph;;
+sc_node_class
+    -> concept_circulant_graph;;
 
 concept_circulant_graph => nrel_main_idtf:
 	[циркулярный граф](* <-lang_ru;; *);;

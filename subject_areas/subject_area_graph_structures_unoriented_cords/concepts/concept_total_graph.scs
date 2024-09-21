@@ -1,4 +1,5 @@
-sc_node_not_relation -> concept_total_graph;;
+sc_node_class
+    -> concept_total_graph;;
 
 concept_total_graph => nrel_main_idtf:
 	[тотальный граф] (* <- lang_ru;; *);;
@@ -33,7 +34,9 @@ concept_total_graph <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://picture/concept_total_graph.png";;
+				"file://picture/concept_total_graph.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;
 

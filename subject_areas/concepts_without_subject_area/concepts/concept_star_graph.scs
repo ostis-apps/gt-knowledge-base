@@ -1,4 +1,5 @@
-sc_node_not_relation -> concept_star_graph;;
+sc_node_class
+    -> concept_star_graph;;
 concept_star_graph
 
 	=> nrel_main_idtf: 
@@ -42,7 +43,9 @@ concept_star_graph
 		<= nrel_sc_text_translation: ...
 			(*
 			-> rrel_example:
-				"file://contents/concept_star_graph.png";;
+				"file://contents/concept_star_graph.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 		*);;
 

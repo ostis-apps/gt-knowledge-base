@@ -1,4 +1,5 @@
-sc_node_not_relation -> concept_justified_tree;;
+sc_node_class
+    -> concept_justified_tree;;
 concept_justified_tree => nrel_main_idtf:
 	[выровненное дерево] (* <- lang_ru;; *);
 	[justified tree] (* <- lang_en;; *);;
@@ -31,7 +32,9 @@ concept_justified_tree <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/concept_justified_tree.jpg";;
+				"file://contents/concept_justified_tree.jpg"
+(*=> nrel_format:format_jpg;;
+*);;
 			*);;
 	*);;
 

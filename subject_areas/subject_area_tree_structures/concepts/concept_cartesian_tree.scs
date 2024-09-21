@@ -1,4 +1,5 @@
-sc_node_not_relation -> concept_cartesian_tree;;
+sc_node_class
+    -> concept_cartesian_tree;;
 
 concept_cartesian_tree => nrel_main_idtf:
 	[декартово дерево](* <-lang_ru;; *);
@@ -71,6 +72,8 @@ concept_cartesian_tree <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/concept_cartesian_tree.png";;
+				"file://contents/concept_cartesian_tree.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;

@@ -1,4 +1,5 @@
-sc_node_not_relation -> concept_clebsch_graph;;
+sc_node_class
+    -> concept_clebsch_graph;;
 
 concept_clebsch_graph => nrel_main_idtf:
     [граф Клебша]
@@ -74,6 +75,8 @@ concept_clebsch_graph <- rrel_key_sc_element:
                     ...
                     (*
                         -> rrel_example:
-                        "file://contents/concept_clebsch_graph.png";;
+                        "file://contents/concept_clebsch_graph.png"
+(*=> nrel_format:format_png;;
+*);;
                     *);;
         *);;

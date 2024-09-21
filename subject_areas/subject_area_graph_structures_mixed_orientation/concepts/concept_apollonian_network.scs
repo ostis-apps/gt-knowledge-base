@@ -1,4 +1,5 @@
-sc_node_not_relation -> concept_apollonian_network;;
+sc_node_class
+    -> concept_apollonian_network;;
 concept_apollonian_network => nrel_main_idtf:[граф Аполлония](* <-lang_ru;; *);;
 concept_apollonian_network => nrel_idtf: [Apollonian network](* <- lang_en;; *);;
 
@@ -58,7 +59,9 @@ concept_apollonian_network <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://pic/concept_apollonian_network.png";;
+				"file://pic/concept_apollonian_network.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;
 

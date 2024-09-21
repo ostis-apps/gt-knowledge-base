@@ -1,4 +1,5 @@
-sc_node_not_relation -> concept_matrix_tree;;
+sc_node_class
+    -> concept_matrix_tree;;
 
 concept_matrix_tree => nrel_main_idtf:
 	[матричное дерево](* <-lang_ru;; *);
@@ -68,6 +69,8 @@ concept_matrix_tree <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/concept_matrix_tree.png";;
+				"file://contents/concept_matrix_tree.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;

@@ -1,5 +1,6 @@
 
-sc_node_not_relation -> concept_contrabasis;;
+sc_node_class
+    -> concept_contrabasis;;
 
 concept_contrabasis	=> nrel_main_idtf: 
 		[антибаза] (* <-lang_ru;; *);

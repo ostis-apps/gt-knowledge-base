@@ -1,4 +1,5 @@
-sc_node_not_relation -> concept_directed_tree;;
+sc_node_class
+    -> concept_directed_tree;;
 
 concept_directed_tree => nrel_main_idtf:
 	[ориентированное дерево](* <-lang_ru;; *);
@@ -34,6 +35,8 @@ concept_directed_tree <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/concept_directed_tree.png";;
+				"file://contents/concept_directed_tree.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;

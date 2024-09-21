@@ -1,4 +1,5 @@
-sc_node_not_relation ->concept_planar_graph;;
+sc_node_class
+    -> concept_planar_graph;;
 
 concept_planar_graph => nrel_main_idtf:
 	[планарный граф](* <-lang_ru;; *);
@@ -32,6 +33,7 @@ concept_planar_graph <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/planar_graph.gif";;
+				"file://contents/planar_graph.gif"(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;

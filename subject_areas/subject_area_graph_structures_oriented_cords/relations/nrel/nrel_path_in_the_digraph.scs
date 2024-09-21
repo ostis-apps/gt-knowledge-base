@@ -61,6 +61,7 @@ nrel_path_in_the_digraph <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/path_in_the_digraph.gif";;
+				"file://contents/path_in_the_digraph.gif"(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;

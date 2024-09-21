@@ -1,4 +1,5 @@
-sc_node_not_relation -> concept_laman_graph;;
+sc_node_class
+    -> concept_laman_graph;;
 
 concept_laman_graph => nrel_main_idtf:
 	[Ламанов граф](* <- lang_ru;;*);

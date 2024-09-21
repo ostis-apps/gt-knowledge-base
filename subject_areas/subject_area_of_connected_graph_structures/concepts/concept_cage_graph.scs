@@ -1,4 +1,5 @@
-sc_node_not_relation -> concept_cage_graph;;
+sc_node_class
+    -> concept_cage_graph;;
 concept_cage_graph => nrel_main_idtf:
 	[клетка] (* <- lang_ru;; *);
 	[cage] (* <- lang_en;; *);;
@@ -35,7 +36,9 @@ concept_cage_graph <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/concept_cage.png";;
+				"file://contents/concept_cage.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;
 

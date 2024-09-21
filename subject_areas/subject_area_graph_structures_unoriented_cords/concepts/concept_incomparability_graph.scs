@@ -1,4 +1,5 @@
-sc_node_not_relation-> concept_incomparability_graph;;
+sc_node_class
+    -> concept_incomparability_graph;;
 
 concept_incomparability_graph => nrel_main_idtf:
 	[граф несравнимости](* <-lang_ru;; *);;
@@ -36,7 +37,9 @@ concept_incomparability_graph <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/concept_incomparability_graph.png";;
+				"file://contents/concept_incomparability_graph.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;
 

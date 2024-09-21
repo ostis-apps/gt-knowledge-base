@@ -1,4 +1,5 @@
-sc_node_not_relation -> concept_spanning_tree;;
+sc_node_class
+    -> concept_spanning_tree;;
 
 concept_spanning_tree => nrel_main_idtf:
 	[остовное дерево](* <-lang_ru;; *);
@@ -90,6 +91,7 @@ concept_spanning_tree <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/concept_spanning_tree.gif";;
+				"file://contents/concept_spanning_tree.gif"(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;

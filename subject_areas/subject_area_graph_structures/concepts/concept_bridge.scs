@@ -1,4 +1,5 @@
-sc_node_not_relation ->concept_bridge;;
+sc_node_class
+    -> concept_bridge;;
 
 concept_bridge
 => nrel_main_idtf:
@@ -32,7 +33,9 @@ concept_bridge <- rrel_key_sc_element:
 	...
 		(*
 		-> rrel_example:
-			"file://contents/concept_bridge.png";;
+			"file://contents/concept_bridge.png"
+(*=> nrel_format:format_png;;
+*);;
 		*);;
 	*);;
 

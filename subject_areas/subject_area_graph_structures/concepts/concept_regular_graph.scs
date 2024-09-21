@@ -1,4 +1,5 @@
-sc_node_not_relation -> concept_regular_graph;;
+sc_node_class
+    -> concept_regular_graph;;
 concept_regular_graph => nrel_main_idtf:
 	[регулярный граф] (* <- lang_ru;; *);
 	[regular graph] (* <- lang_en;; *);;
@@ -32,7 +33,9 @@ concept_regular_graph <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/concept_regular_graph.png";;
+				"file://contents/concept_regular_graph.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;
 concept_graph => nrel_inclusion: concept_regular_graph;;

@@ -1,4 +1,4 @@
-sc_node_not_relation -> lavrov_scheme;;
+sc_node -> lavrov_scheme;;
 
 lavrov_scheme => nrel_main_idtf:
     [схема Лаврова]
@@ -45,6 +45,7 @@ lavrov_scheme <- rrel_key_sc_element:
                     ...
                     (*
                         -> rrel_example:
-                        "file://contents/lavrov_scheme.gif";;
+                        "file://contents/lavrov_scheme.gif"(*=> nrel_format:format_png;;
+*);;
                     *);;
         *);;

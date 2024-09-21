@@ -1,4 +1,5 @@
-sc_node_not_relation->concept_vertex_critical_graph;;
+sc_node_class
+    -> concept_vertex_critical_graph;;
 
 concept_vertex_critical_graph => nrel_main_idtf:
 	[вершинно-критический граф](* <-lang_ru;; *);;
@@ -30,7 +31,9 @@ concept_vertex_critical_graph <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://picture/concept_vertex_critical_graph.png";;
+				"file://picture/concept_vertex_critical_graph.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;
 

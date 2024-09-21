@@ -1,4 +1,5 @@
-sc_node_not_relation -> concept_avl_tree;;
+sc_node_class
+    -> concept_avl_tree;;
 
 concept_avl_tree => nrel_main_idtf:
 	[АВЛ-дерево](* <-lang_ru;; *);
@@ -50,6 +51,7 @@ concept_avl_tree <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/concept_avl_tree.gif";;
+				"file://contents/concept_avl_tree.gif"(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;

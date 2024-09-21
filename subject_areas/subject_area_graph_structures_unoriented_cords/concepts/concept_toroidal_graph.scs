@@ -1,4 +1,5 @@
-sc_node_not_relation -> concept_toroidal_graph;;
+sc_node_class
+    -> concept_toroidal_graph;;
 concept_toroidal_graph => nrel_main_idtf:
 	[тороидальный граф] (* <- lang_ru;; *);;
 concept_toroidal_graph => nrel_idtf:
@@ -67,7 +68,8 @@ concept_toroidal_graph <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/concept_toroidal_graph.gif";;
+				"file://contents/concept_toroidal_graph.gif"(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;
 

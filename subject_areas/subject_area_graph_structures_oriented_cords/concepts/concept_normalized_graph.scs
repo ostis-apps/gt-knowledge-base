@@ -1,4 +1,5 @@
-sc_node_not_relation -> concept_normalized_graph;;
+sc_node_class
+    -> concept_normalized_graph;;
 
 concept_normalized_graph => nrel_main_idtf:[нормированный граф] (* <- lang_ru;; *);;
 concept_normalized_graph => nrel_idtf:[normalized graph] (* <- lang_en;; *);;
@@ -42,6 +43,7 @@ concept_normalized_graph <- rrel_key_sc_element:
 concept_normalized_graph <- rrel_key_sc_element: ... (*
 	<- illustration;;
 	<= nrel_sc_text_translation: ... (*
-		-> rrel_example: "file://contents/normalized_graph.gif";;
+		-> rrel_example: "file://contents/normalized_graph.gif"(*=> nrel_format:format_png;;
+*);;
 	*);;
 *);;

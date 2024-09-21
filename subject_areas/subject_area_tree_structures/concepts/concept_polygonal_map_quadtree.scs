@@ -1,4 +1,5 @@
-sc_node_not_relation -> concept_polygonal_map_quadtree;;
+sc_node_class
+    -> concept_polygonal_map_quadtree;;
 
 concept_polygonal_map_quadtree => nrel_main_idtf:
 	[дерево квадрантов, хранящее информацию о многоугольниках](* <-lang_ru;; *);
@@ -33,6 +34,8 @@ concept_polygonal_map_quadtree <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/concept_polygonal_map_quadtree.png";;
+				"file://contents/concept_polygonal_map_quadtree.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;

@@ -1,4 +1,5 @@
-sc_node_not_relation -> concept_desargues_graph;;
+sc_node_class
+    -> concept_desargues_graph;;
 
 concept_desargues_graph => nrel_main_idtf:
     [граф Дезарга]
@@ -53,7 +54,9 @@ concept_desargues_graph <- rrel_key_sc_element:
                     ...
                     (*
                         -> rrel_example:
-                        "file://contents/concept_desargues_graph.jpg";;
+                        "file://contents/concept_desargues_graph.jpg"
+(*=> nrel_format:format_jpg;;
+*);;
                     *);;
         *);;
 */

@@ -1,4 +1,5 @@
-sc_node_not_relation -> concept_directed_multigraph;;
+sc_node_class
+    -> concept_directed_multigraph;;
 concept_directed_multigraph => nrel_main_idtf:[ориентированный мультиграф](* <-lang_ru;; *);;
 concept_directed_multigraph => nrel_idtf:[directed multigraph](* <- lang_en;; *);;
 

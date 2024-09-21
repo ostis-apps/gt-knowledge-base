@@ -10,5 +10,8 @@ section_graph_exercise_part5_task1
 		(*
 		-> rrel_example:
 			"file://html/5.1.html"
-			(* <- lang_ru;; *);;
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);;

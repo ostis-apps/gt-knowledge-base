@@ -1,4 +1,5 @@
-sc_node_not_relation->concept_geodetic_graph;;
+sc_node_class
+    -> concept_geodetic_graph;;
 
 concept_geodetic_graph	=> nrel_main_idtf: 
 		[геодезический граф] (* <-lang_ru;; *);
@@ -31,7 +32,9 @@ concept_geodetic_graph <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/concept_geodetic_graph.png";;
+				"file://contents/concept_geodetic_graph.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;
 concept_graph => nrel_inclusion: concept_geodetic_graph;;

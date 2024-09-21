@@ -1,9 +1,10 @@
-sc_node_not_relation -> concept_uniquelycoloured_graph;;
+sc_node_class
+    -> concept_uniquelycoloured_graph;;
 
 concept_uniquelycoloured_graph => nrel_main_idtf:[однозначно раскрашиваемый граф] (* <- lang_ru;; *);;
 concept_uniquelycoloured_graph => nrel_main_idtf:[uniquely coloured graph] (* <- lang_en;; *);;
 
-sc_node_not_relation -> statement_of_common_type;;
+sc_node -> statement_of_common_type;;
 statement_of_common_type => nrel_main_idtf:
     [утверждение общего вида](* <- lang_ru;; *);
 	[statement_of_common_type](* <- lang_en;; *);;

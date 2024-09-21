@@ -1,4 +1,5 @@
-sc_node_not_relation -> concept_edge_quadtree;;
+sc_node_class
+    -> concept_edge_quadtree;;
 
 concept_edge_quadtree => nrel_main_idtf:
 	[дерево квадрантов, хранящее информацию о линиях](* <-lang_ru;; *);
@@ -34,6 +35,8 @@ concept_edge_quadtree <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/concept_edge_quadtree.png";;
+				"file://contents/concept_edge_quadtree.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;

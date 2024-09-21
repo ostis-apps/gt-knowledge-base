@@ -1,4 +1,5 @@
-sc_node_not_relation -> concept_n_ary_tree;;
+sc_node_class
+    -> concept_n_ary_tree;;
 
 concept_n_ary_tree => nrel_main_idtf:
 	[N-арное дерево](* <-lang_ru;; *);
@@ -57,6 +58,7 @@ concept_n_ary_tree <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/concept_n_ary_tree.gif";;
+				"file://contents/concept_n_ary_tree.gif"(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;

@@ -1,4 +1,5 @@
-sc_node_not_relation -> concept_octree;;
+sc_node_class
+    -> concept_octree;;
 
 concept_octree => nrel_main_idtf:
 	[октодерево](* <-lang_ru;; *);
@@ -50,6 +51,8 @@ concept_octree <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/concept_octree.png";;
+				"file://contents/concept_octree.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;

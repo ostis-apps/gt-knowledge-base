@@ -1,4 +1,5 @@
-sc_node_not_relation->concept_unit_disk_graph;;
+sc_node_class
+    -> concept_unit_disk_graph;;
 
 concept_unit_disk_graph => nrel_main_idtf:
 	[граф единичных кругов](* <-lang_ru;; *);
@@ -36,7 +37,9 @@ concept_unit_disk_graph <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/concept_uni_disk_graph.png";;
+				"file://contents/concept_uni_disk_graph.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;
 

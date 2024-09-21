@@ -21,7 +21,9 @@ nrel_shortest_path <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/nrel_shortest_path.png";;
+				"file://contents/nrel_shortest_path.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;	
 

@@ -1,4 +1,5 @@
-sc_node_not_relation->concept_ordered_tree;;
+sc_node_class
+    -> concept_ordered_tree;;
 
 concept_ordered_tree	=> nrel_main_idtf: [упорядоченное дерево] (* <-lang_ru;; *);;
 concept_ordered_tree	=> nrel_idtf:[ordered tree] (* <-lang_en;; *);;
@@ -28,7 +29,9 @@ concept_ordered_tree <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/ordered_tree.png";;
+				"file://contents/ordered_tree.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;
 concept_directed_tree => nrel_inclusion: concept_ordered_tree;;

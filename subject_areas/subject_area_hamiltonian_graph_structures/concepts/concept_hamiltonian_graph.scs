@@ -1,4 +1,5 @@
-sc_node_not_relation->concept_hamiltonian_graph;;
+sc_node_class
+    -> concept_hamiltonian_graph;;
 
 
 concept_hamiltonian_graph
@@ -44,7 +45,9 @@ concept_hamiltonian_graph
 ...
 (*
 -> rrel_example:
-"file://contents/concept_hamiltonian_graph.png";;
+"file://contents/concept_hamiltonian_graph.png"
+(*=> nrel_format:format_png;;
+*);;
 *);;
 *);;
 

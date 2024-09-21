@@ -1,4 +1,5 @@
-sc_node_not_relation -> concept_range_sum_query;;
+sc_node_class
+    -> concept_range_sum_query;;
 
 concept_range_sum_query => nrel_main_idtf:
 	[дерево сумм](* <-lang_ru;; *);
@@ -54,6 +55,8 @@ concept_range_sum_query <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/concept_range_sum_query.png";;
+				"file://contents/concept_range_sum_query.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;

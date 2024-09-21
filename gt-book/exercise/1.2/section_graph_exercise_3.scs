@@ -8,11 +8,19 @@ section_graph_exercise_1_2_3
 <= nrel_sc_text_translation:
 		...
 		(* 
-		-> rrel_example: "file://htmls/section_graph_exercise3.html" (* <-lang_ru;; *);;
+		-> rrel_example: "file://htmls/section_graph_exercise3.html"
+(*
+	<- lang_ru;;
+	=> nrel_format: format_html;;
+*);;
 		*);
 		...
 		(*
-		-> rrel_example: "file://htmls/section_graph_exercise3_en .html" (* <-lang_en;; *);; 
+		-> rrel_example: "file://htmls/section_graph_exercise3_en .html"
+(*
+	<- lang_en;;
+	=> nrel_format: format_html;;
+*);; 
 		*);
 =>graph_exercise_1_2_3_answer;;
 

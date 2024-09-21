@@ -1,4 +1,5 @@
-sc_node_not_relation->concept_matrix;;
+sc_node_class
+    -> concept_matrix;;
 
 concept_matrix	=> nrel_main_idtf: 
 		[матрица] (* <-lang_ru;; *);
@@ -25,6 +26,7 @@ concept_matrix	 <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-			"file://contents/concept_matrix.gif";;
+			"file://contents/concept_matrix.gif"(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;

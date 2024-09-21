@@ -1,4 +1,5 @@
-sc_node_not_relation->concept_undirected_graph;;
+sc_node_class
+    -> concept_undirected_graph;;
 
 concept_undirected_graph => nrel_main_idtf:
 	[неориентированный граф](* <-lang_ru;; *);
@@ -33,6 +34,8 @@ concept_undirected_graph <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/concept_undirected_graph.png";;
+				"file://contents/concept_undirected_graph.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;

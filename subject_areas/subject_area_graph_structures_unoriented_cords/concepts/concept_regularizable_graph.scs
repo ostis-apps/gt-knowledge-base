@@ -1,4 +1,5 @@
-sc_node_not_relation -> concept_regularizable_graph;;
+sc_node_class
+    -> concept_regularizable_graph;;
 
 concept_regularizable_graph => nrel_main_idtf:
 	[регуляризуемый граф] (* <- lang_ru;; *);;
@@ -30,7 +31,9 @@ concept_regularizable_graph <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://picture/concept_regularizable_graph.jpg";;
+				"file://picture/concept_regularizable_graph.jpg"
+(*=> nrel_format:format_jpg;;
+*);;
 			*);;
 	*);;
 

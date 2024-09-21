@@ -1,4 +1,5 @@
-sc_node_not_relation -> concept_unilaterally_connected_digraph;;
+sc_node_class
+    -> concept_unilaterally_connected_digraph;;
 
 concept_unilaterally_connected_digraph => nrel_main_idtf:[односторонне связный орграф] (* <- lang_ru;; *);;
 concept_unilaterally_connected_digraph => nrel_idtf:[unilaterally connected digraph] (* <- lang_en;; *);;
@@ -42,6 +43,8 @@ concept_unilaterally_connected_digraph <- rrel_key_sc_element:
 concept_unilaterally_connected_digraph <- rrel_key_sc_element: ... (*
 	<- illustration;;
 	<= nrel_sc_text_translation: ... (*
-		-> rrel_example: "file://contents/unilaterally_connected_digraph.png";;
+		-> rrel_example: "file://contents/unilaterally_connected_digraph.png"
+(*=> nrel_format:format_png;;
+*);;
 	*);;
 *);;

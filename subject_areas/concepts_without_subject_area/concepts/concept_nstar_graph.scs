@@ -1,4 +1,5 @@
-sc_node_not_relation -> concept_nstar_graph;;
+sc_node_class
+    -> concept_nstar_graph;;
 
 concept_nstar_graph => nrel_main_idtf: 
 		[n-звездный граф] (* <-lang_ru;; *);
@@ -33,6 +34,7 @@ concept_nstar_graph <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/concept_nstar_graph.gif";;
+				"file://contents/concept_nstar_graph.gif"(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;

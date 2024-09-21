@@ -1,4 +1,5 @@
-sc_node_not_relation -> concept_lattice_graph;;
+sc_node_class
+    -> concept_lattice_graph;;
 concept_lattice_graph => nrel_main_idtf:[граф решетки](* <-lang_ru;; *);;
 concept_lattice_graph => nrel_idtf: [lattice graph](* <- lang_en;; *);;
 
@@ -37,7 +38,9 @@ concept_lattice_graph <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://pic/concept_lattice_graph.png";;
+				"file://pic/concept_lattice_graph.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;
 

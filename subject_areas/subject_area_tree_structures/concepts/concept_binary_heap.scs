@@ -1,4 +1,5 @@
-sc_node_not_relation -> concept_binary_heap;;
+sc_node_class
+    -> concept_binary_heap;;
 
 concept_binary_heap => nrel_main_idtf:
 	[двоичная куча](* <-lang_ru;; *);
@@ -75,6 +76,8 @@ concept_binary_heap <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/concept_binary_heap.png";;
+				"file://contents/concept_binary_heap.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;

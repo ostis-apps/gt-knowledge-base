@@ -1,6 +1,7 @@
-sc_node_not_relation -> concept_indifference_digraph;;
+sc_node_class
+    -> concept_indifference_digraph;;
 
-sc_node_not_relation -> function;;
+sc_node -> function;;
 function => nrel_main_idtf:
     [функция](* <- lang_ru;; *);
 	[function'](* <- lang_en;; *);;
@@ -10,7 +11,7 @@ concept_indifference_digraph => nrel_main_idtf:
 concept_indifference_digraph => nrel_idtf:
 	[indifference digraph] (* <- lang_en;; *);;
 
-sc_node_not_relation -> statement_of_common_type;;
+sc_node -> statement_of_common_type;;
 statement_of_common_type => nrel_main_idtf:
     [утверждение общего вида](* <- lang_ru;; *);
 	[statement_of_common_type](* <- lang_en;; *);;
@@ -66,6 +67,8 @@ concept_indifference_digraph <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/indifference_digraph.png";;
+				"file://contents/indifference_digraph.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;

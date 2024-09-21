@@ -1,4 +1,5 @@
-sc_node_not_relation->concept_medial_graph;;
+sc_node_class
+    -> concept_medial_graph;;
 
 concept_medial_graph => nrel_main_idtf:
 	[cрединный граф](* <-lang_ru;; *);;
@@ -37,7 +38,9 @@ concept_medial_graph <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/concept_medial_graph.png";;
+				"file://contents/concept_medial_graph.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;
 

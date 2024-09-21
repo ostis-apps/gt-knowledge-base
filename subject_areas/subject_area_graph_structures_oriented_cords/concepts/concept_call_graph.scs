@@ -1,4 +1,5 @@
-sc_node_not_relation -> concept_call_graph;;
+sc_node_class
+    -> concept_call_graph;;
 concept_call_graph => nrel_main_idtf:[граф процедур](* <-lang_ru;; *);;
 concept_call_graph => nrel_idtf:[call graph](* <- lang_en;; *);;
 
@@ -55,6 +56,8 @@ concept_call_graph <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/concept_call_graph.png";;
+				"file://contents/concept_call_graph.png"
+(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;

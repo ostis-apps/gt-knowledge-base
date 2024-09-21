@@ -1,4 +1,5 @@
-sc_node_not_relation->concept_empty_graph;;
+sc_node_class
+    -> concept_empty_graph;;
 
 concept_empty_graph => nrel_main_idtf:
 	[ пустой граф ] (* <-lang_ru;; *);
@@ -29,7 +30,8 @@ concept_empty_graph <-rrel_key_sc_element:
 		...
 		(*
 		-> rrel_example:
-		"file://contents/concept_empty_graph.gif";;
+		"file://contents/concept_empty_graph.gif"(*=> nrel_format:format_png;;
+*);;
 		*);;
 *);;
 

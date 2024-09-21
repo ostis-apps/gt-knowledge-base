@@ -43,10 +43,10 @@
         <node type="node/const/attribute" idtf="rrel_centroid_vertex" shapeColor="0" id="14665200" parent="0" left="0" top="0" right="159.203" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="495.5" y="547.5" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
-        <node type="node/const/attribute" idtf="nrel_annular_sum_of_graphs" shapeColor="0" id="14647728" parent="0" left="0" top="0" right="217.891" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="481.5" y="681.5" haveBus="false" idtf_pos="0">
+        <node type="node/const/relation" idtf="nrel_annular_sum_of_graphs" shapeColor="0" id="14647728" parent="0" left="0" top="0" right="217.891" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="481.5" y="681.5" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
-        <node type="node/const/attribute" idtf="nrel_arboricity_of_a_graph" shapeColor="0" id="14630336" parent="0" left="0" top="0" right="204.344" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="489.5" y="744.5" haveBus="false" idtf_pos="0">
+        <node type="node/const/relation" idtf="nrel_arboricity_of_a_graph" shapeColor="0" id="14630336" parent="0" left="0" top="0" right="204.344" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="489.5" y="744.5" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
         <node type="node/const/relation" idtf="nrel_edge_connectivity" shapeColor="0" id="14612288" parent="0" left="0" top="0" right="180.031" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="501.5" y="836.5" haveBus="false" idtf_pos="0">

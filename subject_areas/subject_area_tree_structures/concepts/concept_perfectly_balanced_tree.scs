@@ -1,4 +1,5 @@
-sc_node_not_relation -> concept_perfectly_balanced_tree;;
+sc_node_class
+    -> concept_perfectly_balanced_tree;;
 
 concept_perfectly_balanced_tree => nrel_main_idtf:
 	[идеально сбалансированное дерево](* <-lang_ru;; *);
@@ -50,6 +51,7 @@ concept_perfectly_balanced_tree <- rrel_key_sc_element:
 		...
 			(*
 			-> rrel_example:
-				"file://contents/concept_perfectly_balanced_tree.gif";;
+				"file://contents/concept_perfectly_balanced_tree.gif"(*=> nrel_format:format_png;;
+*);;
 			*);;
 	*);;

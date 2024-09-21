@@ -1,4 +1,5 @@
-sc_node_not_relation -> concept_bifurcant;;
+sc_node_class
+    -> concept_bifurcant;;
 
 concept_bifurcant => nrel_main_idtf:
     [бифуркант]
@@ -53,7 +54,9 @@ concept_bifurcant <- rrel_key_sc_element:
                     ...
                     (*
                         -> rrel_example:
-                        "file://contents/concept_bifurcant.jpg";;
+                        "file://contents/concept_bifurcant.jpg"
+(*=> nrel_format:format_jpg;;
+*);;
                     *);;
         *);;
 */
