@@ -4,7 +4,18 @@ sc_node_norole_relation
 nrel_face => nrel_main_idtf:
 	[ Грань* ](* <-lang_ru;; *);
 	[ Face* ](* <-lang_en;; *);;
-	
+
+nrel_face => nrel_arity_of_relations: 2
+	(* <- number ;;*);;
+
+nrel_face <- reflexive_relation;;
+nrel_face <- binary_relation;;
+nrel_face <- transitive_relation;;
+
+nrel_face => nrel_definitional_domain: concept_graph;;
+nrel_face => nrel_first_domain: concept_graph;;
+nrel_face => nrel_second_domain: concept_graph;;
+
 nrel_face <- rrel_key_sc_element: 
         ... 
 		(*
@@ -23,20 +34,3 @@ nrel_face<= nrel_using_constants:
 						{
 							concept_arg
 						};;
-						
-nrel_face <- rrel_key_sc_element: 
-	...
-	(*
-		<- illustration;;
-		<= nrel_sc_text_translation:
-		...
-			(*
-			-> rrel_example:
-				"file://contents/nrel_face.jpg"
-(*=> nrel_format:format_jpg;;
-*);;
-			*);;
-	*);;
-						
-
-

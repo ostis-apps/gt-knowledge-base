@@ -4,7 +4,14 @@ sc_node_norole_relation
 nrel_hole => nrel_main_idtf:
 	[ Дыра* ](* <-lang_ru;; *);
 	[ Hole* ](* <-lang_en;; *);;
-	
+
+binary_relation -> nrel_hole;;
+oriented_relation -> nrel_hole;;
+nrel_hole
+    => nrel_definitional_domain:concept_graph;
+    => nrel_first_domain: concept_graph;
+    => nrel_second_domain: concept_graph;;
+
 nrel_hole <- rrel_key_sc_element: 
         ... 
 		(*
@@ -24,8 +31,3 @@ nrel_hole<= nrel_using_constants:
 							concept_arg;
 							concept_node
 						};;
-						
-
-						
-
-
