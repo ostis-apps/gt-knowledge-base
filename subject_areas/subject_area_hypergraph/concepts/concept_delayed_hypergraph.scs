@@ -1,0 +1,46 @@
+sc_node_class
+    -> concept_delayed_hypergraph;;
+
+concept_delayed_hypergraph => nrel_main_idtf:
+	[гиперграф с задержкой](* <-lang_ru;; *);
+	[delayed hypergraph](* <-lang_en;; *);;
+
+concept_delayed_hypergraph <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- definition;;
+		=> nrel_main_idtf: [Опр.(гиперграф с задержкой)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Def.(delayed hypergraph)] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation:
+		        ...
+			(*
+			-> rrel_example: 
+				[Гиперграф с задержкой - гиперграф, где взаимодействия между вершинами происходят с временной задержкой, используется в моделировании процессов с временной зависимостью.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Delayed hypergraph - hypergraph where interactions between vertices occur with a time delay, used in modeling processes with time dependence.](*<- lang_en;;*);;
+		*);;
+*);;
+
+concept_delayed_hypergraph <= nrel_using_constants:
+						{
+							concept_graph;
+							nrel_hyperedge;
+							nrel_hypervertex
+						};;
+
+concept_delayed_hypergraph <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утв.(об изменчивости свойств гиперграфа с задержкой)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Stat.(on the variability of properties of the hypergraph with delay)] (* <- lang_en;; *);;
+		<- statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[В гиперграфе с задержкой гиперграфы активируются на основе функции задержки, которая назначает определенное время активации для каждого гиперграфа. Это означает, что структурные свойства гиперграфа, такие как связность и кластеризация, могут изменяться со временем, поскольку гиперграфы становятся активными в соответствии с их задержками.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[ In a delayed hypergraph, the hyperedges are activated based on a delay function that assigns a specific activation time to each hyperedge. This implies that the structural properties of the hypergraph, such as connectivity and clustering, can evolve over time as hyperedges become active according to their delays.](*<- lang_en;;*);;
+			*);;
+		*);;
+
+concept_hypergraph => nrel_inclusion: concept_delayed_hypergraph;;

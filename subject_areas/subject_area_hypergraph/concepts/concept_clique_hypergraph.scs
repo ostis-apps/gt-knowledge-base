@@ -1,0 +1,45 @@
+sc_node_class
+    -> concept_clique_hypergraph;;
+
+concept_clique_hypergraph => nrel_main_idtf:
+	[кликовый гиперграф](* <-lang_ru;; *);
+	[clique hypergraph](* <-lang_en;; *);;
+
+concept_clique_hypergraph <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- definition;;
+		=> nrel_main_idtf: [Опр.(кликовый гиперграф)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Def.(clique hypergraph)] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation:
+		        ...
+			(*
+			-> rrel_example: 
+				[Кликовый гиперграф - гиперграф, в котором каждое гиперребро содержит все возможные вершины подмножества определенного размера, аналогично клик в обычных графах.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Clique hypergraph - hypergraph in which each hyperedge contains all possible vertices of a subset of a certain size, similar to cliques in regular graphs.](*<- lang_en;;*);;
+		*);;
+*);;
+
+concept_clique_hypergraph <= nrel_using_constants:
+						{
+							concept_graph;
+							nrel_hyperedge;
+							nrel_hypervertex
+						};;
+
+concept_clique_hypergraph <- rrel_key_sc_element:
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_clique_hypergraph.png"
+(*=> nrel_format:format_jpg;;
+*);;
+			*);;
+	*);;
+
+concept_hypergraph => nrel_inclusion: concept_clique_hypergraph;;

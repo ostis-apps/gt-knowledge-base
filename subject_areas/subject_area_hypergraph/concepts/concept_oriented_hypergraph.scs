@@ -1,0 +1,44 @@
+sc_node_class
+    -> concept_oriented_hypergraph;;
+
+concept_oriented_hypergraph => nrel_main_idtf:
+	[ориентированный гиперграф](* <-lang_ru;; *);
+	[oriented hypergraph](* <-lang_en;; *);;
+
+concept_oriented_hypergraph <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- definition;;
+		=> nrel_main_idtf: [Опр.(ориентированный гиперграф)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Def.(oriented hypergraph)] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation:
+		        ...
+			(*
+			-> rrel_example: 
+				[Ориентированный гиперграф — гиперграф, в котором каждому ребру присвоено направление. Такие рёбра называются дугами. Например, если у нас есть гиперграф, описывающий зависимости между компонентами сложной системы, ориентированный гиперграф позволит указать, какие компоненты влияют на другие и в каком направлении.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Oriented hypergraph — hypergraph in which each edge is assigned a direction. Such edges are called arcs. For example, if we have a hypergraph describing the dependencies between the components of a complex system, an oriented hypergraph will allow us to specify which components affect the others and in which direction.](*<- lang_en;;*);;
+		*);;
+*);;
+
+concept_oriented_hypergraph <= nrel_using_constants:
+						{
+							concept_graph;
+							nrel_hyperedge;
+							nrel_hypervertex
+						};;
+
+concept_oriented_hypergraph <- rrel_key_sc_element: 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_oriented_hypergraph.png"
+(*=> nrel_format:format_jpg;;
+*);;
+			*);;
+	*);;
+concept_hypergraph => nrel_inclusion: concept_oriented_hypergraph;;

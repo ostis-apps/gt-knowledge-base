@@ -1,0 +1,31 @@
+sc_node_class
+    -> concept_hypergraph_with_multi_sided_hyperedges;;
+
+concept_hypergraph_with_multi_sided_hyperedges => nrel_main_idtf:
+	[гиперграф с многосторонними гиперребрами](* <-lang_ru;; *);
+	[hypergraph with multi-sided hyperedges](* <-lang_en;; *);;
+
+concept_hypergraph_with_multi_sided_hyperedges <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- definition;;
+		=> nrel_main_idtf: [Опр.(гиперграф с многосторонними гиперребрами)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Def.(hypergraph with multi-sided hyperedges)] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation:
+		        ...
+			(*
+			-> rrel_example: 
+				[Гиперграф с многосторонними гиперребрами - гиперграф, в котором гиперребра могут связывать группы вершин, каждая из которых принадлежит разным категориям или уровням.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Hypergraph with multi-sided hyperedges - a hypergraph in which hyperbras can connect groups of vertices, each belonging to different categories or levels.](*<- lang_en;;*);;
+		*);;
+*);;
+
+concept_hypergraph_with_multi_sided_hyperedges <= nrel_using_constants:
+						{
+							concept_graph;
+							nrel_hyperedge;
+							nrel_hypervertex
+						};;
+
+concept_hypergraph => nrel_inclusion: concept_hypergraph_with_multi_sided_hyperedges;;

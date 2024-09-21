@@ -1,0 +1,45 @@
+sc_node_class
+    -> concept_dynamic_hypergraph;;
+
+concept_dynamic_hypergraph => nrel_main_idtf:
+	[динамический гиперграф](* <-lang_ru;; *);
+	[dynamic hypergraph](* <-lang_en;; *);;
+
+concept_dynamic_hypergraph <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- definition;;
+		=> nrel_main_idtf: [Опр.(динамический гиперграф)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Def.(dynamic hypergraph)] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation:
+		        ...
+			(*
+			-> rrel_example: 
+				[Динамический гиперграф — гиперграф, структура которого изменяется во времени. В таких гиперграфах вершины и гиперребра могут добавляться, удаляться или изменяться, что позволяет моделировать процессы, происходящие во времени. Это полезно для анализа временных данных, таких как изменения в социальных сетях, биологических системах и других динамических системах.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Dynamic hypergraph — a hypergraph whose structure changes in time. In such hypergraphs, vertices and hyper edges can be added, removed or changed, which allows modeling processes that occur over time. This is useful for analyzing temporal data such as changes in social networks, biological systems, and other dynamic systems.](*<- lang_en;;*);;
+		*);;
+*);;
+
+concept_dynamic_hypergraph <= nrel_using_constants:
+						{
+							concept_graph;
+							nrel_hyperedge;
+							nrel_hypervertex
+						};;
+
+concept_dynamic_hypergraph <- rrel_key_sc_element:
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_dynamic_hypergraph.png"
+(*=> nrel_format:format_jpg;;
+*);;
+			*);;
+	*);;
+
+concept_hypergraph => nrel_inclusion: concept_dynamic_hypergraph;;

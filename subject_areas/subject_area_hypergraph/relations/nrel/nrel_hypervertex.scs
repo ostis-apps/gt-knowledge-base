@@ -1,0 +1,39 @@
+sc_node_norole_relation
+    -> nrel_hypervertex;;
+
+nrel_hypervertex => nrel_main_idtf:
+	[Гиперузел*](* <-lang_ru;; *);
+	[Hypervertex*](* <-lang_en;; *);;
+	
+nrel_hypervertex <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- definition;;
+		=> nrel_main_idtf: [Опр.(гиперузел)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Def.(hypervertex)] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Гиперузел - это аналог вершины в гиперграфе. В обычном графе вершина представляет отдельный элемент, который может быть соединен с другими вершинами ребрами. 
+				В гиперграфе гиперузел может представлять более сложные структуры, чем обычная вершина.
+				Формально, гиперузел в гиперграфе определяется как элемент, который может быть частью одного или нескольких гиперребер. 
+				Таким образом, гиперузел может быть соединен с одним или более гиперребрами, и каждое гиперребро может содержать разное количество гиперузлов.
+				Гиперузлы используются для представления сложных структур или взаимосвязей в гиперграфе, которые не могут быть представлены с помощью обычных вершин и ребер. 
+				Например, в сетях связей или взаимодействий между элементами гиперузлы могут представлять группы элементов, которые взаимодействуют вместе, образуя сложные связи.]
+				(*<- lang_ru;;*);;
+			-> rrel_example: 
+				[A hypernode is an analog of a vertex in a hypergraph. In a regular graph, a vertex represents a single element that can be connected to other vertices by edges. 
+				In a hypergraph, a hypernode can represent more complex structures than a regular vertex.
+				Formally, a hypernode in a hypergraph is defined as an element that may be part of one or more hyper edges. 
+				Thus, a hypernode may be connected to one or more hyperrebs, and each hyperreb may contain a different number of hypernodes.
+				Hypernodes are used to represent complex structures or relationships in a hypergraph that cannot be represented using conventional vertices and edges. 
+				For example, in networks of links or interactions between elements, hypernodes can represent groups of elements that interact together to form complex relationships.]
+				(*<- lang_en;;*);;
+		*);;
+*);;
+
+nrel_hypervertex <= nrel_using_constants:
+						{
+							concept_vertex
+						};;
+

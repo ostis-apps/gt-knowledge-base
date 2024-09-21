@@ -1,0 +1,45 @@
+sc_node_class
+    -> concept_quantum_hypergraph;;
+
+concept_quantum_hypergraph => nrel_main_idtf:
+	[квантовый гиперграф](* <-lang_ru;; *);
+	[quantum hypergraph](* <-lang_en;; *);;
+
+concept_quantum_hypergraph <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- definition;;
+		=> nrel_main_idtf: [Опр.(квантовый гиперграф)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Def.(quantum hypergraph)] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation:
+		        ...
+			(*
+			-> rrel_example: 
+				[Квантовый гиперграф - гиперграф, используемый в квантовой теории информации для моделирования многокомпонентных квантовых систем.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Quantum hypergraph - hypergraph used in quantum information theory to model multicomponent quantum systems.](*<- lang_en;;*);;
+		*);;
+*);;
+
+concept_quantum_hypergraph <= nrel_using_constants:
+						{
+							concept_graph;
+							nrel_hyperedge;
+							nrel_hypervertex
+						};;
+
+concept_quantum_hypergraph <- rrel_key_sc_element:
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_quantum_hypergraph.png"
+(*=> nrel_format:format_jpg;;
+*);;
+			*);;
+	*);;
+
+concept_hypergraph => nrel_inclusion: concept_quantum_hypergraph;;

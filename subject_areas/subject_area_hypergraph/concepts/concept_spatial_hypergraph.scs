@@ -1,0 +1,32 @@
+sc_node_class
+    -> concept_spatial_hypergraph;;
+
+concept_spatial_hypergraph => nrel_main_idtf:
+	[пространственный гиперграф](* <-lang_ru;; *);
+	[spatial hypergraph](* <-lang_en;; *);;
+
+concept_spatial_hypergraph <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- definition;;
+		=> nrel_main_idtf: [Опр.(пространственный гиперграф)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Def.(spatial hypergraph)] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation:
+		        ...
+			(*
+			-> rrel_example: 
+				[Пространственный гиперграф - гиперграф, в котором вершины и гиперребра расположены в физическом пространстве, что позволяет учитывать геометрические и топологические свойства.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Spatial hypergraph - hypergraph in which the vertices and hyper edges are located in physical space, allowing geometric and topological properties to be taken into account.
+](*<- lang_en;;*);;
+		*);;
+*);;
+
+concept_spatial_hypergraph <= nrel_using_constants:
+						{
+							concept_graph;
+							nrel_hyperedge;
+							nrel_hypervertex
+						};;
+
+concept_hypergraph => nrel_inclusion: concept_spatial_hypergraph;;

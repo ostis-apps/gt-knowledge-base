@@ -1,0 +1,45 @@
+sc_node_class
+    -> concept_multilevel_hypergraph;;
+
+concept_multilevel_hypergraph => nrel_main_idtf:
+	[многоуровневый гиперграф](* <-lang_ru;; *);
+	[multilevel hypergraph](* <-lang_en;; *);;
+
+concept_multilevel_hypergraph <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- definition;;
+		=> nrel_main_idtf: [Опр.(многоуровневый гиперграф)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Def.(multilevel hypergraph)] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation:
+		        ...
+			(*
+			-> rrel_example: 
+				[Многоуровневый гиперграф — это гиперграф, в котором гиперребра сами могут быть гиперграфами, создавая иерархическую структуру. В многоуровневом гиперграфе вершины и гиперребра могут содержать дополнительные уровни гиперребер, что позволяет моделировать сложные системы с несколькими уровнями взаимодействий. Такая структура полезна для анализа иерархических данных, моделирования систем с вложенными подсистемами и в задачах, требующих учета многоуровневых связей.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Multilevel hypergraph — a hypergraph in which hyper edges can themselves be hypergraphs, creating a hierarchical structure. In a multilevel hypergraph, vertices and hyper edges can contain additional levels of hyper edges, allowing complex systems with multiple levels of interactions to be modeled. Such a structure is useful for analyzing hierarchical data, modeling systems with nested subsystems, and in problems requiring consideration of multilevel relationships.](*<- lang_en;;*);;
+		*);;
+*);;
+
+concept_multilevel_hypergraph <= nrel_using_constants:
+						{
+							concept_graph;
+							nrel_hyperedge;
+							nrel_hypervertex
+						};;
+
+concept_multilevel_hypergraph <- rrel_key_sc_element: 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_multilevel_hypergraph.png"
+(*=> nrel_format:format_jpg;;
+*);;
+			*);;
+	*);;
+
+concept_hypergraph => nrel_inclusion: concept_multilevel_hypergraph;;

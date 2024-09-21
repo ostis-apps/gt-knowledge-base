@@ -1,0 +1,61 @@
+sc_node_class
+    -> concept_algebraic_hypergraph;;
+
+concept_algebraic_hypergraph => nrel_main_idtf:
+	[алгебраический гиперграф](* <-lang_ru;; *);
+	[algebraic hypergraph](* <-lang_en;; *);;
+
+concept_algebraic_hypergraph <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- definition;;
+		=> nrel_main_idtf: [Опр.(алгебраический гиперграф)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Def.(algebraic hypergraph)] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation:
+		        ...
+			(*
+			-> rrel_example: 
+				[Алгебраический гиперграф - гиперграф, используемый для моделирования алгебраических структур и отношений между множествами элементов.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Algebraic hypergraph - hypergraph used to model algebraic structures and relations between sets of elements.](*<- lang_en;;*);;
+		*);;
+*);;
+
+concept_algebraic_hypergraph <= nrel_using_constants:
+						{
+							concept_graph;
+							nrel_hyperedge;
+							nrel_hypervertex
+						};;
+
+
+concept_algebraic_hypergraph <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утв.(необходимое условие для того,чтобы алгебраический гиперграф был плотным)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Stat.(a necessary condition for an algebraic hypergraph to be dense)] (* <- lang_en;; *);;
+		<- statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Гиперграф называется плотным тогда и только тогда, его низкоразмерное подмножество вершин, параметризованное рациональными функциями, также образует плотный гиперграф.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[A hypergraph is called dense if and only if its low-dimensional subset of vertices parameterized by rational functions also forms a dense hypergraph.](*<- lang_en;;*);;
+			*);;
+		*);;
+
+concept_algebraic_hypergraph <- rrel_key_sc_element:
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_algebraic_hypergraph.png"
+(*=> nrel_format:format_jpg;;
+*);;
+			*);;
+	*);;
+
+concept_hypergraph => nrel_inclusion: concept_algebraic_hypergraph;;

@@ -1,0 +1,32 @@
+sc_node_class
+    -> concept_terminal_hypergraph;;
+
+concept_terminal_hypergraph => nrel_main_idtf:
+	[терминальный гиперграф](* <-lang_ru;; *);
+	[terminal generated hypergraph](* <-lang_en;; *);;
+
+concept_terminal_hypergraph <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- definition;;
+		=> nrel_main_idtf: [Опр.(терминальный гиперграф)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Def.(terminal hypergraph)] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation:
+		        ...
+			(*
+			-> rrel_example: 
+				[Терминальный гиперграф — тройка (V, E,T), где (V, E) — гиперграф, а T ⊆ V — упорядоченное подмножество из t(H) ≥ 0 вершин. Вершины из T называются терминальными вершинами, или проще терминалами и обозначаются T(H) = {t1,t2,... ,tt(H)}. Вершины из V / T называются внутренними вершинами.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Terminal hypergraph — a triple (V, E,T), where (V, E) is a hypergraph and T ⊆ V is an ordered subset of t(H) ≥ 0 vertices. The vertices from T are called terminal vertices, or more simply terminals, and are denoted by T(H) = {t1,t2,.... , tt(H)}. The vertices from V / T are called internal vertices.](*<- lang_en;;*);;
+		*);;
+*);;
+
+concept_terminal_hypergraph <= nrel_using_constants:
+						{
+							concept_graph;
+							nrel_terminal;
+							nrel_hyperedge;
+							nrel_hypervertex
+						};;
+
+concept_hypergraph => nrel_inclusion: concept_terminal_hypergraph;;

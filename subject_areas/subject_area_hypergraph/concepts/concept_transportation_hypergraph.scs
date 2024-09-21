@@ -1,0 +1,31 @@
+sc_node_class
+    -> concept_transportation_hypergraph;;
+
+concept_transportation_hypergraph => nrel_main_idtf:
+	[транспортный гиперграф](* <-lang_ru;; *);
+	[transportation hypergraph](* <-lang_en;; *);;
+
+concept_transportation_hypergraph <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- definition;;
+		=> nrel_main_idtf: [Опр.(транспортный гиперграф)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Def.(transportation hypergraph)] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation:
+		        ...
+			(*
+			-> rrel_example: 
+				[Транспортный гиперграф - гиперграф, применяемый для моделирования транспортных сетей, где гиперребра могут представлять маршруты, соединяющие множество точек.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Transportation hypergraph - hypergraph used to model transportation networks, where hyperedges can represent routes connecting multiple points.](*<- lang_en;;*);;
+		*);;
+*);;
+
+concept_transportation_hypergraph <= nrel_using_constants:
+						{
+							concept_graph;
+							nrel_hyperedge;
+							nrel_hypervertex
+						};;
+
+concept_hypergraph => nrel_inclusion: concept_transportation_hypergraph;;

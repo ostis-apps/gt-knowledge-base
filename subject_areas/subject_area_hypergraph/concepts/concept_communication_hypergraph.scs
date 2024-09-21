@@ -1,0 +1,45 @@
+sc_node_class
+    -> concept_communication_hypergraph;;
+
+concept_communication_hypergraph => nrel_main_idtf:
+	[коммуницационный гиперграф](* <-lang_ru;; *);
+	[communication hypergraph](* <-lang_en;; *);;
+
+concept_communication_hypergraph <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- definition;;
+		=> nrel_main_idtf: [Опр.(коммуникационный гиперграф)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Def.(communication hypergraph)] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation:
+		        ...
+			(*
+			-> rrel_example: 
+				[Коммуникационный гиперграф - гиперграф, моделирующий системы связи, где гиперребра могут представлять множественные каналы связи между узлами.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Communication hypergraph - hypergraph that model communication systems, where hypergraphs can represent multiple communication channels between nodes.](*<- lang_en;;*);;
+		*);;
+*);;
+
+concept_communication_hypergraph <= nrel_using_constants:
+						{
+							concept_graph;
+							nrel_hyperedge;
+							nrel_hypervertex
+						};;
+
+concept_communication_hypergraph <- rrel_key_sc_element:
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_communication_hypergraph.png"
+(*=> nrel_format:format_jpg;;
+*);;
+			*);;
+	*);;
+
+concept_hypergraph => nrel_inclusion: concept_communication_hypergraph;;

@@ -1,0 +1,31 @@
+sc_node_class
+    -> concept_statistical_hypergraph;;
+
+concept_statistical_hypergraph => nrel_main_idtf:
+	[статистический гиперграф](* <-lang_ru;; *);
+	[statistical hypergraph](* <-lang_en;; *);;
+
+concept_statistical_hypergraph <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- definition;;
+		=> nrel_main_idtf: [Опр.(статистический гиперграф)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Def.(statistical hypergraph)] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation:
+		        ...
+			(*
+			-> rrel_example: 
+				[Статистический гиперграф - гиперграф, применяемый для анализа данных, где гиперребра отражают зависимости или корреляции между множеством переменных.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Statistical hypergraph - hypergraph used to analyze data where the hyperedges reflect dependencies or correlations between multiple variables.](*<- lang_en;;*);;
+		*);;
+*);;
+
+concept_statistical_hypergraph <= nrel_using_constants:
+						{
+							concept_graph;
+							nrel_hyperedge;
+							nrel_hypervertex
+						};;
+
+concept_hypergraph => nrel_inclusion: concept_statistical_hypergraph;;

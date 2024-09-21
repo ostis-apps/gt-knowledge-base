@@ -1,0 +1,31 @@
+sc_node_class
+    -> concept_hypergraph_with_constraints;;
+
+concept_hypergraph_with_constraints => nrel_main_idtf:
+	[гиперграф с ограничениями](* <-lang_ru;; *);
+	[hypergraph with constraints](* <-lang_en;; *);;
+
+concept_hypergraph_with_constraints <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- definition;;
+		=> nrel_main_idtf: [Опр.(гиперграф с ограничениями)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Def.(hypergraph with constraints)] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation:
+		        ...
+			(*
+			-> rrel_example: 
+				[Гиперграф с ограничениями - гиперграф, в котором на вершины и гиперребра наложены дополнительные ограничения, такие как степень или количество пересечений.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Hypergraph with constraints - hypergraph in which additional constraints, such as degree or number of intersections, are imposed on vertices and hyperedges.](*<- lang_en;;*);;
+		*);;
+*);;
+
+concept_hypergraph_with_constraints <= nrel_using_constants:
+						{
+							concept_graph;
+							nrel_hyperedge;
+							nrel_hypervertex
+						};;
+
+concept_hypergraph => nrel_inclusion: concept_hypergraph_with_constraints;;

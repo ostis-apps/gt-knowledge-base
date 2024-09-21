@@ -1,0 +1,55 @@
+sc_node_class
+    -> concept_hypergraph;;
+concept_hypergraph => nrel_main_idtf:
+	[гиперграф](* <-lang_ru;; *);
+	[hypergraph](* <-lang_en;; *);;
+concept_hypergraph <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- definition;;
+		=> nrel_main_idtf: [Опр.(гиперграф)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Def.(hypergraph)] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation:
+		        ...
+			(*
+			-> rrel_example: 
+				[Гиперграф — обобщение графа, в котором каждым ребром могут соединяться не только две вершины, но и любые подмножества множества вершин.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Hypergraph — a generalization of a graph in which each edge can connect not only two vertices, but also any subset of the set of vertices.](*<- lang_en;;*);;
+		*);;
+*);;
+concept_hypergraph <= nrel_using_constants:
+						{
+							concept_graph;
+							nrel_hyperedge;
+							nrel_hypervertex
+						};;
+concept_hypergraph <- rrel_main_key_sc_element:
+		...
+		(*
+		=> nrel_main_idtf: [Утв.(необходимое условие для того,чтобы гиперграф был связным)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Stat.(a necessary condition for an algebraic hypergraph to be dense)] (* <- lang_en;; *);;
+		<- statement;;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Гиперграф называется связным тогда и только тогда, когда существует путь между каждой парой гиперребер.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[A hypergraph is called connected if and only if there exists a path between every pair of hyperedges.](*<- lang_en;;*);;
+			*);;
+		*);;
+concept_hypergraph <- rrel_key_sc_element: 
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_hypergraph.png"
+(*=> nrel_format:format_jpg;;
+*);;
+			*);;
+	*);;
+
+concept_graph => nrel_inclusion: concept_hypergraph;;

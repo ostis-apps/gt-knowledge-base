@@ -1,0 +1,45 @@
+sc_node_class
+    -> concept_hybrid_hypergraph;;
+
+concept_hybrid_hypergraph => nrel_main_idtf:
+	[гибридный гиперграф](* <-lang_ru;; *);
+	[hybrid hypergraph](* <-lang_en;; *);;
+
+concept_hybrid_hypergraph <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- definition;;
+		=> nrel_main_idtf: [Опр.(гибридный гиперграф)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Def.(hybrid hypergraph)] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation:
+		        ...
+			(*
+			-> rrel_example: 
+				[Гибридный гиперграф - гиперграф, сочетающий свойства нескольких типов гиперграфов, что позволяет моделировать сложные системы с различными характеристиками.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Hybrid hypergraph - hypergraph that combine properties of several types of hypergraphs, which allows modeling complex systems with different characteristics.](*<- lang_en;;*);;
+		*);;
+*);;
+
+concept_hybrid_hypergraph <= nrel_using_constants:
+						{
+							concept_graph;
+							nrel_hyperedge;
+							nrel_hypervertex
+						};;
+
+concept_hybrid_hypergraph <- rrel_key_sc_element:
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_hybrid_hypergraph.png"
+(*=> nrel_format:format_jpg;;
+*);;
+			*);;
+	*);;
+
+concept_hypergraph => nrel_inclusion: concept_hybrid_hypergraph;;

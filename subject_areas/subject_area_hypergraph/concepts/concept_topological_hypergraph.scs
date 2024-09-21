@@ -1,0 +1,45 @@
+sc_node_class
+    -> concept_topological_hypergraph;;
+
+concept_topological_hypergraph => nrel_main_idtf:
+	[топологический гиперграф](* <-lang_ru;; *);
+	[topological hypergraph](* <-lang_en;; *);;
+
+concept_topological_hypergraph <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- definition;;
+		=> nrel_main_idtf: [Опр.(топологический гиперграф)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Def.(topological hypergraph)] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation:
+		        ...
+			(*
+			-> rrel_example: 
+				[Топологический гиперграф - гиперграф, используемый для моделирования топологических пространств и их свойств, особенно полезен в топологической теории данных и гомологии.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Topological hypergraph - hypergraph used to model topological spaces and their properties, especially useful in topological data theory and homology.](*<- lang_en;;*);;
+		*);;
+*);;
+
+concept_topological_hypergraph <= nrel_using_constants:
+						{
+							concept_graph;
+							nrel_hyperedge;
+							nrel_hypervertex
+						};;
+
+concept_topological_hypergraph <- rrel_key_sc_element:
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_topological_hypergraph.png"
+(*=> nrel_format:format_jpg;;
+*);;
+			*);;
+	*);;
+
+concept_hypergraph => nrel_inclusion: concept_topological_hypergraph;;

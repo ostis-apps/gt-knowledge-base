@@ -1,0 +1,45 @@
+sc_node_class
+    -> concept_geometric_hypergraph;;
+
+concept_geometric_hypergraph => nrel_main_idtf:
+	[геометрический гиперграф](* <-lang_ru;; *);
+	[geometric hypergraph](* <-lang_en;; *);;
+
+concept_geometric_hypergraph <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- definition;;
+		=> nrel_main_idtf: [Опр.(геометрический гиперграф)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Def.(geometric hypergraph)] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation:
+		        ...
+			(*
+			-> rrel_example: 
+				[Геометрический гиперграф - гиперграф, включающий вершины и гиперребра, расположенные в геометрическом пространстве, что позволяет учитывать геометрические свойства и метрики.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Geometric hypergraph - hypergraph that include vertices and hyperbranes located in geometric space, allowing geometric properties and metrics to be taken into account.](*<- lang_en;;*);;
+		*);;
+*);;
+
+concept_geometric_hypergraph <= nrel_using_constants:
+						{
+							concept_graph;
+							nrel_hyperedge;
+							nrel_hypervertex
+						};;
+
+concept_geometric_hypergraph <- rrel_key_sc_element:
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_geometric_hypergraph.png"
+(*=> nrel_format:format_jpg;;
+*);;
+			*);;
+	*);;
+
+concept_hypergraph => nrel_inclusion: concept_geometric_hypergraph;;

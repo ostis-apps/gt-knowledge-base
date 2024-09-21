@@ -1,0 +1,31 @@
+sc_node_class
+    -> concept_semi_structed_hypergraph;;
+
+concept_semi_structed_hypergraph => nrel_main_idtf:
+	[полуструктурированный гиперграф](* <-lang_ru;; *);
+	[semi-structed hypergraph](* <-lang_en;; *);;
+
+concept_semi_structed_hypergraph <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- definition;;
+		=> nrel_main_idtf: [Опр.(полуструктурированный гиперграф)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Def.(semi-structed hypergraph)] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation:
+		        ...
+			(*
+			-> rrel_example: 
+				[Полуструктурированный гиперграф - гиперграф, в котором часть вершин или гиперребер имеют структуру, а часть — нет. Полезен для моделирования данных с частичной структурой.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Semi-structured hypergraph - hypergraph in which part of vertices or hyper edges have a structure and part do not. Useful for modeling data with partial structure.](*<- lang_en;;*);;
+		*);;
+*);;
+
+concept_semi_structed_hypergraph <= nrel_using_constants:
+						{
+							concept_graph;
+							nrel_hyperedge;
+							nrel_hypervertex
+						};;
+
+concept_hypergraph => nrel_inclusion: concept_semi_structed_hypergraph;;

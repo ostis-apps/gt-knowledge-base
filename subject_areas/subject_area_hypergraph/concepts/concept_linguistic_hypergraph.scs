@@ -1,0 +1,45 @@
+sc_node_class
+    -> concept_linguistic_hypergraph;;
+
+concept_linguistic_hypergraph => nrel_main_idtf:
+	[лингвистический гиперграф](* <-lang_ru;; *);
+	[linguistic hypergraph](* <-lang_en;; *);;
+
+concept_linguistic_hypergraph <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- definition;;
+		=> nrel_main_idtf: [Опр.(лингвистический гиперграф)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Def.(linguistic hypergraph)] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation:
+		        ...
+			(*
+			-> rrel_example: 
+				[Лингвистический гиперграф - гиперграф, используемый в обработке естественного языка для представления синтаксических и семантических связей.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Linguistic hypergraph - hypergraph used in natural language processing to represent syntactic and semantic relations.](*<- lang_en;;*);;
+		*);;
+*);;
+
+concept_linguistic_hypergraph <= nrel_using_constants:
+						{
+							concept_graph;
+							nrel_hyperedge;
+							nrel_hypervertex
+						};;
+
+concept_linguistic_hypergraph <- rrel_key_sc_element:
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_linguistic_hypergraph.png"
+(*=> nrel_format:format_jpg;;
+*);;
+			*);;
+	*);;
+
+concept_hypergraph => nrel_inclusion: concept_linguistic_hypergraph;;

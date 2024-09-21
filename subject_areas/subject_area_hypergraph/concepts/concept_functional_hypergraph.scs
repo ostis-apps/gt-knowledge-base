@@ -1,0 +1,31 @@
+sc_node_class
+    -> concept_functional_hypergraph;;
+
+concept_functional_hypergraph => nrel_main_idtf:
+	[функциональный гиперграф](* <-lang_ru;; *);
+	[functional hypergraph](* <-lang_en;; *);;
+
+concept_functional_hypergraph <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- definition;;
+		=> nrel_main_idtf: [Опр.(функциональный гиперграф)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Def.(functional hypergraph)] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation:
+		        ...
+			(*
+			-> rrel_example: 
+				[Функциональный гиперграф - гиперграф, применяемый для моделирования функциональных зависимостей, где гиперребра связывают множество входных переменных с выходными.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Functional hypergraph - hypergraph used for modeling functional dependencies, where hyper edges link a set of input variables to output variables.](*<- lang_en;;*);;
+		*);;
+*);;
+
+concept_functional_hypergraph <= nrel_using_constants:
+						{
+							concept_graph;
+							nrel_hyperedge;
+							nrel_hypervertex
+						};;
+
+concept_hypergraph => nrel_inclusion: concept_functional_hypergraph;;

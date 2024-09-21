@@ -1,0 +1,45 @@
+sc_node_class
+    -> concept_economic_hypergraph;;
+
+concept_economic_hypergraph => nrel_main_idtf:
+	[экономический гиперграф](* <-lang_ru;; *);
+	[economic hypergraph](* <-lang_en;; *);;
+
+concept_economic_hypergraph <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- definition;;
+		=> nrel_main_idtf: [Опр.(экономический гиперграф)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Def.(economic hypergraph)] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation:
+		        ...
+			(*
+			-> rrel_example: 
+				[Экономический гиперграф - гиперграф, применяемый для моделирования экономических взаимодействий, где гиперребра могут представлять множества агентов, участвующих в транзакциях.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Economic hypergraph - hypergraph used to model economic interactions, where hypergraphs can represent sets of agents involved in transactions.](*<- lang_en;;*);;
+		*);;
+*);;
+
+concept_economic_hypergraph <= nrel_using_constants:
+						{
+							concept_graph;
+							nrel_hyperedge;
+							nrel_hypervertex
+						};;
+
+concept_economic_hypergraph <- rrel_key_sc_element:
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_economic_hypergraph.png"
+(*=> nrel_format:format_jpg;;
+*);;
+			*);;
+	*);;
+
+concept_hypergraph => nrel_inclusion: concept_economic_hypergraph;;

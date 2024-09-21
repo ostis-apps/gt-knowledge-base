@@ -1,0 +1,46 @@
+sc_node_class
+    -> concept_information_hypergraph;;
+
+concept_information_hypergraph => nrel_main_idtf:
+	[информационный гиперграф](* <-lang_ru;; *);
+	[information hypergraph](* <-lang_en;; *);;
+
+concept_information_hypergraph <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- definition;;
+		=> nrel_main_idtf: [Опр.(информационный гиперграф)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Def.(information hypergraph)] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation:
+		        ...
+			(*
+			-> rrel_example: 
+				[Информационный гиперграф - гиперграф, используемый для моделирования передачи информации в сетях, где гиперребра могут представлять множество отправителей и получателей.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Information hypergraph - hypergraph used to model information transfer in networks, where hypergraphs can represent multiple senders and receivers.](*<- lang_en;;*);;
+		*);;
+*);;
+
+concept_information_hypergraph <= nrel_using_constants:
+						{
+							concept_graph;
+							nrel_hyperedge;
+							nrel_hypervertex
+						};;
+
+
+concept_information_hypergraph <- rrel_key_sc_element:
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_information_hypergraph.png"
+(*=> nrel_format:format_jpg;;
+*);;
+			*);;
+	*);;
+
+concept_hypergraph => nrel_inclusion: concept_information_hypergraph;;

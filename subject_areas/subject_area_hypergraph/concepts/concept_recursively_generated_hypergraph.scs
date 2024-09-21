@@ -1,0 +1,31 @@
+sc_node_class
+    -> concept_recursively_generated_hypergraph;;
+
+concept_recursively_generated_hypergraph => nrel_main_idtf:
+	[рекурсиво-порождаемый гиперграф](* <-lang_ru;; *);
+	[recursively generated hypergraph](* <-lang_en;; *);;
+
+concept_recursively_generated_hypergraph <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- definition;;
+		=> nrel_main_idtf: [Опр.(рекурсиво-порождаемый гиперграф)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Def.(recursively generated hypergraph)] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation:
+		        ...
+			(*
+			-> rrel_example: 
+				[Рекурсиво-порождаемый гиперграф — достаточно большой гиперграф, принадлежащий классу рекурсивно-порождаемых гиперграфов, который может быть построен последовательным соединением меньших гиперграфов из этого жекласса посредством отождествления специфических вершин, называемых терминалами.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Recursively generated hypergraph — a sufficiently large hypergraph belonging to the class of recursively generated hypergraphs, which can be constructed by successively connecting smaller hypergraphs from this class by identifying specific vertices called terminals.](*<- lang_en;;*);;
+		*);;
+*);;
+
+concept_recursively_generated_hypergraph <= nrel_using_constants:
+						{
+							concept_graph;
+							nrel_hyperedge;
+							nrel_hypervertex
+						};;
+
+concept_hypergraph => nrel_inclusion: concept_recursively_generated_hypergraph;;

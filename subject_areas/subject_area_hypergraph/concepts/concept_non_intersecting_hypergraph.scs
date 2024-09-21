@@ -1,0 +1,31 @@
+sc_node_class
+    -> concept_non_intersecting_hypergraph;;
+
+concept_non_intersecting_hypergraph => nrel_main_idtf:
+	[непересекающийся гиперграф](* <-lang_ru;; *);
+	[non-intersecting hypergraph](* <-lang_en;; *);;
+
+concept_non_intersecting_hypergraph<- rrel_key_sc_element: 
+        ... 
+		(*
+		<- definition;;
+		=> nrel_main_idtf: [Опр.(непересекающийся гиперграф)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Def.(non-intersecting hypergraph)] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation:
+		        ...
+			(*
+			-> rrel_example: 
+				[Непересекающийся гиперграф — обобщение гиперграфа, гиперребра которого не имеют общих вершин, то есть они полностью изолированы друг от друга.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Non-intersecting hypergraph — generalization of a hypergraph whose hyperedges have no common vertices, i.e. they are completely isolated from each other.](*<- lang_en;;*);;
+		*);;
+*);;
+
+concept_non_intersecting_hypergraph <= nrel_using_constants:
+						{
+							concept_graph;
+							nrel_hyperedge;
+							nrel_hypervertex
+						};;
+
+concept_hypergraph => nrel_inclusion: concept_non_intersecting_hypergraph;;

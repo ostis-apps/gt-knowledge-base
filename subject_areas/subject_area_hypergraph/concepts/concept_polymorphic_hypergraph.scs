@@ -1,0 +1,31 @@
+sc_node_class
+    -> concept_polymorphic_hypergraph;;
+
+concept_polymorphic_hypergraph => nrel_main_idtf:
+	[полиморфный гиперграф](* <-lang_ru;; *);
+	[polymorphic hypergraph](* <-lang_en;; *);;
+
+concept_polymorphic_hypergraph <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- definition;;
+		=> nrel_main_idtf: [Опр.(полиморфный гиперграф)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Def.(polymorphic hypergraph)] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation:
+		        ...
+			(*
+			-> rrel_example: 
+				[Полиморфный гиперграф - гиперграф, в котором вершины и гиперребра могут изменять свою форму или тип в зависимости от определенных условий.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Polymorphic hypergraph - a hypergraph in which vertices and hyper edges can change their shape or type depending on certain conditions.](*<- lang_en;;*);;
+		*);;
+*);;
+
+concept_polymorphic_hypergraph <= nrel_using_constants:
+						{
+							concept_graph;
+							nrel_hyperedge;
+							nrel_hypervertex
+						};;
+
+concept_hypergraph => nrel_inclusion: concept_polymorphic_hypergraph;;

@@ -1,0 +1,45 @@
+sc_node_class
+    -> concept_cognitive_hypergraph;;
+
+concept_cognitive_hypergraph => nrel_main_idtf:
+	[когнитивный гиперграф](* <-lang_ru;; *);
+	[cognitive hypergraph](* <-lang_en;; *);;
+
+concept_cognitive_hypergraph <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- definition;;
+		=> nrel_main_idtf: [Опр.(когнитивный гиперграф)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Def.(cognitive hypergraph)] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation:
+		        ...
+			(*
+			-> rrel_example: 
+				[Когнитивный гиперграф - гиперграф, используемый для моделирования процессов мышления и когнитивных функций, включая память и обучение.](*<- lang_ru;;*);;
+			-> rrel_example: 
+				[Cognitive hypergraph - hypergraph used to model thinking processes and cognitive functions, including memory and learning.](*<- lang_en;;*);;
+		*);;
+*);;
+
+concept_cognitive_hypergraph <= nrel_using_constants:
+						{
+							concept_graph;
+							nrel_hyperedge;
+							nrel_hypervertex
+						};;
+
+concept_cognitive_hypergraph <- rrel_key_sc_element:
+	...
+	(*
+		<- illustration;;
+		<= nrel_sc_text_translation:
+		...
+			(*
+			-> rrel_example:
+				"file://contents/concept_cognitive_hypergraph.png"
+(*=> nrel_format:format_jpg;;
+*);;
+			*);;
+	*);;
+
+concept_hypergraph => nrel_inclusion: concept_cognitive_hypergraph;;

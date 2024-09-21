@@ -1,0 +1,39 @@
+sc_node_norole_relation
+    -> nrel_hyperedge;;
+
+nrel_hyperedge => nrel_main_idtf:
+	[Гиперребро*](* <-lang_ru;; *);
+	[Hyperedge*](* <-lang_en;; *);;
+	
+nrel_hyperedge  <- rrel_key_sc_element: 
+        ... 
+		(*
+		<- definition;;
+		=> nrel_main_idtf: [Опр.(гиперребро)] (* <- lang_ru;; *);;
+		=> nrel_main_idtf: [Def.(hyperedge)] (* <- lang_en;; *);;
+		<= nrel_sc_text_translation: ...
+			(*
+			-> rrel_example: 
+				[Гиперребро - это элемент гиперграфа, который обобщает понятие ребра в обычном графе. В обычном графе ребро представляет собой связь между двумя вершинами. 
+				В гиперграфе гиперребро может соединять произвольное количество вершин, больше чем две. 
+				Формально, гиперребро в гиперграфе определяется как набор вершин, которые оно связывает. 
+				Например, если обычное ребро связывает вершины A и B, то гиперребро может связывать вершины A, B и C, или даже больше вершин. 
+				Гиперребро в гиперграфе может быть представлено как подмножество вершин гиперграфа. 
+				Каждое гиперребро может содержать разное количество вершин и иметь разные свойства, в зависимости от контекста задачи или приложения, в котором используется гиперграф.]
+				(*<- lang_ru;;*);;
+			-> rrel_example: 
+				[A hyperedge is an element of a hypergraph that generalizes the notion of an edge in a regular graph. In a regular graph, an edge is a connection between two vertices. 
+				In a hypergraph, a hyperedge can connect any number of vertices greater than two. 
+				Formally, a hyperedge in a hypergraph is defined as the set of vertices it connects. 
+				For example, if a regular edge connects vertices A and B, then a hyperedge can connect vertices A, B and C, or even more vertices. 
+				A hyper-edge in a hypergraph can be represented as a subset of the vertices of the hypergraph. 
+				Each hypergraph may contain a different number of vertices and have different properties, depending on the context of the problem or application in which the hypergraph is used.]
+				(*<- lang_en;;*);;
+		*);;
+*);;
+
+nrel_hyperedge <= nrel_using_constants:
+						{
+							concept_edge
+						};;
+
