@@ -1,4 +1,5 @@
-sc_node -> concept_non_intersecting_hypergraph;;
+sc_node_class
+    -> concept_non_intersecting_hypergraph;;
 
 concept_non_intersecting_hypergraph => nrel_main_idtf:
 	[непересекающийся гиперграф](* <-lang_ru;; *);

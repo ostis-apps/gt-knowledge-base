@@ -1,4 +1,5 @@
-sc_node -> concept_logical_hypergraph;;
+sc_node_class
+    -> concept_logical_hypergraph;;
 
 concept_logical_hypergraph => nrel_main_idtf:
 	[логический гиперграф](* <-lang_ru;; *);

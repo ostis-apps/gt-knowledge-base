@@ -1,4 +1,5 @@
-sc_node -> concept_geometric_hypergraph;;
+sc_node_class
+    -> concept_geometric_hypergraph;;
 
 concept_geometric_hypergraph => nrel_main_idtf:
 	[геометрический гиперграф](* <-lang_ru;; *);

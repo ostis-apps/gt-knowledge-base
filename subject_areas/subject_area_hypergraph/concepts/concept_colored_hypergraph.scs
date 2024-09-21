@@ -1,4 +1,5 @@
-sc_node -> concept_colored_hypergraph;;
+sc_node_class
+    -> concept_colored_hypergraph;;
 
 concept_colored_hypergraph => nrel_main_idtf:
 	[цветной гиперграф](* <-lang_ru;; *);

@@ -1,4 +1,5 @@
-sc_node -> concept_cohesive_hypergraph;;
+sc_node_class
+    -> concept_cohesive_hypergraph;;
 
 concept_cohesive_hypergraph => nrel_main_idtf:
 	[когезивный гиперграф](* <-lang_ru;; *);

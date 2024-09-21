@@ -1,4 +1,5 @@
-sc_node -> concept_transportation_hypergraph;;
+sc_node_class
+    -> concept_transportation_hypergraph;;
 
 concept_transportation_hypergraph => nrel_main_idtf:
 	[транспортный гиперграф](* <-lang_ru;; *);

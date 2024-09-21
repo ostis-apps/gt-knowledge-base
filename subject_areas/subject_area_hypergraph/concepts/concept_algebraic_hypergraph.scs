@@ -1,4 +1,5 @@
-sc_node -> concept_algebraic_hypergraph;;
+sc_node_class
+    -> concept_algebraic_hypergraph;;
 
 concept_algebraic_hypergraph => nrel_main_idtf:
 	[алгебраический гиперграф](* <-lang_ru;; *);

@@ -1,4 +1,5 @@
-sc_node -> concept_dynamic_weighted_hypergraph;;
+sc_node_class
+    -> concept_dynamic_weighted_hypergraph;;
 
 concept_dynamic_weighted_hypergraph => nrel_main_idtf:
 	[гиперграф с динамическим весом](* <-lang_ru;; *);

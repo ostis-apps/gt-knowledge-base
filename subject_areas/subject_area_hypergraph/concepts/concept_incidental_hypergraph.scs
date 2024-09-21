@@ -1,4 +1,5 @@
-sc_node -> concept_incidental_hypergraph;;
+sc_node_class
+    -> concept_incidental_hypergraph;;
 
 concept_incidental_hypergraph => nrel_main_idtf:
 	[ицидентный гиперграф](* <-lang_ru;; *);

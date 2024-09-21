@@ -1,4 +1,5 @@
-sc_node -> concept_semi_structed_hypergraph;;
+sc_node_class
+    -> concept_semi_structed_hypergraph;;
 
 concept_semi_structed_hypergraph => nrel_main_idtf:
 	[полуструктурированный гиперграф](* <-lang_ru;; *);

@@ -1,4 +1,5 @@
-sc_node -> concept_flow_hypergraph;;
+sc_node_class
+    -> concept_flow_hypergraph;;
 
 concept_flow_hypergraph => nrel_main_idtf:
 	[потоковый гиперграф](* <-lang_ru;; *);

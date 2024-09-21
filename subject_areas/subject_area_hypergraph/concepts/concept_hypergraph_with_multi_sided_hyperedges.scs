@@ -1,4 +1,5 @@
-sc_node -> concept_hypergraph_with_multi_sided_hyperedges;;
+sc_node_class
+    -> concept_hypergraph_with_multi_sided_hyperedges;;
 
 concept_hypergraph_with_multi_sided_hyperedges => nrel_main_idtf:
 	[гиперграф с многосторонними гиперребрами](* <-lang_ru;; *);

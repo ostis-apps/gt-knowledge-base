@@ -1,4 +1,5 @@
-sc_node -> concept_k_hypergraph;;
+sc_node_class
+    -> concept_k_hypergraph;;
 
 concept_k_hypergraph => nrel_main_idtf:
 	[k-гиперграф](* <-lang_ru;; *);

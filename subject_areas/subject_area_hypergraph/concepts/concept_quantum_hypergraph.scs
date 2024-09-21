@@ -1,4 +1,5 @@
-sc_node -> concept_quantum_hypergraph;;
+sc_node_class
+    -> concept_quantum_hypergraph;;
 
 concept_quantum_hypergraph => nrel_main_idtf:
 	[квантовый гиперграф](* <-lang_ru;; *);

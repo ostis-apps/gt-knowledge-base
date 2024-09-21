@@ -1,4 +1,5 @@
-sc_node -> concept_information_hypergraph;;
+sc_node_class
+    -> concept_information_hypergraph;;
 
 concept_information_hypergraph => nrel_main_idtf:
 	[информационный гиперграф](* <-lang_ru;; *);

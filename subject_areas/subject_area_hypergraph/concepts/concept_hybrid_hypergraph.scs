@@ -1,4 +1,5 @@
-sc_node -> concept_hybrid_hypergraph;;
+sc_node_class
+    -> concept_hybrid_hypergraph;;
 
 concept_hybrid_hypergraph => nrel_main_idtf:
 	[гибридный гиперграф](* <-lang_ru;; *);

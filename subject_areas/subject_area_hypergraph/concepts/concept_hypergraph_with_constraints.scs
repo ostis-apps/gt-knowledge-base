@@ -1,4 +1,5 @@
-sc_node -> concept_hypergraph_with_constraints;;
+sc_node_class
+    -> concept_hypergraph_with_constraints;;
 
 concept_hypergraph_with_constraints => nrel_main_idtf:
 	[гиперграф с ограничениями](* <-lang_ru;; *);

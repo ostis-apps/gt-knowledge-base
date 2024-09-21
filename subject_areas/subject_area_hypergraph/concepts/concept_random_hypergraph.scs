@@ -1,4 +1,5 @@
-sc_node -> concept_random_hypergraph;;
+sc_node_class
+    -> concept_random_hypergraph;;
 
 concept_random_hypergraph => nrel_main_idtf:
 	[случайный гиперграф](* <-lang_ru;; *);

@@ -1,4 +1,5 @@
-sc_node -> concept_cognitive_hypergraph;;
+sc_node_class
+    -> concept_cognitive_hypergraph;;
 
 concept_cognitive_hypergraph => nrel_main_idtf:
 	[когнитивный гиперграф](* <-lang_ru;; *);
