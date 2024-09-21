@@ -1,4 +1,5 @@
-sc_node -> concept_region_quadtree;;
+sc_node_class
+    -> concept_region_quadtree;;
 
 concept_region_quadtree => nrel_main_idtf:
 	[дерево квадрантов, разбивающее пространство](* <-lang_ru;; *);

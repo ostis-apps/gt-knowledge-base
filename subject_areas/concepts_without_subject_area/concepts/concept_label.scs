@@ -1,4 +1,5 @@
-sc_node->concept_label;;
+sc_node_class
+    -> concept_label;;
 
 concept_label	=> nrel_main_idtf: 
 		[метка] (* <-lang_ru;; *);

@@ -1,4 +1,5 @@
-sc_node -> concept_binary_search_tree;;
+sc_node_class
+    -> concept_binary_search_tree;;
 
 concept_binary_search_tree => nrel_main_idtf:
 	[двоичное дерево поиска](* <-lang_ru;; *);

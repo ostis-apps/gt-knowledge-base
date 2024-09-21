@@ -1,4 +1,5 @@
-sc_node -> concept_leftist_heap;;
+sc_node_class
+    -> concept_leftist_heap;;
 
 concept_leftist_heap => nrel_main_idtf:
 	[левосторонняя куча](* <-lang_ru;; *);

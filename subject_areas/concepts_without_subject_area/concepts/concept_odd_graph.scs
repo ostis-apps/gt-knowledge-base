@@ -1,4 +1,5 @@
-sc_node -> concept_odd_graph;;
+sc_node_class
+    -> concept_odd_graph;;
 
 concept_odd_graph => nrel_main_idtf: 
 		[нечетный граф] (* <-lang_ru;; *);

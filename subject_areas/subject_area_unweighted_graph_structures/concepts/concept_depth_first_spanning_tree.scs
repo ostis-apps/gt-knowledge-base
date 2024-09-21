@@ -1,4 +1,5 @@
-sc_node -> concept_depth_first_spanning_tree;;
+sc_node_class
+    -> concept_depth_first_spanning_tree;;
 
 concept_depth_first_spanning_tree => nrel_main_idtf:
     [глубинное остовное дерево]

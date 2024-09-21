@@ -1,4 +1,5 @@
-sc_node -> concept_aa_tree;;
+sc_node_class
+    -> concept_aa_tree;;
 
 concept_aa_tree => nrel_main_idtf:
 	[AA-дерево](* <-lang_ru;; *);

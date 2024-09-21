@@ -1,4 +1,5 @@
-sc_node ->concept_planar_graph;;
+sc_node_class
+    -> concept_planar_graph;;
 
 concept_planar_graph => nrel_main_idtf:
 	[планарный граф](* <-lang_ru;; *);

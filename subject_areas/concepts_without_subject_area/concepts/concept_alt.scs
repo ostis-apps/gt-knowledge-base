@@ -1,5 +1,5 @@
 concept_alt
-	<- sc_node;
+<- sc_node_class;
 
 	=> nrel_main_idtf: [альт] (* <- lang_ru;; *);
 	=> nrel_main_idtf: [alt] (* <- lang_en;; *);

@@ -1,4 +1,5 @@
-sc_node -> concept_directable_graph;;
+sc_node_class
+    -> concept_directable_graph;;
 concept_directable_graph => nrel_main_idtf:[ориентируемый граф](* <-lang_ru;; *);;
 concept_directable_graph => nrel_idtf:[directable graph](* <- lang_en;; *);;
 

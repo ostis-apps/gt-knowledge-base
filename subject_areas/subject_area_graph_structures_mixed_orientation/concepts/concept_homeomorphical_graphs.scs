@@ -1,4 +1,5 @@
-sc_node -> concept_homeomorphical_graphs;;
+sc_node_class
+    -> concept_homeomorphical_graphs;;
 concept_homeomorphical_graphs => nrel_main_idtf:[гомеоморфные графы](* <-lang_ru;; *);;
 concept_homeomorphical_graphs => nrel_idtf:[homeomorphical graphs](* <- lang_en;; *);;
 

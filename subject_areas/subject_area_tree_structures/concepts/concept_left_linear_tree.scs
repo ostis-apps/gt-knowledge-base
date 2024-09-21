@@ -1,4 +1,5 @@
-sc_node -> concept_left_linear_tree;;
+sc_node_class
+    -> concept_left_linear_tree;;
 
 concept_left_linear_tree => nrel_main_idtf:
 	[левостороннее дерево](* <-lang_ru;; *);

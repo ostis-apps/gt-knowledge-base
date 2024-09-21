@@ -1,4 +1,5 @@
-sc_node -> concept_ternary_search_tree;;
+sc_node_class
+    -> concept_ternary_search_tree;;
 
 concept_ternary_search_tree => nrel_main_idtf:
 	[тернарное дерево поиска](* <-lang_ru;; *);

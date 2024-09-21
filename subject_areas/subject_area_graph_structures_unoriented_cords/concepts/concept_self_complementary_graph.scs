@@ -1,4 +1,5 @@
-sc_node -> concept_self_complementary_graph;;
+sc_node_class
+    -> concept_self_complementary_graph;;
 
 concept_self_complementary_graph => nrel_main_idtf:
 	[самодополнительный граф] (* <- lang_ru;; *);;

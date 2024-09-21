@@ -1,4 +1,5 @@
-sc_node -> concept_growing_tree;;
+sc_node_class
+    -> concept_growing_tree;;
 
 concept_growing_tree => nrel_main_idtf:
 	[растущее дерево] (* <- lang_ru;; *);

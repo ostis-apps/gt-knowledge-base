@@ -1,4 +1,5 @@
-sc_node -> concept_split_graph;;
+sc_node_class
+    -> concept_split_graph;;
 concept_split_graph
 
 	=> nrel_main_idtf: 

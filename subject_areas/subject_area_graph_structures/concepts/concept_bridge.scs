@@ -1,4 +1,5 @@
-sc_node ->concept_bridge;;
+sc_node_class
+    -> concept_bridge;;
 
 concept_bridge
 => nrel_main_idtf:

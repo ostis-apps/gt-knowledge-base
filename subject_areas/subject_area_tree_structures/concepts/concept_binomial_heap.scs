@@ -1,4 +1,5 @@
-sc_node -> concept_binomial_heap;;
+sc_node_class
+    -> concept_binomial_heap;;
 
 concept_binomial_heap => nrel_main_idtf:
 	[биномиальная куча](* <-lang_ru;; *);

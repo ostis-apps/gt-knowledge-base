@@ -1,4 +1,5 @@
-sc_node -> concept_chorde;;
+sc_node_class
+    -> concept_chorde;;
 concept_chorde => nrel_main_idtf:
 	[хорда] (* <- lang_ru;; *);
 	[chorde] (* <- lang_en;; *);;

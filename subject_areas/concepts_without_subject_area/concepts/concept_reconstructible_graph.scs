@@ -1,4 +1,5 @@
-sc_node -> concept_reconstructible_graph;;
+sc_node_class
+    -> concept_reconstructible_graph;;
 concept_reconstructible_graph => nrel_main_idtf:
 	[Реконструируемый граф] (* <- lang_ru;;*);
 	[Regularizable graph] (* <- lang_en;;*);;

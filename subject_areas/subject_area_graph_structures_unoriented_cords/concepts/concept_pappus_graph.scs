@@ -1,4 +1,5 @@
-sc_node->concept_pappus_graph;;
+sc_node_class
+    -> concept_pappus_graph;;
 
 	concept_pappus_graph => nrel_main_idtf:
 	[граф Паппа](* <-lang_ru;; *);;

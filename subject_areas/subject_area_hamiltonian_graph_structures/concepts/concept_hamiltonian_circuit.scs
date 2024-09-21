@@ -1,4 +1,5 @@
-sc_node -> concept_hamiltonian_circuit;;
+sc_node_class
+    -> concept_hamiltonian_circuit;;
 
 
 concept_hamiltonian_circuit

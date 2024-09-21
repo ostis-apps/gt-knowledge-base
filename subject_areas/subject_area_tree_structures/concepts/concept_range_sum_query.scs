@@ -1,4 +1,5 @@
-sc_node -> concept_range_sum_query;;
+sc_node_class
+    -> concept_range_sum_query;;
 
 concept_range_sum_query => nrel_main_idtf:
 	[дерево сумм](* <-lang_ru;; *);

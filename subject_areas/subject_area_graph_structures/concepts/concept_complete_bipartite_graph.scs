@@ -1,4 +1,5 @@
-sc_node -> concept_complete_bipartite_graph;;
+sc_node_class
+    -> concept_complete_bipartite_graph;;
 concept_complete_bipartite_graph => nrel_main_idtf:
 	[полный двудольный граф] (* <- lang_ru;; *);
 	[complete bipartite graph] (* <- lang_en;; *);;

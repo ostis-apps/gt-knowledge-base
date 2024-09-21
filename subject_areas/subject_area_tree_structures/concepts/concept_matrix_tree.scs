@@ -1,4 +1,5 @@
-sc_node -> concept_matrix_tree;;
+sc_node_class
+    -> concept_matrix_tree;;
 
 concept_matrix_tree => nrel_main_idtf:
 	[матричное дерево](* <-lang_ru;; *);

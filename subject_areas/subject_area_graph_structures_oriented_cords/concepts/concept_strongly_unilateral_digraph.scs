@@ -1,4 +1,5 @@
-sc_node -> concept_strongly_unilateral_digraph;;
+sc_node_class
+    -> concept_strongly_unilateral_digraph;;
 concept_strongly_unilateral_digraph => nrel_main_idtf:[строго односторонний орграф](* <-lang_ru;; *);;
 concept_strongly_unilateral_digraph => nrel_idtf:[strongly unilateral digraph](* <- lang_en;; *);;
 

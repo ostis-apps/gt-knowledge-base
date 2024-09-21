@@ -1,4 +1,5 @@
-sc_node -> concept_biparental_heap;;
+sc_node_class
+    -> concept_biparental_heap;;
 
 concept_biparental_heap => nrel_main_idtf:
 	[двуродительская куча](* <-lang_ru;; *);

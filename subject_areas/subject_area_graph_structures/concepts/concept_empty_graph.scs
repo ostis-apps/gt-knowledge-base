@@ -1,4 +1,5 @@
-sc_node->concept_empty_graph;;
+sc_node_class
+    -> concept_empty_graph;;
 
 concept_empty_graph => nrel_main_idtf:
 	[ пустой граф ] (* <-lang_ru;; *);

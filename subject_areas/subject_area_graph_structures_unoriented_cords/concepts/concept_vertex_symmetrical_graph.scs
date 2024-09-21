@@ -1,4 +1,5 @@
-sc_node->concept_vertex_symmetrical_graph;;
+sc_node_class
+    -> concept_vertex_symmetrical_graph;;
 
 concept_vertex_symmetrical_graph => nrel_main_idtf:
 	[вершинно-симметрический граф](* <-lang_ru;; *);;

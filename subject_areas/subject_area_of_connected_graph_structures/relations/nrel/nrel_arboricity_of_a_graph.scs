@@ -1,4 +1,5 @@
-sc_node->nrel_arboricity_of_a_graph;;
+sc_node_norole_relation
+    -> nrel_arboricity_of_a_graph;;
 
 nrel_arboricity_of_a_graph => nrel_main_idtf:
 	[древесность графа*](* <-lang_ru;; *);

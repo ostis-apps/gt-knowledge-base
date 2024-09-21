@@ -1,4 +1,5 @@
-sc_node ->concept_family_independent_set_of_vertices;;
+sc_node_class
+    -> concept_family_independent_set_of_vertices;;
 
 concept_family_independent_set_of_vertices
 => nrel_main_idtf: 

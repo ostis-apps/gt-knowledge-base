@@ -1,4 +1,5 @@
-sc_node->concept_degenerate_tree;;
+sc_node_class
+    -> concept_degenerate_tree;;
 
 concept_degenerate_tree => nrel_main_idtf:
 	[вырожденное дерево](* <-lang_ru;; *);;

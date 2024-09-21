@@ -1,4 +1,5 @@
-sc_node -> concept_planar_triangulation;;
+sc_node_class
+    -> concept_planar_triangulation;;
 concept_planar_triangulation => nrel_main_idtf:[плоская триангуляция](* <-lang_ru;; *);;
 concept_planar_triangulation => nrel_idtf: [planar triangulation](* <- lang_en;; *);;
 

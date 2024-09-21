@@ -1,4 +1,5 @@
-sc_node -> concept_structured_graph;;
+sc_node_class
+    -> concept_structured_graph;;
 concept_structured_graph => nrel_main_idtf:
 	[Структурный граф] (* <- lang_ru;;*);
 	[Structured graph] (* <- lang_en;;*);;

@@ -1,4 +1,5 @@
-sc_node->nrel_maximal_tree;;
+sc_node_norole_relation
+    -> nrel_maximal_tree;;
 
 nrel_maximal_tree => nrel_main_idtf:
 	[максимальное дерево*](* <-lang_ru;; *);

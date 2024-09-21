@@ -7,7 +7,7 @@
         <node type="node/const/group" idtf="concept_weighted_graph" shapeColor="0" id="36542160" parent="0" left="0" top="0" right="194.031" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="240" y="90" haveBus="false" idtf_pos="0">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
-        <node type="node/const/relation" idtf="concept_vertex_weighted_graph" shapeColor="0" id="36524496" parent="0" left="0" top="0" right="247.609" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="-240" y="345" haveBus="false" idtf_pos="1">
+        <node type="node/const/group" idtf="concept_vertex_weighted_graph" shapeColor="0" id="36524496" parent="0" left="0" top="0" right="247.609" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="-240" y="345" haveBus="false" idtf_pos="1">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
         <node type="node/const/group" idtf="concept_edge_weighted_graph" shapeColor="0" id="36507184" parent="0" left="0" top="0" right="236.75" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="-240" y="165" haveBus="false" idtf_pos="1">
@@ -16,13 +16,13 @@
         <node type="node/const/group" idtf="concept_weighted_tree" shapeColor="0" id="36489680" parent="0" left="0" top="0" right="180.25" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="-240" y="195" haveBus="false" idtf_pos="1">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
-        <node type="node/const/relation" idtf="concept_weighted_dycks_word" shapeColor="0" id="36454720" parent="0" left="0" top="0" right="235.984" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="-240" y="240" haveBus="false" idtf_pos="1">
+        <node type="node/const/group" idtf="concept_weighted_dycks_word" shapeColor="0" id="36454720" parent="0" left="0" top="0" right="235.984" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="-240" y="240" haveBus="false" idtf_pos="1">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
         <node type="node/const/group" idtf="concept_transportation_network" shapeColor="0" id="36437088" parent="0" left="0" top="0" right="249.906" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="-240" y="270" haveBus="false" idtf_pos="1">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
-        <node type="node/const/relation" idtf="concept_shortest_steiner_tree" shapeColor="0" id="36419504" parent="0" left="0" top="0" right="231.563" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="-240" y="315" haveBus="false" idtf_pos="1">
+        <node type="node/const/group" idtf="concept_shortest_steiner_tree" shapeColor="0" id="36419504" parent="0" left="0" top="0" right="231.563" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="-240" y="315" haveBus="false" idtf_pos="1">
             <content type="0" mime_type="" content_visibility="false" file_name=""/>
         </node>
         <node type="node/const/group" idtf="concept_graph_algorithm" shapeColor="0" id="36402576" parent="0" left="0" top="0" right="195.188" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="-240" y="390" haveBus="false" idtf_pos="1">

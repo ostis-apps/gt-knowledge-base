@@ -1,4 +1,5 @@
-sc_node -> concept_reverse_digraph;;
+sc_node_class
+    -> concept_reverse_digraph;;
 concept_reverse_digraph => nrel_main_idtf:[обратный орграф](* <-lang_ru;; *);;
 concept_reverse_digraph => nrel_idtf:[reverse digraph](* <- lang_en;; *);;
 

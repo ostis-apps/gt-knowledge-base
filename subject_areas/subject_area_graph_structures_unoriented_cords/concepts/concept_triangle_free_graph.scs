@@ -1,4 +1,5 @@
-sc_node->concept_triangle_free_graph;;
+sc_node_class
+    -> concept_triangle_free_graph;;
 
 concept_triangle_free_graph => nrel_main_idtf:
 	[граф без треугольников](* <-lang_ru;; *);;

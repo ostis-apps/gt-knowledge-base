@@ -1,4 +1,5 @@
-sc_node -> concept_signed_labeled_graph;;
+sc_node_class
+    -> concept_signed_labeled_graph;;
 
 concept_graph =>nrel_inclusion: concept_signed_labeled_graph;;
 

@@ -1,4 +1,5 @@
-sc_node -> concept_r_tree;;
+sc_node_class
+    -> concept_r_tree;;
 
 concept_r_tree => nrel_main_idtf:
 	[R-дерево](* <-lang_ru;; *);

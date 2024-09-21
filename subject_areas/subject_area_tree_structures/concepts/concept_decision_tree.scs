@@ -1,4 +1,5 @@
-sc_node -> concept_decision_tree;;
+sc_node_class
+    -> concept_decision_tree;;
 concept_decision_tree => nrel_main_idtf:
 	[дерево решений] (* <- lang_ru;; *);
 	[decision tree] (* <- lang_en;; *);;

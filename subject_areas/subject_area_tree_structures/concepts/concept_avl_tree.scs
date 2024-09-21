@@ -1,4 +1,5 @@
-sc_node -> concept_avl_tree;;
+sc_node_class
+    -> concept_avl_tree;;
 
 concept_avl_tree => nrel_main_idtf:
 	[АВЛ-дерево](* <-lang_ru;; *);

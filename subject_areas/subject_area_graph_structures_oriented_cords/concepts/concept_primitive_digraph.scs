@@ -1,4 +1,5 @@
-sc_node -> concept_primitive_digraph;;
+sc_node_class
+    -> concept_primitive_digraph;;
 
 concept_primitive_digraph => nrel_main_idtf:[примитивный орграф] (* <- lang_ru;; *);;
 concept_primitive_digraph => nrel_idtf:[primitive digraph] (* <- lang_en;; *);;

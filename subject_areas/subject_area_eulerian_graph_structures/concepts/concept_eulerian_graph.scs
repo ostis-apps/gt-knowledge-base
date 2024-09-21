@@ -1,4 +1,5 @@
-sc_node -> concept_eulerian_graph;;
+sc_node_class
+    -> concept_eulerian_graph;;
 
 concept_eulerian_graph => nrel_main_idtf:
 	[эйлеров граф](* <-lang_ru;; *);

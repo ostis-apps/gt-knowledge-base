@@ -1,4 +1,5 @@
-sc_node->concept_trapezoid_graph;;
+sc_node_class
+    -> concept_trapezoid_graph;;
 
 concept_trapezoid_graph => nrel_main_idtf:
 	[трапецеидальным граф](* <-lang_ru;; *);

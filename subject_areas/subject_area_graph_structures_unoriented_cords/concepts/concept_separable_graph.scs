@@ -1,4 +1,5 @@
-sc_node -> concept_separable_graph;;
+sc_node_class
+    -> concept_separable_graph;;
 concept_separable_graph => nrel_main_idtf:
 	[разделимый граф] (* <- lang_ru;; *);;
 concept_separable_graph => nrel_idtf:

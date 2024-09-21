@@ -1,4 +1,5 @@
-sc_node -> concept_regularizable_graph;;
+sc_node_class
+    -> concept_regularizable_graph;;
 concept_regularizable_graph => nrel_main_idtf:
 	[Регуляризуемый граф] (* <- lang_ru;;*);
 	[Regularizable graph] (* <- lang_en;;*);;

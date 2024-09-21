@@ -1,4 +1,5 @@
-sc_node -> concept_residual_network;;
+sc_node_class
+    -> concept_residual_network;;
 
 concept_residual_network => nrel_main_idtf:[остаточная сеть] (* <- lang_ru;; *);;
 concept_residual_network => nrel_idtf:[residual network] (* <- lang_en;; *);;

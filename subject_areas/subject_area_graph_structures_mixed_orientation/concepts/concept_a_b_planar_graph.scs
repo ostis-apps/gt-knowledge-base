@@ -1,4 +1,5 @@
-sc_node -> concept_a_b_planar_graph;;
+sc_node_class
+    -> concept_a_b_planar_graph;;
 concept_a_b_planar_graph => nrel_main_idtf:[(a,b)-плоский граф](* <-lang_ru;; *);;
 concept_a_b_planar_graph => nrel_idtf: [(a,b)-planar graph](* <- lang_en;; *);;
 

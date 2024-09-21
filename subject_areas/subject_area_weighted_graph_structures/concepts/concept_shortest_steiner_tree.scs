@@ -1,5 +1,5 @@
 concept_shortest_steiner_tree
-<- sc_node;
+<- sc_node_class;
 => nrel_main_idtf:
 	[кратчайшее дерево Штейнера]
 	(* <- lang_ru;; *);

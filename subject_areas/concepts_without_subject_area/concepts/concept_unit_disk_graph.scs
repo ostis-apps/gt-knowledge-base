@@ -1,4 +1,5 @@
-sc_node->concept_unit_disk_graph;;
+sc_node_class
+    -> concept_unit_disk_graph;;
 
 concept_unit_disk_graph => nrel_main_idtf:
 	[граф единичных кругов](* <-lang_ru;; *);

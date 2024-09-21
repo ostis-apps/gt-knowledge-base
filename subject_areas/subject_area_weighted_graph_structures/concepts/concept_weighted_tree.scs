@@ -1,5 +1,5 @@
 concept_weighted_tree
-<- sc_node;
+<- sc_node_class;
 => nrel_main_idtf:
 	[взвешенное дерево]
 	(* <- lang_ru;; *);

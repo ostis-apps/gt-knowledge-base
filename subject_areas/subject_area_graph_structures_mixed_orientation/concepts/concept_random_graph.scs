@@ -1,4 +1,5 @@
-sc_node -> concept_random_graph;;
+sc_node_class
+    -> concept_random_graph;;
 concept_random_graph => nrel_main_idtf:[случайный граф](* <-lang_ru;; *);;
 concept_random_graph => nrel_idtf:[random graph](* <- lang_en;; *);;
 

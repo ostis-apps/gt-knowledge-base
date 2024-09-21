@@ -1,4 +1,5 @@
-sc_node -> concept_star_graph;;
+sc_node_class
+    -> concept_star_graph;;
 concept_star_graph
 
 	=> nrel_main_idtf: 

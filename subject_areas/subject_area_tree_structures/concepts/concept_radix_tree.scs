@@ -1,4 +1,5 @@
-sc_node -> concept_radix_tree;;
+sc_node_class
+    -> concept_radix_tree;;
 
 concept_radix_tree => nrel_main_idtf:
 	[дерево остатков](* <-lang_ru;; *);

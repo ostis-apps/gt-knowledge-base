@@ -1,4 +1,5 @@
-sc_node -> concept_triangle_graph;;
+sc_node_class
+    -> concept_triangle_graph;;
 concept_triangle_graph => nrel_main_idtf:
 	[треугольный граф] (* <- lang_ru;; *);
 	[graph-triangle] (* <- lang_en;; *);;

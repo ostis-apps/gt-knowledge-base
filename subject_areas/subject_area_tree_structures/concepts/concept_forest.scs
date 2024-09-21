@@ -1,4 +1,5 @@
-sc_node -> concept_forest;;
+sc_node_class
+    -> concept_forest;;
 
 concept_forest => nrel_main_idtf:
 	[лес](* <-lang_ru;; *);

@@ -1,4 +1,5 @@
-sc_node -> concept_alpha_permutation_graph;;
+sc_node_class
+    -> concept_alpha_permutation_graph;;
 concept_alpha_permutation_graph => nrel_main_idtf:[альфа-перестановочный граф](* <-lang_ru;; *);;
 concept_alpha_permutation_graph => nrel_idtf:[alpha-permutation graph](* <- lang_en;; *);;
 

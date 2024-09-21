@@ -1,4 +1,5 @@
-sc_node -> concept_undirected_tree;;
+sc_node_class
+    -> concept_undirected_tree;;
 
 concept_undirected_tree => nrel_main_idtf:
 	[неориентированное дерево](* <-lang_ru;; *);

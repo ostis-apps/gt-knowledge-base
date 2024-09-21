@@ -1,4 +1,5 @@
-sc_node -> concept_sorting_tree;;
+sc_node_class
+    -> concept_sorting_tree;;
 concept_sorting_tree => nrel_main_idtf:
 	[дерево сортировки] (* <- lang_ru;; *);
 	[sorting tree] (* <- lang_en;; *);;

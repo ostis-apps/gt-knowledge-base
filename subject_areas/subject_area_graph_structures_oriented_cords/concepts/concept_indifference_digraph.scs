@@ -1,4 +1,5 @@
-sc_node -> concept_indifference_digraph;;
+sc_node_class
+    -> concept_indifference_digraph;;
 
 sc_node -> function;;
 function => nrel_main_idtf:

@@ -1,4 +1,5 @@
-sc_node -> concept_red_black_tree;;
+sc_node_class
+    -> concept_red_black_tree;;
 
 concept_red_black_tree => nrel_main_idtf:
 	[красно-черное дерево](* <-lang_ru;; *);

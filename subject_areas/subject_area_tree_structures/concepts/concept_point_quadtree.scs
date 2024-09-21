@@ -1,4 +1,5 @@
-sc_node -> concept_point_quadtree;;
+sc_node_class
+    -> concept_point_quadtree;;
 
 concept_point_quadtree => nrel_main_idtf:
 	[деревья квадрантов, хранящие информацию о точках](* <-lang_ru;; *);

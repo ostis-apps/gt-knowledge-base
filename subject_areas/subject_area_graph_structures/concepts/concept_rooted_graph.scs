@@ -1,4 +1,5 @@
-sc_node->concept_rooted_graph;;
+sc_node_class
+    -> concept_rooted_graph;;
 
 concept_rooted_graph	=> nrel_main_idtf: 
 		[корневой граф] (* <-lang_ru;; *);

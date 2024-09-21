@@ -1,4 +1,5 @@
-sc_node -> concept_edge_quadtree;;
+sc_node_class
+    -> concept_edge_quadtree;;
 
 concept_edge_quadtree => nrel_main_idtf:
 	[дерево квадрантов, хранящее информацию о линиях](* <-lang_ru;; *);

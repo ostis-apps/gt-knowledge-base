@@ -1,5 +1,5 @@
 concept_exercise
-<- sc_node;
+<- sc_node_class;
 => nrel_main_idtf:
 	[упражнение]
 	(* <- lang_ru;;	*);

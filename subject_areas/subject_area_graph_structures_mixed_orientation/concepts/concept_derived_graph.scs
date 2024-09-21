@@ -1,4 +1,5 @@
-sc_node -> concept_derived_graph;;
+sc_node_class
+    -> concept_derived_graph;;
 concept_derived_graph => nrel_main_idtf:[производный граф](* <-lang_ru;; *);;
 concept_derived_graph => nrel_idtf:[derived graph](* <- lang_en;; *);;
 

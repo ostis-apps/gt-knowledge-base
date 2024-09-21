@@ -1,4 +1,5 @@
-sc_node -> concept_clebsch_graph;;
+sc_node_class
+    -> concept_clebsch_graph;;
 
 concept_clebsch_graph => nrel_main_idtf:
     [граф Клебша]

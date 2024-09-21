@@ -1,4 +1,5 @@
-sc_node -> concept_unilaterally_connected_digraph;;
+sc_node_class
+    -> concept_unilaterally_connected_digraph;;
 
 concept_unilaterally_connected_digraph => nrel_main_idtf:[односторонне связный орграф] (* <- lang_ru;; *);;
 concept_unilaterally_connected_digraph => nrel_idtf:[unilaterally connected digraph] (* <- lang_en;; *);;

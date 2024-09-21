@@ -1,4 +1,5 @@
-sc_node->concept_locally_countable_graph;;
+sc_node_class
+    -> concept_locally_countable_graph;;
 
 concept_locally_countable_graph
 => nrel_main_idtf:

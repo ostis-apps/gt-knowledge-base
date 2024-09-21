@@ -1,4 +1,5 @@
-sc_node -> concept_2_3_tree;;
+sc_node_class
+    -> concept_2_3_tree;;
 
 concept_2_3_tree => nrel_main_idtf:
 	[2-3 дерево](* <-lang_ru;; *);

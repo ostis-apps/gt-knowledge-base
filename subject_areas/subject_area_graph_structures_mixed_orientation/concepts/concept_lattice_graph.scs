@@ -1,4 +1,5 @@
-sc_node -> concept_lattice_graph;;
+sc_node_class
+    -> concept_lattice_graph;;
 concept_lattice_graph => nrel_main_idtf:[граф решетки](* <-lang_ru;; *);;
 concept_lattice_graph => nrel_idtf: [lattice graph](* <- lang_en;; *);;
 

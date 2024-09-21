@@ -1,4 +1,5 @@
-sc_node -> concept_block_cutpoint_graph;;
+sc_node_class
+    -> concept_block_cutpoint_graph;;
 concept_block_cutpoint_graph => nrel_main_idtf:
 	[граф блоков и точек сочленения] (* <- lang_ru;; *);
 	[block-cutpoint-graph] (* <- lang_en;; *);;

@@ -1,4 +1,5 @@
-sc_node -> concept_interval_graph;;
+sc_node_class
+    -> concept_interval_graph;;
 concept_interval_graph => nrel_main_idtf:
 	[интервальный граф] (* <- lang_ru;; *);;
 concept_interval_graph => nrel_idtf:

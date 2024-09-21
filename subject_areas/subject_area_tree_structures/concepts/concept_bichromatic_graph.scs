@@ -1,4 +1,5 @@
-sc_node -> concept_bichromatic_graph;;
+sc_node_class
+    -> concept_bichromatic_graph;;
 concept_bichromatic_graph => nrel_main_idtf:
 	[бихроматический граф] (* <- lang_ru;;*);
 	[bichromatic graph] (* <- lang_en;;*);;

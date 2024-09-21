@@ -1,4 +1,5 @@
-sc_node -> concept_strongly_cyclically_closed_graph;;
+sc_node_class
+    -> concept_strongly_cyclically_closed_graph;;
 concept_strongly_cyclically_closed_graph => nrel_main_idtf:[сильно ориентированно-циклически замкнутый граф](* <-lang_ru;; *);;
 concept_strongly_cyclically_closed_graph => nrel_idtf:[strongly cyclically closed graph](* <- lang_en;; *);;
 

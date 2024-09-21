@@ -1,5 +1,5 @@
 concept_graph_algorithm
-<- sc_node;
+<- sc_node_class;
 => nrel_main_idtf:
 	[алгоритм на графах]
 	(* <- lang_ru;; *);

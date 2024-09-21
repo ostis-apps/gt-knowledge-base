@@ -1,4 +1,5 @@
-sc_node -> concept_polygonal_map_quadtree;;
+sc_node_class
+    -> concept_polygonal_map_quadtree;;
 
 concept_polygonal_map_quadtree => nrel_main_idtf:
 	[дерево квадрантов, хранящее информацию о многоугольниках](* <-lang_ru;; *);

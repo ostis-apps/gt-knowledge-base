@@ -1,4 +1,5 @@
-sc_node->concept_labeled_graph;;
+sc_node_class
+    -> concept_labeled_graph;;
 
 concept_labeled_graph	
 => nrel_main_idtf: 

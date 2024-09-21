@@ -1,4 +1,5 @@
-sc_node -> concept_bsp_tree;;
+sc_node_class
+    -> concept_bsp_tree;;
 
 concept_bsp_tree => nrel_main_idtf:
 	[BSP-дерево](* <-lang_ru;; *);

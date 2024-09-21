@@ -1,4 +1,5 @@
-sc_node->concept_lamanov_graph;;
+sc_node_class
+    -> concept_lamanov_graph;;
 
 concept_lamanov_graph
 => nrel_main_idtf:

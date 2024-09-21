@@ -1,4 +1,5 @@
-sc_node->concept_base_graph;;
+sc_node_class
+    -> concept_base_graph;;
 
 concept_base_graph => nrel_main_idtf:
 	[базовый граф](* <-lang_ru;; *);

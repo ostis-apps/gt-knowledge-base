@@ -1,4 +1,5 @@
-sc_node -> concept_equal_graph;;
+sc_node_class
+    -> concept_equal_graph;;
 
 concept_equal_graph => nrel_main_idtf:
 	[тождественный граф](* <- lang_ru;;*);

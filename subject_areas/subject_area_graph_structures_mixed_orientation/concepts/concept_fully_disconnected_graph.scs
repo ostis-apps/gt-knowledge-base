@@ -1,4 +1,5 @@
-sc_node -> concept_fully_disconnected_graph;;
+sc_node_class
+    -> concept_fully_disconnected_graph;;
 concept_fully_disconnected_graph => nrel_main_idtf:[вполне несвязный граф](* <-lang_ru;; *);;
 concept_fully_disconnected_graph => nrel_idtf:[fully disconnected graph](* <- lang_en;; *);;
 

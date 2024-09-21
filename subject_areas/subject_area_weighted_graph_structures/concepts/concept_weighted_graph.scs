@@ -1,4 +1,5 @@
-sc_node->concept_weighted_graph;;
+sc_node_class
+    -> concept_weighted_graph;;
 
 concept_weighted_graph => nrel_main_idtf:
 	[взвешенный граф](* <-lang_ru;; *);

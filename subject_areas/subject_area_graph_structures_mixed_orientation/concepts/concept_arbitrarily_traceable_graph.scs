@@ -1,4 +1,5 @@
-sc_node -> concept_arbitrarily_traceable_graph;;
+sc_node_class
+    -> concept_arbitrarily_traceable_graph;;
 concept_arbitrarily_traceable_graph => nrel_main_idtf:[произвольно вычерчиваемый граф](* <-lang_ru;; *);;
 concept_arbitrarily_traceable_graph => nrel_idtf:[arbitrarily traceable graph](* <- lang_en;; *);;
 

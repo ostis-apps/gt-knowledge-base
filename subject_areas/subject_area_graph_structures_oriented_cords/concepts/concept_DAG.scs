@@ -1,4 +1,5 @@
-sc_node -> concept_DAG;;
+sc_node_class
+    -> concept_DAG;;
 concept_DAG => nrel_main_idtf:[дэг](* <-lang_ru;; *);;
 concept_DAG => nrel_idtf:[dag](* <- lang_en;; *);;
 

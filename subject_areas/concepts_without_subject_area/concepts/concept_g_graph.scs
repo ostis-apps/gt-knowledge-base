@@ -1,4 +1,5 @@
-sc_node->concept_g_graph;;
+sc_node_class
+    -> concept_g_graph;;
 
 concept_g_graph	=> nrel_main_idtf: 
 		[граф рода G] (* <-lang_ru;; *);

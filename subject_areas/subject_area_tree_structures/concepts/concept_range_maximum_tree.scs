@@ -1,4 +1,5 @@
-sc_node -> concept_range_maximum_tree;;
+sc_node_class
+    -> concept_range_maximum_tree;;
 
 concept_range_maximum_tree => nrel_main_idtf:
 	[дерево максимумов](* <-lang_ru;; *);

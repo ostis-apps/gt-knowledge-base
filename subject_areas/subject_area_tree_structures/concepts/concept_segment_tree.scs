@@ -1,4 +1,5 @@
-sc_node -> concept_segment_tree;;
+sc_node_class
+    -> concept_segment_tree;;
 
 concept_segment_tree => nrel_main_idtf:
 	[сегментное дерево](* <-lang_ru;; *);

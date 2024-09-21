@@ -1,4 +1,5 @@
-sc_node -> concept_unweighted_graph;;
+sc_node_class
+    -> concept_unweighted_graph;;
 
 concept_unweighted_graph => nrel_main_idtf:
     [невзвешенный граф]

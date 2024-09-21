@@ -1,4 +1,5 @@
-sc_node -> concept_unigraph;;
+sc_node_class
+    -> concept_unigraph;;
 concept_unigraph => nrel_main_idtf:
 	[Униграф] (* <- lang_ru;;*);
 	[Unigraph] (* <- lang_en;;*);;

@@ -1,4 +1,5 @@
-sc_node -> concept_edge_pancyclic_graph;;
+sc_node_class
+    -> concept_edge_pancyclic_graph;;
 concept_edge_pancyclic_graph => nrel_main_idtf:[рёберно-панциклический граф](* <-lang_ru;; *);;
 concept_edge_pancyclic_graph => nrel_idtf:[edge pancyclic graph](* <- lang_en;; *);;
 

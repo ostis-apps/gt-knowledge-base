@@ -1,4 +1,5 @@
-sc_node -> concept_unplanar_graph;;
+sc_node_class
+    -> concept_unplanar_graph;;
 
 concept_unplanar_graph => nrel_main_idtf:
 	[непланарный граф](* <-lang_ru;; *);

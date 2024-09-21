@@ -1,4 +1,5 @@
-sc_node->concept_geometry_point;;
+sc_node_class
+    -> concept_geometry_point;;
 
 concept_geometry_point => nrel_main_idtf:
 	[геометрическая точка](* <-lang_ru;; *);

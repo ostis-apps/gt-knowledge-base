@@ -1,4 +1,5 @@
-sc_node -> concept_evaluated_graph;;
+sc_node_class
+    -> concept_evaluated_graph;;
 concept_evaluated_graph => nrel_main_idtf:[перенумерованный граф](* <-lang_ru;; *);;
 concept_evaluated_graph => nrel_idtf:[evaluated graph](* <- lang_en;; *);;
 

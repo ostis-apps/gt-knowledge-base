@@ -1,5 +1,5 @@
 concept_vertex_weighted_graph
-<- sc_node;
+<- sc_node_class;
 => nrel_main_idtf:
 	[граф со взвешенными вершинами]
 	(* <-lang_ru;; *);

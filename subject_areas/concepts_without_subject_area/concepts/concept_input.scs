@@ -1,5 +1,5 @@
 concept_input
-	<- sc_node;
+<- sc_node_class;
 
 	=> nrel_main_idtf: [вход] (* <- lang_ru;; *);
 	=> nrel_main_idtf: [input] (* <- lang_en;; *);

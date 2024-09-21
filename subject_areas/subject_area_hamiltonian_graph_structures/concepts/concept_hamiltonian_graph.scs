@@ -1,4 +1,5 @@
-sc_node->concept_hamiltonian_graph;;
+sc_node_class
+    -> concept_hamiltonian_graph;;
 
 
 concept_hamiltonian_graph

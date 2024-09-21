@@ -1,5 +1,5 @@
 concept_edge_weighted_graph
-<- sc_node;
+<- sc_node_class;
 => nrel_main_idtf:
 	[граф со взвешенными рёбрами]
 	(* <- lang_ru;; *);

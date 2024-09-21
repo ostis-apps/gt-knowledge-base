@@ -1,4 +1,5 @@
-sc_node -> concept_edge_critical_graph;;
+sc_node_class
+    -> concept_edge_critical_graph;;
 concept_edge_critical_graph => nrel_main_idtf:
 	[Реберно критический граф] (* <- lang_ru;;*);
 	[Edge critical graph] (* <- lang_en;;*);;

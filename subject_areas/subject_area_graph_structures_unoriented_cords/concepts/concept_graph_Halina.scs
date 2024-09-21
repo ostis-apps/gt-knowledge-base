@@ -1,4 +1,5 @@
-sc_node->concept_graph_Halina;;
+sc_node_class
+    -> concept_graph_Halina;;
 
 concept_graph_Halina
 => nrel_main_idtf:

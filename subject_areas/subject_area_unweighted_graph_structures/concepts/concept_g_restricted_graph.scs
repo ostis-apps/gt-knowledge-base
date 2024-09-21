@@ -1,4 +1,5 @@
-sc_node -> concept_g_restricted_graph;;
+sc_node_class
+    -> concept_g_restricted_graph;;
 
 concept_g_restricted_graph => nrel_main_idtf:
     [Г-ограниченный граф]

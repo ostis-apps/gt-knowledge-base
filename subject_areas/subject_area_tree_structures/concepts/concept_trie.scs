@@ -1,4 +1,5 @@
-sc_node -> concept_trie;;
+sc_node_class
+    -> concept_trie;;
 
 concept_trie => nrel_main_idtf:
 	[префиксное дерево](* <-lang_ru;; *);

@@ -1,5 +1,6 @@
 
-sc_node -> concept_multigraph;;
+sc_node_class
+    -> concept_multigraph;;
 concept_multigraph => nrel_main_idtf:
 	[мультиграф] (* <- lang_ru;; *);
 	[multigraph] (* <- lang_en;; *);;

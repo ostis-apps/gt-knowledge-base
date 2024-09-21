@@ -1,4 +1,5 @@
-sc_node -> concept_number;;
+sc_node_class
+    -> concept_number;;
 
 concept_number => nrel_main_idtf:
 	[число]

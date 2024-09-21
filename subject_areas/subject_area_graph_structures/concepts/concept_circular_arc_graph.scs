@@ -1,4 +1,5 @@
-sc_node -> concept_circular_arc_graph;;
+sc_node_class
+    -> concept_circular_arc_graph;;
 concept_circular_arc_graph => nrel_main_idtf:
 	[граф дуг окружности] (* <- lang_ru;; *);
 	[circular arc graph] (* <- lang_en;; *);;

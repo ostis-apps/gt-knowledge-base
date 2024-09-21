@@ -1,4 +1,5 @@
-sc_node -> concept_starred_graph;;
+sc_node_class
+    -> concept_starred_graph;;
 concept_starred_graph => nrel_main_idtf:[звездный граф](* <-lang_ru;; *);;
 concept_starred_graph => nrel_idtf:[starred graph](* <- lang_en;; *);;
 

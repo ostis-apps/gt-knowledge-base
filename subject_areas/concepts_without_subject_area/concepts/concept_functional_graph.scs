@@ -1,4 +1,5 @@
-sc_node->concept_functional_graph;;
+sc_node_class
+    -> concept_functional_graph;;
 
 
 concept_functional_graph

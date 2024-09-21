@@ -1,4 +1,5 @@
-sc_node -> concept_hertz_graph;;
+sc_node_class
+    -> concept_hertz_graph;;
 
 concept_hertz_graph => nrel_main_idtf:
     [граф Герца]

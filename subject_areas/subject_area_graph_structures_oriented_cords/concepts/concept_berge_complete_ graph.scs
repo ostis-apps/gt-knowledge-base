@@ -1,4 +1,5 @@
-sc_node->concept_berge_complete_graph;;
+sc_node_class
+    -> concept_berge_complete_graph;;
 
 concept_berge_complete_graph => nrel_main_idtf:[полный граф Бержа](* <-lang_ru;; *);;
 concept_berge_complete_graph => nrel_idtf:[Berge's complete graph](* <- lang_en;; *);;

@@ -1,4 +1,5 @@
-sc_node->concept_medial_graph;;
+sc_node_class
+    -> concept_medial_graph;;
 
 concept_medial_graph => nrel_main_idtf:
 	[cрединный граф](* <-lang_ru;; *);;

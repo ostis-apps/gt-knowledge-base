@@ -1,4 +1,5 @@
-sc_node -> concept_kograph;;
+sc_node_class
+    -> concept_kograph;;
 
 concept_kograph => nrel_main_idtf: 
 		[кограф] (* <-lang_ru;; *);

@@ -1,4 +1,5 @@
-sc_node -> concept_dual_connected_graph;;
+sc_node_class
+    -> concept_dual_connected_graph;;
 
 concept_dual_connected_graph => nrel_main_idtf:
 	[двусвязный граф]
