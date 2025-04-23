@@ -5,8 +5,37 @@ ui_main_menu => nrel_main_idtf: [Главное меню] (* <- lang_ru;; *);;
 ui_main_menu <= nrel_ui_commands_decomposition:
 {
 	ui_menu_na_view_kb_extended;
+	ui_menu_na_keynodes;
 	ui_menu_na_graph_theory;
 	ui_menu_na_set_theory
 };;
 
+ui_menu_na_keynodes
+<- ui_user_command_class_noatom;
+=> nrel_main_idtf:
+	[Ключевые узлы навигации] (* <- lang_ru;; *);
+	[Keynodes for navigation] (* <- lang_en;; *);
 
+<= nrel_ui_commands_decomposition:
+	{
+		ui_start_sc_element;
+		sc_statement_graph_tree;
+		section_questions_for_the_exam_on_the_discipline_MOIS;
+		test_actions
+	};;
+
+
+
+test_actions
+<- ui_user_command_class_noatom;
+=> nrel_main_idtf:
+	[Тестовые действия] (* <- lang_ru;; *);
+	[Actions for test] (* <- lang_en;; *);
+
+<= nrel_ui_commands_decomposition:
+	{
+		binary_union_tree_test_action;
+		binary_union_test_action;
+		test_variable_class_action;
+		unary_tree_test_action
+	};;
